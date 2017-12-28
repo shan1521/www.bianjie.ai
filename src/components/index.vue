@@ -234,7 +234,6 @@
             overShow(item){
                 item.src=item.img;
                 item.img=item.img_selected;
-                console.log(item);
             },
             outHide(item){
                item.img=item.src;
