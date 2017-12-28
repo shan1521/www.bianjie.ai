@@ -30,7 +30,7 @@ export const message={
                 "title":"BEAN",
                 "bgImg":"../public/base_01.jpg",
                 "img":"../public/base_01_01.png",
-                "txt":" 区块链边缘分析网络Blockchain Edge Analytics Network是基于区块链技术的分布式医疗健康数据分析交换网络。" +
+                "txt":" 区块链边缘分析网络是基于区块链技术的分布式医疗健康数据分析交换网络。" +
                 "能提供保护患者隐私、尊重数据拥有者权利的加密医疗信息智能分析服务。"
             },
             {
