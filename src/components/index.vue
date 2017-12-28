@@ -1,168 +1,245 @@
 <template>
     <div>
-        <Bhead txt="home"></Bhead>
-        <div class="index ">
+        <div class="index1">
+            <div  style="position: fixed;background: #0e2e4e;z-index: 10;width: 100%">
+                <div class="center head">
+                    <router-link to="#" tag="div"  class="head_img">
+                        <img  @click="scroll(0)" src="../assets/logo.png"/>
+                    </router-link>
+                    <div class="head_Language" style="font-size: 12px;font-weight: bold">
+                       <span class="head_language_seleted">CN</span>/<span>EN</span>
+                    </div>
+                    <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title" :key="index" :to="item.href"    tag="div">
+                        {{item.txt}}
+                    </router-link>
+                </div>
+            </div>
+            <img :src=" $store.state.messages.index.logo" style="margin-top: 1.2vh;width: 80vh;padding-top: 80px"/>
+            <br/>
+            <img src="../assets/btn.png" style="margin-top:6vh;"/>
+        </div>
+        <div class="about" >
+            <div class="center">
+                <div class="about_content" id="#about" >
+                    <div class="about_title">
+                        {{$store.state.messages.about.title}}
+                        <div class="about_title_across"></div>
+                    </div>
+                    <div class="about_txt">
+                        <div v-for="item in $store.state.messages.about.txt">
+                            {{item}}
+                        </div>
+                    </div>
+                </div>
+                <div class="about_img">
+                    <img :src="$store.state.messages.about.img"/>
+                </div>
+            </div>
+        </div>
+        <div class="core" >
             <div class="center" >
-                <div class="index_title">
-                    <div class="index_title_strip">
-                        <div></div>
-                    </div>
-                    <div class="index_title_subject">
-                        {{$store.state.messages.index.subject}}
-                    </div>
-                    <div class="index_title_details">
-                        {{$store.state.messages.index.details}}
-                    </div>
+                <div class="core_title">
+                    {{$store.state.messages.core.title}}
+                    <div class="core_title_across"></div>
                 </div>
-            </div>
-        </div>
-        <div class="mission">
-            <div class="mission_warp">
-                <div class="mission_cont" >
-                    <div class="mission_title">
-                        {{$store.state.messages.mission.title}}
-                    </div>
-                    <div class="mission_subject">
-                        {{$store.state.messages.mission.subject[0]}}
-                        <div></div>
-                    </div>
-                    <div class="mission_subject">
-                        {{$store.state.messages.mission.subject[1]}}
-                    </div>
-                    <div class="mission_subject">
-                        {{$store.state.messages.mission.subject[2]}}
-                    </div>
+                <div class="core_txt">
+                    {{$store.state.messages.core.txt}}
                 </div>
-            </div>
-            <div class="mission_warp1">
-                <div>
-                    <img src="../assets/1.png" />
-                    <img src="../assets/2.png" />
-                    <img src="../assets/3.png" />
+                <div  id="#product" class="core_title product">
+                    {{$store.state.messages.product.title}}
+                    <div class="core_title_across"></div>
                 </div>
-            </div>
-        </div>
-        <div class="about">
-             <div class="center">
-                 <div class="about_title">
-                     {{$store.state.messages.about.title}}
-                     <div></div>
-                     <img src="../assets/bianjie.png"/>
-                 </div>
-                 <div class="about_subject">
-                     <div>
-                         {{$store.state.messages.about.subject[0]}}
-                     </div>
+                <div class="product_warp">
+                    <div class="product_warp_div" v-for="item in $store.state.messages.product.txt">
+                        <img :src="item.bgImg"/>
+                        <div class="product_content">
+                            <div class="product_content_title" >
+                                <div class="product_content_title_txt">
+                                    {{item.title}}
+                                </div>
+                                <div class="product_content_title_img">
+                                    <img :src="item.img"/>
+                                </div>
+                            </div>
+                            <div class="product_content_txt" v-html="item.txt" >
 
-                     <div style="margin-top:34px">
-                         {{$store.state.messages.about.subject[1]}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#dynamic" class="core_title dynamic" >
+                    {{$store.state.messages.dynamic.title}}
+                    <div class="core_title_across dynamic_title_across"></div>
+                </div>
+                <div class="dynamic_warp">
+                    <div class="dynamic_content">
+                        <div class="dynamic_img" >
+                             <img src="../assets/date.png" />
+                             <div class="dynamic_date">
+                                 <div class="dynamic_day">{{$store.state.messages.dynamic.txt[0].day}}</div>
+                                 <div class="dynamic_month">{{$store.state.messages.dynamic.txt[0].month}}</div>
+                             </div>
+                             <div class="dynamic_year">
+                                {{$store.state.messages.dynamic.txt[0].year}}
+                             </div>
+                        </div>
+                        <div class="dynamic_txt">
+                            <div class="dynamic_txt_title">
+                                {{$store.state.messages.dynamic.txt[0].title}}
+                            </div>
+                            <div class="dynamic_txt_txt">
+                                {{$store.state.messages.dynamic.txt[0].txt}}
+                            </div>
+                            <a :href="$store.state.messages.dynamic.txt[0].href" target="_blank" class="dynamic_txt_btn" >
+                                查看更多 <img src="../assets/dynamic_arrow.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dynamic_content" style="margin-left: 90px">
+                        <div class="dynamic_img" >
+                            <img src="../assets/date.png" />
+                            <div class="dynamic_date">
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[1].day}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[1].month}}</div>
+                            </div>
+                            <div class="dynamic_year">
+                                {{$store.state.messages.dynamic.txt[1].year}}
+                            </div>
+                        </div>
+                        <div class="dynamic_txt">
+                            <div class="dynamic_txt_title">
+                                {{$store.state.messages.dynamic.txt[1].title}}
+                            </div>
+                            <div class="dynamic_txt_txt">
+                                {{$store.state.messages.dynamic.txt[1].txt}}
+                            </div>
+                            <a :href="$store.state.messages.dynamic.txt[1].href" target="_blank" class="dynamic_txt_btn" >
+                                查看更多 <img src="../assets/dynamic_arrow.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dynamic_warp dynamic_warp2" >
+                    <div class="dynamic_content">
+                        <div class="dynamic_img" >
+                            <img src="../assets/date.png" />
+                            <div class="dynamic_date">
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[2].day}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[2].month}}</div>
+                            </div>
+                            <div class="dynamic_year">
+                                {{$store.state.messages.dynamic.txt[2].year}}
+                            </div>
+                        </div>
+                        <div class="dynamic_txt">
+                            <div class="dynamic_txt_title">
+                                {{$store.state.messages.dynamic.txt[2].title}}
+                            </div>
+                            <div class="dynamic_txt_txt">
+                                {{$store.state.messages.dynamic.txt[2].txt}}
+                            </div>
+                            <a :href="$store.state.messages.dynamic.txt[2].href" target="_blank" class="dynamic_txt_btn" >
+                                查看更多 <img src="../assets/dynamic_arrow.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dynamic_content" style="margin-left: 90px">
+                        <div class="dynamic_img" >
+                            <img src="../assets/date.png" />
+                            <div class="dynamic_date">
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[3].day}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[3].month}}</div>
+                            </div>
+                            <div class="dynamic_year">
+                                {{$store.state.messages.dynamic.txt[3].year}}
+                            </div>
+                        </div>
+                        <div class="dynamic_txt">
+                            <div class="dynamic_txt_title">
+                                {{$store.state.messages.dynamic.txt[3].title}}
+                            </div>
+                            <div class="dynamic_txt_txt">
+                                {{$store.state.messages.dynamic.txt[3].txt}}
+                            </div>
+                            <a :href="$store.state.messages.dynamic.txt[3].href" target="_blank" class="dynamic_txt_btn" >
+                                查看更多 <img src="../assets/dynamic_arrow.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 930px;background: #fff"></div>
+        <div style="height: 460px; background:url('../../public/dynamic.jpg') no-repeat center center;    background-color: #0e2e4e;"></div>
+        <div class="partner">
+             <div class="center" id="#partner" >
+                <div class="partner_title">
+                    {{$store.state.messages.partner.title}}
+                    <div class="partner_title_across"></div>
+                </div>
+                <div class="partner_img">
+                    <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)" v-for="item in $store.state.messages.partner.img"/>
+                </div>
+                <div class="contact" id="#contact">
+                     <div class="partner_title contact_title">
+                         {{$store.state.messages.contact.title}}
+                         <div class="partner_title_across"></div>
+                     </div>
+                     <div class="contact_txt">
+                         <div>
+                             {{$store.state.messages.contact.address.txt}}：{{$store.state.messages.contact.address.val}}
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             {{$store.state.messages.contact.zip_code.txt}}：{{$store.state.messages.contact.zip_code.val}}
+                         </div>
+                         <div class="contact_txt_10">
+                             {{$store.state.messages.contact.mailbox.txt}}：{{$store.state.messages.contact.mailbox.val}}
+                         </div>
+                     </div>
+                     <div class="contact_qr">
+                        <img src="../assets/qr.png"/>
+                        <div>
+                            Bianjie_AI
+                        </div>
                      </div>
                  </div>
              </div>
         </div>
-        <div class="core">
-            <div class="center">
-                <div class="core_title">
-                    {{$store.state.messages.core.title}}
-                </div>
-                <div class="core_radius30">
-                    <div class="core_radius20"></div>
-                    <img src="../assets/4.png" class="core_radius30_imgLeft"/>
-                    <div class="core_radius30_txtLeft">
-                        <div>{{$store.state.messages.core.subject[0]}}</div>
-                    </div>
-                </div>
-                <div class="core_vertical core_vertical176"></div>
-                <div class="core_radius30">
-                    <div class="core_radius20"></div>
-                    <img src="../assets/5.png" class="core_radius30_imgRight"/>
-                    <div class="core_radius30_txtRight">
-                        <div>{{$store.state.messages.core.subject[1]}}</div>
-                    </div>
-                </div>
-                <div class="core_vertical core_vertical188">
-
-                </div>
-                <!--<div class="core_subject">-->
-                    <!--{{$store.state.messages.core.subject[2]}}-->
-                <!--</div>-->
-            </div>
-        </div>
-
-        <div id="#cooperation" class="cooperation" >
-            <div class="center">
-                <div class="cooperation_title">
-                    {{$store.state.messages.cooperation.title}}
-                </div>
-                <div class="cooperation_subject" >
-                    {{$store.state.messages.cooperation.subject[0]}}
-                </div>
-                <div class="cooperation_radius_list">
-                    <div class="cooperation_radius" v-for="item in  $store.state.messages.index.enterprise">
-                        <img :src="item.img" />
-                    </div>
-                </div>
-                <div class="cooperation_radius_list">
-                    <div class="cooperation_radius cooperation_radius_txt"  v-for="item in  $store.state.messages.index.enterprise" >
-                        {{item.txt}}
-                    </div>
-                </div>
-                <div class="cooperation_subject1">
-                    {{$store.state.messages.cooperation.subject[1]}}
-                </div>
-                <div class="cooperation_radius_list1">
-                    <div class="cooperation_radius" v-for="item in  $store.state.messages.index.school">
-                        <img :src="item.img" />
-                    </div>
-                </div>
-                <div class="cooperation_radius_list1" style="margin-bottom: 152px;">
-                    <div class="cooperation_radius cooperation_radius_txt"   v-for="item in  $store.state.messages.index.school" >
-                        {{item.txt}}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="#contact" class="contact">
-            <div class="center">
-                <div class="contact_title">
-                    {{$store.state.messages.contact.title}}
-                </div>
-                <div class="contact_email">
-                    <span class="contact_34b">{{$store.state.messages.contact.email.txt}}</span>
-                    <span class="contact_fff">{{$store.state.messages.contact.email.val}}</span>
-                    <span class="contact_34b" style="margin-left:76px ">{{$store.state.messages.contact.wechat.txt}}</span>
-                    <span class="contact_fff">{{$store.state.messages.contact.wechat.val}}</span>
-                </div>
-                <div class="contact_address">
-                    <span class="contact_34b">{{$store.state.messages.contact.address.txt}}</span>
-                    <span class="contact_fff">{{$store.state.messages.contact.address.val}}</span>
-                </div>
-                <div class="contact_across"></div>
-                <div class="contact_img">
-                    <img src="../assets/qcode.jpg"/>
-                </div>
-                <div class="contact_icp">
-                    版权所有 © 2017 上海边界智能科技有限公司 沪ICP备17020986
-                </div>
-            </div>
+        <div class="copyright">
+            版权所有 © 2017上海边界智能科技有限公司 沪ICP备17020986
         </div>
     </div>
 </template>
 
 
 <script>
-    import Bhead from './head'
+    import $ from 'jquery'
     export default {
         name: 'index',
-        components:{
-            Bhead
-        },
         methods:{
             roll(){
                 if(document.getElementById(this.$route.hash)){
-                    window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
+                    //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
+
+                  this.scroll(  document.getElementById(this.$route.hash).offsetTop-140)
                 }
+            },
+            scroll(top){
+                $('body,html').animate({
+                        scrollTop:top
+                    }, 500
+                );
+            },
+            overShow(item){
+                item.src=item.img;
+                item.img=item.img_selected;
+                console.log(item);
+            },
+            outHide(item){
+               item.img=item.src;
             }
+
         },
         mounted(){
             this.roll();
@@ -175,174 +252,187 @@
 
 
 <style scoped lang='less'>
-    .index{
-        height: 415px;
-        background: linear-gradient(to right, #034876 50%, #bcd6e3 50%);
-        /*background-color: #19557f;*/
-        .center{
-            height: 100%;
-            background: url('/public/home.jpg') center center no-repeat;
-        }
-        .index_title{
-            margin-left: 135px;
-            .index_title_strip{
-                margin-top: 180px;height: 2px;background-color: #fff;width: 100px;position: relative;
-                div{
-                    width: 36px;position: absolute;top: 0;background-color: #1f98f8;height: 100%;
+    .index1{
+        background: #0e2e4e;flex: 1;height: 100vh; ; text-align: center;
+        .head{
+            height: 80px;
+            .head_img{
+                float: left;cursor: pointer;
+            }
+            .head_item{
+                float: right;height: 80px;line-height: 80px;color: #729bc4;padding: 0 24px;cursor: pointer;
+                &:hover{
+                    color: #4d96e0;
                 }
             }
-            .index_title_subject{
-                margin-top: 40px;color: #fff;font-size: 40px;font-weight:bold;
-            }
-            .index_title_details{
-                color: #fff;font-size: 28px;margin-top: 7px;
-            }
-        }
-    }
-    .mission{
-        overflow: hidden;
-        .mission_warp{
-            float: left;width: 50%;background-color: #fff;height: 274px;
-            .mission_cont{
-                float: right;width:683px;height: 100%;
-                .mission_title{
-                    margin-top: 80px;margin-left: 86px;font-size: 24px;color: #00293b;font-weight: bold;margin-bottom: 4px
-                }
-                .mission_subject{
-                    font-size: 18px;color: #00293b;margin-left: 224px;margin-top: 6px;position: relative;
-                    div{
-                        position: absolute;width: 100px;left: -138px;top: 6px;height: 2px;background-color: #1f98f8;
+            .head_Language{
+                float: right;height: 80px;line-height: 80px;padding: 0 24px;cursor: pointer;color: #729bc4;
+                span{
+                    color: #4d96e0;
+                    &:hover{
+                        color: #94c0ec;
                     }
                 }
             }
-        }
-        .mission_warp1{
-            float: left;width: 50%;height: 274px;background-color: #1f98f8;
-            div{
-                float: left;width:683px;height: 100%;
-                img{
-                    margin-top: 60px;margin-left:40px;
-                }
+            .head_language_seleted{
+                color: #94c0ec !important;
             }
         }
     }
     .about{
-        background-color: #63686c;
-        .center{height: 320px;}
-        .about_title{
-            width: 252px;
-            text-align: right;margin-left: 274px;margin-top: 50px;color: #fff;font-weight: bold;font-size: 48px;float: left;position: relative;
-            div{
-                position: absolute;bottom: -4px;right:0;height: 2px;width: 160px;background-color: #fff;
+        background: #fff;height: 460px;
+        .about_content{
+            float: left;margin-left: 50px;margin-top: 96px;    width: 406px;
+            .about_title{
+                font-size: 28px;color:#153e65;position: relative;letter-spacing:2px;
+                .about_title_across{
+                    height: 3px;width: 70px;background:#153e65;margin-top: 20px
+                }
             }
-            img{position: absolute;    top: 88px;left: -190px;}
+            .about_txt{
+                margin-top: 40px;color: #696e75;letter-spacing:2px;line-height: 28px;font-size: 15px;text-indent: 34px;text-align: justify
+            }
         }
-        .about_subject{
-            margin-top: 50px;color: #fff;margin-left: 68px;font-size: 18px;float: left;
-            div{
-                margin-top:6px;
-                width: 710px;
-                line-height: 30px;
-            }
-            div:first-child{
-                margin-top: 3px;
+        .about_img{
+            float: right;margin-top: 172px;
+            img{
+                height: 248px;
             }
         }
     }
     .core{
-        background-color: #fff;
+        background:url('../../public/core.jpg') no-repeat center center;width: 100%; background-color: #0e2e4e;
+        height: 850px;
         .core_title{
-            margin-top: 70px;font-size: 30px;color: #00293b;text-align: center;font-weight: bold;margin-bottom: 45px;
-        }
-        .core_radius30{
-            position: relative;height: 30px;width: 30px;background-color: #9f9da3;text-align: center;margin-left: 50%;left: -15px;border-radius: 50%;
-            .core_radius20{
-                width: 20px;height: 20px;border-radius: 50%;background-color: #fff;margin-top: 50%;top:-10px;position: absolute;left: 50%;margin-left: -10px
-            }
-            .core_radius30_imgLeft{
-                position: absolute; left: -164px;
-            }
-            .core_radius30_imgRight{
-                position: absolute; right: -164px;
-            }
-            .core_radius30_txtLeft{
-                position: absolute;width: 530px;text-align: left;margin-left: 62px;font-size: 18px;color: #00293b;line-height: 30px;
-            }
-            .core_radius30_txtRight{
-                position: absolute;width: 530px;text-align: right;left: -532px;font-size: 18px;color: #00293b;line-height: 30px;margin-left: -36px;
+            margin-top: 90px;color: #94c0ec;font-size: 28px;position: relative;margin-left: 50px;
+            letter-spacing:2px;
+            .core_title_across{
+                height: 3px;width: 60px;background:#94c0ec;margin-top: 20px
             }
         }
-        .core_vertical176{ height: 176px;}
-        .core_vertical188{height: 188px}
-        .core_vertical{
-           background-color: #9f9da3;width: 1px;margin-left: 50%;    left: -1px;  position: relative;
+        .core_txt{
+            width: 406px;margin-left: 50px;text-indent: 34px;text-align: justify;color: #fff;margin-top: 40px;letter-spacing:2px;line-height: 28px;
+            font-size: 15px;
         }
-        .core_subject{
-            margin:70px 0px 70px 0px;text-align: center;font-size: 18px;color: #00293b;
+        .product{
+            margin-top: 270px;
         }
-    }
-    .cooperation{
-        background-color: #fff;text-align: center;
-        .cooperation_title{
-            color: #00293b;font-size: 30px;margin-top: 70px;margin-bottom: 50px
-        }
-        .cooperation_subject{
-            color: #00293b;font-size: 20px;margin-bottom: 50px
-        }
-        .cooperation_subject1{
-            font-size: 20px;color: #00293b;margin-top: 90px;margin-bottom: 50px
-        }
-        .cooperation_radius_list {
-            margin: 0px 198px;
+        .product_warp{
             overflow: hidden;
-            .cooperation_radius:last-child {
-                margin-right: 0px;
-            }
-        }
-        .cooperation_radius_txt{
-            margin-top: 20px;height: 20px!important;
-        }
-        .cooperation_radius_list1{
-            margin: 0px 300px;overflow: hidden;
-            .cooperation_radius:last-child{
-                margin-right: 0px;
-            }
-        }
-        .cooperation_radius{
-            float: left;width: 150px;height: 150px;border-radius: 50%;margin-right: 50px
-        }
-    }
-    .contact{
-        background-color: #0c5587;height:400px;
-        .center{
-            position: relative;
-            .contact_title{
-                padding-top: 60px;margin-left: 300px;font-size: 48px;color: #fff;font-weight: bold;
-            }
-            .contact_email{
-                margin-left: 300px;margin-top: 68px;font-size: 18px;
-            }
-            .contact_address{
-                margin-left: 300px;margin-top: 24px;font-size: 18px;
-            }
-            .contact_fff{
-                color: #fff;
-            }
-            .contact_34b{
-                color: #3faaff;
-            }
-            .contact_across{
-                height: 1px;width: 810px;margin:36px auto;background-color: #3faaff
-            }
-            .contact_img{
-                position: absolute;width: 120px;height: 120px;top: 56px;right:296px;
-                img{
-                    width: 100%;
+            margin-top: 40px;
+            .product_warp_div{
+                float: left;margin-right: 40px;position: relative;
+                .product_content{
+                    position: absolute;width: 100%;height: 100%;top: 0;
+                    .product_content_title{
+                        margin-top: 50px;margin-left: 50px;overflow: hidden;
+                        .product_content_title_txt{
+                            color: #1d61a5;font-size: 22px;float: left;margin-top: 50px;font-weight: bold;
+                        }
+                        .product_content_title_img{
+                            float: right;margin-right: 50px
+                        }
+                    }
+                    .product_content_txt{
+                        margin-top: 38px;text-indent: 34px;text-align: justify;;line-height: 28px;margin-left: 50px;width: 270px;color: #696e75
+                    }
                 }
             }
-            .contact_icp{
-                color: #fff;text-align: center;font-size: 14px;margin-top: 40px
+            .product_warp_div:last-child{
+                margin-right: 0;
+            }
+
+        }
+        .dynamic{
+            margin-top: 90px;color: #0e2e4e;
+            .dynamic_title_across{
+                background: #0e2e4e
             }
         }
+        .dynamic_warp{
+            margin-left: 50px;overflow: hidden;
+            .dynamic_content{
+                width: 500px;height: 170px;margin-top: 40px;float: left;
+                .dynamic_img{
+                    float: left;position: relative;
+                   .dynamic_date{
+                       position: absolute;top: 0;width: 100%;height: 100%;text-align: center;color: #fff;
+                       .dynamic_month{
+                           font-size: 24px;
+                       }
+                       .dynamic_day{
+                           font-size: 15px;margin-top: 8px
+                       }
+                   }
+                   .dynamic_year{
+                        background: #0b243e;height: 60px;width: 62px;margin-top: -4px;color: #fff;text-align: center;line-height: 60px;font-size: 15px
+                   }
+                }
+                .dynamic_txt{
+                    margin-left: 40px;float: left;
+                    .dynamic_txt_title{
+                        color: #1d61a5;
+                        font-weight: bold;
+                    }
+                    .dynamic_txt_txt{
+                        margin-top: 24px;text-indent: 30px;width: 370px;font-size: 14px;color: #696e75;line-height: 28px;text-align: justify
+                    }
+                    .dynamic_txt_btn{
+                        font-size: 14px;color: #1d61a5;line-height: 28px;position: relative;margin-top: 14px;cursor: pointer;display: block;
+                        img{
+                            position: absolute;top: 0;margin-top: 7px;margin-left: 6px
+                        }
+                    }
+                }
+            }
+        }
+        .dynamic_warp2{
+            margin-top: 120px;
+            .dynamic_txt_title{
+                color: #94c0ec !important;
+            }
+            .dynamic_txt_txt{
+                color: #fff !important;
+            }
+            .dynamic_txt_btn{
+                color: #94c0ec !important;
+            }
+        }
+    }
+    .partner{
+        height: 810px;background: #eee;
+        .partner_title{
+            font-size: 28px;color:#0e2e4e;position: relative;letter-spacing:2px;margin-top: 84px;    margin-left: 50px;
+            .partner_title_across{
+                height: 3px;width: 70px;background:#0e2e4e;margin-top: 20px;
+            }
+        }
+        .partner_img{
+            margin-left: 50px;margin-top: 20px;
+            img{
+                margin-top: 20px;margin-right: 20px;cursor: pointer;
+            }
+        }
+        .contact{
+           position: relative;margin-left: 50px;
+           .contact_title{
+               margin-left: 0;
+           }
+           .contact_txt{
+                margin-top: 36px;color: #72777e;font-size: 14px;
+                .contact_txt_10{
+                    margin-top: 10px
+                }
+            }
+           .contact_qr{
+               position: absolute;right: 38px;top: 0;
+               div{
+                   text-align: center;color: #72777e;margin-top: 4px
+               }
+           }
+        }
+    }
+    .copyright{
+        height: 90px;background: #0e2e4e;text-align: center;line-height: 90px;color: #4d96e0
     }
 </style>  
