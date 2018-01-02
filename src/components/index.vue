@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="index1">
-            <div  style="position: fixed;background: #0e2e4e;z-index: 10;width: 100%">
+        <div class="index1" >
+            <div  style="position: fixed;background: #0b243e;z-index: 10;width: 100%">
                 <div class="center head">
                     <router-link to="#" tag="div"  class="head_img">
                         <img  @click="scroll(0)" src="../assets/logo.png"/>
@@ -14,9 +14,9 @@
                     </router-link>
                 </div>
             </div>
-            <img :src=" $store.state.messages.index.logo" style="margin-top: 1.2vh;width: 80vh;padding-top: 80px"/>
+            <img :src=" $store.state.messages.index.logo" style="width: 80%;padding-top: 80px"/>
             <br/>
-            <img src="../assets/btn.png" style="margin-top:6vh;"/>
+            <img src="../assets/btn.png" style="margin-top: -6vh" />
         </div>
         <div class="about" >
             <div class="center">
@@ -55,8 +55,10 @@
                         <div class="product_content">
                             <div class="product_content_title" >
                                 <div class="product_content_title_txt">
-                                    {{item.title}}
+                                    {{item.title}}<br>
+                                    <div class="product_content_title_txt1" v-html="item.title1"></div>
                                 </div>
+
                                 <div class="product_content_title_img">
                                     <img :src="item.img"/>
                                 </div>
@@ -252,7 +254,7 @@
 
 <style scoped lang='less'>
     .index1{
-        background: #0e2e4e;flex: 1;height: 100vh; ; text-align: center;
+        background: #0b243e;flex: 1;height: 100vh; ; text-align: center;
         .head{
             height: 80px;
             .head_img{
@@ -326,7 +328,13 @@
                     .product_content_title{
                         margin-top: 50px;margin-left: 50px;overflow: hidden;
                         .product_content_title_txt{
-                            color: #1d61a5;font-size: 22px;float: left;margin-top: 50px;font-weight: bold;
+                            color: #1d61a5;font-size: 22px;float: left;margin-top: 50px;font-weight: bold;position: relative;
+                            .product_content_title_txt1{
+                                font-size: 12px;    width: 136px;margin-top: 10px;position: absolute;
+                                span{
+                                    font-weight: bold
+                                }
+                            }
                         }
                         .product_content_title_img{
                             float: right;margin-right: 50px
