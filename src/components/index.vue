@@ -16,7 +16,10 @@
             </div>
             <img :src=" $store.state.messages.index.logo" style="width: 80%;padding-top: 80px"/>
             <br/>
-            <img src="../assets/btn.png" style="margin-top: -6vh" />
+            <router-link to="/#about">
+                <img src="../assets/btn.png" style="position: absolute;bottom: 4%;cursor: pointer" />
+            </router-link>
+
         </div>
         <div class="about" >
             <div class="center">
@@ -254,7 +257,7 @@
 
 <style scoped lang='less'>
     .index1{
-        background: #0b243e;flex: 1;height: 100vh; ; text-align: center;
+        background: #0b243e;flex: 1;height: 100vh; ; text-align: center;overflow: hidden;position: relative;
         .head{
             height: 80px;
             .head_img{
