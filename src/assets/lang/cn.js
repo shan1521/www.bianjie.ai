@@ -99,23 +99,28 @@ export const message={
         "img":[
             {
                 "img":"../public/partner/wx.png",
-                "img_selected":"../public/partner/wx2.png"
+                "img_selected":"../public/partner/wx2.png",
+                "href":"http://www.wxblockchain.com/"
             },
             {
                 "img":"../public/partner/wy.png",
-                "img_selected":"../public/partner/wy2.png"
+                "img_selected":"../public/partner/wy2.png",
+                "href":"https://www.wancloud.io/"
             },
             {
                 "img":"../public/partner/cosmos.png",
-                "img_selected":"../public/partner/cosmos2.png"
+                "img_selected":"../public/partner/cosmos2.png",
+                "href":"https://cosmos.network/"
             },
             {
                 "img":"../public/partner/ms.png",
-                "img_selected":"../public/partner/ms2.png"
+                "img_selected":"../public/partner/ms2.png",
+                "href":"http://www.minshenglife.com/templet/default/"
             },
             {
                 "img":"../public/partner/hdf.png",
-                "img_selected":"../public/partner/hdf2.png"
+                "img_selected":"../public/partner/hdf2.png",
+                "href":"http://www.haodf.com/"
             },
             {
                 "img":"../public/partner/nxyl.png",
@@ -123,19 +128,23 @@ export const message={
             },
             {
                 "img":"../public/partner/bjdx.png",
-                "img_selected":"../public/partner/bjdx2.png"
+                "img_selected":"../public/partner/bjdx2.png",
+                "href":"http://www.bjmu.edu.cn/"
             },
             {
                 "img":"../public/partner/qhdx.png",
-                "img_selected":"../public/partner/qhdx2.png"
+                "img_selected":"../public/partner/qhdx2.png",
+                "href":"http://www.med.tsinghua.edu.cn/"
             },
             {
                 "img":"../public/partner/shjt.png",
-                "img_selected":"../public/partner/shjt2.png"
+                "img_selected":"../public/partner/shjt2.png",
+                "href":"http://www.shsmu.edu.cn/"
             },
             {
                 "img":"../public/partner/pu.png",
-                "img_selected":"../public/partner/pu2.png"
+                "img_selected":"../public/partner/pu2.png",
+                "href":"https://www.purdue.edu/"
             }
         ]
     },

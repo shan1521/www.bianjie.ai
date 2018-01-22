@@ -188,8 +188,9 @@
                     <div class="partner_title_across"></div>
                 </div>
                 <div class="partner_img">
-                    <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"
-                         v-for="item in $store.state.messages.partner.img"/>
+                    <a  :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                        <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                    </a>
                 </div>
                 <div class="contact" id="#contact">
                     <div class="partner_title contact_title">

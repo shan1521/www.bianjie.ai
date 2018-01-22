@@ -91,7 +91,10 @@
                 <div></div>
             </div>
             <div class="partner_div">
-                <img :src="item.img" v-for="item in $store.state.messages.partner.img"/>
+                <a  :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                    <img :src="item.img" />
+                </a>
+
             </div>
             <div class="index_title index_title1" id="#contact">
                 {{$store.state.messages.contact.title}}
@@ -120,6 +123,10 @@
 </template>
 
 <script>
+    let FastClick='';
+    if (process.env.VUE_ENV === 'client') {
+        FastClick=require('FastClick')
+    }
     export default {
         name: "app",
         data() {
