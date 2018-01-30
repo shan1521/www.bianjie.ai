@@ -8,7 +8,7 @@
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
                 <img class="en" src="../assets/app/en.png"/>
             </div>
-            <img class="index_logo" :src="img($store.state.messages.index.logo)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[0].src)"/>
             <router-link to="app#about">
                 <img class="index_btn" src="../assets/app/btn.png"/>
             </router-link>
@@ -91,10 +91,22 @@
                 <div></div>
             </div>
             <div class="partner_div">
-                <a  :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
-                    <img :src="item.img" />
+                <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                    <img :src="item.img"/>
                 </a>
-
+            </div>
+            <div class="validator">
+                <img src="../assets/app/cosmos.jpg"/>
+                <div class="validator_warp">
+                    <div v-for="(item,index) in $store.state.messages.validator.txt" :class="{'div':index==2}" :key="index">
+                        {{ item}}
+                    </div>
+                </div>
+                <div class="validator_btn">
+                    <a :href="$store.state.messages.validator.btnHref" target="_blank">
+                        {{ $store.state.messages.validator.btnText}}
+                    </a>
+                </div>
             </div>
             <div class="index_title index_title1" id="#contact">
                 {{$store.state.messages.contact.title}}
@@ -123,9 +135,9 @@
 </template>
 
 <script>
-    let FastClick='';
+    let FastClick = '';
     if (process.env.VUE_ENV === 'client') {
-        FastClick=require('FastClick')
+        FastClick = require('fastclick')
     }
     export default {
         name: "app",
@@ -145,7 +157,7 @@
             roll() {
                 this.is = false;
                 if (document.getElementById(this.$route.hash)) {
-                    this.scroll(document.getElementById(this.$route.hash).offsetTop-80)
+                    this.scroll(document.getElementById(this.$route.hash).offsetTop - 80)
                 }
             },
             scroll(top) {
@@ -165,7 +177,7 @@
             })
             this.roll();
             if ('addEventListener' in document) {
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     FastClick.attach(document.body);
                 }, false);
             }
@@ -183,7 +195,7 @@
             overflow: hidden;
             position: relative;
             flex: 1;
-            height: 100vh;
+
             .head {
                 position: relative;
                 position: fixed;
@@ -211,14 +223,15 @@
                 }
             }
             .index_logo {
+                margin-top: 62px;
                 width: 100%;
-                height: 100%
+
             }
             .index_btn {
                 position: absolute;
                 left: 50%;
                 margin-left: -15px;
-                bottom: 8%;
+                bottom: 14%;
                 cursor: pointer;
                 z-index: 2;
                 width: 30px;
@@ -446,6 +459,37 @@
                 }
                 div {
                     margin-top: 4px
+                }
+            }
+        }
+        .validator {
+            img {
+                width: 100%;
+                margin-top: 40px;
+            }
+            .validator_warp {
+                text-align: center;
+                margin-top: 20px;
+                div {
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #696e75;
+                }
+                .div{
+                   color: #1d61a5;
+                }
+            }
+            .validator_btn {
+                margin-top: 30px;
+                text-align: center;
+                a {
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #fff;
+                    background: #1d61a5;
+                    border-radius: 6px;
+                    padding: 10px 20px;
                 }
             }
         }

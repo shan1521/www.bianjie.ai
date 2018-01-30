@@ -15,11 +15,23 @@
                     </router-link>
                 </div>
             </div>
-            <img class="index1_logo" :src="$store.state.messages.index.logo"/>
-            <br/>
-            <router-link to="/#about">
-                <img class="index1_btn" src="../assets/btn.png"/>
-            </router-link>
+            <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
+                <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
+                    <img class="index1_logo" :src="item.src"/>
+                    <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
+                       v-show="index==1">
+                        {{ $store.state.messages.validator.btnText}}
+                    </a>
+                </swipe-item>
+            </swipe>
+            <div class="tool">
+                <img src="../assets/left.png" style="float: left;" @click="prev"/>
+                <img src="../assets/right.png" style="float: right;" @click="next"/>
+            </div>
+            <div class="mint-swipe-indicators" style="display: block">
+                <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'is-active':item.is}"
+                     class="mint-swipe-indicator" @click="goto(index)"></div>
+            </div>
         </div>
         <div class="about">
             <div class="center">
@@ -188,7 +200,7 @@
                     <div class="partner_title_across"></div>
                 </div>
                 <div class="partner_img">
-                    <a  :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
                         <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                     </a>
                 </div>
@@ -228,6 +240,11 @@
 
     export default {
         name: 'index',
+        data() {
+            return {
+                is: false
+            }
+        },
         methods: {
             roll() {
                 if (document.getElementById(this.$route.hash)) {
@@ -248,11 +265,26 @@
             },
             outHide(item) {
                 item.img = item.src;
+            },
+            imgChangge(index, oldIndex) {
+                this.$store.state.messages.index.logo.forEach(v => {
+                    v.is = false;
+                })
+                this.$store.state.messages.index.logo[index].is = true
+            },
+            goto(index) {
+                this.$refs.swipe.goto(index)
+            },
+            next() {
+                this.$refs.swipe.next()
+            },
+            prev() {
+                this.$refs.swipe.prev()
             }
-
         },
         mounted() {
             this.roll();
+            this.is = true;
         },
         watch: {
             '$route': 'roll'
@@ -262,18 +294,70 @@
 
 
 <style lang='less'>
+
     html, body {
         min-width: 1200px;
     }
 
+    @media (max-height: 930px) {
+        .index1_logo {
+            width: 1000px !important;
+
+        }
+    }
+
+    @media (max-height: 800px) {
+        .index1_logo {
+            width: 760px !important;
+
+        }
+    }
+
+    @media (max-height: 660px) {
+        .index1_logo {
+            width: 620px !important;
+
+        }
+    }
+
     .pc {
+        .mint-swipe-indicators {
+            bottom: 6%;
+            display: none;
+            .is-active {
+                background: #4d96df;
+                opacity: 1;
+            }
+        }
+        .mint-swipe-indicator {
+            cursor: pointer;
+            width: 100px;
+            height: 2px;
+            background: #4d96df;
+            opacity: 0.3;
+            border-radius: unset;
+        }
+
         .index1 {
-            background: #0b243e;
+            background: #0b253e;
             flex: 1;
             height: 100vh;;
             text-align: center;
             overflow: hidden;
             position: relative;
+            .tool {
+                width: 1200px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -600px;
+                height: 60px;
+                margin-top: -30px;
+                z-index: 2;
+                img {
+                    cursor: pointer;
+                }
+            }
             .head_warp {
                 position: fixed;
                 background: #0b243e;
@@ -317,11 +401,32 @@
                     }
                 }
             }
-            .index1_logo{
-                width: 80%;padding-top: 80px;
+            .index1_logo {
+                width: 1200px;
+                padding-top:80px;
             }
-            .index1_btn{
-                position: absolute;bottom: 4%;cursor: pointer;
+            .index1_logo_btn {
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 40px;
+                color: #fff;
+                width: 140px;
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                margin-left: -70px;
+                height: 40px;
+                background: #1d61a5;
+                border-radius: 6px;
+                &:hover {
+                    background: #11385f;
+                }
+            }
+            .index1_btn {
+                position: absolute;
+                bottom: 4%;
+                cursor: pointer;
+                margin-left: -16px
             }
         }
 
@@ -363,11 +468,14 @@
                 }
             }
         }
-        .bg{
-            height: 930px;background: #fff;
+        .bg {
+            height: 930px;
+            background: #fff;
         }
-        .bgcr{
-            height: 460px; background:url('../../public/dynamicPc.jpg') no-repeat center center;    background-color: #0e2e4e;
+        .bgcr {
+            height: 460px;
+            background: url('../../public/dynamicPc.jpg') no-repeat center center;
+            background-color: #0e2e4e;
         }
         .core {
             background: url('../../public/corePc.jpg') no-repeat center center;
