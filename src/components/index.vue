@@ -662,7 +662,6 @@
         }
 
         .partner {
-            height: 810px;
             background: #eee;
             .partner_title {
                 font-size: 28px;
@@ -690,6 +689,7 @@
             .contact {
                 position: relative;
                 margin-left: 50px;
+                padding-bottom: 50px;
                 .contact_title {
                     margin-left: 0;
                 }
