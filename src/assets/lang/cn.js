@@ -114,6 +114,11 @@ export const message = {
         "title": "合作伙伴",
         "img": [
             {
+                "img": "../public/partner/fxth.jpg",
+                "img_selected": "../public/partner/fxth2.jpg",
+                "href": "http://www.tonghaocapital.com/"
+            },
+            {
                 "img": "../public/partner/wx.png",
                 "img_selected": "../public/partner/wx2.png",
                 "href": "http://www.wxblockchain.com/"
