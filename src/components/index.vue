@@ -93,8 +93,8 @@
                         <div class="dynamic_img">
                             <img src="../assets/date.png"/>
                             <div class="dynamic_date">
-                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[0].day}}</div>
-                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[0].month}}</div>
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[0].month}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[0].day}}</div>
                             </div>
                             <div class="dynamic_year">
                                 {{$store.state.messages.dynamic.txt[0].year}}
@@ -117,8 +117,8 @@
                         <div class="dynamic_img">
                             <img src="../assets/date.png"/>
                             <div class="dynamic_date">
-                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[1].day}}</div>
-                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[1].month}}</div>
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[1].month}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[1].day}}</div>
                             </div>
                             <div class="dynamic_year">
                                 {{$store.state.messages.dynamic.txt[1].year}}
@@ -138,14 +138,13 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="dynamic_warp dynamic_warp2">
                     <div class="dynamic_content">
                         <div class="dynamic_img">
                             <img src="../assets/date.png"/>
                             <div class="dynamic_date">
-                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[2].day}}</div>
-                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[2].month}}</div>
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[2].month}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[2].day}}</div>
                             </div>
                             <div class="dynamic_year">
                                 {{$store.state.messages.dynamic.txt[2].year}}
@@ -168,8 +167,8 @@
                         <div class="dynamic_img">
                             <img src="../assets/date.png"/>
                             <div class="dynamic_date">
-                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[3].day}}</div>
-                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[3].month}}</div>
+                                <div class="dynamic_day">{{$store.state.messages.dynamic.txt[3].month}}</div>
+                                <div class="dynamic_month">{{$store.state.messages.dynamic.txt[3].day}}</div>
                             </div>
                             <div class="dynamic_year">
                                 {{$store.state.messages.dynamic.txt[3].year}}
@@ -614,6 +613,10 @@
                         .dynamic_txt_title {
                             color: #1d61a5;
                             font-weight: bold;
+                            width: 380px;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
                         }
                         .dynamic_txt_txt {
                             margin-top: 24px;
@@ -622,7 +625,9 @@
                             font-size: 14px;
                             color: #696e75;
                             line-height: 28px;
-                            text-align: justify
+                            text-align: justify;
+                            height: 80px;
+                            overflow: hidden;
                         }
                         .dynamic_txt_btn {
                             font-size: 14px;
