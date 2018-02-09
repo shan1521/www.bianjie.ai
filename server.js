@@ -88,7 +88,6 @@ function render (req, res) {
   const handleError = err => {
     if (err && err.code === 404) {
       res.redirect('/')
-
     } else {
       // Render Error Page or Redirect
       res.status(500).end('500 | Internal Server Error')

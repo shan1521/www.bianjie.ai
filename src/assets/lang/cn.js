@@ -69,20 +69,12 @@ export const message = {
         "btnTxt:": "查看更多",
         "txt": [
             {
-                "year": '2017',
-                "month": "Mar",
+                "year": '2018',
+                "month": "Feb",
                 "day": "06",
                 "title": "专注医疗AI+区块链，边界智能缘何获得复星同浩数千万元Pre-A轮融资",
                 "txt": "近日，边界智能向动脉网独家披露：公司已和复星同浩合作完成数千万元Pre-A轮融资。对于本轮融资，边界智能CEO曹恒表示：“有多家投资机构都给了边界正式的投资...”",
                 "href": "https://mp.weixin.qq.com/s/h3tSeXRF--FaFOfSE0gE6Q"
-            },
-            {
-                "year": '2017',
-                "day": "09",
-                "month": "Jul",
-                "title": " \"边界\"提供区块链+智能医疗信息服务",
-                "txt": "由于历史原因，国内医疗信息化缺乏整体规划，医疗系统大都是由不同的开发商在不同时期完成，数据被分散存储在各个业务模块中，要获取不同业务系统中的数据",
-                "href": "https://mp.weixin.qq.com/s/lIdceGqVa0ZvFH1bOE4kig"
             },
             {
                 "year": '2017',
@@ -94,7 +86,7 @@ export const message = {
             },
             {
                 "year": '2017',
-                "day": "07",
+                "day": "04",
                 "month": "Jul",
                 "title": "好大夫和边界智能签订战略合作协议",
                 "txt": "上海边界智能科技有限公司和互动峰科技 （北京） 有限公司 （好大夫在线[www.HaoDF.com] 是互动峰科技打造的互联网医疗平台）签订战略合作协议。",
@@ -102,8 +94,16 @@ export const message = {
             },
             {
                 "year": '2017',
-                "day": "01",
-                "month": "Jul",
+                "day": "27",
+                "month": "Mar",
+                "title": "区块链+智能信息服务，“边界”想让医疗数据流动起来，并提供智能化的信息服务",
+                "txt": "由于历史原因，国内医疗信息化缺乏整体规划，医疗系统大都是由不同的开发商在不同时期完成，数据被分散存储在各个业务模块中，要获取不同业务系统中的数据",
+                "href": "https://mp.weixin.qq.com/s/lIdceGqVa0ZvFH1bOE4kig"
+            },
+            {
+                "year": '2017',
+                "day": "03",
+                "month": "Apr",
                 "title": "获投种子轮,创智能知识库促医疗数据流动",
                 "txt": "2015年3月，曹恒离开了工作16年的IBM研究院。不久后，她加入某创业公司，负责互联网团队建设，“可自己的兴趣还是在人工智能领域”。",
                 "href": "https://mp.weixin.qq.com/s/UwppPAtMS6XoyWvM7Kq_0g"
