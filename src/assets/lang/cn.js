@@ -22,18 +22,23 @@ export const message = {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司 （Bianjie AI） 创立于2016年，是在人工智能、大数据分析和区块链领域拥有核心能力的创新企业，' +
-            '专注于为医疗健康、保险和金融行业提供智能化产品和服务，支持可信高效的行业协作。',
-            '2017年边界智能成为区块链跨链全球项目Cosmos/Tendermint 的中国社区运营和技术开发合作伙伴。'
+            '上海边界智能科技有限公司（Bianjie AI）创立于2016年，在区块链领域拥有最前沿技术，是国内最深入实践区块链跨链技术的团队。目前，边界智能与硅谷合作伙伴Cosmos以及万云合作打造的IRIS网络(www.irisnet.org)，将为分布式商业应用提供基础设施。同时边界智能基于IRIS技术为大数据分析打造的分布式大数据分析交换网络BEAN，能提供保护数据隐私、尊重数据拥有者权利的加密信息智能分析服务。'
         ]
     },
     "core": {
         "title": "核心技术",
-        "txt": "运用人工智能+区块链技术，提供保护数据隐私、尊重数据所有权，并支持数据被智能算法安全分布式使用的技术和服务。"
+        "txt": " 支持数据和复杂计算被异构区块链跨链使用的跨链服务；运用人工智能+区块链技术，提供保护数据隐私、尊重数据所有权，并支持数据被智能算法安全分布式使用的技术和服务。"
     },
     "product": {
         "title": "产品中心",
         "txt": [
+            {
+                "title": "IRIS",
+                "bgImg": "../public/base_03.jpg",
+                "img": "../public/base_03_03.png",
+                "txt": "<div>IRIS网络的目标是支持构建复杂分布式商业应用的下一代公链，其核心创新是一个支持分布式应用被友好开发的服务框架，能实现链上链下通联、数据隐私保护和安全使用，同时IRIS在Cosmos 的跨链协议上进行创新，允许数据及复杂计算能跨异构网络被调用。作为Cosmos跨链生态中的第一个区域性枢纽（HUB），IRIS将为企业和个人提供高效、安全、经济打造分布式商业协作基础设施。</div>"
+
+            },
             {
                 "title": "BEAN",
                 "title1": "<span >B</span>lockchain <span>E</span>dge <span >A</span>nalytics <span >N</span>etwork",
@@ -53,21 +58,21 @@ export const message = {
                 "<p>2. 临床标准术语匹配工具</p>" +
                 "<p>3. 合理用药规则提取工具</p>"
             },
-            {
-                "title": "IRIS",
-                "bgImg": "../public/base_03.jpg",
-                "img": "../public/base_03_03.png",
-                "txt": "基于Cosmos的公有链网络。其底层技术包括Tendermint共识引擎，以太坊智能合约虚拟机（EVM）和跨区块链通讯协议（IBC）；其核心创新是一个基于智能合约的服务框架，" +
-                "能实现链上链下通联、数据隐私保护和授权访问、无缝跨链资源调用和非侵入式审计。<div>IRIS的目标是成为基于跨链技术的下一代公有链，为企业和个人提供高效、安全、经济的数据" +
-                "交换和智能分析服务，是打造分布式商业协作基础设施。</div>"
 
-            }
         ]
     },
     "dynamic": {
         "title": "公司动态",
         "btnTxt:": "查看更多",
         "txt": [
+            {
+                "year": '2018',
+                "day": "16",
+                "month": "Apr",
+                "title": "突破边界，拥抱宇宙 - Cosmos测试网络实现首笔跨链交易",
+                "txt": "2018年4月12日，从Cosmos测试网络中的边界智能的见证节点发出的第一笔区块链跨链交易取得成功。它意味着从理论和实践上都真正实现了高效、安全的跨链价值转移。",
+                "href": "https://mp.weixin.qq.com/s/eVmhsIAlB1TcCbdLVQzLfg"
+            },
             {
                 "year": '2018',
                 "month": "Feb",
@@ -83,14 +88,6 @@ export const message = {
                 "title": "ICF/Cosmos和边界智能签订合作协议",
                 "txt": "InterChain Foundation / Cosmos和上海边界智能科技有限公司于2017年7月7日签订合作协议，由边界智能支持共同打造区块链跨链技术的中国开源社区。",
                 "href": "https://mp.weixin.qq.com/s/_9Ne71JGfsp_YcTqlGfv7w"
-            },
-            {
-                "year": '2017',
-                "day": "04",
-                "month": "Jul",
-                "title": "好大夫和边界智能签订战略合作协议",
-                "txt": "上海边界智能科技有限公司和互动峰科技 （北京） 有限公司 （好大夫在线[www.HaoDF.com] 是互动峰科技打造的互联网医疗平台）签订战略合作协议。",
-                "href": "https://mp.weixin.qq.com/s/U8KzpJjen5V8YMlCVlanag"
             },
             {
                 "year": '2017',
