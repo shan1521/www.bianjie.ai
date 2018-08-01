@@ -9,10 +9,13 @@
                     <div class="head_Language">
                         <span class="head_language_seleted">CN</span>/<span>EN</span>
                     </div>
+                    <router-link class="head_item" key="310" to="/validators" tag="div">Validators</router-link>
                     <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title"
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
+
+
                 </div>
             </div>
             <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
