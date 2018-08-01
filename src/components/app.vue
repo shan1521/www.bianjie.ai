@@ -129,7 +129,7 @@
             </div>
         </div>
         <div class="copyright">
-            版权所有 © 2017上海边界智能科技有限公司 沪ICP备17020986
+            版权所有 © 2017上海边界智能科技有限公司 <a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备17020986号-1</a>
         </div>
     </div>
 </template>
@@ -500,6 +500,10 @@
             color: #4d96e0;
             text-align: center;
             line-height: 50px;
+	    a {
+		background: #0e2e4e;
+	      color: #4d96e0;
+	    }
         }
     }
 
