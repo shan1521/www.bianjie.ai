@@ -11,11 +11,13 @@ export const message = {
             },
         ],
         "title": [
+            {"txt": "Validators", "href": "/validators"},
             {"txt": "联系我们", "href": "/#contact"},
             {"txt": "合作伙伴", "href": "/#partner"},
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "关于我们", "href": "/#about"},
+
         ]
     },
     "about": {

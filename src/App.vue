@@ -43,4 +43,19 @@
         }
     }
 </script>
+<style lang="less">
+    html{
+        font-size:625%;
+        width:100%;
+        height:100%;
+    }
+    body{
+        font-size:16px;
+        width:100%;
+        height:100%;
+    }
+    #app{
+        height:100%;
+    }
+</style>
 
