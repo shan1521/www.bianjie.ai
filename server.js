@@ -9,11 +9,36 @@ const { createBundleRenderer } = require('vue-server-renderer')
 const axios = require('axios')
 const isProd = process.env.NODE_ENV === 'production'
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
+const bodyParser = require('body-parser');
+const request = require('request')
 const serverInfo =
   `express/${require('express/package.json').version} ` +
   `vue-server-renderer/${require('vue-server-renderer/package.json').version}`
 
 const app = express()
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.route('/')
+    .post((req, res, next) => {
+        request({
+            url: 'https://us18.api.mailchimp.com/3.0/lists/25c2f2356f/members',
+            method: 'POST',
+            headers: {
+                'Authorization': 'apikey 29da274284fa1bac35a47fc96bc05f04-us18',
+                'Content-Type': 'application/json'
+            },
+            json: {
+                'email_address': req.body.email,
+                'status': 'subscribed'
+            }
+        }, function(err, response, body) {
+            if (err) {
+                res.send(err)
+            } else {
+                res.send(body)
+            }
+        });
+    });
 
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 

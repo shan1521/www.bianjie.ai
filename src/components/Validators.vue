@@ -1,23 +1,22 @@
 <template>
     <div class="validators" :class="validatorsWrapVar">
         <nav class="header" v-show="device">
-            <img src="../assets/logo.png" alt="">
-            <span class="language">{{lang}}</span>
+            <img src="../assets/logo.png" alt="" @click="$router.push('/')">
+            <span class="language" @click="changeLanguage">{{lang}}</span>
         </nav>
         <div class="index1"  v-show="!device">
             <div class="head">
                 <img class="down" v-show="!is" src="../assets/app/down.png" @click="is=true"/>
                 <img class="down" v-show="is" src="../assets/app/x.png" style="width: 16px;margin-top: 22px;"
                      @click="is=false"/>
-                <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
-                <img class="en" src="../assets/app/en.png"/>
+                <img class="logo" @click="$router.push('/app')" src="../assets/logo.png"/>
+                <img class="en" src="../assets/app/cn.png" @click="changeLanguage" v-show="lang === '中文'"/>
+                <img class="en" src="../assets/app/en.png" @click="changeLanguage" v-show="lang === 'English'"/>
             </div>
             <div class="index_down" v-show="is">
-                <router-link :key="index" :to="item.href" tag="div"
-                             v-for="(item,index) in $store.state.messages.index.title">
+                <div v-for="(item,index) in currentMessage" @click="skipHome(item.href)" :key="index">
                     {{item.txt}}
-                </router-link>
-                <router-link class="head_item" key="310" to="/validators" tag="div">Validators</router-link>
+                </div>
             </div>
         </div>
         <section class="body">
@@ -40,7 +39,7 @@
                                 <h4>{{know2}}</h4>
                             </div>
 
-                            <span>{{knowBtn}}</span>
+                            <a href="https://cosmos.network/" target="_blank">{{knowBtn}}</a>
                         </div>
                     </div>
                 </section>
@@ -51,17 +50,21 @@
                             <div class="introduce_wrap">
                                 <div class="introduce_wrap_module">
                                     <div class="title_wrap">
+                                        <span></span>
                                         <p class="title_test">{{developer}}</p>
                                     </div>
-                                    <div class="title_wrap">
+                                    <div class="title_wrap" :style="device?'':'border-top:none;min-height:1.4rem;'">
+                                        <span v-show="device"></span>
                                         <p class="content_title">{{developerContent}}</p>
                                     </div>
                                 </div>
                                 <div class="introduce_wrap_module">
                                     <div class="title_wrap">
+                                        <span></span>
                                         <p class="title_test">{{cooperateDeveloper}}</p>
                                     </div>
-                                    <div class="title_wrap">
+                                    <div class="title_wrap" :style="device?'':'border-top:none;;min-height:1.4rem;'">
+                                        <span v-show="device"></span>
                                         <p class="content_title">{{cooperateDeveloperContent}}</p>
                                     </div>
                                 </div>
@@ -72,10 +75,18 @@
                             <div class="introduce_wrap">
                                 <div class="introduce_wrap_module">
                                     <div class="title_wrap">
+                                        <span></span>
                                         <p class="title_test">{{chooseUsTitle}}</p>
                                     </div>
-                                    <div class="title_wrap">
-                                        <p class="content_title">hello</p>
+                                    <div class="title_wrap" :style="device?'':'border-top:none;margin-bottom:0.2rem;'">
+                                        <span v-show="device"></span>
+                                        <p class="content_title">
+                                            Testnet Validator:
+                                            <a href="https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu"
+                                                style="color:#66A1FF;" target="_blank">
+                                                https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -128,11 +139,13 @@
             <div class="send_email">
                 <p class="send_email_title">{{subscribe}}</p>
                 <div class="send_email_wrap">
-                    <input type="text" :placeholder="placeholder">
-                    <span>
-
+                    <input type="text" :placeholder="placeholder" v-model="email">
+                    <span @click="handleClick">
+                        <img src="../assets/validators/email.png" alt="">
                     </span>
+
                 </div>
+                <i class="info" :class="showError?'error':(showSuccess?'success':'')">{{emailInfo}}</i>
             </div>
 
         </section>
@@ -141,7 +154,8 @@
 
 <script>
 
-    import message from '../assets/lang/message';
+    import message from '../common/message';
+    import axios from 'axios';
 
     export default {
         name: "Validators",
@@ -171,12 +185,21 @@
                 feature6: '定期第三方渗透测试',
                 subscribe: '订阅获取最新动态',
                 placeholder: '请输入您的email地址',
+                emailError:'请输入正确的邮箱地址',
                 is: false,
+                currentMessage:message.cn.index.title.reverse(),
+                email:'',
+                showError:false,
+                showSuccess:false,
+                emailInfo:'',
             }
+        },
+        mounted(){
+
         },
         methods: {
             conversion(lang) {
-                this.cos = mesage[lang].validators.cos;
+                this.cos = message[lang].validators.cos;
                 this.safe = message[lang].validators.safe;
                 this.know1 = message[lang].validators.know1;
                 this.know2 = message[lang].validators.know2;
@@ -197,6 +220,7 @@
                 this.feature6 = message[lang].validators.feature6;
                 this.subscribe = message[lang].validators.subscribe;
                 this.placeholder = message[lang].validators.placeholder;
+                this.emailError = message[lang].validators.emailError;
             },
             scroll(top) {
                 $('body,html').animate({
@@ -208,6 +232,66 @@
                 src = src.split('public/')[0] + 'public/app/' + src.split('public/')[1];
                 return src;
             },
+            changeLanguage(){
+                if(this.lang === 'English'){
+                    this.lang = '中文';
+                    this.conversion('en');
+                }else{
+                    this.lang = 'English';
+                    this.conversion('cn');
+                }
+            },
+            skipHome(href){
+                new Promise((resolve)=>{
+                    this.$router.push('/app');
+                    resolve();
+                }).then(()=>{
+                    this.$router.push(`/app${href.substr(1)}`);
+                    console.log(`/app${href.substr(1)}`)
+                })
+            },
+            handleClick(){
+                let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(address.exec(this.email)){
+
+                    this.showError = false;
+                    axios({
+                        method: 'post',
+                        url:"/",
+                        data: {
+                            email:this.email,
+                        }
+                    }).then((data)=>{
+                        if(data.status === 200){
+                            return data.data;
+                        }
+                    }).then((data)=>{
+                        console.log(data)
+                        if(data.detail){
+                            this.emailInfo = data.detail;
+                            this.showError = true;
+                            setTimeout(()=>{
+                                this.showError = false;
+                            },2000);
+                        }else{
+                            this.emailInfo = '';
+                            this.showSuccess = true;
+                            setTimeout(()=>{
+                                this.showSuccess = false;
+                            },2000);
+                        }
+                    }).catch((error)=>{
+                        console.log(error)
+                    })
+                }else {
+                    this.emailInfo = this.emailError;
+                    this.showError = true;
+                    setTimeout(()=>{
+                        this.showError = false;
+                    },2000);
+                }
+
+            }
         }
     }
 </script>
@@ -270,10 +354,11 @@
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     .description {
                         margin-top:0.4rem;
+                        font-weight:300;
                         p {
                             color: #ffffff;
                         }
@@ -305,7 +390,7 @@
                         display: -webkit-flex;
                         display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-between;
                         img {
 
                         }
@@ -319,18 +404,18 @@
                             align-items: flex-start;
                             .cosmos_wrap{
                                 p {
-                                    color: rgba(255,255,255,0.8);
+                                    color: rgba(255,255,255,0.6);
                                     font-size:0.14rem;
                                     line-height:0.28rem;
                                 }
                                 h4{
-                                    color: rgba(255,255,255,0.8);
+                                    color: rgba(255,255,255,0.6);
                                     font-size:0.14rem;
                                     line-height:0.28rem;
                                 }
                             }
 
-                            span{
+                            a{
                                 width:1.44rem;
                                 height:0.36rem;
                                 -webkit-border-radius: 0.04rem;
@@ -381,15 +466,27 @@
 
                                         border-top:0.01rem solid #60658F;
                                         padding-top:0.2rem;
+                                        position: relative;
+                                        span{
+                                            position: absolute;
+                                            width:1rem;
+                                            height:0.01rem;
+                                            background:#8c98e8;
+                                            top:-0.01rem;
+                                            left:0;
+                                        }
                                         .title_test{
 
                                             color:#ffffff;
                                             font-size:0.2rem;
+
+
                                         }
                                         .content_title{
 
-                                            color:rgba(255,255,255,0.8);
+                                            color:rgba(255,255,255,0.6);
                                             font-size:0.2rem;
+                                            overflow-wrap: break-word;
                                         }
                                     }
                                 }
@@ -428,8 +525,12 @@
                         .content_description{
 
                             text-align: center;
-                            color:#ffffff;
-                            font-size:0.16rem;
+                            color:rgba(255,255,255,0.6);
+                            margin-top:0.14rem;
+                            margin-bottom:0.17rem;
+                            width:100%;
+                            overflow-wrap: break-word;
+                            word-break: normal;
                         }
                     }
                 }
@@ -451,13 +552,49 @@
                     color:#ffffff;
                 }
                 .send_email_wrap{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    border:0.01rem solid #60658F;
+                    -webkit-border-radius: 0.04rem;
+                    -moz-border-radius: 0.04rem;
+                    -ms-border-radius: 0.04rem;
+                    -o-border-radius: 0.04rem;
+                    border-radius: 0.04rem;
+                    overflow:hidden;
 
                     input{
+                        outline: none !important;
+                        border:none;
+
+                        text-indent:0.15rem;
+                        background: #272B49;
+                        color:#ffffff;
 
                     }
                     span{
-
+                        background: #3147F2;
+                        cursor:pointer;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
+
+                }
+                .info{
+                    visibility:hidden;
+                }
+                .error{
+                    color:#ff4a4a;
+                    visibility:visible;
+                }
+                .success{
+                    color:lawngreen;
+                    visibility:visible;
                 }
             }
 
@@ -483,10 +620,20 @@
 
             .banner_wrap {
                 height: 2.9rem;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 .banner {
+                    min-width:10rem;
+
 
 
                     .description {
+                        margin-left:0.6rem;
                         margin-top:0.4rem;
                         p {
                             font-size: 0.36rem;
@@ -498,6 +645,7 @@
                     }
                     img{
 
+                        margin-right:0.8rem;
                     }
 
                 }
@@ -507,6 +655,7 @@
                 .content_know {
                     height: 3rem;
                     .content_know_wrap {
+                        min-width:10rem;
 
                         img {
                             margin-right:0.36rem;
@@ -514,6 +663,7 @@
                             height: 2.2rem;
                         }
                         .content_introduction {
+                            width:6rem;
                             margin-top:0.2rem;
                             .cosmos_wrap{
                                 p {
@@ -532,20 +682,24 @@
                     height: 7.4rem;
                     width: 100%;
                     .introduce_wrap_all {
+                        min-width:10rem;
                         .bianjie_introduce_top {
 
                             .introduce_title {
 
                                 font-size: 0.48rem;
                                 color: #ffffff;
+                                margin-bottom:0.2rem;
                             }
                             .introduce_wrap {
 
                                 .introduce_wrap_module {
+                                    justify-content: space-between;
+                                    margin-bottom:0.4rem;
+                                    min-height:1.33rem;
 
                                     .title_wrap {
 
-                                        margin-right: 0.72rem;
 
                                         .title_test {
 
@@ -555,7 +709,7 @@
                                         }
                                         .content_title {
 
-                                            width: 5rem;
+                                            width: 6rem;
                                             color: rgba(255, 255, 255, 0.8);
                                             font-size: 0.2rem;
                                         }
@@ -568,7 +722,7 @@
             }
             .we_provide{
 
-                height:7.96rem;
+                height:6rem;
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -592,7 +746,7 @@
                     justify-content: space-between;
 
                     .content_btn_wrap{
-                        margin-bottom:0.4rem;
+                        margin-bottom:0.6rem;
 
                         .content_img{
 
@@ -603,6 +757,7 @@
 
                             margin-top:0.3rem;
                             width:2.4rem;
+                            font-size:0.16rem;
                         }
                     }
                 }
@@ -620,28 +775,46 @@
                 .send_email_wrap{
 
                     width:6.4rem;
-                    height:0.36rem;
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    margin-bottom:0.8rem;
+                    height:0.4rem;
+
+                    margin-bottom:0.1rem;
 
                     input{
 
                         flex:1;
-                        height:0.36rem;
+                        height:0.4rem;
+                        border:none;
+                        font-size:0.18rem;
                     }
                     span{
 
-                        width:0.5rem;
-                        height:0.36rem;
+                        width:1rem;
+                        height:0.4rem;
+
+                        img{
+                            width: 0.24rem;
+                            height:0.2rem;
+                        }
+
                     }
+                }
+                }
+                .info{
+                    margin-bottom:0.8rem;
+                    font-style:normal;
+                    font-size:0.14rem;
+                }
+                .error{
+                    color:#ff4a4a;
+                    visibility:visible;
+                }
+                .success{
+                    color:lawngreen;
+                    visibility:visible;
                 }
             }
 
         }
-    }
     //移动
     .mobile_validators_wrap {
 
@@ -742,26 +915,29 @@
             .content {
 
                 .content_know {
-                    height: 3.1rem;
                     .content_know_wrap {
+                        width:100%;
 
-                        padding:0.2rem 0.3rem 0 0.1rem;
                         img {
-                            margin-right:0.36rem;
                             width: 1.1rem;
                             height: 1.1rem;
+                            margin-top:0.2rem;
                         }
                         .content_introduction {
+                            margin-top:0.2rem;
+                            margin-right:0.2rem;
                             .cosmos_wrap{
                                 p {
-                                    max-width: 4rem;
+                                    max-width: 1.8rem;
                                 }
                                 h4{
-                                    max-width:  4rem;
+                                    max-width: 1.8rem;
                                 }
                             }
-                            span{
+                            a{
                                 margin-top:0.2rem;
+                                margin-bottom:0.4rem;
+
                             }
 
 
@@ -769,16 +945,16 @@
                     }
                 }
                 .bianjie_introduce{
-                    height: 7.4rem;
+                    height: 7rem;
                     width: 100%;
                     .introduce_wrap_all {
-                        padding:0 0.3rem;
                         .bianjie_introduce_top {
 
                             .introduce_title {
 
-                                font-size: 0.2rem;
+                                font-size: 0.24rem;
                                 color: #ffffff;
+                                margin-bottom:0.18rem;
                             }
                             .introduce_wrap {
 
@@ -786,16 +962,17 @@
 
                                     flex-direction: column;
                                     .title_wrap {
-                                        width:100%;
-                                        margin-right: 0.72rem;
 
                                         .title_test {
 
+                                            font-size:0.14rem;
 
                                         }
                                         .content_title {
 
-
+                                            font-size:0.14rem;
+                                            color:rgba(255,255,255,0.6);
+                                            width:2.6rem;
                                         }
                                     }
                                 }
@@ -805,18 +982,39 @@
                 }
             }
             .we_provide{
-
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                width:100%;
                 .title{
 
                     color:#ffffff;
+                    margin-top:0.36rem;
+                    margin-bottom:0.36rem;
                 }
                 .content_feature{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+                    width:90%;
+                    margin-bottom:0.3rem;
                     .content_btn_wrap{
+                        min-width:1.4rem;
 
                         .content_img{
+                            width:0.64rem;
+                            height:0.64rem;
 
                         }
                         .content_description{
+                            font-size:0.12rem;
+                            max-width:1.4rem;
 
                         }
                     }
@@ -828,15 +1026,39 @@
 
                 .send_email_title{
 
+                    margin: 0.2rem;
                 }
                 .send_email_wrap{
+                    height:0.24rem;
+                    margin-bottom:0.1rem;
 
                     input{
+                        width:2.5rem;
 
                     }
                     span{
+                        width:0.5rem;
+
+                        img{
+                            width:0.12rem;
+                            height:0.1rem;
+                        }
 
                     }
+                }
+                .info{
+                    margin-bottom:0.2rem;
+                    font-style:normal;
+                    font-size:0.14rem;
+
+                }
+                .error{
+                    color:#ff4a4a;
+                    visibility:visible;
+                }
+                .success{
+                    color:lawngreen;
+                    visibility:visible;
                 }
             }
 
