@@ -260,13 +260,13 @@
                         url:"/",
                         data: {
                             email:this.email,
+                            lang:this.lang,
                         }
                     }).then((data)=>{
                         if(data.status === 200){
                             return data.data;
                         }
                     }).then((data)=>{
-                        console.log(data)
                         if(data.detail){
                             this.emailInfo = data.detail;
                             this.showError = true;
@@ -274,8 +274,9 @@
                                 this.showError = false;
                             },2000);
                         }else{
-                            this.emailInfo = '';
+                            this.emailInfo = 'successful!';
                             this.showSuccess = true;
+                            this.email = '';
                             setTimeout(()=>{
                                 this.showSuccess = false;
                             },2000);

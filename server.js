@@ -20,11 +20,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.route('/')
     .post((req, res, next) => {
+        let id;
+        if(req.body.lang === 'English'){
+            id = 'b0f0a7faf1'
+        }else if(req.body.lang === '中文'){
+            id = 'e2e6182619'
+        }
         request({
-            url: 'https://us18.api.mailchimp.com/3.0/lists/25c2f2356f/members',
+            url: `https://us18.api.mailchimp.com/3.0/lists/${id}/members`,
             method: 'POST',
             headers: {
-                'Authorization': 'apikey 29da274284fa1bac35a47fc96bc05f04-us18',
+                'Authorization': 'apikey 88d9476c7ee22ebf41eac9716e3529b7-us18',
                 'Content-Type': 'application/json'
             },
             json: {

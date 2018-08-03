@@ -11,7 +11,7 @@
             resize(_this) {
                 _this.is = $(window).width() >= 520
                 if (_this.is) {
-                    _this.$router.replace('/');
+                   // _this.$router.replace('/');
                 } else {
                     _this.$router.replace('/app');
                     window.onload=function () {
