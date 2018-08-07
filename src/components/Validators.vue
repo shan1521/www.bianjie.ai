@@ -1,8 +1,10 @@
 <template>
     <div class="validators" :class="validatorsWrapVar">
         <nav class="header" v-show="device">
-            <img src="../assets/logo.png" alt="" @click="$router.push('/')">
-            <span class="language" @click="changeLanguage">{{lang}}</span>
+            <div class="title_wrap">
+                <img src="../assets/logo.png" alt="" @click="$router.push('/')">
+                <span class="language" @click="changeLanguage">{{lang}}</span>
+            </div>
         </nav>
         <div class="index1"  v-show="!device">
             <div class="head">
@@ -311,6 +313,7 @@
         display: -ms-flexbox;
         display: flex;
         flex-direction: column;
+        font-family:"SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial";
         .header {
             height: 0.8rem;
             width: 100%;
@@ -318,29 +321,38 @@
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             background: rgba(11, 36, 62, 1);
-            img {
-                margin-left: 0.4rem;
-                cursor: pointer;
+            .title_wrap{
+                width:11.8rem;
+                height:100%;
+                display: flex;
+                justify-content: space-between;
+                img {
+                    margin-left: 0.4rem;
+                    cursor: pointer;
+                }
+                .language {
+                    cursor: pointer;
+                    width: 1rem;
+                    height: 0.36rem;
+                    background: #3147F2;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 0.36rem;
+                    margin-top: 0.22rem;
+                    margin-right: 0.4rem;
+                    font-size: 0.16rem;
+                    -webkit-border-radius: 0.04rem;
+                    -moz-border-radius: 0.04rem;
+                    -ms-border-radius: 0.04rem;
+                    -o-border-radius: 0.04rem;
+                    border-radius: 0.04rem;
+                    border:0.02rem solid #6274FF;
+                }
             }
-            .language {
-                cursor: pointer;
-                width: 1rem;
-                height: 0.36rem;
-                background: #3147F2;
-                color: #ffffff;
-                text-align: center;
-                line-height: 0.36rem;
-                margin-top: 0.22rem;
-                margin-right: 0.4rem;
-                font-size: 0.16rem;
-                -webkit-border-radius: 0.08rem;
-                -moz-border-radius: 0.08rem;
-                -ms-border-radius: 0.08rem;
-                -o-border-radius: 0.08rem;
-                border-radius: 0.08rem;
-            }
+
+
         }
         .body {
             flex: 1;
@@ -365,7 +377,7 @@
                         }
                         h2 {
                             color: #ffffff;
-                            font-weight: 400;
+                            font-weight: 600;
                         }
                     }
                     img{
@@ -404,14 +416,17 @@
                             justify-content: space-between;
                             align-items: flex-start;
                             .cosmos_wrap{
+                                margin-bottom:0.2rem;
                                 p {
-                                    color: rgba(255,255,255,0.6);
-                                    font-size:0.14rem;
+                                    color: rgba(255,255,255,0.8);
+                                    font-size:0.18rem;
                                     line-height:0.28rem;
+                                    font-weight:100;
                                 }
                                 h4{
-                                    color: rgba(255,255,255,0.6);
-                                    font-size:0.14rem;
+                                    color: rgba(255,255,255,0.8);
+                                    font-size:0.18rem;
+                                    font-weight:100;
                                     line-height:0.28rem;
                                 }
                             }
@@ -429,6 +444,7 @@
                                 background:#3147F2;
                                 color:#ffffff;
                                 cursor:pointer;
+                                border:0.02rem solid #6274FF;
                             }
                         }
                     }
@@ -485,8 +501,8 @@
                                         }
                                         .content_title{
 
-                                            color:rgba(255,255,255,0.6);
-                                            font-size:0.2rem;
+                                            color:rgba(255,255,255,0.8);
+                                            line-height:0.26rem;
                                             overflow-wrap: break-word;
                                         }
                                     }
@@ -526,7 +542,7 @@
                         .content_description{
 
                             text-align: center;
-                            color:rgba(255,255,255,0.6);
+                            color:rgba(255,255,255,0.8);
                             margin-top:0.14rem;
                             margin-bottom:0.17rem;
                             width:100%;
@@ -688,7 +704,7 @@
 
                             .introduce_title {
 
-                                font-size: 0.48rem;
+                                font-size: 0.36rem;
                                 color: #ffffff;
                                 margin-bottom:0.2rem;
                             }
@@ -705,14 +721,16 @@
                                         .title_test {
 
                                             color: #ffffff;
-                                            font-size: 0.2rem;
+                                            font-size: 0.24rem;
                                             width: 2.88rem;
+                                            font-weight:300;
                                         }
                                         .content_title {
 
                                             width: 6rem;
                                             color: rgba(255, 255, 255, 0.8);
-                                            font-size: 0.2rem;
+                                            font-size: 0.18rem;
+                                            font-weight:100;
                                         }
                                     }
                                 }
@@ -722,14 +740,13 @@
                 }
             }
             .we_provide{
-
-                height:6rem;
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex;
                 align-items: center;
                 flex-direction:column;
+                padding-bottom:0.3rem;
                 .title{
 
                     color:#ffffff;
@@ -751,7 +768,7 @@
 
                         .content_img{
 
-                            width:1.12rem;
+                            width:1rem;
                             height:1rem;
                         }
                         .content_description{
@@ -903,13 +920,12 @@
                         h2 {
 
                             font-size:0.18rem;
-                            font-weight:400;
+                            font-weight:600;
                         }
                     }
 
                 }
                 img{
-                    width:0.71rem;
                     height:1.04rem;
                 }
             }
@@ -918,23 +934,18 @@
                 .content_know {
                     .content_know_wrap {
                         width:100%;
+                        display:flex;
 
                         img {
                             width: 1.1rem;
                             height: 1.1rem;
                             margin-top:0.2rem;
+                            margin-left:0.1rem;
                         }
                         .content_introduction {
                             margin-top:0.2rem;
                             margin-right:0.2rem;
-                            .cosmos_wrap{
-                                p {
-                                    max-width: 1.8rem;
-                                }
-                                h4{
-                                    max-width: 1.8rem;
-                                }
-                            }
+                            flex:1;
                             a{
                                 margin-top:0.2rem;
                                 margin-bottom:0.4rem;
@@ -946,10 +957,12 @@
                     }
                 }
                 .bianjie_introduce{
-                    height: 7rem;
                     width: 100%;
                     .introduce_wrap_all {
                         .bianjie_introduce_top {
+                            &:first-child{
+                                margin-bottom:0.3rem;
+                            }
 
                             .introduce_title {
 
@@ -971,9 +984,10 @@
                                         }
                                         .content_title {
 
-                                            font-size:0.14rem;
-                                            color:rgba(255,255,255,0.6);
+                                            font-size:0.12rem;
+                                            color:rgba(255,255,255,0.8);
                                             width:2.6rem;
+                                            margin-bottom:0.18rem;
                                         }
                                     }
                                 }

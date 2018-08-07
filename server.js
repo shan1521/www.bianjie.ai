@@ -140,7 +140,7 @@ function render (req, res) {
 
   const context = {
     title: 'Vue SSR', // default title
-    url: req.url
+    url: '/'
   }
   renderer.renderToString(context, (err, html) => {
     if (err) {
