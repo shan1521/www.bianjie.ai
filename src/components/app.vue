@@ -17,6 +17,7 @@
                              v-for="(item,index) in $store.state.messages.index.title">
                     {{item.txt}}
                 </router-link>
+                <router-link class="head_item" key="310" to="/validators" tag="div">Validators</router-link>
             </div>
         </div>
         <div class="about">

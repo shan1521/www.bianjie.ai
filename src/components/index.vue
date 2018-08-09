@@ -6,13 +6,13 @@
                     <router-link to="#" tag="div" class="head_img">
                         <img @click="scroll(0)" src="../assets/logo.png"/>
                     </router-link>
-                    <div class="head_Language">
-                        <span class="head_language_seleted">CN</span>/<span>EN</span>
-                    </div>
+                    <router-link class="head_item validator" key="310" to="/validators" tag="div">Validators</router-link>
                     <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title"
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
+
+
                 </div>
             </div>
             <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
@@ -377,6 +377,28 @@
                         cursor: pointer;
                         &:hover {
                             color: #4d96e0;
+                        }
+                    }
+                    .validator{
+                        cursor: pointer;
+                        height: 0.36rem;
+                        background: #3147F2;
+                        color: #ffffff;
+                        text-align: center;
+                        line-height: 0.36rem;
+                        margin-top: 0.22rem;
+                        margin-right: 0.4rem;
+                        font-size: 0.16rem;
+                        -webkit-border-radius: 0.04rem;
+                        -moz-border-radius: 0.04rem;
+                        -ms-border-radius: 0.04rem;
+                        -o-border-radius: 0.04rem;
+                        border-radius: 0.04rem;
+                        border:0.02rem solid #6274FF;
+                        padding:0 0.12rem;
+                        margin-left:0.24rem;
+                        &:hover{
+                            color:#ffffff;
                         }
                     }
                     .head_Language {

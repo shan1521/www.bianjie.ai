@@ -11,7 +11,7 @@
             resize(_this) {
                 _this.is = $(window).width() >= 520
                 if (_this.is) {
-                    _this.$router.replace('/');
+                   // _this.$router.replace('/');
                 } else {
                     _this.$router.replace('/app');
                     window.onload=function () {
@@ -39,8 +39,24 @@
                 window.onresize = function () {
                     _this.resize(_this)
                 }
+                console.log(this.$router)
             }
         }
     }
 </script>
+<style lang="less">
+    html{
+        font-size:625%;
+        width:100%;
+        height:100%;
+    }
+    body{
+        font-size:16px;
+        width:100%;
+        height:100%;
+    }
+    #app{
+        height:100%;
+    }
+</style>
 
