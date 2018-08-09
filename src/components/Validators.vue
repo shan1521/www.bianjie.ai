@@ -254,6 +254,8 @@
             },
             handleClick(){
                 let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                //server 端接收参数.  0  代表中文;  1  代表英文;
+                let lang = (this.lang === 'English' ? 1 : 0);
                 if(address.exec(this.email)){
 
                     this.showError = false;
@@ -262,7 +264,7 @@
                         url:"/",
                         data: {
                             email:this.email,
-                            lang:this.lang,
+                            lang,
                         }
                     }).then((data)=>{
                         if(data.status === 200){

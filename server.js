@@ -21,9 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.route('/')
     .post((req, res, next) => {
         let id;
-        if(req.body.lang === 'English'){
+        if(req.body.lang === 1){
             id = 'b0f0a7faf1'
-        }else if(req.body.lang === '中文'){
+        }else if(req.body.lang === 0){
             id = 'e2e6182619'
         }
         request({
