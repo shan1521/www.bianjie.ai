@@ -9,11 +9,42 @@ const { createBundleRenderer } = require('vue-server-renderer')
 const axios = require('axios')
 const isProd = process.env.NODE_ENV === 'production'
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
+const bodyParser = require('body-parser');
+const request = require('request')
 const serverInfo =
   `express/${require('express/package.json').version} ` +
   `vue-server-renderer/${require('vue-server-renderer/package.json').version}`
 
 const app = express()
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.route('/')
+    .post((req, res, next) => {
+        let id;
+        if(req.body.lang === 1){
+            id = 'b0f0a7faf1'
+        }else if(req.body.lang === 0){
+            id = 'e2e6182619'
+        }
+        request({
+            url: `https://us18.api.mailchimp.com/3.0/lists/${id}/members`,
+            method: 'POST',
+            headers: {
+                'Authorization': 'apikey 88d9476c7ee22ebf41eac9716e3529b7-us18',
+                'Content-Type': 'application/json'
+            },
+            json: {
+                'email_address': req.body.email,
+                'status': 'subscribed'
+            }
+        }, function(err, response, body) {
+            if (err) {
+                res.send(err)
+            } else {
+                res.send(body)
+            }
+        });
+    });
 
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 
@@ -109,7 +140,7 @@ function render (req, res) {
 
   const context = {
     title: 'Vue SSR', // default title
-    url: req.url
+    url: '/'
   }
   renderer.renderToString(context, (err, html) => {
     if (err) {

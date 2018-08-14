@@ -16,6 +16,7 @@ export const message = {
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "关于我们", "href": "/#about"},
+
         ]
     },
     "about": {
