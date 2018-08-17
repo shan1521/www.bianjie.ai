@@ -2,26 +2,26 @@ export default {
     en: {
         validators:{
             cos:'COSMOS Validator',
-            safe:'Safe Bianjie Safe Delegation',
-            know1:'Cosmos is know as the "blockchain internet", which will become the blockchain 3.0.',
-            know2:'Cosmos focuses on the problem of interoperability and scalability of blockchains. Its inter-chain communication protocol can realize the interconnection of blockchains--allowing tokens on different chains exchange their values, such as smart contracts, anonymous transactions and other characteristics.',
+            safe:'Safe Bianjie, safe delegation',
+            know1:'COSMOS is known as the "blockchain internet", which will become the blockchain 3.0.',
+            know2:'COSMOS is focusing on the problem of interoperability and scalability of blockchains. Its inter-chain communication protocol can realize the interconnection of blockchains——allowing tokens on different chains to exchange their values, such as smart contracts, anonymous transactions and other characteristics.',
             knowBtn:'Visit COSMOS',
             introduce:'About Bianjie',
-            developer:'IRISnet Developer',
-            developerContent:'The technology team of Bianjie has created IRISnet, the first regional hub in the Cosmos ecosystem, which will focus on providing infrastructure and protocols for distributed business applications.',
-            cooperateDeveloper:'COSMOS Co-Developer',
-            cooperateDeveloperContent:'Bianjie has always been the most influential core technology contributor of COSMOS in China. Since the first version of the test network gaia-1000 developed, we have been the validators to help Cosmos to upgrade and witness is growth.',
+            developer:'IRISnet developer',
+            developerContent:'The technology team of Bianjie has created IRISnet, the first regional hub in the COSMOS ecosystem, which will focus on providing infrastructure and protocols for distributed business applications.',
+            cooperateDeveloper:'COSMOS co-developer',
+            cooperateDeveloperContent:'Bianjie has always been the most influential core technology contributor of COSMOS in China. Since the first version of the testnet gaia-1000 developed, we have been the validators to help COSMOS to upgrade and witness its growth.',
             chooseUs:'Choose Bianjie',
-            chooseUsTitle:'Find us on the Testnet of COSMOS',
-            provide:'We Provide',
-            feature1:'Enterprise-class Data Center',
-            feature2:'Highly Available Network',
-            feature3:'DDoS Attack Protection',
+            chooseUsTitle:'Find us on the testnet of COSMOS',
+            provide:'We provide',
+            feature1:'Safe and reliable enterprise-class data center',
+            feature2:'Highly available network',
+            feature3:'DDoS attack protection',
             feature4:'HSM for Private Key Protection',
-            feature5:'24/7 Professional Support',
-            feature6:'Third Party Penetration Test',
-            subscribe:'Get Newsletter',
-            placeholder:'Please enter your email address',
+            feature5:'24/7 professional support',
+            feature6:'Third party penetration test',
+            subscribe:'Subscribe the latest news',
+            placeholder:'Please enter a valid email address',
             emailError:'Please enter a valid email address',
         }
     },
@@ -53,7 +53,7 @@ export default {
             "txt": [
                 '上海边界智能科技有限公司 （Bianjie AI） 创立于2016年，是在人工智能、大数据分析和区块链领域拥有核心能力的创新企业，' +
                 '专注于为医疗健康、保险和金融行业提供智能化产品和服务，支持可信高效的行业协作。',
-                '2017年边界智能成为区块链跨链全球项目Cosmos/Tendermint 的中国社区运营和技术开发合作伙伴。'
+                '2017年边界智能成为区块链跨链全球项目COSMOS/Tendermint 的中国社区运营和技术开发合作伙伴。'
             ]
         },
         "core": {
@@ -224,16 +224,16 @@ export default {
             }
         },
         validators:{
-            cos:'COSMOS验证节点',
-            safe:'安全的边界,放心的委托',
-            know1:'Cosmos被誉为"区块链的互联网", 它将成为区块链3.0。',
-            know2:'Cosmos专注解决区块链交互操作和可扩展性问题, 它的区块链间通讯协议可以实现区块链的互联--不同链上的通证能实现真正的价值互通, 将自身注入智能合约, 匿名交易的特性进行互换。',
+            cos:'COSMOS验证人节点',
+            safe:'安全的边界，放心的委托',
+            know1:'COSMOS被誉为“区块链的互联网”，它将成为区块链3.0。',
+            know2:'COSMOS专注解决区块链交互操作和可扩展性问题，它的区块链间通讯协议可以实现区块链的互联——不同链上的通证能实现真正的价值互通，将自身诸如智能合约、匿名交易的特性进行互换。',
             knowBtn:'了解COSMOS',
             introduce:'边界智能简介',
             developer:'IRISnet开发者',
-            developerContent:'边界智能作为开发团队打造了IRISnet--作为Cosmos生态中的第一个区域性枢纽, 它将专注于为分布式商业应用提供基础设施和协议。',
+            developerContent:'边界智能作为开发团队打造了IRISnet——作为COSMOS生态中的第一个区域性枢纽，它将专注于为分布式商业应用提供基础设施和协议。',
             cooperateDeveloper:'COSMOS合作开发者',
-            cooperateDeveloperContent:'边界一直是Cosmos在中国最有影响力的核心技术贡献者, 从第一版测试网gaia-1000开始, 我们一直作为验证人帮助Cosmos不断升级, 见证它的成长。',
+            cooperateDeveloperContent:'边界一直是COSMOS在中国最有影响力的核心技术贡献者。从第一版测试网gaia-1000开始，我们一直作为验证人帮助COSMOS不断升级，见证它的成长。',
             chooseUs:'选择边界智能',
             chooseUsTitle:'在COSMOS测试网络找到我们',
             provide:'我们提供',
@@ -245,7 +245,7 @@ export default {
             feature6:'定期第三方渗透测试',
             subscribe:'订阅获取最新动态',
             placeholder:'请输入您的email地址',
-            emailError:'请输入正确的邮箱地址',
+            emailError:'请输入您的email地址',
         }
     }
 };
