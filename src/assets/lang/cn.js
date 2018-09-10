@@ -71,43 +71,35 @@ export const message = {
         "txt": [
             {
                 "year": '2018',
-                "month": "Feb",
+                "day": "09",
+                "month": "Sep",
+                "title": "夺冠丨基于IRISnet开发的BEAN获中国健康医疗大数据创新大赛总决赛天使之星组冠军",
+                "txt": "2018年5月11日，中国健康医疗大数据产业创新大赛面向全国召开。它是中国首个面向以健康医疗大数据产业为核心的创新大赛。",
+                "href": "https://mp.weixin.qq.com/s/oF45W5ciXrh1tMPSkx9adA"
+            },
+            {
+                "year": '2018',
+                "month": "Aug",
+                "day": "27",
+                "title": "获奖丨基于IRISnet 打造的数据应用 BEAN 于“创业在上海”大赛突围，荣获上海市政府创新资金补助",
+                "txt": "2018年“创业在上海”国际创新创业大赛暨第七届中国创新创业大赛在7月拉开了帷幕，物联网、无人机、人工智能、医疗大数据、区块链...",
+                "href": "https://mp.weixin.qq.com/s/73g11PmA_Q9sYQKI0KzmCQ"
+            },
+            {
+                "year": '2018',
+                "day": "16",
+                "month": "Apr",
+                "title": "突破边界，拥抱宇宙 - Cosmos测试网络实现首笔跨链交易",
+                "txt": "2018年4月12日，从Cosmos测试网络中的边界智能的见证节点发出的第一笔区块链跨链交易取得成功。它意味着从理论和实践上都真正实现了高效、安全的跨链价值转移。",
+                "href": "https://mp.weixin.qq.com/s/eVmhsIAlB1TcCbdLVQzLfg"
+            },
+            {
+                "year": '2018',
                 "day": "06",
+                "month": "Feb",
                 "title": "专注医疗AI+区块链，边界智能缘何获得复星同浩数千万元Pre-A轮融资",
                 "txt": "近日，边界智能向动脉网独家披露：公司已和复星同浩合作完成数千万元Pre-A轮融资。对于本轮融资，边界智能CEO曹恒表示：“有多家投资机构都给了边界正式的投资...”",
                 "href": "https://mp.weixin.qq.com/s/h3tSeXRF--FaFOfSE0gE6Q"
-            },
-            {
-                "year": '2017',
-                "day": "07",
-                "month": "Jul",
-                "title": "ICF/Cosmos和边界智能签订合作协议",
-                "txt": "InterChain Foundation / Cosmos和上海边界智能科技有限公司于2017年7月7日签订合作协议，由边界智能支持共同打造区块链跨链技术的中国开源社区。",
-                "href": "https://mp.weixin.qq.com/s/_9Ne71JGfsp_YcTqlGfv7w"
-            },
-            {
-                "year": '2017',
-                "day": "04",
-                "month": "Jul",
-                "title": "好大夫和边界智能签订战略合作协议",
-                "txt": "上海边界智能科技有限公司和互动峰科技 （北京） 有限公司 （好大夫在线[www.HaoDF.com] 是互动峰科技打造的互联网医疗平台）签订战略合作协议。",
-                "href": "https://mp.weixin.qq.com/s/U8KzpJjen5V8YMlCVlanag"
-            },
-            {
-                "year": '2017',
-                "day": "27",
-                "month": "Mar",
-                "title": "区块链+智能信息服务，“边界”想让医疗数据流动起来，并提供智能化的信息服务",
-                "txt": "由于历史原因，国内医疗信息化缺乏整体规划，医疗系统大都是由不同的开发商在不同时期完成，数据被分散存储在各个业务模块中，要获取不同业务系统中的数据",
-                "href": "https://mp.weixin.qq.com/s/lIdceGqVa0ZvFH1bOE4kig"
-            },
-            {
-                "year": '2017',
-                "day": "03",
-                "month": "Apr",
-                "title": "获投种子轮,创智能知识库促医疗数据流动",
-                "txt": "2015年3月，曹恒离开了工作16年的IBM研究院。不久后，她加入某创业公司，负责互联网团队建设，“可自己的兴趣还是在人工智能领域”。",
-                "href": "https://mp.weixin.qq.com/s/UwppPAtMS6XoyWvM7Kq_0g"
             }
         ]
     },
