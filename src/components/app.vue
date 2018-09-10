@@ -64,14 +64,14 @@
                 <div class="dynamic_left">
                     <div class="pr">
                         <div class="day">
-                            <div>Jul</div>
-                            <div>09</div>
+                            <div>{{$store.state.messages.dynamic.txt[item-1].month}}</div>
+                            <div>{{$store.state.messages.dynamic.txt[item-1].day}}</div>
                         </div>
                         <img src="../assets/app/day.jpg"/>
                     </div>
                     <div class="pr">
                         <div class="year">
-                            <div>2017</div>
+                            <div>{{$store.state.messages.dynamic.txt[item-1].year}}</div>
                         </div>
                         <img src="../assets/app/year.jpg"/>
                     </div>
