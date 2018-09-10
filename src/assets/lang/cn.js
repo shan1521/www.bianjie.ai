@@ -80,7 +80,7 @@ export const message = {
                 "year": '2018',
                 "month": "Aug",
                 "day": "27",
-                "title": "获奖丨基于IRISnet打造的 BEAN 于“创业在上海”大赛突围",
+                "title": "获奖丨基于IRISnet打造的BEAN于“创业在上海”大赛突围",
                 "txt": "2018年“创业在上海”国际创新创业大赛暨第七届中国创新创业大赛在7月拉开了帷幕，物联网、无人机、人工智能、医疗大数据、区块链...",
                 "href": "https://mp.weixin.qq.com/s/73g11PmA_Q9sYQKI0KzmCQ"
             },
