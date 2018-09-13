@@ -60,7 +60,7 @@
                 <div></div>
             </div>
             <a class="dynamic_a" :href="$store.state.messages.dynamic.txt[item-1].href" target="_blank"
-               v-for="item in 3">
+               v-for="item in 4">
                 <div class="dynamic_left">
                     <div class="pr">
                         <div class="day">
