@@ -23,18 +23,27 @@ export const message = {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司 （Bianjie AI） 创立于2016年，是在人工智能、大数据分析和区块链领域拥有核心能力的创新企业，' +
-            '专注于为医疗健康、保险和金融行业提供智能化产品和服务，支持可信高效的行业协作。',
-            '2017年边界智能成为区块链跨链全球项目Cosmos/Tendermint 的中国社区运营和技术开发合作伙伴。'
+            '上海边界智能科技有限公司（Bianjie AI）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的核心开发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴。边界智能拥有区块链领域最前沿的技术研发和实践能力，并在人工智能、大数据分析拥有核心能力。',
         ]
     },
     "core": {
         "title": "核心技术",
-        "txt": "运用人工智能+区块链技术，提供保护数据隐私、尊重数据所有权，并支持数据被智能算法安全分布式使用的技术和服务。"
+        "secondaryTitle": "跨链服务",
+        "infomation": "支持异构网络间数字资产流动，以及数据和负责计算的可信跨链调用",
+        "technologyTitle": "分布式智能技术",
+        "technologyInfomation": "运用人工智能+区块链技术，提供保护数据隐私、尊重数据所有权，并支持数据被智能算法安全分布式地使用"
     },
     "product": {
         "title": "产品中心",
         "txt": [
+            {
+                "title": "IRISnet",
+                "bgImg": "../public/base_03.jpg",
+                "img": "../public/base_03_03.png",
+                "txt": " <a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 跨链网络是未来实现分布式商业生态系统的基础设施，边界智能基于 <a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 技术自主研发的产品BEAN利用传统的分布式人工智能研究中的模型并行性和SOA设计模式，将区块链技术应用到分布式分析服务，是保护数据隐私、尊重数据拥有者权利的加密智能分析服务，更是在医疗健康大数据领域的的创新实践。" +
+                "<div>就像忠实地在人间和天堂传递信息的希腊彩虹女神Iris，<a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 的目标是成为链接数字经济和实体经济，支持构建复杂分布式商业应用的下一代公链。</div>"
+
+            },
             {
                 "title": "BEAN",
                 "title1": "<span >B</span>lockchain <span>E</span>dge <span >A</span>nalytics <span >N</span>etwork",
@@ -54,15 +63,7 @@ export const message = {
                 "<p>2. 临床标准术语匹配工具</p>" +
                 "<p>3. 合理用药规则提取工具</p>"
             },
-            {
-                "title": "IRIS",
-                "bgImg": "../public/base_03.jpg",
-                "img": "../public/base_03_03.png",
-                "txt": "基于Cosmos的公有链网络。其底层技术包括Tendermint共识引擎，以太坊智能合约虚拟机（EVM）和跨区块链通讯协议（IBC）；其核心创新是一个基于智能合约的服务框架，" +
-                "能实现链上链下通联、数据隐私保护和授权访问、无缝跨链资源调用和非侵入式审计。<div>IRIS的目标是成为基于跨链技术的下一代公有链，为企业和个人提供高效、安全、经济的数据" +
-                "交换和智能分析服务，是打造分布式商业协作基础设施。</div>"
 
-            }
         ]
     },
     "dynamic": {
@@ -71,19 +72,19 @@ export const message = {
         "txt": [
             {
                 "year": '2018',
+                "day": "24",
+                "month": "Oct",
+                "title": "捷报：互联网成长组全国32强！边界智能荣获中国创新创业大赛优秀企业奖",
+                "txt": "在10月20~10月24日举办的第七届中国创新创业大赛中，边界智能作为成长组最年轻的公司，微弱分差勇夺小组第四，挺进互联网成长组全国32强，斩获国赛优秀企业奖！",
+                "href": "https://mp.weixin.qq.com/s/mbTnx2UxKkdYwK9G2hVXJQ"
+            },
+            {
+                "year": '2018',
                 "day": "09",
                 "month": "Sep",
                 "title": "基于IRISnet开发的BEAN获CDHIC天使之星组冠军",
                 "txt": "2018年5月11日，中国健康医疗大数据产业创新大赛面向全国召开。它是中国首个面向以健康医疗大数据产业为核心的创新大赛。",
                 "href": "https://mp.weixin.qq.com/s/oF45W5ciXrh1tMPSkx9adA"
-            },
-            {
-                "year": '2018',
-                "month": "Aug",
-                "day": "27",
-                "title": "获奖丨基于IRISnet打造的BEAN于“创业在上海”大赛突围",
-                "txt": "2018年“创业在上海”国际创新创业大赛暨第七届中国创新创业大赛在7月拉开了帷幕，物联网、无人机、人工智能、医疗大数据、区块链...",
-                "href": "https://mp.weixin.qq.com/s/73g11PmA_Q9sYQKI0KzmCQ"
             },
             {
                 "year": '2018',
@@ -176,11 +177,11 @@ export const message = {
         "title": "联系我们",
         "address": {
             "txt": "地址",
-            "val": "上海市浦东新区纳贤路800号科海大楼A座7层"
+            "val": "上海市浦东新区张江高科技园区博霞路 22 号 S 座 2 层 202-203 室"
         },
         "zip_code": {
             "txt": "邮编",
-            "val": "201210"
+            "val": "201203"
         },
         "mailbox": {
             "txt": "邮箱",
