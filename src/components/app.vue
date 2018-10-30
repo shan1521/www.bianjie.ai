@@ -195,7 +195,7 @@
     }
 </script>
 
-<style lang='less'>
+<style lang='less' scoped>
     .app {
         .index1 {
             text-align: center;
@@ -356,6 +356,22 @@
                         text-indent: 30px;
                         text-align: justify;
                     }
+                }
+            }
+            .core_title{
+                text-align: center;
+                margin-top: 30px;
+                color: #0e2e4e;
+                font-size: 18px;
+                position: relative;
+                div {
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background: #153e65;;
+                    left: 50%;
+                    margin-left: -20px;
+                    top: 32px;
                 }
             }
         }
@@ -528,22 +544,7 @@
 	    }
         }
     }
-    .core_title{
-        text-align: center;
-        margin-top: 30px;
-        color: #0e2e4e;
-        font-size: 18px;
-        position: relative;
-        div {
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            background: #153e65;;
-            left: 50%;
-            margin-left: -20px;
-            top: 32px;
-        }
-    }
+
 
     html, body {
         min-width: auto !important;

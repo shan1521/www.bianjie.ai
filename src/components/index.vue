@@ -305,7 +305,7 @@
 </script>
 
 
-<style lang='less'>
+<style lang='less' scoped>
 
     html, body {
         min-width: 1200px;
