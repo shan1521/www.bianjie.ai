@@ -42,7 +42,7 @@
                     </div>
                     <div class="about_txt">
                         <div v-for="item in $store.state.messages.about.txt">
-                            {{item}}
+                           <div v-html="item">{{item}}</div>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,20 @@
                     <div class="core_title_across"></div>
                 </div>
                 <div class="core_txt">
-                    {{$store.state.messages.core.txt}}
+                    <div class="core_txt_title">
+                        {{$store.state.messages.core.secondaryTitle}}
+                    </div>
+                    <div class="core_txt_info">
+                        {{$store.state.messages.core.infomation}}
+                    </div>
+                </div>
+                <div class="core_txt">
+                    <div class="core_txt_title">
+                        {{$store.state.messages.core.technologyTitle}}
+                    </div>
+                    <div class="core_txt_info">
+                        {{$store.state.messages.core.technologyInfomation}}
+                    </div>
                 </div>
                 <div id="#product" class="core_title product">
                     {{$store.state.messages.product.title}}
@@ -496,18 +509,29 @@
                 }
             }
             .core_txt {
-                width: 406px;
+                display: flex;
                 margin-left: 50px;
-                text-indent: 34px;
                 text-align: justify;
                 color: #fff;
                 margin-top: 40px;
                 letter-spacing: 2px;
                 line-height: 28px;
                 font-size: 15px;
+                .core_txt_title{
+                    width: 160px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #1d61a5;
+                    text-align: center;
+                    border-radius: 4px;
+                }
+                .core_txt_info{
+                    padding-left: 30px;
+                    width: 300px;
+                }
             }
             .product {
-                margin-top: 270px;
+                margin-top: 200px;
             }
             .product_warp {
                 overflow: hidden;

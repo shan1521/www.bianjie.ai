@@ -9,9 +9,7 @@
                 <img class="en" src="../assets/app/en.png"/>
             </div>
             <img class="index_logo" :src="img($store.state.messages.index.logo[0].src)"/>
-            <router-link to="app#about">
                 <img class="index_btn" src="../assets/app/btn.png"/>
-            </router-link>
             <div class="index_down" v-show="is">
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
@@ -26,7 +24,7 @@
             </div>
             <div class="about_txt">
                 <div v-for="item in $store.state.messages.about.txt">
-                    {{item}}
+                   <span v-html="item"></span>
                 </div>
             </div>
             <img :src="img($store.state.messages.about.img)"/>
@@ -38,9 +36,14 @@
                 <div></div>
             </div>
             <div class="core_txt">
-                <div>
-                    {{$store.state.messages.core.txt}}
+                <div class="core_txt_title">
+                   <span class="core_txt_title_info">{{$store.state.messages.core.secondaryTitle}}</span>
                 </div>
+                <p>{{$store.state.messages.core.infomation}}</p>
+                <div class="core_txt_title">
+                    <span class="core_txt_title_info_bottom">{{$store.state.messages.core.technologyTitle}}</span>
+                </div>
+                <p>{{$store.state.messages.core.technologyInfomation}}</p>
             </div>
             <div class="product" v-for="item in $store.state.messages.product.txt">
                 <img :src="img(item.img)"/>
@@ -152,7 +155,7 @@
                 return src;
             },
             txt(text) {
-                return text.split('<div>')[0];
+                return text;
             },
             roll() {
                 this.is = false;
@@ -301,10 +304,27 @@
                 font-size: 14px;
                 line-height: 26px;
                 color: #696e75;
-                div {
-                    text-indent: 30px;
-                    text-align: justify;
+                .core_txt_title{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
                 }
+                .core_txt_title_info{
+                    width: 140px;
+                    display: inline-block;
+                    background: #1d61a5;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+                .core_txt_title_info_bottom{
+                    margin-top: 10px;
+                    width: 140px;
+                    display: inline-block;
+                    background: #1d61a5;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+
             }
             .product {
                 text-align: center;
