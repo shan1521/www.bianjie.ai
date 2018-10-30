@@ -52,7 +52,7 @@
                 </div>
                 <div class="product_title1" v-html="item.title1"></div>
                 <div class="product_txt">
-                    <div v-html="txt(item.txt)"></div>
+                    <div v-html="item.txt"></div>
                 </div>
             </div>
         </div>
@@ -153,9 +153,6 @@
             img(src) {
                 src = src.split('public/')[0] + 'public/app/' + src.split('public/')[1];
                 return src;
-            },
-            txt(text) {
-                return text;
             },
             roll() {
                 this.is = false;
@@ -495,9 +492,7 @@
                     line-height: 26px;
                     color: #696e75;
                 }
-                .div{
-                   color: #1d61a5;
-                }
+
             }
             .validator_btn {
                 margin-top: 30px;
