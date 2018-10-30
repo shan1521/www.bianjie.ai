@@ -29,7 +29,7 @@ export const message = {
     "core": {
         "title": "核心技术",
         "secondaryTitle": "跨链服务",
-        "infomation": "支持异构网络间数字资产流动，以及数据和负责计算的可信跨链调用",
+        "infomation": "支持异构网络间数字资产流动，以及数据和负责复杂计算的可信跨链调用",
         "technologyTitle": "分布式智能技术",
         "technologyInfomation": "运用人工智能+区块链技术，提供保护数据隐私、尊重数据所有权，并支持数据被智能算法安全分布式地使用"
     },

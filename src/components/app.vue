@@ -32,13 +32,13 @@
         </div>
         <div class="core">
             <img class="core_img" src="../assets/app/core.jpg"/>
-            <div class="index_title" id="#product">
-                {{$store.state.messages.product.title}}
+            <div class="core_title">
+                {{$store.state.messages.core.title}}
                 <div></div>
             </div>
             <div class="core_txt">
                 <div class="core_txt_title">
-                   <span class="core_txt_title_info">{{$store.state.messages.core.secondaryTitle}}</span>
+                    <span class="core_txt_title_info">{{$store.state.messages.core.secondaryTitle}}</span>
                 </div>
                 <p>{{$store.state.messages.core.infomation}}</p>
                 <div class="core_txt_title">
@@ -46,6 +46,13 @@
                 </div>
                 <p>{{$store.state.messages.core.technologyInfomation}}</p>
             </div>
+            <div class="index_title" id="#product">
+                {{$store.state.messages.product.title}}
+                <div>
+
+                </div>
+            </div>
+
             <div class="product" v-for="item in $store.state.messages.product.txt">
                 <img :src="img(item.img)"/>
                 <div class="product_title">
@@ -297,7 +304,7 @@
                 width: 100%;
             }
             .core_txt {
-                margin: 0 30px;
+                margin: 40px 30px 0 30px;
                 padding-bottom: 40px;
                 font-size: 14px;
                 line-height: 26px;
@@ -520,6 +527,22 @@
 		background: #0e2e4e;
 	      color: #4d96e0;
 	    }
+        }
+    }
+    .core_title{
+        text-align: center;
+        margin-top: 30px;
+        color: #0e2e4e;
+        font-size: 18px;
+        position: relative;
+        div {
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #153e65;;
+            left: 50%;
+            margin-left: -20px;
+            top: 32px;
         }
     }
 
