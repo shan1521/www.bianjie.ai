@@ -30,7 +30,7 @@
             </div>
             <img :src="img($store.state.messages.about.img)"/>
         </div>
-        <div class="core">
+        <div class="core" id="#core">
             <img class="core_img" src="../assets/app/core.jpg"/>
             <div class="core_title">
                 {{$store.state.messages.core.title}}
