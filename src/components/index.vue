@@ -505,11 +505,11 @@
             }
         }
         .bg {
-            height: 930px;
+            height: 1100px;
             background: #fff;
         }
         .bgcr {
-            height: 460px;
+            height: 400px;
             background: url('../../public/dynamicPc.jpg') no-repeat center center;
             background-color: #0e2e4e;
         }
@@ -519,7 +519,7 @@
             background-color: #0e2e4e;
             height: 850px;
             .core_title {
-                margin-top: 80px;
+                margin-top: 90px;
                 color: #94c0ec;
                 font-size: 28px;
                 position: relative;
@@ -555,7 +555,7 @@
                 }
             }
             .product {
-                margin-top: 160px;
+                margin-top: 200px;
             }
             .product_warp {
                 overflow: hidden;
@@ -566,7 +566,7 @@
                     position: relative;
                     .product_img{
                         width: 100%;
-                        height: 760px;
+                        height: 850px;
                         img{
                             width: 100%;
                             height: 100%;
