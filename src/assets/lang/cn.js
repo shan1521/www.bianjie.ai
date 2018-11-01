@@ -47,13 +47,11 @@ export const message = {
             },
             {
                 "title": "BEAN",
-                "title1": "<span >B</span>lockchain <span>E</span>dge <span >A</span>nalytics <span >N</span>etwork",
                 "bgImg": "../public/base_01.jpg",
                 "img": "../public/base_01_01.png",
-                "txt": " 区块链智能信息边缘分析网络是基于区块链技术的分布式智能信息分析和数据交换网络。BEAN提供保护数据隐私、" +
-                "尊重数据拥有者权利的加密分布式智能分析服务。" +
-                "<div>边界基于BEAN 开发出支持医疗数据分析的应用，为医疗数据提供链上基于语义技术智能抽取。这些技术会让非结构化医疗数据在保护隐私的前提下进行结构化处理" +
-                "，使得链上分布式业务协作时数据搜索、交换以及使用变成可能。</div>"
+                "txt": "区块链智能信息边缘分析网络BEAN ( Blockchain Edge Analytics Network)，是基于 <a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 技术为大数据分析打造的分布式智能信息分析和数据交换网络，通过AI和区块链技术释放数据价值，支持数据可信分析和交换。" +
+                "<div>BEAN还可以通过IRIS Hub和其他区块链网络交互，利用传统分布式人工智能研究中的模型并行性和SOA设计模式，将区块链技术应用到分布式分析服务，实现与传统商业系统的链上链下通联，提供保护数据隐私、尊重数据拥有者权利的加密智能分析服务。</div>" +
+                "边界智能基于BEAN开发出支持医疗数据分析的应用，为医疗数据提供链上基于语义技术智能抽取。这些技术会让非结构化医疗数据在保护隐私的前提下进行结构化处理，使得链上分布式业务协作时数据搜索、交换以及使用变成可能。"
             },
             {
                 "title": "医药知识库",
