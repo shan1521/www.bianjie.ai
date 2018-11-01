@@ -9,9 +9,7 @@
                 <img class="en" src="../assets/app/en.png"/>
             </div>
             <img class="index_logo" :src="img($store.state.messages.index.logo[0].src)"/>
-            <router-link to="app#about">
                 <img class="index_btn" src="../assets/app/btn.png"/>
-            </router-link>
             <div class="index_down" v-show="is">
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
@@ -27,22 +25,34 @@
             </div>
             <div class="about_txt">
                 <div v-for="item in $store.state.messages.about.txt">
-                    {{item}}
+                   <span v-html="item"></span>
                 </div>
             </div>
             <img :src="img($store.state.messages.about.img)"/>
         </div>
-        <div class="core">
+        <div class="core" id="#core">
             <img class="core_img" src="../assets/app/core.jpg"/>
-            <div class="index_title" id="#product">
-                {{$store.state.messages.product.title}}
+            <div class="core_title">
+                {{$store.state.messages.core.title}}
                 <div></div>
             </div>
             <div class="core_txt">
+                <div class="core_txt_title">
+                    <span class="core_txt_title_info">{{$store.state.messages.core.secondaryTitle}}</span>
+                </div>
+                <p>{{$store.state.messages.core.infomation}}</p>
+                <div class="core_txt_title">
+                    <span class="core_txt_title_info_bottom">{{$store.state.messages.core.technologyTitle}}</span>
+                </div>
+                <p>{{$store.state.messages.core.technologyInfomation}}</p>
+            </div>
+            <div class="index_title" id="#product">
+                {{$store.state.messages.product.title}}
                 <div>
-                    {{$store.state.messages.core.txt}}
+
                 </div>
             </div>
+
             <div class="product" v-for="item in $store.state.messages.product.txt">
                 <img :src="img(item.img)"/>
                 <div class="product_title">
@@ -152,9 +162,6 @@
                 src = src.split('public/')[0] + 'public/app/' + src.split('public/')[1];
                 return src;
             },
-            txt(text) {
-                return text.split('<div>')[0];
-            },
             roll() {
                 this.is = false;
                 if (document.getElementById(this.$route.hash)) {
@@ -189,7 +196,7 @@
     }
 </script>
 
-<style lang='less'>
+<style lang='less' scoped>
     .app {
         .index1 {
             text-align: center;
@@ -297,15 +304,32 @@
                 width: 100%;
             }
             .core_txt {
-                margin: 0 30px;
+                margin: 40px 30px 0 30px;
                 padding-bottom: 40px;
                 font-size: 14px;
                 line-height: 26px;
                 color: #696e75;
-                div {
-                    text-indent: 30px;
-                    text-align: justify;
+                .core_txt_title{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
                 }
+                .core_txt_title_info{
+                    width: 140px;
+                    display: inline-block;
+                    background: #1d61a5;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+                .core_txt_title_info_bottom{
+                    margin-top: 10px;
+                    width: 140px;
+                    display: inline-block;
+                    background: #1d61a5;
+                    border-radius: 4px;
+                    color: #fff;
+                }
+
             }
             .product {
                 text-align: center;
@@ -333,6 +357,22 @@
                         text-indent: 30px;
                         text-align: justify;
                     }
+                }
+            }
+            .core_title{
+                text-align: center;
+                margin-top: 30px;
+                color: #0e2e4e;
+                font-size: 18px;
+                position: relative;
+                div {
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background: #153e65;;
+                    left: 50%;
+                    margin-left: -20px;
+                    top: 32px;
                 }
             }
         }
@@ -476,9 +516,7 @@
                     line-height: 26px;
                     color: #696e75;
                 }
-                .div{
-                   color: #1d61a5;
-                }
+
             }
             .validator_btn {
                 margin-top: 30px;
@@ -507,6 +545,7 @@
 	    }
         }
     }
+
 
     html, body {
         min-width: auto !important;
