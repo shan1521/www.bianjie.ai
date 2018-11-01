@@ -40,8 +40,9 @@ export const message = {
                 "title": "IRISnet",
                 "bgImg": "../public/base_03.jpg",
                 "img": "../public/base_03_03.png",
-                "txt": " <a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 跨链网络是未来实现分布式商业生态系统的基础设施，边界智能基于 <a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 技术自主研发的产品BEAN利用传统的分布式人工智能研究中的模型并行性和SOA设计模式，将区块链技术应用到分布式分析服务，是保护数据隐私、尊重数据拥有者权利的加密智能分析服务，更是在医疗健康大数据领域的的创新实践。" +
-                "<div>就像忠实地在人间和天堂传递信息的希腊彩虹女神Iris，<a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'>IRISnet</a> 的目标是成为链接数字经济和实体经济，支持构建复杂分布式商业应用的下一代公链。</div>"
+                "txt": "<a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'> IRISnet </a>是边界智能作为核心开发团队与Cosmos/Tendermint的研发团队合作打造的区块链跨链网络，专注于为分布式应用提供基础设施和协议，也将是Cosmos网络生态中的第一个区域性枢纽(Hub)。" +
+                "<div><a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'> IRISnet </a>将面向服务的基础设施融入到Cosmos网络中，支持对包括公链、联盟链以及现有传统商业系统的集成从而实现互联互通。通过对Cosmos网络的跨链协议进行创新扩展，<a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'> IRISnet </a>允许数据及复杂计算跨异构网络被调用。" +
+                "</div><div>就像忠实地在人间和天堂传递信息的希腊彩虹女神Iris，<a style='color: #72ACE3' href='https://www.irisnet.org' target='_blank'> IRISnet </a>的目标是成为链接数字经济和实体经济，支持构建复杂分布式商业应用的下一代公链。</div>"
 
             },
             {

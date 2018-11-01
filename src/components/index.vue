@@ -79,7 +79,9 @@
                 </div>
                 <div class="product_warp">
                     <div class="product_warp_div" v-for="item in $store.state.messages.product.txt">
-                        <img :src="item.bgImg"/>
+                        <div class="product_img">
+                            <img :src="item.bgImg"/>
+                        </div>
                         <div class="product_content">
                             <div class="product_content_title">
                                 <div class="product_content_title_txt">
@@ -495,7 +497,7 @@
             background-color: #0e2e4e;
             height: 850px;
             .core_title {
-                margin-top: 90px;
+                margin-top: 80px;
                 color: #94c0ec;
                 font-size: 28px;
                 position: relative;
@@ -531,7 +533,7 @@
                 }
             }
             .product {
-                margin-top: 200px;
+                margin-top: 160px;
             }
             .product_warp {
                 overflow: hidden;
@@ -540,6 +542,14 @@
                     float: left;
                     margin-right: 40px;
                     position: relative;
+                    .product_img{
+                        width: 100%;
+                        height: 760px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                     .product_content {
                         position: absolute;
                         width: 100%;
@@ -575,7 +585,7 @@
                             margin-top: 38px;
                             text-indent: 34px;
                             text-align: justify;;
-                            line-height: 28px;
+                            line-height: 27px;
                             margin-left: 50px;
                             width: 270px;
                             color: #696e75
