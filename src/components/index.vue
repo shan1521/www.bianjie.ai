@@ -17,7 +17,9 @@
             </div>
             <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
                 <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
-                    <img class="index1_logo" :src="item.src"/>
+                    <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
+                        <img class="index1_logo" :src="item.src"/>
+                    </a>
                     <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
                        v-show="index==1">
                         {{ $store.state.messages.validator.btnText}}
@@ -419,6 +421,13 @@
                 width: 1200px;
                 padding-top:80px;
             }
+            .irisnet_href{
+                position: relative;
+                left: -70%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #4cffff;
+            }
             .index1_logo_btn {
                 cursor: pointer;
                 font-size: 14px;
@@ -483,7 +492,7 @@
             }
         }
         .bg {
-            height: 1100px;
+            height: 1160px;
             background: #fff;
         }
         .bgcr {
@@ -512,6 +521,7 @@
             }
             .core_txt {
                 display: flex;
+                flex-direction: column;
                 margin-left: 50px;
                 text-align: justify;
                 color: #fff;
@@ -523,12 +533,10 @@
                     width: 160px;
                     height: 30px;
                     line-height: 30px;
-                    background: #1d61a5;
-                    text-align: center;
-                    border-radius: 4px;
+                    color: #94c0ec;
                 }
                 .core_txt_info{
-                    padding-left: 30px;
+                    margin-top: 10px;
                     width: 300px;
                 }
             }
@@ -760,5 +768,11 @@
 	      color: #4d96e0;
 	    }
         }
+    }
+    .active_cursor{
+        cursor: pointer;
+    }
+    .default_cursor{
+        cursor: auto;
     }
 </style>  

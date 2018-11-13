@@ -2,8 +2,12 @@ export const message = {
     "index": {
         "logo": [
             {
-                "src": '../public/index_logo_cn.jpg',
+                "src": '../public/banner_01.jpg',
                 "is": true
+            },
+            {
+                "src": '../public/index_logo_cn.jpg',
+                "is": false
             },
             {
                 "src": '../public/index_logo_cn1.jpg',
@@ -163,6 +167,12 @@ export const message = {
             }
         ]
     },
+    'irisnetInfo':{
+        "title":"IRIS Network",
+        "irisnetInfoitem":'面向服务的区块链跨链网络',
+        'irisnetInfolist':'新一代分布式商业生态的技术基础',
+        "irisnetHref":'www.irisnetwork.cn'
+    },
     "validator":{
         "txt":[
             "是基于权益证明（PoS）Tendermint共识算法",
@@ -170,6 +180,7 @@ export const message = {
             "边界智能作为Cosmos的Hub验证节点",
             "旨在维护Cosmos网络的安全性，促进生态发展！"
         ],
+        'irisnetHref':"https://www.irisnetwork.cn/",
         "btnText":"了解Validator",
         "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127"
     },
