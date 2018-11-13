@@ -15,7 +15,7 @@
                     </router-link>
                 </div>
             </div>
-            <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
+            <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="active" style="height: 100%">
                 <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
                     <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
                         <img class="index1_logo" :src="item.src"/>
@@ -31,7 +31,7 @@
                 <img src="../assets/right.png" style="float: right;" @click="next"/>
             </div>
             <div class="mint-swipe-indicators" style="display: block">
-                <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'is-active':item.is}"
+                <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'active':item.active}"
                      class="mint-swipe-indicator" @click="goto(index)"></div>
             </div>
         </div>
@@ -258,7 +258,7 @@
         name: 'index',
         data() {
             return {
-                is: false
+                active: false
             }
         },
         methods: {
@@ -284,9 +284,9 @@
             },
             imgChangge(index, oldIndex) {
                 this.$store.state.messages.index.logo.forEach(v => {
-                    v.is = false;
+                    v.active = false;
                 })
-                this.$store.state.messages.index.logo[index].is = true
+                this.$store.state.messages.index.logo[index].active = true
             },
             goto(index) {
                 this.$refs.swipe.goto(index)
@@ -300,7 +300,7 @@
         },
         mounted() {
             this.roll();
-            this.is = true;
+            this.active = true;
         },
         watch: {
             '$route': 'roll'
@@ -340,7 +340,7 @@
         .mint-swipe-indicators {
             bottom: 6%;
             display: none;
-            .is-active {
+            .active {
                 background: #4d96df;
                 opacity: 1;
             }

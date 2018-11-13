@@ -3,15 +3,15 @@ export const message = {
         "logo": [
             {
                 "src": '../public/banner_01.jpg',
-                "is": true
+                "active": true
             },
             {
                 "src": '../public/index_logo_cn.jpg',
-                "is": false
+                "active": false
             },
             {
                 "src": '../public/index_logo_cn1.jpg',
-                "is": false
+                "active": false
             },
         ],
         "title": [
