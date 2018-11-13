@@ -15,7 +15,7 @@
                     </router-link>
                 </div>
             </div>
-            <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="active" style="height: 100%">
+            <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active" style="height: 100%">
                 <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
                     <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
                         <img class="index1_logo" :src="item.src"/>
@@ -282,7 +282,7 @@
             outHide(item) {
                 item.img = item.src;
             },
-            imgChangge(index, oldIndex) {
+            imgChange(index, oldIndex) {
                 this.$store.state.messages.index.logo.forEach(v => {
                     v.active = false;
                 })

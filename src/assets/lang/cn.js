@@ -170,8 +170,8 @@ export const message = {
     'irisnetInfo':{
         "title":"IRIS Network",
         "irisnetInfoItem":'面向服务的区块链跨链网络',
-        'irisnetInfoList':'新一代分布式商业生态的技术基础',
-        "irisnetHref":'www.irisnetwork.cn'
+        'irisnetInfoIntroduce':'新一代分布式商业生态的技术基础',
+        "irisnetWebsiteUrl":'www.irisnetwork.cn'
     },
     "validator":{
         "txt":[
