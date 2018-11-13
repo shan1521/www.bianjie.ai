@@ -50,8 +50,8 @@
                     <img src="../../public/mobilebanner.jpg">
                 </div>
                 <p class="irisnet_title">{{$store.state.messages.irisnetInfo.title}}</p>
-                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoitem}}</p>
-                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfolist}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoItem}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoList}}</p>
                 <div class="irisnet_link_btn">
                     <a href="https://www.irisnetwork.cn/" target="_blank">
                         <span>{{$store.state.messages.irisnetInfo.irisnetHref}}</span>
