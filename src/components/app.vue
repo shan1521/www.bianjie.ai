@@ -8,7 +8,7 @@
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
                 <img class="en" src="../assets/app/en.png"/>
             </div>
-            <img class="index_logo" :src="img($store.state.messages.index.logo[0].src)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
                 <img class="index_btn" src="../assets/app/btn.png"/>
             <div class="index_down" v-show="is">
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
@@ -46,11 +46,22 @@
                 </div>
                 <p>{{$store.state.messages.core.technologyInfomation}}</p>
             </div>
+            <div class="irisnet_info_container">
+                <div class="mobilebanner_img_container">
+                    <img src="../../public/mobilebanner.jpg">
+                </div>
+                <p class="irisnet_title">{{$store.state.messages.irisnetInfo.title}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoItem}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoIntroduce}}</p>
+                <div class="irisnet_link_btn">
+                    <a href="https://www.irisnetwork.cn/" target="_blank">
+                        <span>{{$store.state.messages.irisnetInfo.irisnetWebsiteUrl}}</span>
+                    </a>
+                </div>
+            </div>
             <div class="index_title" id="#product">
                 {{$store.state.messages.product.title}}
-                <div>
-
-                </div>
+                <div></div>
             </div>
 
             <div class="product" v-for="item in $store.state.messages.product.txt">
@@ -303,6 +314,9 @@
             .core_img {
                 width: 100%;
             }
+            p{
+                text-indent: 20px;
+            }
             .core_txt {
                 margin: 40px 30px 0 30px;
                 padding-bottom: 40px;
@@ -310,24 +324,16 @@
                 line-height: 26px;
                 color: #696e75;
                 .core_txt_title{
-                    text-align: center;
                     margin-bottom: 10px;
                     margin-top: 20px;
                 }
                 .core_txt_title_info{
-                    width: 140px;
-                    display: inline-block;
-                    background: #1d61a5;
-                    border-radius: 4px;
-                    color: #fff;
+                    color: #1d61a5;
                 }
                 .core_txt_title_info_bottom{
                     margin-top: 10px;
-                    width: 140px;
-                    display: inline-block;
-                    background: #1d61a5;
                     border-radius: 4px;
-                    color: #fff;
+                    color: #1d61a5;
                 }
 
             }
@@ -528,7 +534,7 @@
                     color: #fff;
                     background: #1d61a5;
                     border-radius: 6px;
-                    padding: 10px 20px;
+                    padding: 10px 40px;
                 }
             }
         }
@@ -545,7 +551,44 @@
 	    }
         }
     }
-
+    .irisnet_info_container{
+        text-align: center;
+        .irisnet_title{
+            text-indent: 0 !important;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #696e75;
+        }
+        .irisnet_info{
+            text-indent: 0 !important;
+            text-align: center;
+            font-size: 14px;
+            height: 26px;
+            line-height: 26px;
+            color: #696e75;
+        }
+        .irisnet_link_btn{
+            text-align: center;
+            margin-top: 30px;
+            a{
+                text-align: center;
+                cursor: pointer;
+                font-size: 14px;
+                color: #fff;
+                background: #1d61a5;
+                border-radius: 6px;
+                padding: 10px 20px;
+            }
+        }
+        .mobilebanner_img_container{
+            width: 100%;
+            height: 178px;
+            img{
+                width: 100%;
+            }
+        }
+    }
 
     html, body {
         min-width: auto !important;
