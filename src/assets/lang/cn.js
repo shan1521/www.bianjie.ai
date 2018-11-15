@@ -21,6 +21,7 @@ export const message = {
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "核心技术", "href": "/#core"},
             {"txt": "关于我们", "href": "/#about"},
+
         ]
     },
     "about": {
