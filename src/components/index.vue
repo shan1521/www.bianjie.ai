@@ -6,7 +6,7 @@
                     <router-link to="#" tag="div" class="head_img">
                         <img @click="scroll(0)" src="../assets/logo.png"/>
                     </router-link>
-                    <router-link class="head_item validator" key="310" to="/validators" tag="div">Validators</router-link>
+                    <router-link class="head_item validator" key="310" to="/validators" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                     <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title"
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
@@ -15,13 +15,13 @@
 
                 </div>
             </div>
-            <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active" style="height: 100%">
+            <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active">
                 <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
                     <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
                         <img class="index1_logo" :src="item.src"/>
                     </a>
                     <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
-                       v-show="index==1">
+                       v-show="index==2">
                         {{ $store.state.messages.validator.btnText}}
                     </a>
                 </swipe-item>
@@ -216,7 +216,13 @@
                     <div class="partner_title_across"></div>
                 </div>
                 <div class="partner_img">
-                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
+                        <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                    </a>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
+                        <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                    </a>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
                         <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                     </a>
                 </div>
@@ -337,6 +343,7 @@
     }
 
     .pc {
+
         .mint-swipe-indicators {
             bottom: 6%;
             display: none;
@@ -399,7 +406,7 @@
                     .validator{
                         cursor: pointer;
                         height: 0.36rem;
-                        background: #3147F2;
+                        background: #1d61a5;
                         color: #ffffff;
                         text-align: center;
                         line-height: 0.36rem;
@@ -411,7 +418,6 @@
                         -ms-border-radius: 0.04rem;
                         -o-border-radius: 0.04rem;
                         border-radius: 0.04rem;
-                        border:0.02rem solid #6274FF;
                         padding:0 0.12rem;
                         margin-left:0.24rem;
                         &:hover{
@@ -559,7 +565,7 @@
                 }
                 .core_txt_info{
                     margin-top: 10px;
-                    width: 300px;
+                    width: 530px;
                 }
             }
             .product {
@@ -797,4 +803,4 @@
     .default_cursor{
         cursor: auto;
     }
-</style>  
+</style>

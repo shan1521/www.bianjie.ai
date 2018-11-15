@@ -112,9 +112,21 @@
                 <div></div>
             </div>
             <div class="partner_div">
-                <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
-                    <img :src="item.img"/>
-                </a>
+                <div>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
+                        <img :src="item.img"/>
+                    </a>
+                </div>
+                <div>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
+                        <img :src="item.img"/>
+                    </a>
+                </div>
+                <div>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
+                        <img :src="item.img"/>
+                    </a>
+                </div>
             </div>
             <div class="validator">
                 <img src="../assets/app/cosmos.jpg"/>
@@ -294,7 +306,7 @@
         .about {
             text-align: center;
             img {
-                width: 360px;
+                width: 315px;
                 padding-bottom: 42px;
             }
             .about_txt {
@@ -456,14 +468,21 @@
                 margin-top: 0;
             }
             .partner_div {
-                margin: 0 auto;
-                text-align: center;
+
+                text-align: left;
                 font-size: 0;
-                width: 80%;
+                margin: 20px 10px 0 10px;
+                div{
+                    width:100%;
+                    margin-bottom: 10px;
+                    a{
+                        display: inline-block;
+                        width: 25%;
+                        text-align: center;
+                    }
+                }
                 img {
                     width: 80px;
-                    margin-right: 10px;
-                    margin-top: 10px;
                 }
             }
             .index_title1 {
@@ -478,6 +497,8 @@
                 margin-top: 42px;
             }
             .address {
+                width: 72%;
+                margin: 0 auto;
                 text-align: center;
                 font-size: 14px;
                 color: #72777e;

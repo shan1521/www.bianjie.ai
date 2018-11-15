@@ -34,9 +34,9 @@ export const message = {
     "core": {
         "title": "核心技术",
         "secondaryTitle": "跨链服务",
-        "infomation": "支持异构网络间数字资产流动，以及数据和复杂计算的可信跨链调用",
+        "infomation": "支持异构网络间数字资产流动，以及数据和复杂计算的可信跨链调用。",
         "technologyTitle": "分布式智能技术",
-        "technologyInfomation": "运用人工智能与区块链技术，保护数据隐私、尊重数据所有权，并支持数据依靠智能算法安全分布式地使用"
+        "technologyInfomation": "运用人工智能与区块链技术，保护数据隐私、尊重数据所有权，并支持数据依靠智能算法安全分布式地使用。"
     },
     "product": {
         "title": "产品中心",
@@ -112,67 +112,74 @@ export const message = {
     "partner": {
         "title": "合作伙伴",
         "img": [
-            {
-                "img": "../public/partner/fxth.jpg",
-                "img_selected": "../public/partner/fxth2.jpg",
-                "href": "http://www.tonghaocapital.com/"
-            },
-            {
-                "img": "../public/partner/wx.png",
-                "img_selected": "../public/partner/wx2.png",
-                "href": "http://www.wxblockchain.com/"
-            },
-            {
-                "img": "../public/partner/wy.png",
-                "img_selected": "../public/partner/wy2.png",
-                "href": "https://www.wancloud.io/"
-            },
-            {
-                "img": "../public/partner/cosmos.png",
-                "img_selected": "../public/partner/cosmos2.png",
-                "href": "https://cosmos.network/"
-            },
-            {
-                "img": "../public/partner/ms.png",
-                "img_selected": "../public/partner/ms2.png",
-                "href": "http://www.minshenglife.com/templet/default/"
-            },
-            {
-                "img": "../public/partner/hdf.png",
-                "img_selected": "../public/partner/hdf2.png",
-                "href": "http://www.haodf.com/"
-            },
-            {
-                "img": "../public/partner/nxyl.png",
-                "img_selected": "../public/partner/nxyl2.png"
-            },
-            {
-                "img": "../public/partner/bjdx.png",
-                "img_selected": "../public/partner/bjdx2.png",
-                "href": "http://www.bjmu.edu.cn/"
-            },
-            {
-                "img": "../public/partner/qhdx.png",
-                "img_selected": "../public/partner/qhdx2.png",
-                "href": "http://www.med.tsinghua.edu.cn/"
-            },
-            {
-                "img": "../public/partner/shjt.png",
-                "img_selected": "../public/partner/shjt2.png",
-                "href": "http://www.shsmu.edu.cn/"
-            },
-            {
-                "img": "../public/partner/pu.png",
-                "img_selected": "../public/partner/pu2.png",
-                "href": "https://www.purdue.edu/"
-            }
+            [
+                {
+                    "img": "../public/partner/fxth.jpg",
+                    "img_selected": "../public/partner/fxth2.jpg",
+                    "href": "http://www.tonghaocapital.com/"
+                },
+                {
+                    "img": "../public/partner/wx.png",
+                    "img_selected": "../public/partner/wx2.png",
+                    "href": "http://www.wxblockchain.com/"
+                },
+                {
+                    "img": "../public/partner/wy.png",
+                    "img_selected": "../public/partner/wy2.png",
+                    "href": "https://www.wancloud.io/"
+                },
+                {
+                    "img": "../public/partner/cosmos.png",
+                    "img_selected": "../public/partner/cosmos2.png",
+                    "href": "https://cosmos.network/"
+                },
+            ],
+            [
+                {
+                    "img": "../public/partner/ms.png",
+                    "img_selected": "../public/partner/ms2.png",
+                    "href": "http://www.minshenglife.com/templet/default/"
+                },
+                {
+                    "img": "../public/partner/hdf.png",
+                    "img_selected": "../public/partner/hdf2.png",
+                    "href": "http://www.haodf.com/"
+                },
+                {
+                    "img": "../public/partner/nxyl.png",
+                    "img_selected": "../public/partner/nxyl2.png"
+                },
+                {
+                    "img": "../public/partner/bjdx.png",
+                    "img_selected": "../public/partner/bjdx2.png",
+                    "href": "http://www.bjmu.edu.cn/"
+                },
+            ],
+            [
+                {
+                    "img": "../public/partner/qhdx.png",
+                    "img_selected": "../public/partner/qhdx2.png",
+                    "href": "http://www.med.tsinghua.edu.cn/"
+                },
+                {
+                    "img": "../public/partner/shjt.png",
+                    "img_selected": "../public/partner/shjt2.png",
+                    "href": "http://www.shsmu.edu.cn/"
+                },
+                {
+                    "img": "../public/partner/pu.png",
+                    "img_selected": "../public/partner/pu2.png",
+                    "href": "https://www.purdue.edu/"
+                }
+            ]
+
         ]
     },
     'irisnetInfo':{
         "title":"IRIS Network",
         "irisnetInfoItem":'面向服务的区块链跨链网络',
         'irisnetInfoIntroduce':'新一代分布式商业生态的技术基础',
-        "irisnetWebsiteUrl":'www.irisnetwork.cn'
+        "irisnetWebsiteUrl":'www.irisnet.org'
     },
     "validator":{
         "txt":[
@@ -183,13 +190,14 @@ export const message = {
         ],
         'irisnetHref':"https://www.irisnetwork.cn/",
         "btnText":"了解Validator",
-        "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127"
+        "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127",
+        "headerValidatorBtnText":"Cosmos验证人"
     },
     "contact": {
         "title": "联系我们",
         "address": {
             "txt": "地址",
-            "val": "上海市浦东新区张江高科技园区博霞路 22 号 S 座 2 层 202-203 室"
+            "val": "上海市浦东新区张江高科技园区博霞路22号S座2层202-203室"
         },
         "zip_code": {
             "txt": "邮编",
