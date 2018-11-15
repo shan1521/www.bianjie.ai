@@ -6,7 +6,6 @@
                 <img class="down" v-show="is" src="../assets/app/x.png" style="width: 16px;margin-top: 22px;"
                      @click="is=false"/>
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
-                <img class="en" src="../assets/app/en.png"/>
             </div>
             <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
                 <img class="index_btn" src="../assets/app/btn.png"/>
