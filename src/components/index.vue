@@ -6,7 +6,7 @@
                     <router-link to="#" tag="div" class="head_img">
                         <img @click="scroll(0)" src="../assets/logo.png"/>
                     </router-link>
-                    <router-link class="head_item validator" key="310" to="/validators" tag="div">Validators</router-link>
+                    <router-link class="head_item validator" key="310" to="/validators" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                     <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title"
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
@@ -15,11 +15,13 @@
 
                 </div>
             </div>
-            <swipe ref="swipe" class="my-swipe" @change="imgChangge" :auto="15000" v-if="is" style="height: 100%">
+            <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active">
                 <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
-                    <img class="index1_logo" :src="item.src"/>
+                    <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
+                        <img class="index1_logo" :src="item.src"/>
+                    </a>
                     <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
-                       v-show="index==1">
+                       v-show="index==2">
                         {{ $store.state.messages.validator.btnText}}
                     </a>
                 </swipe-item>
@@ -29,7 +31,7 @@
                 <img src="../assets/right.png" style="float: right;" @click="next"/>
             </div>
             <div class="mint-swipe-indicators" style="display: block">
-                <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'is-active':item.is}"
+                <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'active':item.active}"
                      class="mint-swipe-indicator" @click="goto(index)"></div>
             </div>
         </div>
@@ -214,7 +216,13 @@
                     <div class="partner_title_across"></div>
                 </div>
                 <div class="partner_img">
-                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img">
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
+                        <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                    </a>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
+                        <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                    </a>
+                    <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
                         <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                     </a>
                 </div>
@@ -256,7 +264,7 @@
         name: 'index',
         data() {
             return {
-                is: false
+                active: false
             }
         },
         methods: {
@@ -280,11 +288,11 @@
             outHide(item) {
                 item.img = item.src;
             },
-            imgChangge(index, oldIndex) {
+            imgChange(index, oldIndex) {
                 this.$store.state.messages.index.logo.forEach(v => {
-                    v.is = false;
+                    v.active = false;
                 })
-                this.$store.state.messages.index.logo[index].is = true
+                this.$store.state.messages.index.logo[index].active = true
             },
             goto(index) {
                 this.$refs.swipe.goto(index)
@@ -298,7 +306,7 @@
         },
         mounted() {
             this.roll();
-            this.is = true;
+            this.active = true;
         },
         watch: {
             '$route': 'roll'
@@ -335,10 +343,11 @@
     }
 
     .pc {
+
         .mint-swipe-indicators {
             bottom: 6%;
             display: none;
-            .is-active {
+            .active {
                 background: #4d96df;
                 opacity: 1;
             }
@@ -397,7 +406,7 @@
                     .validator{
                         cursor: pointer;
                         height: 0.36rem;
-                        background: #3147F2;
+                        background: #1d61a5;
                         color: #ffffff;
                         text-align: center;
                         line-height: 0.36rem;
@@ -409,7 +418,6 @@
                         -ms-border-radius: 0.04rem;
                         -o-border-radius: 0.04rem;
                         border-radius: 0.04rem;
-                        border:0.02rem solid #6274FF;
                         padding:0 0.12rem;
                         margin-left:0.24rem;
                         &:hover{
@@ -440,6 +448,13 @@
             .index1_logo {
                 width: 1200px;
                 padding-top:80px;
+            }
+            .irisnet_href{
+                position: relative;
+                left: -70%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #4cffff;
             }
             .index1_logo_btn {
                 cursor: pointer;
@@ -505,7 +520,7 @@
             }
         }
         .bg {
-            height: 1100px;
+            height: 1160px;
             background: #fff;
         }
         .bgcr {
@@ -534,6 +549,7 @@
             }
             .core_txt {
                 display: flex;
+                flex-direction: column;
                 margin-left: 50px;
                 text-align: justify;
                 color: #fff;
@@ -545,13 +561,11 @@
                     width: 160px;
                     height: 30px;
                     line-height: 30px;
-                    background: #1d61a5;
-                    text-align: center;
-                    border-radius: 4px;
+                    color: #94c0ec;
                 }
                 .core_txt_info{
-                    padding-left: 30px;
-                    width: 300px;
+                    margin-top: 10px;
+                    width: 530px;
                 }
             }
             .product {
@@ -783,4 +797,10 @@
 	    }
         }
     }
-</style>  
+    .active_cursor{
+        cursor: pointer;
+    }
+    .default_cursor{
+        cursor: auto;
+    }
+</style>
