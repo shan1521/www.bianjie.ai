@@ -7,7 +7,6 @@
                         <img @click="scroll(0)" src="../assets/logo.png"/>
                     </router-link>
                     <div class="head_Language">
-                        <span class="head_language_seleted">CN</span>/<span>EN</span>
                     </div>
                     <router-link class="head_item" v-for="(item,index) in $store.state.messages.index.title"
                                  :key="index" :to="item.href" tag="div">
