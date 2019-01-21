@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="core">
+        <div class="core" id="#core">
             <div class="center">
                 <div class="core_title">
                     {{$store.state.messages.core.title}}
