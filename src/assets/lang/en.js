@@ -1,7 +1,7 @@
 
 export const message={
     "index" : {
-        "logo":'../public/index_logo_cn.jpg',
+        "logo":'../public/index_logo_cn.png',
         "title":[
             {"txt":"关于我们"},
             {"txt":"产品中心"},

@@ -2,11 +2,11 @@ export const message = {
     "index": {
         "logo": [
             {
-                "src": '../public/banner_01.jpg',
+                "src": '../public/banner_01.png',
                 "active": true
             },
             {
-                "src": '../public/index_logo_cn.jpg',
+                "src": '../public/index_logo_cn.png',
                 "active": false
             },
             {
@@ -19,7 +19,7 @@ export const message = {
             {"txt": "合作伙伴", "href": "/#partner"},
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "产品中心", "href": "/#product"},
-            {"txt": "核心技术", "href": "/#core"},
+            {"txt": "研发技术", "href": "/#core"},
             {"txt": "关于我们", "href": "/#about"},
 
         ]
@@ -28,11 +28,11 @@ export const message = {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的核心开发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴。边界智能拥有区块链领域的前沿技术研发和实践能力，并在人工智能、大数据分析拥有核心能力。',
+            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的研发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴。边界智能拥有区块链领域的跨链技术研发和实践能力，并拥有人工智能和大数据分析的研发和实践能力。',
         ]
     },
     "core": {
-        "title": "核心技术",
+        "title": "研发技术",
         "secondaryTitle": "跨链服务",
         "infomation": "支持异构网络间数字资产流动，以及数据和复杂计算的可信跨链调用。",
         "technologyTitle": "分布式智能技术",

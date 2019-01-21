@@ -175,7 +175,7 @@
                 developer: 'IRISnet开发者',
                 developerContent: '边界智能作为开发团队打造了IRISnet--作为Cosmos生态中的第一个区域性枢纽,它将专注于为分布式商业应用提供基础设施和协议.',
                 cooperateDeveloper: 'COSMOS合作开发者',
-                cooperateDeveloperContent: '边界一直是Cosmos在中国最有影响力的核心技术贡献者,从第一版测试网gaia-1000开始,我们一直作为验证人帮助Cosmos不断升级,见证它的成长.',
+                cooperateDeveloperContent: '边界智能是Cosmos在中国非常有影响力的研发技术贡献者,从起步的测试网gaia-1000开始，我们一直作为验证人帮助Cosmos不断升级,见证它的成长.',
                 chooseUs: '选择边界智能',
                 chooseUsTitle: '在COSMOS测试网络找到我们',
                 provide: '我们提供',
