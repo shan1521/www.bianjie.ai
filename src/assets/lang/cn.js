@@ -28,7 +28,7 @@ export const message = {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的核心开发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴。边界智能拥有区块链领域最前沿的技术研发和实践能力，并在人工智能、大数据分析拥有核心能力。',
+            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的核心开发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴。边界智能拥有区块链领域的前沿技术研发和实践能力，并在人工智能、大数据分析拥有核心能力。',
         ]
     },
     "core": {
