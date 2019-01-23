@@ -8,7 +8,6 @@
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
             </div>
             <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
-                <img class="index_btn" src="../assets/app/btn.png"/>
             <div class="index_down" v-show="is">
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
