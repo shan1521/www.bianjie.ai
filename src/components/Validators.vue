@@ -165,7 +165,7 @@
             return {
                 validatorsWrapVar: window.innerWidth > 500 ? 'personal_computer_validators_wrap' : 'mobile_validators_wrap',
                 device:window.innerWidth > 500,
-                lang: 'English',
+                lang: '',
                 cos: 'COSMOS验证节点',
                 safe: '安全的边界,放心的委托',
                 know1: 'Cosmos被誉为"区块链的互联网",它将成为区块链3.0',
@@ -189,7 +189,7 @@
                 placeholder: '请输入您的email地址',
                 emailError:'请输入正确的邮箱地址',
                 is: false,
-                currentMessage:message.cn.index.title.reverse(),
+                currentMessage:'',
                 email:'',
                 showError:false,
                 showSuccess:false,
@@ -197,7 +197,18 @@
             }
         },
         mounted(){
-
+            let userBrowserExplorerLanguage = navigator.language || navigator.userLanguage;
+            let settingLanguage= userBrowserExplorerLanguage.substr(0,2);
+            if(settingLanguage === 'zh'){
+                this.lang = 'English';
+                this.conversion('cn');
+            }else if(settingLanguage === 'en'){
+                this.conversion('en');
+                this.lang = '中文';
+            }else {
+                this.conversion('en');
+                this.lang = '中文';
+            }
         },
         methods: {
             conversion(lang) {
