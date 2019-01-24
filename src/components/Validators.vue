@@ -198,7 +198,7 @@
         },
         mounted(){
             let userBrowserExplorerLanguage = navigator.language || navigator.userLanguage;
-            let settingLanguage= userBrowserExplorerLanguage.substr(0,2);
+            let settingLanguage= userBrowserExplorerLanguage.substr(0,2).toLowerCase();
             if(settingLanguage === 'zh'){
                 this.lang = 'English';
                 this.conversion('cn');
