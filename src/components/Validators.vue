@@ -202,9 +202,6 @@
             if(settingLanguage === 'zh'){
                 this.lang = 'English';
                 this.conversion('cn');
-            }else if(settingLanguage === 'en'){
-                this.conversion('en');
-                this.lang = '中文';
             }else {
                 this.conversion('en');
                 this.lang = '中文';
