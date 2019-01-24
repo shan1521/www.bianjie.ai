@@ -29,7 +29,7 @@ export default {
         "index": {
             "logo": [
                 {
-                    "src": '../public/index_logo_cn.jpg',
+                    "src": '../public/index_logo_cn.png',
                     "is": true
                 },
                 {
