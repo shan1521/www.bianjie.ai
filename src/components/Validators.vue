@@ -84,8 +84,8 @@
                                         <span v-show="device"></span>
                                         <p class="content_title">
                                             Testnet Validator:
-                                            <a href="https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu"
-                                                style="color:#66A1FF;" target="_blank">
+                                            <a class="cosmos_explorer_link" href="https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu"
+                                                target="_blank">
                                                 https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu
                                             </a>
                                         </p>
@@ -514,6 +514,12 @@
                                             color:rgba(255,255,255,0.8);
                                             line-height:0.26rem;
                                             overflow-wrap: break-word;
+                                            .cosmos_explorer_link{
+                                                color:#66A1FF;
+                                                display: inline-block;
+                                                word-break: break-all;
+                                                word-wrap: break-word;
+                                            }
                                         }
                                     }
                                 }
