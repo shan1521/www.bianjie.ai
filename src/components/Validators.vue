@@ -655,7 +655,6 @@
                 align-items: center;
 
                 .banner {
-                    min-width:10rem;
 
 
 
@@ -682,7 +681,6 @@
                 .content_know {
                     height: 3rem;
                     .content_know_wrap {
-                        min-width:10rem;
 
                         img {
                             margin-right:0.36rem;
@@ -709,7 +707,6 @@
                     height: 7.4rem;
                     width: 100%;
                     .introduce_wrap_all {
-                        min-width:10rem;
                         .bianjie_introduce_top {
 
                             .introduce_title {
