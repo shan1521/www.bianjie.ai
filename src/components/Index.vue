@@ -3,7 +3,9 @@
         <div class="header_container">
             <div class="header_wrap">
                 <div class="header_logo_img">
-                    <img @click="scroll(0)" src="../assets/logo.png">
+                    <router-link to="#">
+                        <img @click="scroll(0)" src="../assets/logo.png">
+                    </router-link>
                 </div>
                 <div class="link_content">
                     <router-link class="header_item" v-for="(item,index) in $store.state.messages.index.title"
@@ -219,7 +221,7 @@
     import $ from 'jquery'
 
     export default {
-        name: 'Index1',
+        name: 'Index',
         data() {
             return {
                 active: false
