@@ -9,7 +9,7 @@
         name: 'app',
         methods: {
             resize(_this) {
-                _this.is = $(window).width() >= 520
+                _this.is = $(window).width() >= 900
                 if (_this.is) {
                    // _this.$router.replace('/');
                 } else {
@@ -49,13 +49,12 @@
         font-size:625%;
         width:100%;
         height:100%;
+        overflow: hidden;
+        overflow-y: auto;
     }
     body{
         font-size:16px;
         width:100%;
-        height:100%;
-    }
-    #app{
         height:100%;
     }
 </style>
