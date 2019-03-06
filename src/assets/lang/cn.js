@@ -188,7 +188,7 @@ export const message = {
             "边界智能作为Cosmos Hub的验证节点",
             "旨在维护Cosmos网络的安全性，促进生态发展！"
         ],
-        'irisnetHref':"https://www.irisnetwork.cn/",
+        'irisnetHref':"https://www.irisnet.org/",
         "btnText":"了解Validator",
         "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127",
         "headerValidatorBtnText":"Cosmos验证人"
