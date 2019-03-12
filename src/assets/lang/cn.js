@@ -2,15 +2,15 @@ export const message = {
     "index": {
         "logo": [
             {
+                "src": '../public/index_logo_cn1.jpg',
+                "active": false
+            },
+            {
                 "src": '../public/banner_01.png',
                 "active": true
             },
             {
                 "src": '../public/index_logo_cn.png',
-                "active": false
-            },
-            {
-                "src": '../public/index_logo_cn1.jpg',
                 "active": false
             },
         ],
@@ -194,7 +194,7 @@ export const message = {
             "旨在维护Cosmos网络的安全性，促进生态发展！"
         ],
         'irisnetHref':"https://www.irisnetwork.cn/",
-        "btnText":"了解Validator",
+        "btnText":"委托 ATOM",
         "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127",
         "headerValidatorBtnText":"Cosmos验证人"
     },
