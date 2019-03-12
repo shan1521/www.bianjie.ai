@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
+import index from '@/components/Index'
 import app from '@/components/app'
 import Validators from '../components/Validators.vue';
-
+import cosmos from '../components/Cosmos'
 Vue.use(Router)
 
 export function createRouter() {
@@ -25,6 +25,11 @@ export function createRouter() {
                 path: '/app',
                 name: 'app',
                 component: app
+            },
+            {
+                path: '/cosmos',
+                name: 'cosmos',
+                component: cosmos
             }
         ]
     })

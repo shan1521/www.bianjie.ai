@@ -38,11 +38,11 @@
                 <div class="core_txt_title">
                     <span class="core_txt_title_info">{{$store.state.messages.core.secondaryTitle}}</span>
                 </div>
-                <p>{{$store.state.messages.core.infomation}}</p>
+                <p>{{$store.state.messages.core.service}}</p>
                 <div class="core_txt_title">
                     <span class="core_txt_title_info_bottom">{{$store.state.messages.core.technologyTitle}}</span>
                 </div>
-                <p>{{$store.state.messages.core.technologyInfomation}}</p>
+                <p>{{$store.state.messages.core.technology}}</p>
             </div>
             <div class="irisnet_info_container">
                 <div class="mobilebanner_img_container">
@@ -602,7 +602,6 @@
         }
         .mobilebanner_img_container{
             width: 100%;
-            height: 178px;
             img{
                 width: 100%;
             }

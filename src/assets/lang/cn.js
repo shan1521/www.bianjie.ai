@@ -15,12 +15,17 @@ export const message = {
             },
         ],
         "title": [
-            {"txt": "联系我们", "href": "/#contact"},
-            {"txt": "合作伙伴", "href": "/#partner"},
-            {"txt": "公司动态", "href": "/#dynamic"},
-            {"txt": "产品中心", "href": "/#product"},
-            {"txt": "研发技术", "href": "/#core"},
             {"txt": "关于我们", "href": "/#about"},
+            {"txt": "研发技术", "href": "/#core"},
+            {"txt": "产品中心", "href": "/#product"},
+            {"txt": "公司动态", "href": "/#dynamic"},
+            {"txt": "合作伙伴", "href": "/#partner"},
+            {"txt": "联系我们", "href": "/#contact"},
+            
+            
+            
+            
+           
 
         ]
     },
@@ -34,9 +39,9 @@ export const message = {
     "core": {
         "title": "研发技术",
         "secondaryTitle": "跨链服务",
-        "infomation": "支持异构网络间数字资产流动，以及数据和复杂计算的可信跨链调用。",
+        "service": "支持异构网络间数字资产流动，以及数据和复杂计算的可信跨链调用。",
         "technologyTitle": "分布式智能技术",
-        "technologyInfomation": "运用人工智能与区块链技术，保护数据隐私、尊重数据所有权，并支持数据依靠智能算法安全分布式地使用。"
+        "technology": "运用人工智能与区块链技术，保护数据隐私、尊重数据所有权，并支持数据依靠智能算法安全分布式地使用。"
     },
     "product": {
         "title": "产品中心",
@@ -177,8 +182,8 @@ export const message = {
     },
     'irisnetInfo':{
         "title":"IRIS Network",
-        "irisnetInfoItem":'面向服务的区块链跨链网络',
-        'irisnetInfoIntroduce':'新一代分布式商业生态的技术基础',
+        "irisnetService":'面向服务的区块链跨链网络',
+        'irisnetTechnology':'新一代分布式商业生态的技术基础',
         "irisnetWebsiteUrl":'www.irisnet.org'
     },
     "validator":{

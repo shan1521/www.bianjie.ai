@@ -85,7 +85,7 @@
                                         <p class="content_title">
                                             Testnet Validator:
                                             <a class="cosmos_explorer_link" href="https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu"
-                                                target="_blank">
+                                               target="_blank">
                                                 https://explorecosmos.network/validators/cosmosaccaddr1shuqhpl273t96yg6nnqvyfeewj3ew3mdcwvcnu
                                             </a>
                                         </p>
@@ -829,23 +829,23 @@
 
                     }
                 }
-                }
-                .info{
-                    margin-bottom:0.8rem;
-                    font-style:normal;
-                    font-size:0.14rem;
-                }
-                .error{
-                    color:#ff4a4a;
-                    visibility:visible;
-                }
-                .success{
-                    color:lawngreen;
-                    visibility:visible;
-                }
             }
-
+            .info{
+                margin-bottom:0.8rem;
+                font-style:normal;
+                font-size:0.14rem;
+            }
+            .error{
+                color:#ff4a4a;
+                visibility:visible;
+            }
+            .success{
+                color:lawngreen;
+                visibility:visible;
+            }
         }
+
+    }
     //移动
     .mobile_validators_wrap {
 
