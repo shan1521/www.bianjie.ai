@@ -7,13 +7,14 @@
                      @click="is=false"/>
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
             </div>
-            <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[2].src)"/>
             <div class="index_down" v-show="is">
+                <router-link class="head_item" key="310" to="/cosmos" tag="div">委托ATOM</router-link>
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
                     {{item.txt}}
                 </router-link>
-                <router-link class="head_item" key="310" to="/validators" tag="div">Validators</router-link>
+
             </div>
         </div>
         <div class="about">
@@ -130,12 +131,7 @@
                 </div>
             </div>
             <div class="validator">
-                <img src="../assets/app/cosmos.jpg"/>
-                <div class="validator_warp">
-                    <div v-for="(item,index) in $store.state.messages.validator.txt" :class="{'div':index==2}" :key="index">
-                        {{ item}}
-                    </div>
-                </div>
+                <img src="../../public/mobile_banner.png"/>
                 <div class="validator_btn">
                     <a :href="$store.state.messages.validator.btnHref" target="_blank">
                         {{ $store.state.messages.validator.btnText}}
@@ -534,16 +530,6 @@
             img {
                 width: 100%;
                 margin-top: 40px;
-            }
-            .validator_warp {
-                text-align: center;
-                margin-top: 20px;
-                div {
-                    font-size: 14px;
-                    line-height: 26px;
-                    color: #696e75;
-                }
-
             }
             .validator_btn {
                 margin-top: 30px;
