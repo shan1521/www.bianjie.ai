@@ -12,7 +12,7 @@
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
-                    <router-link class="header_validator" key="310" to="/validators" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
+                    <router-link class="header_validator" key="310" to="/cosmos" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                 </div>
             </div>
         </div>

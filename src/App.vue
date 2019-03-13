@@ -11,9 +11,9 @@
             resize(_this) {
                 _this.is = $(window).width() >= 900
                 if (_this.is) {
-                   // _this.$router.replace('/');
+                    _this.toggleSwitchHome()
                 } else {
-                    _this.$router.replace('/app');
+                    _this.toggleSwitchMobileHome()
                     window.onload=function () {
                         document.addEventListener('touchstart',function (event) {
                             if(event.touches.length>1){
@@ -30,8 +30,23 @@
                         },false)
                     }
                 }
-            }
+            },
+            toggleSwitchHome(){
+                if(this.$route.path === '/cosmos'){
+                    this.$router.replace('/cosmos');
+                }else {
+                    this.$router.replace('/');
+                }
+            },
+            toggleSwitchMobileHome(){
+                if(this.$route.path === '/cosmos'){
+                    this.$router.replace('/cosmos');
+                }else {
+                    this.$router.replace('/app');
+                }
+            },
         },
+
         created() {
             if (process.env.VUE_ENV === 'client') {
                 let _this = this;

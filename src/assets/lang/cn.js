@@ -2,7 +2,7 @@ export const message = {
     "index": {
         "logo": [
             {
-                "src": '../public/index_logo_cn1.jpg',
+                "src": '../public/bianjie_cosmos.png',
                 "active": false
             },
             {
@@ -193,10 +193,10 @@ export const message = {
             "边界智能作为Cosmos的Hub验证节点",
             "旨在维护Cosmos网络的安全性，促进生态发展！"
         ],
-        'irisnetHref':"https://www.irisnetwork.cn/",
+        'irisnetHref':"https://www.irisnet.org/",
         "btnText":"委托 ATOM",
-        "btnHref":"https://forum.cosmos.network/t/validator-candidates-websites/127",
-        "headerValidatorBtnText":"Cosmos验证人"
+        "btnHref":"/cosmos",
+        "headerValidatorBtnText":"委托 ATOM"
     },
     "contact": {
         "title": "联系我们",
