@@ -19,7 +19,7 @@
                     <h2>{{headerTitle}}</h2>
                     <p>{{headerProduct}}</p>
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
-                    <p>{{headerCosmosAddress}}</p>
+                    <p @click="toCosmosBrowser">{{headerCosmosAddress}}</p>
                 </div>
                 <div class="content_right">
                     <div class="cosmos_img_content">
@@ -192,6 +192,9 @@
             },
             toCosmos(){
                 window.open('https://cosmos.network/')
+            },
+            toCosmosBrowser(){
+                window.open('https://hubble.figment.network/chains/cosmoshub-1/validators/696ABC95186FD65A07050C28AB00C9358A315030')
             },
             scrollTop(){
               if(window.scrollY > 10){
