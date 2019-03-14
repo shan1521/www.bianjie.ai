@@ -205,7 +205,7 @@ export default {
                 "边界智能作为Cosmos的Hub验证节点",
                 "旨在维护Cosmos网络的安全性，促进生态发展！"
             ],
-            "btnText": "了解Validator",
+            "btnText": "委托ATOM",
             "btnHref": "https://forum.cosmos.network/t/validator-candidates-websites/127"
         },
         "contact": {
@@ -246,6 +246,156 @@ export default {
             subscribe:'订阅获取最新动态',
             placeholder:'请输入您的email地址',
             emailError:'请输入您的email地址',
+        }
+    },
+    cosmos:{
+        en:{
+            header:{
+                title:'Bianjie ',
+                commission:'10% commission',
+                product:'Maintained by the core development team of IRISnet',
+                validatorAddress:'Validator Address',
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+            },
+            about:{
+                title:'About Bianjie',
+                secondTitle:'Core developer of IRISnet, active contributor to Cosmos',
+                irisnet:{
+                    title:'IRISnet Core Developer',
+                    list:[
+                        {
+                            item:'First regional hub in Cosmos ecosystem'
+                        },
+                        {
+                            item:'First BPoS blockchain built based on Cosmos SDK'
+                        },
+                        {
+                            item:'Understand each configuration of Cosmos SDK'
+                        }
+                    ]
+                },
+                cosmos:{
+                    title:'Cosmos Co-Developer',
+                    list:[
+                        {
+                            item:'Genesis Validator on Cosmos Hub'
+                        },
+                        {
+                            item:'From day 1 of gaia-1000 to mainnet launch'
+                        },
+                        {
+                            item:'Technical support team of Cosmos China'
+                        },
+                        {
+                            item:'Contributor to Cosmos and Tendermint'
+                        }
+                    ]
+                }
+              
+            },
+            bianjie:{
+                title:'Safe Bianjie, Safe Delegation',
+                product:[
+                    {
+                        src:require('../assets/cosmos/service_room.png'),
+                        text:'Safe and reliable enterprise-class data center',
+                    },
+                    {
+                        src:require('../assets/cosmos/net.png'),
+                        text:'Highly available network',
+                    },
+                    {
+                        src:require('../assets/cosmos/node.png'),
+                        text:'Auto scale sentry nodes',
+                    },
+                    {
+                        src:require('../assets/cosmos/lock.png'),
+                        text:'HSM for Private Key Protection',
+                    },
+                    {
+                        src:require('../assets/cosmos/hour.png'),
+                        text:'24/7 professional  monitoring',
+                    },
+                    {
+                        src:require('../assets/cosmos/shield.png'),
+                        text:'DDoS attack protection',
+                    }
+                ]
+            }
+        },
+        cn:{
+            header:{
+                title:'Bianjie',
+                commission:'10% 佣金率',
+                product:'由IRISnet核心开发团队维护的验证人节点',
+                validatorAddress:'验证人地址',
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+            },
+            about:{
+                title:'关于边界',
+                secondTitle:'IRISnet的核心开发者，Cosmos的积极贡献者',
+                irisnet:{
+                    title:'IRISnet 核心开发者',
+                    list:[
+                        {
+                            item:'Cosmos生态中的第一个区域性枢纽'
+                        },
+                        {
+                            item:'基于Cosmos SDK构建的首个BPoS链'
+                        },
+                        {
+                            item:'了解Cosmos SDK的每一项配置'
+                        }
+                    ]
+                },
+                cosmos:{
+                    title:'Cosmos 合作开发者',
+                    list:[
+                        {
+                            item:'Cosmos Hub 的创世验证人'
+                        },
+                        {
+                            item:'自gaia测试网第一天运行到主网上线'
+                        },
+                        {
+                            item:'Cosmos中国的技术支持团队'
+                        },
+                        {
+                            item:'Cosmos和Tendermint的代码贡献者'
+                        }
+                    ]
+                }
+        
+            },
+            bianjie:{
+                title:'安全的边界，放心的委托',
+                product:[
+                    {
+                        src:require('../assets/cosmos/service_room.png'),
+                        text:'安全可靠的企业级机房',
+                    },
+                    {
+                        src:require('../assets/cosmos/net.png'),
+                        text:'高可用性网络',
+                    },
+                    {
+                        src:require('../assets/cosmos/node.png'),
+                        text:'可扩展的哨兵节点',
+                    },
+                    {
+                        src:require('../assets/cosmos/lock.png'),
+                        text:'硬件加密保证安全',
+                    },
+                    {
+                        src:require('../assets/cosmos/hour.png'),
+                        text:'7*24小时专业监控',
+                    },
+                    {
+                        src:require('../assets/cosmos/shield.png'),
+                        text:'商业DDos攻击防护',
+                    }
+                ]
+            }
         }
     }
 };

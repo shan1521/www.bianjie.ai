@@ -12,7 +12,7 @@
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
-                    <router-link class="header_validator" key="310" to="/validators" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
+                    <router-link class="header_validator" key="310" to="/cosmos" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                 </div>
             </div>
         </div>
@@ -20,11 +20,11 @@
             <div class="swiper_wrap">
                 <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
-                        <a :href="index==0 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==0 ? 'active_cursor': 'default_cursor'">
+                        <a :href="index==1 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==1 ? 'active_cursor': 'default_cursor'">
                             <img class="index1_logo" :src="item.src"/>
                         </a>
                         <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
-                           v-show="index==2">
+                           v-show="index==0">
                             {{ $store.state.messages.validator.btnText}}
                         </a>
                     </swipe-item>
