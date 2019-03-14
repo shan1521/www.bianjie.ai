@@ -252,7 +252,6 @@
                 return flag;
             },
             skipHome(){
-                console.log(this.flIsMobile(),"6666")
                 if(this.flIsMobile()){
                     this.$router.push({
                         path:'/'
