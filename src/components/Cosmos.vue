@@ -16,7 +16,9 @@
         <div class="banner_container">
             <div class="banner_content_wrap">
                 <div class="content_left">
-                    <h2>{{headerTitle}}</h2>
+                    <h2>{{headerTitle}}
+                        <span class="commission_content">{{commission}}</span>
+                    </h2>
                     <p>{{headerProduct}}</p>
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
                     <p @click="toCosmosBrowser">{{headerCosmosAddress}}</p>
@@ -35,7 +37,7 @@
         <div class="about_container">
             <div class="about_content_wrap">
                 <p class="about_title">{{aboutTitle}}</p>
-                <p class="about_second_title">{{aboutSecondTitle}}</p>
+                <!--<p class="about_second_title">{{aboutSecondTitle}}</p>-->
                 <div class="about_content">
                     <div class="irisnet_content">
                         <div class="irisnet_title"><span>{{aboutIrisnetTitle}}</span></div>
@@ -109,6 +111,7 @@
                 aboutIrisnetTitle: 'Core Developer of IRIS Network',
                 aboutTitle:'About Bianjie',
                 aboutSecondTitle:'Core developer of IRISnet, active contributor to Cosmos',
+                commission:'10% commission',
                 aboutIrisnetList: [
                     {
                         item:'First regional hub in Cosmos ecosystem'
@@ -194,7 +197,7 @@
                 window.open('https://cosmos.network/')
             },
             toCosmosBrowser(){
-                window.open('https://hubble.figment.network/chains/cosmoshub-1/validators/696ABC95186FD65A07050C28AB00C9358A315030')
+                window.open('https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em')
             },
             scrollTop(){
               if(window.scrollY > 10){
@@ -219,6 +222,7 @@
                 this.placeholder = message[lang].validators.placeholder;
                 this.subscribe = message[lang].validators.subscribe;
                 this.emailError = message[lang].validators.emailError;
+                this.commission = message.cosmos[lang].header.commission;
             },
             scroll(top) {
                 $('body,html').animate({
