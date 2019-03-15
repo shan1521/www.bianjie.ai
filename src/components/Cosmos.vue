@@ -21,7 +21,13 @@
                     </h2>
                     <p>{{headerProduct}}</p>
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
-                    <p @click="toCosmosBrowser">{{headerCosmosAddress}}</p>
+                    <p>
+                        <a href="https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em" target="_blank">{{headerCosmosAddress}} </a>
+                        <span @click="toCosmosBrowser" id="cosmosAddress" data-clipboard-text="https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em">
+                    <img src="../assets/cosmos/copy_logo.png" alt="">
+                </span>
+                    </p>
+
                 </div>
                 <div class="content_right">
                     <div class="cosmos_img_content">
@@ -32,6 +38,9 @@
                         <p>Validators</p>
                     </div>
                 </div>
+            </div>
+            <div class="toast_content" v-show="flShowToast">
+                <span>{{toastHint}}</span>
             </div>
         </div>
         <div class="about_container">
@@ -96,6 +105,7 @@
 
     import message from '../common/message';
     import axios from 'axios';
+    import clipboardJS from 'clipboard'
 
     export default {
         name: "Validators",
@@ -112,6 +122,7 @@
                 aboutTitle:'About Bianjie',
                 aboutSecondTitle:'Core developer of IRISnet, active contributor to Cosmos',
                 commission:'10% commission',
+                toastHint:'Copied',
                 aboutIrisnetList: [
                     {
                         item:'First regional hub in Cosmos ecosystem'
@@ -175,6 +186,8 @@
                 showSuccess:false,
                 emailInfo:'',
                 flShowBoxShadow:false,
+	            flShowToast:false,
+                
             }
         },
         mounted(){
@@ -197,8 +210,15 @@
                 window.open('https://cosmos.network/')
             },
             toCosmosBrowser(){
-                window.open('https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em')
+                let clipboard  = new clipboardJS('#cosmosAddress'),that = this;
+                clipboard.on('success',function(e) {
+	                that.flShowToast = true;
+	                setTimeout(function() {
+		                that.flShowToast = false;
+	                },2000)
+                })
             },
+
             scrollTop(){
               if(window.scrollY > 10){
                   this.flShowBoxShadow = true;
@@ -223,6 +243,7 @@
                 this.subscribe = message[lang].validators.subscribe;
                 this.emailError = message[lang].validators.emailError;
                 this.commission = message.cosmos[lang].header.commission;
+                this.toastHint = message.cosmos[lang].header.toastHint;
             },
             scroll(top) {
                 $('body,html').animate({

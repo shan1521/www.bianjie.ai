@@ -255,7 +255,8 @@ export default {
                 commission:'10% commission',
                 product:'Maintained by the core development team of IRISnet',
                 validatorAddress:'Validator Address',
-                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+	            toastHint:'Copied'
             },
             about:{
                 title:'About Bianjie',
@@ -329,7 +330,8 @@ export default {
                 commission:'10% 佣金率',
                 product:'由IRISnet核心开发团队维护的验证人节点',
                 validatorAddress:'验证人地址',
-                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+	            toastHint:'复制成功'
             },
             about:{
                 title:'关于边界',
