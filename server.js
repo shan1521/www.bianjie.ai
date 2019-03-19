@@ -48,6 +48,76 @@ app.route('/')
 
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 
+//query validator by address
+app.route('/validators')
+.get((req, res, next) => {
+	request({
+		url: `http://cosmos-lcd.rainbow.one/staking/validators/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em`,
+		// url: `http://10.1.4.115:8080/api/bj/validator`,
+		method: 'get',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+	}, function(err, response, body) {
+		if (err) {
+			res.send(err)
+		} else {
+			res.send(body)
+		}
+	});
+}),
+//query all bond tokens
+app.route('/bondedTokens')
+.get((req, res, next) => {
+	request({
+		url: `http://cosmos-lcd.rainbow.one/staking/pool`,
+		// url: `http://10.1.4.115:8080/api/bj/validator`,
+		method: 'get',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+	}, function(err, response, body) {
+		if (err) {
+			res.send(err)
+		} else {
+			res.send(body)
+		}
+	});
+});
+//query slash info
+app.route('/missedBlockCounter')
+.get((req, res, next) => {
+	request({
+		url: `https://cosmos-lcd.rainbow.one/slashing/validators/cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd/signing_info`,
+		method: 'get',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+	}, function(err, response, body) {
+		if (err) {
+			res.send(err)
+		} else {
+			res.send(body)
+		}
+	});
+});
+//query slash parameters
+app.route('/signedBlocksWindow')
+.get((req, res, next) => {
+	request({
+		url: `https://cosmos-lcd.rainbow.one/slashing/parameters`,
+		method: 'get',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+	}, function(err, response, body) {
+		if (err) {
+			res.send(err)
+		} else {
+			res.send(body)
+		}
+	});
+});
 function createRenderer (bundle, options) {
   // https://github.com/vuejs/vue/blob/dev/packages/vue-server-renderer/README.md#why-use-bundlerenderer
   return createBundleRenderer(bundle, Object.assign(options, {
