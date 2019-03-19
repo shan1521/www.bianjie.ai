@@ -70,6 +70,7 @@
         .content_left{
           color: #fff;
           h2{
+            height: 0.32rem;
             font-size: 0.32rem;
             line-height: 0.37rem;
           }
@@ -135,10 +136,78 @@
         position: relative;
         bottom: 0.9rem;
         text-align: center;
-        display: block;
+        visibility: hidden;
         span{
           font-size: 0.16rem;
           line-height: 0.4rem;
+        }
+      }
+      .guide_content{
+        min-width: 4.4rem;
+        max-width: 10rem;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        display: flex;
+        .bonded_voting_power_content{
+          flex: 1;
+          display: flex;
+          margin-left: 0.12rem;
+          .common_style{
+            flex: 1;
+            background: rgba(1, 95, 190, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.36rem;
+            padding: 0.18rem 0;
+            border-radius: 0.04rem;
+            span:nth-of-type(1){
+              height: 0.22rem;
+            }
+            span:nth-of-type(2){
+              color: rgba(255,255,255,0.5);
+            }
+          }
+        }
+        .rate_uptime_content{
+          flex: 1;
+          display: flex;
+          .common_style{
+            flex: 1;
+            background: rgba(1, 95, 190, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.36rem;
+            padding: 0.18rem 0;
+            border-radius: 0.04rem;
+            span:nth-of-type(1){
+              height: 0.22rem;
+            }
+            span:nth-of-type(2){
+              color: rgba(255,255,255,0.5);
+            }
+          }
+        }
+      }
+      .guide_text_content{
+        text-align: center;
+        color: rgba(255,255,255,1);
+        padding: 0.6rem 0 0.73rem 0;
+        .guide_href{
+          line-height: 1;
+          border-bottom: 0.01rem solid rgba(255,255,255,1);
+          a{
+            color: rgba(255,255,255,1);
+          }
+          .icon{
+            width: 0.11rem;
+            height: 0.11rem;
+            display: inline-block;
+            img{
+              height: 100%;
+            }
+          }
         }
       }
   }
@@ -377,7 +446,7 @@
         span{
           width: 1rem;
           display: inline-block;
-          background: #3147F2;
+          background: rgba(1, 95, 190, 1);
           cursor:pointer;
           display: -webkit-box;
           display: -webkit-flex;
@@ -405,7 +474,7 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 996px){
+@media screen and (min-width: 768px) and (max-width: 1035px){
   .container{
     .banner_container{
       .banner_content_wrap{
@@ -424,6 +493,35 @@
             word-break: normal;
             white-space: pre-wrap;
             word-wrap:break-word;
+          }
+        }
+      }
+      .toast_content{
+        bottom:0.4rem;
+      }
+      .guide_content{
+        display: flex;
+        flex-direction: column;
+        .bonded_voting_power_content{
+          display: flex;
+          justify-content: center;
+          .common_style{
+            max-width: 2.7rem;
+          }
+          .common_style:nth-of-type(2){
+            margin-right: 0;
+          }
+        }
+        .rate_uptime_content{
+          margin-left: 0.12rem;
+          margin-top: 0.35rem;
+          display: flex;
+          justify-content: center;
+          .common_style{
+            max-width: 2.7rem;
+          }
+          .common_style:nth-of-type(2){
+            margin-right: 0;
           }
         }
       }
@@ -465,6 +563,36 @@
             word-break: normal;
             white-space: pre-wrap;
             word-wrap:break-word;
+          }
+        }
+      }
+      .toast_content{
+        bottom:0.4rem;
+      }
+      .guide_content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.2rem;
+        .bonded_voting_power_content{
+          display: flex;
+          justify-content: center;
+          .common_style{
+            width: 80%;
+          }
+          .common_style:nth-of-type(2){
+            margin-right: 0;
+          }
+        }
+        .rate_uptime_content{
+          margin-left: 0.12rem;
+          margin-top: 0.35rem;
+          display: flex;
+          justify-content: center;
+          .common_style{
+            width: 80%;
+          }
+          .common_style:nth-of-type(2){
+            margin-right: 0;
           }
         }
       }
@@ -540,6 +668,41 @@
             word-break: normal;
             white-space: pre-wrap;
             word-wrap:break-word;
+          }
+        }
+      }
+      .toast_content{
+        bottom:0.4rem;
+      }
+      .guide_content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.2rem;
+        min-width: 0;
+        .bonded_voting_power_content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .common_style{
+            width: 80%;
+            margin-right: 0;
+          }
+          .common_style:nth-of-type(2){
+            margin-top: 0.35rem;
+          }
+        }
+        .rate_uptime_content{
+          margin-left: 0.12rem;
+          margin-top: 0.35rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .common_style{
+            width: 80%;
+            margin-right: 0;
+          }
+          .common_style:nth-of-type(2){
+            margin-top: 0.35rem;
           }
         }
       }
@@ -688,6 +851,41 @@
             word-break: normal;
             white-space: pre-wrap;
             word-wrap:break-word;
+          }
+        }
+      }
+      .toast_content{
+        bottom:0.4rem;
+      }
+      .guide_content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.2rem;
+        min-width: 0;
+        .bonded_voting_power_content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .common_style{
+            width: 80%;
+            margin-right: 0;
+          }
+          .common_style:nth-of-type(2){
+            margin-top: 0.35rem;
+          }
+        }
+        .rate_uptime_content{
+          margin-left: 0.12rem;
+          margin-top: 0.35rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .common_style{
+            width: 80%;
+            margin-right: 0;
+          }
+          .common_style:nth-of-type(2){
+            margin-top: 0.35rem;
           }
         }
       }
