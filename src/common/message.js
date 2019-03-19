@@ -261,7 +261,8 @@ export default {
                 votingPower:'Voting Power',
                 commissionRate:'Commission Rate',
                 uptime:'Uptime',
-                guide:'Read Delegator\'s Guide'
+                guide:'Read Delegator\'s Guide',
+	            guideHref:'https://cosmos.network/docs/gaia/delegator-guide-cli.html'
             },
             about:{
                 title:'About Bianjie',
@@ -341,7 +342,8 @@ export default {
 	            votingPower:'权重',
 	            commissionRate:'佣金率',
 	            uptime:'活跃度',
-	            guide:'委托人指南'
+	            guide:'委托人指南',
+	            guideHref:'https://github.com/shirleypyj/Market-1/blob/patch-7/delegator-guide-cli_cn.md'
             },
             about:{
                 title:'关于边界',
