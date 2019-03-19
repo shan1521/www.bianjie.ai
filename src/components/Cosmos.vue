@@ -225,11 +225,11 @@
 	            flShowToast:false,
 	            cosmosExplorerHref:'https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
                 validatorIndicators:{},
-                bondedTokens: this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000)),
-	            rate:this.formatRate(localStorage.getItem('rate')),
-                bianJieUpTime: localStorage.getItem('bianJieUpTime'),
+                bondedTokens: localStorage.getItem('bondedTokens') ? this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000)) : '',
+	            rate:localStorage.getItem('rate') ? this.formatRate(localStorage.getItem('rate')) : '',
+                bianJieUpTime: localStorage.getItem('bianJieUpTime') ? localStorage.getItem('bianJieUpTime') : '',
                 lcdBianJieBondedTokens: '',
-                votingPowerNumber: this.formatVotingPower(localStorage.getItem('votingPower')),
+                votingPowerNumber: localStorage.getItem('votingPower') ? this.formatVotingPower(localStorage.getItem('votingPower')) : '',
                 lcdBondedTokens: '',
 	            signedBlocksWindow:'',
 	            missedBlocksCnt:''
@@ -248,7 +248,6 @@
             window.addEventListener('scroll',this.scrollTop);
             this.getCosmosBianJieValidator();
             this.getMissedBlocksCounter();
-	        this.getbondedTokens();
 	        this.getSignedBlocksWindow()
 
         },
@@ -276,12 +275,19 @@
                     }
                 }).then(res => {
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
+                		if(!localStorage.getItem('bondedTokens')){
+                			this.bondedTokens = this.formatTokens(new bigNumber(res.tokens).div(1000000));
+                        }
+                        if(!localStorage.getItem('rate')){
+                			this.rate = this.formatRate(res.commission.rate)
+                        }
 		                localStorage.setItem('bondedTokens',res.tokens);
 		                localStorage.setItem('rate',res.commission.rate);
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
 		                this.headerCosmosAddress = res.operator_address;
-		                this.cosmosExplorerHref = `https://cosmos-overview.genesislab.net/${res.operator_address}`
+		                this.cosmosExplorerHref = `https://cosmos-overview.genesislab.net/${res.operator_address}`;
+		                this.getbondedTokens();
 	                }else {
 		                this.rate= '';
                         this.bondedTokens = '';
@@ -304,6 +310,9 @@
 			                this.lcdBianJieBondedTokens = localStorage.getItem('bondedTokens')
                         }
 		                let votingPower = this.lcdBianJieBondedTokens/res.bonded_tokens;
+                		if(!localStorage.getItem('votingPower')){
+			                this.votingPowerNumber = this.formatVotingPower(votingPower)
+                        }
                 		localStorage.setItem('votingPower',votingPower)
                     }
 	            }).catch(err => {
@@ -338,6 +347,9 @@
 					        this.missedBlocksCnt = localStorage.getItem('missedBlocksCnt')
                         }
                         let bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window);
+		        		if(!localStorage.getItem('bianJieUpTime')){
+					        this.bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window)
+                        }
 		        		localStorage.setItem('bianJieUpTime',bianJieUpTime)
 			        }
 		        }).catch(err => {
