@@ -18,6 +18,7 @@ const serverInfo =
 const app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.route('/')
     .post((req, res, next) => {
         let id;
@@ -47,13 +48,12 @@ app.route('/')
     });
 
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
-
 //query validator by address
+let cache = null;
 app.route('/validators')
 .get((req, res, next) => {
 	request({
 		url: `http://cosmos-lcd.rainbow.one/staking/validators/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em`,
-		// url: `http://10.1.4.115:8080/api/bj/validator`,
 		method: 'get',
 		headers: {
 			'Content-Type': 'application/json'
@@ -62,16 +62,18 @@ app.route('/validators')
 		if (err) {
 			res.send(err)
 		} else {
-			res.send(body)
+			cache = body;
+			res.send(cache)
 		}
-	});
-}),
+	})
+})
+
 //query all bond tokens
+let tokencache = null;
 app.route('/bondedTokens')
 .get((req, res, next) => {
 	request({
 		url: `http://cosmos-lcd.rainbow.one/staking/pool`,
-		// url: `http://10.1.4.115:8080/api/bj/validator`,
 		method: 'get',
 		headers: {
 			'Content-Type': 'application/json'
@@ -80,11 +82,13 @@ app.route('/bondedTokens')
 		if (err) {
 			res.send(err)
 		} else {
-			res.send(body)
+			tokencache = body;
+			res.send(tokencache)
 		}
 	});
 });
 //query slash info
+let blockcache = null;
 app.route('/missedBlockCounter')
 .get((req, res, next) => {
 	request({
@@ -97,11 +101,13 @@ app.route('/missedBlockCounter')
 		if (err) {
 			res.send(err)
 		} else {
-			res.send(body)
+			blockcache = body;
+			res.send(blockcache)
 		}
 	});
 });
 //query slash parameters
+let signedBlockscache = null;
 app.route('/signedBlocksWindow')
 .get((req, res, next) => {
 	request({
@@ -114,7 +120,8 @@ app.route('/signedBlocksWindow')
 		if (err) {
 			res.send(err)
 		} else {
-			res.send(body)
+			signedBlockscache = body
+			res.send(signedBlockscache)
 		}
 	});
 });

@@ -249,7 +249,6 @@
             this.getCosmosBianJieValidator();
             this.getMissedBlocksCounter();
 	        this.getSignedBlocksWindow()
-
         },
         methods: {
             toIrisnet(){
@@ -275,14 +274,18 @@
                     }
                 }).then(res => {
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
-                		if(!localStorage.getItem('bondedTokens')){
+		                localStorage.setItem('bondedTokens',res.tokens);
+		                localStorage.setItem('rate',res.commission.rate);
+		                if(!localStorage.getItem('bondedTokens')){
                 			this.bondedTokens = this.formatTokens(new bigNumber(res.tokens).div(1000000));
+                        }else {
+			                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000));
                         }
                         if(!localStorage.getItem('rate')){
                 			this.rate = this.formatRate(res.commission.rate)
+                        }else {
+	                        this.rate = this.formatRate(localStorage.getItem('rate'))
                         }
-		                localStorage.setItem('bondedTokens',res.tokens);
-		                localStorage.setItem('rate',res.commission.rate);
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
 		                this.headerCosmosAddress = res.operator_address;
@@ -310,10 +313,13 @@
 			                this.lcdBianJieBondedTokens = localStorage.getItem('bondedTokens')
                         }
 		                let votingPower = this.lcdBianJieBondedTokens/res.bonded_tokens;
-                		if(!localStorage.getItem('votingPower')){
+		                localStorage.setItem('votingPower',votingPower)
+		                if(!localStorage.getItem('votingPower')){
 			                this.votingPowerNumber = this.formatVotingPower(votingPower)
+                        }else {
+			                this.votingPowerNumber = this.formatVotingPower(localStorage.getItem('votingPower'))
                         }
-                		localStorage.setItem('votingPower',votingPower)
+
                     }
 	            }).catch(err => {
 
@@ -347,10 +353,12 @@
 					        this.missedBlocksCnt = localStorage.getItem('missedBlocksCnt')
                         }
                         let bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window);
-		        		if(!localStorage.getItem('bianJieUpTime')){
+				        localStorage.setItem('bianJieUpTime',bianJieUpTime)
+				        if(!localStorage.getItem('bianJieUpTime')){
 					        this.bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window)
+                        }else {
+					        this.bianJieUpTime = localStorage.getItem('bianJieUpTime')
                         }
-		        		localStorage.setItem('bianJieUpTime',bianJieUpTime)
 			        }
 		        }).catch(err => {
 
