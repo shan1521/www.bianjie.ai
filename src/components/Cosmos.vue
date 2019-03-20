@@ -31,11 +31,7 @@
                 </div>
                 <div class="content_right">
                     <div class="cosmos_img_content">
-                        <img src="../assets/validators/validator.png">
-                    </div>
-                    <div class="cosmos_content">
-                        <p>COSMOS</p>
-                        <p>Validators</p>
+                        <img src="../assets/validators/product_logo.png">
                     </div>
                 </div>
             </div>
