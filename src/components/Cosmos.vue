@@ -17,22 +17,57 @@
             <div class="banner_content_wrap">
                 <div class="content_left">
                     <h2>{{headerTitle}}
-                        <span class="commission_content">{{commission}}</span>
+                        <span class="commission_content">{{rate}} {{commission}}</span>
                     </h2>
                     <p>{{headerProduct}}</p>
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
-                    <p @click="toCosmosBrowser">{{headerCosmosAddress}}</p>
+                    <p>
+                        <a :href="cosmosExplorerHref" target="_blank">{{headerCosmosAddress}} </a>
+                        <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="cosmosExplorerHref">
+                    <img src="../assets/cosmos/copy_logo.png" alt="">
+                </span>
+                    </p>
+
                 </div>
                 <div class="content_right">
                     <div class="cosmos_img_content">
-                        <img src="../assets/validators/validator.png">
-                    </div>
-                    <div class="cosmos_content">
-                        <p>COSMOS</p>
-                        <p>Validators</p>
+                        <img src="../assets/validators/product_logo.png">
                     </div>
                 </div>
             </div>
+            <div class="toast_content" :style="{visibility:flShowToast?'visible':'hidden'}">
+                <span>{{toastHint}}</span>
+            </div>
+            <div class="guide_content">
+                <div class="bonded_voting_power_content">
+                    <div class="common_style">
+                        <span>{{bondedTokens}}</span>
+                        <span>{{bondedAtoms}}</span>
+                    </div>
+                    <div class="common_style">
+                        <span>{{votingPowerNumber}}</span>
+                        <span>{{votingPower}}</span>
+                    </div>
+                </div>
+                <div class="rate_uptime_content">
+                    <div class="common_style">
+                        <span>{{rate}}</span>
+                        <span>{{commissionRate}}</span>
+                    </div>
+                    <div class="common_style">
+                        <span>{{bianJieUpTime}}</span>
+                        <span>{{uptime}}</span>
+                    </div>
+                </div>
+            </div>
+            <p class="guide_text_content">
+                <span class="guide_href">
+                    <a :href="guideHref" target="_blank">{{guide}}</a>
+                    <i class="icon">
+                        <img src="../assets/right_icon.png" alt="">
+                    </i>
+                </span>
+            </p>
         </div>
         <div class="about_container">
             <div class="about_content_wrap">
@@ -96,7 +131,8 @@
 
     import message from '../common/message';
     import axios from 'axios';
-
+    import clipboardJS from 'clipboard'
+    import bigNumber from 'bignumber.js'
     export default {
         name: "Validators",
         data() {
@@ -104,14 +140,21 @@
                 validatorsWrapVar: window.innerWidth > 500 ? 'personal_computer_validators_wrap' : 'mobile_validators_wrap',
                 device:window.innerWidth > 500,
                 lang: '',
-                headerTitle: 'Bianjie - IRISnet Developer',
+                headerTitle: 'Bianjie',
                 headerProduct:'Maintained by the core development team of IRISnet',
                 headerValidatorAddress:'Validator_address',
                 headerCosmosAddress:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
                 aboutIrisnetTitle: 'Core Developer of IRIS Network',
                 aboutTitle:'About Bianjie',
                 aboutSecondTitle:'Core developer of IRISnet, active contributor to Cosmos',
-                commission:'10% commission',
+                commission:'commission',
+                toastHint:'Copied',
+	            bondedAtoms:'Bonded ATOMs',
+	            votingPower:'VotingPower',
+	            commissionRate:'CommissionRate',
+	            uptime:'Uptime',
+	            guide:'Read Delegator\'s Guide',
+	            guideHref:'https://cosmos.network/docs/gaia/delegator-guide-cli.html',
                 aboutIrisnetList: [
                     {
                         item:'First regional hub in Cosmos ecosystem'
@@ -175,6 +218,17 @@
                 showSuccess:false,
                 emailInfo:'',
                 flShowBoxShadow:false,
+	            flShowToast:false,
+	            cosmosExplorerHref:'https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+                validatorIndicators:{},
+                bondedTokens: localStorage.getItem('bondedTokens') ? this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000)) : '',
+	            rate:localStorage.getItem('rate') ? this.formatRate(localStorage.getItem('rate')) : '',
+                bianJieUpTime: localStorage.getItem('bianJieUpTime') ? localStorage.getItem('bianJieUpTime') : '',
+                lcdBianJieBondedTokens: '',
+                votingPowerNumber: localStorage.getItem('votingPower') ? this.formatVotingPower(localStorage.getItem('votingPower')) : '',
+                lcdBondedTokens: '',
+	            signedBlocksWindow:'',
+	            missedBlocksCnt:''
             }
         },
         mounted(){
@@ -187,7 +241,10 @@
                 this.conversion('en');
                 this.lang = '中文';
             }
-            window.addEventListener('scroll',this.scrollTop)
+            window.addEventListener('scroll',this.scrollTop);
+            this.getCosmosBianJieValidator();
+            this.getMissedBlocksCounter();
+	        this.getSignedBlocksWindow()
         },
         methods: {
             toIrisnet(){
@@ -197,7 +254,110 @@
                 window.open('https://cosmos.network/')
             },
             toCosmosBrowser(){
-                window.open('https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em')
+                let clipboard  = new clipboardJS('#cosmosAddress'),that = this;
+                clipboard.on('success',function(e) {
+	                that.flShowToast = true;
+	                setTimeout(function() {
+		                that.flShowToast = false;
+	                },2000)
+                })
+            },
+            getCosmosBianJieValidator(){
+            	let url = `/validators`;
+            	axios(url).then(data => {
+            		if(data.status === 200){
+            			return data.data
+                    }
+                }).then(res => {
+                	if(res && typeof res === "object" && Object.keys(res).length !== 0){
+		                localStorage.setItem('bondedTokens',res.tokens);
+		                localStorage.setItem('rate',res.commission.rate);
+		                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000));
+		                this.rate = this.formatRate(localStorage.getItem('rate'));
+		                this.lcdBianJieBondedTokens = res.tokens;
+		                this.headerTitle = res.description.moniker;
+		                this.headerCosmosAddress = res.operator_address;
+		                this.cosmosExplorerHref = `https://cosmos-overview.genesislab.net/${res.operator_address}`;
+		                this.getbondedTokens();
+	                }else {
+		                this.rate= '';
+                        this.bondedTokens = '';
+		                this.votingPowerNumber= '';
+		                this.cosmosExplorerHref= 'https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+	                }
+	            }).catch(err => {
+
+                })
+            },
+            getbondedTokens(){
+            	let url = `/bondedTokens`;
+            	axios(url).then(data => {
+            		if(data.status === 200){
+            			return data.data
+                    }
+                }).then(res => {
+                	if(res && typeof res === "object" && Object.keys(res).length !== 0){
+                		if(!this.lcdBianJieBondedTokens || this.lcdBianJieBondedTokens === 0 && localStorage.getItem('bondedTokens')){
+			                this.lcdBianJieBondedTokens = localStorage.getItem('bondedTokens')
+                        }
+		                let votingPower = this.lcdBianJieBondedTokens/res.bonded_tokens;
+		                localStorage.setItem('votingPower',votingPower);
+		                this.votingPowerNumber = this.formatVotingPower(localStorage.getItem('votingPower'))
+                    }
+	            }).catch(err => {
+
+                })
+            },
+            getMissedBlocksCounter(){
+            	let url = `/missedBlockCounter `;
+            	axios(url).then(data => {
+            		if(data.status === 200){
+            			return data.data
+                    }
+                }).then(res => {
+                	if(res && typeof res === "object" && Object.keys(res).length !== 0){
+		                localStorage.setItem('missedBlocksCnt',res.missed_blocks_counter)
+		                this.missedBlocksCnt = res.missed_blocks_counter;
+                    }
+
+	            }).catch(err => {
+
+                })
+            },
+	        getSignedBlocksWindow(){
+		        let url = `/signedBlocksWindow `;
+		        axios(url).then(data => {
+			        if(data.status === 200){
+				        return data.data
+			        }
+		        }).then(res => {
+		        	if(res && typeof res === "object" && Object.keys(res).length !== 0){
+		        		if(!this.missedBlocksCnt || localStorage.getItem('missedBlocksCnt')){
+					        this.missedBlocksCnt = localStorage.getItem('missedBlocksCnt')
+                        }
+                        let bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window);
+				        localStorage.setItem('bianJieUpTime',bianJieUpTime)
+				        if(!localStorage.getItem('bianJieUpTime')){
+					        this.bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window)
+                        }else {
+					        this.bianJieUpTime = localStorage.getItem('bianJieUpTime')
+                        }
+			        }
+		        }).catch(err => {
+
+		        })
+	        },
+            formatTokens(number){
+	            return String(number).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+            },
+            formatRate(rate){
+                return `${(rate*100).toFixed(2)} %`
+            },
+            formatUptime(missedBlocks,totalBlocks){
+                return `${(Number(totalBlocks) - Number(missedBlocks))/ Number(totalBlocks) * 100} %`
+            },
+            formatVotingPower(votingPower){
+	            return `${(votingPower*100).toFixed(2)} %`
             },
             scrollTop(){
               if(window.scrollY > 10){
@@ -223,6 +383,13 @@
                 this.subscribe = message[lang].validators.subscribe;
                 this.emailError = message[lang].validators.emailError;
                 this.commission = message.cosmos[lang].header.commission;
+                this.toastHint = message.cosmos[lang].header.toastHint;
+                this.bondedAtoms= message.cosmos[lang].header.bondedAtoms;
+                this.votingPower= message.cosmos[lang].header.votingPower;
+                this.commissionRate= message.cosmos[lang].header.commissionRate;
+                this.uptime= message.cosmos[lang].header.uptime;
+                this.guide= message.cosmos[lang].header.guide;
+                this.guideHref= message.cosmos[lang].header.guideHref;
             },
             scroll(top) {
                 $('body,html').animate({
