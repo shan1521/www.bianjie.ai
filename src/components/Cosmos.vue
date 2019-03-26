@@ -74,17 +74,45 @@
                 <p class="about_title">{{aboutTitle}}</p>
                 <!--<p class="about_second_title">{{aboutSecondTitle}}</p>-->
                 <div class="about_content">
-                    <div class="irisnet_content">
-                        <div class="irisnet_title"><span>{{aboutIrisnetTitle}}</span></div>
-                        <ul class="irisnet_text">
-                            <li v-for="item in aboutIrisnetList"><i class="common_node"></i>{{item.item}}</li>
-                        </ul>
+                    <div class="developer_content">
+                        <div class="irisnet_developer_content">
+                            <div class="irisnet_title">
+                               <span>{{aboutIrisnetTitle}}</span>
+                            </div>
+                        </div>
+                        <div class="cosmos_developer_content">
+                            <div class="cosmos_title">
+                                <span>{{aboutCosmosTitle}}</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cosmos_content">
-                        <div class="cosmos_title"><span>{{aboutCosmosTitle}}</span></div>
-                        <ul class="cosmos_text">
-                            <li v-for="item in aboutCosmosList"><i class="common_node"></i>{{item.item}}</li>
-                        </ul>
+                    <div class="introduce_content">
+                        <div class="irisnet_introduce_content">
+                            <div class="introduce_irisnet_logo">
+                                <img src="../assets/cosmos/introduce_irisnet_logo.png" alt="">
+                            </div>
+                            <div class="irisnet_introduce_text_content">
+                                <ul class="introduce_list">
+                                    <li v-for="item in aboutIrisnetList">
+                                        <i></i>
+                                        <div v-html="item.item"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cosmos_introduce_content">
+                            <div class="cosmos_introduce_text_content">
+                                <ul class="cosmos_introduce_list">
+                                    <li v-for="item in aboutCosmosList">
+                                        <div v-html="item.item"></div>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cosmos_logo_content">
+                                <img src="../assets/cosmos/introduce_cosmos_logo.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
