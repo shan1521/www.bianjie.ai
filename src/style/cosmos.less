@@ -4,6 +4,7 @@
     width: 100%;
     background: rgba(23, 25, 49, 1);
     position: fixed;
+    z-index: 1000;
     .header_wrap{
       height:0.8rem;
       max-width: 12rem;
@@ -219,7 +220,7 @@
     width: 100%;
     background: rgba(252, 252, 255, 1);
     .about_content_wrap{
-      max-width: 12rem;
+      max-width: 8rem;
       margin: 0 auto;
       text-align: center;
       .about_title{
@@ -236,95 +237,141 @@
       .about_content{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 9.2rem;
-        padding-bottom: 1.03rem;
-        .irisnet_content{
+        padding-bottom: 1.19rem;
+        .developer_content{
           display: flex;
-          .irisnet_title{
-            flex: 1;
-            box-sizing: border-box;
-            padding: 0 0.4rem;
-            background: rgba(255,255,255,1);
-            height: 1.93rem;
+          width: 100%;
+          justify-content: center;
+          .irisnet_developer_content{
             display: flex;
-            justify-content: center;
-            box-shadow:0.15rem 0 0.17rem 0 rgba(0,0,0,0.08);
-            span{
-              width: 100%;
-              font-weight: bold;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              box-sizing: border-box;
-              margin: 0 0.2rem;
-              border-bottom: 0.01rem solid rgba(219, 223, 232, 1);
+            .irisnet_title{
+              width: 3.8rem;
+              text-align: left;
+              background: rgba(255, 255, 255, 1) url("../assets/cosmos/about_irisnet_logo.png") no-repeat center right;
+              background-size: 0.6rem 0.6rem;
+              height: 0.6rem;
+              line-height: 0.6rem;
+              border-radius: 0.04rem;
+              font-size: 0.16rem;
+              span{
+                font-weight: bold;
+                margin-left: 0.1rem;
+                box-sizing: border-box;
+                padding-left: 0.1rem;
+                border-left: 0.01rem solid rgba(218, 57, 94, 1);
+              }
             }
           }
-          .irisnet_text{
-            flex: 1;
-            box-sizing: border-box;
-            padding: 0 0.4rem;
+          .cosmos_developer_content{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            border: 0.01rem solid rgba(219, 223, 232, 1);
-            border-left: none;
-            color: rgba(153, 153, 153, 1);
-            li{
-              padding: 0.03rem 0;
-              text-align:left;
-              display: flex;
-              align-items: center;
-              font-size: 0.14rem;
-              list-style: none;
-              i{
-                margin-right: 0.2rem;
+            .cosmos_title{
+              width: 3.8rem;
+              text-align: left;
+              margin-left: 0.4rem;
+              background: rgba(255, 255, 255, 1) url("../assets/cosmos/about_cosmos_logo.png") no-repeat center right;
+              background-size: 0.6rem 0.6rem;
+              height: 0.6rem;
+              line-height: 0.6rem;
+              border-radius: 0.04rem;
+              font-size: 0.16rem;
+              span{
+                font-weight: bold;
+                margin-left: 0.1rem;
+                box-sizing: border-box;
+                padding-left: 0.1rem;
+                border-left: 0.01rem solid rgba(45, 123, 194, 1);
               }
             }
           }
         }
-        .cosmos_content{
-          display: flex;
-          .cosmos_title{
-            flex: 1;
-            box-sizing: border-box;
-            padding: 0 0.4rem;
-            height: 1.93rem;
-            align-items: center;
-            justify-content: center;
+        .introduce_content{
+          margin-top: 0.3rem;
+          .irisnet_introduce_content{
             display: flex;
+            min-height: 1.5rem;
             background: rgba(255,255,255,1);
-            box-shadow:0.15rem 0 0.17rem 0 rgba(0,0,0,0.08);
-            span{
-              font-weight: bold;
-              margin: 0 0.2rem;
+            .introduce_irisnet_logo{
+              width: 1.62rem;
+              height: 1.5rem;
+              img{
+                height: 100%;
+              }
             }
-          }
-          .cosmos_text{
-            flex: 1;
-            box-sizing: border-box;
-            padding: 0 0.4rem;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            border: 0.01rem solid rgba(219, 223, 232, 1);
-            border-top: none;
-            border-left: none;
-            color: rgba(153, 153, 153, 1);
-            li{
-              padding: 0.03rem 0;
-              text-align:left;
+            .irisnet_introduce_text_content{
               display: flex;
               align-items: center;
+              color: rgba(102, 102, 102, 1);
               font-size: 0.14rem;
-              list-style: none;
-              i{
-                margin-right: 0.2rem;
+              flex: 1;
+              .introduce_list{
+                text-align: left;
+                li{
+                  margin-top: 0.08rem;
+                  list-style: none;
+                  display: flex;
+                  margin-left: 0.2rem;
+                  i:before {
+                    content: '';
+                    display: inline-block;
+                    width: 0.04rem;
+                    height: 0.04rem;
+                    background-color: rgba(153, 153, 153, 1);
+                    vertical-align: middle;
+                    margin-right: 0.09rem;
+                    border-radius: 0.04rem;
+                  }
+                  div{
+                    line-height: 0.21rem;
+                  }
+                }
+              }
+            }
+
+          }
+          .cosmos_introduce_content{
+            display: flex;
+            justify-content: flex-end;
+            min-height: 1.5rem;
+            margin-top: 0.3rem;
+            font-size: 0.14rem;
+            color: rgba(102, 102, 102, 1);
+            background: rgba(255,255,255,1);
+            .cosmos_introduce_text_content{
+              display: flex;
+              align-items: center;
+              flex: 1;
+              justify-content: flex-end;
+              .cosmos_introduce_list{
+                text-align: right;
+                li{
+                  margin-top: 0.08rem;
+                  list-style: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  text-align: right;
+                  i:before {
+                      content: '';
+                      display: inline-block;
+                      width: 0.04rem;
+                      height: 0.04rem;
+                      background-color: rgba(153, 153, 153, 1);
+                      vertical-align: middle;
+                      margin-left: 0.09rem;
+                      border-radius: 0.04rem;
+                    }
+                  div{
+                    line-height: 0.21rem;
+                  }
+                }
+              }
+            }
+            .cosmos_logo_content{
+              width: 1.62rem;
+              height: 0.5rem;
+              margin-left: 0.2rem;
+              img{
+                width: 100%;
               }
             }
           }
@@ -390,6 +437,7 @@
             color: rgba(153, 153, 153, 1);
             text-align: center;
             font-size: 0.16rem;
+            line-height: 0.18rem;
           }
         }
         .safe_item:nth-child(2){
@@ -538,13 +586,19 @@
     .about_container{
       .about_content_wrap{
         .about_content{
-          max-width: 7.8rem;
-          .irisnet_text{
-            li{
-              display: flex;
-              justify-content: flex-start;
-              align-items: flex-start;
+          .developer_content{
+            .cosmos_developer_content{
+              .irisnet_title{
+                width: 3.6rem;
+              }
+              .cosmos_title{
+                margin-left: 0.1rem;
+                width: 3.6rem;
+              }
             }
+          }
+          .introduce_content{
+            padding: 0 0.2rem;
           }
         }
       }
@@ -612,12 +666,62 @@
     .about_container{
       .about_content_wrap{
         .about_content{
-          max-width: 5.8rem;
-          display: flex;
-          flex-direction: column;
-        }
-        .about_second_title{
-          max-width: 2.4rem;
+          padding-bottom: 0.6rem;
+          .developer_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .irisnet_developer_content{
+              width: 73%;
+              .irisnet_title{
+                width: 100%;
+              }
+            }
+            .cosmos_developer_content{
+              width: 73%;
+              margin-top: 0.1rem;
+              .cosmos_title{
+                margin-left: 0;
+                width: 100%;
+              }
+            }
+          }
+          .introduce_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           .irisnet_introduce_content{
+             width: 73%;
+             .introduce_irisnet_logo{
+               width: 0.81rem;
+               height:0.75rem;
+               img{
+                 height: 100%;
+               }
+             }
+             .irisnet_introduce_text_content{
+               padding-right: 0.53rem;
+             }
+           }
+            .cosmos_introduce_content{
+              width: 73%;
+              position: relative;
+              .cosmos_introduce_text_content{
+                padding-right: 0.81rem;
+                padding-left: 0.53rem;
+              }
+              .cosmos_logo_content{
+                position: absolute;
+                bottom: 0;
+                width: 0.81rem;
+                height:0.75rem;
+                display: flex;
+                img{
+                  height: 100%;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -725,65 +829,65 @@
     .about_container{
       .about_content_wrap{
         .about_content{
-          max-width: 5.8rem;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin: 0 0.2rem;
-          padding-bottom: 0;
-          .irisnet_content{
+          padding-bottom: 0.6rem;
+          .developer_content{
             display: flex;
             flex-direction: column;
-            .irisnet_title{
-              flex: 1;
-              display: flex;
-              justify-content: flex-start;
-              height: 0.2rem;
-              box-shadow: none;
-              font-size: 0.18rem;
-              font-weight: bold;
-              span{
+            align-items: center;
+            .irisnet_developer_content{
+              padding: 0 0.27rem;
+              width: 90%;
+              .irisnet_title{
                 width: 100%;
-                margin: 0;
-                border:none;
-                display: flex;
-                justify-content: flex-start;
               }
             }
-            .irisnet_text{
-              flex: 1;
-              margin-top: 0.2rem;
-              padding-left: 0.2rem;
-              border: none;
-              color: rgba(153, 153, 153, 1);
+            .cosmos_developer_content{
+              padding: 0 0.27rem;
+              width: 90%;
+              .cosmos_title{
+                width: 100%;
+                margin-top: 0.1rem;
+                margin-left: 0;
+              }
             }
           }
-          .cosmos_content{
+          .introduce_content{
             display: flex;
             flex-direction: column;
-            margin: 0.46rem 0 0.64rem 0;
-            .cosmos_title{
-              height: 0.2rem;
-              box-shadow: none;
-              font-size: 0.18rem;
-              font-weight: bold;
-              display: flex;
-              justify-content: flex-start;
-              background: rgba(252, 252, 255, 1);
-              span{
-                margin: 0;
+            align-items: center;
+            .irisnet_introduce_content{
+              margin: 0 0.27rem;
+              .introduce_irisnet_logo{
+                width: 0.33rem;
+                height:0.33rem;
+                img{
+                  height: 100%;
+                }
+              }
+              .irisnet_introduce_text_content{
+                padding-right: 0.53rem;
               }
             }
-            .cosmos_text{
-              margin-top: 0.2rem;
-              border: none;
-              padding-left: 0.2rem;
-              color: rgba(153, 153, 153, 1);
+            .cosmos_introduce_content{
+              margin: 0.3rem 0.27rem 0 0.27rem;
+              position: relative;
+              .cosmos_introduce_text_content{
+                padding-right: 0.53rem;
+                padding-left: 0.53rem;
+              }
+              .cosmos_logo_content{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0.33rem;
+                height:0.33rem;
+                display: flex;
+                img{
+                  height: 100%;
+                }
+              }
             }
           }
-        }
-        .about_second_title{
-          max-width: 2.4rem;
         }
       }
     }
@@ -918,54 +1022,68 @@
   .container{
     .about_container{
       .about_content_wrap{
+        .about_title{
+          padding: 0.5rem 0 0 0;
+        }
         .about_content{
-          max-width: 5.8rem;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin: 0 0.2rem;
-          .irisnet_content{
+          padding-bottom: 0.5rem;
+          .developer_content{
             display: flex;
             flex-direction: column;
-            .irisnet_title{
-              display: flex;
-              justify-content: flex-start;
-              height: 0.2rem;
-              box-shadow: none;
-              font-size: 0.18rem;
-              font-weight: bold;
-              span{
-                margin: 0;
-                border:none;
+            align-items: center;
+            .irisnet_developer_content{
+              padding: 0 0.27rem;
+              width: 3.2rem;
+              .irisnet_title{
+
               }
             }
-            .irisnet_text{
-              margin-top: 0.2rem;
-              padding-left: 0.2rem;
-              border: none;
-              color: rgba(153, 153, 153, 1);
+            .cosmos_developer_content{
+              margin-top: 0.1rem;
+              padding: 0 0.27rem;
+              width: 3.2rem;
+              .cosmos_title{
+                margin-left: 0;
+              }
             }
           }
-          .cosmos_content{
+          .introduce_content{
             display: flex;
             flex-direction: column;
-            margin: 0.46rem 0 0.64rem 0;
-            .cosmos_title{
-              height: 0.2rem;
-              box-shadow: none;
-              font-size: 0.18rem;
-              font-weight: bold;
+            align-items: center;
+            .irisnet_introduce_content{
+              margin: 0 0.27rem;
+              .introduce_irisnet_logo{
+                width: 0.33rem;
+                height:0.33rem;
+                img{
+                  height: 100%;
+                }
+              }
+              .irisnet_introduce_text_content{
+                padding-right: 0.53rem;
+              }
             }
-            .cosmos_text{
-              margin-top: 0.2rem;
-              border: none;
-              padding-left: 0.2rem;
-              color: rgba(153, 153, 153, 1);
+            .cosmos_introduce_content{
+              margin: 0.3rem 0.27rem 0 0.27rem;
+              position: relative;
+              .cosmos_introduce_text_content{
+                padding-right: 0.53rem;
+                padding-left: 0.53rem;
+              }
+              .cosmos_logo_content{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0.33rem;
+                height:0.33rem;
+                display: flex;
+                img{
+                  height: 100%;
+                }
+              }
             }
           }
-        }
-        .about_second_title{
-          max-width: 2.4rem;
         }
       }
     }
