@@ -20,7 +20,7 @@ export default {
             feature4:'HSM for Private Key Protection',
             feature5:'24/7 professional support',
             feature6:'Third party penetration test',
-            subscribe:'Subscribe the latest news',
+            subscribe:'Subscribe the latest News',
             placeholder:'Please enter a valid email address',
             emailError:'Please enter a valid email address',
         }
