@@ -20,7 +20,7 @@ export default {
             feature4:'HSM for Private Key Protection',
             feature5:'24/7 professional support',
             feature6:'Third party penetration test',
-            subscribe:'Subscribe the latest news',
+            subscribe:'Subscribe the latest News',
             placeholder:'Please enter a valid email address',
             emailError:'Please enter a valid email address',
         }
@@ -274,7 +274,7 @@ export default {
                             item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'
                         },
                         {
-                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - a BPoS Blockchain that is Self Evolutionary.'
+                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - a BPoS blockchain that is Self-evolutionary.'
                         },
                     ]
                 },
@@ -282,10 +282,10 @@ export default {
                     title:'Open Source Contributor to Cosmos',
                     list:[
                         {
-                            item:'Genesis validator on Cosmos Since March 14th, 2019'
+                            item:'Genesis validator on Cosmos since March 14th, 2019'
                         },
                         {
-                            item:'Participated all the Cosmos testnets from Gaia-1000 to mainnet launch'
+                            item:'Participant of Cosmos testnets from Gaia-1000 to mainnet launch'
                         },
                         {
                             item:'Technical support team to Cosmos China community since August 2017'
@@ -298,7 +298,7 @@ export default {
                 product:[
                     {
                         src:require('../assets/cosmos/service_room.png'),
-                        text:'Safe And Reliable Enterprise-class Data Center',
+                        text:'Safe and Reliable Enterprise-class Data Center',
                     },
                     {
                         src:require('../assets/cosmos/net.png'),
@@ -314,7 +314,7 @@ export default {
                     },
                     {
                         src:require('../assets/cosmos/hour.png'),
-                        text:'24/7 Professional  Monitoring',
+                        text:'24/7 Professional Monitoring',
                     },
                     {
                         src:require('../assets/cosmos/shield.png'),
