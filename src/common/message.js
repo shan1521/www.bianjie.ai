@@ -20,7 +20,7 @@ export default {
             feature4:'HSM for Private Key Protection',
             feature5:'24/7 professional support',
             feature6:'Third party penetration test',
-            subscribe:'Subscribe the latest news',
+            subscribe:'Subscribe the latest News',
             placeholder:'Please enter a valid email address',
             emailError:'Please enter a valid email address',
         }
@@ -266,54 +266,47 @@ export default {
             },
             about:{
                 title:'About Bianjie',
-                secondTitle:'Core developer of IRISnet, active contributor to Cosmos',
+                secondTitle:'Core Developer of IRISnet, Open Source Contributor to Cosmos',
                 irisnet:{
                     title:'IRISnet Core Developer',
                     list:[
                         {
-                            item:'First regional hub in Cosmos ecosystem'
+                            item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'
                         },
                         {
-                            item:'First BPoS blockchain built based on Cosmos SDK'
+                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - a BPoS blockchain that is Self-evolutionary.'
                         },
-                        {
-                            item:'Understand each configuration of Cosmos SDK'
-                        }
                     ]
                 },
                 cosmos:{
-                    title:'Cosmos Co-Developer',
+                    title:'Open Source Contributor to Cosmos',
                     list:[
                         {
-                            item:'Genesis Validator on Cosmos Hub'
+                            item:'Genesis validator on Cosmos since March 14th, 2019'
                         },
                         {
-                            item:'From day 1 of gaia-1000 to mainnet launch'
+                            item:'Participant of Cosmos testnets from Gaia-1000 to mainnet launch'
                         },
                         {
-                            item:'Technical support team of Cosmos China'
-                        },
-                        {
-                            item:'Contributor to Cosmos and Tendermint'
+                            item:'Technical support team to Cosmos China community since August 2017'
                         }
                     ]
                 }
-              
             },
             bianjie:{
                 title:'Safe Bianjie, Safe Delegation',
                 product:[
                     {
                         src:require('../assets/cosmos/service_room.png'),
-                        text:'Safe and reliable enterprise-class data center',
+                        text:'Safe and Reliable Enterprise-class Data Center',
                     },
                     {
                         src:require('../assets/cosmos/net.png'),
-                        text:'Highly available network',
+                        text:'Highly Available Network',
                     },
                     {
                         src:require('../assets/cosmos/node.png'),
-                        text:'Auto scale sentry nodes',
+                        text:'Auto Scale Sentry Nodes',
                     },
                     {
                         src:require('../assets/cosmos/lock.png'),
@@ -321,11 +314,11 @@ export default {
                     },
                     {
                         src:require('../assets/cosmos/hour.png'),
-                        text:'24/7 professional  monitoring',
+                        text:'24/7 Professional Monitoring',
                     },
                     {
                         src:require('../assets/cosmos/shield.png'),
-                        text:'DDoS attack protection',
+                        text:'DDoS Attack Protection',
                     }
                 ]
             }
@@ -347,35 +340,29 @@ export default {
             },
             about:{
                 title:'关于边界',
-                secondTitle:'IRISnet的核心开发者，Cosmos的积极贡献者',
+                secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
                 irisnet:{
                     title:'IRISnet 核心开发者',
                     list:[
                         {
-                            item:'Cosmos生态中的第一个区域性枢纽'
+                            item:'在<a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>的支持下构建IRISnet，这是一个用于构建分布式商业应用的Cosmos Hub'
                         },
                         {
-                            item:'基于Cosmos SDK构建的首个BPoS链'
+                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - 自进化的BPoS区块链'
                         },
-                        {
-                            item:'了解Cosmos SDK的每一项配置'
-                        }
                     ]
                 },
                 cosmos:{
-                    title:'Cosmos 合作开发者',
+                    title:'Cosmos的开源社区贡献者',
                     list:[
                         {
-                            item:'Cosmos Hub 的创世验证人'
+                            item:'2019年3月14日成为Cosmos Hub主网创世验证人'
                         },
                         {
-                            item:'自gaia测试网第一天运行到主网上线'
+                            item:'从Gaia-1000直至主网上线成功参与Cosmos全部测试网'
                         },
                         {
-                            item:'Cosmos中国的技术支持团队'
-                        },
-                        {
-                            item:'Cosmos和Tendermint的代码贡献者'
+                            item:'自2017年8月起为Cosmos中国社区提供专业的技术支持'
                         }
                     ]
                 }
