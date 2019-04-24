@@ -23,7 +23,7 @@
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
                     <p>
                         <a :href="cosmosExplorerHref" target="_blank">{{headerCosmosAddress}} </a>
-                        <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="cosmosExplorerHref">
+                        <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="headerCosmosAddress">
                     <img src="../assets/cosmos/copy_logo.png" alt="">
                 </span>
                     </p>
