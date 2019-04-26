@@ -23,7 +23,7 @@
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
                     <p>
                         <a :href="cosmosExplorerHref" target="_blank">{{headerCosmosAddress}} </a>
-                        <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="cosmosExplorerHref">
+                        <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="headerCosmosAddress">
                     <img src="../assets/cosmos/copy_logo.png" alt="">
                 </span>
                     </p>
@@ -247,7 +247,7 @@
                 emailInfo:'',
                 flShowBoxShadow:false,
 	            flShowToast:false,
-	            cosmosExplorerHref:'https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+	            cosmosExplorerHref:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030',
                 validatorIndicators:{},
                 bondedTokens: localStorage.getItem('bondedTokens') ? this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000)) : '',
 	            rate:localStorage.getItem('rate') ? this.formatRate(localStorage.getItem('rate')) : '',
@@ -305,13 +305,13 @@
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
 		                this.headerCosmosAddress = res.operator_address;
-		                this.cosmosExplorerHref = `https://cosmos-overview.genesislab.net/${res.operator_address}`;
+		                this.cosmosExplorerHref = `https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030`;
 		                this.getbondedTokens();
 	                }else {
 		                this.rate= '';
                         this.bondedTokens = '';
 		                this.votingPowerNumber= '';
-		                this.cosmosExplorerHref= 'https://cosmos.p2p.org/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+		                this.cosmosExplorerHref= 'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
 	                }
 	            }).catch(err => {
 
