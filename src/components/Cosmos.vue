@@ -305,7 +305,7 @@
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
 		                this.headerCosmosAddress = res.operator_address;
-		                this.cosmosExplorerHref = `https://cosmos-overview.genesislab.net/${res.operator_address}`;
+		                this.cosmosExplorerHref = `https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030`;
 		                this.getbondedTokens();
 	                }else {
 		                this.rate= '';
