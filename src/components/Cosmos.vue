@@ -300,7 +300,7 @@
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
 		                localStorage.setItem('bondedTokens',res.tokens);
 		                localStorage.setItem('rate',res.commission.rate);
-		                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000));
+		                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000).toNumber());
 		                this.rate = this.formatRate(localStorage.getItem('rate'));
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
@@ -376,7 +376,10 @@
 		        })
 	        },
             formatTokens(number){
-	            return String(number).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                let integer = String(number).split('.')[0];
+                let decimals = String(number).split('.')[1];
+                let formattedInteger = integer.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return`${formattedInteger}.${decimals}`
             },
             formatRate(rate){
                 return `${(rate*100).toFixed(2)} %`
