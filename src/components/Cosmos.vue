@@ -300,7 +300,7 @@
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
 		                localStorage.setItem('bondedTokens',res.tokens);
 		                localStorage.setItem('rate',res.commission.rate);
-		                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000).toNumber());
+		                this.bondedTokens = new bigNumber(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000).toNumber()).toFormat();
 		                this.rate = this.formatRate(localStorage.getItem('rate'));
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
@@ -385,7 +385,7 @@
                 return `${(rate*100).toFixed(2)} %`
             },
             formatUptime(missedBlocks,totalBlocks){
-                return `${(Number(totalBlocks) - Number(missedBlocks))/ Number(totalBlocks) * 100} %`
+                return `${((Number(totalBlocks) - Number(missedBlocks))/ Number(totalBlocks) * 100).toFixed(4)} %`
             },
             formatVotingPower(votingPower){
 	            return `${(votingPower*100).toFixed(2)} %`
