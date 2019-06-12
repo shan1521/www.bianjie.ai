@@ -321,7 +321,45 @@ export default {
                         text:'DDoS Attack Protection',
                     }
                 ]
-            }
+            },
+            cosmosExplorerTitle:'Cosmos Hub Explorers',
+            cosmosExplorer:[
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/big_dipper_white.png'),
+                    blueImg:require('../assets/cosmos/big-dipper_blue.png'),
+                    title:'Big Dipper',
+                    href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/cosmos_white.png'),
+                    blueImg:require('../assets/cosmos/cosmos_blue.png'),
+                    title:'Cosmos Overview',
+                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/hubble_white.png'),
+                    blueImg:require('../assets/cosmos/hubble_blue.png'),
+                    title:'Hubble',
+                    href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/Mintscan_white.png'),
+                    blueImg:require('../assets/cosmos/Mintscan_blue.png'),
+                    title:'Mintscan',
+                    href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/Stargazer_white.png'),
+                    blueImg:require('../assets/cosmos/Stargazer_blue.png'),
+                    title:'Stargazer',
+                    href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+            ]
         },
         cn:{
             header:{
@@ -396,7 +434,45 @@ export default {
                         text:'商业DDos攻击防护',
                     }
                 ]
-            }
+            },
+            cosmosExplorerTitle:'Cosmos Hub 浏览器',
+            cosmosExplorer:[
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/big_dipper_white.png'),
+                    blueImg:require('../assets/cosmos/big-dipper_blue.png'),
+                    title:'Big Dipper',
+                    href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/cosmos_white.png'),
+                    blueImg:require('../assets/cosmos/cosmos_blue.png'),
+                    title:'Cosmos Overview',
+                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/hubble_white.png'),
+                    blueImg:require('../assets/cosmos/hubble_blue.png'),
+                    title:'Hubble',
+                    href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/Mintscan_white.png'),
+                    blueImg:require('../assets/cosmos/Mintscan_blue.png'),
+                    title:'Mintscan',
+                    href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../assets/cosmos/Stargazer_white.png'),
+                    blueImg:require('../assets/cosmos/Stargazer_blue.png'),
+                    title:'Stargazer',
+                    href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+            ]
         }
     }
 };

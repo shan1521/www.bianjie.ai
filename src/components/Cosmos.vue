@@ -140,6 +140,23 @@
                 </ul>
             </div>
         </div>
+        <div class="cosmos_explorer_container">
+            <div class="cosmos_explorer_wrap">
+                <h5 class="cosmos_explorer_title">{{cosmosExplorerTitle}}</h5>
+                <ul class="cosmos_list_content">
+                    <li class="cosmos_item_content" v-for="(item,index) in cosmosExplorerArray"
+                        :class="item.active ? 'bg_blue_style' : 'bg_white_style'"
+                        @click="toBrowser(index,item.href)"
+                        @mouseenter="changeBgColor(index)"
+                        @mouseleave="resetBgColor()">
+                        <div class="cosmos_explorer_logo">
+                            <img :src="item.active ? item.whiteImg : item.blueImg" alt="">
+                        </div>
+                        <p class="cosmos_explorer_name">{{item.title}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="news_letter_container">
             <div class="news_letter_wrap">
                 <h2>{{subscribe}}</h2>
@@ -256,7 +273,9 @@
                 votingPowerNumber: localStorage.getItem('votingPower') ? this.formatVotingPower(localStorage.getItem('votingPower')) : '',
                 lcdBondedTokens: '',
 	            signedBlocksWindow:'',
-	            missedBlocksCnt:''
+	            missedBlocksCnt:'',
+                cosmosExplorerTitle:'',
+                cosmosExplorerArray:[],
             }
         },
         mounted(){
@@ -280,6 +299,24 @@
             },
             toCosmos(){
                 window.open('https://cosmos.network/')
+            },
+	        resetBgColor(){
+		        this.cosmosExplorerArray.forEach(item => {
+			        item.active = false;
+		        });
+            },
+	        changeBgColor(index){
+		        this.cosmosExplorerArray.forEach(item => {
+			        item.active = false;
+		        });
+		        this.cosmosExplorerArray[index].active = true;
+            },
+	        toBrowser(index,href){
+            	this.cosmosExplorerArray.forEach(item => {
+            		item.active = false;
+                });
+		        this.cosmosExplorerArray[index].active = true;
+		        window.open(href)
             },
             toCosmosBrowser(){
                 let clipboard  = new clipboardJS('#cosmosAddress'),that = this;
@@ -421,6 +458,8 @@
                 this.uptime= message.cosmos[lang].header.uptime;
                 this.guide= message.cosmos[lang].header.guide;
                 this.guideHref= message.cosmos[lang].header.guideHref;
+                this.cosmosExplorerTitle = message.cosmos[lang].cosmosExplorerTitle;
+                this.cosmosExplorerArray = message.cosmos[lang].cosmosExplorer
             },
             scroll(top) {
                 $('body,html').animate({
