@@ -261,8 +261,8 @@ export default {
                 votingPower:'Voting Power',
                 commissionRate:'Commission Rate',
                 uptime:'Uptime',
-                guide:'Read Delegator\'s Guide',
-	            guideHref:'https://cosmos.network/docs/gaia/delegator-guide-cli.html'
+                guide:'Cosmos Hub Wallets',
+	            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
                 title:'About Bianjie',
@@ -373,8 +373,8 @@ export default {
 	            votingPower:'权重',
 	            commissionRate:'佣金率',
 	            uptime:'活跃度',
-	            guide:'委托人指南',
-	            guideHref:'https://github.com/shirleypyj/Market-1/blob/patch-7/delegator-guide-cli_cn.md'
+	            guide:'Cosmos Hub 钱包',
+	            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
                 title:'关于边界',
