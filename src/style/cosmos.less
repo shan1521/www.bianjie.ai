@@ -402,13 +402,13 @@
   }
   .safe_container{
     width: 100%;
-    background: #fff;
+    background: rgba(252, 252, 255, 1);
     .safe_wrap{
       max-width: 12rem;
       margin: 0 auto;
       text-align: center;
       h2{
-        margin-top: 1rem;
+        padding-top: 1rem;
         font-size: 0.28rem;
         line-height: 0.32rem;
       }
@@ -445,6 +445,78 @@
         }
         .safe_item:nth-child(5){
           padding: 0 0.8rem 0 0.7rem;
+        }
+      }
+    }
+  }
+  .cosmos_explorer_container{
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    .cosmos_explorer_wrap{
+      max-width: 12.8rem;
+      margin: 0 auto;
+      .cosmos_explorer_title{
+        text-align: center;
+        padding-top: 0.92rem;
+        margin: 0 0 1rem 0;
+        font-size: 0.28rem;
+        color: rgba(51, 51, 51, 1);
+      }
+      .cosmos_list_content{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 0.6rem 1.4rem 0.6rem;
+        justify-content: center;
+        .cosmos_item_content{
+          width: 2.32rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          margin:0 0.6rem 0.4rem 0;
+          border: 0.01rem solid #DAD9D9;
+          cursor: pointer;
+          .cosmos_explorer_logo{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0 0.4rem 0;
+            img{
+              width: 1.22rem;
+            }
+          }
+          .cosmos_explorer_name{
+            height:0.26rem;
+            text-align: center;
+            padding-bottom: 0.3rem;
+          }
+        }
+        .cosmos_item_content:nth-of-type(3){
+          width: 2.32rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          margin:0 0.6rem 0.4rem 0;
+          .cosmos_explorer_logo{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0 0.4rem 0;
+            img{
+              width: 1.36rem;
+              height: 0.28rem;
+            }
+          }
+        }
+        .bg_blue_style{
+          background: rgba(47, 133, 220, 1);
+          color: rgba(252, 252, 255, 1);
+        }
+        .bg_white_style{
+          background: rgba(255, 255, 255, 1);
+          color: rgba(51, 51, 51, 1);
         }
       }
     }
@@ -896,7 +968,7 @@
     .safe_container{
       .safe_wrap{
         h2{
-          padding:  0 0.2rem;
+          padding:  1rem 0.2rem 0 0.2rem;
         }
         .safe_content{
           .safe_item{
@@ -1139,6 +1211,282 @@
     }
   }
 
+}
+@media screen and (max-width: 1010px){
+.container{
+  .cosmos_explorer_container{
+    .cosmos_explorer_wrap{
+      .cosmos_list_content{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15%;
+        .cosmos_item_content{
+          margin-right: 0;
+        }
+        .cosmos_item_content:nth-of-type(3){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1014px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.64rem;
+          margin-bottom: 0.8rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 16%;
+          .cosmos_item_content{
+            margin-right: 0;
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 767px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.36rem;
+          margin-bottom: 0.4rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 17%;
+          .cosmos_item_content{
+            width: 1.7rem;
+            display: flex;
+            flex-direction: column;
+            margin:0 0 0.4rem 0;
+            border: 0.01rem solid #DAD9D9;
+            cursor: pointer;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.5rem 0 0.4rem 0;
+              img{
+                width: 0.67rem;
+              }
+            }
+            .cosmos_explorer_name{
+              padding-bottom: 0.12rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(2){
+           .cosmos_explorer_name{
+           }
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+            width: 1.7rem;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.2rem 0 0.12rem 0;
+              img{
+                width: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 580px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.36rem;
+          margin-bottom: 0.4rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 17%;
+          .cosmos_item_content{
+            width: 1.27rem;
+            display: flex;
+            flex-direction: column;
+            margin:0 0 0.4rem 0;
+            border: 0.01rem solid #DAD9D9;
+            cursor: pointer;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.4rem 0 0.2rem 0;
+              img{
+                width: 0.67rem;
+              }
+            }
+            .cosmos_explorer_name{
+              padding-bottom: 0.12rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(2){
+            .cosmos_explorer_name{
+              height:0.42rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+            width: 1.27rem;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.2rem 0 0.12rem 0;
+              img{
+                width: 0.75rem;
+                height: 0.16rem
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 459px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.36rem;
+          margin-bottom: 0.4rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10%;
+          .cosmos_item_content{
+            width: 1.27rem;
+            display: flex;
+            flex-direction: column;
+            margin:0 0 0.4rem 0;
+            border: 0.01rem solid #DAD9D9;
+            cursor: pointer;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.4rem 0 0.2rem 0;
+              img{
+                width: 0.67rem;
+              }
+            }
+            .cosmos_explorer_name{
+              padding-bottom: 0.12rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(2){
+            .cosmos_explorer_name{
+              height:0.42rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+            width: 1.27rem;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.2rem 0 0.12rem 0;
+              img{
+                width: 0.75rem;
+                height: 0.16rem
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.36rem;
+          margin-bottom: 0.4rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: center;
+          margin: 0 20%;
+          .cosmos_item_content{
+            width: 1.27rem;
+            display: flex;
+            flex-direction: column;
+            margin:0 0 0.4rem 0;
+            border: 0.01rem solid #DAD9D9;
+            cursor: pointer;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.4rem 0 0.2rem 0;
+              img{
+                width: 0.67rem;
+              }
+            }
+            .cosmos_explorer_name{
+              padding-bottom: 0.12rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(2){
+            .cosmos_explorer_name{
+              height:0.42rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+            width: 1.27rem;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.58rem 0 0.48rem 0;
+              img{
+                width: 0.75rem;
+                height: 0.16rem
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .common_node{
   display: inline-block;
