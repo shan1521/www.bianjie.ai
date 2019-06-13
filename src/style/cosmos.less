@@ -1437,7 +1437,7 @@
   }
 }
 
-@media screen and (max-width: 374px){
+@media screen and (min-width: 320px) and (max-width: 374px){
   .container{
     .cosmos_explorer_container{
       .cosmos_explorer_wrap{
@@ -1447,8 +1447,69 @@
         }
         .cosmos_list_content{
           display: flex;
-          justify-content: center;
-          margin: 0 20%;
+          justify-content: space-between;
+          margin: 0 0.3rem;
+          .cosmos_item_content{
+            width: 1.27rem;
+            display: flex;
+            flex-direction: column;
+            margin:0 0 0.4rem 0;
+            border: 0.01rem solid #DAD9D9;
+            cursor: pointer;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.4rem 0 0.2rem 0;
+              img{
+                width: 0.67rem;
+              }
+            }
+            .cosmos_explorer_name{
+              padding-bottom: 0.12rem;
+              font-size: 0.16rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(2){
+            .cosmos_explorer_name{
+              height:0.42rem;
+              font-size: 0.16rem;
+            }
+          }
+          .cosmos_item_content:nth-of-type(3){
+            margin-right: 0;
+            width: 1.27rem;
+            .cosmos_explorer_logo{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.58rem 0 0.48rem 0;
+              img{
+                width: 0.75rem;
+                height: 0.16rem
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .container{
+    .cosmos_explorer_container{
+      .cosmos_explorer_wrap{
+        .cosmos_explorer_title{
+          padding-top: 0.36rem;
+          margin-bottom: 0.4rem;
+        }
+        .cosmos_list_content{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0.2rem;
           .cosmos_item_content{
             width: 1.27rem;
             display: flex;
