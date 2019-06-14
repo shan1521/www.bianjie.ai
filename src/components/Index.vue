@@ -211,8 +211,10 @@
                 </div>
             </div>
         </div>
-        <div class="footer">版权所有 © 2017上海边界智能科技有限公司
-            <a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备17020986号</a>
+        <div class="footer">
+            <p>版权所有 © 2017上海边界智能科技有限公司</p>
+            <p><a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a></p>
         </div>
     </div>
 </template>
