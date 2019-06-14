@@ -447,11 +447,21 @@
     height: 90px;
     background: #0e2e4e;
     text-align: center;
-    line-height: 90px;
     color: #4d96e0;
-    a {
-      background: #0e2e4e;
-      color: #4d96e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+      a{
+        background: #0e2e4e;
+        color: #4d96e0;
+      }
+    }
+    p:nth-of-type(2){
+      margin-left: 0.1rem;
+    }
+    p:nth-of-type(3){
+      margin-left: 0.1rem;
     }
   }
 }
