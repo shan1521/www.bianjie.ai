@@ -25,6 +25,7 @@
     "less": "^3.9.0",
     "less-loader": "^4.0.5",
     "lru-cache": "^4.1.1",
+    "macaddress": "^0.2.9",
     "request": "^2.87.0",
     "serve-favicon": "^2.4.5",
     "sw-precache-webpack-plugin": "^0.11.4",
