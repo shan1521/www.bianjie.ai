@@ -2,7 +2,11 @@ export const message = {
     "index": {
         "logo": [
             {
-                "src": '../public/bianjie_cosmos.png',
+                "src": '../public/banner_01.png',
+                "active": true
+            },
+            {
+                "src": '../public/index_logo_cn.png',
                 "active": false
             },
             {
