@@ -7,9 +7,8 @@
                      @click="is=false"/>
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
             </div>
-            <img class="index_logo" :src="img($store.state.messages.index.logo[2].src)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
             <div class="index_down" v-show="is">
-                <router-link class="head_item" key="310" to="/cosmos" tag="div">委托ATOM</router-link>
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
                     {{item.txt}}
@@ -127,14 +126,6 @@
                 <div>
                     <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
                         <img :src="item.img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="validator">
-                <img src="../../public/mobile_banner.png"/>
-                <div class="validator_btn">
-                    <a :href="$store.state.messages.validator.btnHref" target="_blank">
-                        {{ $store.state.messages.validator.btnText}}
                     </a>
                 </div>
             </div>
