@@ -83,12 +83,12 @@
     background: #fff;
     .about_wrap{
       max-width: 12rem;
-      height: 4.6rem;
+      height: 5.4rem;
       background: #fff;
       margin: 0 auto;
       display: flex;
       .about_our{
-        max-width: 4.1rem;
+        max-width: 4.56rem;
         margin: 0.96rem 0.4rem 0 0.5rem;
         .about_title{
           font-size: 0.28rem;
@@ -96,9 +96,9 @@
         }
         .about_text{
           margin-top: 40px;
-          color: #696e75;
+          color: #000000;
           letter-spacing: 2px;
-          line-height: 28px;
+          line-height: 25px;
           font-size: 15px;
           text-indent: 34px;
           text-align: justify;
@@ -169,7 +169,7 @@
           height: 100%;
           position: relative;
           .product_item_content{
-            min-height: 7.5rem;
+            min-height: 6.5rem;
             background-size: cover !important;
             .product_img{
               width: 100%;
@@ -181,21 +181,27 @@
             }
             .product_title_content{
               display: flex;
+              flex-direction: row-reverse;
               justify-content: space-between;
               margin: 0 0.5rem 0.3rem 0.5rem;
               padding-top: 0.5rem;
-
               .product_title{
                 flex: 1;
+                text-align: right;
+                padding-right: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
                 min-width: 0.8rem;
-                font-size: 0.22rem;
+                font-size: 0.28rem;
+                font-weight: bold;
                 color: #1d61a5;
-                font-weight: 700;
                 .product_content_title_txt1{
                   font-size: 0.12rem;
                   margin-top: 0.1rem;
                 }
               }
+
               .item_logo_content{
                 min-width: 0.7rem;
                 img{
@@ -214,7 +220,15 @@
           }
         }
         .product_item:nth-child(2){
-          margin: 0 0.4rem;
+          margin-left: 0.6rem;
+          .product_title_content{
+            .product_title{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: center;
+            }
+          }
         }
       }
     }
@@ -404,7 +418,15 @@
             a{
               display: inline-block;
               margin: 0.2rem 0.2rem 0 0;
+              max-width: 206px;
+              height: 136px;
               cursor: pointer;
+              &:hover{
+                background: #fff;
+              }
+              img{
+                width: 100%;
+              }
             }
           }
         }
