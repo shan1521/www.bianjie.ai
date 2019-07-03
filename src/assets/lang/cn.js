@@ -31,7 +31,8 @@ export const message = {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的研发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴，专注于区块链跨链网络、人工智能和大数据分析等技术的研发和实践。',
+            '上海边界智能科技有限公司（Bianjie.AI）创立于2016年，是一家专注于分布式智能处理和区块链技术开发的高科技公司。自创立以来，边界智能以人工智能，大数据分析和区块链跨链技术创新为核心，开发了IRISnet跨链服务网络、分布式大数据分析交换网络（BEAN）、智能医药知识库等核心产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴一起在医疗健康大数据领域开展系列创新实践。'+
+            '<br/><div style="text-indent: 34px">边界智能荣获第七届中国创新创业大赛成长组32强，中国首个面向以健康医疗大数据产业为核心的创新大赛 – CDHIC天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目 COSMOS的核心中国开发者。</div>',
         ]
     },
     "core": {
@@ -62,16 +63,6 @@ export const message = {
                 "<div>BEAN通过IRIS Hub和其他区块链网络交互，利用传统分布式人工智能研究中模型并行性和SOA设计模式，将区块链技术应用到分布式分析服务，实现与传统商业系统的链上链下通联，提供保护数据隐私、尊重数据拥有者权利的加密智能分析服务。" +
                 "边界智能基于BEAN开发出支持医疗数据分析的应用，为医疗数据提供链上基于语义技术智能抽取，让非结构化医疗数据在保护隐私的前提下进行结构化处理，使得链上分布式业务协作时数据搜索、交换及使用变成可能。</div>"
             },
-            {
-                "title": "医药知识库",
-                "bgImg": "../public/base_02.jpg",
-                "img": "../public/base_02_02.png",
-                "txt": "运用人工智能技术对医疗健康领域非结构化数据（药品说明书，治疗方法，用药规范以及病历病案等）进行智能分析形成中文医药知识库，知识库包括以下智能工具：<br/>" +
-                "<p>1. 药品编码匹配工具</p>" +
-                "<p>2. 临床标准术语匹配工具</p>" +
-                "<p>3. 合理用药规则提取工具</p>"
-            },
-
         ]
     },
     "dynamic": {
@@ -117,31 +108,14 @@ export const message = {
         "img": [
             [
                 {
-                    "img": "../public/partner/fxth.jpg",
-                    "img_selected": "../public/partner/fxth2.jpg",
-                    "href": "http://www.tonghaocapital.com/"
-                },
-                {
                     "img": "../public/partner/wx.png",
                     "img_selected": "../public/partner/wx2.png",
                     "href": "http://www.wxblockchain.com/"
                 },
                 {
-                    "img": "../public/partner/wy.png",
-                    "img_selected": "../public/partner/wy2.png",
-                    "href": "https://www.wancloud.io/"
-                },
-                {
                     "img": "../public/partner/cosmos.png",
                     "img_selected": "../public/partner/cosmos2.png",
                     "href": "https://cosmos.network/"
-                },
-            ],
-            [
-                {
-                    "img": "../public/partner/ms.png",
-                    "img_selected": "../public/partner/ms2.png",
-                    "href": "http://www.minshenglife.com/templet/default/"
                 },
                 {
                     "img": "../public/partner/hdf.png",
@@ -152,28 +126,42 @@ export const message = {
                     "img": "../public/partner/nxyl.png",
                     "img_selected": "../public/partner/nxyl2.png"
                 },
+            ],
+            [
+                
                 {
                     "img": "../public/partner/bjdx.png",
                     "img_selected": "../public/partner/bjdx2.png",
                     "href": "http://www.bjmu.edu.cn/"
                 },
+                {
+                    "img": "../public/partner/xwl_gray.png",
+                    "img_selected": "../public/partner/xwl.png",
+                    "href": "http://www.tonghaocapital.com/"
+                },
+                {
+                    "img": "../public/partner/irisnet_gray.png",
+                    "img_selected": "../public/partner/irisnet.png",
+                    "href": "https://www.irisnet.org/"
+                },
+                {
+                    "img": "../public/partner/xkl_gray.png",
+                    "img_selected": "../public/partner/xkl.png",
+                    "href": "http://healthcloud.link/"
+                },
             ],
             [
-                {
-                    "img": "../public/partner/qhdx.png",
-                    "img_selected": "../public/partner/qhdx2.png",
-                    "href": "http://www.med.tsinghua.edu.cn/"
+               
+               /* {
+                    "img": "../public/partner/njszjr_gray.png",
+                    "img_selected": "../public/partner/njszjr.png",
+                    "href": "javascript:void(0)"
                 },
                 {
-                    "img": "../public/partner/shjt.png",
-                    "img_selected": "../public/partner/shjt2.png",
-                    "href": "http://www.shsmu.edu.cn/"
-                },
-                {
-                    "img": "../public/partner/pu.png",
-                    "img_selected": "../public/partner/pu2.png",
-                    "href": "https://www.purdue.edu/"
-                }
+                    "img": "../public/partner/ptws_gray.png",
+                    "img_selected": "../public/partner/ptws.png",
+                    "href": "javascript:void(0)"
+                }*/
             ]
 
         ]

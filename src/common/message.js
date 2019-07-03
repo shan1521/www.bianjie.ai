@@ -51,9 +51,7 @@ export default {
             "img": '../public/about.png',
             "title": "关于我们",
             "txt": [
-                '上海边界智能科技有限公司 （Bianjie AI） 创立于2016年，是在人工智能、大数据分析和区块链领域拥有核心能力的创新企业，' +
-                '专注于为医疗健康、保险和金融行业提供智能化产品和服务，支持可信高效的行业协作。',
-                '2017年边界智能成为区块链跨链全球项目COSMOS/Tendermint 的中国社区运营和技术开发合作伙伴。'
+                '上海边界智能科技有限公司（Bianjie.AI）创立于2016年，是一家专注于分布式智能处理和区块链技术开发的高科技公司。自创立以来，边界智能以人工智能，大数据分析和区块链跨链技术创新为核心，开发了IRISnet跨链服务网络、分布式大数据分析交换网络（BEAN）、智能医药知识库等核心产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴一起在医疗健康大数据领域开展系列创新实践。 边界智能荣获第七届中国创新创业大赛成长组32强，中国首个面向以健康医疗大数据产业为核心的创新大赛 – CDHIC天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目 COSMOS的核心中国开发者。'
             ]
         },
         "core": {
@@ -256,13 +254,13 @@ export default {
                 product:'Maintained by the core development team of IRISnet',
                 validatorAddress:'Validator Address',
                 address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-	            toastHint:'Copied',
+                toastHint:'Copied',
                 bondedAtoms:'Bonded ATOMs',
                 votingPower:'Voting Power',
                 commissionRate:'Commission Rate',
                 uptime:'Uptime',
                 guide:'Cosmos Hub Wallets',
-	            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+                guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
                 title:'About Bianjie',
@@ -368,13 +366,13 @@ export default {
                 product:'由IRISnet核心开发团队维护的验证人节点',
                 validatorAddress:'验证人地址',
                 address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-	            toastHint:'复制成功',
-	            bondedAtoms:'ATOM总数',
-	            votingPower:'权重',
-	            commissionRate:'佣金率',
-	            uptime:'活跃度',
-	            guide:'Cosmos Hub 钱包',
-	            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+                toastHint:'复制成功',
+                bondedAtoms:'ATOM总数',
+                votingPower:'权重',
+                commissionRate:'佣金率',
+                uptime:'活跃度',
+                guide:'Cosmos Hub 钱包',
+                guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
                 title:'关于边界',
@@ -404,7 +402,7 @@ export default {
                         }
                     ]
                 }
-        
+                
             },
             bianjie:{
                 title:'安全的边界，放心的委托',

@@ -304,7 +304,7 @@
                 padding-bottom: 50px;
                 font-size: 14px;
                 line-height: 26px;
-                color: #696e75;
+                color: #000;
                 div {
                     text-indent: 30px;
                     text-align: justify;
