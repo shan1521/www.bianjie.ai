@@ -12,20 +12,15 @@
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
-                    <router-link class="header_validator" key="310" to="/cosmos" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                 </div>
             </div>
         </div>
         <div class="swiper_content">
             <div class="swiper_wrap">
-                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active" :showIndicators='false'>
                     <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
-                        <a :href="index==1 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==1 ? 'active_cursor': 'default_cursor'">
+                        <a :href="index === 0 || index === 2 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index === 0 || index === 2 ? 'active_cursor': 'default_cursor'">
                             <img class="index1_logo" :src="item.src"/>
-                        </a>
-                        <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
-                           v-show="index==0">
-                            {{ $store.state.messages.validator.btnText}}
                         </a>
                     </swipe-item>
                 </swipe>
@@ -33,7 +28,7 @@
                     <img src="../assets/left.png" style="float: left;" @click="prev"/>
                     <img src="../assets/right.png" style="float: right;" @click="next"/>
                 </div>
-                <div class="mint-swipe-indicators" style="display: block">
+                <div class="mint-swipe-indicators" style="display: none">
                     <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'active':item.active}"
                          class="mint-swipe-indicator" @click="goto(index)"></div>
                 </div>
@@ -214,7 +209,9 @@
         <div class="footer">
             <p>版权所有 © 2019上海边界智能科技有限公司</p>
             <p><a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a></p>
-            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
+                <img src="../assets/put_on_records.png"/>
+            </p>
         </div>
     </div>
 </template>

@@ -7,9 +7,8 @@
                      @click="is=false"/>
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
             </div>
-            <img class="index_logo" :src="img($store.state.messages.index.logo[2].src)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
             <div class="index_down" v-show="is">
-                <router-link class="head_item" key="310" to="/cosmos" tag="div">委托ATOM</router-link>
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
                     {{item.txt}}
@@ -128,14 +127,6 @@
                     </a>
                 </div>
             </div>
-            <div class="validator">
-                <img src="../../public/mobile_banner.png"/>
-                <div class="validator_btn">
-                    <a :href="$store.state.messages.validator.btnHref" target="_blank">
-                        {{ $store.state.messages.validator.btnText}}
-                    </a>
-                </div>
-            </div>
             <div class="index_title index_title1" id="#contact">
                 {{$store.state.messages.contact.title}}
                 <div></div>
@@ -159,7 +150,9 @@
         <div class="copyright">
             <p>版权所有 © 2019上海边界智能科技有限公司</p>
             <p><a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a></p>
-            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
+                <img src="../assets/put_on_records.png">
+            </p>
         </div>
     </div>
 </template>
@@ -311,7 +304,7 @@
                 padding-bottom: 50px;
                 font-size: 14px;
                 line-height: 26px;
-                color: #696e75;
+                color: #000;
                 div {
                     text-indent: 30px;
                     text-align: justify;
@@ -559,6 +552,10 @@
             p{
                 a {
                     color: #4d96e0;
+                }
+                img{
+                    padding-left: 0.06rem;
+                    width: 0.12rem;
                 }
             }
         }

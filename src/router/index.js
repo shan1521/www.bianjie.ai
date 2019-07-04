@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import index from '@/components/Index'
 import app from '@/components/app'
 import Validators from '../components/Validators.vue';
-import cosmos from '../components/Cosmos'
 Vue.use(Router)
 
 export function createRouter() {
@@ -26,11 +25,6 @@ export function createRouter() {
                 name: 'app',
                 component: app
             },
-            {
-                path: '/cosmos',
-                name: 'cosmos',
-                component: cosmos
-            }
         ]
     })
 }

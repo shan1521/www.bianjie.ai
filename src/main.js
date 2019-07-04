@@ -38,6 +38,9 @@ export function createApp () {
   })
   store.state.messages=i18n.messages[store.state.lang]['message']
   router.beforeEach((to, from, next) => {
+      if(to.path === '/cosmos'){
+          next('/')
+      }
         if ((to.query.lang) && (to.query.lang == 'EN' || to.query.lang == 'CN')) {
             store.state.lang=  to.query.lang;
             store.state.messages=i18n.messages[store.state.lang]['message']
