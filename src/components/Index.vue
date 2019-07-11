@@ -186,25 +186,6 @@
                     </div>
                 </div>
             </div>
-            <!--<div id="#contact" class="contact_container">-->
-                <!--<div class="contact_wrap">-->
-                    <!--<div class="contact_way_content">-->
-                        <!--<span class="contact_title">{{$store.state.messages.contact.title}}</span>-->
-                        <!--<div class="about_title_across"></div>-->
-                        <!--<div class="address_content">-->
-                            <!--<span class="address">{{$store.state.messages.contact.address.txt}}：{{$store.state.messages.contact.address.val}}</span>-->
-                            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="postcode">{{$store.state.messages.contact.zip_code.txt}}：{{$store.state.messages.contact.zip_code.val}}</span>-->
-                        <!--</div>-->
-                        <!--<p class="email">{{$store.state.messages.contact.mailbox.txt}}：{{$store.state.messages.contact.mailbox.val}}</p>-->
-                    <!--</div>-->
-                    <!--<div class="qr_content">-->
-                        <!--<img src="../assets/qr.png"/>-->
-                        <!--<div class="img_alt">-->
-                            <!--Bianjie_AI-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
         <div class="footer">
             <p>版权所有 © 2019上海边界智能科技有限公司</p>

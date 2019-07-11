@@ -184,19 +184,4 @@ export const message = {
         "btnHref":"/cosmos",
         "headerValidatorBtnText":"委托 ATOM"
     },
-    "contact": {
-        "title": "联系我们",
-        "address": {
-            "txt": "地址",
-            "val": "上海市浦东新区张江高科技园区博霞路22号S座2层202-203室"
-        },
-        "zip_code": {
-            "txt": "邮编",
-            "val": "201203"
-        },
-        "mailbox": {
-            "txt": "邮箱",
-            "val": "service@bianjie.ai"
-        }
-    }
 }
