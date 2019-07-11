@@ -48,15 +48,13 @@
                 <div class="mobilebanner_img_container">
                     <img src="../../public/mobilebanner.jpg">
                 </div>
-                <div>
-                    <p class="irisnet_title">{{$store.state.messages.irisnetInfo.title}}</p>
-                    <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetService}}</p>
-                    <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetTechnology}}</p>
-                    <div class="irisnet_link_btn">
-                        <a href="https://www.irisnetwork.cn/" target="_blank">
-                            <span>{{$store.state.messages.irisnetInfo.irisnetWebsiteUrl}}</span>
-                        </a>
-                    </div>
+                <p class="irisnet_title">{{$store.state.messages.irisnetInfo.title}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoItem}}</p>
+                <p class="irisnet_info">{{$store.state.messages.irisnetInfo.irisnetInfoIntroduce}}</p>
+                <div class="irisnet_link_btn">
+                    <a href="https://www.irisnet.org/" target="_blank">
+                        <span>{{$store.state.messages.irisnetInfo.irisnetWebsiteUrl}}</span>
+                    </a>
                 </div>
             </div>
             <div class="index_title" id="#product">
