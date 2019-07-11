@@ -24,7 +24,6 @@ export const message = {
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "合作伙伴", "href": "/#partner"},
-            {"txt": "联系我们", "href": "/#contact"},
         ]
     },
     "about": {
@@ -152,16 +151,16 @@ export const message = {
             ],
             [
                
-               /* {
-                    "img": "../public/partner/njszjr_gray.png",
-                    "img_selected": "../public/partner/njszjr.png",
-                    "href": "javascript:void(0)"
-                },
+                // {
+                //     "img": "../public/partner/njszjr_gray.png",
+                //     "img_selected": "../public/partner/njszjr.png",
+                //     "href": "javascript:void(0)"
+                // },
                 {
                     "img": "../public/partner/ptws_gray.png",
                     "img_selected": "../public/partner/ptws.png",
                     "href": "javascript:void(0)"
-                }*/
+                }
             ]
 
         ]
@@ -176,7 +175,7 @@ export const message = {
         "txt":[
             "是基于权益证明（PoS）Tendermint共识算法",
             "接入Cosmos区块链借助Hub将完成跨链价值转移",
-            "边界智能作为Cosmos Hub的验证节点",
+            "边界智能作为Cosmos的Hub验证节点",
             "旨在维护Cosmos网络的安全性，促进生态发展！"
         ],
         'irisnetHref':"https://www.irisnet.org/",
@@ -184,19 +183,4 @@ export const message = {
         "btnHref":"/cosmos",
         "headerValidatorBtnText":"委托 ATOM"
     },
-    "contact": {
-        "title": "联系我们",
-        "address": {
-            "txt": "地址",
-            "val": "上海市浦东新区张江高科技园区博霞路22号S座2层202-203室"
-        },
-        "zip_code": {
-            "txt": "邮编",
-            "val": "201203"
-        },
-        "mailbox": {
-            "txt": "邮箱",
-            "val": "service@bianjie.ai"
-        }
-    }
 }
