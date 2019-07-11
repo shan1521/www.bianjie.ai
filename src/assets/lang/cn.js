@@ -24,7 +24,6 @@ export const message = {
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "合作伙伴", "href": "/#partner"},
-            // {"txt": "联系我们", "href": "/#contact"},
         ]
     },
     "about": {
