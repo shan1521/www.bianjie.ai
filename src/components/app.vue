@@ -129,25 +129,6 @@
                     </a>
                 </div>
             </div>
-            <div class="index_title index_title1" id="#contact">
-                {{$store.state.messages.contact.title}}
-                <div></div>
-            </div>
-            <div class="address">
-                {{$store.state.messages.contact.address.val}}
-            </div>
-            <div class="zip_code">
-                {{$store.state.messages.contact.zip_code.txt}}： {{$store.state.messages.contact.zip_code.val}}
-            </div>
-            <div class="mailbox">
-                {{$store.state.messages.contact.mailbox.txt}}：{{$store.state.messages.contact.mailbox.val}}
-            </div>
-            <div class="qr">
-                <img src="../assets/qr.png"/>
-                <div>
-                    Bianjie_AI
-                </div>
-            </div>
         </div>
         <div class="copyright">
             <p>版权所有 © 2019上海边界智能科技有限公司</p>
@@ -456,6 +437,7 @@
             background: #eeeeee;
             margin-top: 42px;
             padding-top: 42px;
+            padding-bottom: 30px;
             .index_title {
                 margin-top: 0;
             }
