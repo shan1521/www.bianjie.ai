@@ -150,12 +150,6 @@ export const message = {
                 },
             ],
             [
-               
-                // {
-                //     "img": "../public/partner/njszjr_gray.png",
-                //     "img_selected": "../public/partner/njszjr.png",
-                //     "href": "javascript:void(0)"
-                // },
                 {
                     "img": "../public/partner/ptws_gray.png",
                     "img_selected": "../public/partner/ptws.png",
