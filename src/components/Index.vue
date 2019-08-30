@@ -173,13 +173,13 @@
                     </div>
                     <div class="partner_img_content">
                         <div class="partner_img">
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[0]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[1]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[2]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
                         </div>
