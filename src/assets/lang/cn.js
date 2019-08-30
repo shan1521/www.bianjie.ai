@@ -69,6 +69,14 @@ export const message = {
         "btnTxt:": "查看更多",
         "txt": [
             {
+                "year": '2019',
+                "day": "27",
+                "month": "Aug",
+                "title": "边界智能亮相重庆智博会，荣获2019年中国优秀区块链解决方案",
+                "txt": "2019年8月27日，在中国国际智能产业博览会“区块链高峰论坛”上，边界智能打造的“跨链服务联盟枢纽 ISCH”，荣获2019中国优秀区块链解决方案。边界智能为星康链提供区块链技术支持的“区块链电子处方共享平台”也同时获奖。",
+                "href": "https://mp.weixin.qq.com/s/V_ES94pwvlpAULuzWQWWIw"
+            },
+            {
                 "year": '2018',
                 "day": "24",
                 "month": "Oct",
@@ -92,14 +100,7 @@ export const message = {
                 "txt": "2018年4月12日，从Cosmos测试网络中的边界智能的见证节点发出的第一笔区块链跨链交易取得成功。它意味着从理论和实践上都真正实现了高效、安全的跨链价值转移。",
                 "href": "https://mp.weixin.qq.com/s/eVmhsIAlB1TcCbdLVQzLfg"
             },
-            {
-                "year": '2018',
-                "day": "06",
-                "month": "Feb",
-                "title": "专注医疗AI+区块链，边界智能缘何获得复星同浩数千万元Pre-A轮融资",
-                "txt": "近日，边界智能向动脉网独家披露：公司已和复星同浩合作完成数千万元Pre-A轮融资。对于本轮融资，边界智能CEO曹恒表示：“有多家投资机构都给了边界正式的投资...”",
-                "href": "https://mp.weixin.qq.com/s/h3tSeXRF--FaFOfSE0gE6Q"
-            }
+            
         ]
     },
     "partner": {
