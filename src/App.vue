@@ -54,7 +54,6 @@
                 window.onresize = function () {
                     _this.resize(_this)
                 }
-                console.log(this.$router)
             }
         }
     }

@@ -12,20 +12,15 @@
                                  :key="index" :to="item.href" tag="div">
                         {{item.txt}}
                     </router-link>
-                    <router-link class="header_validator" key="310" to="/cosmos" tag="div">{{$store.state.messages.validator.headerValidatorBtnText}}</router-link>
                 </div>
             </div>
         </div>
         <div class="swiper_content">
             <div class="swiper_wrap">
-                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active" :showIndicators='false'>
                     <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
-                        <a :href="index==1 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index==1 ? 'active_cursor': 'default_cursor'">
+                        <a :href="index === 0 || index === 2 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index === 0 || index === 2 ? 'active_cursor': 'default_cursor'">
                             <img class="index1_logo" :src="item.src"/>
-                        </a>
-                        <a :href="$store.state.messages.validator.btnHref" target="_blank" class="index1_logo_btn"
-                           v-show="index==0">
-                            {{ $store.state.messages.validator.btnText}}
                         </a>
                     </swipe-item>
                 </swipe>
@@ -33,7 +28,7 @@
                     <img src="../assets/left.png" style="float: left;" @click="prev"/>
                     <img src="../assets/right.png" style="float: right;" @click="next"/>
                 </div>
-                <div class="mint-swipe-indicators" style="display: block">
+                <div class="mint-swipe-indicators" style="display: none">
                     <div v-for="(item,index) in $store.state.messages.index.logo" :class="{'active':item.active}"
                          class="mint-swipe-indicator" @click="goto(index)"></div>
                 </div>
@@ -178,41 +173,26 @@
                     </div>
                     <div class="partner_img_content">
                         <div class="partner_img">
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[0]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[1]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
-                            <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
+                            <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[2]">
                                 <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="#contact" class="contact_container">
-                <div class="contact_wrap">
-                    <div class="contact_way_content">
-                        <span class="contact_title">{{$store.state.messages.contact.title}}</span>
-                        <div class="about_title_across"></div>
-                        <div class="address_content">
-                            <span class="address">{{$store.state.messages.contact.address.txt}}：{{$store.state.messages.contact.address.val}}</span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="postcode">{{$store.state.messages.contact.zip_code.txt}}：{{$store.state.messages.contact.zip_code.val}}</span>
-                        </div>
-                        <p class="email">{{$store.state.messages.contact.mailbox.txt}}：{{$store.state.messages.contact.mailbox.val}}</p>
-                    </div>
-                    <div class="qr_content">
-                        <img src="../assets/qr.png"/>
-                        <div class="img_alt">
-                            Bianjie_AI
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">版权所有 © 2017上海边界智能科技有限公司
-            <a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备17020986号</a>
+        <div class="footer">
+            <p>版权所有 © 2019上海边界智能科技有限公司</p>
+            <p><a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
+                <img src="../assets/put_on_records.png"/>
+            </p>
         </div>
     </div>
 </template>

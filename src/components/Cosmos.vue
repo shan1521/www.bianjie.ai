@@ -140,6 +140,23 @@
                 </ul>
             </div>
         </div>
+        <div class="cosmos_explorer_container">
+            <div class="cosmos_explorer_wrap">
+                <h5 class="cosmos_explorer_title">{{cosmosExplorerTitle}}</h5>
+                <ul class="cosmos_list_content">
+                    <li class="cosmos_item_content" v-for="(item,index) in cosmosExplorerArray"
+                        :class="item.active ? 'bg_blue_style' : 'bg_white_style'"
+                        @click="toBrowser(index,item.href)"
+                        @mouseenter="changeBgColor(index)"
+                        @mouseleave="resetBgColor()">
+                        <div class="cosmos_explorer_logo">
+                            <img :src="item.active ? item.whiteImg : item.blueImg" alt="">
+                        </div>
+                        <p class="cosmos_explorer_name">{{item.title}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="news_letter_container">
             <div class="news_letter_wrap">
                 <h2>{{subscribe}}</h2>
@@ -256,7 +273,9 @@
                 votingPowerNumber: localStorage.getItem('votingPower') ? this.formatVotingPower(localStorage.getItem('votingPower')) : '',
                 lcdBondedTokens: '',
 	            signedBlocksWindow:'',
-	            missedBlocksCnt:''
+	            missedBlocksCnt:'',
+                cosmosExplorerTitle:'',
+                cosmosExplorerArray:[],
             }
         },
         mounted(){
@@ -281,6 +300,24 @@
             toCosmos(){
                 window.open('https://cosmos.network/')
             },
+	        resetBgColor(){
+		        this.cosmosExplorerArray.forEach(item => {
+			        item.active = false;
+		        });
+            },
+	        changeBgColor(index){
+		        this.cosmosExplorerArray.forEach(item => {
+			        item.active = false;
+		        });
+		        this.cosmosExplorerArray[index].active = true;
+            },
+	        toBrowser(index,href){
+            	this.cosmosExplorerArray.forEach(item => {
+            		item.active = false;
+                });
+		        this.cosmosExplorerArray[index].active = true;
+		        window.open(href)
+            },
             toCosmosBrowser(){
                 let clipboard  = new clipboardJS('#cosmosAddress'),that = this;
                 clipboard.on('success',function(e) {
@@ -300,7 +337,7 @@
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
 		                localStorage.setItem('bondedTokens',res.tokens);
 		                localStorage.setItem('rate',res.commission.rate);
-		                this.bondedTokens = this.formatTokens(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000));
+		                this.bondedTokens = new bigNumber(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000).toNumber()).toFormat();
 		                this.rate = this.formatRate(localStorage.getItem('rate'));
 		                this.lcdBianJieBondedTokens = res.tokens;
 		                this.headerTitle = res.description.moniker;
@@ -376,13 +413,16 @@
 		        })
 	        },
             formatTokens(number){
-	            return String(number).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                let integer = String(number).split('.')[0];
+                let decimals = String(number).split('.')[1];
+                let formattedInteger = integer.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return`${formattedInteger}.${decimals}`
             },
             formatRate(rate){
                 return `${(rate*100).toFixed(2)} %`
             },
             formatUptime(missedBlocks,totalBlocks){
-                return `${(Number(totalBlocks) - Number(missedBlocks))/ Number(totalBlocks) * 100} %`
+                return `${((Number(totalBlocks) - Number(missedBlocks))/ Number(totalBlocks) * 100).toFixed(4)} %`
             },
             formatVotingPower(votingPower){
 	            return `${(votingPower*100).toFixed(2)} %`
@@ -418,6 +458,8 @@
                 this.uptime= message.cosmos[lang].header.uptime;
                 this.guide= message.cosmos[lang].header.guide;
                 this.guideHref= message.cosmos[lang].header.guideHref;
+                this.cosmosExplorerTitle = message.cosmos[lang].cosmosExplorerTitle;
+                this.cosmosExplorerArray = message.cosmos[lang].cosmosExplorer
             },
             scroll(top) {
                 $('body,html').animate({

@@ -2,7 +2,11 @@ export const message = {
     "index": {
         "logo": [
             {
-                "src": '../public/bianjie_cosmos.png',
+                "src": '../public/banner_01.png',
+                "active": true
+            },
+            {
+                "src": '../public/index_logo_cn.png',
                 "active": false
             },
             {
@@ -20,20 +24,14 @@ export const message = {
             {"txt": "产品中心", "href": "/#product"},
             {"txt": "公司动态", "href": "/#dynamic"},
             {"txt": "合作伙伴", "href": "/#partner"},
-            {"txt": "联系我们", "href": "/#contact"},
-            
-            
-            
-            
-           
-
         ]
     },
     "about": {
         "img": '../public/about.png',
         "title": "关于我们",
         "txt": [
-            '上海边界智能科技有限公司（Bianjie）创立于2016年，是 <a style=\'color: #72ACE3\' href=\'https://www.irisnet.org\' target=\'_blank\'>IRISnet</a> 跨链网络的研发团队，也是Cosmos跨链网络在中国的技术和运营合作伙伴，专注于区块链跨链网络、人工智能和大数据分析等技术的研发和实践。',
+            '上海边界智能科技有限公司（Bianjie.AI）创立于2016年，是一家专注于分布式智能处理和区块链技术开发的高科技公司。自创立以来，边界智能以人工智能，大数据分析和区块链跨链技术创新为核心，开发了IRISnet跨链服务网络、分布式大数据分析交换网络（BEAN）、智能医药知识库等核心产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴一起在医疗健康大数据领域开展系列创新实践。'+
+            '<br/><div style="text-indent: 34px">边界智能荣获第七届中国创新创业大赛成长组32强，中国首个面向以健康医疗大数据产业为核心的创新大赛 – CDHIC天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目 COSMOS的核心中国开发者。</div>',
         ]
     },
     "core": {
@@ -64,16 +62,6 @@ export const message = {
                 "<div>BEAN通过IRIS Hub和其他区块链网络交互，利用传统分布式人工智能研究中模型并行性和SOA设计模式，将区块链技术应用到分布式分析服务，实现与传统商业系统的链上链下通联，提供保护数据隐私、尊重数据拥有者权利的加密智能分析服务。" +
                 "边界智能基于BEAN开发出支持医疗数据分析的应用，为医疗数据提供链上基于语义技术智能抽取，让非结构化医疗数据在保护隐私的前提下进行结构化处理，使得链上分布式业务协作时数据搜索、交换及使用变成可能。</div>"
             },
-            {
-                "title": "医药知识库",
-                "bgImg": "../public/base_02.jpg",
-                "img": "../public/base_02_02.png",
-                "txt": "运用人工智能技术对医疗健康领域非结构化数据（药品说明书，治疗方法，用药规范以及病历病案等）进行智能分析形成中文医药知识库，知识库包括以下智能工具：<br/>" +
-                "<p>1. 药品编码匹配工具</p>" +
-                "<p>2. 临床标准术语匹配工具</p>" +
-                "<p>3. 合理用药规则提取工具</p>"
-            },
-
         ]
     },
     "dynamic": {
@@ -81,37 +69,38 @@ export const message = {
         "btnTxt:": "查看更多",
         "txt": [
             {
-                "year": '2018',
-                "day": "24",
-                "month": "Oct",
-                "title": "捷报：互联网成长组全国32强！边界智能荣获中国创新创业大赛优秀企业奖",
-                "txt": "在10月20~24日举办的第七届中国创新创业大赛中，边界智能作为成长组最年轻的公司，以微弱分差勇夺小组第四，挺进互联网成长组全国32强，斩获国赛优秀企业奖！",
-                "href": "https://mp.weixin.qq.com/s/mbTnx2UxKkdYwK9G2hVXJQ"
+                "year": '2019',
+                "day": "27",
+                "month": "Aug",
+                "title": "边界智能亮相重庆智博会，荣获2019年中国优秀区块链解决方案",
+                "txt": "2019年8月27日，在中国国际智能产业博览会“区块链高峰论坛”上，边界智能打造的“跨链服务联盟枢纽ISCH”，荣获2019中国优秀区块链解决方案。边界智能为星康链提供区块链技术支持的“区块链电子处方共享平台”也同时获奖。",
+                "href": "https://mp.weixin.qq.com/s/V_ES94pwvlpAULuzWQWWIw"
             },
             {
-                "year": '2018',
-                "day": "09",
-                "month": "Sep",
-                "title": "基于IRISnet开发的BEAN获CDHIC天使之星组冠军",
-                "txt": "2018年5月11日，中国健康医疗大数据产业创新大赛面向全国召开。它是中国首个面向以健康医疗大数据产业为核心的创新大赛。",
-                "href": "https://mp.weixin.qq.com/s/oF45W5ciXrh1tMPSkx9adA"
+                "year": '2019',
+                "day": "4",
+                "month": "Jun",
+                "title": "边界智能跨链服务项目获上海市2019年度“科技创新行动计划” 科技型中小企业技术创新资金支持",
+                "txt": "近日，上海市科学技术委员会公示了上海市2019年度“科技创新行动计划” 科技型中小企业技术创新资金部分拟立项项目的获批名单，边界智能申报的“基于区块链的技术的分布式服务跨链网络”项目成功入选。",
+                "href": "https://mp.weixin.qq.com/s/_LnV7BJABLg0RPZ5jFffFQ"
             },
             {
-                "year": '2018',
-                "day": "16",
+                "year": '2019',
+                "day": "18",
                 "month": "Apr",
-                "title": "突破边界，拥抱宇宙 - Cosmos测试网络实现首笔跨链交易",
-                "txt": "2018年4月12日，从Cosmos测试网络中的边界智能的见证节点发出的第一笔区块链跨链交易取得成功。它意味着从理论和实践上都真正实现了高效、安全的跨链价值转移。",
-                "href": "https://mp.weixin.qq.com/s/eVmhsIAlB1TcCbdLVQzLfg"
+                "title": "边界智能参加上交会分享首个BPoS公链IRISnet的关键创新点",
+                "txt": "4月18日，第七届中国（上海）国际技术进出口交易会在上海世博展览馆正式开幕。边界智能应邀参加，产品总监谷新萍女士在会上分享了支持下一代分布式应用开发的区块链服务网络IRISnet的关键创新点。",
+                "href": "https://mp.weixin.qq.com/s/B_G0fENiJoyI-twbDdD5Sw"
             },
             {
-                "year": '2018',
-                "day": "06",
-                "month": "Feb",
-                "title": "专注医疗AI+区块链，边界智能缘何获得复星同浩数千万元Pre-A轮融资",
-                "txt": "近日，边界智能向动脉网独家披露：公司已和复星同浩合作完成数千万元Pre-A轮融资。对于本轮融资，边界智能CEO曹恒表示：“有多家投资机构都给了边界正式的投资...”",
-                "href": "https://mp.weixin.qq.com/s/h3tSeXRF--FaFOfSE0gE6Q"
-            }
+                "year": '2019',
+                "day": "22",
+                "month": "Jan",
+                "title": "边界智能荣登2018中国区块链企业百强榜",
+                "txt": "1月22日下午，在清华大学举办的“第一届中国区块链产业经济发展年会”上，中国区块链生态联盟副理事长、赛迪区块链研究院院长刘权发布了“2018中国区块链企业百强榜”。边界智能商务总监严强代表公司接受了主办方颁发的荣誉证书。",
+                "href": "https://mp.weixin.qq.com/s/zGzNpofYBGVvt7i8hc0i3g"
+            },
+            
         ]
     },
     "partner": {
@@ -119,31 +108,14 @@ export const message = {
         "img": [
             [
                 {
-                    "img": "../public/partner/fxth.jpg",
-                    "img_selected": "../public/partner/fxth2.jpg",
-                    "href": "http://www.tonghaocapital.com/"
-                },
-                {
                     "img": "../public/partner/wx.png",
                     "img_selected": "../public/partner/wx2.png",
                     "href": "http://www.wxblockchain.com/"
                 },
                 {
-                    "img": "../public/partner/wy.png",
-                    "img_selected": "../public/partner/wy2.png",
-                    "href": "https://www.wancloud.io/"
-                },
-                {
                     "img": "../public/partner/cosmos.png",
                     "img_selected": "../public/partner/cosmos2.png",
                     "href": "https://cosmos.network/"
-                },
-            ],
-            [
-                {
-                    "img": "../public/partner/ms.png",
-                    "img_selected": "../public/partner/ms2.png",
-                    "href": "http://www.minshenglife.com/templet/default/"
                 },
                 {
                     "img": "../public/partner/hdf.png",
@@ -154,27 +126,35 @@ export const message = {
                     "img": "../public/partner/nxyl.png",
                     "img_selected": "../public/partner/nxyl2.png"
                 },
+            ],
+            [
+                
                 {
                     "img": "../public/partner/bjdx.png",
                     "img_selected": "../public/partner/bjdx2.png",
                     "href": "http://www.bjmu.edu.cn/"
                 },
+                {
+                    "img": "../public/partner/xwl_gray.png",
+                    "img_selected": "../public/partner/xwl.png",
+                    "href": "http://www.tonghaocapital.com/"
+                },
+                {
+                    "img": "../public/partner/irisnet_gray.png",
+                    "img_selected": "../public/partner/irisnet.png",
+                    "href": "https://www.irisnet.org/"
+                },
+                {
+                    "img": "../public/partner/xkl_gray.png",
+                    "img_selected": "../public/partner/xkl.png",
+                    "href": "http://healthcloud.link/"
+                },
             ],
             [
                 {
-                    "img": "../public/partner/qhdx.png",
-                    "img_selected": "../public/partner/qhdx2.png",
-                    "href": "http://www.med.tsinghua.edu.cn/"
-                },
-                {
-                    "img": "../public/partner/shjt.png",
-                    "img_selected": "../public/partner/shjt2.png",
-                    "href": "http://www.shsmu.edu.cn/"
-                },
-                {
-                    "img": "../public/partner/pu.png",
-                    "img_selected": "../public/partner/pu2.png",
-                    "href": "https://www.purdue.edu/"
+                    "img": "../public/partner/ptws_gray.png",
+                    "img_selected": "../public/partner/ptws.png",
+                    "href": "javascript:void(0)"
                 }
             ]
 
@@ -198,19 +178,4 @@ export const message = {
         "btnHref":"/cosmos",
         "headerValidatorBtnText":"委托 ATOM"
     },
-    "contact": {
-        "title": "联系我们",
-        "address": {
-            "txt": "地址",
-            "val": "上海市浦东新区张江高科技园区博霞路22号S座2层202-203室"
-        },
-        "zip_code": {
-            "txt": "邮编",
-            "val": "201203"
-        },
-        "mailbox": {
-            "txt": "邮箱",
-            "val": "service@bianjie.ai"
-        }
-    }
 }
