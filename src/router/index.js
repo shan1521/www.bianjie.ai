@@ -4,6 +4,7 @@ import index from '@/components/Index'
 import app from '@/components/app'
 import Validators from '../components/Validators.vue';
 import cosmos from '../components/Cosmos'
+import Home from '../home/Home'
 Vue.use(Router)
 
 export function createRouter() {
@@ -12,8 +13,8 @@ export function createRouter() {
         routes: [
             {
                 path: '/',
-                name: 'index',
-                component: index
+                name: 'Home',
+                component: Home
             },
             {
                 path: '/validators',

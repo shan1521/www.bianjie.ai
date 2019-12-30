@@ -67,6 +67,9 @@
         overflow: hidden;
         overflow-y: auto;
     }
+    *{
+        font-family: "PingFang SC Regular",'Microsoft YaHei','微软雅黑';
+    }
     body{
         font-size:16px;
         width:100%;
