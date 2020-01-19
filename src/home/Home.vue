@@ -60,7 +60,7 @@
 							<img src="../assets/home/production_serve_1.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">以Cosmos SDK为基础深入开发的底层区块链技术</p>
+							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的底层区块链技术</p>
 							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的解决方案</p>
 						</div>
 					</li>
@@ -105,8 +105,10 @@
 						<div>统一可信的价值服务生态持续发展建设机制</div>
 					</div>
 					<p class="home_production_footer">
-						<span class="home_production_name">ISCH</span>
-						<img src="../assets/home/arrow.png" alt="">
+						<router-link :to="`/products/isch`">
+							<span class="home_production_name">ISCH</span>
+							<img src="../assets/home/arrow.png" alt="">
+						</router-link>
 					</p>
 				</li>
 				<li class="home_production_serve_item_content">
@@ -115,14 +117,16 @@
 					</div>
 					<div class="home_production_serve_item_text_content">
 						<div class="home_production_serve_item_title"><div class="green_block_content"></div>区块链底层基础设施</div>
-						<div>采用高效的Tendermint P-BFT共识机制</div>
+						<div>采用高效的 Tendermint P-BFT 共识机制</div>
 						<div>自主知识产权的区块链治理升级技术</div>
 						<div>自主知识产权的非侵入式区块链信息审计</div>
 						<div>一键发链，支持节点动态管理的</div>
 					</div>
 					<p class="home_production_footer">
-						<span class="home_production_name">IRISnet</span>
-						<img src="../assets/home/arrow.png" alt="">
+						<router-link :to="`/products/irisnet`">
+							<span class="home_production_name">IRISnet</span>
+							<img src="../assets/home/arrow.png" alt="">
+						</router-link>
 					</p>
 				</li>
 				<li class="home_production_serve_item_content">
@@ -137,8 +141,10 @@
 						<div>链下交换的安全访问机制</div>
 					</div>
 					<p class="home_production_footer">
-						<span class="home_production_name">BEAN</span>
-						<img src="../assets/home/arrow.png" alt="">
+						<router-link :to="`/products/bean`">
+							<span class="home_production_name">BEAN</span>
+							<img src="../assets/home/arrow.png" alt="">
+						</router-link>
 					</p>
 				</li>
 			</ul>
@@ -149,17 +155,21 @@
 			</div>
 			<div class="home_application_scenarios_content">
 				<div class="home_application_scenarios_left_content">
-					<div class="home_application_scenarios_left_top_content">
-						<h2 class="home_application_scenarios_title">资产数字化</h2>
-						<h5 class="home_application_scenarios_second_title">数字资产可信登记与交换平台</h5>
-						<p class="home_application_scenarios_text_content">数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产</p>
-						<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用</p>
-					</div>
-					<div class="home_application_scenarios_left_bottom_content">
-						<h2 class="home_application_scenarios_title">金融创新</h2>
-						<h5 class="home_application_scenarios_second_title">区块链应链金融价值平台</h5>
-						<p class="home_application_scenarios_text_content">利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程找那个，实现实体经济中非同质资产的定义，多方流通转的信息透明、不可更改并实现金融创新和生态共建。</p>
-					</div>
+					<router-link :to="`/application/digital-asset`">
+						<div class="home_application_scenarios_left_top_content">
+							<h2 class="home_application_scenarios_title">资产数字化</h2>
+							<h5 class="home_application_scenarios_second_title">数字资产可信登记与交换平台</h5>
+							<p class="home_application_scenarios_text_content">数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产</p>
+							<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用</p>
+						</div>
+					</router-link>
+					<router-link :to="`/application/finance`">
+						<div class="home_application_scenarios_left_bottom_content">
+							<h2 class="home_application_scenarios_title">金融创新</h2>
+							<h5 class="home_application_scenarios_second_title">区块链应链金融价值平台</h5>
+							<p class="home_application_scenarios_text_content">利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程找那个，实现实体经济中非同质资产的定义，多方流通转的信息透明、不可更改并实现金融创新和生态共建。</p>
+						</div>
+					</router-link>
 				</div>
 				<div class="home_application_scenarios_left_img_content">
 					<div class="home_application_scenarios_left_img_top">
@@ -181,17 +191,21 @@
 					</div>
 				</div>
 				<div class="home_application_scenarios_right_content">
-					<div class="home_application_scenarios_right_top_content">
-						<h2 class="home_application_scenarios_title">行业协同</h2>
-						<h5 class="home_application_scenarios_second_title">医疗健康电子处方外配许可链</h5>
-						<p class="home_application_scenarios_text_content">在不泄漏患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转、安全访问及全生命周期的可审计可追溯</p>
-						<p class="home_application_scenarios_text_second_content">业务参与方通过链下应用提供ToC服务，同时拥有链上注册身份达成共识互信协作、行业协同。</p>
-					</div>
-					<div class="home_application_scenarios_right_bottom_content">
-						<h2 class="home_application_scenarios_title">多方互信</h2>
-						<h5 class="home_application_scenarios_second_title">体检报告存证授权许可链</h5>
-						<p class="home_application_scenarios_text_content">利用区块链、分布式人工智能、微服务框架等先进的科技手段，提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
-					</div>
+					<router-link :to="`/application/cooperation`">
+						<div class="home_application_scenarios_right_top_content">
+							<h2 class="home_application_scenarios_title">行业协同</h2>
+							<h5 class="home_application_scenarios_second_title">医疗健康电子处方外配许可链</h5>
+							<p class="home_application_scenarios_text_content">在不泄漏患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转、安全访问及全生命周期的可审计可追溯</p>
+							<p class="home_application_scenarios_text_second_content">业务参与方通过链下应用提供 ToC 服务，同时拥有链上注册身份达成共识互信协作、行业协同。</p>
+						</div>
+					</router-link>
+					<router-link :to="`/application/multi-trust`">
+						<div class="home_application_scenarios_right_bottom_content">
+							<h2 class="home_application_scenarios_title">多方互信</h2>
+							<h5 class="home_application_scenarios_second_title">体检报告存证授权许可链</h5>
+							<p class="home_application_scenarios_text_content">利用区块链、分布式人工智能、微服务框架等先进的科技手段，提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
+						</div>
+					</router-link>
 				</div>
 			</div>
 		</div>
@@ -204,13 +218,15 @@
 				<div class="home_about_bianjie_right_content">
 					<h3 class="home_about_bianjie_title_content">关于边界智能</h3>
 					<p class="home_about_bianjie_text_content">
-						边界智能（Bianjie.AI）创立于2016年，是一家专注于区块链技术开发的国家高新科技企业，拥有自主创新的知识产权。开发了IRISnet跨链服务网络、分布式大数据分析交换网络（BEAN）等核心产品，实现以保护数据隐私，尊重数据拥有者权利为前提的加密智能分析服务；也是全球著名跨链项目Cosmos的核心中国开发者，除了跨链服务、医疗健康数据交换，边界智能还能为供应链金融，存证等业务场景提供联盟区块链技术。
+						边界智能（Bianjie.AI）创立于2016年，是一家专注于区块链技术开发的国家高新科技企业，拥有自主创新的知识产权。开发了 IRISnet 跨链服务网络、分布式大数据分析交换网络（BEAN）等核心产品，实现以保护数据隐私，尊重数据拥有者权利为前提的加密智能分析服务；也是全球著名跨链项目 Cosmos 的核心中国开发者，除了跨链服务、医疗健康数据交换，边界智能还能为供应链金融，存证等业务场景提供联盟区块链技术。
 					</p>
 					<div class="home_about_bianjie_right_button_content">
-						<div class="home_about_bianjie_cooperation_button">
-							<span>联系合作</span>
-							<img src="../assets/home/arrow_white.png" alt="">
-						</div>
+						<a href="mailto:contact@bianjie.ai" target="_blank">
+							<div class="home_about_bianjie_cooperation_button">
+								<span>联系合作</span>
+								<img src="../assets/home/arrow_white.png" alt="">
+							</div>
+						</a>
 						<div class="home_about_bianjie_read_more_button">
 							<span>了解更多</span>
 							<img src="../assets/home/arrow_white.png" alt="">
@@ -220,14 +236,7 @@
 			</div>
 			<img class="home_about_bianjie_right_img" src="../assets/home/about_bianjie_footer_right.png" alt="">
 		</div>
-		<div class="home_copy_right_content_wrap">
-			<div class="home_copy_right_content">
-				<span>版权所有©2019上海边界智能科技有限公司</span>
-				<a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a>
-				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
-				<img src="../assets/home/police_badge.png" alt="">
-			</div>
-		</div>
+		
 	</div>
 </template>
 
@@ -305,7 +314,8 @@
 							text-align: center;
 							p{
 								color: #0C253A;
-								letter-spacing: 0.02rem;
+								font-size: 0.14rem;
+								letter-spacing: 0.01rem;
 								line-height: 0.24rem;
 							}
 						}
@@ -376,6 +386,9 @@
 					}
 					i{
 						padding-right: 0.1rem;
+						img{
+							height: 0.1rem;
+						}
 					}
 				}
 			}
@@ -401,7 +414,7 @@
 						justify-content: center;
 						margin: 0.4rem auto;
 						img{
-							width: 0.6rem;
+							height:0.69rem;
 							margin: 0 auto;
 						}
 					}
@@ -441,17 +454,19 @@
 						}
 					}
 					.home_production_footer{
-						color: #015FFF;
 						display: flex;
 						align-items: center;
 						margin-bottom: 0.4rem;
-						.home_production_name{
-							font-size: 0.14rem;
-							font-weight: 600;
-						}
-						img{
-							margin-left: 0.07rem;
-							height: 0.07rem;
+						a{
+							color: #015FFF;
+							.home_production_name{
+								font-size: 0.14rem;
+								font-weight: 600;
+							}
+							img{
+								margin-left: 0.07rem;
+								height: 0.07rem;
+							}
 						}
 					}
 				}
@@ -506,7 +521,7 @@
 							margin-top: 0.2rem;
 							font-size: 0.12rem;
 							color: #8A99A5;
-							line-height: 0.22rem;
+							line-height: 0.18rem;
 							letter-spacing: 0.01rem;
 						}
 						.home_application_scenarios_text_second_content{
@@ -539,7 +554,7 @@
 							margin-top: 0.2rem;
 							font-size: 0.12rem;
 							color: #8A99A5;
-							line-height: 0.22rem;
+							line-height: 0.18rem;
 							letter-spacing: 0.01rem;
 						}
 					}
@@ -548,12 +563,13 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
-					margin-left: 0.2rem;
+					margin-left: 0.4rem;
 					.home_application_scenarios_left_img_top{
 						flex: 1;
 						display: flex;
 						justify-content: flex-start;
 						img{
+							padding-top: 0.6rem;
 							width: 0.6rem;
 							height: 0.6rem;
 						}
@@ -564,27 +580,31 @@
 						justify-content: flex-start;
 						margin-top: 0.35rem;
 						img{
+							padding-top: 0.6rem;
 							width: 0.6rem;
 							height: 0.6rem;
 						}
 					}
 				}
 				.home_application_scenarios_center_img_content{
-					margin-top: 0.21rem;
+					margin: 0.21rem 0.2rem 0 0.2rem;
+					
 					img{
-						width: 3.23rem;
+						padding-top: 0.6rem;
+						width: 2.2rem;
 					}
 				}
 				.home_application_scenarios_right_img_content{
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
-					margin-right: 0.2rem;
+					margin-right: 0.4rem;
 					.home_application_scenarios_right_img_top{
 						flex: 1;
 						display: flex;
 						justify-content: flex-start;
 						img{
+							padding-top: 0.6rem;
 							width: 0.6rem;
 							height: 0.6rem;
 						}
@@ -595,6 +615,7 @@
 						justify-content: flex-start;
 						margin-top: 0.35rem;
 						img{
+							padding-top: 0.6rem;
 							width: 0.6rem;
 							height: 0.6rem;
 						}
@@ -604,61 +625,68 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
-					.home_application_scenarios_right_top_content{
-						max-width: 2.85rem;
+					a{
+						display: inline-block;
 						flex: 1;
-						.home_application_scenarios_title{
-							font-size: 0.16rem;
-							color: #0C253A;
-							font-weight: 600;
-							line-height: 0.22rem;
+						.home_application_scenarios_right_top_content{
+							max-width: 2.85rem;
+							flex: 1;
+							.home_application_scenarios_title{
+								font-size: 0.16rem;
+								color: #0C253A;
+								font-weight: 600;
+								line-height: 0.22rem;
+							}
+							.home_application_scenarios_second_title{
+								font-size: 0.14rem;
+								color: #0C253A;
+								font-weight: 400;
+								line-height: 0.2rem;
+								margin-top: 0.08rem;
+							}
+							.home_application_scenarios_text_content{
+								margin-top: 0.2rem;
+								font-size: 0.12rem;
+								color: #8A99A5;
+								line-height: 0.18rem;
+								letter-spacing: 0.01rem;
+							}
+							.home_application_scenarios_text_second_content{
+								margin-top: 0.12rem;
+								font-size: 0.12rem;
+								color: #8A99A5;
+								line-height: 0.18rem;
+								letter-spacing: 0.01rem;
+							}
 						}
-						.home_application_scenarios_second_title{
-							font-size: 0.14rem;
-							color: #0C253A;
-							font-weight: 400;
-							line-height: 0.2rem;
-							margin-top: 0.08rem;
-						}
-						.home_application_scenarios_text_content{
-							font-size: 0.12rem;
-							color: #8A99A5;
-							line-height: 0.22rem;
-							letter-spacing: 0.01rem;
-						}
-						.home_application_scenarios_text_second_content{
-							margin-top: 0.12rem;
-							font-size: 0.12rem;
-							color: #8A99A5;
-							line-height: 0.22rem;
-							letter-spacing: 0.01rem;
+						.home_application_scenarios_right_bottom_content{
+							margin-top: 0.22rem;
+							max-width: 2.85rem;
+							flex: 1;
+							.home_application_scenarios_title{
+								font-size: 0.16rem;
+								color: #0C253A;
+								font-weight: 600;
+								line-height: 0.22rem;
+							}
+							.home_application_scenarios_second_title{
+								font-size: 0.14rem;
+								color: #0C253A;
+								font-weight: 400;
+								line-height: 0.2rem;
+								margin-top: 0.08rem;
+							}
+							.home_application_scenarios_text_content{
+								margin-top: 0.2rem;
+								font-size: 0.12rem;
+								color: #8A99A5;
+								line-height: 0.18rem;
+								letter-spacing: 0.01rem;
+							}
 						}
 					}
-					.home_application_scenarios_right_bottom_content{
-						margin-top: 0.35rem;
-						max-width: 2.85rem;
-						flex: 1;
-						.home_application_scenarios_title{
-							font-size: 0.16rem;
-							color: #0C253A;
-							font-weight: 600;
-							line-height: 0.22rem;
-						}
-						.home_application_scenarios_second_title{
-							font-size: 0.14rem;
-							color: #0C253A;
-							font-weight: 400;
-							line-height: 0.2rem;
-							margin-top: 0.08rem;
-						}
-						.home_application_scenarios_text_content{
-							margin-top: 0.2rem;
-							font-size: 0.12rem;
-							color: #8A99A5;
-							line-height: 0.22rem;
-							letter-spacing: 0.01rem;
-						}
-					}
+				
+					
 				}
 			}
 		}
@@ -745,28 +773,7 @@
 				bottom: 0;
 			}
 		}
-		.home_copy_right_content_wrap{
-			background: #fafafa;
-			border-top: 0.01rem solid #EDEDED;
-			.home_copy_right_content{
-				padding: 0.2rem 0;
-				max-width: 12rem;
-				margin: 0 auto;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				color: rgba(12, 37, 58, 0.6);
-				a{
-					color: rgba(12, 37, 58, 0.6);
-					margin-left: 0.3rem;
-				}
-				img{
-					margin-left: 0.1rem;
-					width: 0.16rem;
-					height: 0.16rem;
-				}
-			}
-		}
+	
 	}
 
 </style>
