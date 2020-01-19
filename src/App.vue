@@ -1,13 +1,31 @@
 <template>
     <div id="app">
-        <router-view/>
+        <Header></Header>
+        <router-view :key="key"/>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
+    import Header from "./components/Header";
+    import Footer from "./components/Footer";
+    import $ from 'jquery'
     export default {
         name: 'app',
+        components: {Footer, Header},
+        watch:{
+          $route(){
+              $('body,html').scrollTop(0)
+          }
+        },
+        data(){
+            return {
+                key: new Date().getTime()
+            }
+        }
+  /*
         methods: {
+          /!*
             resize(_this) {
                 _this.is = $(window).width() >= 900
                 if (_this.is) {
@@ -30,7 +48,7 @@
                         },false)
                     }
                 }
-            },
+            },*!/
             toggleSwitchHome(){
                 if(this.$route.path === '/cosmos'){
                     this.$router.replace('/cosmos');
@@ -48,14 +66,14 @@
         },
 
         created() {
-            if (process.env.VUE_ENV === 'client') {
+           /!* if (process.env.VUE_ENV === 'client') {
                 let _this = this;
                 _this.resize(_this)
                 window.onresize = function () {
                     _this.resize(_this)
                 }
-            }
-        }
+            }*!/
+        }*/
     }
 </script>
 <style lang="less">
@@ -63,13 +81,23 @@
         font-size:625%;
         width:100%;
         height:100%;
-        overflow: hidden;
-        overflow-y: auto;
+    }
+    *{
+        font-family: "PingFang SC Regular",'Microsoft YaHei','微软雅黑';
     }
     body{
         font-size:16px;
         width:100%;
         height:100%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    #app{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 </style>
 

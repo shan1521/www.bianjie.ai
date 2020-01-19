@@ -9,9 +9,8 @@ import 'swiper/dist/css/swiper.css'
 require('vue-swipe/dist/vue-swipe.css');
 import 'babel-polyfill'
 if (process.env.VUE_ENV === 'client') {
-    const { Swipe, SwipeItem } = require('vue-swipe');
-    Vue.component('swipe', Swipe);
-    Vue.component('swipe-item', SwipeItem);
+    const VueAwesomeSwiper = require('vue-awesome-swiper');
+    Vue.use(VueAwesomeSwiper);
 }
 
 Vue.mixin({
