@@ -18,8 +18,10 @@
 				<h5>荣誉资质</h5>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
-							<img  style="display:block;width: 5.2rem" :src="item.src" alt="">
+						<swiper-slide style="width:5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
+							<div style="width: 4.8rem;">
+								<img  style="display:block;width: 100%;height:100%;" :src="item.src" alt="">
+							</div>
 						</swiper-slide>
 					</swiper>
 					<div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
@@ -44,47 +46,60 @@
 		data(){
 			return{
 				swiperArray:[
-					{
+					/*{
 						src:require('../assets/home/swiper_1.png')
 					},
 					{
-						src:require('../assets/home/swiper_2.jpg')
+						src:require('../assets/home/swiper_2.png')
 					},
 					{
-						src:require('../assets/home/swiper_3.jpg')
+						src:require('../assets/home/swiper_3.png')
 					},
 					{
-						src:require('../assets/home/swiper_4.jpg')
+						src:require('../assets/home/swiper_4.png')
 					},
 					{
 						src:require('../assets/home/swiper_5.png')
 					},
 					{
-						src:require('../assets/home/swiper_6.png')
+						src:require('../assets/home/swiper_6.jpg')
 					},
 					{
 						src:require('../assets/home/swiper_7.png')
 					},
 					{
-						src:require('../assets/home/swiper_8.png')
+						src:require('../assets/home/swiper_8.jpg')
 					},
 					{
 						src:require('../assets/home/swiper_9.png')
 					},
 					{
-						src:require('../assets/home/swiper_10.png')
+						src:require('../assets/home/swiper_10.jpg')
 					},
 					{
 						src:require('../assets/home/swiper_11.png')
 					},
+					{
+						src:require('../assets/home/swiper_12.png')
+					},*/
+					{
+						src:require('../assets/home/test_1.png')
+					},
+					{
+						src:require('../assets/home/test_2.png')
+					},
+					{
+						src:require('../assets/home/test_3.png')
+					},
+					
 				],
 				swiperOption:{
 					watchSlidesProgress: true,
-					slidesPerView: 'auto',
+					slidesPerView: 3,
 					centeredSlides: true,
 					loop: true,
 					speed: 300,
-					loopedSlides: 11,
+					loopedSlides: 12,
 					autoplay: true,
 					/*autoplay: {
 					delay: 0,
@@ -219,6 +234,22 @@
 						}
 						
 					}
+					.swiper-button-prev{
+						outline: none;
+						width: 0.6rem;
+						height: 0.6rem;
+						background: url("../assets/home/prev.png");
+						background-size: cover;
+						-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+					}
+					.swiper-button-next{
+						outline: none;
+						width: 0.6rem;
+						height: 0.6rem;
+						background: url("../assets/home/next.png");
+						background-size: cover;
+						-webkit-tap-highlight-color: rgba(255, 255, 255, 0)!important;
+					}
 				}
 				
 				h5{
@@ -273,97 +304,5 @@
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	/*@charset "utf-8";
-	!* CSS Document *!
-	body{
-		margin:0;}
-	#certify {
-		position: relative;
-		width: 1200px;
-		margin: 0 auto
-	}
-	
-	#certify .swiper-container {
-		padding-bottom: 60px;
-	}
-	
-	#certify  .swiper-slide {
-		width: 520px;
-		height: 408px;
-		background: #fff;
-		box-shadow: 0 8px 30px #ddd;
-	}
-	#certify  .swiper-slide img{
-		display:block;
-	}
-	#certify  .swiper-slide p {
-		line-height: 98px;
-		padding-top: 0;
-		text-align: center;
-		color: #636363;
-		font-size: 1.1em;
-		margin: 0;
-	}
-	
-	#certify .swiper-pagination {
-		width: 100%;
-		bottom: 20px;
-	}
-	
-	#certify .swiper-pagination-bullets .swiper-pagination-bullet {
-		margin: 0 5px;
-		border: 3px solid #fff;
-		background-color: #d5d5d5;
-		width: 10px;
-		height: 10px;
-		opacity: 1;
-	}
-	
-	#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
-		border: 3px solid #00aadc;
-		background-color: #fff;
-	}
-	
-	#certify .swiper-button-prev {
-		left: -30px;
-		width: 45px;
-		height: 45px;
-		background: url(../images/wm_button_icon.png) no-repeat;
-		background-position: 0 0;
-		background-size: 100%;
-	}
-	
-	#certify .swiper-button-prev:hover {
-		background-position: 0 -46px;
-		background-size: 100%
-	}
-	
-	#certify .swiper-button-next {
-		right: -30px;
-		width: 45px;
-		height: 45px;
-		background: url(../images/wm_button_icon.png) no-repeat;
-		background-position: 0 -93px;
-		background-size: 100%;
-	}
-	
-	#certify .swiper-button-next:hover {
-		background-position: 0 -139px;
-		background-size: 100%
-	}*/
-	
-	
-	
-	
-	
-	
-	
-	
 	
 </style>
