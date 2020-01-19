@@ -16,9 +16,9 @@
 					<li>• 提供链上链下通联：通过可信计算调用，协作交易及分析服务结果索引上链存证</li>
 				</ul>
 			</div>
-			<div class="solution_content">
+			<!--<div class="solution_content">
 				<div class="solution_title">解决方案</div>
-			</div>
+			</div>-->
 			<div class="program_features_content">
 				<div class="program_features_title">方案特色</div>
 				<div class="program_features_top_content">

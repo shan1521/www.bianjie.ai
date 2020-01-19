@@ -16,9 +16,9 @@
 				<p> • 支持丰富的数字资产类型，更好的支撑价值流通、共享经济、积分互通等多种场景的应用</p>
 			</div>
 		</div>
-		<div class="solution_content">
+		<!--<div class="solution_content">
 			<div class="solution_title">解决方案</div>
-		</div>
+		</div>-->
 		<div class="program_features_content">
 			<div class="program_features_title">方案特色</div>
 			<div class="program_features_top_content">

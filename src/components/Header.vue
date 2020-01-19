@@ -25,7 +25,7 @@
 							<ul class="second_application_menu" v-if="flShowApplicationSecondMenu" @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
 								<li><router-link :to="`/application/finance`">金融创新</router-link></li>
-								<li><router-link :to="`/application/cooperation`">行业协作</router-link></li>
+								<li><router-link :to="`/application/cooperation`">行业协同</router-link></li>
 								<li><router-link :to="`/application/multi-trust`">多方互信</router-link></li>
 							</ul>
 						</div>

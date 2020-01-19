@@ -14,9 +14,9 @@
 				<p>边界智能区块链解决方案同时支持监管机构、社保基金、商业保险、医药企业、零售药店、等通过非侵入式的方式参与，满足行业协同的需要。</p>
 			</div>
 		</div>
-		<div class="solution_content">
+		<!--<div class="solution_content">
 			<div class="solution_title">解决方案</div>
-		</div>
+		</div>-->
 		<div class="program_features_content">
 			<div class="program_features_title">方案特色</div>
 			<div class="program_features_top_content">

@@ -16,9 +16,9 @@
 				<li>• 金融机构可通过授权查看企业实时运营情况、及时调用第三方数据验证，降低放贷风险</li>
 			</ul>
 		</div>
-		<div class="solution_content">
+		<!--<div class="solution_content">
 			<div class="solution_title">解决方案</div>
-		</div>
+		</div>-->
 		<div class="program_features_content">
 			<div class="program_features_title">方案特色</div>
 			<div class="program_features_top_content">

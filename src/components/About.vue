@@ -16,89 +16,15 @@
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
 				<h5>荣誉资质</h5>
-				<div id="certify">
+				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img  style="display:block;" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1121.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1119.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1119.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1119.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1117.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1117.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1117.png" alt="">
-						</swiper-slide>
-						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;">
-							<img style="display:block" src="../assets/home/u1117.png" alt="">
+						<swiper-slide style="width: 5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
+							<img  style="display:block;width: 5.2rem" :src="item.src" alt="">
 						</swiper-slide>
 					</swiper>
 					<div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
 					<div class="swiper-button-next"  @click="next()"></div>
 				</div>
-				
-			<!--	<ul class="about_img_top_content">
-					<li class="about_top_content">
-						<img src="../assets/home/u1123.png" alt="">
-					</li>
-					<li class="about_top_content">
-						<img src="../assets/home/u1125.png" alt="">
-					</li>
-					<li class="about_top_content">
-						<img src="../assets/home/u1127.png" alt="">
-					</li>
-				</ul>
-				<ul class="about_img_bottom_content">
-					<li class="about_img_bottom">
-						<img src="../assets/home/u1117.png" alt="">
-					</li>
-					<li class="about_img_bottom">
-						<img src="../assets/home/u1119.png" alt="">
-					</li>
-					<li class="about_img_bottom">
-						<img src="../assets/home/u1121.png" alt="">
-					</li>
-				</ul>-->
 			</div>
 		</div>
 		<div class="qr_content">
@@ -117,13 +43,48 @@
 		name: "About",
 		data(){
 			return{
+				swiperArray:[
+					{
+						src:require('../assets/home/swiper_1.png')
+					},
+					{
+						src:require('../assets/home/swiper_2.jpg')
+					},
+					{
+						src:require('../assets/home/swiper_3.jpg')
+					},
+					{
+						src:require('../assets/home/swiper_4.jpg')
+					},
+					{
+						src:require('../assets/home/swiper_5.png')
+					},
+					{
+						src:require('../assets/home/swiper_6.png')
+					},
+					{
+						src:require('../assets/home/swiper_7.png')
+					},
+					{
+						src:require('../assets/home/swiper_8.png')
+					},
+					{
+						src:require('../assets/home/swiper_9.png')
+					},
+					{
+						src:require('../assets/home/swiper_10.png')
+					},
+					{
+						src:require('../assets/home/swiper_11.png')
+					},
+				],
 				swiperOption:{
 					watchSlidesProgress: true,
 					slidesPerView: 'auto',
 					centeredSlides: true,
 					loop: true,
 					speed: 300,
-					loopedSlides: 18,
+					loopedSlides: 11,
 					autoplay: true,
 					/*autoplay: {
 					delay: 0,
