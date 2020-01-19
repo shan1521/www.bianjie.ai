@@ -31,7 +31,34 @@
 						</div>
 					</li>
 				</ul>
+				<div class="mobile_menu_content" @click="showMobileMenu()">
+					<img src="../assets/home/mobile_menu.png" alt="">
+				</div>
 			</div>
+		</div>
+		<div class="header_mobile_content" v-if="flShowMobileMenu">
+			<ul class="header_mobile_list_content">
+				<li><router-link :to="`/home`">首页</router-link></li>
+				<li @click="showMobileProductionSecondMenu()">产品服务
+				<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
+					<li><router-link :to="`/products/bean`">BEAN</router-link></li>
+					<li><router-link :to="`/products/irita`">IRITA</router-link></li>
+					<li><router-link :to="`/products/isch`">ISCH</router-link></li>
+					<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
+				</ul>
+				</li>
+				<li @click="showApplicationSecondMenu()">应用场景
+					<ul v-if="flShowMobileApplicationSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
+						<li><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
+						<li><router-link :to="`/application/finance`">金融创新</router-link></li>
+						<li><router-link :to="`/application/cooperation`">行业协同</router-link></li>
+						<li><router-link :to="`/application/multi-trust`">多方互信</router-link></li>
+					</ul>
+				</li>
+				<li><router-link :to="`/partners`">合作伙伴</router-link></li>
+				<li><router-link :to="`/news`">动态资讯</router-link></li>
+				<li><router-link :to="`/about`">关于我们</router-link></li>
+			</ul>
 		</div>
 	</div>
 </template>
@@ -76,7 +103,15 @@
 				flShowBoxShadow:false,
 				flShowProductionSecondMenu:false,
 				flShowApplicationSecondMenu:false,
+				flShowMobileMenu:false,
+				flShowMobileProductionSecondMenu: false,
+				flShowMobileApplicationSecondMenu:false,
 				
+			}
+		},
+		watch:{
+			$route(){
+				this.flShowMobileMenu = false;
 			}
 		},
 		mounted(){
@@ -91,6 +126,17 @@
 			window.addEventListener('scroll',this.handleScroll,true)
 		},
 		methods:{
+			showMobileMenu(){
+				this.flShowMobileMenu = !this.flShowMobileMenu;
+			},
+			showMobileProductionSecondMenu(){
+				this.flShowMobileProductionSecondMenu = !this.flShowMobileProductionSecondMenu;
+				this.flShowMobileApplicationSecondMenu = false;
+			},
+			showApplicationSecondMenu(){
+				this.flShowMobileApplicationSecondMenu = !this.flShowMobileApplicationSecondMenu;
+				this.flShowMobileProductionSecondMenu = false;
+			},
 			changeNavigation(index){
 				sessionStorage.setItem('routerIndex',index)
 				if(index == 1 || index == 2){
@@ -149,6 +195,9 @@
 			}
 		}
 		.header_content_menu{
+			.mobile_menu_content{
+				display: none;
+			}
 			.header_menu_list{
 				display: flex;
 				list-style: none;
@@ -229,5 +278,49 @@
 			}
 		}
 	}
+	.header_mobile_content{
+		display: none;
+	}
 }
+	@media screen and (max-width: 768px) {
+		.header_container_content{
+			background: #002C78;
+			.header_content_wrap{
+				display: flex;
+				justify-content: space-between;
+				box-sizing: border-box;
+				padding: 0 0.2rem;
+				.header_content_menu{
+					.header_menu_list{
+						display: none;
+					}
+					.mobile_menu_content{
+						width: 0.3rem;
+						height:0.3rem;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						img{
+							width: 100%;
+						}
+					}
+				}
+			}
+			.header_mobile_content{
+				display: block;
+				.header_mobile_list_content{
+					list-style: none;
+					box-sizing: border-box;
+					text-align: center;
+					li{
+						margin: 0.05rem 0;
+						color: #fff;
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
 </style>

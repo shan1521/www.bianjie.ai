@@ -3,8 +3,10 @@
 		<div class="home_copy_right_content">
 			<span>版权所有©2020上海边界智能科技有限公司</span>
 			<a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a>
-			<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
-			<img src="../assets/home/police_badge.png" alt="">
+			<span>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
+				<img src="../assets/home/police_badge.png" alt="">
+			</span>
 		</div>
 	</div>
 </template>
@@ -35,6 +37,14 @@
 				margin-left: 0.1rem;
 				width: 0.16rem;
 				height: 0.16rem;
+			}
+		}
+	}
+	@media screen and (max-width: 790px){
+		.home_copy_right_content_wrap{
+			.home_copy_right_content{
+				margin-top: 0.1rem;
+				flex-direction: column;
 			}
 		}
 	}
