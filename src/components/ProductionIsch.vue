@@ -3,7 +3,7 @@
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
 				<h2>联盟链产品-ISCH</h2>
-				<h5>支撑联盟链快速落地的先进技术 · 未来公有链与联盟链融合的发展基石</h5>
+				<h5>区块链与传统企业应用的创新融合 · 业务交互和价值交换的生态服务枢纽</h5>
 			</div>
 		</div>
 		<div class="production_text_content">

@@ -83,7 +83,7 @@
 						</div>
 					</li>
 				</ul>
-				<div class="home_production_read_more_button">
+				<div class="home_production_read_more_button" v-show="false">
 					<span class="home_production_read_more_text">了解更多</span>
 					<i>
 						<img src="../assets/home/arrow.png" alt="">
@@ -98,15 +98,16 @@
 						<img src="../assets/home/bianjie_isch.png" alt="">
 					</div>
 					<div class="home_production_serve_item_text_content">
-						<div class="home_production_serve_item_title"><div class="blue_block_content"></div>跨链服务联盟枢纽</div>
-						<div>企业级区块链应用框架</div>
-						<div>链上链下通联的跨链服务技术</div>
-						<div>联盟链与传统企业应用之间的价值互联</div>
-						<div>统一可信的价值服务生态持续发展建设机制</div>
+						<div class="home_production_serve_item_title"><div class="blue_block_content"></div>跨域行业互信联盟链产品</div>
+						<div>高效的共识和先进的 IBC 跨链协议</div>
+						<div>保护隐私的数据授权共享</div>
+						<div>灵活的数字资产建模与交易</div>
+						<div>基于iService的链上链下通联</div>
+						<div>大数据技术支撑的业务分析</div>
 					</div>
 					<p class="home_production_footer">
-						<router-link :to="`/products/isch`">
-							<span class="home_production_name">ISCH</span>
+						<router-link :to="`/products/irita`">
+							<span class="home_production_name">IRITA</span>
 							<img src="../assets/home/arrow.png" alt="">
 						</router-link>
 					</p>
@@ -117,10 +118,11 @@
 					</div>
 					<div class="home_production_serve_item_text_content">
 						<div class="home_production_serve_item_title"><div class="green_block_content"></div>区块链底层基础设施</div>
-						<div>采用高效的 Tendermint P-BFT 共识机制</div>
+						<div>高效的 Tendermint 共识</div>
+						<div>先进的 IBC 跨链协议</div>
+						<div>面向服务的区块链基础设施</div>
 						<div>自主知识产权的区块链治理升级技术</div>
-						<div>自主知识产权的非侵入式区块链信息审计</div>
-						<div>一键发链，支持节点动态管理的</div>
+						<div>支持数据和计算跨异构区块链网络调用和消费</div>
 					</div>
 					<p class="home_production_footer">
 						<router-link :to="`/products/irisnet`">
@@ -137,8 +139,9 @@
 						<div class="home_production_serve_item_title"><div class="yellow_block_content"></div>数据共享与安全计算</div>
 						<div>分布式人工智能与边缘计算</div>
 						<div>安全的数据加密、授权、管理机制</div>
-						<div>链上授权的隐私保护机制</div>
-						<div>链下交换的安全访问机制</div>
+						<div>自主知识产权的非侵入式区块链信息审计</div>
+						<div>支持多种行业的跨链资源无缝调用</div>
+						<div>支持动态节点管理的联盟链的开发工具包</div>
 					</div>
 					<p class="home_production_footer">
 						<router-link :to="`/products/bean`">
@@ -218,7 +221,8 @@
 				<div class="home_about_bianjie_right_content">
 					<h3 class="home_about_bianjie_title_content">关于边界智能</h3>
 					<p class="home_about_bianjie_text_content">
-						边界智能（Bianjie.AI）创立于2016年，是一家专注于区块链技术开发的国家高新科技企业，拥有自主创新的知识产权。开发了 IRISnet 跨链服务网络、分布式大数据分析交换网络（BEAN）等核心产品，实现以保护数据隐私，尊重数据拥有者权利为前提的加密智能分析服务；也是全球著名跨链项目 Cosmos 的核心中国开发者，除了跨链服务、医疗健康数据交换，边界智能还能为供应链金融，存证等业务场景提供联盟区块链技术。
+						边界智能创立于 2016 年，是一家专注于分布式智能处理和区块链技术开发的国家高新技术企业，拥有自主创新的知识产权。开发了跨域行业互信联盟产品 IRITA、跨链服务网络 IRISnet 、分布式大数据分析交换网络 BEAN 等核心产品，实现了以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务。<br/>
+						边界智能也是全球著名跨链项目 Cosmos 的核心中国开发者。除了跨链服务、医疗健康数据交换，边界智能还能为供应链金融、存证等业务场景提供联盟区块链技术。
 					</p>
 					<div class="home_about_bianjie_right_button_content">
 						<a href="mailto:contact@bianjie.ai" target="_blank">
@@ -227,7 +231,7 @@
 								<img src="../assets/home/arrow_white.png" alt="">
 							</div>
 						</a>
-						<div class="home_about_bianjie_read_more_button">
+						<div class="home_about_bianjie_read_more_button" v-show="false">
 							<span>了解更多</span>
 							<img src="../assets/home/arrow_white.png" alt="">
 						</div>

@@ -3,7 +3,7 @@
 		<div class="applications_content_wrap">
 			<div class="applications_content">
 				<h2>应用场景-行业协同</h2>
-				<h5>区块链技术用于提高资产登记的真实性 · 提升数字化交易的效率</h5>
+				<h5>区块链+人工智能解决应用痛点 · 安全共享释放行业数据价值</h5>
 			</div>
 		</div>
 		<div class="application_medical_treatment_nav_content">

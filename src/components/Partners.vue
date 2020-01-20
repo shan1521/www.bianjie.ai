@@ -3,7 +3,7 @@
 		<div class="partners_content_wrap">
 			<div class="partners_header_content">
 				<h2>合作伙伴</h2>
-				<h5></h5>
+				<h5>开放合作 携手共进 共同推动可信区块链技术落地与发展</h5>
 			</div>
 		</div>
 		<div class="business_partner_container">
@@ -98,6 +98,13 @@
 				h2{
 					font-size: 0.6rem;
 					line-height: 0.84rem;
+					font-weight: lighter;
+					color: #fff;
+				}
+				h5{
+					margin-top: 0.2rem;
+					font-size: 0.22rem;
+					line-height: 0.3rem;
 					font-weight: lighter;
 					color: #fff;
 				}
