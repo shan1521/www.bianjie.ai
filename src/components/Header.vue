@@ -9,20 +9,19 @@
 					<li class="header_menu_list_item" :class="item.isActive ? 'active_color' : ''"
 					    v-for="(item,index) in navigationList"
 					    @click="changeNavigation(index)" @mouseenter="showSecondMenu(index)" @mouseleave="hideSecondMenu(index)">
-						<router-link :to="item.href" v-if="item.href">{{item.label}}</router-link>
+						<router-link class="header_menu_list_item_link" :to="item.href" v-if="item.href">{{item.label}}</router-link>
 						<span v-if="!item.href">{{item.label}}</span>
 						<div :class="item.isActive ? 'active_block' : ''"></div>
 						<div class="second_menu" v-if="index == 1">
-							<ul class="second_production_menu" v-if="flShowProductionSecondMenu" @mouseleave="hideSecondMenu()">
+							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu" @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/products/bean`">BEAN</router-link></li>
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
 								<li><router-link :to="`/products/isch`">ISCH</router-link></li>
 								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
-							
 						</div>
 						<div class="second_menu" v-if="index == 2">
-							<ul class="second_application_menu" v-if="flShowApplicationSecondMenu" @mouseleave="hideSecondMenu()">
+							<ul class="second_application_menu" @click="updatenavigationIndex(index)" v-if="flShowApplicationSecondMenu" @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
 								<li><router-link :to="`/application/finance`">金融创新</router-link></li>
 								<li><router-link :to="`/application/cooperation`">行业协同</router-link></li>
@@ -116,7 +115,7 @@
 		},
 		mounted(){
 			if(sessionStorage.getItem('routerIndex')){
-				this.changeNavigation(sessionStorage.getItem('routerIndex'))
+				this.changeNavigation(sessionStorage.getItem('routerIndex'), true)
 			}
 			if(window.scrollY > 5){
 				this.flShowBoxShadow = true;
@@ -137,15 +136,24 @@
 				this.flShowMobileApplicationSecondMenu = !this.flShowMobileApplicationSecondMenu;
 				this.flShowMobileProductionSecondMenu = false;
 			},
-			changeNavigation(index){
+			changeNavigation(index, mounted){
 				sessionStorage.setItem('routerIndex',index)
 				if(index == 1 || index == 2){
-					return
+					if (mounted) {
+						this.updatenavigationIndex(index);
+					}else{
+						this.showSecondMenu(index);
+					}
+					return;
+				}else{
+					this.updatenavigationIndex(index);
 				}
+			},
+			updatenavigationIndex(index){
 				this.navigationList.forEach(item => {
-					item.isActive = false
-				})
-				this.navigationList[index].isActive = true
+					item.isActive = false;
+				});
+				this.navigationList[index].isActive = true;
 			},
 			handleScroll(e){
 				if(e.target.scrollingElement.scrollTop > 5){
@@ -207,7 +215,16 @@
 					font-size: 0.16rem;
 					line-height: 0.77rem;
 					position: relative;
+					cursor: pointer;
+					// .header_menu_list_item_link{
+					// 	display:block;
+					// 	height:100%;
+					// 	width:100%;
+					// }
 					a{
+						display:block;
+						height:100%;
+						width:100%;
 						color: rgba(255,255,255,0.5);
 						&:hover{
 							color: rgba(255,255,255,1);
@@ -309,6 +326,7 @@
 			.header_mobile_content{
 				display: block;
 				.header_mobile_list_content{
+					cursor: pointer;
 					list-style: none;
 					box-sizing: border-box;
 					text-align: center;

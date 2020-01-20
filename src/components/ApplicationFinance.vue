@@ -3,7 +3,7 @@
 		<div class="applications_content_wrap">
 			<div class="applications_content">
 				<h2>应用场景-金融创新</h2>
-				<h5>区块链技术用于提高资产登记的真实性 · 提升数字化交易的效率</h5>
+				<h5>区块链技术帮助多方参与的机构实现信息可信共享和资金流闭环</h5>
 			</div>
 		</div>
 		<div class="application_nav_content">

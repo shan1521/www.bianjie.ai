@@ -8,9 +8,9 @@
 		</div>
 		<div class="about_text_container">
 			<div class="about_text_content_wrap">
-				<p>公司以人工智能，大数据分析和区块链跨链技术创新为核心，开发了分布式大数据分析交换网络（ BEAN ）、跨链服务联盟枢纽（ ISCH ）等核心产品，能高效支持搭建联盟链并支持跨异构区块链或链上链下的互操作。</p>
-				<p>边界智能曾荣获第七届中国创新创业大赛成长组32强，中国 CDHIC 大赛天使之星冠军，2019中国区块链百强企业、2019中国优秀区块链解决方案等多个创新奖项。是国家高新技术企业，拥有企业发明专利2项，软件著作权14个，软件产品证书1个，商标5个。</p>
-				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核心开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>
+				<p>边界智能以⼈⼯智能，⼤数据分析和区块链跨链技术创新为核⼼，开发了跨域行业互信联盟产品 IRITA、分布式⼤数据分析交换网络 BEAN 、跨链服务联盟枢纽 ISCH 等核心产品，能高效支持搭建联盟链并支持跨异构区块链或链上链下的互操作。</p>
+				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强，中国 CDHIC 大赛天使之星冠军、2019中国区块链百强企业、2019 中国优秀区块链解决方案等多个创新奖项，拥有企业发明专利 2 项，软件著作权 14 个，软件产品证书 1 个，商标 5 个。</p>
+				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核⼼开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>
 			</div>
 		</div>
 		<div class="about_img_content">
@@ -19,7 +19,7 @@
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="width:5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
-							<div style="width: 4.8rem;">
+							<div style="width: 4.8rem;margin:0 40px">
 								<img  style="display:block;width: 100%;height:100%;" :src="item.src" alt="">
 							</div>
 						</swiper-slide>
@@ -46,52 +46,42 @@
 		data(){
 			return{
 				swiperArray:[
-					/*{
-						src:require('../assets/home/swiper_1.png')
+					{
+						src:require('../assets/home/honor5.png')
 					},
 					{
-						src:require('../assets/home/swiper_2.png')
+						src:require('../assets/home/honor6.png')
 					},
 					{
-						src:require('../assets/home/swiper_3.png')
+						src:require('../assets/home/honor8.png')
 					},
 					{
-						src:require('../assets/home/swiper_4.png')
+						src:require('../assets/home/honor7.png')
 					},
 					{
-						src:require('../assets/home/swiper_5.png')
+						src:require('../assets/home/honor9.png')
 					},
 					{
-						src:require('../assets/home/swiper_6.jpg')
+						src:require('../assets/home/honor10.png')
 					},
 					{
-						src:require('../assets/home/swiper_7.png')
+						src:require('../assets/home/honor11.png')
 					},
 					{
-						src:require('../assets/home/swiper_8.jpg')
+						src:require('../assets/home/honor12.png')
 					},
 					{
-						src:require('../assets/home/swiper_9.png')
+						src:require('../assets/home/honor13.png')
 					},
 					{
-						src:require('../assets/home/swiper_10.jpg')
+						src:require('../assets/home/honor14.png')
 					},
 					{
-						src:require('../assets/home/swiper_11.png')
+						src:require('../assets/home/honor15.png')
 					},
 					{
-						src:require('../assets/home/swiper_12.png')
-					},*/
-					{
-						src:require('../assets/home/test_1.png')
-					},
-					{
-						src:require('../assets/home/test_2.png')
-					},
-					{
-						src:require('../assets/home/test_3.png')
-					},
-					
+						src:require('../assets/home/honor1.png')
+					},		
 				],
 				swiperOption:{
 					watchSlidesProgress: true,
@@ -117,23 +107,23 @@
 					},
 					on:{
 						progress: function(progress) {
-							for (let i = 0; i < this.slides.length; i++) {
-								var slide = this.slides.eq(i);
-								var slideProgress = this.slides[i].progress;
-								let modify = 1;
-								if (Math.abs(slideProgress) > 1) {
-									modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
-								}
-								let translate = slideProgress * modify * 260 + 'px';
-								let scale = 1 - Math.abs(slideProgress) / 5;
-								let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-								slide.transform('translateX(' + translate + ') scale(' + scale + ')');
-								slide.css('zIndex', zIndex);
-								slide.css('opacity', 1);
-								if (Math.abs(slideProgress) > 3) {
-									slide.css('opacity', 0);
-								}
-							}
+							// for (let i = 0; i < this.slides.length; i++) {
+							// 	var slide = this.slides.eq(i);
+							// 	var slideProgress = this.slides[i].progress;
+							// 	let modify = 1;
+							// 	if (Math.abs(slideProgress) > 1) {
+							// 		modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+							// 	}
+							// 	let translate = slideProgress * modify * 260 + 'px';
+							// 	let scale = 1 - Math.abs(slideProgress) / 5;
+							// 	let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+							// 	slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+							// 	slide.css('zIndex', zIndex);
+							// 	slide.css('opacity', 1);
+							// 	if (Math.abs(slideProgress) > 3) {
+							// 		slide.css('opacity', 0);
+							// 	}
+							// }
 						},
 						setTransition: function(transition) {
 							for (var i = 0; i < this.slides.length; i++) {
@@ -161,6 +151,12 @@
 				},
 			}
 		},
+		mounted(){
+			let swiper = document.getElementsByClassName('swiper-wrapper')[0];
+			if (swiper) {
+				swiper.style.alignItems = 'center';
+			}
+		}
 	}
 </script>
 
@@ -217,9 +213,13 @@
 				text-align: center;
 				#certify{
 					position: relative;
-					width: 1200px;
+					width: 900px;
 					margin: 0 auto;
 					.my-swipe{
+						&:first-child {
+                display: flex;
+                align-items:center;
+            }
 						margin-left: auto;
 						margin-right: auto;
 						position: relative;
@@ -235,6 +235,7 @@
 						
 					}
 					.swiper-button-prev{
+						margin-left:-120px;
 						outline: none;
 						width: 0.6rem;
 						height: 0.6rem;
@@ -243,6 +244,7 @@
 						-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
 					}
 					.swiper-button-next{
+						margin-right:-120px;
 						outline: none;
 						width: 0.6rem;
 						height: 0.6rem;

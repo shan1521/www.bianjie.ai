@@ -3,7 +3,7 @@
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
 				<h2>联盟链产品-BEAN</h2>
-				<h5>支撑联盟链快速落地的先进技术 · 未来公有链与联盟链融合的发展基石</h5>
+				<h5>融合区块链技术和AI边缘计算 · 共同发现和释放行业数据价值</h5>
 			</div>
 		</div>
 		<div class="production_text_content">

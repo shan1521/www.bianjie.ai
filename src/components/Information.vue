@@ -43,19 +43,55 @@
 					</div>
 				</div>
 			</div>
+			<div class="news_wrap">
+				<div class="news_list_item_content">
+					<div class="news_item_content">
+						<div class="month_day_content">
+							<div class="date_day_content">{{$store.state.messages.dynamic.txt[2].month}}</div>
+							<div class="date_month_content">{{$store.state.messages.dynamic.txt[2].day}}</div>
+						</div>
+						<div class="year_content">{{$store.state.messages.dynamic.txt[2].year}}</div>
+					</div>
+					<div class="news_content">
+						<h4 class="news_title">{{$store.state.messages.dynamic.txt[2].title}}</h4>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[2].txt}}</div>
+						<a :href="$store.state.messages.dynamic.txt[2].href" target="_blank"
+						   class="view_more_btn">
+							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="news_list_item_content right_content">
+					<div class="news_item_content">
+						<div class="month_day_content">
+							<div class="date_day_content">{{$store.state.messages.dynamic.txt[3].month}}</div>
+							<div class="date_month_content">{{$store.state.messages.dynamic.txt[3].day}}</div>
+						</div>
+						<div class="year_content">{{$store.state.messages.dynamic.txt[3].year}}</div>
+					</div>
+					<div class="news_content">
+						<h4 class="news_title">{{$store.state.messages.dynamic.txt[3].title}}</h4>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[3].txt}}</div>
+						<a :href="$store.state.messages.dynamic.txt[3].href" target="_blank"
+						   class="view_more_btn">
+							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
 			<div class="news_bg_wrap">
 				<div class="news_bg_list_item_content">
 					<div class="news_bg_item_content">
 						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[2].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[2].day}}</div>
+							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[4].month}}</div>
+							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[4].day}}</div>
 						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[2].year}}</div>
+						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[4].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[2].title}}</h4>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[2].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[2].href" target="_blank"
+						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[4].title}}</h4>
+						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[4].txt}}</div>
+						<a :href="$store.state.messages.dynamic.txt[4].href" target="_blank"
 						   class="view_bg_more_btn">
 							查看更多 <img src="../assets/dynamic_arrow.png"/>
 						</a>
@@ -64,15 +100,15 @@
 				<div class="news_bg_list_item_content right_content">
 					<div class="news_bg_item_content">
 						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[3].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[3].day}}</div>
+							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[5].month}}</div>
+							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[5].day}}</div>
 						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[3].year}}</div>
+						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[5].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[3].title}}</h4>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[3].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[3].href" target="_blank"
+						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[5].title}}</h4>
+						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[5].txt}}</div>
+						<a :href="$store.state.messages.dynamic.txt[5].href" target="_blank"
 						   class="view_bg_more_btn">
 							查看更多 <img src="../assets/dynamic_arrow.png"/>
 						</a>

@@ -4,7 +4,7 @@
 			<div class="applications_content_wrap">
 				<div class="applications_content">
 					<h2>应用场景-多方互信</h2>
-					<h5>区块链技术用于提高资产登记的真实性 · 提升数字化交易的效率</h5>
+					<h5>解决多业务方参与的不互信问题 · 实现链上链下互操作的信息授权</h5>
 				</div>
 			</div>
 			<div class="application_nav_content">

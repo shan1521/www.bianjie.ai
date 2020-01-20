@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="production_text_content">
-			<div class="production_text_title">支撑分布式商业应用 IRISnet</div>
+			<!-- <div class="production_text_title">支撑分布式商业应用 IRISnet</div> -->
 			<div class="production_video_content"></div>
 			<div class="production_text_about_content">
 				<h5 class="production_text_title">关于 IRISnet</h5>
