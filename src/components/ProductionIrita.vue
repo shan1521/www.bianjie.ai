@@ -3,7 +3,7 @@
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
 				<h2>联盟链产品-IRITA</h2>
-				<h5>自有区块链底层技术 · 金融数据创新赋能</h5>
+				<h5>Cosmos生态首个企业级开源项目 · 创新支持基于iService的链上链下通联</h5>
 			</div>
 		</div>
 		<div class="production_text_content">
@@ -59,6 +59,7 @@
 			max-width: 12rem;
 			margin: 0 auto 2.63rem auto;
 			.production_text_title{
+				font-size:0.18rem;
 				text-align: center;
 				color: #0C253A;
 				margin: 1rem 0 0.4rem 0;

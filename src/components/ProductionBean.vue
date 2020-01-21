@@ -53,6 +53,7 @@
 			max-width: 12rem;
 			margin: 0 auto 2.63rem auto;
 			.production_text_title{
+				font-size:0.18rem;
 				text-align: center;
 				margin: 1rem 0 0.4rem 0;
 				color: #0C253A;
