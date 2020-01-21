@@ -15,7 +15,7 @@
 		</div>
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
-				<h5>荣誉资质</h5>
+				<h5 >荣誉资质</h5>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="width:5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
@@ -256,6 +256,7 @@
 				
 				h5{
 					margin: 0.8rem 0 0.4rem 0;
+					font-size:0.18rem;
 				}
 				.about_img_top_content{
 					list-style: none;
