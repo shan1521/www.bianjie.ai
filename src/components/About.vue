@@ -307,5 +307,51 @@
 			}
 		}
 	}
-	
+	@media screen and (max-width: 1200px){
+		.about_container_content{
+			.about_text_container{
+				.about_text_content_wrap{
+					margin: 0 0.2rem;
+				}
+			}
+		}
+	}
+	@media screen  and (max-width: 768px){
+		.about_container_content{
+			.about_content_wrap{
+				.about_content{
+					h2{
+						font-size: 0.42rem;
+					}
+					h5{
+						font-size: 0.18rem;
+						margin: 0.2rem 0.2rem 0 0.2rem;
+					}
+				}
+			}
+			.about_text_container{
+				.about_text_content_wrap{
+					margin: 0 0.2rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 375px){
+		.about_container_content{
+			.about_content_wrap{
+				.about_content{
+					text-align: center;
+					h2{
+						font-size: 0.32rem;
+					}
+					h5{
+						text-align: center;
+						margin: 0.2rem 0.6rem 0 0.6rem;
+						font-size: 0.14rem;
+						line-height:0.21rem;
+					}
+				}
+			}
+		}
+	}
 </style>

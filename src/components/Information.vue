@@ -17,12 +17,10 @@
 						<div class="year_content">{{$store.state.messages.dynamic.txt[0].year}}</div>
 					</div>
 					<div class="news_content">
-						<h4 class="news_title">{{$store.state.messages.dynamic.txt[0].title}}</h4>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[0].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[0].href" target="_blank"
-						   class="view_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[0].href" target="_blank">
+							<h4 class="news_title">{{$store.state.messages.dynamic.txt[0].title}}</h4>
 						</a>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[0].txt}}</div>
 					</div>
 				</div>
 				<div class="news_list_item_content right_content">
@@ -34,12 +32,10 @@
 						<div class="year_content">{{$store.state.messages.dynamic.txt[1].year}}</div>
 					</div>
 					<div class="news_content">
-						<h4 class="news_title">{{$store.state.messages.dynamic.txt[1].title}}</h4>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[1].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[1].href" target="_blank"
-						   class="view_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[1].href" target="_blank">
+							<h4 class="news_title">{{$store.state.messages.dynamic.txt[1].title}}</h4>
 						</a>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[1].txt}}</div>
 					</div>
 				</div>
 			</div>
@@ -53,12 +49,10 @@
 						<div class="year_content">{{$store.state.messages.dynamic.txt[2].year}}</div>
 					</div>
 					<div class="news_content">
-						<h4 class="news_title">{{$store.state.messages.dynamic.txt[2].title}}</h4>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[2].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[2].href" target="_blank"
-						   class="view_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[2].href" target="_blank">
+							<h4 class="news_title">{{$store.state.messages.dynamic.txt[2].title}}</h4>
 						</a>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[2].txt}}</div>
 					</div>
 				</div>
 				<div class="news_list_item_content right_content">
@@ -70,12 +64,10 @@
 						<div class="year_content">{{$store.state.messages.dynamic.txt[3].year}}</div>
 					</div>
 					<div class="news_content">
-						<h4 class="news_title">{{$store.state.messages.dynamic.txt[3].title}}</h4>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[3].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[3].href" target="_blank"
-						   class="view_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[3].href" target="_blank">
+							<h4 class="news_title">{{$store.state.messages.dynamic.txt[3].title}}</h4>
 						</a>
+						<div class="news_content_text">{{$store.state.messages.dynamic.txt[3].txt}}</div>
 					</div>
 				</div>
 			</div>
@@ -89,12 +81,10 @@
 						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[4].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[4].title}}</h4>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[4].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[4].href" target="_blank"
-						   class="view_bg_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[4].href" target="_blank">
+							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[4].title}}</h4>
 						</a>
+						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[4].txt}}</div>
 					</div>
 				</div>
 				<div class="news_bg_list_item_content right_content">
@@ -106,12 +96,10 @@
 						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[5].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[5].title}}</h4>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[5].txt}}</div>
-						<a :href="$store.state.messages.dynamic.txt[5].href" target="_blank"
-						   class="view_bg_more_btn">
-							查看更多 <img src="../assets/dynamic_arrow.png"/>
+						<a :href="$store.state.messages.dynamic.txt[5].href" target="_blank">
+							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[5].title}}</h4>
 						</a>
+						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[5].txt}}</div>
 					</div>
 				</div>
 			</div>
@@ -160,7 +148,7 @@
 						.month_day_content{
 							width: 0.62rem;
 							text-align: center;
-							background: url("../assets/date.png") no-repeat center center;
+							background: url("../assets/Group.png") no-repeat center center;
 							background-size: cover;
 							color: #fff;
 							.date_day_content{
@@ -186,7 +174,7 @@
 						flex: 1;
 						overflow: hidden;
 						.news_title{
-							color: #1d61a5;
+							color: #0054E3;
 							font-weight: 700;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -203,7 +191,7 @@
 						}
 						.view_more_btn{
 							font-size: 14px;
-							color: #1d61a5;
+							color: #0054E3;
 							line-height: 28px;
 							margin-top: 14px;
 							cursor: pointer;
@@ -231,7 +219,7 @@
 						.month_bg_day_content{
 							width: 0.62rem;
 							text-align: center;
-							background: url("../assets/date.png") no-repeat center center;
+							background: url("../assets/Group.png") no-repeat center center;
 							background-size: cover;
 							color: #fff;
 							.date_bg_day_content{
@@ -257,7 +245,7 @@
 						flex: 1;
 						overflow: hidden;
 						.news_bg_title{
-							color: #1d61a5;
+							color: #0054E3;
 							font-weight: 700;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -274,7 +262,7 @@
 						}
 						.view_bg_more_btn{
 							font-size: 14px;
-							color: #1d61a5;
+							color: #0054E3;
 							line-height: 28px;
 							margin-top: 14px;
 							cursor: pointer;
@@ -289,5 +277,61 @@
 			}
 		}
 	}
-
+@media screen and (min-width: 375px)and (max-width: 768px){
+	.information_container_content{
+		.news_content{
+			.news_wrap{
+				flex-direction: column;
+				.news_list_item_content{
+					box-sizing: border-box;
+					margin: 0.4rem 0 0 0;
+					padding: 0 0.4rem;
+				}
+			}
+			.news_bg_wrap{
+				flex-direction: column;
+				.news_bg_list_item_content{
+					box-sizing: border-box;
+					margin: 0.4rem 0 0 0;
+					padding: 0 0.4rem;
+				}
+			}
+		}
+	}
+}
+	@media screen and (max-width: 375px){
+		.information_container_content{
+			.information_content_wrap{
+				.information_content{
+					h2{
+						font-size: 0.32rem;
+					}
+				}
+			}
+			.news_content{
+				.news_wrap{
+					flex-direction: column;
+					.news_list_item_content{
+						box-sizing: border-box;
+						margin: 0.4rem 0 0 0;
+						padding: 0 0.2rem;
+						.news_item_content{
+							margin-right: 0.2rem;
+						}
+					}
+				}
+				.news_bg_wrap{
+					flex-direction: column;
+					.news_bg_list_item_content{
+						box-sizing: border-box;
+						margin: 0.4rem 0 0 0;
+						padding: 0 0.2rem;
+						.news_bg_item_content{
+							margin-right: 0.2rem;
+						}
+					}
+				}
+			}
+		}
+	}
 </style>

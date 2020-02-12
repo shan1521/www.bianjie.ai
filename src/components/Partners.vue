@@ -15,28 +15,36 @@
 				</div>
 				<div class="business_partner_logo_content">
 					<div class="business_partner_top_img_content">
-						<a href="https://www.wxblockchain.com/" target="_blank">
-							<img src="../assets/home/wx.png" alt="">
-						</a>
-						<a href="https://cosmos.network/" target="_blank">
-							<img src="../assets/home/cosmos.png" alt="">
-						</a>
-						<a href="https://www.haodf.com/" target="_blank">
-							<img src="../assets/home/hdf.png" alt="">
-						</a>
-						<img src="../assets/home/nxyl.png" alt="">
+						<div>
+							<a href="https://www.wxblockchain.com/" target="_blank">
+								<img src="../assets/home/wx.png" alt="">
+							</a>
+							<a href="https://cosmos.network/" target="_blank">
+								<img src="../assets/home/cosmos.png" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.haodf.com/" target="_blank">
+								<img src="../assets/home/hdf.png" alt="">
+							</a>
+							<img src="../assets/home/nxyl.png" alt="">
+						</div>
 					</div>
 					<div class="business_partner_bottom_img_content">
-						<a href="http://www.tonghaocapital.com/" target="_blank">
-							<img src="../assets/home/xwl.png" alt="">
-						</a>
-						<a href="http://healthcloud.link/#/home" target="_blank">
-							<img src="../assets/home/xkl.png" alt="">
-						</a>
-						<img src="../assets/home/shpdwszyglzx.png" alt="">
-						<a href="http://www.bjmu.edu.cn/" target="_blank">
-							<img src="../assets/home/Peking_University.png" alt="">
-						</a>
+						<div>
+							<a href="http://www.tonghaocapital.com/" target="_blank">
+								<img src="../assets/home/xwl.png" alt="">
+							</a>
+							<a href="http://healthcloud.link/#/home" target="_blank">
+								<img src="../assets/home/xkl.png" alt="">
+							</a>
+						</div>
+						<div>
+							<img src="../assets/home/shpdwszyglzx.png" alt="">
+							<a href="http://www.bjmu.edu.cn/" target="_blank">
+								<img src="../assets/home/Peking_University.png" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,18 +58,22 @@
 				</div>
 				<div class="industry_collaboration_logo_content">
 					<div class="industry_collaboration_top_img_content">
-						<a href="http://www.trustedblockchain.cn/" target="_blank">
-							<img src="../assets/home/kxqkl.png" alt="">
-						</a>
-						<a href="http://www.softline.org.cn/" target="_blank">
-							<img src="../assets/home/shqkl.png" alt="">
-						</a>
-						<a href="https://shbta.cn/" target="_blank">
-							<img src="../assets/home/shrjglxh.png" alt="">
-						</a>
-						<a href="https://www.cie-info.org.cn/site/term/51.html">
-							<img src="../assets/home/zgdzxh.png" alt="">
-						</a>
+						<div>
+							<a href="http://www.trustedblockchain.cn/" target="_blank">
+								<img src="../assets/home/kxqkl.png" alt="">
+							</a>
+							<a href="http://www.softline.org.cn/" target="_blank">
+								<img src="../assets/home/shqkl.png" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="https://shbta.cn/" target="_blank">
+								<img src="../assets/home/shrjglxh.png" alt="">
+							</a>
+							<a href="https://www.cie-info.org.cn/site/term/51.html">
+								<img src="../assets/home/zgdzxh.png" alt="">
+							</a>
+						</div>
 					</div>
 					<div class="industry_collaboration_bottom_img_content">
 						<a href="https://www.ccidgroup.com/" target="_blank">
@@ -139,14 +151,22 @@
 				 .business_partner_logo_content{
 					 .business_partner_top_img_content{
 						 margin-top: 0.6rem;
-						 img{
-							 width: 3rem;
+						 display: flex;
+						 div{
+							 display: flex;
+							 img{
+								 width: 3rem;
+							 }
 						 }
 					 }
 					 .business_partner_bottom_img_content{
 						 margin-top: 0.6rem;
-						 img{
-							 width: 3rem;
+						 display: flex;
+						 div{
+							 display: flex;
+							 img{
+								 width: 3rem;
+							 }
 						 }
 					 }
 				 }
@@ -181,6 +201,7 @@
 				.industry_collaboration_logo_content{
 					.industry_collaboration_top_img_content{
 						margin-top: 0.6rem;
+						display: flex;
 						img{
 							width: 3rem;
 						}
@@ -195,5 +216,204 @@
 			}
 		}
 	}
+	@media screen and (max-width: 1200px){
+		.partners_content_container{
+			.business_partner_container{
+				.business_partner_content_wrap{
+					.business_partner_logo_content{
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						.business_partner_top_img_content{
+							flex-direction: column;
+							div{
+								margin-bottom: 0.4rem;
+							}
+						}
+						.business_partner_bottom_img_content{
+							flex-direction: column;
+							margin-top: 0;
+							div{
+								margin-bottom: 0.4rem;
+							}
+						}
+					}
+				}
+			}
+			.industry_collaboration_container{
+				.industry_collaboration_content_wrap{
+					.industry_collaboration_logo_content{
+						.industry_collaboration_top_img_content{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							div{
+								display: flex;
+								margin-bottom: 0.4rem;
+							}
+						}
+						.industry_collaboration_bottom_img_content{
+							margin-top: 0;
+							display: flex;
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 375px) and (max-width: 600px){
+		.partners_content_container{
+			.partners_content_wrap{
+				.partners_header_content{
+					h5{
+						padding: 0 0.4rem;
+					}
+				}
+			}
+			.business_partner_container{
+				.business_partner_content_wrap{
+					.business_partner_logo_content{
+						.business_partner_top_img_content{
+							flex-direction: column;
+							div{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+						.business_partner_bottom_img_content{
+							flex-direction: column;
+							margin-top: 0;
+							div{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			.industry_collaboration_container{
+				.industry_collaboration_content_wrap{
+					margin-top: 0.4rem;
+					.industry_collaboration_logo_content{
+						.industry_collaboration_top_img_content{
+							div	{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								a{
+									img{
+										margin-bottom: 0.4rem;
+									}
+								}
+							}
+						}
+						.industry_collaboration_bottom_img_content{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-bottom: 0;
+							a{
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
 
+		}
+	}
+	@media screen and (max-width: 375px){
+		.partners_content_container{
+			.partners_content_wrap{
+				height:3.76rem;
+				.partners_header_content{
+					h2{
+						font-size: 0.32rem;
+					}
+					h5{
+						font-size: 0.14rem;
+						line-height: 0.21rem;
+					}
+				}
+			}
+			.partners_content_wrap{
+				.partners_header_content{
+					h5{
+						padding: 0 0.4rem;
+					}
+				}
+			}
+			.business_partner_container{
+				.business_partner_content_wrap{
+					.business_partner_logo_content{
+						.business_partner_top_img_content{
+							flex-direction: column;
+							div{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+						.business_partner_bottom_img_content{
+							flex-direction: column;
+							margin-top: 0;
+							div{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			.industry_collaboration_container{
+				.industry_collaboration_content_wrap{
+					margin-top: 0.4rem;
+					.industry_collaboration_logo_content{
+						.industry_collaboration_top_img_content{
+							div	{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								a{
+									img{
+										margin-bottom: 0.4rem;
+									}
+								}
+							}
+						}
+						.industry_collaboration_bottom_img_content{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-bottom: 0;
+							a{
+								img{
+									margin-bottom: 0.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
 </style>
