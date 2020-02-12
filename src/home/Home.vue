@@ -12,42 +12,46 @@
 			<div class="home_core_content">
 				<h5 class="home_core_title_content">核心能力</h5>
 				<ul class="home_core_list_content">
-					<li class="home_core_item_content">
-						<div class="home_core_item_img_content">
-							<img src="../assets/home/core_img_1.png" alt="">
-						</div>
-						<div class="home_core_item_text_content">
-							<p>区块链技术和分布式AI技术专家</p>
-							<p>自主创新的核心技术底层研发能力</p>
-						</div>
-					</li>
-					<li class="home_core_item_content">
-						<div class="home_core_item_img_content">
-							<img src="../assets/home/core_img_2.png" alt="">
-						</div>
-						<div class="home_core_item_text_content">
-							<p>医疗卫生和金融行业信息化专家</p>
-							<p>丰富的行业落地能力和最佳实践经验</p>
-						</div>
-					</li>
-					<li class="home_core_item_content">
-						<div class="home_core_item_img_content">
-							<img src="../assets/home/core_img_3.png" alt="">
-						</div>
-						<div class="home_core_item_text_content">
-							<p>专注研发勇于创新的产品技术团队</p>
-							<p>大型企业级业务平台分析架构能力</p>
-						</div>
-					</li>
-					<li class="home_core_item_content">
-						<div class="home_core_item_img_content">
-							<img src="../assets/home/core-img_4.png" alt="">
-						</div>
-						<div class="home_core_item_text_content">
-							<p>成熟的区块链技术和跨链服务产品</p>
-							<p>可靠的解决方案设计研发和交付能力</p>
-						</div>
-					</li>
+					<div class="home_core_list_left_content">
+						<li class="home_core_item_content">
+							<div class="home_core_item_img_content">
+								<img src="../assets/home/core_img_1.png" alt="">
+							</div>
+							<div class="home_core_item_text_content">
+								<p>区块链技术和分布式AI技术专家</p>
+								<p>自主创新的核心技术底层研发能力</p>
+							</div>
+						</li>
+						<li class="home_core_item_content">
+							<div class="home_core_item_img_content">
+								<img src="../assets/home/core_img_2.png" alt="">
+							</div>
+							<div class="home_core_item_text_content">
+								<p>医疗卫生和金融行业信息化专家</p>
+								<p>丰富的行业落地能力和最佳实践经验</p>
+							</div>
+						</li>
+					</div>
+					<div class="home_core_list_right_content">
+						<li class="home_core_item_content">
+							<div class="home_core_item_img_content">
+								<img src="../assets/home/core_img_3.png" alt="">
+							</div>
+							<div class="home_core_item_text_content">
+								<p>专注研发勇于创新的产品技术团队</p>
+								<p>大型企业级业务平台分析架构能力</p>
+							</div>
+						</li>
+						<li class="home_core_item_content">
+							<div class="home_core_item_img_content">
+								<img src="../assets/home/core-img_4.png" alt="">
+							</div>
+							<div class="home_core_item_text_content">
+								<p>成熟的区块链技术和跨链服务产品</p>
+								<p>可靠的解决方案设计研发和交付能力</p>
+							</div>
+						</li>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -212,6 +216,49 @@
 				</div>
 			</div>
 		</div>
+		<div class="mobile_home_application_scenarios_content_wrap">
+			<div class="mobile_home_application_scenarios_title_content">
+				<h1 class="mobile_home_application_scenarios_title">应用场景</h1>
+			</div>
+			<div class="mobile_home_application_scenarios_content">
+				<ul class="mobile_home_application_list_content">
+					<router-link :to="`/application/digital-asset`">
+						<li class="mobile_home_application_item">
+							<img src="../assets/home/application_scenarios_left_top.png" alt="">
+							<h2>资产数字化</h2>
+							<h5>数字资产可信登记与交换平台</h5>
+							<p>数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产</p>
+							<p>将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用</p>
+						</li>
+					</router-link>
+					<router-link :to="`/application/cooperation`">
+						<li class="mobile_home_application_item">
+							<img src="../assets/home/application_scenarios_right_top.png" alt="">
+							<h2>行业协同</h2>
+							<h5>医疗健康电子处方外配许可链</h5>
+							<p>在不泄漏患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转、安全访问及全生命周期的可审计可追溯</p>
+							<p>业务参与方通过链下应用提供 ToC 服务，同时拥有链上注册身份达成共识互信协作、行业协同。</p>
+						</li>
+					</router-link>
+					<router-link :to="`/application/finance`">
+						<li class="mobile_home_application_item">
+							<img src="../assets/home/application_scenarios_left_bottom.png" alt="">
+							<h2>金融创新</h2>
+							<h5>区块链应链金融价值平台</h5>
+							<p>利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程找那个，实现实体经济中非同质资产的定义，多方流通转的信息透明、不可更改并实现金融创新和生态共建。</p>
+						</li>
+					</router-link>
+					<router-link :to="`/application/multi-trust`">
+						<li class="mobile_home_application_item">
+							<img src="../assets/home/application_scenarios_left_bottom.png" alt="">
+							<h2>多方互信</h2>
+							<h5>体检报告存证授权许可链</h5>
+							<p>利用区块链、分布式人工智能、微服务框架等先进的科技手段，提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
+						</li>
+					</router-link>
+				</ul>
+			</div>
+		</div>
 		<div class="home_about_bianjie_content_wrap">
 			<img class="home_about_bianjie_left_img" src="../assets/home/about_bianjie_footer_left.png" alt="">
 			<div class="home_about_bianjie_content">
@@ -300,30 +347,64 @@
 				.home_core_list_content{
 					display: flex;
 					list-style: none;
-					.home_core_item_content{
-						flex: 1;
+					.home_core_list_left_content{
 						display: flex;
-						flex-direction: column;
-						margin-top: 0.5rem;
-						align-items: center;
-						.home_core_item_img_content{
-							width: 0.6rem;
-							height: 0.6rem;
-							margin-bottom: 0.3rem;
-							img{
-								width: 100%;
+						flex: 1;
+						.home_core_item_content{
+							flex: 1;
+							display: flex;
+							flex-direction: column;
+							margin-top: 0.5rem;
+							align-items: center;
+							.home_core_item_img_content{
+								width: 0.6rem;
+								height: 0.6rem;
+								margin-bottom: 0.3rem;
+								img{
+									width: 100%;
+								}
 							}
-						}
-						.home_core_item_text_content{
-							text-align: center;
-							p{
-								color: #0C253A;
-								font-size: 0.14rem;
-								letter-spacing: 0.01rem;
-								line-height: 0.24rem;
+							.home_core_item_text_content{
+								text-align: center;
+								p{
+									color: #0C253A;
+									font-size: 0.14rem;
+									letter-spacing: 0.01rem;
+									line-height: 0.24rem;
+								}
 							}
 						}
 					}
+					.home_core_list_right_content{
+						display: flex;
+						flex: 1;
+						.home_core_item_content{
+							flex: 1;
+							display: flex;
+							flex-direction: column;
+							margin-top: 0.5rem;
+							align-items: center;
+							box-sizing: border-box;
+							padding: 0 0.2rem;
+							.home_core_item_img_content{
+								width: 0.6rem;
+								height: 0.6rem;
+								margin-bottom: 0.3rem;
+								img{
+									width: 100%;
+								}
+							}
+							.home_core_item_text_content{
+								p{
+									color: #0C253A;
+									font-size: 0.14rem;
+									letter-spacing: 0.01rem;
+									line-height: 0.24rem;
+								}
+							}
+						}
+					}
+
 				}
 			}
 		}
@@ -478,6 +559,9 @@
 					margin-right: 0;
 				}
 			}
+		}
+		.mobile_home_application_scenarios_content_wrap{
+			display: none;
 		}
 		.home_application_scenarios_content_wrap{
 			width: 100%;
@@ -778,6 +862,207 @@
 			}
 		}
 	
+	}
+	@media screen and (max-width: 768px){
+		.home_container{
+			.home_core_content_wrap{
+				height: 9rem;
+				.home_core_content{
+					margin: 0 8%;
+					height: auto;
+					.home_core_list_content{
+						flex-direction: column;
+						.home_core_list_left_content{
+							flex-direction: column;
+						}
+						.home_core_list_right_content{
+							margin-bottom: 0.47rem;
+							flex-direction: column;
+						}
+					}
+				}
+			}
+			.home_production_serve_content_wrap{
+				.home_production_content{
+					.home_production_list_content{
+						width: 85%;
+						.home_production_item_content{
+							width: 100%;
+							.home_production_item_text_content{
+								padding-right: 0.2rem;
+							}
+						}
+					}
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					flex-direction: column;
+					align-items: center;
+					.home_production_serve_item_content{
+						width: 5rem;
+						padding: 0 0.51rem;
+						margin: 0.8rem 0 0 0;
+					}
+				}
+			}
+			.home_application_scenarios_content_wrap{
+				display: none;
+			}
+			.mobile_home_application_scenarios_content_wrap{
+				display: block;
+				.mobile_home_application_scenarios_title_content{
+					text-align: center;
+					.mobile_home_application_scenarios_title{
+						font-size: 0.26rem;
+						line-height: 0.37rem;
+						font-weight: lighter;
+						padding: 0.8rem 0 0.8rem 0;
+					}
+				}
+				.mobile_home_application_scenarios_content{
+					.mobile_home_application_list_content{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						list-style: none;
+						a{
+							.mobile_home_application_item{
+								text-align: center;
+								max-width: 5rem;
+								margin-bottom: 0.8rem;
+								img{
+									width: 0.64rem;
+									height: 0.64rem;
+								}
+								h2{
+									font-size: 0.16rem;
+									line-height: 0.22rem;
+									font-weight: bold;
+									padding: 0.3rem 0 0.08rem 0;
+								}
+								h5{
+									font-size: 0.14rem;
+									font-weight: bold;
+									line-height: 0.2rem;
+									padding: 0 0 0.15rem 0;
+								}
+								p{
+									font-size: 0.12rem;
+									line-height: 0.22rem;
+									letter-spacing: 0.01rem;
+									font-weight: lighter;
+									color: #8A99A5;
+									text-align: left;
+									margin:  0 0.2rem;
+								}
+								p:last-child{
+									padding-top: 0.12rem;
+								}
+							 }
+						}
+					}
+				}
+			}
+			.home_about_bianjie_content_wrap{
+				.home_about_bianjie_left_img{
+					width: 1.15rem;
+				}
+				.home_about_bianjie_right_img{
+					width: 1.72rem;
+				}
+				.home_about_bianjie_content{
+					justify-content: center;
+					.home_about_bianjie_left_content{
+						display: none;
+					}
+					.home_about_bianjie_right_content{
+						max-width: 5rem;
+						margin: 0.8rem 0.2rem 0.5rem 0.2rem;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width:375px) and (max-width:600px){
+		.home_container{
+			.home_container_wrap{
+				height:4.6rem;
+				.home_content_wrap{
+					.home_content{
+						.home_content_title{
+							text-align: center;
+							font-size: 0.32rem;
+						}
+						.home_content_second_title{
+							font-size: 0.14rem;
+						}
+					}
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					padding-bottom: 1.4rem;
+					.home_production_serve_item_content{
+						width: 3.35rem;
+					}
+				}
+			}
+			.home_production_serve_content_wrap{
+				.home_production_content{
+					.home_production_list_content{
+						.home_production_item_content{
+							.home_production_item_img_content{
+								padding: 0 0.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width:375px){
+		.home_container{
+			.home_container_wrap{
+				height:4.6rem;
+				.home_content_wrap{
+					.home_content{
+						.home_content_title{
+							text-align: center;
+							font-size: 0.32rem;
+						}
+						.home_content_second_title{
+							font-size: 0.14rem;
+						}
+					}
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					padding-bottom: 1.4rem;
+					.home_production_serve_item_content{
+						width: 3.35rem;
+						padding: 0 0.2rem;
+					}
+				}
+			}
+			.home_production_serve_content_wrap{
+				.home_production_content{
+					.home_production_list_content{
+						width: 85%;
+						.home_production_item_content{
+							.home_production_item_img_content{
+								padding: 0 0.1rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 </style>

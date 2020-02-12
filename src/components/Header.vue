@@ -2,7 +2,9 @@
 	<div class="header_container_content" :class="flShowBoxShadow ? 'change_header_bg_color' :''">
 		<div class="header_content_wrap">
 			<div class="header_logo_content">
-				<img src="../assets/home/bianjie_logo.png" alt="">
+				<router-link :to="`/home`">
+					<img src="../assets/home/bianjie_logo.png" alt="">
+				</router-link>
 			</div>
 			<div class="header_content_menu">
 				<ul class="header_menu_list">
