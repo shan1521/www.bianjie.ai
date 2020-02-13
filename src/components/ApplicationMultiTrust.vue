@@ -9,8 +9,8 @@
 			</div>
 			<div class="application_nav_content">
 				<h3>多方互信的存证授权</h3>
-				<p>数据所有方自主可控的信息分享机制，必要信息先加密后分享，数据需求方先授权后解密，无需数据搬家吗，解决数据共享与隐私间的矛盾</p>
 				<ul class="application_list_content">
+					<p class="application_item">数据所有方自主可控的信息分享机制，必要信息先加密后分享、数据需求方先授权后解密，无需数据搬家，解决数据共享与隐私间的矛盾</p>
 					<li>• 提供业务数据的上链能力：包括身份注册、数据存证、调用、价值/信息交换、事务处理等（智能合约）</li>
 					<li>• 提供面向业务的链下服务：包括数据处理和商业逻辑执行</li>
 					<li>• 提供链上链下通联：通过可信计算调用，协作交易及分析服务结果索引上链存证</li>
@@ -88,6 +88,7 @@
 <style scoped lang="less">
 	.applications_content_container{
 		width: 100%;
+		background: #FAFAFA;
 		.applications_content_wrap{
 			background: url("../assets/home/application_scenarios.png") no-repeat center center;
 			background-size: cover;
@@ -122,13 +123,7 @@
 				line-height: 0.25rem;
 				font-weight: bold;
 				margin-top: 1rem;
-			}
-			p{
-				margin-top: 0.06rem;
-				font-size: 0.14rem;
-				color: #8a99a5;
-				line-height: 0.27rem;
-				text-align: center;
+				margin-bottom: 0.4rem;
 			}
 			.application_list_content{
 				box-sizing: border-box;
@@ -138,9 +133,16 @@
 				font-size: 0.14rem;
 				color: #0C253A;
 				list-style: none;
+				.application_item{
+					font-size: 0.14rem;
+					color: #0C253A;
+					line-height: 0.27rem;
+					font-weight: bold;
+					margin-bottom: 0.2rem;
+				}
 				li{
-					margin-top: 0.06rem;
-					line-height: 0.28rem;
+					line-height: 0.26rem;
+					margin-bottom: 0.2rem;
 				}
 			}
 		}
@@ -313,10 +315,6 @@
 				}
 			}
 			.application_nav_content{
-				p{
-					box-sizing: border-box;
-					padding: 0 0.2rem;
-				}
 				.application_list_content{
 					margin:0 0.2rem;
 				}

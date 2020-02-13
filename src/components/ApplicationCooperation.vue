@@ -6,9 +6,9 @@
 				<h5>区块链+人工智能解决应用痛点 · 安全共享释放行业数据价值</h5>
 			</div>
 		</div>
-		<div class="application_medical_treatment_nav_content">
+		<div class="applications_text_content">
 			<h3>医疗健康行业的区块链协同</h3>
-			<div class="application_medical_treatment_text_content">
+			<div class="application_list_content">
 				<p>随着医疗健康领域的信息化建设，产生了越来越多的个人数据，也带来更多对数据分析、数据共享和数据安全的问题亟待解决。边界智能讲区块链+互联网+隐私算法+人工智能+分布式存储等技术结合多年的行业经验，为医疗健康数据安全共享、行业协作、跨行业协同等应用场景提供落地方案。</p>
 				<p>创新的链上链下互操作可以支持数据保持原有业务逻辑和存储安全不变，无需数据搬家，仅在不泄漏患者隐私的前提下根据授权交换必要的信息。联盟链中许可的业务参与方通过链下应用提供高效的 ToC 的服务，同时拥有链上注册身份，可以通过区块链达到保障业务数据在合规流转过程中的安全访问，实现全生命周期的可审计可追溯。</p>
 				<p>边界智能区块链解决方案同时支持监管机构、社保基金、商业保险、医药企业、零售药店、等通过非侵入式的方式参与，满足行业协同的需要。</p>
@@ -110,7 +110,7 @@
 				}
 			}
 		}
-		.application_medical_treatment_nav_content{
+		.applications_text_content{
 			max-width: 12rem;
 			margin: 0 auto;
 			h3{
@@ -119,7 +119,7 @@
 				color: #0C253A;
 				text-align: center;
 			}
-			.application_medical_treatment_text_content{
+			.application_list_content{
 				box-sizing: border-box;
 				padding: 0.3rem;
 				background: #fff;

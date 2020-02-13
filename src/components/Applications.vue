@@ -8,8 +8,8 @@
 		</div>
 		<div class="applications_text_content">
 			<div class="applications_text_title">资产登记与交易</div>
-			<p class="applications_second_title">将区块链技术用于构建可信的数字资产登记与交易平台，极大的提升数字资产流通的可信性和效率</p>
 			<div class="application_list_content">
+				<p class="application_item">将区块链技术用于构建可信的数字资产登记与交易平台，极大的提升数字资产流通的可信性和效率</p>
 				<p> • 支持由企业或个人拥有的、以电子数据形式存在的各类资产在区块链上登记流转</p>
 				<p> • 支持在数字经济发展过程中不断数字化的实体资产在区块链上登记流转</p>
 				<p> • 支持第三方机构通过链上服务提供信息验证和确权，支持分布式应用之间跨区块链、以及与非区块链系统的跨链传输</p>
@@ -112,12 +112,12 @@
 				}
 			}
 		}
-		.C{
+		.applications_text_content{
 			max-width: 12rem;
 			margin: 0 auto;
 			.applications_text_title{
 				text-align: center;
-				margin: 1rem 0 0 0;
+				margin: 1rem 0 0.4rem 0;
 				font-size: 0.18rem;
 				font-weight: bold;
 			}
@@ -133,10 +133,18 @@
 				background: #fff;
 				box-sizing: border-box;
 				padding: 0.3rem;
+				.application_item{
+					font-size: 0.14rem;
+					color: #0C253A;
+					line-height: 0.27rem;
+					font-weight: bold;
+					margin-bottom: 0.2rem;
+				}
 				p{
 					font-size: 0.14rem;
 					color: #0C253A;
-					line-height: 0.28rem;
+					line-height: 0.26rem;
+					margin-bottom: 0.2rem;
 				}
 			}
 		}
