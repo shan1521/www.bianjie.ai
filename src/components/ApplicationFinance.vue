@@ -8,8 +8,8 @@
 		</div>
 		<div class="application_nav_content">
 			<h3>创新的供应链金融</h3>
-			<p>基于跨链服务枢纽构建的供应链金融系统，可以实现信息可信共享，降低金融企业风险和融资成本</p>
 			<ul class="application_list_content">
+				<p class="application_item">基于跨链服务枢纽构建的供应链金融系统，可以实现信息可信共享，降低金融企业风险和融资成本</p>
 				<li>• 通过区块链技术实现多方的可信交互，促进数据可溯源、不可逆、真实可信</li>
 				<li>• 通过跨链调用服务接口，实现数据需求方和供应方的在线交互，大大提高业务效率</li>
 				<li>• 易于打通数据流，资金流，交易成本低，更好的服务于中小企业和机构资产的融资场景</li>
@@ -121,13 +121,7 @@
 				line-height: 0.25rem;
 				font-weight: bold;
 				margin-top: 1rem;
-			}
-			p{
-				margin-top: 0.06rem;
-				font-size: 0.14rem;
-				color: #8a99a5;
-				line-height: 0.27rem;
-				text-align: center;
+				margin-bottom: 0.4rem;
 			}
 			.application_list_content{
 				box-sizing: border-box;
@@ -137,8 +131,16 @@
 				font-size: 0.14rem;
 				color: #0C253A;
 				list-style: none;
+				.application_item{
+					font-size: 0.14rem;
+					color: #0C253A;
+					line-height: 0.27rem;
+					font-weight: bold;
+					margin-bottom: 0.2rem;
+				}
 				li{
-					line-height: 0.28rem;
+					line-height: 0.26rem;
+					margin-bottom: 0.2rem;
 				}
 			}
 		}
@@ -311,10 +313,6 @@
 				}
 			}
 			.application_nav_content{
-				p{
-					box-sizing: border-box;
-					padding: 0 0.2rem;
-				}
 				.application_list_content{
 					margin:0 0.2rem;
 				}
