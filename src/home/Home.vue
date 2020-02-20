@@ -301,6 +301,7 @@
 	@media print {
 		.home_container{
 			.home_container_wrap{
+				-webkit-print-color-adjust: exact;
 				.home_content_wrap{
 					max-width: 1400px;
 				}
@@ -311,6 +312,7 @@
 				}
 			}
 			.home_production_serve_content_wrap{
+				-webkit-print-color-adjust: exact;
 				.home_production_content{
 					max-width: 1400px;
 				}

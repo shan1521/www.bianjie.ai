@@ -98,6 +98,9 @@
 <style scoped lang="less">
 	@media print {
 		.partners_content_container{
+			.partners_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
 			.business_partner_container{
 				max-width: 1400px;
 				.business_partner_content_wrap{

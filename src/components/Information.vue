@@ -116,6 +116,9 @@
 <style scoped lang="less">
 	@media print {
 		.information_container_content{
+			.information_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
 			.news_content{
 				.news_wrap{
 					max-width: 1400px;

@@ -161,6 +161,13 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.about_container_content{
+			.about_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
+		}
+	}
 	.about_container_content{
 		width: 100%;
 		.about_content_wrap{
