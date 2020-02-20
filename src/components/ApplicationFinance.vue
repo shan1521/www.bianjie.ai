@@ -84,6 +84,16 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.applications_content_container{
+			.application_nav_content{
+				max-width: 1400px;
+			}
+			.program_features_content{
+				max-width: 1400px;
+			}
+		}
+	}
 	.applications_content_container{
 		width: 100%;
 		background: #fafafa;

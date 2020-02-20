@@ -298,6 +298,40 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.home_container{
+			.home_container_wrap{
+				.home_content_wrap{
+					max-width: 1400px;
+				}
+			}
+			.home_core_content_wrap{
+				.home_core_content{
+					max-width: 1400px;
+				}
+			}
+			.home_production_serve_content_wrap{
+				.home_production_content{
+					max-width: 1400px;
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					max-width: 12rem;
+				}
+			}
+			.home_application_scenarios_content_wrap{
+				.home_application_scenarios_title_content{
+					max-width: 1400px;
+				}
+			}
+			.home_about_bianjie_content_wrap{
+				.home_about_bianjie_content{
+					max-width: 1400px;
+				}
+			}
+		}
+	}
 	.home_container{
 		width: 100%;
 		.home_container_wrap{

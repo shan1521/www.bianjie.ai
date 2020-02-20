@@ -96,6 +96,58 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.partners_content_container{
+			.business_partner_container{
+				max-width: 1400px;
+				.business_partner_content_wrap{
+					.business_partner_logo_content{
+						.business_partner_top_img_content{
+							div{
+								img{
+									width:7cm !important;
+								}
+							}
+						}
+						.business_partner_bottom_img_content{
+							div{
+								img{
+									width:7cm !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.industry_collaboration_container{
+				max-width: 1400px;
+				.industry_collaboration_content_wrap{
+					.industry_collaboration_logo_content{
+						.industry_collaboration_top_img_content{
+ 							div{
+								display: flex;
+								a{
+									img{
+										width:7cm !important;
+									}
+								}
+							}
+						}
+						.industry_collaboration_bottom_img_content{
+							div{
+								display: flex;
+								a{
+									img{
+										width:7cm !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.partners_content_container{
 		width: 100%;
 		.partners_content_wrap{

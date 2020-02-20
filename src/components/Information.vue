@@ -114,6 +114,30 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.information_container_content{
+			.news_content{
+				.news_wrap{
+					max-width: 1400px;
+					.news_list_item_content{
+						margin-left: 0;
+					}
+					.right_content{
+						margin-right: 0;
+					}
+				}
+				.news_bg_wrap{
+					max-width: 1400px;
+					.news_bg_list_item_content{
+						margin-left: 0;
+					}
+					.right_content{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
 	.information_container_content{
 		width: 100%;
 		.information_content_wrap{
