@@ -25,6 +25,9 @@
 <style scoped lang="less">
 	@media print {
 		.production_container{
+			.production_header_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
 			.production_text_content{
 				max-width: 1400px;
 			}

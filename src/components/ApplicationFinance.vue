@@ -86,6 +86,9 @@
 <style scoped lang="less">
 	@media print {
 		.applications_content_container{
+			.applications_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
 			.application_nav_content{
 				max-width: 1400px;
 			}
