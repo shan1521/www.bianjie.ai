@@ -32,6 +32,14 @@
 						</div>
 					</li>
 				</ul>
+                <div class="print_content">
+                    <div class="about_me_content">关注我们
+                        <div class="qr_content">
+                            <img src="../assets/home/qr_bianjie.png" alt="">
+                        </div>
+                    </div>
+                    <span @click="openPrint()">打印 <img style="width: 0.14rem" src="../assets/home/print_icon.png"></span>
+                </div>
 				<div class="mobile_menu_content" @click="showMobileMenu()">
 					<img src="../assets/home/mobile_menu.png" alt="">
 				</div>
@@ -127,6 +135,9 @@
 			window.addEventListener('scroll',this.handleScroll,true)
 		},
 		methods:{
+            openPrint(){
+                window.print()
+            },
 			showMobileMenu(){
 				this.flShowMobileMenu = !this.flShowMobileMenu;
 			},
@@ -185,6 +196,11 @@
 </script>
 
 <style scoped lang="less">
+    @media print {
+        .header_container_content{
+            display: none;
+        }
+    }
 .change_header_bg_color{
 	background: #002C78;
 }
@@ -205,6 +221,35 @@
 			}
 		}
 		.header_content_menu{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .print_content{
+                display: flex;
+                color: #fff;
+                margin-right: 0.2rem;
+                .about_me_content{
+                    margin-right: 0.4rem;
+                    position: relative;
+                    .qr_content{
+                        position: absolute;
+                        top: 0.3rem;
+                        right: -0.35rem;
+                        display: none;
+                        img{
+                            width: 1.3rem;
+                            height: 1.3rem;
+                            border-radius: 0.04rem;
+                        }
+                    }
+                    &:hover{
+                        .qr_content{
+                            display: block;
+                        }
+                    }
+                }
+            }
 			.mobile_menu_content{
 				display: none;
 			}
@@ -301,6 +346,17 @@
 		display: none;
 	}
 }
+    @media screen and (max-width: 920px){
+       .header_container_content{
+           .header_content_wrap{
+               .header_content_menu{
+                   .print_content{
+                       display: none;
+                   }
+               }
+           }
+       }
+    }
 	@media screen and (max-width: 768px) {
 		.header_container_content{
 			background: #002C78;
@@ -310,6 +366,7 @@
 				box-sizing: border-box;
 				padding: 0 0.2rem;
 				.header_content_menu{
+                    justify-content: flex-end;
 					.header_menu_list{
 						display: none;
 					}

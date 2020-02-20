@@ -18,6 +18,11 @@
 </script>
 
 <style scoped lang="less">
+	@media print {
+		.home_copy_right_content_wrap{
+			display: none;
+		}
+	}
 	.home_copy_right_content_wrap{
 		background: #fafafa;
 		border-top: 0.01rem solid #EDEDED;
