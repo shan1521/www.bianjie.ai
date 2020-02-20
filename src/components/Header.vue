@@ -249,6 +249,9 @@
                         }
                     }
                 }
+				span{
+					cursor: pointer;
+				}
             }
 			.mobile_menu_content{
 				display: none;
