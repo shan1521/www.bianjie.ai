@@ -154,7 +154,7 @@
 		}
 		.program_features_content{
 			max-width: 12rem;
-			margin: 0.8rem auto 2.63rem auto;
+			margin: 0.8rem auto 1rem auto;
 			.program_features_title{
 				text-align: center;
 				margin-bottom: 0.4rem;

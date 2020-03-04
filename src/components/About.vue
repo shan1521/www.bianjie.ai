@@ -47,40 +47,40 @@
 			return{
 				swiperArray:[
 					{
-						src:require('../assets/home/honor5.png')
+						src:require('../assets/home/honor5.jpg')
 					},
 					{
-						src:require('../assets/home/honor6.png')
+						src:require('../assets/home/honor6.jpg')
 					},
 					{
-						src:require('../assets/home/honor8.png')
+						src:require('../assets/home/honor8.jpg')
 					},
 					{
-						src:require('../assets/home/honor7.png')
+						src:require('../assets/home/honor7.jpg')
 					},
 					{
-						src:require('../assets/home/honor9.png')
+						src:require('../assets/home/honor9.jpg')
 					},
 					{
-						src:require('../assets/home/honor10.png')
+						src:require('../assets/home/honor10.jpg')
 					},
 					{
-						src:require('../assets/home/honor11.png')
+						src:require('../assets/home/honor11.jpg')
 					},
 					{
-						src:require('../assets/home/honor12.png')
+						src:require('../assets/home/honor12.jpg')
 					},
 					{
-						src:require('../assets/home/honor13.png')
+						src:require('../assets/home/honor13.jpg')
 					},
 					{
-						src:require('../assets/home/honor14.png')
+						src:require('../assets/home/honor14.jpg')
 					},
 					{
-						src:require('../assets/home/honor15.png')
+						src:require('../assets/home/honor15.jpg')
 					},
 					{
-						src:require('../assets/home/honor1.png')
+						src:require('../assets/home/honor1.jpg')
 					},		
 				],
 				swiperOption:{
@@ -205,7 +205,7 @@
 				color: #0C253A;
 				p{
 					font-size: 0.14rem;
-					line-height: 0.21rem;
+					line-height: 0.34rem;
 					margin-bottom: 0.14rem;
 				}
 				p:last-child{
@@ -220,7 +220,8 @@
 				text-align: center;
 				#certify{
 					position: relative;
-					width: 900px;
+					max-width: 900px;
+					width: 100%;
 					margin: 0 auto;
 					.my-swipe{
 						&:first-child {
@@ -357,6 +358,22 @@
 						margin: 0.2rem 0.6rem 0 0.6rem;
 						font-size: 0.14rem;
 						line-height:0.21rem;
+					}
+				}
+			}
+			.about_img_content{
+				.about_img_content_wrap{
+					#certify{
+						.swiper-container{
+							.swiper-wrapper{
+								.swiper-slide{
+									div{
+										height: 2.4rem !important;
+									}
+								}
+
+							}
+						}
 					}
 				}
 			}

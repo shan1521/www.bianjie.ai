@@ -396,6 +396,8 @@
 							flex-direction: column;
 							margin-top: 0.5rem;
 							align-items: center;
+							box-sizing: border-box;
+							padding: 0 0.2rem;
 							.home_core_item_img_content{
 								width: 0.6rem;
 								height: 0.6rem;

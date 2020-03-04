@@ -59,7 +59,7 @@
 		}
 		.production_text_content{
 			max-width: 12rem;
-			margin: 0 auto 2.63rem auto;
+			margin: 0 auto 1rem auto;
 			.production_text_title{
 				text-align: center;
 				margin: 1rem 0 0.4rem 0;
