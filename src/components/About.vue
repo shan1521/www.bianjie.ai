@@ -24,8 +24,8 @@
 							</div>
 						</swiper-slide>
 					</swiper>
-					<div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
-					<div class="swiper-button-next"  @click="next()"></div>
+					<div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</div>
@@ -85,18 +85,18 @@
 				],
 				swiperOption:{
 					watchSlidesProgress: true,
-					slidesPerView: 3,
+					slidesPerView: "auto",
 					centeredSlides: true,
 					loop: true,
 					speed: 300,
-					loopedSlides: 12,
+					// loopedSlides: 12,
 					autoplay: true,
 					/*autoplay: {
 					delay: 0,
 					stopOnLastSlide: false,
 					disableOnInteraction: true,
 					},*/
-					grabCursor: true,
+					// grabCursor: true,
 					pagination: {
 						el: '.swiper-pagination',
 						//clickable :true,
