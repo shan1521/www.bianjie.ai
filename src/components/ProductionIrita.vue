@@ -3,7 +3,7 @@
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
 				<h2>联盟链产品-IRITA</h2>
-				<h5>Cosmos生态首个企业级开源项目 · 创新支持基于iService的链上链下通联</h5>
+				<h5>Cosmos 生态的首个企业级开源项目 · 创新支持基于 iService 的链上链外通联</h5>
 			</div>
 		</div>
 		<div class="production_text_content">
@@ -14,9 +14,23 @@
 				<p>1）共识底层：<a href="https://tendermint.com/" target="_blank"  style="color: #155fff;">Tendermint </a>是首个可以在互联网级别可应用的拜占庭共识协议，是Libra也沿用的共识技术</p>
 				<p>2）<a href="https://cosmos.network/" target="_blank" style="color: #155fff;">跨链 IBC </a>: 国际合作团队贡献了业内公认的、最前沿跨链技术标准设计与实施；支持各种异构链间可信交互</p>
 				<p>3）数据授权共享：数据在链上加密存储，保护各方数据所有权和隐私；只有用户授权，数据才会共享给第三方</p>
-				<p>4）iService：链上链下各类型系统的交互，基于<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>将各类技术的有机结合、自然演进过渡</p>
+				<p>4）iService：链上链外各类型系统的交互，基于<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>将各类技术的有机结合、自然演进过渡</p>
 				<p>5）数字资产建模与交易：支持对数字资产数据多元结构的灵活建模；非常适合实现链上交易平台（DEX）；以 NFT（非同质化通证）为基础，支持供应链、知识产权、医疗、存证等各领域的数字资产化</p>
 				<p>6）大数据支持：自带存储层支持云存储和分布式存储；数据仓库和链式数据结合支持链上数据高效全生命周期查询</p>
+			</div>
+		</div>
+		<div class="production_irita_core_content">
+			<div class="production_content_wrap">
+				<h2 class="production_title">核心技术优势</h2>
+				<ul class="production_core_list_content">
+					<li class="production_core_list_item" v-for="item in coreArray">
+						<div class="production_core_list_item_img_icon">
+							<img :src="item.src" alt="">
+						</div>
+						<h3 class="production_core_list_item_title">{{item.title}}</h3>
+						<p class="production_core_list_item_section">{{item.section}}</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -24,7 +38,43 @@
 
 <script>
 	export default {
-		name: "Production"
+		name: "Production",
+		data() {
+			return {
+				coreArray:[
+					{
+						src: require("../assets/irita/tendermint.png"),
+						title:'高效共识-Tendermint盟枢纽',
+						section:'首个互联网级别可应用的拜占庭共识协议，Libra也沿用此技术'
+					},
+					{
+						src: require("../assets/irita/ibc.png"),
+						title:'先进跨链-IBC协议',
+						section:'团队贡献的业内公认的、国际最前沿跨链技术标准设计与实施支持各种异构链间的可信交互'
+					},
+					{
+						src: require("../assets/irita/privacy.png"),
+						title:'隐私计算-数据授权共享',
+						section:'数据在链上加密存储，保护各方数据所有权和隐私只有用户授权数据才会共享给第三方'
+					},
+					{
+						src: require("../assets/irita/tx.png"),
+						title:'数字资产建模与交易',
+						section:'支持对数字资产数据多元结构的灵活建模非常适合实现链上交易（DEX）以 NFT（非同质化通证）为基础，支持各领域的数字资产化'
+					},
+					{
+						src: require("../assets/irita/data.png"),
+						title:'大数据支持',
+						section:'自带存储层支持云存储和分布式存储；数据仓库和链式数据结合支持链上数据高效全生命周期查询'
+					},
+					{
+						src: require("../assets/irita/iserice.png"),
+						title:'面向服务-iService',
+						section:'链上链外可信交互，高效支持对于ERP等各类传统系统的集成'
+					},
+				]
+			}
+		}
 	}
 </script>
 
@@ -41,6 +91,7 @@
 	}
 	.production_container{
 		width: 100%;
+		background: #fafafa;
 		.production_header_content_wrap{
 			background: url("../assets/home/IRISnet.png") no-repeat center center;
 			background-size: cover;
@@ -51,6 +102,7 @@
 			.production_header_content{
 				text-align: center;
 				h2{
+					text-align: center;
 					font-size: 0.6rem;
 					color: #fff;
 					line-height: 0.84rem;
@@ -89,6 +141,103 @@
 				}
 			}
 		}
+		.production_irita_core_content{
+			background: #fff;
+			.production_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				padding-top: 1rem;
+				.production_title{
+					text-align: center;
+				}
+				.production_core_list_content{
+					list-style: none;
+					display: flex;
+					flex-wrap: wrap;
+					margin-top: 0.65rem;
+					justify-content: space-between;
+					.production_core_list_item{
+						max-width: 2.7rem;
+						margin-right: 1.46rem;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: space-between;
+						.production_core_list_item_title{
+							font-size: 0.16rem;
+							font-weight:400;
+							color:rgba(12,37,58,1);
+							line-height: 0.22rem;
+							margin-bottom: 0.2rem;
+						}
+						.production_core_list_item_section{
+							font-size: 0.14rem;
+							font-weight:400;
+							color:rgba(138,153,165,1);
+							line-height: 0.24rem;
+							letter-spacing: 0.01rem;
+							min-height: 1rem;
+						}
+					}
+					.production_core_list_item:nth-of-type(1){
+						.production_core_list_item_img_icon{
+							width: 0.5rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.production_core_list_item:nth-of-type(2){
+						.production_core_list_item_img_icon{
+							width: 0.43rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.production_core_list_item:nth-of-type(3){
+						margin-right: 0;
+						.production_core_list_item_img_icon{
+							width: 0.43rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.production_core_list_item:nth-of-type(4){
+						.production_core_list_item_img_icon{
+							width: 0.5rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.production_core_list_item:nth-of-type(5){
+						.production_core_list_item_img_icon{
+							width: 0.49rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.production_core_list_item:nth-of-type(6){
+						margin-right: 0;
+						.production_core_list_item_img_icon{
+							width: 0.48rem;
+							margin-bottom: 0.41rem;
+							img{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	@media screen and (max-width: 1200px){
 		.production_container{
@@ -104,6 +253,75 @@
 				box-sizing: border-box;
 				padding:  0 0.2rem;
 			}
+			.production_irita_core_content{
+				.production_content_wrap{
+					max-width: 7.68rem;
+					.production_core_list_content{
+						justify-content: center;
+						.production_core_list_item{
+							padding-top: 0.4rem;
+						}
+						.production_core_list_item:nth-of-type(1){
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(2){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(3){
+							margin-right: 1.46rem;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(4){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(5){
+							.production_core_list_item_img_icon{
+								width: 0.49rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(6){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.48rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	@media screen and (min-width: 500px) and (max-width: 768px){
@@ -112,6 +330,80 @@
 				.production_header_content{
 					h2{
 						font-size: 0.48rem;
+					}
+				}
+			}
+			.production_irita_core_content{
+				.production_content_wrap{
+					max-width: 5rem;
+					.production_core_list_content{
+						justify-content: center;
+						.production_core_list_item{
+							padding-top: 0.4rem;
+							max-width: 2rem;
+							margin-right: 13%;
+							.production_core_list_item_section{
+								min-height: 1.3rem;
+							}
+						}
+						.production_core_list_item:nth-of-type(1){
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(2){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(3){
+							margin-right: 13%;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(4){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(5){
+							.production_core_list_item_img_icon{
+								width: 0.49rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(6){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.48rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -129,6 +421,82 @@
 						font-size: 0.14rem;
 						line-height: 0.21rem;
 						padding: 0 0.6rem;
+					}
+				}
+			}
+			.production_irita_core_content{
+				.production_content_wrap{
+					max-width: 375rem;
+					padding-left: 0.2rem;
+					padding-right: 0.2rem;
+					.production_core_list_content{
+						justify-content: center;
+						.production_core_list_item{
+							padding-top: 0.4rem;
+							max-width: 3.2rem;
+							margin-right: 0;
+							.production_core_list_item_section{
+								min-height: auto;
+							}
+						}
+						.production_core_list_item:nth-of-type(1){
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(2){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(3){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.43rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(4){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.5rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(5){
+							.production_core_list_item_img_icon{
+								width: 0.49rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.production_core_list_item:nth-of-type(6){
+							margin-right: 0;
+							.production_core_list_item_img_icon{
+								width: 0.48rem;
+								margin-bottom: 0.41rem;
+								img{
+									width: 100%;
+								}
+							}
+						}
 					}
 				}
 			}
