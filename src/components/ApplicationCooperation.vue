@@ -106,7 +106,6 @@
 			align-items: center;
 			justify-content: center;
 			.applications_content{
-				margin-top: 0.4rem;
 				text-align: center;
 				h2{
 					font-size: 0.6rem;
