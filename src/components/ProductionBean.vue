@@ -10,7 +10,7 @@
 			<div class="production_text_title">区块链智能信息边缘分析网络 BEAN</div>
 			<p class="production_list_item">区块链智能信息边缘分析网络（Blockchain Edge Analytics Network，简称 BEAN），是基于<router-link :to="`/products/irisnet`" style="color: #015FFF"> IRISnet 区块链技术</router-link>的分布式智能信息分析和数据交换网络，利用传统分布式人工智能研究中的模型并行性和 SOA 设计模式，讲区块链技术应用到分布式分析服务，提供保护数据隐私、尊重数据拥有者权利的加密分布式智能分析及数据交换服务，通过 AI 和区块链技术释放数据价值，支持数据可信分析和交换。</p>
 			<p class="production_list_item">BEAN 的基础网络可配置出支持<router-link :to="`/application/cooperation`" style="color:#015FFF">医疗健康</router-link>数据分析和交换、<router-link :to="`/application/finance`" style="color: #015fff">金融创新</router-link>等各自场景的联盟应用链，可提供链上使用授权、基于语义技术智能抽取、数据使用非侵入式审计等功能。这些技术会让链上分布式业务协作时的数据搜索、交换及使用变成可能，也可用于<router-link :to="`/products/irisnet`" style="color: #015fff">存证授权</router-link>、<router-link :to="`/products/irisnet`" style="color: #015fff">数字资产化</router-link>等场景的区块链技术支持。</p>
-			<p class="production_list_item">BEAN 还可以通过<router-link :to="`/products/isch`" style="color:#015FFF">跨链服务联盟枢纽 ISCH </router-link>和其他区块链网络交互，实现传统商业系统与分布式商业系统的链上链外通联。</p>
+			<p class="production_list_item">BEAN 还可以通过<router-link :to="`/products/isch`" style="color:#015FFF">跨链服务联盟枢纽 ISCH </router-link>和其他区块链网络交互，实现传统商业系统与分布式商业系统的链上链下通联。</p>
 		
 		</div>
 	</div>
