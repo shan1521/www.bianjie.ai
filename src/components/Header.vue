@@ -50,8 +50,8 @@
 				<li><router-link :to="`/home`">首页</router-link></li>
 				<li @click="showMobileProductionSecondMenu()">产品服务
 				<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
-					<li><router-link :to="`/products/bean`">BEAN</router-link></li>
 					<li><router-link :to="`/products/irita`">IRITA</router-link></li>
+					<li><router-link :to="`/products/bean`">BEAN</router-link></li>
 					<li><router-link :to="`/products/isch`">ISCH</router-link></li>
 					<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 				</ul>

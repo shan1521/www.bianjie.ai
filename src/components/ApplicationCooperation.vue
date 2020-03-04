@@ -99,14 +99,13 @@
 		width: 100%;
 		background: #fafafa;
 		.applications_content_wrap{
-			background: url("../assets/home/application_scenarios.png") no-repeat center center;
+			background: url("../assets/home/application_scenarios.jpg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			.applications_content{
-				margin-top: 0.4rem;
 				text-align: center;
 				h2{
 					font-size: 0.6rem;
