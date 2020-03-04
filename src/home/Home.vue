@@ -83,7 +83,7 @@
 						</div>
 						<div class="home_production_item_text_content">
 							<p class="home_production_item_text_top_title">先进的跨链服务技术支持异构网络间的联盟枢纽</p>
-							<p class="home_production_item_text_bottom_title">可为区块链与传统企业应用之间的链上链下互操作提供解决方案</p>
+							<p class="home_production_item_text_bottom_title">可为区块链与传统企业应用之间的链上链外互操作提供解决方案</p>
 						</div>
 					</li>
 				</ul>
@@ -106,7 +106,7 @@
 						<div>高效的共识和先进的 IBC 跨链协议</div>
 						<div>保护隐私的数据授权共享</div>
 						<div>灵活的数字资产建模与交易</div>
-						<div>基于iService的链上链下通联</div>
+						<div>基于iService的链上链外通联</div>
 						<div>大数据技术支撑的业务分析</div>
 					</div>
 					<p class="home_production_footer">
@@ -580,6 +580,8 @@
 						margin-bottom: 0.4rem;
 						a{
 							color: #015FFF;
+							display: flex;
+							align-items: center;
 							.home_production_name{
 								font-size: 0.14rem;
 								font-weight: 600;
