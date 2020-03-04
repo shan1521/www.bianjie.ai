@@ -35,6 +35,14 @@
 				</ul>
 			</div>
 		</div>
+		<div class="production_irita_img_content">
+			<div class="production_irita_img_wrap">
+				<div class="production_irita_img">
+					<h3 class="production_irita_title">系统架构</h3>
+					<img src="../assets/irita/irita.png" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -155,6 +163,7 @@
 				max-width: 12rem;
 				margin: 0 auto;
 				padding-top: 1rem;
+				padding-bottom: 1rem;
 				.production_title{
 					text-align: center;
 				}
@@ -242,6 +251,28 @@
 								width: 100%;
 							}
 						}
+					}
+				}
+			}
+		}
+		.production_irita_img_content{
+			.production_irita_img_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				box-sizing: border-box;
+				padding: 0 0.2rem;
+				.production_irita_img{
+					padding: 1rem 0;
+					.production_irita_title{
+						font-size: 0.18rem;
+						font-weight:600;
+						color:rgba(12,37,58,1);
+						line-height: 0.25rem;
+						text-align: center;
+						padding-bottom: 0.6rem;
+					}
+					img{
+						width: 100%;
 					}
 				}
 			}
