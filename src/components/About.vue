@@ -18,9 +18,9 @@
 				<h5 >荣誉资质</h5>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
-						<swiper-slide style="width:5.2rem;display: flex;justify-content:center;" v-for="item in swiperArray">
-							<div style="width: 4.8rem;margin:0 40px">
-								<img  style="display:block;width: 100%;height:100%;" :src="item.src" alt="">
+						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
+							<div style="height: 3.2rem;margin:0 40px">
+								<img  style="display:block;height:100%;" :src="item.src" alt="">
 							</div>
 						</swiper-slide>
 					</swiper>
@@ -235,6 +235,7 @@
 						padding: 0;
 						z-index: 1;
 						.swiper-slide{
+							width:  auto !important;
 							img{
 							
 							}
