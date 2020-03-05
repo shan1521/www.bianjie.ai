@@ -8,13 +8,14 @@
 		</div>
 		<div class="production_text_content">
 			<div class="production_text_title">跨域行业互信联盟产品 IRITA</div>
-			<p class="production_list_item">跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品。</p>
-			<p class="production_list_item">IRITA是基于现代区块链技术框架<a href="https://tendermint.com/" target="_blank" style="color: #155fff;"> Tendermint </a>和<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>，并结合边界智能团队多年行业经验打造而成，具有保护隐私的数据加密共享、高效的共识协议、最前沿的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易、以及大数据技术支撑的业务分析等 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。</p>
+			<p class="production_list_item">
+				跨域行业互信联盟产品（ Inter-Realm Industry Trust Alliance，简称IRITA ）是 Cosmos 生态中第一个企业级联盟链产品，基于现代区块链技术框架<a href="https://tendermint.com/" target="_blank" style="color: #155fff;"> Tendermint </a>和<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>，并结合边界智能团队多年行业经验打造而成。</p>
+			<p class="production_list_item">IRITA具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易支持以及大数据技术支撑的业务分析 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。</p>
 			<p class="production_list_item">IRITA 现有Professional 和 Lite 两个版本。<a href="https://github.com/bianjieai/irita" target="_blank" style="color: #155fff;">开源的 Lite </a>可以供开发者学习、快速上手熟悉IRITA的体系架构、并部署行业验证应用系统</p>
 		<!--	<div class="production_list_content">
 				<p class="production_list_title">IRITA 可以灵活使用在多种行业，尤其在<router-link :to="`/application/finance`" style="color: #155fff;">金融创新</router-link>行业，围绕<router-link :to="`/application/digital-asset`" style="color: #155fff;">资产数字化</router-link>后的确权和流通，具有6大核心技术优势：</p>
 				<p>1）共识底层：<a href="https://tendermint.com/" target="_blank"  style="color: #155fff;">Tendermint </a>是首个可以在互联网级别可应用的拜占庭共识协议，是Libra也沿用的共识技术</p>
-				<p>2）<a href="https://cosmos.network/" target="_blank" style="color: #155fff;">跨链 IBC </a>: 国际合作团队贡献了业内公认的、最前沿跨链技术标准设计与实施；支持各种异构链间可信交互</p>
+				<p>2）<a href="https://cosmos.network/" target="_blank" style="color: #155fff;">跨链 IBC </a>: 国际合作团队贡献了业内公认的、领先跨链技术标准设计与实施；支持各种异构链间可信交互</p>
 				<p>3）数据授权共享：数据在链上加密存储，保护各方数据所有权和隐私；只有用户授权，数据才会共享给第三方</p>
 				<p>4）iService：链上链下各类型系统的交互，基于<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>将各类技术的有机结合、自然演进过渡</p>
 				<p>5）数字资产建模与交易：支持对数字资产数据多元结构的灵活建模；非常适合实现链上交易平台（DEX）；以 NFT（非同质化通证）为基础，支持供应链、知识产权、医疗、存证等各领域的数字资产化</p>
@@ -60,7 +61,7 @@
 					{
 						src: require("../assets/irita/ibc.png"),
 						title:'先进跨链-IBC协议',
-						section:'团队贡献的业内公认的、国际最前沿跨链技术标准设计与实施支持各种异构链间的可信交互'
+						section:'团队贡献的业内公认的、国际领先跨链技术标准设计与实施支持各种异构链间的可信交互'
 					},
 					{
 						src: require("../assets/irita/privacy.png"),

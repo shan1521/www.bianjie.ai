@@ -29,7 +29,7 @@
 						<div class="program_features_left_list_content">
 							<h5>高性能的共识算法</h5>
 							<h3>商业应用级别的高效共识引擎</h3>
-							<p> • 最前沿的底层跨链协议支持更过互操作性</p>
+							<p> • 领先的底层跨链协议支持更过互操作性</p>
 							<p> • 先进的 Tendermint 共识引擎适合大规模网络环境</p>
 							<p> • 灵活的设置可面向不同行业应用场景进行性能优化</p>
 						</div>
@@ -66,7 +66,7 @@
 						</div>
 						<div class="program_features_right_list_content">
 							<h5>更友好的开发支持</h5>
-							<h3>面向服务的企业级架构和SDK工具包</h3>
+							<h3>面向服务的企业级架构和 SDK 工具包</h3>
 							<p> • 模块化、工具化的区块链开发模式</p>
 							<p> • 完善的开发文档和测试验证环境</p>
 							<p> • 容器化、自动化的部署运维监控工具</p>
@@ -166,7 +166,7 @@
 		}
 		.program_features_content{
 			max-width: 12rem;
-			margin: 0.8rem auto 2.63rem auto;
+			margin: 0.8rem auto 1rem auto;
 			.program_features_title{
 				text-align: center;
 				margin-bottom: 0.4rem;

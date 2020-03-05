@@ -3,7 +3,7 @@
 		<div class="applications_content_wrap">
 			<div class="applications_content">
 				<h2>应用场景-数字资产</h2>
-				<h5>区块链技术用于提高资产登记的真实性 · 提升数字化交易的效率</h5>
+				<h5>数字资产的全生命周期管理 · 提升资产数字化交易的效率</h5>
 			</div>
 		</div>
 		<div class="applications_text_content">
@@ -29,7 +29,7 @@
 					<div class="program_features_left_list_content">
 						<h5>高性能的共识算法</h5>
 						<h3>商业应用级别的高效共识引擎</h3>
-						<p> • 最前沿的底层跨链协议支持更过互操作性</p>
+						<p> • 领先的底层跨链协议支持更过互操作性</p>
 						<p> • 先进的 Tendermint 共识引擎适合大规模网络环境</p>
 						<p> • 灵活的设置可面向不同行业应用场景进行性能优化</p>
 					</div>
@@ -41,7 +41,7 @@
 					<div class="program_features_right_list_content">
 						<h5>丰富的数字资产类型</h5>
 						<h3>支持价值流通的资产数字化模型</h3>
-						<p> • 基于NFT非同质化通证建立灵活的资产模型</p>
+						<p> • 基于 NFT 非同质化通证建立灵活的资产模型</p>
 						<p> • 基于区块链技术构建数字资产登记与交易平台</p>
 						<p> • 支持多种资产跨区块链、以及与非区块链系统间的传输</p>
 					</div>
@@ -168,7 +168,7 @@
 		}
 		.program_features_content{
 			max-width: 12rem;
-			margin: 0.8rem auto 2.63rem auto;
+			margin: 0.8rem auto 1rem auto;
 			.program_features_title{
 				text-align: center;
 				margin-bottom: 0.4rem;

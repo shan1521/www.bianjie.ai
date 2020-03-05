@@ -8,9 +8,10 @@
 		</div>
 		<div class="about_text_container">
 			<div class="about_text_content_wrap">
-				<p>边界智能以⼈⼯智能，⼤数据分析和区块链跨链技术创新为核⼼，开发了跨域行业互信联盟产品 IRITA、分布式⼤数据分析交换网络 BEAN 、跨链服务联盟枢纽 ISCH 等核心产品，能高效支持搭建联盟链并支持跨异构区块链或链上链下的互操作。</p>
-				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强，中国 CDHIC 大赛天使之星冠军、2019中国区块链百强企业、2019 中国优秀区块链解决方案等多个创新奖项，拥有企业发明专利 2 项，软件著作权 14 个，软件产品证书 1 个，商标 5 个。</p>
-				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核⼼开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>
+				<p>上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算级大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。</p>
+				<p>边界智能是国家⾼新技术企业，拥有⾃主创新的知识产权。</p>
+<!--				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强，中国 CDHIC 大赛天使之星冠军、2019 中国区块链百强企业、2019 中国优秀区块链解决方案等多个创新奖项，拥有企业发明专利 2 项，软件著作权 14 个，软件产品证书 1 个，商标 5 个。</p>-->
+<!--				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核⼼开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>-->
 			</div>
 		</div>
 		<div class="about_img_content">
@@ -35,6 +36,7 @@
 				<div class="qr_img_content">
 					<img src="../assets/home/qr_bianjie.png" alt="">
 				</div>
+				<p content="mail_content">联系我们: contact@bianjie.ai</p>
 			</div>
 		</div>
 	</div>
@@ -47,40 +49,40 @@
 			return{
 				swiperArray:[
 					{
-						src:require('../assets/home/honor5.png')
+						src:require('../assets/home/honor5.jpg')
 					},
 					{
-						src:require('../assets/home/honor6.png')
+						src:require('../assets/home/honor6.jpg')
 					},
 					{
-						src:require('../assets/home/honor8.png')
+						src:require('../assets/home/honor8.jpg')
 					},
 					{
-						src:require('../assets/home/honor7.png')
+						src:require('../assets/home/honor7.jpg')
 					},
 					{
-						src:require('../assets/home/honor9.png')
+						src:require('../assets/home/honor9.jpg')
 					},
 					{
-						src:require('../assets/home/honor10.png')
+						src:require('../assets/home/honor10.jpg')
 					},
 					{
-						src:require('../assets/home/honor11.png')
+						src:require('../assets/home/honor11.jpg')
 					},
 					{
-						src:require('../assets/home/honor12.png')
+						src:require('../assets/home/honor12.jpg')
 					},
 					{
-						src:require('../assets/home/honor13.png')
+						src:require('../assets/home/honor13.jpg')
 					},
 					{
-						src:require('../assets/home/honor14.png')
+						src:require('../assets/home/honor14.jpg')
 					},
 					{
-						src:require('../assets/home/honor15.png')
+						src:require('../assets/home/honor15.jpg')
 					},
 					{
-						src:require('../assets/home/honor1.png')
+						src:require('../assets/home/honor1.jpg')
 					},		
 				],
 				swiperOption:{
@@ -205,7 +207,7 @@
 				color: #0C253A;
 				p{
 					font-size: 0.14rem;
-					line-height: 0.21rem;
+					line-height: 0.34rem;
 					margin-bottom: 0.14rem;
 				}
 				p:last-child{
@@ -220,7 +222,8 @@
 				text-align: center;
 				#certify{
 					position: relative;
-					width: 900px;
+					max-width: 900px;
+					width: 100%;
 					margin: 0 auto;
 					.my-swipe{
 						&:first-child {
@@ -300,6 +303,8 @@
 			.qr_content_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 1rem;
 				h5{
 					text-align: center;
 					margin-bottom: 0.2rem;
@@ -309,7 +314,6 @@
 					margin: 0 auto;
 					img{
 						width: 100%;
-						margin-bottom: 0.8rem;
 					}
 				}
 			}
@@ -357,6 +361,22 @@
 						margin: 0.2rem 0.6rem 0 0.6rem;
 						font-size: 0.14rem;
 						line-height:0.21rem;
+					}
+				}
+			}
+			.about_img_content{
+				.about_img_content_wrap{
+					#certify{
+						.swiper-container{
+							.swiper-wrapper{
+								.swiper-slide{
+									div{
+										height: 2.4rem !important;
+									}
+								}
+
+							}
+						}
 					}
 				}
 			}
