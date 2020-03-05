@@ -62,15 +62,15 @@
 							<a href="http://www.trustedblockchain.cn/" target="_blank">
 								<img src="../assets/home/kxqkl.png" alt="">
 							</a>
-							<a href="http://www.softline.org.cn/" target="_blank">
-								<img src="../assets/home/shqkl.png" alt="">
-							</a>
-						</div>
-						<div>
 							<a href="https://shbta.cn/" target="_blank">
 								<img src="../assets/home/shrjglxh.png" alt="">
 							</a>
-							<a href="https://www.cie-info.org.cn/site/term/51.html">
+						</div>
+						<div>
+							<a href="http://www.softline.org.cn/" target="_blank">
+								<img src="../assets/home/shqkl.png" alt="">
+							</a>
+							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
 								<img src="../assets/home/zgdzxh.png" alt="">
 							</a>
 						</div>

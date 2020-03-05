@@ -98,6 +98,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        .swiper-pagination-bullet{
+            width: 0.04rem !important;
+            height: 0.04rem !important;
+            margin: 0.01rem !important;
+        }
     }
 </style>
 

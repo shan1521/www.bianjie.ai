@@ -65,7 +65,7 @@
 						</div>
 						<div class="home_production_item_text_content">
 							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的底层区块链技术服务</p>
-							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的解决方案</p>
+							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的研发和解决方案</p>
 						</div>
 					</li>
 					<li class="home_production_item_content">
@@ -74,7 +74,7 @@
 						</div>
 						<div class="home_production_item_text_content">
 							<p class="home_production_item_text_top_title">结合分布式人工智能边缘计算技术实现隐私保护下的加密智能分析</p>
-							<p class="home_production_item_text_bottom_title">可为企业和组织提供基于区块链的互信协作和价值交换平台</p>
+							<p class="home_production_item_text_bottom_title">可为企业和组织提供基于区块链的互信协作和价值交换平台建设</p>
 						</div>
 					</li>
 					<li class="home_production_item_content">
@@ -82,7 +82,7 @@
 							<img src="../assets/home/production_serve_3.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">先进的跨链服务技术支持异构网络间的联盟链产品</p>
+							<p class="home_production_item_text_top_title">先进的跨链服务技术和大数据支持的跨域互信联盟链产品</p>
 							<p class="home_production_item_text_bottom_title">可为区块链与传统企业应用之间的链上链下互操作提供解决方案</p>
 						</div>
 					</li>
@@ -169,16 +169,16 @@
 					<router-link :to="`/application/digital-asset`">
 						<div class="home_application_scenarios_left_top_content">
 							<h2 class="home_application_scenarios_title">资产数字化</h2>
-							<h5 class="home_application_scenarios_second_title">数字资产可信登记与交换平台</h5>
-							<p class="home_application_scenarios_text_content">数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产</p>
-							<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用</p>
+							<h5 class="home_application_scenarios_second_title">数字资产可信登记与交易平台</h5>
+							<p class="home_application_scenarios_text_content">数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产。</p>
+							<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的数字资产登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
 						</div>
 					</router-link>
 					<router-link :to="`/application/finance`">
 						<div class="home_application_scenarios_left_bottom_content">
 							<h2 class="home_application_scenarios_title">金融创新</h2>
-							<h5 class="home_application_scenarios_second_title">区块链应链金融价值平台</h5>
-							<p class="home_application_scenarios_text_content">利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程找那个，实现实体经济中非同质资产的定义，多方流通转的信息透明、不可更改并实现金融创新和生态共建。</p>
+							<h5 class="home_application_scenarios_second_title">跨域行业分布式联盟的价值交换平台</h5>
+							<p class="home_application_scenarios_text_content">利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程中，实现实体经济中非同质资产的定义、多方流转的信息透明、不可更改并实现金融创新和生态共建。</p>
 						</div>
 					</router-link>
 				</div>
@@ -206,7 +206,7 @@
 						<div class="home_application_scenarios_right_top_content">
 							<h2 class="home_application_scenarios_title">行业协同</h2>
 							<h5 class="home_application_scenarios_second_title">医疗健康电子处方外配许可链</h5>
-							<p class="home_application_scenarios_text_content">在不泄漏患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转、安全访问及全生命周期的可审计可追溯</p>
+							<p class="home_application_scenarios_text_content">在不泄露患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转安全访问及全生命周期的可审计可追溯。</p>
 							<p class="home_application_scenarios_text_second_content">业务参与方通过链下应用提供 ToC 服务，同时拥有链上注册身份达成共识互信协作、行业协同。</p>
 						</div>
 					</router-link>
@@ -214,7 +214,7 @@
 						<div class="home_application_scenarios_right_bottom_content">
 							<h2 class="home_application_scenarios_title">多方互信</h2>
 							<h5 class="home_application_scenarios_second_title">体检报告存证授权许可链</h5>
-							<p class="home_application_scenarios_text_content">利用区块链、分布式人工智能、微服务框架等先进的科技手段，提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
+							<p class="home_application_scenarios_text_content">利用区块链、分布式人工智能、微服务架构等先进的科技手段、提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
 						</div>
 					</router-link>
 				</div>
@@ -230,9 +230,9 @@
 						<li class="mobile_home_application_item">
 							<img src="../assets/home/application_scenarios_left_top.png" alt="">
 							<h2>资产数字化</h2>
-							<h5>数字资产可信登记与交换平台</h5>
-							<p>数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产</p>
-							<p>将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用</p>
+							<h5>数字资产可信登记与交易平台</h5>
+							<p>数字资产不仅包括由企业或个人拥有的、以电子数据形式存在的各类资产，也包括数字经济发展过程中需要数字化的实体资产。</p>
+							<p>将区块链技术用于构建可信的数字资产登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
 						</li>
 					</router-link>
 					<router-link :to="`/application/cooperation`">
@@ -240,7 +240,7 @@
 							<img src="../assets/home/application_scenarios_right_top.png" alt="">
 							<h2>行业协同</h2>
 							<h5>医疗健康电子处方外配许可链</h5>
-							<p>在不泄漏患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转、安全访问及全生命周期的可审计可追溯</p>
+							<p>在不泄露患者隐私的前提下根据授权交换必要的处方配药信息，保障电子处方的合规流转安全访问及全生命周期的可审计可追溯。</p>
 							<p>业务参与方通过链下应用提供 ToC 服务，同时拥有链上注册身份达成共识互信协作、行业协同。</p>
 						</li>
 					</router-link>
@@ -248,8 +248,8 @@
 						<li class="mobile_home_application_item">
 							<img src="../assets/home/application_scenarios_left_bottom.png" alt="">
 							<h2>金融创新</h2>
-							<h5>区块链应链金融价值平台</h5>
-							<p>利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程找那个，实现实体经济中非同质资产的定义，多方流通转的信息透明、不可更改并实现金融创新和生态共建。</p>
+							<h5>跨域行业分布式联盟的价值交换平台</h5>
+							<p>利用区块链公开透明、不可篡改、多方共享的技术特性，将区块链技术与金融服务创新性的结合起来，应用到跨域行业的资产管理与流通过程中，实现实体经济中非同质资产的定义、多方流转的信息透明、不可更改并实现金融创新和生态共建。</p>
 						</li>
 					</router-link>
 					<router-link :to="`/application/multi-trust`">
@@ -257,7 +257,7 @@
 							<img src="../assets/home/application_scenarios_left_bottom.png" alt="">
 							<h2>多方互信</h2>
 							<h5>体检报告存证授权许可链</h5>
-							<p>利用区块链、分布式人工智能、微服务框架等先进的科技手段，提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
+							<p>利用区块链、分布式人工智能、微服务架构等先进的科技手段、提供数据加密、跨链存证、安全共享、隐私保护等全生命周期的管理，在保护数据隐私的同时，实现多方参与、互信协作的授权机制，全程可追溯、可审计、可监管。</p>
 						</li>
 					</router-link>
 				</ul>
@@ -275,11 +275,8 @@
 						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算级大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
 					</p>
 					<div class="home_about_bianjie_right_button_content">
-						<div class="home_about_bianjie_cooperation_button">
-<!--							<div class="show_mail_content">-->
-<!--								<span>mailto:contact@bianjie.ai</span>-->
-<!--							</div>-->
-							<span>联系合作</span>
+						<div class="home_about_bianjie_cooperation_button" @click="showMail()">
+							<span v-show="!flShowMail">联系合作</span><span v-show="flShowMail">mailto:contact@bianjie.ai</span>
 							<img src="../assets/home/arrow_white.png" alt="">
 						</div>
 						<div class="home_about_bianjie_read_more_button" v-show="false">
@@ -297,7 +294,17 @@
 
 <script>
 	export default {
-		name: "Home"
+		name: "Home",
+		data() {
+			return{
+				flShowMail:false
+			}
+		},
+		methods:{
+			showMail(){
+				this.flShowMail = !this.flShowMail
+			}
+		}
 	}
 </script>
 
@@ -882,7 +889,7 @@
 								color: #fff;
 								font-size: 0.14rem;
 								line-height: 0.2rem;
-								padding-right: 0.67rem;
+								padding-right: 0.2rem;
 							}
 							img{
 								width: 0.07rem;

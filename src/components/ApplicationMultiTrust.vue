@@ -10,7 +10,7 @@
 			<div class="application_nav_content">
 				<h3>多方互信的存证授权</h3>
 				<ul class="application_list_content">
-					<p class="application_item">数据所有方自主可控的信息分享机制，必要信息先加密后分享、数据需求方先授权后解密，无需数据搬家，解决数据共享与隐私间的矛盾</p>
+					<p class="application_item">数据所有方自主可控的信息分享机制，必要信息先加密后分享、数据需求方先授权后解密，无需数据搬家，解决数据共享与隐私间的矛盾。</p>
 					<li>• 提供业务数据的上链能力：包括身份注册、数据存证、调用、价值/信息交换、事务处理等（智能合约）</li>
 					<li>• 提供面向业务的链下服务：包括数据处理和商业逻辑执行</li>
 					<li>• 提供链上链下通联：通过可信计算调用，协作交易及分析服务结果索引上链存证</li>
@@ -28,10 +28,10 @@
 						</div>
 						<div class="program_features_left_list_content">
 							<h5>高性能的共识算法</h5>
-							<h3>商业应用级别的高效共识引擎</h3>
-							<p> • 领先的底层跨链协议支持更过互操作性</p>
-							<p> • 先进的 Tendermint 共识引擎适合大规模网络环境</p>
-							<p> • 灵活的设置可面向不同行业应用场景进行性能优化</p>
+							<h3>先进高效的Tendermint共识引擎</h3>
+							<p> • 领先的底层跨链协议</p>
+							<p> • 高效的<a href="https://tendermint.com/" target="_blank"> Tendermint </a>共识引擎</p>
+							<p> • 面向行业应用场景进行性能优化</p>
 						</div>
 					</div>
 					<div class="program_features_top_right_content">
@@ -40,7 +40,7 @@
 						</div>
 						<div class="program_features_right_list_content">
 							<h5>高可用的互信网络</h5>
-							<h3>动态管理的节点和非侵入审计</h3>
+							<h3>动态管理的节点和非侵入式审计</h3>
 							<p> • 原有业务逻辑和数据安全不变</p>
 							<p> • 动态参与共识网络满足行业协同需求</p>
 							<p> • 自主创新的非侵入式链上数据审计能力</p>
