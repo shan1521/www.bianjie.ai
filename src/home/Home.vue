@@ -1069,6 +1069,7 @@
 				}
 			}
 			.home_production_serve_content_wrap{
+				min-height: 7.9rem;
 				.home_production_content{
 					.home_production_list_content{
 						.home_production_item_content{
@@ -1107,6 +1108,7 @@
 				}
 			}
 			.home_production_serve_content_wrap{
+				min-height: 7.9rem;
 				.home_production_content{
 					.home_production_list_content{
 						width: 85%;
