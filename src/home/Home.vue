@@ -276,9 +276,9 @@
 					</p>
 					<div class="home_about_bianjie_right_button_content">
 						<div class="home_about_bianjie_cooperation_button">
-							<div class="show_mail_content">
-								<span>mailto:contact@bianjie.ai</span>
-							</div>
+<!--							<div class="show_mail_content">-->
+<!--								<span>mailto:contact@bianjie.ai</span>-->
+<!--							</div>-->
 							<span>联系合作</span>
 							<img src="../assets/home/arrow_white.png" alt="">
 						</div>
