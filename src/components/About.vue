@@ -3,7 +3,7 @@
 		<div class="about_content_wrap">
 			<div class="about_content">
 				<h2>关于我们-边界智能</h2>
-				<h5>专注于分布式智能处理和区块链技术开发的高科技公司</h5>
+				<h5>专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司</h5>
 			</div>
 		</div>
 		<div class="about_text_container">
