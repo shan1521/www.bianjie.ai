@@ -18,7 +18,7 @@
 								<img src="../assets/home/core_img_1.png" alt="">
 							</div>
 							<div class="home_core_item_text_content">
-								<p>区块链技术和分布式AI技术专家</p>
+								<p>区块链技术和分布式 AI 技术专家</p>
 								<p>自主创新的核心技术底层研发能力</p>
 							</div>
 						</li>
@@ -27,8 +27,8 @@
 								<img src="../assets/home/core_img_2.png" alt="">
 							</div>
 							<div class="home_core_item_text_content">
-								<p>医疗卫生和金融行业信息化专家</p>
-								<p>丰富的行业落地能力和最佳实践经验</p>
+								<p>金融科技和医疗健康的信息化专家</p>
+								<p>丰富的跨行业跨领域综合实践能力</p>
 							</div>
 						</li>
 					</div>
@@ -39,7 +39,7 @@
 							</div>
 							<div class="home_core_item_text_content">
 								<p>专注研发勇于创新的产品技术团队</p>
-								<p>大型企业级业务平台分析架构能力</p>
+								<p>大型企业级业务平台架构分析能力</p>
 							</div>
 						</li>
 						<li class="home_core_item_content">
@@ -47,8 +47,8 @@
 								<img src="../assets/home/core-img_4.png" alt="">
 							</div>
 							<div class="home_core_item_text_content">
-								<p>成熟的区块链技术和跨链服务产品</p>
-								<p>可靠的解决方案设计研发和交付能力</p>
+								<p>成熟的区块链和产品服务技术研发</p>
+								<p>高质量的解决方案和设计交付能力</p>
 							</div>
 						</li>
 					</div>
@@ -64,7 +64,7 @@
 							<img src="../assets/home/production_serve_1.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的底层区块链技术</p>
+							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的底层区块链技术服务</p>
 							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的解决方案</p>
 						</div>
 					</li>
@@ -82,7 +82,7 @@
 							<img src="../assets/home/production_serve_3.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">先进的跨链服务技术支持异构网络间的联盟枢纽</p>
+							<p class="home_production_item_text_top_title">先进的跨链服务技术支持异构网络间的联盟链产品</p>
 							<p class="home_production_item_text_bottom_title">可为区块链与传统企业应用之间的链上链下互操作提供解决方案</p>
 						</div>
 					</li>
@@ -107,7 +107,7 @@
 					</div>
 					<div class="home_production_serve_item_text_content">
 						<div class="home_production_serve_item_title"><div class="blue_block_content"></div>跨域行业互信联盟链产品</div>
-						<div>高效的共识协议和最前沿的跨链技术</div>
+						<div>高效的共识协议和领先的跨链技术</div>
 						<div>保护隐私的数据授权共享</div>
 						<div>实用性极强的链上链下系统交互能力</div>
 						<div>灵活的数字资产建模与交易支持</div>
