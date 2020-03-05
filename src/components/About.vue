@@ -3,7 +3,7 @@
 		<div class="about_content_wrap">
 			<div class="about_content">
 				<h2>关于我们-边界智能</h2>
-				<h5>专注于分布式智能处理和区块链技术开发的高科技公司</h5>
+				<h5>专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司</h5>
 			</div>
 		</div>
 		<div class="about_text_container">
@@ -25,6 +25,7 @@
 							</div>
 						</swiper-slide>
 					</swiper>
+					<div class="swiper-pagination"></div>
 					<div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
 					<div class="swiper-button-next"></div>
 				</div>
@@ -101,12 +102,12 @@
 					// grabCursor: true,
 					pagination: {
 						el: '.swiper-pagination',
-						//clickable :true,
+						// clickable :true,
 					},
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
-					},
+					// navigation: {
+					// 	nextEl: '.swiper-button-next',
+					// 	prevEl: '.swiper-button-prev',
+					// },
 					on:{
 						progress: function(progress) {
 							// for (let i = 0; i < this.slides.length; i++) {
@@ -225,6 +226,10 @@
 					max-width: 900px;
 					width: 100%;
 					margin: 0 auto;
+					.swiper-pagination{
+						position: static;
+						display: none;
+					}
 					.my-swipe{
 						&:first-child {
                 display: flex;
@@ -346,6 +351,15 @@
 					margin: 0 0.2rem;
 				}
 			}
+			.about_img_content{
+				.about_img_content_wrap{
+					#certify{
+						.swiper-pagination{
+							display: block;
+						}
+					}
+				}
+			}
 		}
 	}
 	@media screen and (max-width: 375px){
@@ -367,6 +381,10 @@
 			.about_img_content{
 				.about_img_content_wrap{
 					#certify{
+						.swiper-pagination{
+							display: block;
+							margin-top: 0.1rem;
+						}
 						.swiper-container{
 							.swiper-wrapper{
 								.swiper-slide{
@@ -382,4 +400,5 @@
 			}
 		}
 	}
+
 </style>
