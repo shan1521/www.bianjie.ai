@@ -107,10 +107,10 @@
 					</div>
 					<div class="home_production_serve_item_text_content">
 						<div class="home_production_serve_item_title"><div class="blue_block_content"></div>跨域行业互信联盟链产品</div>
-						<div>高效的共识和先进的 IBC 跨链协议</div>
+						<div>高效的共识协议和最前沿的跨链技术</div>
 						<div>保护隐私的数据授权共享</div>
-						<div>灵活的数字资产建模与交易</div>
-						<div>基于iService的链上链下通联</div>
+						<div>实用性极强的链上链下系统交互能力</div>
+						<div>灵活的数字资产建模与交易支持</div>
 						<div>大数据技术支撑的业务分析</div>
 					</div>
 					<p class="home_production_footer">
@@ -272,16 +272,16 @@
 				<div class="home_about_bianjie_right_content">
 					<h3 class="home_about_bianjie_title_content">关于边界智能</h3>
 					<p class="home_about_bianjie_text_content">
-						边界智能创立于 2016 年，是一家专注于分布式智能处理和区块链技术开发的国家高新技术企业，拥有自主创新的知识产权。开发了跨域行业互信联盟产品 IRITA、跨链服务网络 IRISnet 、分布式大数据分析交换网络 BEAN 等核心产品，实现了以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务。<br/>
-						边界智能也是全球著名跨链项目 Cosmos 的核心中国开发者。除了跨链服务、医疗健康数据交换，边界智能还能为供应链金融、存证等业务场景提供联盟区块链技术。
+						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算级大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
 					</p>
 					<div class="home_about_bianjie_right_button_content">
-						<a href="mailto:contact@bianjie.ai" target="_blank">
-							<div class="home_about_bianjie_cooperation_button">
-								<span>联系合作</span>
-								<img src="../assets/home/arrow_white.png" alt="">
+						<div class="home_about_bianjie_cooperation_button">
+							<div class="show_mail_content">
+								<span>mailto:contact@bianjie.ai</span>
 							</div>
-						</a>
+							<span>联系合作</span>
+							<img src="../assets/home/arrow_white.png" alt="">
+						</div>
 						<div class="home_about_bianjie_read_more_button" v-show="false">
 							<span>了解更多</span>
 							<img src="../assets/home/arrow_white.png" alt="">
@@ -836,7 +836,7 @@
 				display: flex;
 				.home_about_bianjie_left_content{
 					flex: 1;
-					margin: 1.07rem  0.8rem 1.1rem 0;
+					margin: 1.47rem  0.8rem 1.1rem 0;
 					img{
 						width: 100%;
 					}
@@ -865,6 +865,18 @@
 							background: #0054E3;
 							padding: 0.1rem 0;
 							border-radius: 0.02rem;
+							position: relative;
+							.show_mail_content{
+								background: #000;
+								position: absolute;
+								bottom: 0.5rem;
+								padding: 0.1rem;
+								border-radius: 0.04rem;
+
+								span{
+									padding: 0.1rem;
+								}
+							}
 							span{
 								padding-left: 0.1rem;
 								color: #fff;

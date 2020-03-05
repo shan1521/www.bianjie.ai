@@ -16,8 +16,8 @@
 						<div :class="item.isActive ? 'active_block' : ''"></div>
 						<div class="second_menu" v-if="index == 1">
 							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu" @mouseleave="hideSecondMenu()">
-								<li><router-link :to="`/products/bean`">BEAN</router-link></li>
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
+								<li><router-link :to="`/products/bean`">BEAN</router-link></li>
 								<li><router-link :to="`/products/isch`">ISCH</router-link></li>
 								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
@@ -127,7 +127,8 @@
 			if(sessionStorage.getItem('routerIndex')){
 				this.changeNavigation(sessionStorage.getItem('routerIndex'), true)
 			}
-			if(window.scrollY > 5){
+			this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+			if(this.scrollTop > 5){
 				this.flShowBoxShadow = true;
 			}else {
 				this.flShowBoxShadow = false;
@@ -169,7 +170,9 @@
 				this.navigationList[index].isActive = true;
 			},
 			handleScroll(e){
-				if(e.target.scrollingElement.scrollTop > 5){
+				this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+				if(this.scrollTop > 5){
 					this.flShowBoxShadow = true;
 				}else {
 					this.flShowBoxShadow = false;
@@ -206,8 +209,9 @@
 }
 .header_container_content{
 	position: fixed;
+	top: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 999;
 	.header_content_wrap{
 		max-width: 12rem;
 		margin: 0 auto;
