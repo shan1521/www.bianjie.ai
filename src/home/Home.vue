@@ -390,7 +390,7 @@
 					font-size: 0.26rem;
 					text-align: center;
 					padding-top: 0.6rem;
-					font-weight: lighter;
+					font-weight: 400;
 				}
 				.home_core_list_content{
 					display: flex;
@@ -474,6 +474,7 @@
 					font-size: 0.26rem;
 					color: #fff;
 					padding: 1rem 0 0.4rem 0;
+					font-weight: 400;
 				}
 				.home_production_list_content{
 					list-style: none;
@@ -559,7 +560,7 @@
 						color: #8A99A5;
 						.home_production_serve_item_title{
 							color: #0C253A;
-							font-weight: 600;
+							font-weight: 400;
 							line-height: 0.22rem;
 							margin-bottom: 0.2rem;
 							display: flex;
@@ -627,7 +628,7 @@
 					color: #0C253A;
 					font-size: 0.26rem;
 					line-height: 0.37rem;
-					font-weight: lighter;
+					font-weight: 400;
 				}
 			}
 			.home_application_scenarios_content{
@@ -856,7 +857,7 @@
 						font-size: 0.16rem;
 						color: #0C253A;
 						line-height: 0.22rem;
-						font-weight: bold;
+						font-weight: 600;
 						margin-bottom: 0.3rem;
 					}
 					.home_about_bianjie_text_content{
