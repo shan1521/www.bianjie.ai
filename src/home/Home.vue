@@ -64,7 +64,7 @@
 							<img src="../assets/home/production_serve_1.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的底层区块链技术服务</p>
+							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的<span style="font-weight: 600;"> 底层区块链技术服务</span></p>
 							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的研发和解决方案</p>
 						</div>
 					</li>
@@ -73,7 +73,7 @@
 							<img src="../assets/home/production_serve_2.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">结合分布式人工智能边缘计算技术实现隐私保护下的加密智能分析</p>
+							<p class="home_production_item_text_top_title">结合分布式人工智能边缘计算技术实现<span style="font-weight: 600;"> 隐私保护下的加密智能分析</span></p>
 							<p class="home_production_item_text_bottom_title">可为企业和组织提供基于区块链的互信协作和价值交换平台建设</p>
 						</div>
 					</li>
@@ -82,7 +82,7 @@
 							<img src="../assets/home/production_serve_3.png" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">先进的跨链服务技术和大数据支持的跨域互信联盟链产品</p>
+							<p class="home_production_item_text_top_title">先进的跨链服务技术和大数据支持的<span style="font-weight: 600;"> 跨域互信联盟链产品</span></p>
 							<p class="home_production_item_text_bottom_title">可为区块链与传统企业应用之间的链上链下互操作提供解决方案</p>
 						</div>
 					</li>
@@ -272,11 +272,12 @@
 				<div class="home_about_bianjie_right_content">
 					<h3 class="home_about_bianjie_title_content">关于边界智能</h3>
 					<p class="home_about_bianjie_text_content">
-						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算级大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
+						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
 					</p>
+					<p style="margin-top: 0.16rem" class="home_about_bianjie_text_content">边界智能是国家⾼新技术企业，拥有⾃主创新的知识产权，荣获了多个创新奖项。</p>
 					<div class="home_about_bianjie_right_button_content">
 						<div class="home_about_bianjie_cooperation_button" @click="showMail()">
-							<span v-show="!flShowMail">联系合作</span><span v-show="flShowMail">mailto:contact@bianjie.ai</span>
+							<span v-show="!flShowMail">联系合作</span><span v-show="flShowMail">contact@bianjie.ai</span>
 							<img src="../assets/home/arrow_white.png" alt="">
 						</div>
 						<div class="home_about_bianjie_read_more_button" v-show="false">

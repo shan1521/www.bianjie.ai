@@ -28,9 +28,9 @@
 						</div>
 						<div class="program_features_left_list_content">
 							<h5>高性能的共识算法</h5>
-							<h3>先进高效的Tendermint共识引擎</h3>
+							<p>先进高效的Tendermint共识引擎</p>
 							<p> • 领先的底层跨链协议</p>
-							<p> • 高效的<a href="https://tendermint.com/" target="_blank"> Tendermint </a>共识引擎</p>
+							<p> • 高效的<a href="https://tendermint.com/" target="_blank" style="color: #155fff"> Tendermint </a>共识引擎</p>
 							<p> • 面向行业应用场景进行性能优化</p>
 						</div>
 					</div>
@@ -40,7 +40,7 @@
 						</div>
 						<div class="program_features_right_list_content">
 							<h5>高可用的互信网络</h5>
-							<h3>动态管理的节点和非侵入式审计</h3>
+							<p>动态管理的节点和非侵入式审计</p>
 							<p> • 原有业务逻辑和数据安全不变</p>
 							<p> • 动态参与共识网络满足行业协同需求</p>
 							<p> • 自主创新的非侵入式链上数据审计能力</p>
@@ -54,7 +54,7 @@
 						</div>
 						<div class="program_features_left_list_content">
 							<h5>高安全的隐私保护</h5>
-							<h3>保护数据隐私的分布式分析</h3>
+							<p>保护数据隐私的分布式分析</p>
 							<p> • 同时考虑隐私保护、共享需求和监管要求</p>
 							<p> • 充分尊重数据拥有者的权利的链间价值交换</p>
 							<p> • 面向业务的链上链下通联的数据分析服务</p>
@@ -66,7 +66,7 @@
 						</div>
 						<div class="program_features_right_list_content">
 							<h5>更友好的开发支持</h5>
-							<h3>面向服务的企业级架构和 SDK 工具包</h3>
+							<p>面向服务的企业级架构和 SDK 工具包</p>
 							<p> • 模块化、工具化的区块链开发模式</p>
 							<p> • 完善的开发文档和测试验证环境</p>
 							<p> • 容器化、自动化的部署运维监控工具</p>
@@ -149,7 +149,6 @@
 					font-size: 0.14rem;
 					color: #0C253A;
 					line-height: 0.27rem;
-					font-weight: bold;
 					margin-bottom: 0.2rem;
 				}
 				li{
@@ -195,7 +194,7 @@
 							font-weight: bold;
 							margin-bottom: 0.06rem;
 						}
-						h3{
+						p:nth-of-type(1){
 							font-size: 0.14rem;
 							color: #0C253A;
 							margin-bottom: 0.18rem;
@@ -229,7 +228,7 @@
 							font-weight: bold;
 							margin-bottom: 0.06rem;
 						}
-						h3{
+						p:nth-of-type(1){
 							font-size: 0.14rem;
 							color: #0C253A;
 							margin-bottom: 0.18rem;
@@ -267,7 +266,7 @@
 							font-weight: bold;
 							margin-bottom: 0.06rem;
 						}
-						h3{
+						p:nth-of-type(1){
 							font-size: 0.14rem;
 							color: #0C253A;
 							margin-bottom: 0.18rem;
@@ -301,7 +300,7 @@
 							font-weight: bold;
 							margin-bottom: 0.06rem;
 						}
-						h3{
+						p:nth-of-type(1){
 							font-size: 0.14rem;
 							color: #0C253A;
 							margin-bottom: 0.18rem;
