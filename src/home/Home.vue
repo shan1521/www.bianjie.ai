@@ -869,6 +869,7 @@
 					.home_about_bianjie_right_button_content{
 						display: flex;
 						margin-top: 0.3rem;
+						padding-bottom: 1rem;
 						.home_about_bianjie_cooperation_button{
 							background: #0054E3;
 							padding: 0.1rem 0;
