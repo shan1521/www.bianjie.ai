@@ -74,7 +74,7 @@ export const message = {
                 "month": "Mar",
                 "title": "边界智能宣布开源联盟链 IRITA",
                 "txt": " 3月6日，边界智能宣布正式上线并开源自研的联盟链产品——跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)。这是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架 Tendermint 和 IRIS SDK，并结合边界智能团队多年行业经验打造的联盟链产品。",
-                "href": ""
+                "href": "https://mp.weixin.qq.com/s/Zm5ew2-lhA5TeV1Wc4-C-w"
             },
             {
                 "year": '2019',
