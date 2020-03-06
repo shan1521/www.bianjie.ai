@@ -1,0 +1,418 @@
+<template>
+	<div class="about_container_content">
+		<div class="about_content_wrap">
+			<div class="about_content">
+				<h2>关于我们-边界智能</h2>
+				<h5>专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司</h5>
+			</div>
+		</div>
+		<div class="about_text_container">
+			<div class="about_text_content_wrap">
+				<p>上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet 跨链服务网络</router-link>、<router-link :to="`/products/irita`" style="color: #155fff">数字资产全生命周期管理产品 IRITA </router-link>及<router-link :to="`/products/bean`" style="color:#155fff;">分布式⼤数据分析交换网络 BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。</p>
+				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强、2019中国区块链技术创新典型企业、健康医疗⼤数据产业为核⼼的创新⼤赛CDHIC-天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。</p>
+                <p>边界智能是国家⾼新技术企业，拥有⾃主创新的知识产权。</p>
+<!--				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强，中国 CDHIC 大赛天使之星冠军、2019 中国区块链百强企业、2019 中国优秀区块链解决方案等多个创新奖项，拥有企业发明专利 2 项，软件著作权 14 个，软件产品证书 1 个，商标 5 个。</p>-->
+<!--				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核⼼开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>-->
+			</div>
+		</div>
+		<div class="about_img_content">
+			<div class="about_img_content_wrap">
+				<h5 >荣誉资质</h5>
+				<div id="certify" v-if="swiperArray.length !== 0">
+					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
+						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
+							<div style="height: 3.2rem;margin:0 40px">
+								<img  style="display:block;height:100%;" :src="item.src" alt="">
+							</div>
+						</swiper-slide>
+					</swiper>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		<div class="qr_content">
+			<div class="qr_content_wrap">
+				<h1>关注与联系</h1>
+				<div class="qr_img_content">
+					<img src="../assets/home/qr_bianjie.png" alt="">
+				</div>
+				<p content="mail_content">联系我们: contact@bianjie.ai</p>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: "About",
+		data(){
+			return{
+				swiperArray:[
+					{
+						src:require('../assets/home/honor5.jpg')
+					},
+					{
+						src:require('../assets/home/honor6.jpg')
+					},
+					{
+						src:require('../assets/home/honor8.jpg')
+					},
+					{
+						src:require('../assets/home/honor7.jpg')
+					},
+					{
+						src:require('../assets/home/honor9.jpg')
+					},
+					{
+						src:require('../assets/home/honor10.jpg')
+					},
+					{
+						src:require('../assets/home/honor11.jpg')
+					},
+					{
+						src:require('../assets/home/honor12.jpg')
+					},
+					{
+						src:require('../assets/home/honor13.jpg')
+					},
+					{
+						src:require('../assets/home/honor14.jpg')
+					},
+					{
+						src:require('../assets/home/honor15.jpg')
+					},
+					{
+						src:require('../assets/home/honor1.jpg')
+					},		
+				],
+				swiperOption:{
+					watchSlidesProgress: true,
+					slidesPerView: "auto",
+					centeredSlides: true,
+					loop: true,
+					speed: 300,
+					// loopedSlides: 12,
+					autoplay: true,
+					/*autoplay: {
+					delay: 0,
+					stopOnLastSlide: false,
+					disableOnInteraction: true,
+					},*/
+					// grabCursor: true,
+					pagination: {
+						el: '.swiper-pagination',
+						// clickable :true,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					on:{
+						progress: function(progress) {
+							// for (let i = 0; i < this.slides.length; i++) {
+							// 	var slide = this.slides.eq(i);
+							// 	var slideProgress = this.slides[i].progress;
+							// 	let modify = 1;
+							// 	if (Math.abs(slideProgress) > 1) {
+							// 		modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+							// 	}
+							// 	let translate = slideProgress * modify * 260 + 'px';
+							// 	let scale = 1 - Math.abs(slideProgress) / 5;
+							// 	let zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+							// 	slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+							// 	slide.css('zIndex', zIndex);
+							// 	slide.css('opacity', 1);
+							// 	if (Math.abs(slideProgress) > 3) {
+							// 		slide.css('opacity', 0);
+							// 	}
+							// }
+						},
+						setTransition: function(transition) {
+							for (var i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i);
+								slide.transition(transition);
+							}
+							
+						}
+					}
+					// slidesPerView:3,
+					// loopedSlides:3,
+					// speed: 300,
+					// autoplayDisableOnInteraction:false,
+					// disableOnInteraction:false,
+					//鼠标变成手掌型
+					// grabCursor: true,
+					// virtualTranslate: false,
+					// roundLengths: true,
+					// autoHeight: true,
+					// effect : 'coverflow',
+					// navigation:{
+					// 	nextEl: '.swiper-button-next',
+					// 	prevEl: '.swiper-button-prev',
+					// },
+				},
+			}
+		},
+		mounted(){
+			let swiper = document.getElementsByClassName('swiper-wrapper')[0];
+			if (swiper) {
+				swiper.style.alignItems = 'center';
+			}
+		}
+	}
+</script>
+
+<style scoped lang="less">
+	@media print {
+		.about_container_content{
+			.about_content_wrap{
+				-webkit-print-color-adjust: exact;
+			}
+		}
+	}
+	.about_container_content{
+		width: 100%;
+		.about_content_wrap{
+			background: url("../assets/home/about.png") no-repeat center center;
+			background-size: cover;
+			height: 4.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.about_content{
+				text-align: center;
+				h2{
+					font-size: 0.6rem;
+					line-height: 0.84rem;
+					color: #fff;
+					font-weight: lighter;
+				}
+				h5{
+					margin-top: 0.2rem;
+					font-size: 0.22rem;
+					line-height: 0.3rem;
+					font-weight: lighter;
+					color: #fff;
+				}
+			}
+		}
+		.about_text_container{
+			width: 100%;
+			background: #FAFAFA;
+			.about_text_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				box-sizing: border-box;
+				padding: 0.4rem 0 0.54rem 0;
+				color: #0C253A;
+				p{
+					font-size: 0.14rem;
+					line-height: 0.34rem;
+					margin-bottom: 0.14rem;
+				}
+				p:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.about_img_content{
+			.about_img_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				text-align: center;
+				#certify{
+					position: relative;
+					max-width: 900px;
+					width: 100%;
+					margin: 0 auto;
+					.swiper-pagination{
+						position: static;
+						display: none;
+					}
+					.my-swipe{
+						&:first-child {
+                display: flex;
+                align-items:center;
+            }
+						margin-left: auto;
+						margin-right: auto;
+						position: relative;
+						overflow: hidden;
+						list-style: none;
+						padding: 0;
+						z-index: 1;
+						.swiper-slide{
+							width:  auto !important;
+							img{
+							
+							}
+						}
+						
+					}
+					.swiper-button-prev{
+						margin-left:-120px;
+						outline: none;
+						width: 0.6rem;
+						height: 0.6rem;
+						background: url("../assets/home/prev.png");
+						background-size: cover;
+						-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+					}
+					.swiper-button-next{
+						margin-right:-120px;
+						outline: none;
+						width: 0.6rem;
+						height: 0.6rem;
+						background: url("../assets/home/next.png");
+						background-size: cover;
+						-webkit-tap-highlight-color: rgba(255, 255, 255, 0)!important;
+					}
+				}
+				
+				h5{
+					margin: 0.8rem 0 0.4rem 0;
+					font-size:0.18rem;
+				}
+				.about_img_top_content{
+					list-style: none;
+					display: flex;
+					justify-content: space-between;
+					.about_top_content{
+						margin-right: 0.75rem;
+						/*&:hover{
+							transform: scale(2);
+						}*/
+					}
+					.about_top_content:last-child{
+						margin-right: 0;
+					}
+				}
+				.about_img_bottom_content{
+					list-style: none;
+					display: flex;
+					justify-content: space-between;
+					margin: 0.4rem 0 0.8rem 0;
+					.about_img_bottom{
+						margin-right: 0.75rem;
+					}
+					.about_img_bottom:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		.qr_content{
+			margin-top: 1rem;
+			width: 100%;
+			.qr_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 1rem;
+				h1{
+					text-align: center;
+					margin-bottom: 0.2rem;
+					font-size: 0.18rem;
+				}
+				.qr_img_content{
+					width: 1.38rem;
+					margin: 0 auto;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1200px){
+		.about_container_content{
+			.about_text_container{
+				.about_text_content_wrap{
+					margin: 0 0.2rem;
+				}
+			}
+		}
+	}
+	@media screen  and (max-width: 768px){
+		.about_container_content{
+			.about_content_wrap{
+				.about_content{
+					h2{
+						font-size: 0.42rem;
+					}
+					h5{
+						font-size: 0.18rem;
+						margin: 0.2rem 0.2rem 0 0.2rem;
+					}
+				}
+			}
+			.about_text_container{
+				.about_text_content_wrap{
+					margin: 0 0.2rem;
+				}
+			}
+			.about_img_content{
+				.about_img_content_wrap{
+					#certify{
+						.swiper-pagination{
+							display: block;
+						}
+                        .swiper-button-prev{
+                            display: none;
+                        }
+                        .swiper-button-next{
+                            display: none;
+                        }
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 375px){
+		.about_container_content{
+			.about_content_wrap{
+				.about_content{
+					text-align: center;
+					h2{
+						font-size: 0.32rem;
+					}
+					h5{
+						text-align: center;
+						margin: 0.2rem 0.6rem 0 0.6rem;
+						font-size: 0.14rem;
+						line-height:0.21rem;
+					}
+				}
+			}
+			.about_img_content{
+				.about_img_content_wrap{
+					#certify{
+						.swiper-pagination{
+							display: block;
+							margin-top: 0.1rem;
+						}
+                        .swiper-button-prev{
+                            display: none;
+                        }
+                        .swiper-button-next{
+                            display: none;
+                        }
+						.swiper-container{
+							.swiper-wrapper{
+								.swiper-slide{
+									div{
+										height: 2.4rem !important;
+									}
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+</style>
