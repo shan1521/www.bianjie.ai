@@ -172,6 +172,7 @@
 				padding-bottom: 1rem;
 				.production_title{
 					text-align: center;
+					font-size: 0.18rem;
 				}
 				.production_core_list_content{
 					list-style: none;
