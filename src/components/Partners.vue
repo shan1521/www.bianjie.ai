@@ -62,12 +62,12 @@
 							<a href="http://www.trustedblockchain.cn/" target="_blank">
 								<img src="../assets/home/kxqkl.png" alt="">
 							</a>
-							<a href="https://shbta.cn/" target="_blank">
+							<a href="http://www.softline.org.cn/" target="_blank">
 								<img src="../assets/home/shrjglxh.png" alt="">
 							</a>
 						</div>
 						<div>
-							<a href="http://www.softline.org.cn/" target="_blank">
+							<a href="https://shbta.cn/" target="_blank">
 								<img src="../assets/home/shqkl.png" alt="">
 							</a>
 							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
@@ -84,6 +84,15 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="qr_content">
+			<div class="qr_content_wrap">
+				<h1>关注与联系</h1>
+				<div class="qr_img_content">
+					<img src="../assets/home/qr_bianjie.png" alt="">
+				</div>
+				<p content="mail_content">联系我们: contact@bianjie.ai</p>
 			</div>
 		</div>
 	</div>
@@ -266,6 +275,27 @@
 						img{
 							width: 3rem;
 						}
+					}
+				}
+			}
+		}
+		.qr_content{
+			margin-top: 1rem;
+			width: 100%;
+			.qr_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 1rem;
+				h1{
+					text-align: center;
+					margin-bottom: 0.2rem;
+				}
+				.qr_img_content{
+					width: 1.38rem;
+					margin: 0 auto;
+					img{
+						width: 100%;
 					}
 				}
 			}
