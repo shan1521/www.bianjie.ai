@@ -351,6 +351,7 @@
 	}
 	.header_mobile_content{
 		display: none;
+		outline-color: transparent;
 	}
 }
     @media screen and (max-width: 920px){

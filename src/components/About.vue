@@ -358,6 +358,12 @@
 						.swiper-pagination{
 							display: block;
 						}
+                        .swiper-button-prev{
+                            display: none;
+                        }
+                        .swiper-button-next{
+                            display: none;
+                        }
 					}
 				}
 			}
@@ -386,6 +392,12 @@
 							display: block;
 							margin-top: 0.1rem;
 						}
+                        .swiper-button-prev{
+                            display: none;
+                        }
+                        .swiper-button-next{
+                            display: none;
+                        }
 						.swiper-container{
 							.swiper-wrapper{
 								.swiper-slide{
