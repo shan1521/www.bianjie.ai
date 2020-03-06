@@ -16,6 +16,11 @@
 				<p class="production_list_item">边界智能作为 IRISnet 区块链技术的核心开发团队之一，开发了 iService 跨链服务 SDK 工具包，并用于<router-link :to="`/products/bean`" style="color: #155fff;">区块链边缘分析网络 BEAN </router-link>及<router-link :to="`/products/isch`" style="color:#155fff;">跨链服务联盟枢纽 ISCH </router-link>的高效建设，极大降低了联盟链的开发实施难度，推动了区块链前沿技术支撑商业应用场景的技术发展。</p>
 			</div>
 		</div>
+		<div class="irisnet_content">
+			<div class="irisnet_content_wrap">
+				<img src="../assets/home/irisnet_framework.png" alt="">
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -87,9 +92,27 @@
 				}
 			}
 		}
+		.irisnet_content{
+			.irisnet_content_wrap{
+				max-width: 12rem;
+				margin: 0 auto;
+				padding: 1rem 0;
+				display: flex;
+				justify-content: center;
+				img{
+					max-width: 6rem;
+					width: 100%;
+				}
+			}
+		}
 	}
 	@media screen and (max-width: 1200px){
 		.production_container{
+			.irisnet_content{
+				.irisnet_content_wrap{
+					padding: 0 0.2rem 0.5rem 0.2rem;
+				}
+			}
 			.production_header_content_wrap{
 				.production_header_content{
 					h5{
@@ -106,6 +129,11 @@
 	}
 	@media screen and (min-width: 500px) and (max-width: 768px){
 		.production_container{
+			.irisnet_content{
+				.irisnet_content_wrap{
+					padding: 0 0.2rem 0.5rem 0.2rem;
+				}
+			}
 			.production_header_content_wrap{
 				.production_header_content{
 					h2{
@@ -118,6 +146,11 @@
 
 	@media screen  and (max-width: 500px) {
 		.production_container{
+			.irisnet_content{
+				.irisnet_content_wrap{
+					padding: 0 0.2rem 0.5rem 0.2rem;
+				}
+			}
 			.production_header_content_wrap{
 				.production_header_content{
 					h2{
