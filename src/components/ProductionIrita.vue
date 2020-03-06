@@ -59,7 +59,7 @@
 					{
 						src: require("../assets/irita/tendermint.png"),
 						title:'高效共识-Tendermint',
-						section:'首个互联网级别可应用的拜占庭共识协议，Libra也沿用此技术'
+						section:'互联网级别可应用的拜占庭共识协议，Libra也沿用此技术'
 					},
 					{
 						src: require("../assets/irita/ibc.png"),
