@@ -69,6 +69,14 @@ export const message = {
         "btnTxt:": "查看更多",
         "txt": [
             {
+                "year": '2020',
+                "day": "06",
+                "month": "Mar",
+                "title": "边界智能宣布开源联盟链 IRITA",
+                "txt": "  3月6日，边界智能宣布正式上线并开源自研的联盟链产品——跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)。这是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架 Tendermint 和 IRIS SDK，并结合边界智能团队多年行业经验打造的联盟链产品。",
+                "href": ""
+            },
+            {
                 "year": '2019',
                 "day": "27",
                 "month": "Dec",
@@ -102,14 +110,14 @@ export const message = {
                 "txt": "近日，上海市科学技术委员会公示了上海市2019年度「科技创新行动计划」科技型中小企业技术创新资金部分拟立项项目的获批名单，边界智能申报的「基于区块链的技术的分布式服务跨链网络」项目成功入选。",
                 "href": "https://mp.weixin.qq.com/s/_LnV7BJABLg0RPZ5jFffFQ"
             },
-            {
-                "year": '2019',
-                "day": "18",
-                "month": "Apr",
-                "title": "边界智能参加上交会分享首个 BPoS 公链 IRISnet 的关键创新点",
-                "txt": "4月18日，第七届中国（上海）国际技术进出口交易会在上海世博展览馆正式开幕。边界智能应邀参加，产品总监谷新萍女士在会上分享了支持下一代分布式应用开发的区块链服务网络 IRISnet 的关键创新点。",
-                "href": "https://mp.weixin.qq.com/s/B_G0fENiJoyI-twbDdD5Sw"
-            },
+            // {
+            //     "year": '2019',
+            //     "day": "18",
+            //     "month": "Apr",
+            //     "title": "边界智能参加上交会分享首个 BPoS 公链 IRISnet 的关键创新点",
+            //     "txt": "4月18日，第七届中国（上海）国际技术进出口交易会在上海世博展览馆正式开幕。边界智能应邀参加，产品总监谷新萍女士在会上分享了支持下一代分布式应用开发的区块链服务网络 IRISnet 的关键创新点。",
+            //     "href": "https://mp.weixin.qq.com/s/B_G0fENiJoyI-twbDdD5Sw"
+            // },
             {
                 "year": '2019',
                 "day": "22",
