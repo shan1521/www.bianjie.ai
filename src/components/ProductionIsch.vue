@@ -14,10 +14,10 @@
 			</div>
 
 		</div>
-<!--		<p class="production_isch_title">跨链服务联盟</p>-->
-<!--		<div class="isch_img_wrap">-->
-<!--			<img src="../assets/home/isch.png" alt="">-->
-<!--		</div>-->
+		<p class="production_isch_title">跨链服务联盟</p>
+		<div class="isch_img_wrap">
+			<img src="../assets/home/isch.png" alt="">
+		</div>
 	</div>
 </template>
 
