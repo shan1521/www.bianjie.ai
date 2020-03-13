@@ -18,14 +18,14 @@
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
 				<h5 >荣誉资质</h5>
-				<div class="about_list_content">
+				<!--<div class="about_list_content">
 					<ul class="about_list_content_container">
 						<li class="about_list_item" v-for="item in listArray">
 							<div>{{item.date}}</div>
 							<p>{{item.content}}</p>
 						</li>
 					</ul>
-				</div>
+				</div>-->
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
@@ -59,43 +59,43 @@
 			return{
 				swiperArray:[
 					{
-						src:require('../assets/home/honor16.jpg')
+						src:require('../assets/home/honor_1.jpg')
 					},
 					{
-						src:require('../assets/home/honor5.jpg')
+						src:require('../assets/home/honor_2.jpg')
 					},
 					{
-						src:require('../assets/home/honor6.jpg')
+						src:require('../assets/home/honor_3.jpg')
 					},
 					{
-						src:require('../assets/home/honor8.jpg')
+						src:require('../assets/home/honor_4.jpg')
 					},
 					{
-						src:require('../assets/home/honor7.jpg')
+						src:require('../assets/home/honor_5.jpg')
 					},
 					{
-						src:require('../assets/home/honor9.jpg')
+						src:require('../assets/home/honor_6.jpg')
 					},
 					{
-						src:require('../assets/home/honor10.jpg')
+						src:require('../assets/home/honor_7.jpg')
 					},
 					{
-						src:require('../assets/home/honor11.jpg')
+						src:require('../assets/home/honor_8.jpg')
 					},
 					{
-						src:require('../assets/home/honor12.jpg')
+						src:require('../assets/home/honor_9.jpg')
 					},
 					{
-						src:require('../assets/home/honor13.jpg')
+						src:require('../assets/home/honor_10.jpg')
 					},
 					{
-						src:require('../assets/home/honor14.jpg')
+						src:require('../assets/home/honor_11.jpg')
 					},
 					{
-						src:require('../assets/home/honor15.jpg')
+						src:require('../assets/home/honor_12.jpg')
 					},
 					{
-						src:require('../assets/home/honor1.jpg')
+						src:require('../assets/home/honor_13.jpg')
 					},
 				],
 				listArray:[
