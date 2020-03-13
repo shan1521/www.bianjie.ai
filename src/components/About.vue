@@ -18,14 +18,14 @@
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
 				<h5 >荣誉资质</h5>
-				<div class="about_list_content">
+				<!--<div class="about_list_content">
 					<ul class="about_list_content_container">
 						<li class="about_list_item" v-for="item in listArray">
 							<div>{{item.date}}</div>
 							<p>{{item.content}}</p>
 						</li>
 					</ul>
-				</div>
+				</div>-->
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
