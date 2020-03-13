@@ -59,6 +59,9 @@
 			return{
 				swiperArray:[
 					{
+						src:require('../assets/home/honor16.jpg')
+					},
+					{
 						src:require('../assets/home/honor5.jpg')
 					},
 					{
@@ -315,6 +318,7 @@
 					max-width: 900px;
 					width: 100%;
 					margin: 0 auto;
+					padding-bottom: 0.6rem;
 					.swiper-pagination{
 						position: static;
 						display: none;
