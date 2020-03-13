@@ -57,8 +57,6 @@
 		name: "About",
 		data(){
 			return{
-				
-				// 16-1 5-2 6-3 8-4 7-5 9-6 10-7 11-8 12-9 13- 10 14-11 15-12 1-13
 				swiperArray:[
 					{
 						src:require('../assets/home/honor_1.jpg')
