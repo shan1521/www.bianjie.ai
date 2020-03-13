@@ -57,45 +57,47 @@
 		name: "About",
 		data(){
 			return{
+				
+				// 16-1 5-2 6-3 8-4 7-5 9-6 10-7 11-8 12-9 13- 10 14-11 15-12 1-13
 				swiperArray:[
 					{
-						src:require('../assets/home/honor16.jpg')
+						src:require('../assets/home/honor_1.jpg')
 					},
 					{
-						src:require('../assets/home/honor5.jpg')
+						src:require('../assets/home/honor_2.jpg')
 					},
 					{
-						src:require('../assets/home/honor6.jpg')
+						src:require('../assets/home/honor_3.jpg')
 					},
 					{
-						src:require('../assets/home/honor8.jpg')
+						src:require('../assets/home/honor_4.jpg')
 					},
 					{
-						src:require('../assets/home/honor7.jpg')
+						src:require('../assets/home/honor_5.jpg')
 					},
 					{
-						src:require('../assets/home/honor9.jpg')
+						src:require('../assets/home/honor_6.jpg')
 					},
 					{
-						src:require('../assets/home/honor10.jpg')
+						src:require('../assets/home/honor_7.jpg')
 					},
 					{
-						src:require('../assets/home/honor11.jpg')
+						src:require('../assets/home/honor_8.jpg')
 					},
 					{
-						src:require('../assets/home/honor12.jpg')
+						src:require('../assets/home/honor_9.jpg')
 					},
 					{
-						src:require('../assets/home/honor13.jpg')
+						src:require('../assets/home/honor_10.jpg')
 					},
 					{
-						src:require('../assets/home/honor14.jpg')
+						src:require('../assets/home/honor_11.jpg')
 					},
 					{
-						src:require('../assets/home/honor15.jpg')
+						src:require('../assets/home/honor_12.jpg')
 					},
 					{
-						src:require('../assets/home/honor1.jpg')
+						src:require('../assets/home/honor_13.jpg')
 					},
 				],
 				listArray:[
