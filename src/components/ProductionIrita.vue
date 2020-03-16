@@ -84,7 +84,7 @@
 						section:'自带存储层支持云存储和分布式存储；数据仓库和链式数据结合支持链上数据高效全生命周期查询'
 					},
 					{
-						src: require("../assets/irita/iserice.png"),
+						src: require("../assets/irita/iservice.png"),
 						title:'面向服务-iService',
 						section:'链上链下可信交互，高效支持对于ERP等各类传统系统的集成'
 					},
@@ -213,20 +213,8 @@
 							line-height: 0.22rem;
 							margin-bottom: 0.2rem;
 						}
-
-					}
-					.production_core_list_item:nth-of-type(1){
 						.production_core_list_item_img_icon{
 							width: 0.5rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(2){
-						.production_core_list_item_img_icon{
-							width: 0.43rem;
 							margin-bottom: 0.41rem;
 							img{
 								width: 100%;
@@ -235,41 +223,11 @@
 					}
 					.production_core_list_item:nth-of-type(3){
 						margin-right: 0;
-						.production_core_list_item_img_icon{
-							width: 0.43rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(4){
-						.production_core_list_item_img_icon{
-							width: 0.5rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(5){
-						.production_core_list_item_img_icon{
-							width: 0.49rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
+						
 					}
 					.production_core_list_item:nth-of-type(6){
 						margin-right: 0;
-						.production_core_list_item_img_icon{
-							width: 0.48rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
+						
 					}
 				}
 			}
@@ -319,63 +277,22 @@
 						.production_core_list_item{
 							padding-top: 0.4rem;
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
+					
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 1.46rem;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
@@ -404,63 +321,21 @@
 								min-height: 1.3rem;
 							}
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 13%;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
@@ -497,63 +372,21 @@
 								min-height: auto;
 							}
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
