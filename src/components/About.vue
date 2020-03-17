@@ -18,14 +18,14 @@
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
 				<h5 >荣誉资质</h5>
-				<!--<div class="about_list_content">
+				<div class="about_list_content">
 					<ul class="about_list_content_container">
 						<li class="about_list_item" v-for="item in listArray">
-							<div>{{item.date}}</div>
-							<p>{{item.content}}</p>
+							<div style="font-size:0.14rem;color: #8A99A5">{{item.date}}</div>
+							<p style="color: #0C253A;font-size:0.14rem;line-height: 0.28rem">{{item.content}}</p>
 						</li>
 					</ul>
-				</div>-->
+				</div>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
@@ -244,7 +244,7 @@
 	.about_container_content{
 		width: 100%;
 		.about_content_wrap{
-			background: url("../assets/home/about.png") no-repeat center center;
+			background: url("../assets/home/about.jpg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;
@@ -269,7 +269,7 @@
 		}
 		.about_text_container{
 			width: 100%;
-			background: #FAFAFA;
+			background: #FBFDFF;
 			.about_text_content_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
@@ -458,9 +458,10 @@
 								box-shadow: none;
 								background: none;
 								display: flex;
-								padding: 0.1rem 0.2rem 0 0.2rem;
+								padding: 0.2rem 0.2rem 0 0.2rem;
 								margin: 0;
 								div{
+									line-height: 0.28rem;
 									display: inline-block;
 									width: 1.2rem;
 									text-align: left;

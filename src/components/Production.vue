@@ -49,7 +49,7 @@
 		width: 100%;
 		background: #fafafa;
 		.production_header_content_wrap{
-			background: url("../assets/home/IRISnet.png") no-repeat center center;
+			background: url("../assets/home/IRISnet.svg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;

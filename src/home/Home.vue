@@ -350,7 +350,7 @@
 		width: 100%;
 		.home_container_wrap{
 			height: 6.4rem;
-			background: url("../assets/home/banner.png") no-repeat center center;
+			background: url("../assets/home/banner.svg") no-repeat center center;
 			background-size: cover;
 			.home_content_wrap{
 				max-width: 12rem;
