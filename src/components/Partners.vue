@@ -163,7 +163,7 @@
 	.partners_content_container{
 		width: 100%;
 		.partners_content_wrap{
-			background: url("../assets/home/partner.png") no-repeat center center;
+			background: url("../assets/home/partner.svg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;
