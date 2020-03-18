@@ -18,6 +18,14 @@
 		<div class="about_img_content">
 			<div class="about_img_content_wrap">
 				<h5 >荣誉资质</h5>
+				<div class="about_list_content">
+					<ul class="about_list_content_container">
+						<li class="about_list_item" v-for="item in listArray">
+							<div style="font-size:0.14rem;color: #8A99A5">{{item.date}}</div>
+							<p style="color: #0C253A;font-size:0.14rem;line-height: 0.28rem">{{item.content}}</p>
+						</li>
+					</ul>
+				</div>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
@@ -51,41 +59,102 @@
 			return{
 				swiperArray:[
 					{
-						src:require('../assets/home/honor5.jpg')
+						src:require('../assets/home/honor_1.jpg')
 					},
 					{
-						src:require('../assets/home/honor6.jpg')
+						src:require('../assets/home/honor_2.jpg')
 					},
 					{
-						src:require('../assets/home/honor8.jpg')
+						src:require('../assets/home/honor_3.jpg')
 					},
 					{
-						src:require('../assets/home/honor7.jpg')
+						src:require('../assets/home/honor_4.jpg')
 					},
 					{
-						src:require('../assets/home/honor9.jpg')
+						src:require('../assets/home/honor_5.jpg')
 					},
 					{
-						src:require('../assets/home/honor10.jpg')
+						src:require('../assets/home/honor_6.jpg')
 					},
 					{
-						src:require('../assets/home/honor11.jpg')
+						src:require('../assets/home/honor_7.jpg')
 					},
 					{
-						src:require('../assets/home/honor12.jpg')
+						src:require('../assets/home/honor_8.jpg')
 					},
 					{
-						src:require('../assets/home/honor13.jpg')
+						src:require('../assets/home/honor_9.jpg')
 					},
 					{
-						src:require('../assets/home/honor14.jpg')
+						src:require('../assets/home/honor_10.jpg')
 					},
 					{
-						src:require('../assets/home/honor15.jpg')
+						src:require('../assets/home/honor_11.jpg')
 					},
 					{
-						src:require('../assets/home/honor1.jpg')
-					},		
+						src:require('../assets/home/honor_12.jpg')
+					},
+					{
+						src:require('../assets/home/honor_13.jpg')
+					},
+				],
+				listArray:[
+					{
+						date:'2019 年 12 月',
+						content:'荣获「 2019中国区块链技术创新典型企业」奖项'
+					},
+					{
+						date:'2019 年 11 月',
+						content:'通过双软认证'
+					},
+					{
+						date:'2019 年 10 月',
+						content:'通过国家高新技术企业认定'
+					},
+					{
+						date:'2019 年 8 月',
+						content:'边界智能打造的「 跨链服务联盟枢纽 ISCH」，荣获2019中国优秀区块链解决方案'
+					},
+					{
+						date:'2019 年 8 月',
+						content:'边界智能为星康链提供区块链技术支持的「 区块链电子处方共享平台」也同时获奖'
+					},
+					{
+						date:'2019 年 6 月',
+						content:'跨链服务项目获得上海市2019年度「 科技创新行动计划」 科技型中小企业技术创新资金支持'
+					},
+					{
+						date:'2019 年 6 月',
+						content:'荣获中国最佳管理创新实践案例奖'
+					},
+					{
+						date:'2019 年 5 月',
+						content:'2019年「 创业在上海」国际创新创业大赛优秀企业奖'
+					},
+					{
+						date:'2019 年 1 月',
+						content:'上榜由链塔智库&工信部赛迪区块链研究院联合发布的《中国区块链企业百强榜》'
+					},
+					{
+						date:'2018 年 12 月',
+						content:'边界智能&复星健康云 BEAN 支持的建设方案荣获「 首届海南大数据创新应用大赛」健康医疗组评委评分第一'
+					},
+					{
+						date:'2018 年 10 月',
+						content:'2018「 创业在上海」国际创新创业大赛优胜企业奖'
+					},
+					{
+						date:'2018 年 9 月',
+						content:'荣获中国健康医疗大数据产业创新大赛天使之星组冠军'
+					},
+					{
+						date:'2018 年 8 月',
+						content:'荣获中国健康医疗大数据产业创新大赛北京赛区 TMT 数据组一等奖'
+					},
+					{
+						date:'2018 年 7 月',
+						content:'参加「 创业在上海」国际创新创业大赛暨第七届中国创新创业大赛顺利突围，获得国赛参赛资格'
+					},
 				],
 				swiperOption:{
 					watchSlidesProgress: true,
@@ -175,7 +244,7 @@
 	.about_container_content{
 		width: 100%;
 		.about_content_wrap{
-			background: url("../assets/home/about.png") no-repeat center center;
+			background: url("../assets/home/about.jpg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;
@@ -200,7 +269,7 @@
 		}
 		.about_text_container{
 			width: 100%;
-			background: #FAFAFA;
+			background: #FBFDFF;
 			.about_text_content_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
@@ -218,15 +287,38 @@
 			}
 		}
 		.about_img_content{
+			background: #fafafa;
 			.about_img_content_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
 				text-align: center;
+				.about_list_content{
+					margin-bottom: 0.5rem;
+					.about_list_content_container{
+						list-style: none;
+						display: flex;
+						flex-wrap: wrap;
+						.about_list_item{
+							box-sizing: border-box;
+							box-shadow:0 0.1rem 0.3rem 0 rgba(0,0,0,0.05);
+							padding: 0.25rem 0.2rem 0.29rem 0.2rem;
+							background: #fff;
+							width: 2.8rem;
+							height: 1.8rem;
+							margin: 0 0.1rem 0.2rem 0.1rem ;
+							text-align: left;
+							p{
+								margin-top: 0.2rem;
+							}
+						}
+					}
+				}
 				#certify{
 					position: relative;
 					max-width: 900px;
 					width: 100%;
 					margin: 0 auto;
+					padding-bottom: 0.6rem;
 					.swiper-pagination{
 						position: static;
 						display: none;
@@ -272,7 +364,8 @@
 				}
 				
 				h5{
-					margin: 0.8rem 0 0.4rem 0;
+					padding-top: 0.8rem;
+					margin: 0 0 0.4rem 0;
 					font-size:0.18rem;
 				}
 				.about_img_top_content{
@@ -355,6 +448,32 @@
 			}
 			.about_img_content{
 				.about_img_content_wrap{
+					.about_list_content{
+						
+						.about_list_content_container{
+							display: initial;
+							.about_list_item{
+								width: auto;
+								height: auto;
+								box-shadow: none;
+								background: none;
+								display: flex;
+								padding: 0.2rem 0.2rem 0 0.2rem;
+								margin: 0;
+								div{
+									line-height: 0.28rem;
+									display: inline-block;
+									width: 1.2rem;
+									text-align: left;
+								}
+								p{
+									flex: 1;
+									text-align: left;
+									margin-top: 0;
+								}
+							}
+						}
+					}
 					#certify{
 						.swiper-pagination{
 							display: block;

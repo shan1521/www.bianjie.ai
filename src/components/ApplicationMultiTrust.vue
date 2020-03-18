@@ -103,7 +103,7 @@
 		width: 100%;
 		background: #FAFAFA;
 		.applications_content_wrap{
-			background: url("../assets/home/application_scenarios.jpg") no-repeat center center;
+			background: url("../assets/home/application_scenarios.svg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;

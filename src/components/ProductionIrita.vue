@@ -10,8 +10,8 @@
 			<div class="production_text_title">跨域行业互信联盟产品 IRITA</div>
 			<p class="production_list_item">
 				跨域行业互信联盟产品（ Inter-Realm Industry Trust Alliance，简称IRITA ）是 Cosmos 生态中第一个企业级联盟链产品，基于现代区块链技术框架<a href="https://tendermint.com/" target="_blank" style="color: #155fff;"> Tendermint </a>和<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>，并结合边界智能团队多年行业经验打造而成。</p>
-			<p class="production_list_item">IRITA 具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易支持以及大数据技术支撑的业务分析 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。IRITA 现有 Professional 和 Lite 两个版本。<a href="https://github.com/bianjieai/irita" target="_blank" style="color: #155fff;">开源的 Lite </a>可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统</p>
-			<p class="production_list_item"></p>
+			<p class="production_list_item">IRITA 具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易支持以及大数据技术支撑的业务分析 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。</p>
+			<p class="production_list_item">IRITA 现有 Professional 和 Lite 两个版本。<a href="https://github.com/bianjieai/irita" target="_blank" style="color: #155fff;">开源的 Lite </a>可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统</p>
 		<!--	<div class="production_list_content">
 				<p class="production_list_title">IRITA 可以灵活使用在多种行业，尤其在<router-link :to="`/application/finance`" style="color: #155fff;">金融创新</router-link>行业，围绕<router-link :to="`/application/digital-asset`" style="color: #155fff;">资产数字化</router-link>后的确权和流通，具有6大核心技术优势：</p>
 				<p>1）共识底层：<a href="https://tendermint.com/" target="_blank"  style="color: #155fff;">Tendermint </a>是首个可以在互联网级别可应用的拜占庭共识协议，是Libra也沿用的共识技术</p>
@@ -84,7 +84,7 @@
 						section:'自带存储层支持云存储和分布式存储；数据仓库和链式数据结合支持链上数据高效全生命周期查询'
 					},
 					{
-						src: require("../assets/irita/iserice.png"),
+						src: require("../assets/irita/iservice.png"),
 						title:'面向服务-iService',
 						section:'链上链下可信交互，高效支持对于ERP等各类传统系统的集成'
 					},
@@ -109,7 +109,7 @@
 		width: 100%;
 		background: #fafafa;
 		.production_header_content_wrap{
-			background: url("../assets/home/IRISnet.png") no-repeat center center;
+			background: url("../assets/home/IRISnet.svg") no-repeat center center;
 			background-size: cover;
 			height: 4.6rem;
 			display: flex;
@@ -213,20 +213,8 @@
 							line-height: 0.22rem;
 							margin-bottom: 0.2rem;
 						}
-
-					}
-					.production_core_list_item:nth-of-type(1){
 						.production_core_list_item_img_icon{
 							width: 0.5rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(2){
-						.production_core_list_item_img_icon{
-							width: 0.43rem;
 							margin-bottom: 0.41rem;
 							img{
 								width: 100%;
@@ -235,41 +223,11 @@
 					}
 					.production_core_list_item:nth-of-type(3){
 						margin-right: 0;
-						.production_core_list_item_img_icon{
-							width: 0.43rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(4){
-						.production_core_list_item_img_icon{
-							width: 0.5rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
-					}
-					.production_core_list_item:nth-of-type(5){
-						.production_core_list_item_img_icon{
-							width: 0.49rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
+						
 					}
 					.production_core_list_item:nth-of-type(6){
 						margin-right: 0;
-						.production_core_list_item_img_icon{
-							width: 0.48rem;
-							margin-bottom: 0.41rem;
-							img{
-								width: 100%;
-							}
-						}
+						
 					}
 				}
 			}
@@ -319,63 +277,22 @@
 						.production_core_list_item{
 							padding-top: 0.4rem;
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
+					
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 1.46rem;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
@@ -404,63 +321,21 @@
 								min-height: 1.3rem;
 							}
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 13%;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
@@ -497,63 +372,21 @@
 								min-height: auto;
 							}
 						}
-						.production_core_list_item:nth-of-type(1){
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
 						.production_core_list_item:nth-of-type(2){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+						
 						}
 						.production_core_list_item:nth-of-type(3){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.43rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(4){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.5rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
-						}
-						.production_core_list_item:nth-of-type(5){
-							.production_core_list_item_img_icon{
-								width: 0.49rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 						.production_core_list_item:nth-of-type(6){
 							margin-right: 0;
-							.production_core_list_item_img_icon{
-								width: 0.48rem;
-								margin-bottom: 0.41rem;
-								img{
-									width: 100%;
-								}
-							}
+							
 						}
 					}
 				}
