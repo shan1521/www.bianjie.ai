@@ -35,13 +35,9 @@
 <style scoped lang="less">
     @media print {
         .production_container{
+	        background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
-			}
-			.production_content_container{
-				.production_text_content{
-					max-width: 1400px;
-				}
 			}
         }
     }

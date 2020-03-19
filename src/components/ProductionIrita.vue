@@ -99,10 +99,47 @@
 		.production_container{
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
+				.production_header_content{
+					h5{
+						padding: 0 ~`fontSize('20px')`!important;
+					}
+				}
 			}
 			.production_text_content{
-				max-width: 1400px;
+				padding-bottom: ~`fontSize('60px')`!important;;
+				.production_list_item{
+					padding: 0 ~`fontSize('20px')`!important;
+				}
 			}
+			.production_irita_core_content{
+				.production_content_wrap{
+					.production_core_list_content{
+						.production_core_list_item{
+							margin-top: ~`fontSize('20px')` !important;;
+							margin-right: ~`fontSize('61px')` !important;
+						}
+					}
+				}
+			}
+			.production_irita_img_content{
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		}
 	}
 	.production_container{

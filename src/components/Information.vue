@@ -130,23 +130,143 @@
 			}
 			.news_content{
 				.news_wrap{
-					max-width: 1400px;
 					.news_list_item_content{
-						margin-left: 0;
+						margin-left: ~`fontSize('12px')` !important;
+						.news_item_content{
+							margin-right: ~`fontSize('12px')` !important;
+							.month_day_content{
+								width: ~`fontSize('34px')` !important;
+								-webkit-print-color-adjust: exact;
+								.date_day_content{
+									font-size:~`fontSize('7px')` !important;
+								}
+								.date_month_content{
+									font-size:~`fontSize('10px')` !important;
+								}
+							}
+							.year_content{
+								-webkit-print-color-adjust: exact;
+								width: ~`fontSize('35px')` !important;
+								height: ~`fontSize('35px')` !important;
+								line-height: ~`fontSize('35px')` !important;;
+								margin-top: ~`fontSize('3px')` !important;
+								font-size:~`fontSize('7px')` !important;
+							}
+						}
+						.news_content{
+							a{
+								.news_title{
+									font-size: ~`fontSize('7px')` !important;
+								}
+							}
+							.news_content_text{
+								margin-top: ~`fontSize('7px')` !important;
+								font-size: ~`fontSize('6px')` !important;
+								line-height: ~`fontSize('15px')` !important;
+							}
+						}
 					}
 					.right_content{
-						margin-right: 0;
+						margin-left: ~`fontSize('12px')` !important;
+						.news_item_content{
+							margin-right: ~`fontSize('12px')` !important;
+							.month_day_content{
+								-webkit-print-color-adjust: exact;
+								width: ~`fontSize('35px')` !important;
+								.date_day_content{
+									font-size:~`fontSize('7px')` !important;
+								}
+								.date_month_content{
+									font-size:~`fontSize('10px')` !important;
+								}
+							}
+							.year_content{
+								-webkit-print-color-adjust: exact;
+								width: ~`fontSize('35px')` !important;
+								height: ~`fontSize('35px')` !important;
+								line-height: ~`fontSize('35px')` !important;;
+								margin-top: ~`fontSize('3px')` !important;
+								font-size:~`fontSize('7px')` !important;
+							}
+						}
+						.news_content{
+							a{
+								.news_title{
+									font-size: ~`fontSize('7px')` !important;
+								}
+							}
+							.news_content_text{
+								margin-top: ~`fontSize('7px')` !important;
+								font-size: ~`fontSize('6px')` !important;
+								line-height: ~`fontSize('15px')` !important;
+							}
+						}
 					}
 				}
 				.news_bg_wrap{
-					max-width: 1400px;
 					.news_bg_list_item_content{
-						margin-left: 0;
+						margin-left: ~`fontSize('12px')` !important;
+						.news_bg_item_content{
+							margin-right: ~`fontSize('12px')` !important;
+							.month_bg_day_content{
+								width: ~`fontSize('34px')` !important;
+								-webkit-print-color-adjust: exact;
+								.date_bg_day_content{
+									font-size:~`fontSize('7px')` !important;
+								}
+								.date_bg_month_content{
+									font-size:~`fontSize('10px')` !important;
+								}
+							}
+							.year_bg_content{
+								-webkit-print-color-adjust: exact;
+								width: ~`fontSize('35px')` !important;
+								height: ~`fontSize('35px')` !important;
+								line-height: ~`fontSize('35px')` !important;;
+								margin-top: ~`fontSize('3px')` !important;
+								font-size:~`fontSize('7px')` !important;
+							}
+						}
+						.bg_news_content{
+							a{
+								.news_bg_title{
+									font-size: ~`fontSize('7px')` !important;
+								}
+							}
+							.news_bg_content_text{
+								margin-top: ~`fontSize('7px')` !important;
+								font-size: ~`fontSize('6px')` !important;
+								line-height: ~`fontSize('15px')` !important;
+							}
+						}
 					}
 					.right_content{
-						margin-right: 0;
+						margin-left: ~`fontSize('12px')` !important;
+						.news_bg_item_content{
+							margin-right: ~`fontSize('12px')` !important;
+							.month_bg_day_content{
+								width: ~`fontSize('35px')` !important;
+								.date_bg_day_content{
+									font-size:~`fontSize('7px')` !important;
+								}
+								.date_bg_month_content{
+									font-size:~`fontSize('10px')` !important;
+								}
+							}
+							.year_bg_content{
+								-webkit-print-color-adjust: exact;
+								width: ~`fontSize('35px')` !important;
+								height: ~`fontSize('35px')` !important;
+								line-height: ~`fontSize('35px')` !important;;
+								margin-top: ~`fontSize('3px')` !important;
+								font-size:~`fontSize('7px')` !important;
+							}
+						}
 					}
 				}
+			}
+			.qr_content{
+				padding-top: ~`fontSize('100px')` !important;
 			}
 		}
 	}
