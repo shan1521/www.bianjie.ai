@@ -308,12 +308,11 @@
 		}
 	}
 </script>
-
 <style scoped lang="less">
 	@media print {
 		.home_container{
 			.home_container_wrap{
-				-webkit-print-color-adjust: exact;
+				
 				.home_content_wrap{
 					max-width: 1400px;
 				}
@@ -324,12 +323,12 @@
 				}
 			}
 			.home_production_serve_content_wrap{
-				-webkit-print-color-adjust: exact;
 				.home_production_content{
 					max-width: 1400px;
 				}
 			}
 			.home_production_list_content_wrap{
+				page-break-after: always;
 				.home_production_serve_list_content{
 					max-width: 12rem;
 				}
@@ -342,6 +341,163 @@
 			.home_about_bianjie_content_wrap{
 				.home_about_bianjie_content{
 					max-width: 1400px;
+				}
+			}
+			
+			//打印样式
+			.home_container_wrap{
+				height:~`fontSize("307px")` !important;
+				-webkit-print-color-adjust: exact;
+				.home_content_wrap{
+					.home_content{
+						margin-bottom: 0 !important;
+						.home_content_title{
+							font-size: ~`fontSize("26px")` !important;
+							font-weight: lighter !important;
+							line-height:~`fontSize("36px")` !important;
+						}
+						.home_content_second_title{
+							margin-top: ~`fontSize("9px")` !important;
+							font-size:~`fontSize("9px")` !important;
+							line-height:~`fontSize("13px")` !important;
+						}
+					}
+				}
+			}
+			.home_core_content_wrap{
+				height: ~`fontSize("145px")` !important;
+				.home_core_content{
+					position: relative !important;;
+					height: ~`fontSize("143px")` !important;
+					margin: 0 ~`fontSize("20px")` !important;
+					top: -1.4022cm !important;
+					border-radius:~`fontSize("26px")` ~`fontSize("2px")` ~`fontSize("26px")` ~`fontSize("2px")`!important;
+					.home_core_title_content{
+						padding-top:  ~`fontSize("17px")` !important;;
+						font-size:~`fontSize("11px")`!important;
+						font-weight:400;
+						color:rgba(12,37,58,1);
+						line-height:~`fontSize("16px")`!important;
+					}
+					.home_core_list_content{
+						.home_core_list_left_content{
+							display: flex !important;
+							.home_core_item_content{
+								flex: 1 !important;
+								height: ~`fontSize("70px")`!important;
+								margin-top: ~`fontSize("21px")`!important;
+								padding: 0 ~`fontSize("20px")`!important;;
+								.home_core_item_img_content{
+									width: ~`fontSize("29px")`!important;
+									margin-bottom: ~`fontSize("12px")`!important;
+								}
+								.home_core_item_text_content{
+									text-align: center !important;
+									padding-bottom: ~`fontSize("10px")`!important;
+									p{
+										font-size: 9pt !important;
+										color: rgba(12,37,58,1);
+										line-height:~`fontSize("10px")`!important;
+									}
+									p:last-child{
+										margin-top: ~`fontSize("10px")`!important;
+									}
+								}
+							}
+						}
+						.home_core_list_right_content{
+							.home_core_item_content{
+								height: ~`fontSize("70px")`!important;
+								margin-top: ~`fontSize("21px")`!important;
+								padding: 0 ~`fontSize("20px")`!important;
+								.home_core_item_img_content{
+									width: ~`fontSize("29px")`!important;
+									margin-bottom: ~`fontSize("12px")`!important;
+								}
+								.home_core_item_text_content{
+									text-align: center !important;
+									padding-bottom: ~`fontSize("10px")`!important;
+									p{
+										font-size: 9pt !important;
+										color: rgba(12,37,58,1);
+										line-height:~`fontSize("10px")`!important;
+									}
+									p:last-child{
+										margin-top: ~`fontSize("10px")`!important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.home_production_serve_content_wrap{
+				-webkit-print-color-adjust: exact;
+				height: auto !important;
+				padding-bottom: ~`fontSize("80px")`!important;
+				.home_production_content{
+					padding-bottom: ~`fontSize("44px")`!important;
+					.home_production_title{
+						padding-top: ~`fontSize("43px")`!important;
+						padding-bottom: ~`fontSize("17px")`!important;
+						text-align: center !important;
+						font-size: ~`fontSize("11px")`!important;
+					}
+					.home_production_list_content{
+						padding: 0 ~`fontSize("128px")`!important;
+						margin: 0 auto !important;
+						.home_production_item_content{
+							display: flex !important;
+							.home_production_item_img_content{
+								width: auto !important;
+								padding: 0 ~`fontSize("18px")`!important;
+								img{
+									width: ~`fontSize("13px")`!important;
+								}
+							}
+							.home_production_item_text_content{
+								height: ~`fontSize("22px")`!important;
+								.home_production_item_text_top_title{
+									font-size: ~`fontSize("7px")`!important;
+									font-weight:400;
+									color:rgba(255,255,255,1);
+									line-height:~`fontSize("9px")`!important;
+								}
+								.home_production_item_text_bottom_title{
+									font-size: ~`fontSize("6px")`!important;
+									font-weight:400;
+									color:rgba(255,255,255,1);
+									line-height:~`fontSize("8px")`!important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					.home_production_serve_item_content{
+						margin-top: ~`fontSize('64px')` !important;
+						margin-bottom: ~`fontSize('50px')` !important;
+						box-shadow: ~`fontSize('9px')` ~`fontSize('21px ')` ~`fontSize('15px ')` 0 rgba(0,20,53,0.06)!important;
+						.home_production_serve_item_img_content{
+							margin: ~`fontSize('17px')` 0 !important;
+							img{
+								width: ~`fontSize('29px')` !important;
+								height: ~`fontSize('29px')` !important;
+							}
+						}
+						.home_production_serve_item_text_content{
+							.home_production_serve_item_title{
+								font-size: ~`fontSize('7px')` 0 !important;
+								line-height: ~`fontSize('9px')` 0 !important;
+								margin-bottom: ~`fontSize('9px')`!important;
+							}
+						}
+						.home_production_footer{
+							margin-bottom: ~`fontSize('20px')`!important;
+						}
+					}
 				}
 			}
 		}
@@ -445,6 +601,7 @@
 								}
 							}
 							.home_core_item_text_content{
+								text-align: center;
 								p{
 									color: #0C253A;
 									font-size: 0.14rem;

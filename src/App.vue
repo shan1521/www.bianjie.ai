@@ -104,5 +104,18 @@
             margin: 0.01rem !important;
         }
     }
+    // 样式转化函数 像素转厘米 px -> cm (用于打印样式)
+    .remMixin(){
+        @function: ~`(function(){
+	        function convert(size) {
+                return typeof size === 'string' ?
+                    +size.replace('px', '') : size;
+                }
+	            this.fontSize = function(size){
+	                return convert(size) * 2.54 / 96 + 'cm'
+	            }
+	        })()`
+    }
+    .remMixin();
 </style>
 
