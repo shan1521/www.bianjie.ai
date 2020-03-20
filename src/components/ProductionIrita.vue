@@ -97,12 +97,34 @@
 <style scoped lang="less">
 	@media print {
 		.production_container{
+			background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
+				.production_header_content{
+					h5{
+						padding: 0 ~`convertPxToCm('20px')`!important;
+					}
+				}
 			}
 			.production_text_content{
-				max-width: 1400px;
+				padding-bottom: ~`convertPxToCm('60px')`!important;;
+				.production_list_item{
+					padding: 0 ~`convertPxToCm('20px')`!important;
+				}
 			}
+			.production_irita_core_content{
+				.production_content_wrap{
+					.production_core_list_content{
+						.production_core_list_item{
+							margin-top: ~`convertPxToCm('20px')` !important;;
+							margin-right: ~`convertPxToCm('61px')` !important;
+						}
+					}
+				}
+			}
+			.production_irita_img_content{
+			}
+
 		}
 	}
 	.production_container{

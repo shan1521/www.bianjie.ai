@@ -30,6 +30,7 @@
 <style scoped lang="less">
 	@media print {
 		.production_container{
+			background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}

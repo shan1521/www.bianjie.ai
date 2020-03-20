@@ -28,7 +28,7 @@
 				</div>
 				<div id="certify" v-if="swiperArray.length !== 0">
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
-						<swiper-slide style="display: flex;justify-content:center;" v-for="item in swiperArray">
+						<swiper-slide style="display: flex;justify-content:center;" v-for="(item ,index) in swiperArray" :key="index">
 							<div style="height: 3.2rem;margin:0 40px">
 								<img  style="display:block;height:100%;" :src="item.src" alt="">
 							</div>
@@ -37,6 +37,13 @@
 					<div class="swiper-pagination"></div>
 					<div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
 					<div class="swiper-button-next"></div>
+				</div>
+				<div class="print_img_container">
+					<ul class="print_img_content">
+						<li class="print_img_item" v-for="(item ,index) in swiperArray" :key="index">
+							<img :src="item.src" alt="">
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -236,8 +243,85 @@
 <style scoped lang="less">
 	@media print {
 		.about_container_content{
+			background: #fff !important;
 			.about_content_wrap{
 				-webkit-print-color-adjust: exact;
+			}
+			.about_text_container{
+				background: #fff !important;
+				.about_text_content_wrap{
+					padding-top: ~`convertPxToCm('20px')` !important;;
+					padding-bottom: ~`convertPxToCm('20px')` !important;
+					p{
+						font-size: ~`convertPxToCm('8px')` !important;
+						line-height: ~`convertPxToCm('16px')` !important;
+						margin-bottom: ~`convertPxToCm('10px')` !important;;
+					}
+				}
+			}
+			.about_img_content{
+				background: #fff !important;
+				.about_img_content_wrap{
+					h5{
+						padding-top: 0 !important;
+						margin-bottom: ~`convertPxToCm('10px')` !important;
+					}
+					.about_list_content{
+						.about_list_content_container{
+							display: initial !important;
+							.about_list_item{
+								width: auto !important;
+								height: auto !important;
+								box-shadow: none !important;
+								background: none !important;
+								display: flex !important;
+								padding:  ~`convertPxToCm('10px')` ~`convertPxToCm('20px')` 0 ~`convertPxToCm('20px')`!important;
+								margin: 0 !important;
+								div{
+									line-height:  ~`convertPxToCm('12px')` !important;
+									display: inline-block !important;
+									width: ~`convertPxToCm('120px')` !important;
+									text-align: left !important;
+								}
+								p{
+									flex: 1 !important;
+									text-align: left !important;
+									margin-top: 0 !important;
+									font-size: ~`convertPxToCm('10px')` !important;;
+									line-height:  ~`convertPxToCm('14px')` !important;
+								}
+							}
+						}
+					}
+					#certify{
+						display: none;
+					}
+					.print_img_container{
+						display: block !important;
+						padding-top: 0 ~`convertPxToCm('100px')` !important;
+						.print_img_content{
+							list-style: none!important;
+							display: flex!important;
+							flex-wrap: wrap!important;
+							align-items: flex-start!important;
+							justify-content: flex-start!important;
+							padding: 0 ~`convertPxToCm('20px')` !important;
+							.print_img_item{
+								flex: 1!important;
+								margin: ~`convertPxToCm('5px')` ~`convertPxToCm('10px')` !important;
+								img{
+									width:~`convertPxToCm('130px')` !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.qr_content{
+				margin-top:~`convertPxToCm('20px')` !important;
+				.qr_content_wrap{
+					margin-bottom: 0 !important;
+				}
 			}
 		}
 	}
@@ -362,7 +446,9 @@
 						-webkit-tap-highlight-color: rgba(255, 255, 255, 0)!important;
 					}
 				}
-				
+				.print_img_container{
+					display: none;
+				}
 				h5{
 					padding-top: 0.8rem;
 					margin: 0 0 0.4rem 0;

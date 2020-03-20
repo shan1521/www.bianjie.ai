@@ -88,6 +88,7 @@
 <style scoped lang="less">
 	@media print {
 		.applications_content_container{
+			background: #fff !important;
 			.applications_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}
@@ -95,7 +96,7 @@
 				max-width: 1400px;
 			}
 			.program_features_content{
-				max-width: 1400px;
+				padding-top: ~`convertPxToCm('60px')` !important;
 			}
 		}
 	}
