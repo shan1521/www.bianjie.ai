@@ -86,6 +86,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.applications_content_container{
 			background: #fff !important;

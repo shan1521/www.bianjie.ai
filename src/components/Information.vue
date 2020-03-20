@@ -123,6 +123,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.information_container_content{
 			.information_content_wrap{

@@ -241,6 +241,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.about_container_content{
 			background: #fff !important;
