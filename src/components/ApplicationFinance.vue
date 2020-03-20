@@ -93,6 +93,10 @@
 			}
 			.application_nav_content{
 				max-width: 1400px;
+				.applications_text_title{
+					margin-top: ~`convertPxToCm('60px')`!important;
+					margin-bottom: ~`convertPxToCm('20px')`!important;;
+				}
 			}
 			.program_features_content{
 				.program_features_title{

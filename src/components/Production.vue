@@ -41,8 +41,25 @@
 				-webkit-print-color-adjust: exact;
 			}
 	        .irisnet_content{
-		       
+		       .irisnet_content_wrap{
+				   max-width: ~`convertPxToCm("700px")`!important;
+			   }
 	        }
+			.production_content_container{
+				.production_text_content{
+					padding-bottom:~`convertPxToCm('60px')` !important;
+					.production_text_about_content{
+						.production_text_title{
+							padding-top: ~`convertPxToCm('40px')` !important;
+
+						}
+					}
+				}
+			}
+			.production_irisnet_title{
+				padding-top: ~`convertPxToCm('60px')` !important;
+
+			}
         }
     }
 	.production_container{
@@ -119,7 +136,7 @@
 				justify-content: center;
 				img{
 					max-width: 5rem;
-					width: 100%;
+					max-height: 6.82rem;
 				}
 			}
 		}
