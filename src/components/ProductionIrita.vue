@@ -102,22 +102,22 @@
 				-webkit-print-color-adjust: exact;
 				.production_header_content{
 					h5{
-						padding: 0 ~`fontSize('20px')`!important;
+						padding: 0 ~`convertPxToCm('20px')`!important;
 					}
 				}
 			}
 			.production_text_content{
-				padding-bottom: ~`fontSize('60px')`!important;;
+				padding-bottom: ~`convertPxToCm('60px')`!important;;
 				.production_list_item{
-					padding: 0 ~`fontSize('20px')`!important;
+					padding: 0 ~`convertPxToCm('20px')`!important;
 				}
 			}
 			.production_irita_core_content{
 				.production_content_wrap{
 					.production_core_list_content{
 						.production_core_list_item{
-							margin-top: ~`fontSize('20px')` !important;;
-							margin-right: ~`fontSize('61px')` !important;
+							margin-top: ~`convertPxToCm('20px')` !important;;
+							margin-right: ~`convertPxToCm('61px')` !important;
 						}
 					}
 				}

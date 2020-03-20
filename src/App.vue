@@ -111,7 +111,7 @@
                 return typeof size === 'string' ?
                     +size.replace('px', '') : size;
                 }
-	            this.fontSize = function(size){
+	            this.convertPxToCm = function(size){
 	                return convert(size) * 2.54 / 96 + 'cm'
 	            }
 	        })()`

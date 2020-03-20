@@ -92,7 +92,7 @@
 				max-width: 1400px;
 			}
 			.program_features_content{
-				padding-top: ~`fontSize('60px')` !important;
+				padding-top: ~`convertPxToCm('60px')` !important;
 			}
 		}
 	}

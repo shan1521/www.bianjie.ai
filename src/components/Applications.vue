@@ -83,7 +83,7 @@
 	}
 </script>
 
-<style scoped lang="less">
+<style  lang="less">
     @media print {
         .applications_content_container{
 	        background: #fff !important;
@@ -94,7 +94,7 @@
                 max-width: 1400px;
             }
             .program_features_content{
-	            padding-top:~`fontSize('60px')` !important;
+	            padding-top: ~`convertPxToCm('60px')` !important;
             }
         }
     }

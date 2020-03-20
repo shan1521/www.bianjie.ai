@@ -95,7 +95,7 @@
 			}
 			.program_features_content{
 				.program_features_title{
-					padding-top: ~`fontSize('60px')` !important;
+					padding-top: ~`convertPxToCm('60px')` !important;
 				}
 			}
 		}
