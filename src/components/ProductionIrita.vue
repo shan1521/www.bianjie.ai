@@ -97,6 +97,7 @@
 <style scoped lang="less">
 	@media print {
 		.production_container{
+			background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
 				.production_header_content{
@@ -123,23 +124,7 @@
 			}
 			.production_irita_img_content{
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
 		}
 	}
 	.production_container{

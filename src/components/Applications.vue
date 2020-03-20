@@ -94,8 +94,7 @@
                 max-width: 1400px;
             }
             .program_features_content{
-	            padding-top: ~`fontSize('60px')` !important;
-	           
+	            padding-top:~`fontSize('60px')` !important;
             }
         }
     }

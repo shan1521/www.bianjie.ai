@@ -39,6 +39,9 @@
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}
+	        .irisnet_content{
+		       
+	        }
         }
     }
 	.production_container{
