@@ -309,6 +309,7 @@
 	}
 </script>
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.home_container{
 			.home_container_wrap{

@@ -105,6 +105,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.partners_content_container{
 			.partners_content_wrap{

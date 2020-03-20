@@ -33,6 +33,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
     @media print {
         .production_container{
 	        background: #fff !important;
