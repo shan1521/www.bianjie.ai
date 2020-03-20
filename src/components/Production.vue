@@ -43,11 +43,14 @@
 	        .irisnet_content{
 		       .irisnet_content_wrap{
 				   max-width: ~`convertPxToCm("700px")`!important;
+			       img{
+				       max-height: ~`convertPxToCm("500px")`!important;
+			       }
 			   }
 	        }
 			.production_content_container{
 				.production_text_content{
-					padding-bottom:~`convertPxToCm('60px')` !important;
+					padding-bottom:~`convertPxToCm('150px')` !important;
 					.production_text_about_content{
 						.production_text_title{
 							padding-top: ~`convertPxToCm('40px')` !important;

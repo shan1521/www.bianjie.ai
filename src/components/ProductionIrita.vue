@@ -118,8 +118,8 @@
 			}
 			.production_irita_core_content{
 				.production_content_wrap{
-					padding-top: ~`convertPxToCm('40px')` !important;
-					padding-bottom: ~`convertPxToCm('40px')` !important;
+					padding-top: ~`convertPxToCm('80px')` !important;
+					padding-bottom: ~`convertPxToCm('120px')` !important;
 					.production_title{
 					}
 					.production_core_list_content{
@@ -137,6 +137,11 @@
 				}
 			}
 			.production_irita_img_content{
+				.production_irita_img_wrap{
+					.production_irita_img{
+						padding-top: ~`convertPxToCm('80px')`!important;
+					}
+				}
 			}
 
 		}
