@@ -80,7 +80,17 @@ module.exports = {
               use: 'css-loader?minimize',
               fallback: 'vue-style-loader'
             })
-          : ['vue-style-loader', 'css-loader']
+          : ['vue-style-loader', 'css-loader'],
+      },
+      {
+        test: /\.less/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', {
+          loader: 'less-loader',
+          options: {
+            javascriptEnabled: true
+          }
+        }],
       }
     ]
   },
