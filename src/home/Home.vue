@@ -335,8 +335,8 @@
 				}
 			}
 			.home_application_scenarios_content_wrap{
-				.home_application_scenarios_title_content{
-					max-width: 1400px;
+				.home_application_scenarios_content{
+					padding-bottom: ~`convertPxToCm('60px')` !important;
 				}
 			}
 			.home_about_bianjie_content_wrap{
@@ -435,9 +435,9 @@
 			.home_production_serve_content_wrap{
 				-webkit-print-color-adjust: exact;
 				height: auto !important;
-				padding-bottom: ~`convertPxToCm("80px")`!important;
+				padding-bottom: ~`convertPxToCm("40px")`!important;
 				.home_production_content{
-					padding-bottom: ~`convertPxToCm("44px")`!important;
+					padding-bottom: ~`convertPxToCm("24px")`!important;
 					.home_production_title{
 						padding-top: ~`convertPxToCm("43px")`!important;
 						padding-bottom: ~`convertPxToCm("17px")`!important;
@@ -478,8 +478,8 @@
 			.home_production_list_content_wrap{
 				.home_production_serve_list_content{
 					.home_production_serve_item_content{
-						margin-top: ~`convertPxToCm('64px')` !important;
-						margin-bottom: ~`convertPxToCm('50px')` !important;
+						margin-top: ~`convertPxToCm('44px')` !important;
+						margin-bottom: ~`convertPxToCm('20px')` !important;
 						box-shadow: ~`convertPxToCm('9px')` ~`convertPxToCm('21px ')` ~`convertPxToCm('15px ')` 0 rgba(0,20,53,0.06)!important;
 						.home_production_serve_item_img_content{
 							margin: ~`convertPxToCm('17px')` 0 !important;

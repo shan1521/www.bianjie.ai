@@ -108,22 +108,40 @@
 				}
 			}
 			.production_text_content{
-				padding-bottom: ~`convertPxToCm('60px')`!important;;
+				padding-bottom: ~`convertPxToCm('60px')`!important;
+				.production_text_title{
+					margin-top: ~`convertPxToCm('40px')`!important;
+				}
 				.production_list_item{
 					padding: 0 ~`convertPxToCm('20px')`!important;
 				}
 			}
 			.production_irita_core_content{
 				.production_content_wrap{
+					padding-top: ~`convertPxToCm('80px')` !important;
+					padding-bottom: ~`convertPxToCm('120px')` !important;
+					.production_title{
+					}
 					.production_core_list_content{
 						.production_core_list_item{
-							margin-top: ~`convertPxToCm('20px')` !important;;
+							margin-top: ~`convertPxToCm('20px')` !important;
 							margin-right: ~`convertPxToCm('61px')` !important;
+							.production_core_list_item_img_icon{
+								margin-bottom: ~`convertPxToCm('40px')`!important;
+							}
+							.production_core_list_item_title{
+								margin-bottom: ~`convertPxToCm('10px')`!important;
+							}
 						}
 					}
 				}
 			}
 			.production_irita_img_content{
+				.production_irita_img_wrap{
+					.production_irita_img{
+						padding-top: ~`convertPxToCm('80px')`!important;
+					}
+				}
 			}
 
 		}
