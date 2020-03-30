@@ -1,7 +1,7 @@
 <template>
 	<div class="home_copy_right_content_wrap">
 		<div class="home_copy_right_content">
-			<span>版权所有©2020上海边界智能科技有限公司</span>
+			<span>版权所有© 2016-2020 上海边界智能科技有限公司</span>
 			<a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17020986号</a>
 			<span>
 				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028" target="_blank">沪公网安备31011502009028号</a>
