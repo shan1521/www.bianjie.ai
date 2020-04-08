@@ -16,7 +16,7 @@
 		</div>
 		<p class="production_isch_title">跨链服务联盟</p>
 		<div class="isch_img_wrap">
-			<img src="../assets/home/isch.png" alt="">
+			<img  src="../assets/home/isch.png" alt="">
 		</div>
 	</div>
 </template>
@@ -28,14 +28,24 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.production_container{
+			background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}
 			.production_content_container{
 				.production_text_content{
 					max-width: 1400px;
+				}
+			}
+			.isch_img_wrap{
+				max-width: ~`convertPxToCm("700px")`!important;
+				img{
+					width: ~`convertPxToCm("700px")`!important;
+					height: ~`convertPxToCm("540px")`!important;
+
 				}
 			}
 
@@ -108,7 +118,7 @@
 			justify-content: center;
 			img{
 				max-width: 9rem;
-				width: 100%;
+				max-height:5.4rem;
 			}
 		}
 	}

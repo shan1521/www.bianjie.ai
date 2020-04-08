@@ -105,6 +105,7 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.partners_content_container{
 			.partners_content_wrap{
@@ -113,6 +114,7 @@
 			.business_partner_container{
 				max-width: 1400px;
 				.business_partner_content_wrap{
+					margin-top: ~`convertPxToCm('30px')` !important;
 					.business_partner_logo_content{
 						.business_partner_top_img_content{
 							div{
@@ -134,6 +136,7 @@
 			.industry_collaboration_container{
 				max-width: 1400px;
 				.industry_collaboration_content_wrap{
+					margin-top: ~`convertPxToCm('30px')` !important;
 					.industry_collaboration_logo_content{
 						.industry_collaboration_top_img_content{
  							div{
@@ -141,21 +144,30 @@
 								a{
 									img{
 										width:7cm !important;
+										height:~`convertPxToCm('40px')` !important;
 									}
 								}
 							}
 						}
 						.industry_collaboration_bottom_img_content{
+							margin-bottom: ~`convertPxToCm('40px')` !important;
 							div{
 								display: flex;
 								a{
 									img{
 										width:7cm !important;
+										height:~`convertPxToCm('40px')` !important;
+
 									}
 								}
 							}
 						}
 					}
+				}
+			}
+			.qr_content{
+				.qr_content_wrap{
+					margin-bottom: 0 !important;
 				}
 			}
 		}

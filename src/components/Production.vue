@@ -33,15 +33,35 @@
 </script>
 
 <style scoped lang="less">
+	@import "../style/convert";
     @media print {
         .production_container{
+	        background: #fff !important;
 			.production_header_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}
+	        .irisnet_content{
+		       .irisnet_content_wrap{
+				   max-width: ~`convertPxToCm("700px")`!important;
+			       img{
+				       max-height: ~`convertPxToCm("500px")`!important;
+			       }
+			   }
+	        }
 			.production_content_container{
 				.production_text_content{
-					max-width: 1400px;
+					padding-bottom:~`convertPxToCm('150px')` !important;
+					.production_text_about_content{
+						.production_text_title{
+							padding-top: ~`convertPxToCm('40px')` !important;
+
+						}
+					}
 				}
+			}
+			.production_irisnet_title{
+				padding-top: ~`convertPxToCm('60px')` !important;
+
 			}
         }
     }
@@ -119,7 +139,7 @@
 				justify-content: center;
 				img{
 					max-width: 5rem;
-					width: 100%;
+					max-height: 6.82rem;
 				}
 			}
 		}

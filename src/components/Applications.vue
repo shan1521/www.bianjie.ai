@@ -83,17 +83,24 @@
 	}
 </script>
 
-<style scoped lang="less">
+<style  lang="less">
+	@import "../style/convert";
     @media print {
         .applications_content_container{
+	        background: #fff !important;
 			.applications_content_wrap{
 				-webkit-print-color-adjust: exact;
 			}
             .applications_text_content{
                 max-width: 1400px;
+				.applications_text_title{
+					margin-top: ~`convertPxToCm('60px')`!important;
+					margin-bottom: ~`convertPxToCm('20px')`!important;;
+				}
             }
             .program_features_content{
-                max-width: 1400px;
+	            padding-top: ~`convertPxToCm('60px')` !important;
+				margin-bottom: 0 !important;
             }
         }
     }

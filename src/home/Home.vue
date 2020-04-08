@@ -308,12 +308,12 @@
 		}
 	}
 </script>
-
 <style scoped lang="less">
+	@import "../style/convert";
 	@media print {
 		.home_container{
 			.home_container_wrap{
-				-webkit-print-color-adjust: exact;
+				
 				.home_content_wrap{
 					max-width: 1400px;
 				}
@@ -324,24 +324,181 @@
 				}
 			}
 			.home_production_serve_content_wrap{
-				-webkit-print-color-adjust: exact;
 				.home_production_content{
 					max-width: 1400px;
 				}
 			}
 			.home_production_list_content_wrap{
+				page-break-after: always;
 				.home_production_serve_list_content{
 					max-width: 12rem;
 				}
 			}
 			.home_application_scenarios_content_wrap{
-				.home_application_scenarios_title_content{
-					max-width: 1400px;
+				.home_application_scenarios_content{
+					padding-bottom: ~`convertPxToCm('60px')` !important;
 				}
 			}
 			.home_about_bianjie_content_wrap{
 				.home_about_bianjie_content{
 					max-width: 1400px;
+				}
+			}
+			
+			//打印样式
+			.home_container_wrap{
+				height:~`convertPxToCm("307px")` !important;
+				-webkit-print-color-adjust: exact;
+				.home_content_wrap{
+					.home_content{
+						margin-bottom: 0 !important;
+						.home_content_title{
+							font-size: ~`convertPxToCm("26px")` !important;
+							font-weight: lighter !important;
+							line-height:~`convertPxToCm("36px")` !important;
+						}
+						.home_content_second_title{
+							margin-top: ~`convertPxToCm("9px")` !important;
+							font-size:~`convertPxToCm("9px")` !important;
+							line-height:~`convertPxToCm("13px")` !important;
+						}
+					}
+				}
+			}
+			.home_core_content_wrap{
+				height: ~`convertPxToCm("145px")` !important;
+				.home_core_content{
+					position: relative !important;;
+					height: ~`convertPxToCm("143px")` !important;
+					margin: 0 ~`convertPxToCm("20px")` !important;
+					top: -1.4022cm !important;
+					border-radius:~`convertPxToCm("26px")` ~`convertPxToCm("2px")` ~`convertPxToCm("26px")` ~`convertPxToCm("2px")`!important;
+					.home_core_title_content{
+						padding-top:  ~`convertPxToCm("17px")` !important;;
+						font-size:~`convertPxToCm("11px")`!important;
+						font-weight:400;
+						color:rgba(12,37,58,1);
+						line-height:~`convertPxToCm("16px")`!important;
+					}
+					.home_core_list_content{
+						.home_core_list_left_content{
+							display: flex !important;
+							.home_core_item_content{
+								flex: 1 !important;
+								height: ~`convertPxToCm("70px")`!important;
+								margin-top: ~`convertPxToCm("21px")`!important;
+								padding: 0 ~`convertPxToCm("20px")`!important;;
+								.home_core_item_img_content{
+									width: ~`convertPxToCm("29px")`!important;
+									margin-bottom: ~`convertPxToCm("12px")`!important;
+								}
+								.home_core_item_text_content{
+									text-align: center !important;
+									padding-bottom: ~`convertPxToCm("10px")`!important;
+									p{
+										font-size: 9pt !important;
+										color: rgba(12,37,58,1);
+										line-height:~`convertPxToCm("10px")`!important;
+									}
+									p:last-child{
+										margin-top: ~`convertPxToCm("10px")`!important;
+									}
+								}
+							}
+						}
+						.home_core_list_right_content{
+							.home_core_item_content{
+								height: ~`convertPxToCm("70px")`!important;
+								margin-top: ~`convertPxToCm("21px")`!important;
+								padding: 0 ~`convertPxToCm("20px")`!important;
+								.home_core_item_img_content{
+									width: ~`convertPxToCm("29px")`!important;
+									margin-bottom: ~`convertPxToCm("12px")`!important;
+								}
+								.home_core_item_text_content{
+									text-align: center !important;
+									padding-bottom: ~`convertPxToCm("10px")`!important;
+									p{
+										font-size: 9pt !important;
+										color: rgba(12,37,58,1);
+										line-height:~`convertPxToCm("10px")`!important;
+									}
+									p:last-child{
+										margin-top: ~`convertPxToCm("10px")`!important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.home_production_serve_content_wrap{
+				-webkit-print-color-adjust: exact;
+				height: auto !important;
+				padding-bottom: ~`convertPxToCm("40px")`!important;
+				.home_production_content{
+					padding-bottom: ~`convertPxToCm("24px")`!important;
+					.home_production_title{
+						padding-top: ~`convertPxToCm("43px")`!important;
+						padding-bottom: ~`convertPxToCm("17px")`!important;
+						text-align: center !important;
+						font-size: ~`convertPxToCm("11px")`!important;
+					}
+					.home_production_list_content{
+						padding: 0 ~`convertPxToCm("128px")`!important;
+						margin: 0 auto !important;
+						.home_production_item_content{
+							display: flex !important;
+							.home_production_item_img_content{
+								width: auto !important;
+								padding: 0 ~`convertPxToCm("18px")`!important;
+								img{
+									width: ~`convertPxToCm("13px")`!important;
+								}
+							}
+							.home_production_item_text_content{
+								height: ~`convertPxToCm("22px")`!important;
+								.home_production_item_text_top_title{
+									font-size: ~`convertPxToCm("7px")`!important;
+									font-weight:400;
+									color:rgba(255,255,255,1);
+									line-height:~`convertPxToCm("9px")`!important;
+								}
+								.home_production_item_text_bottom_title{
+									font-size: ~`convertPxToCm("6px")`!important;
+									font-weight:400;
+									color:rgba(255,255,255,1);
+									line-height:~`convertPxToCm("8px")`!important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.home_production_list_content_wrap{
+				.home_production_serve_list_content{
+					.home_production_serve_item_content{
+						margin-top: ~`convertPxToCm('44px')` !important;
+						margin-bottom: ~`convertPxToCm('20px')` !important;
+						box-shadow: ~`convertPxToCm('9px')` ~`convertPxToCm('21px ')` ~`convertPxToCm('15px ')` 0 rgba(0,20,53,0.06)!important;
+						.home_production_serve_item_img_content{
+							margin: ~`convertPxToCm('17px')` 0 !important;
+							img{
+								width: ~`convertPxToCm('29px')` !important;
+								height: ~`convertPxToCm('29px')` !important;
+							}
+						}
+						.home_production_serve_item_text_content{
+							.home_production_serve_item_title{
+								font-size: ~`convertPxToCm('7px')` 0 !important;
+								line-height: ~`convertPxToCm('9px')` 0 !important;
+								margin-bottom: ~`convertPxToCm('9px')`!important;
+							}
+						}
+						.home_production_footer{
+							margin-bottom: ~`convertPxToCm('20px')`!important;
+						}
+					}
 				}
 			}
 		}
@@ -445,6 +602,7 @@
 								}
 							}
 							.home_core_item_text_content{
+								text-align: center;
 								p{
 									color: #0C253A;
 									font-size: 0.14rem;
