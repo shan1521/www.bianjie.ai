@@ -46,6 +46,12 @@
 							</a>
 						</div>
 					</div>
+					<div class="business_partner_bottom_img_content">
+						<div class="dfi_content">
+							<img src="../assets/home/nanjing.png" alt="">
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
@@ -120,6 +126,7 @@
 							div{
 								img{
 									width:7cm !important;
+									height: 0.4rem;
 								}
 							}
 						}
@@ -127,6 +134,7 @@
 							div{
 								img{
 									width:7cm !important;
+									height: 0.4rem;
 								}
 							}
 						}
@@ -232,6 +240,7 @@
 							 display: flex;
 							 img{
 								 width: 3rem;
+								 height: 0.4rem;
 							 }
 						 }
 					 }
@@ -242,6 +251,7 @@
 							 display: flex;
 							 img{
 								 width: 3rem;
+								 height: 0.4rem;
 							 }
 						 }
 					 }
@@ -280,12 +290,14 @@
 						display: flex;
 						img{
 							width: 3rem;
+							height: 0.4rem;
 						}
 					}
 					.industry_collaboration_bottom_img_content{
 						margin: 0.6rem 0 1rem 0;
 						img{
 							width: 3rem;
+							height: 0.4rem;
 						}
 					}
 				}
@@ -309,6 +321,7 @@
 					margin: 0 auto;
 					img{
 						width: 100%;
+						
 					}
 				}
 			}
@@ -333,6 +346,9 @@
 							margin-top: 0;
 							div{
 								margin-bottom: 0.4rem;
+							}
+							.dfi_content{
+								min-width: 6rem;
 							}
 						}
 					}
@@ -393,6 +409,9 @@
 								img{
 									margin-bottom: 0.4rem;
 								}
+							}
+							.dfi_content{
+								min-width: auto;
 							}
 						}
 					}
@@ -476,6 +495,9 @@
 								img{
 									margin-bottom: 0.4rem;
 								}
+							}
+							.dfi_content{
+								min-width: auto;
 							}
 						}
 					}
