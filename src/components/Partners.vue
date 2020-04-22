@@ -126,6 +126,7 @@
 							div{
 								img{
 									width:7cm !important;
+									height: 0.4rem;
 								}
 							}
 						}
@@ -133,6 +134,7 @@
 							div{
 								img{
 									width:7cm !important;
+									height: 0.4rem;
 								}
 							}
 						}
@@ -238,6 +240,7 @@
 							 display: flex;
 							 img{
 								 width: 3rem;
+								 height: 0.4rem;
 							 }
 						 }
 					 }
@@ -248,6 +251,7 @@
 							 display: flex;
 							 img{
 								 width: 3rem;
+								 height: 0.4rem;
 							 }
 						 }
 					 }
@@ -286,12 +290,14 @@
 						display: flex;
 						img{
 							width: 3rem;
+							height: 0.4rem;
 						}
 					}
 					.industry_collaboration_bottom_img_content{
 						margin: 0.6rem 0 1rem 0;
 						img{
 							width: 3rem;
+							height: 0.4rem;
 						}
 					}
 				}
@@ -315,6 +321,7 @@
 					margin: 0 auto;
 					img{
 						width: 100%;
+						
 					}
 				}
 			}
