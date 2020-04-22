@@ -46,6 +46,12 @@
 							</a>
 						</div>
 					</div>
+					<div class="business_partner_bottom_img_content">
+						<div class="dfi_content">
+							<img src="../assets/home/nanjing.png" alt="">
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
@@ -334,6 +340,9 @@
 							div{
 								margin-bottom: 0.4rem;
 							}
+							.dfi_content{
+								min-width: 6rem;
+							}
 						}
 					}
 				}
@@ -393,6 +402,9 @@
 								img{
 									margin-bottom: 0.4rem;
 								}
+							}
+							.dfi_content{
+								min-width: auto;
 							}
 						}
 					}
@@ -476,6 +488,9 @@
 								img{
 									margin-bottom: 0.4rem;
 								}
+							}
+							.dfi_content{
+								min-width: auto;
 							}
 						}
 					}
