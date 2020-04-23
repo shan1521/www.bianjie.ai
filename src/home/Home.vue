@@ -65,7 +65,7 @@
 						</div>
 						<div class="home_production_item_text_content">
 							<p class="home_production_item_text_top_title">以 Cosmos SDK 为基础深入开发的<span style="font-weight: 600;"> 底层区块链技术服务</span></p>
-							<p class="home_production_item_text_bottom_title">可为企业和组织提供公有链、联盟链、私有链的研发和解决方案</p>
+							<p class="home_production_item_text_bottom_title">可为企业和组织提供联盟链、私有链的研发和解决方案</p>
 						</div>
 					</li>
 					<li class="home_production_item_content">
