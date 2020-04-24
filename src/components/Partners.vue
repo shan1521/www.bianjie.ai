@@ -47,10 +47,10 @@
 						</div>
 					</div>
 					<div class="business_partner_bottom_img_content">
-						<div class="dfi_content">
+						<div >
 							<img src="../assets/home/nanjing.png" alt="">
+							<img src="../assets/home/bianjie_irisnet_logo.png" alt="">
 						</div>
-						
 					</div>
 				</div>
 			</div>
