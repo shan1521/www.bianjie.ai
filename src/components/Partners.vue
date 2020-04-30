@@ -49,7 +49,9 @@
 					<div class="business_partner_bottom_img_content">
 						<div >
 							<img src="../assets/home/nanjing.png" alt="">
-							<img src="../assets/home/bianjie_irisnet_logo.png" alt="">
+							<a href="https://www.irisnet.org/" target="_blank">
+								<img src="../assets/home/bianjie_irisnet_logo.png" alt="">
+							</a>
 						</div>
 					</div>
 				</div>
