@@ -70,10 +70,18 @@ export const message = {
         "txt": [
             {
                 "year": '2020',
+                "day": "28",
+                "month": "Apr",
+                "title": "IRITA 未来可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁",
+                "txt": "2020 年 4 月 25 日，区块链服务网络（BSN）商用启动大会在北京举行。BSN 采用边界智能的联盟链产品 IRITA 实现和 Cosmos 生态的合作。IRITA 采用最先进的 Cosmos IBC 支持跨链：IRITA 独有的服务层 iService 更是对 IBC 进行了扩展 ——能支持异构网络进行数据和计算的跨链调用。可以展望的是，IRITA 可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁。",
+                "href": "https://mp.weixin.qq.com/s/3Rj3IpDCKEm-ZjKVwZgaWA"
+            },
+            {
+                "year": '2020',
                 "day": "06",
                 "month": "Mar",
                 "title": "边界智能宣布开源联盟链 IRITA",
-                "txt": " 3月6日，边界智能宣布正式上线并开源自研的联盟链产品——跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)。这是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架 Tendermint 和 IRIS SDK，并结合边界智能团队多年行业经验打造的联盟链产品。",
+                "txt": "3月6日，边界智能宣布正式上线并开源自研的联盟链产品——跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)。这是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架 Tendermint 和 IRIS SDK，并结合边界智能团队多年行业经验打造的联盟链产品。",
                 "href": "https://mp.weixin.qq.com/s/Zm5ew2-lhA5TeV1Wc4-C-w"
             },
             {
