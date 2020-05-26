@@ -53,6 +53,11 @@
 								<img src="../assets/home/bianjie_irisnet_logo.png" alt="">
 							</a>
 						</div>
+						<div >
+							<a href="http://www.spiderid.cn/" target="_blank">
+								<img src="../assets/home/yizhengtong.png" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
