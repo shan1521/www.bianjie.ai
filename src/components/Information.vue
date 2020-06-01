@@ -119,6 +119,21 @@
 						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[6].txt}}</div>
 					</div>
 				</div>
+				<div class="news_bg_list_item_content right_content">
+					<div class="news_bg_item_content">
+						<div class="month_bg_day_content">
+							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[7].month}}</div>
+							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[7].day}}</div>
+						</div>
+						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[7].year}}</div>
+					</div>
+					<div class="bg_news_content">
+						<a :href="$store.state.messages.dynamic.txt[7].href" target="_blank">
+							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[7].title}}</h4>
+						</a>
+						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[7].txt}}</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="qr_content">
