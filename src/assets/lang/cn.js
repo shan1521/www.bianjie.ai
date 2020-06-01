@@ -71,6 +71,14 @@ export const message = {
             {
                 "year": '2020',
                 "day": "28",
+                "month": "May",
+                "title": "边界智能与南京壹证通一同推动区块链+可信身份的企业服务丨战略合作",
+                "txt": "近日，边界智能与南京壹证通达成了战略合作。双方本着互惠互利、诚信合作、共同发展的原则，将从区块链及安全身份认证领域发挥各自的优势，在身份服务、数字证书、时间戳、底层区块链技术等方面进行合作，大力推动区块链技术结合可信身份，一起推进创新技术落地应用的实现，创造商业价值去服务实体经济。",
+                "href": "https://mp.weixin.qq.com/s/ivRTLNK20HEtwGdzz6z6HQ"
+            },
+            {
+                "year": '2020',
+                "day": "28",
                 "month": "Apr",
                 "title": "IRITA 未来可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁",
                 "txt": "2020 年 4 月 25 日，区块链服务网络（BSN）商用启动大会在北京举行。BSN 采用边界智能的联盟链产品 IRITA 实现和 Cosmos 生态的合作。IRITA 采用最先进的 Cosmos IBC 支持跨链：IRITA 独有的服务层 iService 更是对 IBC 进行了扩展 ——能支持异构网络进行数据和计算的跨链调用。可以展望的是，IRITA 可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁。",
