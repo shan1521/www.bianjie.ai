@@ -70,6 +70,30 @@ export const message = {
         "txt": [
             {
                 "year": '2020',
+                "day": "5",
+                "month": "July",
+                "title": "边界智能加入区块链服务网络发展联盟",
+                "txt": "2020 年 7 月 5 日，边界智能正式成为 BSN 发展联盟的成员单位。此次公布的是自中国移动、中国联通、中国电信、人民网、百度、银联、民生银行等相继加入以来的第三批入盟成员单位。",
+                "href": "https://mp.weixin.qq.com/s/iVPY8m1_rfFJpsD9TEwx9A"
+            },
+            {
+                "year": '2020',
+                "day": "30",
+                "month": "June",
+                "title": "BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作",
+                "txt": "IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。",
+                "href": "https://mp.weixin.qq.com/s/GLKMtUprscz4JvPpE0OsnQ"
+            },
+            {
+                "year": '2020',
+                "day": "23",
+                "month": "June",
+                "title": "边界智能荣获 2020 长三角（上海）区块链应用创新大赛奖项",
+                "txt": "2020 年 6 月 21 日，由上海市科技创业中心、杨浦区科学技术委员会、上海区块链技术协会主办的 2020 长三角（上海）区块链应用创新大赛决赛圆满落下帷幕。边界智能历经海选和复赛，成功突围进入决赛。在 100 多家参赛的企业及团队项目中，边界的参赛方案《可跨链与保护数据隐私的供应链金融区块链平台》在决赛中排名前 6，于公共服务类的应用场景中排名最为靠前。",
+                "href": "https://mp.weixin.qq.com/s/6EcAqwMWq7QSjO90s12Yyw"
+            },
+            {
+                "year": '2020',
                 "day": "28",
                 "month": "May",
                 "title": "边界智能与南京壹证通一同推动区块链+可信身份的企业服务丨战略合作",
