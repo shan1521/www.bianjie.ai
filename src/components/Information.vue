@@ -160,7 +160,7 @@
 						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[9].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[10].href" target="_blank">
+						<a :href="$store.state.messages.dynamic.txt[9].href" target="_blank">
 							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[9].title}}</h4>
 						</a>
 						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[9].txt}}</div>
@@ -177,7 +177,7 @@
 						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[10].year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[8].href" target="_blank">
+						<a :href="$store.state.messages.dynamic.txt[10].href" target="_blank">
 							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[10].title}}</h4>
 						</a>
 						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[10].txt}}</div>
