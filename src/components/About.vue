@@ -104,8 +104,29 @@
 					{
 						src:require('../assets/home/honor_13.jpg')
 					},
+					{
+						src:require('../assets/home/honor_14.jpg')
+					},
+					{
+						src:require('../assets/home/honor_15.jpg')
+					},
+					{
+						src:require('../assets/home/honor_16.jpg')
+					},
 				],
 				listArray:[
+                    {
+                        date:'2020 年 10 月',
+                        content:'荣获「2020 中国区块链技术创新典型企业」奖项'
+                    },
+                    {
+                        date:'2020 年 6 月',
+                        content:'「2020 长三角（上海）区块链应用创新大赛」获奖'
+                    },
+                    {
+                        date:'2020 年 2 月',
+                        content:'「区块链服务网络（BSN）第一次开发者大赛」获奖'
+                    },
 					{
 						date:'2019 年 12 月',
 						content:'荣获「2019中国区块链技术创新典型企业」奖项'
@@ -158,10 +179,7 @@
 						date:'2018 年 8 月',
 						content:'荣获中国健康医疗大数据产业创新大赛北京赛区 TMT 数据组一等奖'
 					},
-					{
-						date:'2018 年 7 月',
-						content:'参加「创业在上海」国际创新创业大赛暨第七届中国创新创业大赛顺利突围，获得国赛参赛资格'
-					},
+     
 				],
 				swiperOption:{
 					watchSlidesProgress: true,
