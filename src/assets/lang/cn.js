@@ -70,6 +70,55 @@ export const message = {
         "txt": [
             {
                 "year": '2020',
+                "day": "9",
+                "month": "Nov",
+                "title": "首批 BSN 跨链服务正式上线，已加入测试网供开发者体验",
+                "txt": "边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。",
+                "href": "https://mp.weixin.qq.com/s/M-AW4M1dFFHxfy7L-mbRjA"
+            },
+            {
+                "year": '2020',
+                "day": "31",
+                "month": "Oct",
+                "title": "IRITA Hub 跨链服务枢纽成功上线 BSN 平台",
+                "txt": "边界智能打造的 IRITA Hub 跨链服务枢纽加入 BSN 跨链服务枢纽（ICH）并正式上线。IRITA Hub 是边界智能自主研发的 IRITA 联盟链产品线中专注跨链服务的产品，为打造 BSN 成为「全球性区块链互联网」提供重要的技术基础。",
+                "href": "https://mp.weixin.qq.com/s/nDQvQLaGdHqjBgTZnXEEXw"
+            },
+            {
+                "year": '2020',
+                "day": "26",
+                "month": "Oct",
+                "title": "边界智能荣获「2020 中国区块链技术创新典型企业」奖项",
+                "txt": "边界智能荣登《2020 中国区块链技术创新典型企业名录》。本次榜单由赛迪（青岛）区块链研究院在「链上未来·2020 区块链产业发展峰会」中颁布。",
+                "href": "https://mp.weixin.qq.com/s/H5tMcOKhpz64_h1oF3G1xw"
+            },
+            {
+                "year": '2020',
+                "day": "30",
+                "month": "Sep",
+                "title": "边界智能获授江西移动 BSN「金牌合作伙伴」，联合创始人曹恒于大会发表主题演讲",
+                "txt": "边界智能获授江西移动 BSN「金牌合作伙伴」，联合创始人曹恒发表主题为《IRITA Hub：新基建中的跨链服务枢纽——打造 BSN 支持隐私保护的跨链服务基础设施》的演讲。",
+                "href": "https://mp.weixin.qq.com/s/88013Tp5RMP2wdJHYk9vQw"
+            },
+            {
+                "year": '2020',
+                "day": "15",
+                "month": "Sep",
+                "title": "边界智能与中诚区块链研究院达成战略合作",
+                "txt": "边界智能与中诚区块链研究院建立了战略合作关系，将聚焦区块链“产、学、研”领域，将围绕央行数字货币（CBDC），证券化通证发行（STO），大数据，以及企业区块链应用等方面展开合作。",
+                "href": "https://mp.weixin.qq.com/s/t-VkHcTWrvmr0jNaO__uuQ"
+            },
+            {
+                "year": '2020',
+                "day": "15",
+                "month": "July",
+                "title": "边界智能创始人曹恒受邀出席 2020 长三角区块链技术与产业创新大会",
+                "txt": "边界智能创始人曹恒受邀出席 2020 长三角区块链技术与产业创新大会，在大会唯一的圆桌论坛上与业界大咖们围绕《区块链产业发展机遇和挑战》展开讨论。",
+                "href": "https://mp.weixin.qq.com/s/LkQBSep6ZIroNrXwaspz7A"
+            },
+          
+            {
+                "year": '2020',
                 "day": "5",
                 "month": "July",
                 "title": "边界智能加入区块链服务网络发展联盟",
@@ -100,73 +149,6 @@ export const message = {
                 "txt": "近日，边界智能与南京壹证通达成了战略合作。双方本着互惠互利、诚信合作、共同发展的原则，将从区块链及安全身份认证领域发挥各自的优势，在身份服务、数字证书、时间戳、底层区块链技术等方面进行合作，大力推动区块链技术结合可信身份，一起推进创新技术落地应用的实现，创造商业价值去服务实体经济。",
                 "href": "https://mp.weixin.qq.com/s/ivRTLNK20HEtwGdzz6z6HQ"
             },
-            {
-                "year": '2020',
-                "day": "28",
-                "month": "Apr",
-                "title": "IRITA 未来可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁",
-                "txt": "2020 年 4 月 25 日，区块链服务网络（BSN）商用启动大会在北京举行。BSN 采用边界智能的联盟链产品 IRITA 实现和 Cosmos 生态的合作。IRITA 采用最先进的 Cosmos IBC 支持跨链：IRITA 独有的服务层 iService 更是对 IBC 进行了扩展 ——能支持异构网络进行数据和计算的跨链调用。可以展望的是，IRITA 可成为 BSN 与 Cosmos/IRISnet 生态连接的桥梁。",
-                "href": "https://mp.weixin.qq.com/s/3Rj3IpDCKEm-ZjKVwZgaWA"
-            },
-            {
-                "year": '2020',
-                "day": "06",
-                "month": "Mar",
-                "title": "边界智能宣布开源联盟链 IRITA",
-                "txt": "3月6日，边界智能宣布正式上线并开源自研的联盟链产品——跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)。这是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架 Tendermint 和 IRIS SDK，并结合边界智能团队多年行业经验打造的联盟链产品。",
-                "href": "https://mp.weixin.qq.com/s/Zm5ew2-lhA5TeV1Wc4-C-w"
-            },
-            {
-                "year": '2019',
-                "day": "27",
-                "month": "Dec",
-                "title": "边界智能荣获「2019中国区块链技术创新典型企业」奖项",
-                "txt": "2019年12月27日，在青岛举办的2019区块链技术和产业创新发展大会上，上海边界智能科技有限公司荣获「2019中国区块链技术创新典型企业」奖项。本次会议由青岛市人民政府、中国电子信息产业发展研究院主办，青岛市崂山区人民政府、青岛金家岭金融聚集区管理委员会、赛迪（青岛）区块链研究院等单位共同承办。",
-                "href": "https://mp.weixin.qq.com/s/ZLrf5lyaGsrPDI45S-vOKA"
-            },
-            {
-                "year": '2019',
-                "day": "30",
-                "month": "Sept",
-                "title": "边界智能被认定为国家高新技术企业",
-                "txt": "2019年9月30日，国家科技部全国高新技术企业认定管理工作领导小组办公室，通过上海市科学技术委员会官网发布——上海市2019年第四批国家级高新技术企业认定名单的公示通知，我公司目前已顺利通过公示，正式予以认定，由此正式迈入国家高新技术企业行列！",
-                "href": "https://mp.weixin.qq.com/s/HTw-WtA04F2C7kzgMhAvOw"
-            },
-
-
-            {
-                "year": '2019',
-                "day": "27",
-                "month": "Aug",
-                "title": "边界智能亮相重庆智博会荣获2019年中国优秀区块链解决方案",
-                "txt": "2019年8月27日，在中国国际智能产业博览会「区块链高峰论坛」上，边界智能打造的「跨链服务联盟枢纽 ISCH」，荣获2019中国优秀区块链解决方案。边界智能为星康链提供区块链技术支持的「区块链电子处方共享平台」也同时获奖。",
-                "href": "https://mp.weixin.qq.com/s/V_ES94pwvlpAULuzWQWWIw"
-            },
-            {
-                "year": '2019',
-                "day": "4",
-                "month": "Jun",
-                "title": "跨链服务项目获上海市2019年度「科技创新行动计划」科技型中小企业技术创新资金支持",
-                "txt": "近日，上海市科学技术委员会公示了上海市2019年度「科技创新行动计划」科技型中小企业技术创新资金部分拟立项项目的获批名单，边界智能申报的「基于区块链的技术的分布式服务跨链网络」项目成功入选。",
-                "href": "https://mp.weixin.qq.com/s/_LnV7BJABLg0RPZ5jFffFQ"
-            },
-            // {
-            //     "year": '2019',
-            //     "day": "18",
-            //     "month": "Apr",
-            //     "title": "边界智能参加上交会分享首个 BPoS 公链 IRISnet 的关键创新点",
-            //     "txt": "4月18日，第七届中国（上海）国际技术进出口交易会在上海世博展览馆正式开幕。边界智能应邀参加，产品总监谷新萍女士在会上分享了支持下一代分布式应用开发的区块链服务网络 IRISnet 的关键创新点。",
-            //     "href": "https://mp.weixin.qq.com/s/B_G0fENiJoyI-twbDdD5Sw"
-            // },
-            {
-                "year": '2019',
-                "day": "22",
-                "month": "Jan",
-                "title": "边界智能荣登2018中国区块链企业百强榜",
-                "txt": "1月22日下午，在清华大学举办的「第一届中国区块链产业经济发展年会」上，中国区块链生态联盟副理事长、赛迪区块链研究院院长刘权发布了「2018中国区块链企业百强榜」。边界智能商务总监严强代表公司接受了主办方颁发的荣誉证书。",
-                "href": "https://mp.weixin.qq.com/s/zGzNpofYBGVvt7i8hc0i3g"
-            },
-            
         ]
     },
     "partner": {
