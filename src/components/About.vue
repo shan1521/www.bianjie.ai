@@ -8,9 +8,11 @@
 		</div>
 		<div class="about_text_container">
 			<div class="about_text_content_wrap">
-				<p>上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet 跨链服务网络</router-link>、<router-link :to="`/products/irita`" style="color: #155fff">数字资产全生命周期管理产品 IRITA </router-link>及<router-link :to="`/products/bean`" style="color:#155fff;">分布式⼤数据分析交换网络 BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。</p>
-				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强、2019中国区块链技术创新典型企业、健康医疗⼤数据产业为核⼼的创新⼤赛CDHIC-天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。</p>
-                <p>边界智能是国家⾼新技术企业，拥有⾃主创新的知识产权。</p>
+				<!--上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet 跨链服务网络</router-link>、<router-link :to="`/products/irita`" style="color: #155fff">数字资产全生命周期管理产品 IRITA </router-link>及<router-link :to="`/products/bean`" style="color:#155fff;">分布式⼤数据分析交换网络 BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。-->
+				<!--边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强、2019中国区块链技术创新典型企业、健康医疗⼤数据产业为核⼼的创新⼤赛CDHIC-天使之星冠军等多个创新奖项。同时，边界智能也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。-->
+				<p>上海边界智能科技有限公司（Bianjie.AI）创立于 2016 年，是⼀家专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。边界智能以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统构建的<router-link  :to="`/products/irita`" style="color: #155fff">企业联盟链 IRITA</router-link> 产品系列，并与区块链服务网络（BSN）、南京数字金融产业研究院、南京壹证通、复星星康链、南京中诚区块链研究院、武汉润和德康医疗数据有限公司等合作伙伴在跨链服务、智慧金融、链上大数据分析、安全身份认证、医疗健康⼤数据等领域共同合作推进创新技术的落地应用，创造商业价值，服务实体经济。</p>
+				<p>边界智能拥有多项自主创新的知识产权，并参与了在中国科协信息科技学会联合体指导下，由中国电子学会组织编写，中国科学技术出版社出版的中国科协新一代信息技术系列丛书《区块链导论》编撰。荣获了包括中国创新创业优胜企业、中国健康医疗大数据天使之星组冠军等多个区块链创新奖项。</p>
+				<p>公司拥有雄厚的人才实力，同时也是全球著名跨链项目 <a href="https://cosmos.network/" target="_blank" rel="noopener noreferrer" style="color: #155fff">COSMOS</a> / <router-link :to="`/products/irisnet`" style="color: #155fff">IRISnet</router-link> 的技术开发者。创始团队来自于 IBM Watson 全球研究院、万向区块链、中国金融在线、火币研究院等，在区块链技术研发方面超过3年经验、企业运营中超过10年以上工作经验，对相关行业领域均有着深厚的理解。核心研发团队毕业于卡内基梅隆（CMU）、马里兰（UMCP）、清华、北大、复旦、交大、人大等全球一流学府，覆盖计算机工程、自动化、算法与软件开发等专业。</p>
 <!--				<p>边界智能曾荣获第七届中国创新创业⼤赛成⻓组 32 强，中国 CDHIC 大赛天使之星冠军、2019 中国区块链百强企业、2019 中国优秀区块链解决方案等多个创新奖项，拥有企业发明专利 2 项，软件著作权 14 个，软件产品证书 1 个，商标 5 个。</p>-->
 <!--				<p>作为全球著名跨链项目 COSMOS 和 IRISnet 的核⼼开发者，边界智能也在持续推动区块链前沿技术在商业应用场景的落地和发展，为供应链金融、数据共享、互信协作、存证授权、资产证券化等领域提供联盟链底层技术服务。</p>-->
 			</div>
@@ -112,6 +114,9 @@
 					},
 					{
 						src:require('../assets/home/honor_16.jpg')
+					},
+					{
+						src:require('../assets/home/honor_17.jpg')
 					},
 				],
 				listArray:[
@@ -250,6 +255,7 @@
 			}
 		},
 		mounted(){
+			console.log(this,"vue实例")
 			let swiper = document.getElementsByClassName('swiper-wrapper')[0];
 			if (swiper) {
 				swiper.style.alignItems = 'center';
