@@ -251,7 +251,6 @@
 			}
 		},
 		mounted(){
-			console.log(this,"vue实例")
 			let swiper = document.getElementsByClassName('swiper-wrapper')[0];
 			if (swiper) {
 				swiper.style.alignItems = 'center';
