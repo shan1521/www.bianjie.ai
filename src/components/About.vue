@@ -114,6 +114,9 @@
 					{
 						src:require('../assets/home/honor_17.jpg')
 					},
+					{
+						src:require('../assets/home/honor_18.jpg')
+					},
 				],
 				listArray:[
                     {

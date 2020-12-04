@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Home from '../home/Home'
 import Production from "../components/Production"
 import ProductionBean from "../components/ProductionBean"
-import ProductionIsch from "../components/ProductionIsch"
 import ProductionIrita from "../components/ProductionIrita"
 import Applications from "../components/Applications"
 import ApplicationFinance from "../components/ApplicationFinance"
@@ -37,11 +36,6 @@ export function createRouter() {
                 path: '/products/bean',
                 name:ProductionBean,
                 component: ProductionBean
-            },
-            {
-                path: '/products/isch',
-                name:ProductionIsch,
-                component: ProductionIsch
             },
             {
                 path: '/products/irita',
