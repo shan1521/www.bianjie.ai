@@ -14,11 +14,10 @@
 						<router-link class="header_menu_list_item_link" :to="item.href" v-if="item.href">{{item.label}}</router-link>
 						<span v-if="!item.href">{{item.label}}</span>
 						<div :class="item.isActive ? 'active_block' : ''"></div>
-						<div class="second_menu" v-if="index == 1">
-							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu" @mouseleave="hideSecondMenu()">
+						<div class="second_menu_first" v-if="index == 1">
+							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu"  @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
-								<li><router-link :to="`/products/bean`">BEAN</router-link></li>
-								<li><router-link :to="`/products/isch`">ISCH</router-link></li>
+								<li><router-link :to="`/products/bean`">BSN-IRITA HUB</router-link></li>
 								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
 						</div>
@@ -51,8 +50,7 @@
 				<li @click="showMobileProductionSecondMenu()">产品服务
 				<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
 					<li><router-link :to="`/products/irita`">IRITA</router-link></li>
-					<li><router-link :to="`/products/bean`">BEAN</router-link></li>
-					<li><router-link :to="`/products/isch`">ISCH</router-link></li>
+					<li><router-link :to="`/products/bean`">BSN-IRITA HUB</router-link></li>
 					<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 				</ul>
 				</li>
@@ -294,6 +292,7 @@
 						height: 0.02rem;
 						background: #fff;
 					}
+					
 					.second_menu{
 						position: absolute;
 						background: #fff;
@@ -339,7 +338,53 @@
 							}
 						}
 					}
-					
+					.second_menu_first{
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						background: #fff;
+						width: 100%;
+						border-radius: 0.02rem;
+						overflow: hidden;
+						min-width: 1.5rem;
+						.second_production_menu{
+							list-style: none;
+							li{
+								height: 0.36rem;
+								line-height: 0.36rem;
+								text-align: center;
+								&:hover{
+									background: #EAF2FF;
+								}
+								a{
+									font-size: 0.14rem;
+									color: #0C253A;
+									&:hover{
+										color: #0054E3;
+									}
+								}
+							}
+							
+						}
+						.second_application_menu{
+							list-style: none;
+							li{
+								height: 0.36rem;
+								line-height: 0.36rem;
+								text-align: center;
+								&:hover{
+									background: #EAF2FF;
+								}
+								a{
+									font-size: 0.14rem;
+									color: #0C253A;
+									&:hover{
+										color: #0054E3;
+									}
+								}
+							}
+						}
+					}
 				}
 				.active_color{
 					a{
