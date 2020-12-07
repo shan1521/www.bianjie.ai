@@ -14,7 +14,7 @@
 					<div class="business_partner_right_line"></div>
 				</div>
 				<div class="business_partner_logo_content">
-					<div class="business_partner_top_img_content" v-for="item in array">
+					<div class="business_partner_top_img_content" v-for="item in partnersArray">
 						<div class="business_partner_img_content_wrap"  v-if="item.left">
 							<div style="margin-bottom: 0" v-for="v in item.left">
 								<a v-if="v.href" :href="v.href" target="_blank" rel="noopener noreferrer">
@@ -91,7 +91,7 @@
 		name: "Partners",
 		data() {
 			return {
-				array:[
+				partnersArray:[
 					{
 						left:[
 							{
@@ -110,7 +110,7 @@
 							},
 							{
 								src: require('../assets/home/tendermint.png'),
-								href: ''
+								href: 'https://tendermint.com/'
 							}
 						]
 						
@@ -123,17 +123,17 @@
 							},
 							{
 								src: require('../assets/home/BSN.png'),
-								href: ''
+								href: 'https://www.bsnbase.com/p/main/index'
 							}
 						],
 						right:[
 							{
 								src:require('../assets/home/Chainlink.png'),
-								href:''
+								href:'https://chain.link/'
 							},
 							{
 								src: require('../assets/home/zc.png'),
-								href: ''
+								href: 'http://www.zcbri.com/'
 							}
 						]
 						
