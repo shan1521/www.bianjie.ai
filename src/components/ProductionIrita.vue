@@ -2,7 +2,7 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>联盟链IRITA</h2>
+				<h2>支持下一代分布式商业的联盟链产品：IRITA</h2>
 			</div>
 		</div>
 		<div class="production_text_content">
@@ -160,7 +160,6 @@
 					text-align: center;
 					font-size: 0.6rem;
 					color: #fff;
-					line-height: 0.84rem;
 					font-weight: lighter;
 				}
 				h5{

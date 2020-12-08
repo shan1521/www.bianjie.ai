@@ -4,7 +4,7 @@
 			<div class="home_content_wrap">
 				<div class="home_content">
 					<h1 class="home_content_title">技术无疆 链动未来</h1>
-					<h3 class="home_content_second_title">专注专业 自主创新 · 开放合作 科技引领</h3>
+					<h3 class="home_content_second_title">区块链和大数据技术服务专家</h3>
 				</div>
 			</div>
 		</div>
@@ -152,7 +152,7 @@
 						<div>支持动态节点管理的联盟链的开发工具包</div>
 					</div>
 					<p class="home_production_footer">
-						<router-link :to="`/products/bean`">
+						<router-link :to="`/products/iritahub`">
 							<span class="home_production_name">BEAN</span>
 							<img src="../assets/home/arrow.png" alt="">
 						</router-link>
@@ -272,7 +272,7 @@
 				<div class="home_about_bianjie_right_content">
 					<h3 class="home_about_bianjie_title_content">关于边界智能</h3>
 					<p class="home_about_bianjie_text_content">
-						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/bean`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
+						上海边界智能科技有限公司（Bianjie.AI）创⽴于 2016 年，是⼀家专注于区块链、大数据相关的产品技术研发、应用平台建设和解决方案咨询的⾼科技公司。⾃创⽴以来，边界智能以区块链跨链、隐私计算及大数据分析技术创新为核⼼，开发了<router-link :to="`/products/irisnet`" style="color: #155fff"> IRISnet </router-link>跨链服务网络、数字资产全生命周期管理产品<router-link :to="`/products/irita`" style="color: #155fff"> IRITA </router-link>及分布式⼤数据分析交换网络<router-link :to="`/products/iritahub`" style="color:#155fff;"> BEAN </router-link>等核⼼产品，实现以保护数据隐私、尊重数据拥有者权利为前提的加密智能分析服务，并与复星星康链等合作伙伴⼀起在金融及医疗健康⼤数据领域开展系列创新实践。同时也是全球著名跨链项目<a href="https://cosmos.network/" target="_blank" style="color: #155fff"> COSMOS </a>的核⼼中国开发者。
 					</p>
 					<p style="margin-top: 0.16rem" class="home_about_bianjie_text_content">边界智能是国家⾼新技术企业，拥有⾃主创新的知识产权，荣获了多个创新奖项。</p>
 					<div class="home_about_bianjie_right_button_content">

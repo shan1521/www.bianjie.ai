@@ -17,7 +17,7 @@
 						<div class="second_menu_first" v-if="index == 1">
 							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu"  @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
-								<li><router-link :to="`/products/bean`">BSN-IRITA HUB</router-link></li>
+								<li><router-link :to="`/products/iritahub`">BSN-IRITA HUB</router-link></li>
 								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
 						</div>
@@ -46,25 +46,25 @@
 		</div>
 		<div class="header_mobile_content" v-if="flShowMobileMenu">
 			<ul class="header_mobile_list_content">
-				<li><router-link :to="`/home`">首页</router-link></li>
+				<li class="header_mobile_list_button" @click="changeRouter(`/home`)"><router-link :to="`/home`">首页</router-link></li>
 				<li @click="showMobileProductionSecondMenu()">产品服务
-				<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
-					<li><router-link :to="`/products/irita`">IRITA</router-link></li>
-					<li><router-link :to="`/products/bean`">BSN-IRITA HUB</router-link></li>
-					<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
-				</ul>
+					<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
+						<li class="header_mobile_list_button" @click="changeRouter(`/products/irita`)"><router-link :to="`/products/irita`">IRITA</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/products/iritahub`)"><router-link :to="`/products/iritahub`">BSN-IRITA HUB</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/products/irisnet`)"><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
+					</ul>
 				</li>
 				<li @click="showApplicationSecondMenu()">应用场景
 					<ul v-if="flShowMobileApplicationSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
-						<li><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
-						<li><router-link :to="`/application/finance`">金融创新</router-link></li>
-						<li><router-link :to="`/application/cooperation`">行业协同</router-link></li>
-						<li><router-link :to="`/application/multi-trust`">多方互信</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/application/digital-asset`)"><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/application/finance`)"><router-link :to="`/application/finance`">金融创新</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/application/cooperation`)"><router-link :to="`/application/cooperation`">行业协同</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/application/multi-trust`)"><router-link :to="`/application/multi-trust`">多方互信</router-link></li>
 					</ul>
 				</li>
-				<li><router-link :to="`/partners`">合作伙伴</router-link></li>
-				<li><router-link :to="`/news`">动态资讯</router-link></li>
-				<li><router-link :to="`/about`">关于我们</router-link></li>
+				<li class="header_mobile_list_button" @click="changeRouter(`/partners`)"><router-link :to="`/partners`">合作伙伴</router-link></li>
+				<li class="header_mobile_list_button" @click="changeRouter(`/news`)"><router-link :to="`/news`">动态资讯</router-link></li>
+				<li class="header_mobile_list_button" @click="changeRouter(`/about`)"><router-link :to="`/about`">关于我们</router-link></li>
 			</ul>
 		</div>
 	</div>
@@ -118,7 +118,26 @@
 		},
 		watch:{
 			$route(){
+				let isActive = null
+				if(this.$route.path.indexOf('products') !== -1){
+					isActive = 1
+				}else if(this.$route.path.indexOf('application') !== -1){
+					isActive = 2
+				}else if(this.$route.path.indexOf('home') !== -1){
+					isActive = 0
+				}else if(this.$route.path.indexOf('partners') !== -1){
+					isActive = 3
+				}else if(this.$route.path.indexOf('news') !== -1){
+					isActive = 4
+				}else if(this.$route.path.indexOf('about') !== -1){
+					isActive = 5
+				}
+				this.navigationList.forEach( item => {
+					item.isActive = false
+				})
+				this.navigationList[isActive].isActive = true
 				this.flShowMobileMenu = false;
+				
 			}
 		},
 		mounted(){
@@ -137,6 +156,11 @@
             openPrint(){
                 window.print()
             },
+			changeRouter(router){
+            	if(router === this.$route.path){
+		            this.flShowMobileMenu = false
+	            }
+			},
 			showMobileMenu(){
 				this.flShowMobileMenu = !this.flShowMobileMenu;
 			},
@@ -442,6 +466,35 @@
 					list-style: none;
 					box-sizing: border-box;
 					text-align: center;
+					.header_mobile_list_button{
+						position: relative;
+						//隐藏溢出的径向渐变背景
+						overflow: hidden;
+					}
+					.header_mobile_list_button:after{
+						content: "";
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						pointer-events: none;
+						//设置径向渐变
+						background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+						background-repeat: no-repeat;
+						background-position: 50%;
+						transform: scale(10, 10);
+						opacity: 0;
+						transition: transform .3s, opacity .4s;
+						
+					}
+					.header_mobile_list_button:active:after {
+						transform: scale(0, 0);
+						opacity: .3;
+						//设置初始状态
+						transition: 0s;
+					}
 					li{
 						margin: 0.05rem 0;
 						color: #fff;
