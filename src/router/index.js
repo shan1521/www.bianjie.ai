@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../home/Home'
 import Production from "../components/Production"
-import ProductionBean from "../components/ProductionBean"
+import ProductionBsnIritaHub from "../components/ProductionBsnIritaHub"
 import ProductionIrita from "../components/ProductionIrita"
 import Applications from "../components/Applications"
 import ApplicationFinance from "../components/ApplicationFinance"
@@ -33,9 +33,9 @@ export function createRouter() {
                 component: Production
             },
             {
-                path: '/products/bean',
-                name:ProductionBean,
-                component: ProductionBean
+                path: '/products/iritahub',
+                name:ProductionBsnIritaHub,
+                component: ProductionBsnIritaHub
             },
             {
                 path: '/products/irita',

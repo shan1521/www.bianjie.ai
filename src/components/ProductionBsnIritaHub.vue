@@ -2,7 +2,8 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>平台产品：BSN-IRITA HUB</h2>
+				<h2>异构区块链跨链平台：BSN-IRITA HUB</h2>
+				<h5>国内适配异构公链及联盟链数量最多 · 跨系统可信数据交互和服务调用</h5>
 			</div>
 		</div>
 		<div class="production_content_container">
@@ -15,7 +16,7 @@
 		</div>
 		<p class="production_bean_title">系统架构</p>
 		<div class="bean_img_wrap">
-			<img src="../assets/bean/bean.png" alt="">
+			<img src="../assets/bean/irita_hub.png" alt="">
 		</div>
 	</div>
 </template>
@@ -57,7 +58,6 @@
 				h2{
 					font-size: 0.6rem;
 					color: #fff;
-					line-height: 0.84rem;
 					font-weight: lighter;
 				}
 				h5{
