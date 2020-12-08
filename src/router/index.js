@@ -11,6 +11,7 @@ import ApplicationTrust from "../components/ApplicationMultiTrust"
 import Partners from "../components/Partners"
 import News from "../components/Information"
 import About from "../components/About"
+import Download from "../components/Download"
 Vue.use(Router)
 
 export function createRouter() {
@@ -76,6 +77,11 @@ export function createRouter() {
                 path: '/about',
                 name:About,
                 component: About
+            },
+            {
+                path: '/download',
+                name:Download,
+                component: Download
             },
         ]
     })
