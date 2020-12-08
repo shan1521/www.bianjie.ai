@@ -118,19 +118,19 @@
 		},
 		watch:{
 			$route(){
-				let isActive = null
+				let isActiveIndex = null
 				if(this.$route.path.indexOf('products') !== -1){
-					isActive = 1
+					isActiveIndex = 1
 				}else if(this.$route.path.indexOf('application') !== -1){
-					isActive = 2
+					isActiveIndex = 2
 				}else if(this.$route.path.indexOf('home') !== -1){
-					isActive = 0
+					isActiveIndex = 0
 				}else if(this.$route.path.indexOf('partners') !== -1){
-					isActive = 3
+					isActiveIndex = 3
 				}else if(this.$route.path.indexOf('news') !== -1){
-					isActive = 4
+					isActiveIndex = 4
 				}else if(this.$route.path.indexOf('about') !== -1){
-					isActive = 5
+					isActiveIndex = 5
 				}
 				this.navigationList.forEach( item => {
 					item.isActive = false
