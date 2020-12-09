@@ -119,6 +119,26 @@
 		},
 		watch:{
 			$route(){
+				this.setHeaderActiveOption()
+				this.flShowMobileMenu = false;
+				
+			}
+		},
+		mounted(){
+			this.setHeaderActiveOption()
+			if(sessionStorage.getItem('routerIndex')){
+				this.changeNavigation(sessionStorage.getItem('routerIndex'), true)
+			}
+			this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+			if(this.scrollTop > 5){
+				this.flShowBoxShadow = true;
+			}else {
+				this.flShowBoxShadow = false;
+			}
+			window.addEventListener('scroll',this.handleScroll,true)
+		},
+		methods:{
+			setHeaderActiveOption(){
 				let isActiveIndex = null
 				if(this.$route.path.indexOf('products') !== -1){
 					isActiveIndex = 1
@@ -136,24 +156,8 @@
 				this.navigationList.forEach( item => {
 					item.isActive = false
 				})
-				this.navigationList[isActiveIndex].isActive = true
-				this.flShowMobileMenu = false;
-				
-			}
-		},
-		mounted(){
-			if(sessionStorage.getItem('routerIndex')){
-				this.changeNavigation(sessionStorage.getItem('routerIndex'), true)
-			}
-			this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-			if(this.scrollTop > 5){
-				this.flShowBoxShadow = true;
-			}else {
-				this.flShowBoxShadow = false;
-			}
-			window.addEventListener('scroll',this.handleScroll,true)
-		},
-		methods:{
+				isActiveIndex ? this.navigationList[isActiveIndex].isActive = true : null
+			},
             openPrint(){
                 window.print()
             },
