@@ -474,7 +474,7 @@
 					list-style: none;
 					box-sizing: border-box;
 					text-align: center;
-					.header_mobile_list_button{
+					/*.header_mobile_list_button{
 						position: relative;
 						//隐藏溢出的径向渐变背景
 						overflow: hidden;
@@ -502,7 +502,7 @@
 						opacity: .3;
 						//设置初始状态
 						transition: 0s;
-					}
+					}*/
 					li{
 						margin: 0.05rem 0;
 						color: #fff;
