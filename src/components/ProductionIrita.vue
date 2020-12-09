@@ -2,25 +2,24 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>联盟链产品-IRITA</h2>
+				<h2>支持下一代分布式商业的联盟链产品：IRITA</h2>
 				<h5>Cosmos 生态的首个企业级开源项目 · 创新支持基于 iService 的链上链下通联</h5>
 			</div>
 		</div>
 		<div class="production_text_content">
-			<div class="production_text_title">跨域行业互信联盟产品 IRITA</div>
+			<div class="production_text_title"></div>
 			<p class="production_list_item">
-				跨域行业互信联盟产品（ Inter-Realm Industry Trust Alliance，简称IRITA ）是 Cosmos 生态中第一个企业级联盟链产品，基于现代区块链技术框架<a href="https://tendermint.com/" target="_blank" style="color: #155fff;"> Tendermint </a>和<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>，并结合边界智能团队多年行业经验打造而成。</p>
-			<p class="production_list_item">IRITA 具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易支持以及大数据技术支撑的业务分析 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。</p>
-			<p class="production_list_item">IRITA 现有 Professional 和 Lite 两个版本。<a href="https://github.com/bianjieai/irita" target="_blank" style="color: #155fff;">开源的 Lite </a>可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统</p>
-		<!--	<div class="production_list_content">
-				<p class="production_list_title">IRITA 可以灵活使用在多种行业，尤其在<router-link :to="`/application/finance`" style="color: #155fff;">金融创新</router-link>行业，围绕<router-link :to="`/application/digital-asset`" style="color: #155fff;">资产数字化</router-link>后的确权和流通，具有6大核心技术优势：</p>
-				<p>1）共识底层：<a href="https://tendermint.com/" target="_blank"  style="color: #155fff;">Tendermint </a>是首个可以在互联网级别可应用的拜占庭共识协议，是Libra也沿用的共识技术</p>
-				<p>2）<a href="https://cosmos.network/" target="_blank" style="color: #155fff;">跨链 IBC </a>: 国际合作团队贡献了业内公认的、领先跨链技术标准设计与实施；支持各种异构链间可信交互</p>
-				<p>3）数据授权共享：数据在链上加密存储，保护各方数据所有权和隐私；只有用户授权，数据才会共享给第三方</p>
-				<p>4）iService：链上链下各类型系统的交互，基于<router-link :to="`/products/irisnet`" style="color:#155fff;"> IRIS SDK </router-link>将各类技术的有机结合、自然演进过渡</p>
-				<p>5）数字资产建模与交易：支持对数字资产数据多元结构的灵活建模；非常适合实现链上交易平台（DEX）；以 NFT（非同质化通证）为基础，支持供应链、知识产权、医疗、存证等各领域的数字资产化</p>
-				<p>6）大数据支持：自带存储层支持云存储和分布式存储；数据仓库和链式数据结合支持链上数据高效全生命周期查询</p>
-			</div>-->
+				IRITA 是边界智能以区块链跨链、隐私计算及大数据分析技术创新为核心，打造的支持下一代分布式商业系统的企业级联盟链产品。IRITA 具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互能力、灵活的数字资产建模与交易支持以及大数据技术支撑的业务分析 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链、车联网等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。</p>
+			<p class="production_list_item">IRITA 支持中国国密标准，并有完善的 SDK 及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求。</p>
+			
+			<p class="production_list_item">IRITA 具有模块化的架构，各个子产品具有不同的功能，可以根据不同业务场景高效打造不同行业应用：</p>
+			<p class="production_list_item_children"> • IRITA-Lite 属于开源版本；</p>
+			<p class="production_list_item_children"> • IRITA SCF 应用于供应链金融领域；</p>
+			<p class="production_list_item_children"> • IRITA HUB 跨链服务枢纽上线 BSN；</p>
+			<p class="production_list_item_children"> • IRITA BEAN 被复星集团旗下星康链使用；</p>
+			
+			<p class="production_list_item">IRITA BEAN 在 2018 年 9 月荣获中国健康医疗大数据产业创新大赛 TMT 数据组一等奖及天使之星组冠军。基于 IRITA-BEAN 的星康链及 IRITA-HUB 在 2019 年荣获由中国电子信息产业发展研究院赛迪研究院主导评选 2019 中国优秀区块链解决方案。</p>
+			
 		</div>
 		<div class="production_irita_core_content">
 			<div class="production_content_wrap">
@@ -118,7 +117,7 @@
 			}
 			.production_irita_core_content{
 				.production_content_wrap{
-					padding-top: ~`convertPxToCm('80px')` !important;
+					padding-top: ~`convertPxToCm('20px')` !important;
 					padding-bottom: ~`convertPxToCm('120px')` !important;
 					.production_title{
 					}
@@ -162,7 +161,6 @@
 					text-align: center;
 					font-size: 0.6rem;
 					color: #fff;
-					line-height: 0.84rem;
 					font-weight: lighter;
 				}
 				h5{
@@ -189,10 +187,19 @@
 				line-height: 0.28rem;
 				color: #0C253A;
 			}
+			.production_list_item_children{
+				text-indent: 0.2rem;
+				font-size: 0.14rem;
+				line-height: 0.28rem;
+				color: #0C253A;
+			}
 			.production_list_item:nth-of-type(2){
 				margin-top: 0.16rem;
 			}
 			.production_list_item:nth-of-type(3){
+				margin-top: 0.16rem;
+			}
+			.production_list_item:last-child{
 				margin-top: 0.16rem;
 			}
 			.production_list_content{

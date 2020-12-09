@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../home/Home'
 import Production from "../components/Production"
-import ProductionBean from "../components/ProductionBean"
-import ProductionIsch from "../components/ProductionIsch"
+import ProductionBsnIritaHub from "../components/ProductionBsnIritaHub"
 import ProductionIrita from "../components/ProductionIrita"
 import Applications from "../components/Applications"
 import ApplicationFinance from "../components/ApplicationFinance"
@@ -12,6 +11,7 @@ import ApplicationTrust from "../components/ApplicationMultiTrust"
 import Partners from "../components/Partners"
 import News from "../components/Information"
 import About from "../components/About"
+import Download from "../components/Download"
 Vue.use(Router)
 
 export function createRouter() {
@@ -34,14 +34,9 @@ export function createRouter() {
                 component: Production
             },
             {
-                path: '/products/bean',
-                name:ProductionBean,
-                component: ProductionBean
-            },
-            {
-                path: '/products/isch',
-                name:ProductionIsch,
-                component: ProductionIsch
+                path: '/products/iritahub',
+                name:ProductionBsnIritaHub,
+                component: ProductionBsnIritaHub
             },
             {
                 path: '/products/irita',
@@ -82,6 +77,11 @@ export function createRouter() {
                 path: '/about',
                 name:About,
                 component: About
+            },
+            {
+                path: '/download',
+                name:Download,
+                component: Download
             },
         ]
     })

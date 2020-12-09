@@ -14,50 +14,25 @@
 					<div class="business_partner_right_line"></div>
 				</div>
 				<div class="business_partner_logo_content">
-					<div class="business_partner_top_img_content">
-						<div>
-							<a href="https://www.wxblockchain.com/" target="_blank">
-								<img src="../assets/home/wx.png" alt="">
-							</a>
-							<a href="https://cosmos.network/" target="_blank">
-								<img src="../assets/home/cosmos.png" alt="">
-							</a>
+					<div class="business_partner_top_img_content" v-for="item in partnersArray">
+						<div class="business_partner_img_content_wrap"  v-if="item.left">
+							<div style="margin-bottom: 0" v-for="v in item.left">
+								<a v-if="v.href" :href="v.href" target="_blank" rel="noopener noreferrer">
+									<img :src="v.src" alt="">
+								</a>
+								<img v-else :src="v.src" alt="">
+							</div>
 						</div>
-						<div>
-							<a href="https://www.haodf.com/" target="_blank">
-								<img src="../assets/home/hdf.png" alt="">
-							</a>
-							<img src="../assets/home/nxyl.png" alt="">
+						<div v-if="item.right" >
+							<div style="margin-bottom: 0" v-for="res in item.right">
+								<a v-if="res.href" :href="res.href" target="_blank" rel="noopener noreferrer">
+									<img :src="res.src" alt="">
+								</a>
+								<img v-else :src="res.src" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="business_partner_bottom_img_content">
-						<div>
-							<a href="http://www.tonghaocapital.com/" target="_blank">
-								<img src="../assets/home/xwl.png" alt="">
-							</a>
-							<a href="http://healthcloud.link/#/home" target="_blank">
-								<img src="../assets/home/xkl.png" alt="">
-							</a>
-						</div>
-						<div>
-							<img src="../assets/home/shpdwszyglzx.png" alt="">
-							<a href="http://www.bjmu.edu.cn/" target="_blank">
-								<img src="../assets/home/Peking_University.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="business_partner_bottom_img_content">
-						<div >
-							<img src="../assets/home/nanjing.png" alt="">
-							<a href="https://www.irisnet.org/" target="_blank">
-								<img src="../assets/home/bianjie_irisnet_logo.png" alt="">
-							</a>
-						</div>
-						<div >
-							<a href="http://www.spiderid.cn/" target="_blank">
-								<img src="../assets/home/yizhengtong.png" alt="">
-							</a>
-						</div>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -80,7 +55,7 @@
 							</a>
 						</div>
 						<div>
-							<a href="https://shbta.cn/" target="_blank">
+							<a href="http://www.shbta.cn/" target="_blank">
 								<img src="../assets/home/shqkl.png" alt="">
 							</a>
 							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
@@ -113,7 +88,115 @@
 
 <script>
 	export default {
-		name: "Partners"
+		name: "Partners",
+		data() {
+			return {
+				partnersArray:[
+					{
+						left:[
+							{
+								src:require('../assets/home/wx.png'),
+								href:'https://www.wxblockchain.com/'
+							},
+							{
+								src: require('../assets/home/xwl.png'),
+								href: 'http://www.tonghaocapital.com/'
+							}
+						],
+						right:[
+							{
+								src:require('../assets/home/cosmos.png'),
+								href:'https://cosmos.network/'
+							},
+							{
+								src: require('../assets/home/tendermint.png'),
+								href: 'https://tendermint.com/'
+							}
+						]
+						
+					},
+					{
+						left:[
+							{
+								src:require('../assets/home/bianjie_irisnet_logo.png'),
+								href:'https://www.irisnet.org/'
+							},
+							{
+								src: require('../assets/home/BSN.png'),
+								href: 'https://www.bsnbase.com/p/main/index'
+							}
+						],
+						right:[
+							{
+								src:require('../assets/home/Chainlink.png'),
+								href:'https://chain.link/'
+							},
+							{
+								src: require('../assets/home/zc.png'),
+								href: 'http://www.zcbri.com/'
+							}
+						]
+						
+					},
+					{
+						left:[
+							{
+								src:require('../assets/home/nanjing.png'),
+								href:''
+							},
+							{
+								src: require('../assets/home/yizhengtong.png'),
+								href: 'http://www.spiderid.cn/'
+							}
+						],
+						right:[
+							{
+								src:require('../assets/home/Peking_University.png'),
+								href:'http://www.bjmu.edu.cn/'
+							},
+							{
+								src: require('../assets/home/starry_media.png'),
+								href: 'http://www.starrymedia.com/'
+							}
+						]
+						
+					},
+					{
+						left:[
+							{
+								src:require('../assets/home/xkl.png'),
+								href:''
+							},
+							{
+								src: require('../assets/home/rd.png'),
+								href: ''
+							}
+						],
+						right:[
+							{
+								src:require('../assets/home/hdf.png'),
+								href:'https://www.haodf.com/'
+							},
+							{
+								src: require('../assets/home/nxyl.png'),
+								href: ''
+							}
+						]
+						
+					},
+					{
+						left:[
+							{
+								src:require('../assets/home/shpdwszyglzx.png'),
+								href:''
+							},
+							
+						],
+					},
+				],
+			}
+		},
+		
 	}
 </script>
 
@@ -240,6 +323,7 @@
 					 }
 				 }
 				 .business_partner_logo_content{
+					 margin-top: 0.6rem;
 					 .business_partner_top_img_content{
 						 margin-top: 0.6rem;
 						 display: flex;
@@ -344,6 +428,8 @@
 						align-items: center;
 						.business_partner_top_img_content{
 							flex-direction: column;
+							margin-top: 0;
+							width: 6rem;
 							div{
 								margin-bottom: 0.4rem;
 							}
@@ -397,6 +483,8 @@
 					.business_partner_logo_content{
 						.business_partner_top_img_content{
 							flex-direction: column;
+							margin-top: 0;
+							width: auto;
 							div{
 								display: flex;
 								flex-direction: column;
@@ -483,6 +571,8 @@
 					.business_partner_logo_content{
 						.business_partner_top_img_content{
 							flex-direction: column;
+							margin-top: 0;
+							width: auto;
 							div{
 								display: flex;
 								flex-direction: column;

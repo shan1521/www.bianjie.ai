@@ -2,21 +2,21 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>联盟链产品-BEAN</h2>
-				<h5>融合区块链技术和AI边缘计算 · 共同发现和释放行业数据价值</h5>
+				<h2>异构区块链跨链平台：BSN-IRITA HUB</h2>
+				<h5>国内适配异构公链及联盟链数量最多 · 跨系统可信数据交互和服务调用</h5>
 			</div>
 		</div>
 		<div class="production_content_container">
 			<div class="production_text_content">
-				<div class="production_text_title">区块链智能信息边缘分析网络 BEAN</div>
-				<p class="production_list_item">区块链智能信息边缘分析网络 ( Blockchain Edge Analytics Network，简称BEAN)，是基于<router-link :to="`/products/irisnet`" style="color: #015FFF"> IRISnet 区块链技术</router-link>的分布式智能信息分析和数据交换网络，利用传统分布式人工智能研究中的模型并行性和 SOA 设计模式，将区块链技术应用到分布式分析服务。提供保护数据隐私、尊重数据拥有者权利的加密分布式智能分析及数据交换服务，通过 AI 和区块链技术释放数据价值，支持数据可信分析和交换。</p>
-				<p class="production_list_item">BEAN 的基础网络可配置出支持<router-link :to="`/application/cooperation`" style="color:#015FFF">医疗健康</router-link>数据分析和交换、<router-link :to="`/application/finance`" style="color: #015fff">金融创新</router-link>等各自场景的联盟应用链，可提供链上使用授权、基于语义技术智能抽取、数据使用非侵入式审计等功能。这些技术会让链上分布式业务协作时的数据搜索、交换及使用变成可能，也可用于<router-link :to="`/application/multi-trust`" style="color: #015fff">存证授权</router-link>、<router-link :to="`/application/digital-asset`" style="color: #015fff">数字资产化</router-link>等场景的区块链技术支持。</p>
-				<p class="production_list_item">BEAN 还可以通过<router-link :to="`/products/isch`" style="color:#015FFF">跨链服务联盟枢纽 ISCH </router-link>和其他区块链网络交互，实现传统商业系统与分布式商业系统的链上链下通联。</p>
+				<div class="production_text_title"></div>
+				<p class="production_list_item">IRITA HUB 是 IRITA 联盟链产品线中专注跨链服务的产品，IRITA HUB 既可以支持 Hyperledger Fabric、FISCO BCOS、梧桐链等联盟链之间的跨链交互，还可以支持联盟链与以太坊、<router-link :to="`/products/irisnet`" style="color: #155fff">IRISnet</router-link> 等公有链的跨链交互，以及访问 Chainlink 预言机等链外可信数据，为实现跨链可信数据交互和跨链协作提供重要的技术基础。</p>
+				<p class="production_list_item">IRITA 的跨链机制采用了业界最具创新性的 IBC + iService，其核心的 iService 模块能高效支持包括异构系统跨链、链和大数据存储层等在内的链上/链下/跨链应用层交互。 边界智能相关跨链技术已经开源及拥有自主的创新专利，并受到全球业界广泛认可。</p>
+				<p class="production_list_item">IRITA HUB 已经部署在 BSN 国内版和国际版，以及一些国内金融监管链环境中，实现传统金融系统、分布式金融区块链应用、以及其他复杂商业系统间的可信互操作和数据共享，形成未来金融创新服务的业务交互和价值交换枢纽，助力实体经济与数字经济全面融合。</p>
 			</div>
 		</div>
 		<p class="production_bean_title">系统架构</p>
 		<div class="bean_img_wrap">
-			<img src="../assets/bean/bean.png" alt="">
+			<img src="../assets/bean/irita_hub.png" alt="">
 		</div>
 	</div>
 </template>
@@ -58,7 +58,6 @@
 				h2{
 					font-size: 0.6rem;
 					color: #fff;
-					line-height: 0.84rem;
 					font-weight: lighter;
 				}
 				h5{

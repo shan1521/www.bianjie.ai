@@ -91,6 +91,7 @@
         height:100%;
         overflow: hidden;
         overflow-y: auto;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
     #app{
         width: 100%;
