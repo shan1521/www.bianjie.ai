@@ -474,7 +474,7 @@
 					list-style: none;
 					box-sizing: border-box;
 					text-align: center;
-					/*.header_mobile_list_button{
+					/*  .header_mobile_list_button{
 						position: relative;
 						//隐藏溢出的径向渐变背景
 						overflow: hidden;
