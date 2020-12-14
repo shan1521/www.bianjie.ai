@@ -75,7 +75,8 @@
             }*!/
         }*/
     }
-</script>
+</script >
+<style lang="less">
     html{
         font-size:625%;
         width:100%;
