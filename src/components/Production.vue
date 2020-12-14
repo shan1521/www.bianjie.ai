@@ -2,7 +2,7 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>底层技术服务：IRISnet</h2>
+				<h2>底层技术服务-IRISnet</h2>
 				<h5>支撑联盟链快速落地的先进技术 · 建立企业级联盟融合的发展基石</h5>
 			</div>
 		</div>

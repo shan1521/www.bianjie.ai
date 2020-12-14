@@ -2,7 +2,7 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>支持下一代分布式商业的联盟链产品：IRITA</h2>
+				<h2>支持下一代分布式商业的联盟链产品-IRITA</h2>
 				<h5>Cosmos 生态的首个企业级开源项目 · 创新支持基于 iService 的链上链下通联</h5>
 			</div>
 		</div>
