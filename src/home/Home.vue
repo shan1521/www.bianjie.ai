@@ -441,7 +441,7 @@
 								}
 							}
 							.home_production_item_text_content{
-								height: ~`convertPxToCm("22px")`!important;
+								height: ~`convertPxToCm("40px")`!important;
 								.home_production_item_text_top_title{
 									font-size: ~`convertPxToCm("7px")`!important;
 									font-weight:400;
@@ -452,7 +452,7 @@
 									font-size: ~`convertPxToCm("6px")`!important;
 									font-weight:400;
 									color:rgba(255,255,255,1);
-									line-height:~`convertPxToCm("8px")`!important;
+									line-height:~`convertPxToCm("14px")`!important;
 								}
 							}
 						}
@@ -566,12 +566,12 @@
 									color: #0C253A;
 									font-size: 0.15rem;
 									line-height: 0.24rem;
-									font-weight: 300;
+									/*font-weight: 300;*/
 								}
 								p:last-child{
 									margin-top: 0.1rem;
 									text-align: left;
-									font-weight: 300;
+									/*font-weight: 300;*/
 									font-size: 0.13rem;
 									line-height: 0.24rem;
 									color: rgba(138, 153, 165, 1);
