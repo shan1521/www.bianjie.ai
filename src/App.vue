@@ -76,25 +76,13 @@
         }*/
     }
 </script>
-<style lang="less">
-    @font-face {
-        font-family: "SourceHanSansCN-Medium";
-        src: url("assets/font/SourceHanSansCN-Medium.otf"),
-        url("assets/font/SourceHanSansCN-Medium.ttf"),
-        url("assets/font/SourceHanSansCN-Medium.woff")
-        url("assets/font/SourceHanSansCN-Medium.eot");
-
-        font-style: normal;
-        font-weight: normal;
-    }
-    
     html{
         font-size:625%;
         width:100%;
         height:100%;
     }
     *{
-        font-family: SourceHanSansCN-Medium;
+        font-family: "PingFang SC Regular",'Microsoft YaHei','微软雅黑';
     }
     body{
         font-size:16px;
