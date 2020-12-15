@@ -379,10 +379,10 @@
 				}
 			}
 			.home_core_content_wrap{
-				height: ~`convertPxToCm("200px")` !important;
+				height: ~`convertPxToCm("250px")` !important;
 				.home_core_content{
 					position: relative !important;;
-					min-height: ~`convertPxToCm("200px")` !important;
+					min-height: ~`convertPxToCm("140px")` !important;
 					margin: 0 ~`convertPxToCm("20px")` !important;
 					top: -1.4022cm !important;
 					border-radius:~`convertPxToCm("26px")` ~`convertPxToCm("2px")` ~`convertPxToCm("26px")` ~`convertPxToCm("2px")`!important;
