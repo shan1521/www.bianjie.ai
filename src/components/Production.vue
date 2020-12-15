@@ -186,6 +186,9 @@
 			.irisnet_content{
 				.irisnet_content_wrap{
 					padding: 0 0.2rem 0.5rem 0.2rem;
+					img{
+						width: 100%;
+					}
 				}
 			}
 			.production_header_content_wrap{
