@@ -288,8 +288,7 @@
 					<p style="margin-top: 0.16rem" class="home_about_bianjie_text_content">公司拥有雄厚的人才实力，同时也是全球著名跨链项目 COSMOS / IRISnet 的技术开发者。创始团队来自于 IBM Watson 全球研究院、万向区块链、中国金融在线、火币研究院等，在区块链技术研发方面超过 3 年经验、企业运营中超过 10 年以上工作经验，对相关行业领域均有着深厚的理解。核心研发团队毕业于卡内基梅隆（CMU）、马里兰（UMCP）、清华、北大、复旦、交大、人大等全球一流学府，覆盖计算机工程、自动化、算法与软件开发等专业。</p>
 					<div class="home_about_bianjie_right_button_content">
 						<div class="home_about_bianjie_cooperation_button" @click="showMail()">
-							<span v-show="!flShowMail">联系合作</span><span v-show="flShowMail">contact@bianjie.ai</span>
-							<img src="../assets/home/arrow_white.png" alt="">
+							<span>联系合作：contact@bianjie.ai</span>
 						</div>
 						<div class="home_about_bianjie_read_more_button" v-show="false">
 							<span>了解更多</span>
@@ -550,7 +549,7 @@
 					}
 					.home_content_second_title{
 						text-align: center;
-						font-weight: 300;
+						letter-spacing:0.02rem;
 					}
 				}
 			}
@@ -839,7 +838,7 @@
 					.home_application_scenarios_left_top_content{
 						flex: 1;
 						text-align: right;
-						max-width: 2.85rem;
+						max-width: 3.5rem;
 						.home_application_scenarios_title{
 							font-size: 0.16rem;
 							color: #0C253A;
@@ -872,7 +871,7 @@
 					.home_application_scenarios_left_bottom_content{
 						flex: 1;
 						text-align: right;
-						max-width: 2.85rem;
+						max-width: 3.5rem;
 						margin-top: 0.29rem;
 						.home_application_scenarios_title{
 							font-size: 0.16rem;
@@ -961,7 +960,7 @@
 						display: inline-block;
 						flex: 1;
 						.home_application_scenarios_right_top_content{
-							max-width: 2.85rem;
+							max-width: 3.5rem;
 							flex: 1;
 							.home_application_scenarios_title{
 								font-size: 0.16rem;
@@ -992,8 +991,9 @@
 							}
 						}
 						.home_application_scenarios_right_bottom_content{
-							max-width: 2.85rem;
+							max-width: 3.5rem;
 							flex: 1;
+							margin-top: 0.29rem;
 							.home_application_scenarios_title{
 								font-size: 0.16rem;
 								color: #0C253A;
@@ -1067,7 +1067,7 @@
 						padding-bottom: 1rem;
 						.home_about_bianjie_cooperation_button{
 							background: #0054E3;
-							padding: 0.1rem 0;
+							padding: 0.1rem;
 							border-radius: 0.02rem;
 							position: relative;
 							cursor: pointer;
@@ -1077,17 +1077,11 @@
 								bottom: 0.5rem;
 								padding: 0.1rem;
 								border-radius: 0.04rem;
-
-								span{
-									padding: 0.1rem;
-								}
 							}
 							span{
-								padding-left: 0.1rem;
 								color: #fff;
 								font-size: 0.14rem;
 								line-height: 0.2rem;
-								padding-right: 0.2rem;
 							}
 							img{
 								width: 0.07rem;
