@@ -389,7 +389,7 @@
 					font-size: 0.6rem;
 					line-height: 0.84rem;
 					color: #fff;
-					font-weight: lighter;
+					;
 				}
 			}
 		}

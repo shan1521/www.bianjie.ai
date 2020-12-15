@@ -284,14 +284,12 @@
 				h2{
 					font-size: 0.6rem;
 					line-height: 0.84rem;
-					font-weight: lighter;
 					color: #fff;
 				}
 				h5{
 					margin-top: 0.2rem;
 					font-size: 0.22rem;
 					line-height: 0.3rem;
-					font-weight: lighter;
 					color: #fff;
 				}
 			}

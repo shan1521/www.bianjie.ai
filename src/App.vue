@@ -18,6 +18,11 @@
               $('body,html').scrollTop(0)
           }
         },
+        mounted(){
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault()
+            })
+        },
         data(){
             return {
                 key: new Date().getTime()
