@@ -75,19 +75,15 @@
             }*!/
         }*/
     }
-</script>
+</script >
 <style lang="less">
-    @font-face {
-        font-family: sourceHanSans;
-        src: url("assets/font/SourceHanSansCN-Regular.otf");
-    }
     html{
         font-size:625%;
         width:100%;
         height:100%;
     }
     *{
-        font-family: sourceHanSans;
+        font-family: "PingFang SC Regular",'Microsoft YaHei','微软雅黑';
     }
     body{
         font-size:16px;

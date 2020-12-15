@@ -100,7 +100,7 @@
 							},
 							{
 								src: require('../assets/home/xwl.png'),
-								href: 'http://www.tonghaocapital.com/'
+								href: ''
 							}
 						],
 						right:[
