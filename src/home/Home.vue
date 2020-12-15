@@ -992,7 +992,6 @@
 							}
 						}
 						.home_application_scenarios_right_bottom_content{
-							margin-top: 0.22rem;
 							max-width: 2.85rem;
 							flex: 1;
 							.home_application_scenarios_title{
