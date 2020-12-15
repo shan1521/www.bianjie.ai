@@ -161,13 +161,11 @@
 					text-align: center;
 					font-size: 0.6rem;
 					color: #fff;
-					font-weight: lighter;
 				}
 				h5{
 					font-size: 0.22rem;
 					color: #fff;
 					line-height: 0.3rem;
-					font-weight: lighter;
 					margin-top: 0.2rem;
 				}
 			}
