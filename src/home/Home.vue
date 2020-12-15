@@ -1246,6 +1246,18 @@
 	}
 	@media screen and (max-width:375px){
 		.home_container{
+			.home_core_content_wrap{
+				.home_core_content{
+					.home_core_list_content{
+						.home_core_list_left_content{
+							margin: 0 ;
+							.home_core_item_content{
+								margin-bottom: 0.3rem;
+							}
+						}
+					}
+				}
+			}
 			.home_container_wrap{
 				height:4.6rem;
 				.home_content_wrap{
