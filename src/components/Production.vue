@@ -2,7 +2,7 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>底层技术服务：IRISnet</h2>
+				<h2>底层技术服务-IRISnet</h2>
 				<h5>支撑联盟链快速落地的先进技术 · 建立企业级联盟融合的发展基石</h5>
 			</div>
 		</div>
@@ -80,13 +80,13 @@
 				h2{
 					font-size: 0.6rem;
 					color: #fff;
-					font-weight: lighter;
+					;
 				}
 				h5{
 					font-size: 0.22rem;
 					color: #fff;
 					line-height: 0.3rem;
-					font-weight: lighter;
+					;
 					margin-top: 0.2rem;
 				}
 			}
@@ -186,6 +186,9 @@
 			.irisnet_content{
 				.irisnet_content_wrap{
 					padding: 0 0.2rem 0.5rem 0.2rem;
+					img{
+						width: 100%;
+					}
 				}
 			}
 			.production_header_content_wrap{

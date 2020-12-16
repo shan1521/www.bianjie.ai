@@ -120,10 +120,8 @@
 					font-size: 0.6rem;
 					line-height: 0.8rem;
 					color: #fff;
-					font-weight: lighter;
 				}
 				h5{
-					font-weight: lighter;
 					font-size: 0.22rem;
 					line-height: 0.3rem;
 					color: #fff;

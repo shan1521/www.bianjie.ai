@@ -2,7 +2,7 @@
 	<div class="production_container">
 		<div class="production_header_content_wrap">
 			<div class="production_header_content">
-				<h2>异构区块链跨链平台：BSN-IRITA HUB</h2>
+				<h2>异构区块链跨链平台-BSN-IRITA HUB</h2>
 				<h5>国内适配异构公链及联盟链数量最多 · 跨系统可信数据交互和服务调用</h5>
 			</div>
 		</div>
@@ -58,13 +58,13 @@
 				h2{
 					font-size: 0.6rem;
 					color: #fff;
-					font-weight: lighter;
+					;
 				}
 				h5{
 					font-size: 0.22rem;
 					color: #fff;
 					line-height: 0.3rem;
-					font-weight: lighter;
+					;
 					margin-top: 0.2rem;
 				}
 			}
