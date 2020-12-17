@@ -1070,7 +1070,6 @@
 							padding: 0.1rem;
 							border-radius: 0.02rem;
 							position: relative;
-							cursor: pointer;
 							.show_mail_content{
 								background: #000;
 								position: absolute;
