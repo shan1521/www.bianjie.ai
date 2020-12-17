@@ -100,9 +100,10 @@ module.exports = {
   },
   plugins: isProd
     ? [
-        new webpack.optimize.UglifyJsPlugin({
+        
+        /*new webpack.optimize.UglifyJsPlugin({
           compress: { warnings: false }
-        }),
+        }),*/
         new ExtractTextPlugin({
           filename: 'common.[chunkhash].css'
         })
