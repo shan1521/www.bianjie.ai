@@ -9,7 +9,13 @@ export function createStore () {
   return new Vuex.Store({
     state: {
       musicList:[],
-      lang:'CN'
+      lang:'CN',
+      flShowHeaderAndFooter:true
+    },
+    mutations:{
+      flShowHeaderAndFooter(state,data){
+        state.flShowHeaderAndFooter = data
+      }
     }
   })
 }
