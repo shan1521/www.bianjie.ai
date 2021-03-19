@@ -17,7 +17,7 @@
 						<div class="second_menu_first" v-if="index == 1">
 							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu"  @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
-								<li><router-link :to="`/products/iritahub`">BSN-IRITA HUB</router-link></li>
+								<li><router-link :to="`/products/iritahub`">IRITA HUB</router-link></li>
 								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
 						</div>
@@ -51,7 +51,7 @@
 				<li @click="showMobileProductionSecondMenu()">产品服务
 					<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
 						<li class="header_mobile_list_button" @click="changeRouter(`/products/irita`)"><router-link :to="`/products/irita`">IRITA</router-link></li>
-						<li class="header_mobile_list_button" @click="changeRouter(`/products/iritahub`)"><router-link :to="`/products/iritahub`">BSN-IRITA HUB</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/products/iritahub`)"><router-link :to="`/products/iritahub`">IRITA HUB</router-link></li>
 						<li class="header_mobile_list_button" @click="changeRouter(`/products/irisnet`)"><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 					</ul>
 				</li>
