@@ -174,24 +174,11 @@
 						],
 						right:[
 							{
-								src:require('../assets/home/hdf.png'),
-								href:'https://www.haodf.com/'
-							},
-							{
-								src: require('../assets/home/nxyl.png'),
-								href: ''
-							}
-						]
-						
-					},
-					{
-						left:[
-							{
 								src:require('../assets/home/shpdwszyglzx.png'),
 								href:''
-							},
+							}
 							
-						],
+						]
 					},
 				],
 			}
