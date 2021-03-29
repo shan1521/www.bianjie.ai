@@ -47,29 +47,36 @@
 				<div class="industry_collaboration_logo_content">
 					<div class="industry_collaboration_top_img_content">
 						<div>
+							<a href="http://www.ca-sme.org" target="_blank">
+								<img src="../assets/home/CASME.png" alt="">
+							</a>
 							<a href="http://www.trustedblockchain.cn/" target="_blank">
 								<img src="../assets/home/kxqkl.png" alt="">
 							</a>
+						</div>
+						<div>
 							<a href="http://www.softline.org.cn/" target="_blank">
 								<img src="../assets/home/shrjglxh.png" alt="">
 							</a>
-						</div>
-						<div>
 							<a href="http://www.shbta.cn/" target="_blank">
 								<img src="../assets/home/shqkl.png" alt="">
-							</a>
-							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
-								<img src="../assets/home/zgdzxh.png" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="industry_collaboration_bottom_img_content">
-						<a href="https://www.ccidgroup.com/" target="_blank">
-							<img src="../assets/home/sd.png" alt="">
-						</a>
-						<a href="http://www.blockdata.club/" target="_blank">
-							<img src="../assets/home/lt.png" alt="">
-						</a>
+						<div>
+							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
+								<img src="../assets/home/zgdzxh.png" alt="">
+							</a>
+							<a href="https://www.ccidgroup.com/" target="_blank">
+								<img src="../assets/home/sd.png" alt="">
+							</a>
+						</div>
+						<div class="last_content">
+							<a href="http://www.blockdata.club/" target="_blank">
+								<img src="../assets/home/lt.png" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -371,6 +378,7 @@
 					}
 					.industry_collaboration_bottom_img_content{
 						margin: 0.6rem 0 1rem 0;
+						display: flex;
 						img{
 							width: 3rem;
 							height: 0.4rem;
@@ -445,9 +453,19 @@
 							}
 						}
 						.industry_collaboration_bottom_img_content{
-							margin-top: 0;
 							display: flex;
-							justify-content: center;
+							flex-direction: column;
+							align-items: center;
+							margin-top: 0;
+							div{
+								display: flex;
+								margin-bottom: 0.4rem;
+							}
+							.last_content{
+								width: 6rem;
+								display: flex;
+								justify-content: flex-start;
+							}
 						}
 					}
 				}
@@ -518,10 +536,19 @@
 							flex-direction: column;
 							align-items: center;
 							margin-bottom: 0;
-							a{
-								img{
-									margin-bottom: 0.4rem;
+							div	{
+								display: flex;
+								flex-direction: column;
+								margin-bottom: 0;
+								a{
+									img{
+										margin-bottom: 0.4rem;
+									}
 								}
+							}
+							.last_content{
+								width: 3rem;
+								display: flex;
 							}
 						}
 					}
