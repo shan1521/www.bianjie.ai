@@ -7,182 +7,24 @@
 			</div>
 		</div>
 		<div class="news_content">
-			<div class="news_wrap">
-				<div class="news_list_item_content">
-					<div class="news_item_content">
-						<div class="month_day_content">
-							<div class="date_day_content">{{$store.state.messages.dynamic.txt[0].month}}</div>
-							<div class="date_month_content">{{$store.state.messages.dynamic.txt[0].day}}</div>
-						</div>
-						<div class="year_content">{{$store.state.messages.dynamic.txt[0].year}}</div>
-					</div>
-					<div class="news_content">
-						<a :href="$store.state.messages.dynamic.txt[0].href" target="_blank">
-							<h4 class="news_title">{{$store.state.messages.dynamic.txt[0].title}}</h4>
-						</a>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[0].txt}}</div>
-					</div>
-				</div>
-				<div class="news_list_item_content right_content">
-					<div class="news_item_content">
-						<div class="month_day_content">
-							<div class="date_day_content">{{$store.state.messages.dynamic.txt[1].month}}</div>
-							<div class="date_month_content">{{$store.state.messages.dynamic.txt[1].day}}</div>
-						</div>
-						<div class="year_content">{{$store.state.messages.dynamic.txt[1].year}}</div>
-					</div>
-					<div class="news_content">
-						<a :href="$store.state.messages.dynamic.txt[1].href" target="_blank">
-							<h4 class="news_title">{{$store.state.messages.dynamic.txt[1].title}}</h4>
-						</a>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[1].txt}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="news_wrap">
-				<div class="news_list_item_content">
-					<div class="news_item_content">
-						<div class="month_day_content">
-							<div class="date_day_content">{{$store.state.messages.dynamic.txt[2].month}}</div>
-							<div class="date_month_content">{{$store.state.messages.dynamic.txt[2].day}}</div>
-						</div>
-						<div class="year_content">{{$store.state.messages.dynamic.txt[2].year}}</div>
-					</div>
-					<div class="news_content">
-						<a :href="$store.state.messages.dynamic.txt[2].href" target="_blank">
-							<h4 class="news_title">{{$store.state.messages.dynamic.txt[2].title}}</h4>
-						</a>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[2].txt}}</div>
-					</div>
-				</div>
-				<div class="news_list_item_content right_content">
-					<div class="news_item_content">
-						<div class="month_day_content">
-							<div class="date_day_content">{{$store.state.messages.dynamic.txt[3].month}}</div>
-							<div class="date_month_content">{{$store.state.messages.dynamic.txt[3].day}}</div>
-						</div>
-						<div class="year_content">{{$store.state.messages.dynamic.txt[3].year}}</div>
-					</div>
-					<div class="news_content">
-						<a :href="$store.state.messages.dynamic.txt[3].href" target="_blank">
-							<h4 class="news_title">{{$store.state.messages.dynamic.txt[3].title}}</h4>
-						</a>
-						<div class="news_content_text">{{$store.state.messages.dynamic.txt[3].txt}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="news_bg_wrap">
-				<div class="news_bg_list_item_content">
+			<div class="news_bg_wrap" v-for="(item,index) in $store.state.messages.dynamic.txt" :key="index">
+				<div class="news_bg_list_item_content"
+				     v-for="(value,index) in item"
+				     :key="index">
 					<div class="news_bg_item_content">
 						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[4].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[4].day}}</div>
+							<div class="date_bg_day_content">{{value.month}}</div>
+							<div class="date_bg_month_content">{{value.day}}</div>
 						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[4].year}}</div>
+						<div class="year_bg_content">{{value.year}}</div>
 					</div>
 					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[4].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[4].title}}</h4>
+						<a :href="value.href" target="_blank">
+							<h4 class="news_bg_title">{{value.title}}</h4>
 						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[4].txt}}</div>
+						<div class="news_bg_content_text">{{value.txt}}</div>
 					</div>
 				</div>
-				<div class="news_bg_list_item_content right_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[5].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[5].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[5].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[5].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[5].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[5].txt}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="news_bg_wrap">
-				<div class="news_bg_list_item_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[6].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[6].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[6].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[6].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[6].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[6].txt}}</div>
-					</div>
-				</div>
-				<div class="news_bg_list_item_content right_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[7].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[7].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[7].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[7].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[7].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[7].txt}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="news_bg_wrap">
-				<div class="news_bg_list_item_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[8].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[8].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[8].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[8].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[8].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[8].txt}}</div>
-					</div>
-				</div>
-				<div class="news_bg_list_item_content right_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[9].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[9].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[9].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[9].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[9].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[9].txt}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="news_bg_wrap">
-				<!--<div class="news_bg_list_item_content">
-					<div class="news_bg_item_content">
-						<div class="month_bg_day_content">
-							<div class="date_bg_day_content">{{$store.state.messages.dynamic.txt[10].month}}</div>
-							<div class="date_bg_month_content">{{$store.state.messages.dynamic.txt[10].day}}</div>
-						</div>
-						<div class="year_bg_content">{{$store.state.messages.dynamic.txt[10].year}}</div>
-					</div>
-					<div class="bg_news_content">
-						<a :href="$store.state.messages.dynamic.txt[10].href" target="_blank">
-							<h4 class="news_bg_title">{{$store.state.messages.dynamic.txt[10].title}}</h4>
-						</a>
-						<div class="news_bg_content_text">{{$store.state.messages.dynamic.txt[10].txt}}</div>
-					</div>
-				</div>-->
 			</div>
 		</div>
 		<div class="qr_content">
@@ -467,10 +309,13 @@
 			.news_bg_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
-				display: flex;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 0.5rem;
+				box-sizing: border-box;
+				padding: 0 0.5rem;
 				.news_bg_list_item_content{
-					flex: 1;
-					margin: 0.4rem 0 0  0.5rem;
+					margin: 0.4rem 0 0 0;
 					display: flex;
 					overflow: hidden;
 					.news_bg_item_content{
@@ -504,6 +349,7 @@
 						flex: 1;
 						overflow: hidden;
 						.news_bg_title{
+							max-width: 4.38rem;
 							color: #0054E3;
 							font-weight: 700;
 							overflow: hidden;
@@ -511,7 +357,6 @@
 							white-space: nowrap;
 						}
 						.news_bg_content_text{
-							max-width: 4.13rem;
 							margin-top: 24px;
 							text-indent: 30px;
 							font-size: 14px;
@@ -549,11 +394,13 @@
 				}
 			}
 			.news_bg_wrap{
-				flex-direction: column;
+				grid-template-columns: 1fr;
+				grid-column-gap: 0;
+				padding: 0 0.2rem;
 				.news_bg_list_item_content{
 					box-sizing: border-box;
 					margin: 0.4rem 0 0 0;
-					padding: 0 0.4rem;
+					padding: 0 ;
 				}
 			}
 		}
@@ -581,11 +428,13 @@
 					}
 				}
 				.news_bg_wrap{
-					flex-direction: column;
+					grid-template-columns: 1fr;
+					grid-column-gap: 0;
+					padding: 0 0.2rem;
 					.news_bg_list_item_content{
 						box-sizing: border-box;
 						margin: 0.4rem 0 0 0;
-						padding: 0 0.2rem;
+						padding: 0 ;
 						.news_bg_item_content{
 							margin-right: 0.2rem;
 						}
