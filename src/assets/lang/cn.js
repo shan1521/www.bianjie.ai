@@ -159,7 +159,8 @@ export const message = {
 			        "href": "https://mp.weixin.qq.com/s/M-AW4M1dFFHxfy7L-mbRjA"
 		        },
 	        ],
-	        [
+	        
+	       /* [
 		
 		        {
 			        "year": '2020',
@@ -244,7 +245,7 @@ export const message = {
 			        "txt": "近日，边界智能与南京壹证通达成了战略合作。双方本着互惠互利、诚信合作、共同发展的原则，将从区块链及安全身份认证领域发挥各自的优势，在身份服务、数字证书、时间戳、底层区块链技术等方面进行合作，大力推动区块链技术结合可信身份，一起推进创新技术落地应用的实现，创造商业价值去服务实体经济。",
 			        "href": "https://mp.weixin.qq.com/s/ivRTLNK20HEtwGdzz6z6HQ"
 		        },
-	        ],
+	        ],*/
 	      
 	      
 	        
