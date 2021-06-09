@@ -18,7 +18,6 @@
 							<ul class="second_production_menu" @click="updatenavigationIndex(index)" v-if="flShowProductionSecondMenu"  @mouseleave="hideSecondMenu()">
 								<li><router-link :to="`/products/irita`">IRITA</router-link></li>
 								<li><router-link :to="`/products/iritahub`">IRITA HUB</router-link></li>
-								<li><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 							</ul>
 						</div>
 						<div class="second_menu" v-if="index == 2">
@@ -48,11 +47,10 @@
 		<div class="header_mobile_content" v-if="flShowMobileMenu">
 			<ul class="header_mobile_list_content">
 				<li class="header_mobile_list_button" @click="changeRouter(`/home`)"><router-link :to="`/home`">首页</router-link></li>
-				<li @click="showMobileProductionSecondMenu()">产品服务
+				<li @click="showMobileProductionSecondMenu()">IRITA 产品线
 					<ul v-if="flShowMobileProductionSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
 						<li class="header_mobile_list_button" @click="changeRouter(`/products/irita`)"><router-link :to="`/products/irita`">IRITA</router-link></li>
 						<li class="header_mobile_list_button" @click="changeRouter(`/products/iritahub`)"><router-link :to="`/products/iritahub`">IRITA HUB</router-link></li>
-						<li class="header_mobile_list_button" @click="changeRouter(`/products/irisnet`)"><router-link :to="`/products/irisnet`">IRISnet</router-link></li>
 					</ul>
 				</li>
 				<li @click="showApplicationSecondMenu()">应用场景
@@ -84,7 +82,7 @@
 					},
 					{
 						isActive: false,
-						label:'产品服务',
+						label:'IRITA 产品线',
 						href:''
 					},
 					{
@@ -141,7 +139,12 @@
 			setHeaderActiveOption(){
 				let isActiveIndex = null
 				if(this.$route.path.indexOf('products') !== -1){
-					isActiveIndex = 1
+					if(this.$route.path.indexOf('products/irisnet') !==-1){
+						isActiveIndex = null
+					}else {
+						isActiveIndex = 1
+					}
+					
 				}else if(this.$route.path.indexOf('application') !== -1){
 					isActiveIndex = 2
 				}else if(this.$route.path.indexOf('home') !== -1){

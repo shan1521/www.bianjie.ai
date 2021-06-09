@@ -140,7 +140,7 @@
 							},
 							{
 								src: require('../assets/home/zc.png'),
-								href: 'http://www.zcbri.com/'
+								href: ''
 							}
 						]
 						
@@ -157,35 +157,30 @@
 							}
 						],
 						right:[
-							{
-								src:require('../assets/home/Peking_University.png'),
-								href:'http://www.bjmu.edu.cn/'
-							},
+							
 							{
 								src: require('../assets/home/starry_media.png'),
 								href: 'http://www.starrymedia.com/'
-							}
+							},
+							{
+								src:require('../assets/home/xkl.png'),
+								href:''
+							},
 						]
 						
 					},
 					{
 						left:[
-							{
-								src:require('../assets/home/xkl.png'),
-								href:''
-							},
+							
 							{
 								src: require('../assets/home/rd.png'),
 								href: ''
-							}
-						],
-						right:[
+							},
 							{
 								src:require('../assets/home/shpdwszyglzx.png'),
 								href:''
 							}
-							
-						]
+						],
 					},
 				],
 			}
