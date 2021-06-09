@@ -5,8 +5,6 @@
 </template>
 
 <script>
-	import * as PDF from "pdfjs-dist"
-	PDF.GlobalWorkerOptions.workerSrc = 'pdfjs-dist/build/pdf.worker.js'
 	export default {
 		data () {
 			return {
