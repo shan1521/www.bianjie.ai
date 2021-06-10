@@ -41,7 +41,7 @@
 		<div class="production_irita_img_content">
 			<div class="production_irita_img_wrap">
 				<div class="production_irita_img">
-					<h3 class="production_irita_title">系统架构</h3>
+					<h3 class="production_irita_title">产品架构</h3>
 					<img src="../assets/irita/IRITA_framework.png" alt="">
 				</div>
 			</div>
