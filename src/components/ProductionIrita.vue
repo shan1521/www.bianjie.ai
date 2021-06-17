@@ -13,11 +13,11 @@
 			<p class="production_list_item">IRITA 支持中国国密标准，并有完善的 SDK 及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求。</p>
 			
 			<p class="production_list_item">IRITA 具有模块化的架构，各个子产品具有不同的功能，可以根据不同业务场景高效打造不同行业应用：</p>
-			<p class="production_list_item_children"> • IRITA-Lite 属于开源版本；</p>
-			<p class="production_list_item_children"> • IRITA BEAN  保护数据隐私的数据共享，可用于物联网、医疗健康等数据管理平台；</p>
-			<p class="production_list_item_children"> • IRITA DA  数字资产确权及交换，可应用于供应链金融、碳中和等领域；</p>
-			<p class="production_list_item_children"> • IRITA HUB 跨链服务枢纽，已上线BSN；</p>
-			<p class="production_list_item_children"> • IRITA OPB 开放联盟链，已上线BSN；</p>
+			<p class="production_list_item_children"> • IRITA-Lite 属于开源版本</p>
+			<p class="production_list_item_children"> • IRITA BEAN 保护数据隐私的数据共享，可用于物联网、医疗健康等数据管理平台</p>
+			<p class="production_list_item_children"> • IRITA DA 数字资产确权及交换，可应用于供应链金融、碳中和等领域</p>
+			<p class="production_list_item_children"> • IRITA HUB 跨链服务枢纽，已上线BSN</p>
+			<p class="production_list_item_children"> • IRITA OPB 开放联盟链，已上线BSN</p>
 			
 <!--			<p class="production_list_item">IRITA BEAN 在 2018 年 9 月荣获中国健康医疗大数据产业创新大赛 TMT 数据组一等奖及天使之星组冠军。基于 IRITA-BEAN 的星康链及 IRITA-HUB 在 2019 年荣获由中国电子信息产业发展研究院赛迪研究院主导评选 2019 中国优秀区块链解决方案。</p>-->
 			

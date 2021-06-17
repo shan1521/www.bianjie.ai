@@ -65,7 +65,9 @@
 							<img src="data:image/png;base64,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" alt="">
 						</div>
 						<div class="home_production_item_text_content">
-							<p class="home_production_item_text_top_title">联盟链 IRITA 系列</p>
+							<p class="home_production_item_text_top_title">联盟链 <a href="https://irita.bianjie.ai/" target="_blank" rel="noreferrer noopener">IRITA <span>
+								<img src="../assets/bianjie_turntoirita.png" alt=''>
+							</span></a> </p>
 							<p class="home_production_item_text_bottom_title">支持下一代分布式商业系统，自主可控，支持国密，可选功能模块化配置，为企业和组织快速实现联盟链搭建和部署，支持与链外原有IT系统和应用实现跨链集成</p>
 						</div>
 					</li>
@@ -688,6 +690,19 @@
 								font-size: 0.16rem;
 								color: #fff;
 								font-weight: 500;
+								a{
+									color: #fff;
+									span{
+										display:inline-block;
+										width: 0.12rem;
+										height:0.12rem;
+										img{
+											width:100%;
+											height: 100%;
+										}
+									}
+								}
+								
 							}
 							.home_production_item_text_bottom_title{
 								margin-top: 0.12rem;
