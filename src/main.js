@@ -5,6 +5,8 @@ import App from './App'
 import { createRouter } from './router/index.js'
 import { createStore } from './store'
 import VueI18n from 'vue-i18n'
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload)
 import 'swiper/dist/css/swiper.css'
 require('vue-swipe/dist/vue-swipe.css');
 import 'babel-polyfill'

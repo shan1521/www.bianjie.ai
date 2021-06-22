@@ -31,7 +31,7 @@
 			<div class="qr_content_wrap">
 				<h1>关注与联系</h1>
 				<div class="qr_img_content">
-					<img src="../assets/home/qr_bianjie.png" alt="">
+					<img src="../assets/home/qr_bianjie.png" alt="关注公众号">
 				</div>
 				<p content="mail_content">联系我们: contact@bianjie.ai</p>
 			</div>

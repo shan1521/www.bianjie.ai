@@ -26,9 +26,9 @@
 			<div class="production_content_wrap">
 				<h2 class="production_title">核心技术优势</h2>
 				<ul class="production_core_list_content">
-					<li class="production_core_list_item" v-for="item in coreArray">
+					<li class="production_core_list_item" v-for="(item,index) in coreArray" :key="index">
 						<div class="production_core_list_item_img_icon">
-							<img :src="item.src" alt="">
+							<img v-lazy="item.src" alt="">
 						</div>
 						<h3 class="production_core_list_item_title">{{item.title}}</h3>
 						<div class="production_list_content">
@@ -43,7 +43,7 @@
 			<div class="production_irita_img_wrap">
 				<div class="production_irita_img">
 					<h3 class="production_irita_title">产品架构</h3>
-					<img src="../assets/irita/IRITA_framework.png" alt="">
+					<img src="../assets/irita/IRITA_framework.png" alt="IRITA 产品架构">
 				</div>
 			</div>
 		</div>

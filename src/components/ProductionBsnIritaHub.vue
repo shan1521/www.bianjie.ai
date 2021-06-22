@@ -16,7 +16,7 @@
 		</div>
 		<p class="production_bean_title">系统架构</p>
 		<div class="bean_img_wrap">
-			<img src="../assets/bean/irita_hub.png" alt="">
+			<img src="../assets/bean/irita_hub.png" alt="IRITA HUB系统架构">
 		</div>
 	</div>
 </template>

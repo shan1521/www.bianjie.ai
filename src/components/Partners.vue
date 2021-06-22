@@ -14,21 +14,21 @@
 					<div class="business_partner_right_line"></div>
 				</div>
 				<div class="business_partner_logo_content">
-					<div class="business_partner_top_img_content" v-for="item in partnersArray">
+					<div class="business_partner_top_img_content" v-for="(item,index) in partnersArray" :key="index">
 						<div class="business_partner_img_content_wrap"  v-if="item.left">
-							<div style="margin-bottom: 0" v-for="v in item.left">
+							<div style="margin-bottom: 0" v-for="(v,vIndex) in item.left" :key="vIndex">
 								<a v-if="v.href" :href="v.href" target="_blank" rel="noopener noreferrer">
-									<img :src="v.src" alt="">
+									<img v-lazy="v.src" alt="">
 								</a>
-								<img v-else :src="v.src" alt="">
+								<img v-else v-lazy="v.src" alt="">
 							</div>
 						</div>
 						<div v-if="item.right" >
-							<div style="margin-bottom: 0" v-for="res in item.right">
+							<div style="margin-bottom: 0" v-for="(res,resIndex) in item.right" :key="resIndex">
 								<a v-if="res.href" :href="res.href" target="_blank" rel="noopener noreferrer">
-									<img :src="res.src" alt="">
+									<img v-lazy="res.src" alt="">
 								</a>
-								<img v-else :src="res.src" alt="">
+								<img v-else v-lazy="res.src" alt="">
 							</div>
 						</div>
 						
@@ -48,33 +48,33 @@
 					<div class="industry_collaboration_top_img_content">
 						<div>
 							<a href="http://www.ca-sme.org" target="_blank">
-								<img src="../assets/home/CASME.png" alt="">
+								<img src="../assets/home/CASME.png" alt="中国中小企业协会">
 							</a>
 							<a href="http://www.trustedblockchain.cn/" target="_blank">
-								<img src="../assets/home/kxqkl.png" alt="">
+								<img src="../assets/home/kxqkl.png" alt="可信区块链">
 							</a>
 						</div>
 						<div>
 							<a href="http://www.softline.org.cn/" target="_blank">
-								<img src="../assets/home/shrjglxh.png" alt="">
+								<img src="../assets/home/shrjglxh.png" alt="上海市软件行业协会">
 							</a>
 							<a href="http://www.shbta.cn/" target="_blank">
-								<img src="../assets/home/shqkl.png" alt="">
+								<img src="../assets/home/shqkl.png" alt="上海区块链技术协会">
 							</a>
 						</div>
 					</div>
 					<div class="industry_collaboration_bottom_img_content">
 						<div>
 							<a href="https://www.cie-info.org.cn/site/term/51.html" target="_blank">
-								<img src="../assets/home/zgdzxh.png" alt="">
+								<img src="../assets/home/zgdzxh.png" alt="中国电子学会">
 							</a>
 							<a href="https://www.ccidgroup.com/" target="_blank">
-								<img src="../assets/home/sd.png" alt="">
+								<img src="../assets/home/sd.png" alt="赛迪">
 							</a>
 						</div>
 						<div class="last_content">
 							<a href="http://www.blockdata.club/" target="_blank">
-								<img src="../assets/home/lt.png" alt="">
+								<img src="../assets/home/lt.png" alt="链塔">
 							</a>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
 			<div class="qr_content_wrap">
 				<h1>关注与联系</h1>
 				<div class="qr_img_content">
-					<img src="../assets/home/qr_bianjie.png" alt="">
+					<img src="../assets/home/qr_bianjie.png" alt="关注公众号">
 				</div>
 				<p content="mail_content">联系我们: contact@bianjie.ai</p>
 			</div>

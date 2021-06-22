@@ -3,7 +3,7 @@
         <div class="header_container" :class="flShowBoxShadow ? 'box_shadow':''">
             <div class="header_wrap">
                 <div class="header_logo_img_content" @click="skipHome">
-                    <img src="../assets/new_logo.png">
+                    <img src="../assets/new_logo.png" alt="边界智能">
                 </div>
                 <div class="chang_lang_content" @click="changeLanguage(lang)">
                     <span class="lang_content">{{lang}}</span>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="content_right">
                     <div class="cosmos_img_content">
-                        <img src="../assets/validators/product_logo.png">
+                        <img src="../assets/validators/product_logo.png" alt="cosmos">
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                             </div>
                             <div class="irisnet_introduce_text_content">
                                 <ul class="introduce_list">
-                                    <li v-for="item in aboutIrisnetList">
+                                    <li v-for="(item,index) in aboutIrisnetList" :key="index">
                                         <i></i>
                                         <div v-html="item.item"></div>
                                     </li>
@@ -103,7 +103,7 @@
                         <div class="cosmos_introduce_content">
                             <div class="cosmos_introduce_text_content">
                                 <ul class="cosmos_introduce_list">
-                                    <li v-for="item in aboutCosmosList">
+                                    <li v-for="(item,index) in aboutCosmosList" :key="index">
                                         <div v-html="item.item"></div>
                                         <i></i>
                                     </li>
@@ -131,9 +131,9 @@
             <div class="safe_wrap">
                 <h2>{{bianJieTitle}}</h2>
                 <ul class="safe_content">
-                    <li class="safe_item" v-for="item in bianJieProductList">
+                    <li class="safe_item" v-for="(item,index) in bianJieProductList" :key="index">
                         <div class="safe_img_content">
-                            <img :src="item.src" alt="">
+                            <img v-lazy="item.src" alt="">
                         </div>
                         <p class="safe_text">{{item.text}}</p>
                     </li>
@@ -145,12 +145,12 @@
                 <h5 class="cosmos_explorer_title">{{cosmosExplorerTitle}}</h5>
                 <ul class="cosmos_list_content">
                     <li class="cosmos_item_content" v-for="(item,index) in cosmosExplorerArray"
-                        :class="item.active ? 'bg_blue_style' : 'bg_white_style'"
+                        :class="item.active ? 'bg_blue_style' : 'bg_white_style'" :key="index"
                         @click="toBrowser(index,item.href)"
                         @mouseenter="changeBgColor(index)"
                         @mouseleave="resetBgColor()">
                         <div class="cosmos_explorer_logo">
-                            <img :src="item.active ? item.whiteImg : item.blueImg" alt="">
+                            <img v-lazy="item.active ? item.whiteImg : item.blueImg" alt="">
                         </div>
                         <p class="cosmos_explorer_name">{{item.title}}</p>
                     </li>
