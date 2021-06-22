@@ -20,7 +20,7 @@
                 <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="150000" v-if="active" :showIndicators='false'>
                     <swipe-item v-for="(item,index) in $store.state.messages.index.logo" :key="index">
                         <a :href="index === 0 || index === 2 ? $store.state.messages.validator.irisnetHref : 'javascript:;'" target="_blank" :class="index === 0 || index === 2 ? 'active_cursor': 'default_cursor'">
-                            <img class="index1_logo" v-lazy="item.src"/>
+                            <img class="index1_logo" :src="item.src"/>
                         </a>
                     </swipe-item>
                 </swipe>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="about_img_content">
-                    <img v-lazy="$store.state.messages.about.img"/>
+                    <img :src="$store.state.messages.about.img"/>
                 </div>
             </div>
             <div id="#core" class="core_wrap">
@@ -77,7 +77,7 @@
                                     <div class="product_content_title_txt1" v-html="item.title1"></div>
                                 </div>
                                 <div class="item_logo_content">
-                                    <img v-lazy="item.img"/>
+                                    <img :src="item.img"/>
                                 </div>
                             </div>
                             <div class="product_content_txt" v-html="item.txt"></div>
@@ -174,13 +174,13 @@
                     <div class="partner_img_content">
                         <div class="partner_img">
                             <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[0]">
-                                <img v-lazy="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                                <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
                             <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[1]">
-                                <img v-lazy="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                                <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
                             <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' :'_blank'" v-for="item in $store.state.messages.partner.img[2]">
-                                <img v-lazy="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
+                                <img :src="item.img" @mouseover="overShow(item)" @mouseout="outHide(item)"/>
                             </a>
                         </div>
                     </div>
