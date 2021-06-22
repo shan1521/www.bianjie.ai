@@ -3,13 +3,13 @@
 		<div class="header_content_wrap">
 			<div class="header_logo_content">
 				<router-link :to="`/home`">
-					<img src="../assets/home/bianjie_logo.png" alt="">
+					<img src="../assets/home/bianjie_logo.png" alt="边界智能">
 				</router-link>
 			</div>
 			<div class="header_content_menu">
 				<ul class="header_menu_list">
 					<li class="header_menu_list_item" :class="item.isActive ? 'active_color' : ''"
-					    v-for="(item,index) in navigationList"
+					    v-for="(item,index) in navigationList" :key="index"
 					    @click="changeNavigation(index)" @mouseenter="showSecondMenu(index)" @mouseleave="hideSecondMenu(index)">
 						<router-link class="header_menu_list_item_link" :to="item.href" v-if="item.href">{{item.label}}</router-link>
 						<span v-if="!item.href">{{item.label}}</span>
@@ -33,7 +33,7 @@
                 <div class="print_content">
                     <div class="about_me_content">关注我们
                         <div class="qr_content">
-                            <img src="../assets/home/qr_bianjie.png" alt="">
+                            <img src="../assets/home/qr_bianjie.png" alt="关注公众号">
                         </div>
                     </div>
 <!--                    <span @click="openPrint()">打印 <img style="width: 0.14rem" src="../assets/home/print_icon.png"></span>-->

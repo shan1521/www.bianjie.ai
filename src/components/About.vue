@@ -18,7 +18,7 @@
 				<h5 >荣誉资质</h5>
 				<div class="about_list_content">
 					<ul class="about_list_content_container">
-						<li class="about_list_item" v-for="item in listArray">
+						<li class="about_list_item" v-for="(item,index) in listArray" :key="index">
 							<div style="font-size:0.14rem;color: #8A99A5">{{item.date}}</div>
 							<p style="color: #0C253A;font-size:0.14rem;line-height: 0.28rem">{{item.content}}</p>
 						</li>
@@ -28,7 +28,7 @@
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="(item ,index) in swiperArray" :key="index">
 							<div style="height: 3.2rem;margin:0 40px">
-								<img  style="display:block;height:100%;" :src="item.src" alt="">
+								<img  style="display:block;height:100%;" v-lazy="item.src" alt="">
 							</div>
 						</swiper-slide>
 					</swiper>
@@ -39,7 +39,7 @@
 				<div class="print_img_container">
 					<ul class="print_img_content">
 						<li class="print_img_item" v-for="(item ,index) in swiperArray" :key="index">
-							<img :src="item.src" alt="">
+							<img v-lazy="item.src" alt="边界智能荣誉资质">
 						</li>
 					</ul>
 				</div>
@@ -49,7 +49,7 @@
 			<div class="qr_content_wrap">
 				<h1>关注与联系</h1>
 				<div class="qr_img_content">
-					<img src="../assets/home/qr_bianjie.png" alt="">
+					<img src="../assets/home/qr_bianjie.png" alt="关注公众号">
 				</div>
 				<p content="mail_content">联系我们: contact@bianjie.ai</p>
 			</div>
