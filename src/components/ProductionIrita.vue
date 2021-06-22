@@ -28,7 +28,7 @@
 				<ul class="production_core_list_content">
 					<li class="production_core_list_item" v-for="(item,index) in coreArray" :key="index">
 						<div class="production_core_list_item_img_icon">
-							<img v-lazy="item.src" alt="">
+							<img :src="item.src" alt="">
 						</div>
 						<h3 class="production_core_list_item_title">{{item.title}}</h3>
 						<div class="production_list_content">

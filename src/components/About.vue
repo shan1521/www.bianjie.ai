@@ -28,7 +28,7 @@
 					<swiper ref="mySwiper" :options="swiperOption" class="my-swipe">
 						<swiper-slide style="display: flex;justify-content:center;" v-for="(item ,index) in swiperArray" :key="index">
 							<div style="height: 3.2rem;margin:0 40px">
-								<img  style="display:block;height:100%;" v-lazy="item.src" alt="">
+								<img  style="display:block;height:100%;" :src="item.src" alt="">
 							</div>
 						</swiper-slide>
 					</swiper>
@@ -39,7 +39,7 @@
 				<div class="print_img_container">
 					<ul class="print_img_content">
 						<li class="print_img_item" v-for="(item ,index) in swiperArray" :key="index">
-							<img v-lazy="item.src" alt="边界智能荣誉资质">
+							<img :src="item.src" alt="边界智能荣誉资质">
 						</li>
 					</ul>
 				</div>

@@ -133,7 +133,7 @@
                 <ul class="safe_content">
                     <li class="safe_item" v-for="(item,index) in bianJieProductList" :key="index">
                         <div class="safe_img_content">
-                            <img v-lazy="item.src" alt="">
+                            <img :src="item.src" alt="">
                         </div>
                         <p class="safe_text">{{item.text}}</p>
                     </li>
@@ -150,7 +150,7 @@
                         @mouseenter="changeBgColor(index)"
                         @mouseleave="resetBgColor()">
                         <div class="cosmos_explorer_logo">
-                            <img v-lazy="item.active ? item.whiteImg : item.blueImg" alt="">
+                            <img :src="item.active ? item.whiteImg : item.blueImg" alt="">
                         </div>
                         <p class="cosmos_explorer_name">{{item.title}}</p>
                     </li>

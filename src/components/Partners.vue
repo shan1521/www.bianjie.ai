@@ -18,17 +18,17 @@
 						<div class="business_partner_img_content_wrap"  v-if="item.left">
 							<div style="margin-bottom: 0" v-for="(v,vIndex) in item.left" :key="vIndex">
 								<a v-if="v.href" :href="v.href" target="_blank" rel="noopener noreferrer">
-									<img v-lazy="v.src" alt="">
+									<img :src="v.src" alt="">
 								</a>
-								<img v-else v-lazy="v.src" alt="">
+								<img v-else :src="v.src" alt="">
 							</div>
 						</div>
 						<div v-if="item.right" >
 							<div style="margin-bottom: 0" v-for="(res,resIndex) in item.right" :key="resIndex">
 								<a v-if="res.href" :href="res.href" target="_blank" rel="noopener noreferrer">
-									<img v-lazy="res.src" alt="">
+									<img :src="res.src" alt="">
 								</a>
-								<img v-else v-lazy="res.src" alt="">
+								<img v-else :src="res.src" alt="">
 							</div>
 						</div>
 						

@@ -7,7 +7,7 @@
                      @click="is=false"/>
                 <img class="logo" @click="scroll(0)" src="../assets/logo.png"/>
             </div>
-            <img class="index_logo" v-lazy="img($store.state.messages.index.logo[1].src)"/>
+            <img class="index_logo" :src="img($store.state.messages.index.logo[1].src)"/>
             <div class="index_down" v-show="is">
                 <router-link :key="index" :to="item.href" tag="div" @click="hrefLink(item)"
                              v-for="(item,index) in $store.state.messages.index.title">
@@ -26,7 +26,7 @@
                    <span v-html="item"></span>
                 </div>
             </div>
-            <img v-lazy="img($store.state.messages.about.img)"/>
+            <img :src="img($store.state.messages.about.img)"/>
         </div>
         <div class="core" id="#core">
             <img class="core_img" src="../assets/app/core.jpg"/>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="product" v-for="item in $store.state.messages.product.txt">
-                <img v-lazy="img(item.img)"/>
+                <img :src="img(item.img)"/>
                 <div class="product_title">
                     {{item.title}}
                 </div>
@@ -113,17 +113,17 @@
             <div class="partner_div">
                 <div>
                     <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[0]">
-                        <img v-lazy="item.img"/>
+                        <img :src="item.img"/>
                     </a>
                 </div>
                 <div>
                     <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[1]">
-                        <img v-lazy="item.img"/>
+                        <img :src="item.img"/>
                     </a>
                 </div>
                 <div>
                     <a :href="item.href" target="_blank" v-for="item in $store.state.messages.partner.img[2]">
-                        <img v-lazy="item.img"/>
+                        <img :src="item.img"/>
                     </a>
                 </div>
             </div>
