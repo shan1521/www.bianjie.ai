@@ -73,7 +73,7 @@ export const message = {
                     "year": '2021',
                     "day": "24",
                     "month": "June",
-                    "title": "边界智能获得 2021 年南京创新周 · 江北新区数字金融创新大赛特等奖",
+                    "title": "特等奖！边界智能获得 2021 年南京创新周 · 江北新区数字金融创新大赛特等奖",
                     "txt": "边界智能凭借《区块链 NFT 及大数据隐私保护技术支撑的绿色金融解决方案》获得南京创新周 · 江北新区数字金融创新大赛特等奖。",
                     "href": "https://mp.weixin.qq.com/s/s69uTkFOv7kyU14DgmhRBw"
                 },
@@ -118,7 +118,7 @@ export const message = {
                     "day": "8",
                     "month": "May",
                     "title": "「智慧政务+区块链」都江堰市行政审批局智慧政务在 BSN 文昌链上线了",
-                    "txt": "「政务服务底层区块链平台」应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中“区块链电子证照系统”的搭建，该系统基于 BSN 首批开放联盟链「文昌链」开发，也是 BSN 开放联盟链「文昌链」部署的首个政务应用。",
+                    "txt": "「政务服务底层区块链平台」应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中「区块链电子证照系统」的搭建，该系统基于 BSN 首批开放联盟链「文昌链」开发，也是 BSN 开放联盟链「文昌链」部署的首个政务应用。",
                     "href": "https://mp.weixin.qq.com/s/P8xaUOcgl3m4BATDcL-vgQ"
                 },
             ],
@@ -168,17 +168,17 @@ export const message = {
                     "href": "https://mp.weixin.qq.com/s/dtRYOw2_LPJXEg_8ZdpN3g"
                 },
                 {
-                    "year": '2021',
+                    "year": '2020',
                     "day": "16",
                     "month": "Dec",
                     "title": "边界智能入选 2020 上海最具投资潜力 50 佳创业企业",
                     "txt": "边界智能凭借「支持跨链及大数据隐私保护的分布式商业系统 IRITA」顺利突出重围，成功获评「2020 上海最具投资潜力 50 佳创业企业」，是 50 佳获奖企业中为数不多的专注于区块链与大数据技术服务的高新技术企业。",
-                    "href": "https://mp.weixin.qq.com/s/dtRYOw2_LPJXEg_8ZdpN3g"
+                    "href": "https://mp.weixin.qq.com/s/j6qgXPJJcbKvTxZHYLYsTg"
                 }
             ],
             [
                 {
-                    "year": '2021',
+                    "year": '2020',
                     "day": "14",
                     "month": "Dec",
                     "title": "万字庖解区块链跨链技术 | 金色财经采访实录",
@@ -186,7 +186,7 @@ export const message = {
                     "href": "https://mp.weixin.qq.com/s/5FPf1q5QFFLC3BYuJzjC4Q"
                 },
                 {
-                    "year": '2021',
+                    "year": '2020',
                     "day": "4",
                     "month": "Dec",
                     "title": "边界智能成为 IEEE 标准协会高级会员，参与区块链标准制定",
