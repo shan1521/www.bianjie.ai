@@ -164,10 +164,10 @@
 						<div>支持数据和计算跨异构区块链网络调用和消费</div>
 					</div>
 					<p class="home_production_footer">
-						<router-link :to="`/products/irisnet`">
-							<span class="home_production_name">IRISnet</span>
+						<a href="https://irita.bianjie.ai/docs" target="_blank" rel="noreferrer noopener">
+							<span class="home_production_name">技术文档</span>
 							<img src="../assets/home/arrow.png" alt="">
-						</router-link>
+						</a>
 					</p>
 				</li>
 			</ul>
