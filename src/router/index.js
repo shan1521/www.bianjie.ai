@@ -29,11 +29,6 @@ export function createRouter() {
                 component: Home
             },
             {
-                path: '/products/irisnet',
-                name:Production,
-                component: Production
-            },
-            {
                 path: '/products/iritahub',
                 name:ProductionBsnIritaHub,
                 component: ProductionBsnIritaHub
