@@ -76,7 +76,7 @@
 					{
 						src: require("../assets/irita/tx.png"),
 						title:'数字资产建模与交易',
-						section:'支持对数字资产数据多元结构的灵活建模非常适合实现链上交易平台（DEX）以NFT（非同质化通证）为基础，支持各领域的数字资产化'
+						section:'支持对实体资产数据多元结构的灵活建模非常适合实现各领域的资产数字化'
 					},
 					{
 						src: require("../assets/irita/data.png"),
