@@ -75,7 +75,7 @@
 					},
 					{
 						src: require("../assets/irita/tx.png"),
-						title:'数字资产建模与交易',
+						title:'数字资产建模与可信交换',
 						section:'支持对实体资产数据多元结构的灵活建模，非常适合实现各领域的资产数字化'
 					},
 					{
