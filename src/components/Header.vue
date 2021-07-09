@@ -434,7 +434,7 @@
 		outline-color: transparent;
 	}
 }
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 975px){
        .header_container_content{
            .header_content_wrap{
                .header_content_menu{

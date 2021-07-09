@@ -216,7 +216,7 @@ export const message = {
                     "href": "http://www.haodf.com/"
                 },
                 {
-                    "img": "../public/partner/nxyl.png",
+                    "img": "../public/partner/nxylpt.png",
                     "img_selected": "../public/partner/nxyl2.png"
                 },
             ],
