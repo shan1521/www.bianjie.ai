@@ -7,37 +7,37 @@
 			</div>
 		</div>
 		<div class="business_partner_container">
-			<div class="business_partner_content_wrap">
+			<div class="business_partner_content_wrap" v-for="(item,index) in partnersArray" :key="index">
 				<div class="business_partner_title_content">
 					<div class="business_partner_left_line"></div>
-					<div class="business_partner_title">业务伙伴</div>
+					<div class="business_partner_title">{{item.title}}</div>
 					<div class="business_partner_right_line"></div>
 				</div>
 				<div class="business_partner_logo_content">
-					<div class="business_partner_top_img_content" v-for="(item,index) in partnersArray" :key="index">
-						<div class="business_partner_img_content_wrap"  v-if="item.left">
-							<div style="margin-bottom: 0" v-for="(v,vIndex) in item.left" :key="vIndex">
-								<a v-if="v.href" :href="v.href" target="_blank" rel="noopener noreferrer">
-									<img :src="v.src" alt="">
+					<div class="business_partner_top_img_content" v-for="(value,index) in item.list" :key="index">
+						<div class="business_partner_img_content_wrap">
+							<div>
+								<a v-if="value.href" :href="value.href" target="_blank" rel="noopener noreferrer">
+									<img :src="value.src" alt="">
 								</a>
-								<img v-else :src="v.src" alt="">
+								<img v-else :src="value.src" alt="">
 							</div>
 						</div>
-						<div v-if="item.right" >
+<!--						<div v-if="item.right" >
 							<div style="margin-bottom: 0" v-for="(res,resIndex) in item.right" :key="resIndex">
 								<a v-if="res.href" :href="res.href" target="_blank" rel="noopener noreferrer">
 									<img :src="res.src" alt="">
 								</a>
 								<img v-else :src="res.src" alt="">
 							</div>
-						</div>
+						</div>-->
 						
 						
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="industry_collaboration_container">
+<!--		<div class="industry_collaboration_container">
 			<div class="industry_collaboration_content_wrap">
 				<div class="industry_collaboration_title_content">
 					<div class="industry_collaboration_left_line"></div>
@@ -74,13 +74,13 @@
 						</div>
 						<div class="last_content">
 							<a href="http://www.blockdata.club/" target="_blank">
-								<img src="../assets/home/lt.png" alt="链塔">
+								<img src="../assets/home/tl.png" alt="链塔">
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="qr_content">
 			<div class="qr_content_wrap">
 				<h1>关注与联系</h1>
@@ -98,7 +98,7 @@
 		name: "Partners",
 		data() {
 			return {
-				partnersArray:[
+				/*partnersArray:[
 					{
 						left:[
 							{
@@ -182,7 +182,143 @@
 							}
 						],
 					},
-				],
+				],*/
+				partnersArray:[
+					{
+						title:'平台生态',
+						list:[
+							{
+								src:require('../assets/partners/wx.png'),
+								href:'https://www.wxblockchain.com/'
+							},
+							{
+								src: require('../assets/partners/xwl.png'),
+								href: ''
+							},
+							{
+								src: require('../assets/partners/bsn.png'),
+								href:'https://www.bsnbase.com/p/main/index'
+							},
+							{
+								src: require('../assets/partners/zgzxqyxh.png'),
+								href: 'http://www.ca-sme.org/'
+							},
+							{
+								src: require('../assets/partners/zgdzxh.png'),
+								href: 'https://www.cie-info.org.cn/site/term/51.html'
+							},
+							{
+								src: require('../assets/partners/qklxh.png'),
+								href: 'http://www.shbta.cn/'
+							},
+							{
+								src: require('../assets/partners/jxyd.png'),
+								href: ''
+							},
+							{
+								src: require('../assets/partners/kxqkltjjh.png'),
+								href: 'http://www.trustedblockchain.cn/'
+							},
+							{
+								src: require('../assets/partners/shrjhyxh.png'),
+								href: 'http://www.softline.org.cn/'
+							},
+							{
+								src: require('../assets/partners/sd.png'),
+								href: 'https://www.ccidgroup.com/'
+							},
+							{
+								src: require('../assets/partners/tl.png'),
+								href: ''
+							}
+						]
+					},
+					{
+						title:'金融领域合作',
+						list:[
+							{
+								src:require('../assets/partners/dfi.png'),
+								href:''
+							},
+							{
+								src: require('../assets/partners/yzt.png'),
+								href:'https://www.spiderid.cn/'
+							},
+							{
+								src: require('../assets/partners/zcqklyjy.png'),
+								href: ''
+							},
+							{
+								src: require('../assets/partners/lgqkllm.png'),
+								href: ''
+							}
+						]
+					},
+					{
+						title: '医疗领域合作',
+						list: [
+							{
+								src:require('../assets/partners/xkl.png'),
+								href: ''
+							},
+							{
+								src:require('../assets/partners/nxylpt.png'),
+								href: ''
+							},
+							{
+								src: require('../assets/partners/rh.png'),
+								herf:''
+							},
+							{
+								src: require('../assets/partners/shpdwszyglzx.png'),
+								href:''
+							},
+						]
+					},
+					{
+						title: '人工智能与物联网领域合作',
+						list:[
+							{
+								src: require('../assets/partners/xjkj.png'),
+								href: ''
+							}
+						]
+					},
+					{
+						title:'资产数字化领域合作',
+						list:[
+							{
+								src: require('../assets/partners/xdkj.png'),
+								href: 'http://www.starrymedia.com/'
+							},
+							{
+								src: require('../assets/partners/sykj.png'),
+								href: ''
+							}
+						]
+					},
+					{
+						title: '全球前沿技术合作',
+						list: [
+							{
+								src: require('../assets/partners/cosmos.png'),
+								href: 'https://cosmos.network/'
+							},
+							{
+								src: require('../assets/partners/tendermint.png'),
+								href: 'https://tendermint.com/'
+							},
+							{
+								src: require('../assets/partners/irisnet.png'),
+								href: 'https://www.irisnet.org/'
+							},
+							{
+								src: require('../assets/partners/chainlink.png'),
+								href: 'https://chain.link/'
+							}
+						]
+					}
+				]
 			}
 		},
 		
@@ -310,29 +446,36 @@
 					 }
 				 }
 				 .business_partner_logo_content{
+					 max-width: 12rem;
 					 margin-top: 0.6rem;
+					 display: grid;
+					 grid-template-columns: repeat(4,1fr);
+					 grid-column-gap: 0.6rem;
+					 grid-row-gap: 0.4rem;
+					 justify-items: center;
+					 align-items: center;
+					 @media(max-width: 1200px){
+						 grid-template-columns: repeat(3,1fr);
+					 }
+					 @media(max-width: 840px){
+						 grid-template-columns: repeat(2,1fr);
+					 }
+					 @media(max-width: 560px){
+						 grid-template-columns: repeat(1,1fr);
+					 }
 					 .business_partner_top_img_content{
-						 margin-top: 0.6rem;
-						 display: flex;
 						 div{
-							 display: flex;
+							 a{
+								 img{
+									 max-height: 0.48rem;
+								 }
+							 }
 							 img{
-								 width: 3rem;
-								 height: 0.4rem;
+								 max-height: 0.48rem;
 							 }
 						 }
 					 }
-					 .business_partner_bottom_img_content{
-						 margin-top: 0.6rem;
-						 display: flex;
-						 div{
-							 display: flex;
-							 img{
-								 width: 3rem;
-								 height: 0.4rem;
-							 }
-						 }
-					 }
+					 
 				 }
 			 }
 		}
@@ -408,33 +551,7 @@
 	}
 	@media screen and (max-width: 1200px){
 		.partners_content_container{
-			.business_partner_container{
-				.business_partner_content_wrap{
-					.business_partner_logo_content{
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						.business_partner_top_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							width: 6rem;
-							div{
-								margin-bottom: 0.4rem;
-							}
-						}
-						.business_partner_bottom_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							div{
-								margin-bottom: 0.4rem;
-							}
-							.dfi_content{
-								min-width: 6rem;
-							}
-						}
-					}
-				}
-			}
+			
 			.industry_collaboration_container{
 				.industry_collaboration_content_wrap{
 					.industry_collaboration_logo_content{
@@ -473,40 +590,6 @@
 				.partners_header_content{
 					h5{
 						padding: 0 0.4rem;
-					}
-				}
-			}
-			.business_partner_container{
-				.business_partner_content_wrap{
-					.business_partner_logo_content{
-						.business_partner_top_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							width: auto;
-							div{
-								display: flex;
-								flex-direction: column;
-								margin-bottom: 0;
-								img{
-									margin-bottom: 0.4rem;
-								}
-							}
-						}
-						.business_partner_bottom_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							div{
-								display: flex;
-								flex-direction: column;
-								margin-bottom: 0;
-								img{
-									margin-bottom: 0.4rem;
-								}
-							}
-							.dfi_content{
-								min-width: auto;
-							}
-						}
 					}
 				}
 			}
@@ -570,40 +653,6 @@
 				.partners_header_content{
 					h5{
 						padding: 0 0.4rem;
-					}
-				}
-			}
-			.business_partner_container{
-				.business_partner_content_wrap{
-					.business_partner_logo_content{
-						.business_partner_top_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							width: auto;
-							div{
-								display: flex;
-								flex-direction: column;
-								margin-bottom: 0;
-								img{
-									margin-bottom: 0.4rem;
-								}
-							}
-						}
-						.business_partner_bottom_img_content{
-							flex-direction: column;
-							margin-top: 0;
-							div{
-								display: flex;
-								flex-direction: column;
-								margin-bottom: 0;
-								img{
-									margin-bottom: 0.4rem;
-								}
-							}
-							.dfi_content{
-								min-width: auto;
-							}
-						}
 					}
 				}
 			}
