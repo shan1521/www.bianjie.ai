@@ -19,7 +19,7 @@
 							</div>
 							<div class="home_core_item_text_content">
 								<p>成熟创新的区块链产品支持高效开发链改应用</p>
-<!--								<p>支持保护隐私的大数据加密共享，实用性极强的链上链下系统交互能力，灵活的数字资产建模与交易支持</p>-->
+<!--								<p>支持保护隐私的大数据加密共享，实用性极强的链上链下系统交互能力，灵活的资产数字化建模与交换支持</p>-->
 							</div>
 						</li>
 						<li class="home_core_item_content">
@@ -122,7 +122,7 @@
 						<div>保护隐私的数据加密共享</div>
 						<div>高效的共识协议和领先的跨链技术</div>
 						<div>实用性极强的链上链下系统交互能力</div>
-						<div>灵活的数字资产建模与交易支持</div>
+						<div>灵活的资产数字化建模与交换</div>
 						<div>大数据技术支撑的业务分析</div>
 					</div>
 					<p class="home_production_footer">
@@ -181,9 +181,9 @@
 					<router-link :to="`/application/digital-asset`">
 						<div class="home_application_scenarios_left_top_content">
 							<p class="home_application_scenarios_title">资产数字化</p>
-							<h5 class="home_application_scenarios_second_title">数字资产可信登记与交易平台</h5>
-							<p class="home_application_scenarios_text_content">将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
-<!--							<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的数字资产登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>-->
+							<h5 class="home_application_scenarios_second_title">资产数字化可信登记与交换平台</h5>
+							<p class="home_application_scenarios_text_content">将区块链技术用于构建可信的资产数字化登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
+<!--							<p class="home_application_scenarios_text_second_content">将区块链技术用于构建可信的资产数字化登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>-->
 						</div>
 					</router-link>
 					<router-link :to="`/application/finance`">
@@ -242,9 +242,9 @@
 						<li class="mobile_home_application_item">
 							<img src="../assets/home/application_scenarios_left_top.png" alt="">
 							<h2>资产数字化</h2>
-							<h5>数字资产可信登记与交易平台</h5>
-							<p>将区块链技术用于构建可信的数字资产登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
-<!--							<p>将区块链技术用于构建可信的数字资产登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>-->
+							<h5>资产数字化可信登记与交换平台</h5>
+							<p>将区块链技术用于构建可信的资产数字化登记与交换平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>
+<!--							<p>将区块链技术用于构建可信的资产数字化登记与交易平台，可支撑价值流通、共享经济、期权激励、等多种场景的应用。</p>-->
 						</li>
 					</router-link>
 					<router-link :to="`/application/cooperation`">

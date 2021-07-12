@@ -2,18 +2,18 @@
 	<div class="applications_content_container">
 		<div class="applications_content_wrap">
 			<div class="applications_content">
-				<h2>应用场景-数字资产</h2>
-				<h5>数字资产的全生命周期管理 · 提升资产数字化交易的效率</h5>
+				<h2>应用场景-资产数字化</h2>
+				<h5>资产数字化的全生命周期管理 · 提升链上资产可信交换的效率</h5>
 			</div>
 		</div>
 		<div class="applications_text_content">
 			<div class="applications_text_title">资产登记与交易</div>
 			<div class="application_list_content">
-				<p class="application_item">将区块链技术用于构建可信的数字资产登记与交易平台，通过加密、授权、控制、计算和验证，可以实现数字资产的全生命周期管理，极大地提升数字资产流通的可信性和效率。</p>
+				<p class="application_item">将区块链技术用于构建可信的资产数字化登记与交易平台，通过加密、授权、控制、计算和验证，可以实现资产数字化的全生命周期管理，极大地提升链上资产流通的可信性和效率。</p>
 				<p> • 支持由企业或个人拥有的、以电子数据形式存在的各类资产在区块链上登记流转</p>
 				<p> • 支持在数字经济发展过程中不断数字化的实体资产在区块链上登记流转</p>
 				<p> • 支持第三方机构通过链上服务提供信息验证和确权，支持分布式应用之间跨区块链、以及与非区块链系统的跨链传输</p>
-				<p> • 支持丰富的数字资产类型，更好的支撑价值流通、共享经济、积分互通等多种场景的应用</p>
+				<p> • 支持丰富的链上资产类型，更好的支撑价值流通、共享经济、积分互通等多种场景的应用</p>
 			</div>
 		</div>
 		<!--<div class="solution_content">
@@ -39,10 +39,10 @@
 						<img src="../assets/home/digital_asset_8.png" alt="">
 					</div>
 					<div class="program_features_right_list_content">
-						<h5>丰富的数字资产类型</h5>
+						<h5>丰富的链上资产类型</h5>
 						<p>支持价值流通的资产数字化模型</p>
-						<p> • 基于 NFT 非同质化通证建立灵活的资产模型</p>
-						<p> • 基于区块链技术构建数字资产登记与交易平台</p>
+						<p> • 基于 NFT 建立灵活的链上资产模型</p>
+						<p> • 基于区块链技术构建资产数字化登记与交换平台</p>
 						<p> • 支持多种资产跨区块链、以及与非区块链系统间传输</p>
 					</div>
 				</div>
