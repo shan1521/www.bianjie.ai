@@ -22,7 +22,7 @@
 						</div>
 						<div class="second_menu" v-if="index == 2">
 							<ul class="second_application_menu" @click="updatenavigationIndex(index)" v-if="flShowApplicationSecondMenu" @mouseleave="hideSecondMenu()">
-								<li><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
+								<li><router-link :to="`/application/digital-asset`">资产数字化</router-link></li>
 								<li><router-link :to="`/application/finance`">金融创新</router-link></li>
 								<li><router-link :to="`/application/cooperation`">行业协同</router-link></li>
 								<li><router-link :to="`/application/multi-trust`">多方互信</router-link></li>
@@ -55,7 +55,7 @@
 				</li>
 				<li @click="showApplicationSecondMenu()">应用场景
 					<ul v-if="flShowMobileApplicationSecondMenu" style="background: rgba(0,0,0,0.15);padding: 0.05rem 0;margin-top: 0.05rem;">
-						<li class="header_mobile_list_button" @click="changeRouter(`/application/digital-asset`)"><router-link :to="`/application/digital-asset`">数字资产</router-link></li>
+						<li class="header_mobile_list_button" @click="changeRouter(`/application/digital-asset`)"><router-link :to="`/application/digital-asset`">资产数字化</router-link></li>
 						<li class="header_mobile_list_button" @click="changeRouter(`/application/finance`)"><router-link :to="`/application/finance`">金融创新</router-link></li>
 						<li class="header_mobile_list_button" @click="changeRouter(`/application/cooperation`)"><router-link :to="`/application/cooperation`">行业协同</router-link></li>
 						<li class="header_mobile_list_button" @click="changeRouter(`/application/multi-trust`)"><router-link :to="`/application/multi-trust`">多方互信</router-link></li>

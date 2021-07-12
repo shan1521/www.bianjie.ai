@@ -285,7 +285,7 @@
 						]
 					},
 					{
-						title:'数字资产领域合作',
+						title:'资产数字化领域合作',
 						list:[
 							{
 								src: require('../assets/partners/xdkj.png'),
