@@ -22,6 +22,12 @@
             document.addEventListener('gesturestart', function (event) {
                 event.preventDefault()
             })
+			if(window.location.href.includes('www.bianjie.ai')){
+				const script = document.createElement('script');
+				script.src = `https://s4.cnzz.com/z_stat.php?id=1278598794&web_id=1278598794`;
+				script.language = 'JavaScript';
+				document.body.appendChild(script);
+			}
         },
         data(){
             return {
