@@ -1,0 +1,25 @@
+{
+    "name": "www.bianjie.ai",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "vuepress dev docs",
+        "build": "npx cross-env NODE_ENV=production && vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shan1521/www.bianjie.ai.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shan1521/www.bianjie.ai/issues"
+    },
+    "homepage": "https://github.com/shan1521/www.bianjie.ai#readme",
+    "dependencies": {
+        "vuepress": "^1.8.2"
+    }
+}
