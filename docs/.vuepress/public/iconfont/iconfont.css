@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2765226 */
+  src: url('iconfont.woff2?t=1629966600568') format('woff2'),
+       url('iconfont.woff?t=1629966600568') format('woff'),
+       url('iconfont.ttf?t=1629966600568') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantou:before {
+  content: "\e707";
+}
+
+.icon-a-IRITADA:before {
+  content: "\e706";
+}
+
+.icon-a-IRITABEAN:before {
+  content: "\e705";
+}
+
+.icon-a-IRITAOPB:before {
+  content: "\e704";
+}
+
+.icon-a-IRITAHUB:before {
+  content: "\e703";
+}
+
+.icon-a-IRITACE:before {
+  content: "\e702";
+}
+
+.icon-a-learnmore:before {
+  content: "\e701";
+}
+
