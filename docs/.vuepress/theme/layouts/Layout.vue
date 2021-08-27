@@ -139,7 +139,9 @@ export default {
 };
 </script>
 <style lang='stylus'>
+@import '../../public/iconfont/iconfont.css';
 .theme-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;

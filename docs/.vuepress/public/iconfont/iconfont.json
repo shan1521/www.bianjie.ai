@@ -1,0 +1,58 @@
+{
+  "id": "2765226",
+  "name": "Bianjie v3.0",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "23867565",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "23811097",
+      "name": "IRITA DA",
+      "font_class": "a-IRITADA",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "23811080",
+      "name": "IRITA BEAN",
+      "font_class": "a-IRITABEAN",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "23811054",
+      "name": "IRITA OPB",
+      "font_class": "a-IRITAOPB",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "23811031",
+      "name": "IRITA HUB",
+      "font_class": "a-IRITAHUB",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "23811017",
+      "name": "IRITA CE",
+      "font_class": "a-IRITACE",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "23810930",
+      "name": "learn more",
+      "font_class": "a-learnmore",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    }
+  ]
+}

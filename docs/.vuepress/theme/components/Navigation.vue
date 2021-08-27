@@ -2,8 +2,16 @@
     <div class="nav_container">
         <div class="nav_content">
             <div class="nav_logo">
-                <img src="../assets/home/logo_white.png" alt="" />
-                <!-- <img src="../assets/home/logo_black.png" alt=""> -->
+                <img
+                    v-if="!flShowBoxShadow"
+                    src="../assets/home/logo_white.png"
+                    alt=""
+                />
+                <img
+                    v-if="flShowBoxShadow"
+                    src="../assets/home/logo_black.png"
+                    alt=""
+                />
             </div>
             <div class="nav_list_more">
                 <ul class="nav_list">
@@ -26,7 +34,11 @@
                             class="sub_menu"
                         >
                             <li class="sub_menu_item" v-for="v in item.items">
-                                <router-link class="link_item" @click.stop="toPage(v.link)" :to="v.link">
+                                <router-link
+                                    class="link_item"
+                                    @click.stop="toPage(v.link)"
+                                    :to="v.link"
+                                >
                                     <div>{{ v.text }}</div>
                                 </router-link>
                             </li>
@@ -34,7 +46,7 @@
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont"></i>
+                    <i class="iconfont icon-a-learnmore"></i>
                     <router-link
                         class="nav_list_item"
                         :to="`/download`"
@@ -56,6 +68,7 @@ export default {
         return {
             navigation: [],
             currentIndex: 0,
+            flShowBoxShadow: false,
             // isShowSubMenuText: "",
             // flShowMobileMenu: false,
             // flShowSunMenu: false,
@@ -84,6 +97,31 @@ export default {
             }
             console.log(index, "index");
         },
+        // handleScroll(e) {
+        //     this.scrollTop =
+        //         window.pageYOffset ||
+        //         document.documentElement.scrollTop ||
+        //         document.body.scrollTop;
+
+        //     if (this.scrollTop > 5) {
+        //         this.flShowBoxShadow = true;
+        //     } else {
+        //         this.flShowBoxShadow = false;
+        //     }
+        // },
+    },
+    mounted() {
+        // this.scrollTop =
+        //     window.pageYOffset ||
+        //     document.documentElement.scrollTop ||
+        //     document.body.scrollTop;
+        // console.log(this.scrollTop, "this.scrollTop");
+        // if (this.scrollTop > 5) {
+        //     this.flShowBoxShadow = true;
+        // } else {
+        //     this.flShowBoxShadow = false;
+        // }
+        // window.addEventListener("scroll", this.handleScroll, true);
     },
 };
 </script>
@@ -91,11 +129,9 @@ export default {
 <style lang="stylus">
 .nav_container {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
     width: 100%;
     height: 4.8rem;
+    z-index: 2;
 
     .nav_content {
         display: flex;
@@ -106,7 +142,6 @@ export default {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
-        background: red;
 
         .nav_logo {
             width: 9.8rem;
@@ -149,11 +184,12 @@ export default {
                     .item {
                         display: block;
                         height: 100%;
-                        color: #fff;
+                        color: rgba(255, 255, 255, 0.75);
                     }
 
                     .active {
                         position: relative;
+                        color: #fff;
 
                         &::after {
                             content: '';
@@ -200,6 +236,7 @@ export default {
                     margin-right: 0.2rem;
                     width: 1.6rem;
                     height: 1.6rem;
+                    color: #fff;
                 }
 
                 .nav_list_item {

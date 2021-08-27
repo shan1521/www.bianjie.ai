@@ -15,13 +15,13 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             {
-                text: '核心产品', link: '/product', items: [
+                text: '核心产品', link: '', items: [
                     { text: 'IRITA HUB', link: '/product/iritahub' },
                     { text: 'IRITA OPB', link: '/product/iritaopb' }
                 ]
             },
             {
-                text: '应用场景', link: '/app', items: [
+                text: '应用场景', link: '', items: [
                     { text: '智慧政务', link: '/app/goverment' },
                     { text: '碳中和', link: '/app/carbonneutral' },
                     { text: '文创与版权', link: '/app/cultural' },
