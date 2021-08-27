@@ -1,17 +1,17 @@
 <template>
     <!-- <div class="swiper_container" ref="mySwiper"> -->
     <swiper :options="swiperOption" v-if="homeContent">
-        <swiper-slide>
-            <swiper-home :content="homeContent[0]"></swiper-home>
+        <swiper-slide v-for="(item,index) in homeContent">
+            <swiper-home :content="homeContent[index]" :currentSwiper="currentSwiper"></swiper-home>
         </swiper-slide>
-        <swiper-slide>
+        <!-- <swiper-slide>
             <swiper-home :content="homeContent[1]"></swiper-home>
         </swiper-slide>
         <swiper-slide>
             <swiper-home :content="homeContent[2]"></swiper-home>
-        </swiper-slide>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
+        </swiper-slide> -->
+        <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div> -->
         <div
             class="swiper-pagination swiper-pagination-bullets"
             slot="pagination"
@@ -35,8 +35,8 @@ export default {
         return {
             swiperOption: {
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    // nextEl: ".swiper-button-next",
+                    // prevEl: ".swiper-button-prev",
                 },
                 pagination: {
                     el: ".swiper-pagination",
@@ -51,6 +51,7 @@ export default {
                 // },
                 // loop: true
             },
+            currentSwiper: 0
         };
     },
     components: {

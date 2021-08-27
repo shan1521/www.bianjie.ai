@@ -1,0 +1,55 @@
+<template>
+    <div class="title_container">
+        <div class="title_content_container">
+            <div class="title_content">
+                <div class="title">{{ titleContent.title }}</div>
+                <div class="sub_title">{{ titleContent.subTitle }}</div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "TitleContent",
+    props: ["titleContent"],
+};
+</script>
+
+<style lang="stylus">
+.title_container {
+    width: 100%;
+    height: 36rem;
+    background: url(../../assets/product/iritahub/iritahub_banner.png) no-repeat center / cover;
+
+    .title_content_container {
+        margin: 0 auto;
+        max-width: $contentWidth;
+        height: 100%;
+
+        .title_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: 109.6rem;
+            height: 100%;
+
+            .title {
+                font-size: $fontSize40;
+                font-weight: $fontWeight500;
+                color: #000;
+                line-height: 4.8rem;
+            }
+            .sub_title {
+                margin-top: 2.4rem;
+                font-size: $fontSize20;
+                font-weight: $fontWeight400;
+                color: rgba(0, 0, 0, .75);
+                line-height: 2.4rem;
+            }
+        }
+    }
+}
+</style>

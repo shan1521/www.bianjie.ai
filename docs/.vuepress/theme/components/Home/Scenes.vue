@@ -81,7 +81,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 font-size: $fontSize24;
-                font-weight: 500;
+                font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
 
@@ -104,25 +104,27 @@ export default {
                 height: 33.6rem;
 
                 .scenes_item {
+                    position: relative;
                     max-width: 24rem;
                     min-height: 33.6rem;
 
                     .item_container {
                         box-sizing: border-box;
                         padding: 4.4rem 1.6rem 3.6rem;
-                        max-width: 24rem;
+                        width: 24rem;
                         min-height: 33.6rem;
                         border: 0.1rem solid #E1E5F4;
                         border-radius: 0.4rem;
 
                         &:hover {
+                            position: absolute;
                             padding: 3.6rem 1.6rem 1.8rem;
-                            max-width: 28.8rem;
-                            min-height: 41.2rem;
+                            width: 28.8rem;
+                            height: 41.2rem;
                             border: 0.1rem solid #0967E9;
                             border-bottom: 0.6rem solid #0967E9;
-                            transform: translateY(-10%) scale(1.03);
-                            transition: height 0.2s linear;
+                            transform: translate(-8%,-8%);
+                            transition: transform 0.1s linear;
                             background: url(../../assets/home/jjfa_bg.png) no-repeat center / cover;
 
                             .intro_list {

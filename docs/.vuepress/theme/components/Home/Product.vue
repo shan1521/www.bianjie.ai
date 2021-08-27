@@ -164,7 +164,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 font-size: $fontSize24;
-                font-weight: 500;
+                font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
 
@@ -240,7 +240,7 @@ export default {
                 .name {
                     margin-left: 1.2rem;
                     font-size: $fontSize16;
-                    font-weight: 500;
+                    font-weight: $fontWeight500;
                     color: #000;
                     line-height: 1.6rem;
                 }
@@ -286,7 +286,7 @@ export default {
                             .left {
                                 .name {
                                     font-size: $fontSize16;
-                                    font-weight: 500;
+                                    font-weight: $fontWeight500;
                                     color: #fff;
                                     line-height: 1.6rem;
 
@@ -303,7 +303,7 @@ export default {
                                 .intro {
                                     margin-top: 1.2rem;
                                     font-size: $fontSize16;
-                                    font-weight: 500;
+                                    font-weight: $fontWeight500;
                                     color: #fff;
                                     line-height: 1.6rem;
                                     letter-spacing: 0.1rem;
@@ -313,7 +313,7 @@ export default {
                                     margin-top: 2.4rem;
                                     max-width: 27.2rem;
                                     font-size: $fontSize14;
-                                    font-weight: 400;
+                                    font-weight: $fontWeight400;
                                     color: rgba(255, 255, 255, 0.75);
                                     line-height: 2.4rem;
                                 }
@@ -359,7 +359,7 @@ export default {
 
                 .title {
                     font-size: $fontSize20;
-                    font-weight: 500;
+                    font-weight: $fontWeight500;
                     color: #fff;
                     line-height: 2rem;
                 }
@@ -373,7 +373,7 @@ export default {
                     .desc {
                         max-width: 37.2rem;
                         font-size: $fontSize14;
-                        font-weight: 400;
+                        font-weight: $fontWeight400;
                         color: rgba(255, 255, 255, 0.85);
                         line-height: 2.6rem;
                     }

@@ -4,6 +4,8 @@
         <Advantage :advantageContent.sync="advantageContent"></Advantage>
         <Product :serviceContent.sync="serviceContent"></Product>
         <Scenes :scenesContent.sync="scenesContent"></Scenes>
+        <Partner :partnerContent.sync="partnerContent"></Partner>
+        <Dynamic :dynamicContent.sync="dynamicContent"></Dynamic>
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import Swiper from '@theme/components/Home/Swiper.vue';
 import Advantage from '@theme/components/Home/Advantage.vue';
 import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
+import Partner from '@theme/components/Home/Partner.vue';
+import Dynamic from '@theme/components/Home/Dynamic.vue';
 export default {
     name: "NewHome",
     computed: {
@@ -27,12 +31,20 @@ export default {
         scenesContent() {
 			return this.$frontmatter.scenesContent;
 		},
+        partnerContent() {
+			return this.$frontmatter.partnerContent;
+		},
+        dynamicContent() {
+			return this.$frontmatter.dynamicContent;
+		},
     },
     components: {
         Swiper,
         Advantage,
         Product,
-        Scenes
+        Scenes,
+        Partner,
+        Dynamic
     }
 };
 </script>
