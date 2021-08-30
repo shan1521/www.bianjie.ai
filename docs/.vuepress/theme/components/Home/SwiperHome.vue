@@ -1,23 +1,62 @@
 <template>
     <div class="swiper_home_container" :style="differentOpenImg(content.img)">
-        <div class="swiper_home_content">
-            <span class="title">{{ content.title }}</span>
-            <span class="sub_title">{{ content.subTitle }}</span>
+        <div class="swiper_home_content_container">
+            <div class="swiper_home_content">
+                <Prev @click.native="subCurrentSwiper"></Prev>
+                <div class="title_container">
+                    <span class="title">{{ content.title }}</span>
+                    <span class="sub_title">{{ content.subTitle }}</span>
+                </div>
+                <Next @click.native="addCurrentSwiper"></Next>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import Prev from "@theme/components/Common/Prev.vue";
+import Next from "@theme/components/Common/Next.vue";
 export default {
     name: "SwiperHome",
-    props: ["content"],
+    props: ["content", "currentSwiper"],
     computed: {
+        homeContent() {
+			return this.$frontmatter.homeContent;
+		},
         differentOpenImg() {
             return function (imgName) {
                 return `background:url(/home/${imgName}) no-repeat center / cover;`;
             };
         },
+        currentSwiperIndex() {
+            return function(newIndex) {
+                return this.currentSwiper = newIndex;
+            }
+        }
     },
+    methods: {
+        subCurrentSwiper(){
+            if(this.currentSwiperIndex > 0) {
+                this.currentSwiperIndex -= 1;
+            }
+            if(this.currentSwiperIndex === 0) {
+                this.currentSwiperIndex = 0;
+            }
+        },
+        addCurrentSwiper(){
+            if(this.currentSwiperIndex < this.homeContent.length - 1) {
+                this.currentSwiperIndex += 1;
+            }
+            if(this.currentSwiperIndex === this.homeContent.length - 1) {
+                this.currentSwiperIndex = this.homeContent.length - 1;
+            }
+        }
+    },
+    components: {
+        Prev,
+        Next,
+    },
+
 };
 </script>
 
@@ -26,14 +65,24 @@ export default {
     width: 100%;
     height: 100%;
 
-    .swiper_home_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .swiper_home_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
+
+        .swiper_home_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 116.8rem;
+            height: 100%;
+            .title_container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
         .title {
             font-size: $fontSize56;

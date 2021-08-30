@@ -132,6 +132,9 @@ export default {
     width: 100%;
     height: 4.8rem;
     z-index: 2;
+    .window_scroll {
+        background: #fff;
+    }
 
     .nav_content {
         display: flex;

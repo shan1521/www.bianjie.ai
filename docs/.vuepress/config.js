@@ -31,7 +31,7 @@ module.exports = {
                 ]
             },
             { text: '企业动态', link: '/dynamic' },
-            { text: '合作伙伴', link: '/parterner' },
+            { text: '合作伙伴', link: '/partner' },
             { text: '关于边界', link: '/about' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ]

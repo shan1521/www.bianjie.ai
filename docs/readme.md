@@ -134,6 +134,134 @@
             },
         ],
         moreText: 了解更多
+    },
+    partnerContent: {
+        title: 合作伙伴,
+        subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
+        fieldsList: [
+            {
+                fieldName: 行业生态,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/xwl.png?aaecc1668b9b2f0e15ca1e7c5847c2f3},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+            {
+                fieldName: 金融领域,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+            {
+                fieldName: 医疗领域,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+            {
+                fieldName: 数字资产,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+            {
+                fieldName: 人工智能与物联网,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+            {
+                fieldName: 全球前沿技术,
+                partnerList: [
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                    {src: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67},
+                ]
+            },
+        ]
+    },
+    dynamicContent: {
+        title: 企业动态,
+        mostImportant: {
+            imgName: https://www.bianjie.ai/dist/production_serve.png?7a666bd93e73b7e630b469c3c376479f,
+            title: 首批BSN跨链服务正式上线，已加入测试网供开发者体验,
+            date: '2021-06-22',
+            intro: 日前，边界智能、分布科技与区块链服务网络BSN达成战略合作，于2020年10月31日，在BSN测试网上线 IRITA OPB。,
+            link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw,
+            route: /most,
+        },
+        dynamicList: [
+            {
+                title: 首批BSN跨链服务正式上线，已加入测试网供开发者体验,
+                date: '2021-06-22',
+                intro: 日前，边界智能、分布科技与区块链服务网络BSN达成战略合作，于2020年10月31日，在BSN测试网上线 IRITA OPB。,
+                link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw,
+                route: ,
+            },
+            {
+                title: 首批BSN跨链服务正式上线，已加入测试网供开发者体验,
+                date: '2021-06-22',
+                intro: 日前，边界智能、分布科技与区块链服务网络BSN达成战略合作，于2020年10月31日，在BSN测试网上线 IRITA OPB。,
+                link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw,
+                route: ,
+            },
+            {
+                title: 首批BSN跨链服务正式上线，已加入测试网供开发者体验,
+                date: '2021-06-22',
+                intro: 日前，边界智能、分布科技与区块链服务网络BSN达成战略合作，于2020年10月31日，在BSN测试网上线 IRITA OPB。,
+                link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw,
+                route: ,
+            },
+        ],
+        moreText: 更多动态
     }
 }
 
