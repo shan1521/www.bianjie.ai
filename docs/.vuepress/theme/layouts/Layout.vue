@@ -12,6 +12,7 @@
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
+                <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <!--              <Developer v-if="$page.frontmatter.isDeveloper"></Developer>-->
                 <!--              <Community v-if="$page.frontmatter.isCommunity" />-->
                 <!--              <div class="md_container" v-if="showMd">-->
@@ -35,6 +36,7 @@ import Sidebar from "@theme/components/Sidebar.vue";
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
+import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import Footer from "@theme/components/Footer.vue";
 
 import { resolveSidebarItems } from "../util";
@@ -50,6 +52,7 @@ export default {
         Navigation,
         NewHome,
         IritaHub,
+        IritaOpb,
         Footer,
     },
 

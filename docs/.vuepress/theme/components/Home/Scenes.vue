@@ -26,10 +26,7 @@
                                 </li>
                             </ul>
                             <div class="desc">{{ item.description }}</div>
-                            <div class="detail_container">
-                                <span class="detail">查看详情</span>
-                                <i class="iconfont icon-jiantou"></i>
-                            </div>
+                            <Detail></Detail>
                         </div>
                     </li>
                 </ul>
@@ -41,6 +38,7 @@
 
 <script>
 import More from "@theme/components/Common/More.vue";
+import Detail from "@theme/components/Common/Detail.vue";
 export default {
     name: "Scenes",
     props: ["scenesContent"],
@@ -53,6 +51,7 @@ export default {
     },
     components: {
         More,
+        Detail
     },
 };
 </script>
