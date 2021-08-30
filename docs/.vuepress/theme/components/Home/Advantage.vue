@@ -152,7 +152,7 @@ export default {
                                     margin-bottom: 0.8rem;
                                     width: 12rem;
                                     height: 0.1rem;
-                                    background: rgba(0, 0, 0, 0.3);
+                                    background: #EDEDED;
                                 }
                             }
                         }

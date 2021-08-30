@@ -1,7 +1,7 @@
 <template>
-    <div class="title_container">
-        <div class="title_content_container">
-            <div class="title_content">
+    <div class="iritahub_title_container">
+        <div class="iritahub_title_content_container">
+            <div class="iritahub_title_content">
                 <div class="title">{{ titleContent.title }}</div>
                 <div class="sub_title">{{ titleContent.subTitle }}</div>
             </div>
@@ -11,23 +11,23 @@
 
 <script>
 export default {
-    name: "TitleContent",
+    name: "IritaHubTitle",
     props: ["titleContent"],
 };
 </script>
 
 <style lang="stylus">
-.title_container {
+.iritahub_title_container {
     width: 100%;
     height: 36rem;
     background: url(../../assets/product/iritahub/iritahub_banner.png) no-repeat center / cover;
 
-    .title_content_container {
+    .iritahub_title_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
 
-        .title_content {
+        .iritahub_title_content {
             display: flex;
             flex-direction: column;
             justify-content: center;
