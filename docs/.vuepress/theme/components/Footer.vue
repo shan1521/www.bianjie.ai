@@ -84,14 +84,10 @@ export default {
 
 <style lang='stylus'>
 .footer_container {
-    margin-top: 2rem;
     width: 100%;
     height: 31.2rem;
     flex: 0 0 31.2rem;
 
-    // @media (max-width: 768px) {
-    // margin-top: 0;
-    // }
     .footer_content_top {
         width: 100%;
         height: 26.4rem;

@@ -1,7 +1,8 @@
 import Vue from 'vue';
 // import Vuex from 'vuex';
 // import store from './store';
-// import Element from 'element-ui';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 // Vue.prototype.$bus = new Vue();
 export default async ({
     Vue,
@@ -19,7 +20,7 @@ export default async ({
     
 	Vue.use(router)
 	// Vue.use(Vuex)
-    // Vue.use(Element);
+    Vue.use(Element);
 	// Vue.mixin({ store: store });
 	if(!isServer){
 		// router.beforeEach((to, from,next) => {
@@ -38,11 +39,11 @@ export default async ({
 		// })
 		// await import("./public/iconfont/iconfont").then(module => {
 		// })
-		// await import('element-ui').then(module => {
-		// 	Vue.use(module.default)
-		// }).catch(e => {
-		// 	console.log(e,'element-ui error ')
-		// })
+		await import('element-ui').then(module => {
+			Vue.use(module.default)
+		}).catch(e => {
+			console.log(e,'element-ui error ')
+		})
 		await import('vue-awesome-swiper').then( module => {
 			Vue.use(module.default)
 		}).catch(e => {

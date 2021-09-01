@@ -112,7 +112,7 @@ export default {
         .dynamic_content {
             box-sizing: border-box;
             margin: 0 auto;
-            padding: 8rem 0;
+            padding: 8rem 0 10rem;
             max-width: 102.4rem;
 
             .title {

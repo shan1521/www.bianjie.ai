@@ -2,6 +2,7 @@
 {
     layout: Layout,
     isNewHome: true,
+    title: 首页,
     homeContent: [
         {
             img: banner_home_1.png,

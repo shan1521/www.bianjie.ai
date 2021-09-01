@@ -16,22 +16,22 @@ module.exports = {
             { text: '首页', link: '/' },
             {
                 text: '核心产品', link: '', items: [
-                    { text: 'IRITA HUB', link: '/product/iritahub' },
-                    { text: 'IRITA OPB', link: '/product/iritaopb' }
+                    { text: 'IRITA HUB', link: '/products/iritahub' },
+                    { text: 'IRITA OPB', link: '/products/iritaopb' }
                 ]
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/app/goverment' },
-                    { text: '碳中和', link: '/app/carbonneutral' },
-                    { text: '文创与版权', link: '/app/cultural' },
-                    { text: '工业互联网及物联网', link: '/app/net' },
-                    { text: '金融', link: '/app/finance' },
-                    { text: '医疗健康', link: '/app/health' },
+                    { text: '智慧政务', link: '/application-scenarios/goverment' },
+                    { text: '碳中和', link: '/application-scenarios/carbonneutral' },
+                    { text: '文创与版权', link: '/application-scenarios/cultural' },
+                    { text: '工业互联网及物联网', link: '/application-scenarios/net' },
+                    { text: '金融', link: '/application-scenarios/finance' },
+                    { text: '医疗健康', link: '/application-scenarios/health' },
                 ]
             },
-            { text: '企业动态', link: '/dynamic' },
-            { text: '合作伙伴', link: '/partner' },
+            { text: '企业动态', link: '/news' },
+            { text: '合作伙伴', link: '/partners' },
             { text: '关于边界', link: '/about' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ]
