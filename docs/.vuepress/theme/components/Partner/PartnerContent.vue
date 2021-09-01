@@ -136,6 +136,7 @@ export default {
                             justify-content: center;
                             align-items: center;
                             max-width: 24rem;
+                            transition: all 0.3s linear;
 
                             &:hover {
                                 .img_wrap {

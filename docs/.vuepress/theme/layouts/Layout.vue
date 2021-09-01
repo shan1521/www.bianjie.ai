@@ -15,6 +15,10 @@
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <Dynamic v-if="$page.frontmatter.isDynamic"></Dynamic>
                 <Partner v-if="$page.frontmatter.isPartner"></Partner>
+                <About v-if="$page.frontmatter.isAbout"></About>
+                <Milestone v-if="$page.frontmatter.isMilestone"></Milestone>
+                <Honour v-if="$page.frontmatter.isHonour"></Honour>
+                <Join v-if="$page.frontmatter.isJoin"></Join>
                 <!--              <Developer v-if="$page.frontmatter.isDeveloper"></Developer>-->
                 <!--              <Community v-if="$page.frontmatter.isCommunity" />-->
                 <!--              <div class="md_container" v-if="showMd">-->
@@ -41,6 +45,10 @@ import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import Dynamic from "@theme/components/Dynamic/Dynamic.vue";
 import Partner from "@theme/components/Partner/Partner.vue";
+import About from "@theme/components/About/About.vue";
+import Milestone from "@theme/components/Milestone/Milestone.vue";
+import Honour from "@theme/components/Honour/Honour.vue";
+import Join from "@theme/components/Join/Join.vue";
 import Footer from "@theme/components/Footer.vue";
 
 import { resolveSidebarItems } from "../util";
@@ -59,6 +67,10 @@ export default {
         IritaOpb,
         Dynamic,
         Partner,
+        About,
+        Milestone,
+        Honour,
+        Join,
         Footer,
     },
 
