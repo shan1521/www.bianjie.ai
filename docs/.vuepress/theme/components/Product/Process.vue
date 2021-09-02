@@ -56,7 +56,7 @@ export default {
 <style lang="stylus">
 .process_container {
     width: 100%;
-    height: 53.6rem;
+    height: 55.6rem;
 
     .process_content_container {
         margin: 0 auto;
@@ -68,7 +68,7 @@ export default {
             align-items: center;
             box-sizing: border-box;
             margin: 0 auto;
-            padding: 4.8rem 0 8rem;
+            padding: 4.8rem 0 10rem;
             max-width: 96rem;
             text-align: center;
 

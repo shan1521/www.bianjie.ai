@@ -2,6 +2,7 @@
 {
     layout: Layout,
     isIritaOpb: true,
+    title: IRITAOPB-核心产品,
     iritaopbTitleContent: {
         title: 开放联盟链产品 - IRITA OPB,
         subTitle: 符合中国监管合规要求 · 成熟公链底层技术框架 · 基于智能合约的开放联盟链产品,

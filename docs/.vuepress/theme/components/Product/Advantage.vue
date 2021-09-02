@@ -43,7 +43,7 @@ export default {
 <style lang="stylus">
 .adv_container {
     width: 100%;
-    height: 55.2rem;
+    height: 57.2rem;
 
     .adv_content_container {
         margin: 0 auto;
@@ -52,7 +52,7 @@ export default {
         .adv_content {
             box-sizing: border-box;
             margin: 0 auto;
-            padding: 4.8rem 0 10rem;
+            padding: 4.8rem 0 12rem;
             max-width: 105.6rem;
             text-align: center;
 
