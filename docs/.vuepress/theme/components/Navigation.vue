@@ -67,7 +67,6 @@ export default {
     data() {
         return {
             navigation: [],
-            currentIndex: 0,
             flShowBoxShadow: false,
             // isShowSubMenuText: "",
             // flShowMobileMenu: false,
@@ -81,6 +80,9 @@ export default {
         navigationList() {
             return this.navigation;
         },
+        currentIndex() {
+            return +this.$store.state.currentIndex;
+        },
         download() {
             return (
                 this.navigation &&
@@ -91,11 +93,10 @@ export default {
     },
     methods: {
         changeIndex(index) {
-            if (index !== 6) {
-                this.currentIndex = index;
-                localStorage.setItem("currentIndex", index);
+            if (this.currentIndex !== index && index !== 6) {
+                this.$store.commit("currentIndex", index);
+                localStorage.setItem("currentIndex", JSON.stringify(index));
             }
-            console.log(index, "index");
         },
         // handleScroll(e) {
         //     this.scrollTop =

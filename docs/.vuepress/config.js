@@ -22,18 +22,18 @@ module.exports = {
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/application-scenarios/goverment' },
-                    { text: '碳中和', link: '/application-scenarios/carbonneutral' },
-                    { text: '文创与版权', link: '/application-scenarios/cultural' },
-                    { text: '工业互联网及物联网', link: '/application-scenarios/net' },
-                    { text: '金融', link: '/application-scenarios/finance' },
-                    { text: '医疗健康', link: '/application-scenarios/health' },
+                    { text: '智慧政务', link: '/applications/goverment' },
+                    { text: '碳中和', link: '/applications/carbonneutral' },
+                    { text: '文创与版权', link: '/applications/cultural' },
+                    { text: '工业互联网及物联网', link: '/applications/net' },
+                    { text: '金融', link: '/applications/finance' },
+                    { text: '医疗健康', link: '/applications/health' },
                 ]
             },
             { text: '企业动态', link: '/news' },
             { text: '合作伙伴', link: '/partners' },
             { text: '关于边界', link: '/about' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
-        ]
+        ],
     },
 }

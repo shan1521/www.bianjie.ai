@@ -2,12 +2,14 @@
   <div class="milestone_container">
       <AboutTitle :aboutTitle="aboutTitle"></AboutTitle>
       <AboutContent :aboutType="aboutType" :tab="1"></AboutContent>
+      <MilestoneTime :timelineContent="timelineContent"></MilestoneTime>
   </div>
 </template>
 
 <script>
 import AboutTitle from '@theme/components/Common/AboutTitle.vue';
 import AboutContent from '@theme/components/About/AboutContent.vue';
+import MilestoneTime from '@theme/components/Milestone/MilestoneTime.vue';
 export default {
     name: 'Milestone',
     computed: {
@@ -17,10 +19,14 @@ export default {
         aboutType() {
 			return this.$frontmatter.aboutType;
 		},
+        timelineContent() {
+			return this.$frontmatter.timelineContent;
+		},
     },
     components: {
         AboutTitle,
-        AboutContent
+        AboutContent,
+        MilestoneTime
     }
 }
 </script>

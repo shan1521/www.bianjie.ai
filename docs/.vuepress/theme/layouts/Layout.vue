@@ -19,13 +19,11 @@
                 <Milestone v-if="$page.frontmatter.isMilestone"></Milestone>
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
-                <!--              <Developer v-if="$page.frontmatter.isDeveloper"></Developer>-->
-                <!--              <Community v-if="$page.frontmatter.isCommunity" />-->
-                <!--              <div class="md_container" v-if="showMd">-->
-                <!--                  <div class="md_wrap">-->
-                <!--                      <Content></Content>-->
-                <!--                  </div>-->
-                <!--              </div>-->
+                <Commingsoon
+                    v-if="$page.frontmatter.isCommingsoon"
+                ></Commingsoon>
+                <AppScenes v-if="showApp"></AppScenes>
+                <Markdown :showMd="showMd"></Markdown>
             </div>
         </ClientOnly>
         <ClientOnly>
@@ -49,38 +47,28 @@ import About from "@theme/components/About/About.vue";
 import Milestone from "@theme/components/Milestone/Milestone.vue";
 import Honour from "@theme/components/Honour/Honour.vue";
 import Join from "@theme/components/Join/Join.vue";
+import Commingsoon from "@theme/components/Common/Commingsoon.vue";
+import Markdown from "@theme/components/Common/Markdown.vue";
+import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 
 import { resolveSidebarItems } from "../util";
+const nav = require("../../config.js");
 
 export default {
     name: "Layout",
-
-    components: {
-        Home,
-        Page,
-        Sidebar,
-        Navbar,
-        Navigation,
-        NewHome,
-        IritaHub,
-        IritaOpb,
-        Dynamic,
-        Partner,
-        About,
-        Milestone,
-        Honour,
-        Join,
-        Footer,
-    },
-
     data() {
         return {
             isSidebarOpen: false,
         };
     },
-
     computed: {
+        showMd() {
+            return Object.keys(this.$page.frontmatter).length === 0;
+        },
+        showApp(){
+            console.log(this.$route.path,'11111111111111111')
+        },
         shouldShowNavbar() {
             const { themeConfig } = this.$site;
             const { frontmatter } = this.$page;
@@ -126,13 +114,6 @@ export default {
             ];
         },
     },
-
-    mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
-    },
-
     methods: {
         toggleSidebar(to) {
             this.isSidebarOpen =
@@ -160,10 +141,51 @@ export default {
             }
         },
     },
+    mounted() {
+        this.$router.afterEach(() => {
+            this.isSidebarOpen = false;
+        });
+    },
+    watch: {
+        $route: {
+            handler(val, oldval) {
+                nav.themeConfig.nav.forEach((item, index) => {
+                    if (item.link === val.path) {
+                        this.$store.commit("currentIndex", index);
+                    }
+                });
+                // console.log(val);//新路由信息
+            },
+            immediate: true,
+            // 深度观察监听
+            deep: true,
+        },
+    },
+    components: {
+        Home,
+        Page,
+        Sidebar,
+        Navbar,
+        Navigation,
+        NewHome,
+        IritaHub,
+        IritaOpb,
+        Dynamic,
+        Partner,
+        About,
+        Milestone,
+        Honour,
+        Join,
+        Commingsoon,
+        Markdown,
+        AppScenes,
+        Footer,
+    },
 };
 </script>
 <style lang='stylus'>
 @import '../../public/iconfont/iconfont.css';
+
 .theme-container {
     position: relative;
     display: flex;
