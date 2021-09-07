@@ -22,11 +22,11 @@ module.exports = {
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/applications/goverment' },
+                    { text: '智慧政务', link: '/applications/government' },
                     { text: '碳中和', link: '/applications/carbonneutral' },
                     { text: '文创与版权', link: '/applications/cultural' },
                     { text: '工业互联网及物联网', link: '/applications/net' },
-                    { text: '金融', link: '/applications/finance' },
+                    { text: '供应链金融', link: '/applications/finance' },
                     { text: '医疗健康', link: '/applications/health' },
                 ]
             },

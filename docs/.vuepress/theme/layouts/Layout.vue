@@ -67,7 +67,24 @@ export default {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            console.log(this.$route.path,'11111111111111111')
+            if(this.$route.path === '/applications/government.html') {
+                return '$page.frontmatter.isGovernment';
+            }
+            if(this.$route.path === '/applications/finance.html') {
+                return '$page.frontmatter.isFinance';
+            }
+            if(this.$route.path === '/applications/carbonneutral.html') {
+                return '$page.frontmatter.isCarbonneutral';
+            }
+            if(this.$route.path === '/applications/cultural.html') {
+                return '$page.frontmatter.isCultural';
+            }
+            if(this.$route.path === '/applications/health.html') {
+                return '$page.frontmatter.isHealth';
+            }
+            if(this.$route.path === '/applications/net.html') {
+                return '$page.frontmatter.isNet';
+            }
         },
         shouldShowNavbar() {
             const { themeConfig } = this.$site;
