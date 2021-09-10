@@ -1,19 +1,19 @@
 <template>
-    <div class="nav_container">
+    <div class="nav_container" :class="isColor ? 'white_bg' : ''">
         <div class="nav_content">
-            <div class="nav_logo">
+            <div class="nav_logo" @click="toHome">
                 <img
-                    v-if="!flShowBoxShadow"
+                    v-if="!isColor"
                     src="../assets/home/logo_white.png"
                     alt=""
                 />
                 <img
-                    v-if="flShowBoxShadow"
+                    v-if="isColor"
                     src="../assets/home/logo_black.png"
                     alt=""
                 />
             </div>
-            <div class="nav_list_more">
+            <div class="nav_list_wrap">
                 <ul class="nav_list">
                     <li
                         v-show="!item.isRight"
@@ -24,31 +24,43 @@
                     >
                         <router-link
                             class="item"
-                            :class="currentIndex === index ? 'active' : ''"
+                            :class="[
+                                isColor ? 'color_font' : '',
+                                !isColor && currentIndex === index
+                                    ? 'active'
+                                    : '',
+                                isColor && currentIndex === index
+                                    ? 'color_font_active'
+                                    : '',
+                            ]"
                             :to="item.link"
                         >
                             {{ item.text }}
                         </router-link>
-                        <ul
-                            v-show="item.items && item.items.length > 0"
-                            class="sub_menu"
-                        >
-                            <li class="sub_menu_item" v-for="v in item.items">
-                                <router-link
-                                    class="link_item"
-                                    @click.stop="toPage(v.link)"
-                                    :to="v.link"
-                                >
-                                    <div>{{ v.text }}</div>
-                                </router-link>
-                            </li>
-                        </ul>
+                        <div  v-if="item.items && item.items.length > 0 && index === 1" class="products_menu">
+                            <ul class="product_type_list">
+                                <li class="product_type_item" v-for="(subItem, subIndex) in item.items" :key="subIndex">
+                                    <div class="type_wrap">
+                                        <i class="iconfont" :class="subItem.icon"></i>
+                                        <span class="type">{{subItem.type}}</span>
+                                    </div>
+                                    <ul class="type_list">
+                                        <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
+                                            <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer">{{product.abbreviation}}</a>
+                                            <router-link class="abbreviation" v-if="product.route" :to="product.route">{{product.abbreviation}}</router-link>
+                                            <div class="intro">{{product.intro}}</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont icon-a-learnmore"></i>
+                    <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
                     <router-link
                         class="nav_list_item"
+                        :class="isColor ? 'nav_list_item_color' : ''"
                         :to="`/download`"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -67,10 +79,11 @@ export default {
     data() {
         return {
             navigation: [],
-            flShowBoxShadow: false,
+            isColor: false,
+            scroll: "",
+            // flShowBoxShadow: false,
             // isShowSubMenuText: "",
             // flShowMobileMenu: false,
-            // flShowSunMenu: false,
         };
     },
     created() {
@@ -92,37 +105,42 @@ export default {
         },
     },
     methods: {
+        toHome() {
+            this.$router.push("/");
+        },
         changeIndex(index) {
             if (this.currentIndex !== index && index !== 6) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }
         },
-        // handleScroll(e) {
-        //     this.scrollTop =
-        //         window.pageYOffset ||
-        //         document.documentElement.scrollTop ||
-        //         document.body.scrollTop;
-
-        //     if (this.scrollTop > 5) {
-        //         this.flShowBoxShadow = true;
-        //     } else {
-        //         this.flShowBoxShadow = false;
-        //     }
-        // },
+        scrollTop() {
+            this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const path = this.$route.path.split('.')[0].split('/')[1];
+            if (path === 'products' || path === 'applications' || this.scroll > 48 ) {
+                this.isColor = true;
+            } else {
+                this.isColor = false;
+            }
+        },
+    },
+    watch: {
+        '$route.path': {
+            handler(newPath){
+                const path = newPath.split('.')[0].split('/')[1];
+                this.routePath = path;
+                if(path === 'products' || path == 'applications') {
+                    this.isColor = true;
+                } else {
+                    this.isColor = false;
+                }
+            },
+            immediate: true,
+            deep: true,
+        }
     },
     mounted() {
-        // this.scrollTop =
-        //     window.pageYOffset ||
-        //     document.documentElement.scrollTop ||
-        //     document.body.scrollTop;
-        // console.log(this.scrollTop, "this.scrollTop");
-        // if (this.scrollTop > 5) {
-        //     this.flShowBoxShadow = true;
-        // } else {
-        //     this.flShowBoxShadow = false;
-        // }
-        // window.addEventListener("scroll", this.handleScroll, true);
+        window.addEventListener("scroll", this.scrollTop);
     },
 };
 </script>
@@ -133,9 +151,6 @@ export default {
     width: 100%;
     height: 4.8rem;
     z-index: 2;
-    .window_scroll {
-        background: #fff;
-    }
 
     .nav_content {
         display: flex;
@@ -150,6 +165,7 @@ export default {
         .nav_logo {
             width: 9.8rem;
             height: 3.2rem;
+            cursor: pointer;
 
             img {
                 width: 100%;
@@ -157,7 +173,7 @@ export default {
             }
         }
 
-        .nav_list_more {
+        .nav_list_wrap {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -174,18 +190,24 @@ export default {
                     height: 100%;
                     line-height: 4.8rem;
                     cursor: pointer;
-
-                    &:hover {
-                        .sub_menu {
-                            display: block;
+                    &:nth-of-type(2) {
+                        .products_menu {
+                            display: none;
+                        }
+                        &:hover {
+                            .products_menu {
+                                display: block;
+                            }
                         }
                     }
+
 
                     &:first-child {
                         margin-left: 0;
                     }
 
                     .item {
+                        position: relative;
                         display: block;
                         height: 100%;
                         color: rgba(255, 255, 255, 0.75);
@@ -207,25 +229,80 @@ export default {
                         }
                     }
 
-                    .sub_menu {
-                        z-index: 100;
-                        display: none;
+                    .color_font {
+                        color: rgba(0, 0, 0, 0.75);
+                    }
+
+                    .color_font_active {
+                        position: relative;
+                        color: #000;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            clear: both;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 0.2rem;
+                            background: #0967E9;
+                        }
+                    }
+
+                    .products_menu {
                         position: absolute;
-                        top: 4.8rem;
-                        list-style: none;
-                        background: $whiteColor;
                         box-sizing: border-box;
-                        padding: 0.2rem 0;
-                        border-radius: 0 0 0.2rem 0.2rem;
-                        border: 0.1rem solid $grayColor;
-
-                        .sub_menu_item {
-                            line-height: 1;
-                            padding: 1rem 1.2rem;
-                            white-space: nowrap;
-
-                            .link_item {
-                                color: #000;
+                        padding: 2.4rem 2.4rem 3.2rem;
+                        // min-height: 27.4rem;
+                        background: #fff;
+                        .product_type_list {
+                            .product_type_item {
+                                margin-top: 3.2rem;
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+                                .type_wrap {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 2.4rem;
+                                    border-bottom: 0.1rem solid #EDEDED;
+                                    .iconfont {
+                                        font-size: $fontSize14;
+                                        color: #1677FF;
+                                    }
+                                    .type {
+                                        margin-left: 0.4rem;
+                                        font-size: $fontSize14;
+                                        font-weight: $fontWeight400;
+                                        color: #000;
+                                        line-height: 1.4rem;
+                                    }
+                                }
+                                .type_list {
+                                    margin-top: 1.1rem;
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    .type_item {
+                                        margin-left: 4rem;
+                                        &:first-child {
+                                            margin-left: 0;
+                                        }
+                                        .abbreviation {
+                                            display: block;
+                                            font-size: $fontSize14;
+                                            font-weight: $fontWeight500;
+                                            color: #0967E9;
+                                            line-height: 1.4rem;
+                                        }
+                                        .intro {
+                                            margin-top: 0.8rem;
+                                            font-size: $fontSize12;
+                                            font-weight: $fontWeight400;
+                                            color: rgba(0, 0, 0, 0.75);
+                                            line-height: 1.2rem;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -242,14 +319,24 @@ export default {
                     height: 1.6rem;
                     color: #fff;
                 }
+                .iconfont_color {
+                    color: #0967E9;
+                }
 
                 .nav_list_item {
                     display: inline-block;
                     height: 100%;
                     color: #fff;
                 }
+                .nav_list_item_color {
+                    color: rgba(0, 0, 0, 0.75);
+                }
             }
         }
     }
+}
+
+.white_bg {
+    background: #fff;
 }
 </style>

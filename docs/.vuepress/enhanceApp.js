@@ -24,7 +24,7 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
-			if(to.path.includes('/products/iritahub') || to.path.includes('/products/iritaopb')){
+			if(to.path.includes('/products/iritahub') || to.path.includes('/products/iritaopb') || to.path.includes('/products/iritabean') || to.path.includes('/products/iritada')){
 				store.commit('currentIndex',1)
 				localStorage.setItem('currentIndex',1)
 			}else if (to.path.includes('/applications')){

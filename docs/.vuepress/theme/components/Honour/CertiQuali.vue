@@ -79,8 +79,8 @@ export default {
                     align-items: center;
                     box-sizing: border-box;
                     padding: 1.6rem;
-                    width: 48rem;
-                    height: 22.4rem;
+                    max-width: 48rem;
+                    min-height: 22.4rem;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
 
@@ -89,7 +89,7 @@ export default {
                         justify-content: center;
                         align-items: center;
                         margin-right: 1.6rem;
-                        width: 15.8rem;
+                        max-width: 15.8rem;
                         height: 19.2rem;
 
                         img {

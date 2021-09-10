@@ -14,10 +14,46 @@ module.exports = {
         navbar: false,
         nav: [
             { text: '首页', link: '/' },
-            {
-                text: '核心产品', link: '', items: [
-                    { text: 'IRITA HUB', link: '/products/iritahub' },
-                    { text: 'IRITA OPB', link: '/products/iritaopb' }
+            { 
+                text: '核心产品', link: '', 
+                items: [
+                    {
+                        icon: 'icon-diceng',
+                        type: '区块链底层技术产品',
+                        productList: [
+                            {
+                                abbreviation: 'IRITA',
+                                intro: '支持下一代分布式商业的联盟链产品线',
+                                link: 'https://irita.bianjie.ai/'
+                            },
+                            {
+                                abbreviation: 'IRITA HUB',
+                                intro: '区块链跨链服务枢纽',
+                                route: '/products/iritahub'
+                            },
+                            {
+                                abbreviation: 'IRITA OPB',
+                                intro: '基于智能合约的开放联盟链产品',
+                                route: '/products/iritaopb'
+                            },
+                        ]
+                    },
+                    {
+                        icon: 'icon-yingyongceng',
+                        type: '区块链应用层技术产品',
+                        productList: [
+                            {
+                                abbreviation: 'IRITA BEAN',
+                                intro: '保护数据隐私的数据共享平台',
+                                route: '/products/iritabean'
+                            },
+                            {
+                                abbreviation: 'IRITA DA',
+                                intro: '资产数字化确权及交换平台',
+                                route: '/products/iritada'
+                            },
+                        ]
+                    },
                 ]
             },
             {

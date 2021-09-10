@@ -14,6 +14,7 @@ export default {
 
 <style lang="stylus">
 .next_container {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;

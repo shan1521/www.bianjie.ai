@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "24230720",
+      "name": "应用层",
+      "font_class": "yingyongceng",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "24230645",
+      "name": "底层",
+      "font_class": "diceng",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
       "icon_id": "24036870",
       "name": "jiantou_left",
       "font_class": "jiantou_left",

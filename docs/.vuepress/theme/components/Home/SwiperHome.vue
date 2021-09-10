@@ -2,20 +2,19 @@
     <div class="swiper_home_container" :style="differentOpenImg(content.img)">
         <div class="swiper_home_content_container">
             <div class="swiper_home_content">
-                <Prev @click.native="subCurrentSwiper"></Prev>
+                <!-- <Prev @click.native="subCurrentSwiper"></Prev> -->
                 <div class="title_container">
                     <span class="title">{{ content.title }}</span>
                     <span class="sub_title">{{ content.subTitle }}</span>
                 </div>
-                <Next @click.native="addCurrentSwiper"></Next>
+                <!-- <Next @click.native="addCurrentSwiper"></Next> -->
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import Prev from "@theme/components/Common/Prev.vue";
-import Next from "@theme/components/Common/Next.vue";
+
 export default {
     name: "SwiperHome",
     props: ["content", "currentSwiper"],
@@ -52,11 +51,6 @@ export default {
             }
         }
     },
-    components: {
-        Prev,
-        Next,
-    },
-
 };
 </script>
 
@@ -72,7 +66,7 @@ export default {
 
         .swiper_home_content {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin: 0 auto;
             max-width: 116.8rem;

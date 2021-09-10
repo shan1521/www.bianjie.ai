@@ -13,15 +13,14 @@
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
+                <IritaBean v-if="$page.frontmatter.isIritaBean"></IritaBean>
+                <IritaDa v-if="$page.frontmatter.isIritaDa"></IritaDa>
                 <Dynamic v-if="$page.frontmatter.isDynamic"></Dynamic>
                 <Partner v-if="$page.frontmatter.isPartner"></Partner>
                 <About v-if="$page.frontmatter.isAbout"></About>
                 <Milestone v-if="$page.frontmatter.isMilestone"></Milestone>
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
-                <Commingsoon
-                    v-if="$page.frontmatter.isCommingsoon"
-                ></Commingsoon>
                 <AppScenes v-if="showApp"></AppScenes>
                 <Markdown :showMd="showMd"></Markdown>
             </div>
@@ -41,13 +40,14 @@ import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
+import IritaBean from "@theme/components/Product/IritaBean.vue";
+import IritaDa from "@theme/components/Product/IritaDa.vue";
 import Dynamic from "@theme/components/Dynamic/Dynamic.vue";
 import Partner from "@theme/components/Partner/Partner.vue";
 import About from "@theme/components/About/About.vue";
 import Milestone from "@theme/components/Milestone/Milestone.vue";
 import Honour from "@theme/components/Honour/Honour.vue";
 import Join from "@theme/components/Join/Join.vue";
-import Commingsoon from "@theme/components/Common/Commingsoon.vue";
 import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
@@ -171,10 +171,8 @@ export default {
                         this.$store.commit("currentIndex", index);
                     }
                 });
-                // console.log(val);//新路由信息
             },
             immediate: true,
-            // 深度观察监听
             deep: true,
         },
     },
@@ -187,13 +185,14 @@ export default {
         NewHome,
         IritaHub,
         IritaOpb,
+        IritaBean,
+        IritaDa,
         Dynamic,
         Partner,
         About,
         Milestone,
         Honour,
         Join,
-        Commingsoon,
         Markdown,
         AppScenes,
         Footer,

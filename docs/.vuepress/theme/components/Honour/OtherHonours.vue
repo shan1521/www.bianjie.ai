@@ -156,6 +156,9 @@ export default {
                         .el-timeline-item {
                             margin-top: 1.6rem;
                             width: 100%;
+                            &:last-child {
+                                margin-top: 0;
+                            }
                             
                             .month {
                                 font-size: $fontSize16;

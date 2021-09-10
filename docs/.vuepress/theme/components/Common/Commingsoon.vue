@@ -6,7 +6,16 @@
                     <img src="../../assets/comming.png" alt="" />
                 </div>
                 <div class="commingsoon_right">
-                    <div class="title">{{ commingSoonContent.title }}</div>
+                    <div class="title">敬请期待</div>
+                    <div class="commingsoon_list">
+                        <div class="commingsoon_item">
+                            边界智能将会不定期上新更多产品和技术DEMO，帮助独立开发者和企业快速开发部署区块链应用程序。
+                        </div>
+                        <div class="commingsoon_item">
+                            感谢您的关注！
+                        </div>
+                    </div>
+                    <!-- <div class="title">{{ commingSoonContent.title }}</div>
                     <ul class="commingsoon_list">
                         <li
                             class="commingsoon_item"
@@ -15,7 +24,7 @@
                         >
                             {{ item.paragraph }}
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -25,11 +34,7 @@
 <script>
 export default {
     name: "Commingsoon",
-    computed: {
-        commingSoonContent() {
-            return this.$frontmatter.commingSoonContent;
-        },
-    },
+    props: ["commingSoonContent"]
 };
 </script>
 

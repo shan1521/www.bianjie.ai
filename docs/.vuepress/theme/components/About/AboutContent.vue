@@ -71,31 +71,18 @@ export default {
             height: 100%;
 
             .about_type_item {
-                text-align: center;
+                box-sizing: border-box;
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                height: 100%;
-
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    margin-left: 6rem;
-                    width: 0.1rem;
-                    height: 4rem;
-                    background: #EEEEEE;
-                }
-
-                &:last-child {
-                    &::after {
-                        content: '';
-                        display: none;
-                    }
-                }
+                width: 18.5rem;
+                border-right: 0.1rem solid #eee;
 
                 .about_type {
-                    display: block;
                     box-sizing: border-box;
-                    padding: 1.8rem 0 1.8rem 6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
                     height: 100%;
                     font-size: $fontSize16;
