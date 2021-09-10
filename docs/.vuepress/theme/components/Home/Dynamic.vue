@@ -1,7 +1,7 @@
 <template>
-    <div class="dynamic_container">
-        <div class="dynamic_content_container">
-            <div class="dynamic_content">
+    <div class="dynamichome_container">
+        <div class="dynamichome_content_container">
+            <div class="dynamichome_content">
                 <span class="title">{{ dynamicContent.title }}</span>
                 <div class="content">
                     <div class="important">
@@ -68,7 +68,7 @@
                                 <div class="intro">{{ item.intro }}</div>
                             </li>
                         </ul>
-                        <router-link class="more" to="/dynamic">
+                        <router-link class="more" to="/news">
                             <More
                                 :text="dynamicContent.moreText"
                                 class="more_btn"
@@ -100,16 +100,16 @@ export default {
 </script>
 
 <style lang="stylus">
-.dynamic_container {
+.dynamichome_container {
     width: 100%;
     height: 68.4rem;
 
-    .dynamic_content_container {
+    .dynamichome_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
 
-        .dynamic_content {
+        .dynamichome_content {
             box-sizing: border-box;
             margin: 0 auto;
             padding: 8rem 0 10rem;

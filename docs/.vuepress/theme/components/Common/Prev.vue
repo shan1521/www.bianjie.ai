@@ -1,7 +1,7 @@
 <template>
     <div class="prev_container">
         <div class="prev_content">
-            <span class="prev">&lt;··</span>
+            <span class="prev"><i class="iconfont icon-jiantou_left"></i></span>
         </div>
     </div>
 </template>

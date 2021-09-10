@@ -62,7 +62,7 @@ export default {
 .partner_container {
     width: 100%;
     min-height: 60.8rem;
-    background: url('../../assets/home/hzhb_bg.png') no-repeat center / cover;
+    background: url('../../assets/hzhb_bg.png') no-repeat center / cover;
 
     .partner_content_container {
         box-sizing: border-box;

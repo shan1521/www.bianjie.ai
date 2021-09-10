@@ -13,19 +13,16 @@
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
+                <IritaBean v-if="$page.frontmatter.isIritaBean"></IritaBean>
+                <IritaDa v-if="$page.frontmatter.isIritaDa"></IritaDa>
                 <Dynamic v-if="$page.frontmatter.isDynamic"></Dynamic>
                 <Partner v-if="$page.frontmatter.isPartner"></Partner>
                 <About v-if="$page.frontmatter.isAbout"></About>
                 <Milestone v-if="$page.frontmatter.isMilestone"></Milestone>
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
-                <!--              <Developer v-if="$page.frontmatter.isDeveloper"></Developer>-->
-                <!--              <Community v-if="$page.frontmatter.isCommunity" />-->
-                <!--              <div class="md_container" v-if="showMd">-->
-                <!--                  <div class="md_wrap">-->
-                <!--                      <Content></Content>-->
-                <!--                  </div>-->
-                <!--              </div>-->
+                <AppScenes v-if="showApp"></AppScenes>
+                <Markdown :showMd="showMd"></Markdown>
             </div>
         </ClientOnly>
         <ClientOnly>
@@ -43,44 +40,52 @@ import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
+import IritaBean from "@theme/components/Product/IritaBean.vue";
+import IritaDa from "@theme/components/Product/IritaDa.vue";
 import Dynamic from "@theme/components/Dynamic/Dynamic.vue";
 import Partner from "@theme/components/Partner/Partner.vue";
 import About from "@theme/components/About/About.vue";
 import Milestone from "@theme/components/Milestone/Milestone.vue";
 import Honour from "@theme/components/Honour/Honour.vue";
 import Join from "@theme/components/Join/Join.vue";
+import Markdown from "@theme/components/Common/Markdown.vue";
+import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 
 import { resolveSidebarItems } from "../util";
+const nav = require("../../config.js");
 
 export default {
     name: "Layout",
-
-    components: {
-        Home,
-        Page,
-        Sidebar,
-        Navbar,
-        Navigation,
-        NewHome,
-        IritaHub,
-        IritaOpb,
-        Dynamic,
-        Partner,
-        About,
-        Milestone,
-        Honour,
-        Join,
-        Footer,
-    },
-
     data() {
         return {
             isSidebarOpen: false,
         };
     },
-
     computed: {
+        showMd() {
+            return Object.keys(this.$page.frontmatter).length === 0;
+        },
+        showApp(){
+            if(this.$route.path === '/applications/government.html') {
+                return '$page.frontmatter.isGovernment';
+            }
+            if(this.$route.path === '/applications/finance.html') {
+                return '$page.frontmatter.isFinance';
+            }
+            if(this.$route.path === '/applications/carbonneutral.html') {
+                return '$page.frontmatter.isCarbonneutral';
+            }
+            if(this.$route.path === '/applications/cultural.html') {
+                return '$page.frontmatter.isCultural';
+            }
+            if(this.$route.path === '/applications/health.html') {
+                return '$page.frontmatter.isHealth';
+            }
+            if(this.$route.path === '/applications/net.html') {
+                return '$page.frontmatter.isNet';
+            }
+        },
         shouldShowNavbar() {
             const { themeConfig } = this.$site;
             const { frontmatter } = this.$page;
@@ -126,13 +131,6 @@ export default {
             ];
         },
     },
-
-    mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
-    },
-
     methods: {
         toggleSidebar(to) {
             this.isSidebarOpen =
@@ -160,10 +158,50 @@ export default {
             }
         },
     },
+    mounted() {
+        this.$router.afterEach(() => {
+            this.isSidebarOpen = false;
+        });
+    },
+    watch: {
+        $route: {
+            handler(val, oldval) {
+                nav.themeConfig.nav.forEach((item, index) => {
+                    if (item.link === val.path) {
+                        this.$store.commit("currentIndex", index);
+                    }
+                });
+            },
+            immediate: true,
+            deep: true,
+        },
+    },
+    components: {
+        Home,
+        Page,
+        Sidebar,
+        Navbar,
+        Navigation,
+        NewHome,
+        IritaHub,
+        IritaOpb,
+        IritaBean,
+        IritaDa,
+        Dynamic,
+        Partner,
+        About,
+        Milestone,
+        Honour,
+        Join,
+        Markdown,
+        AppScenes,
+        Footer,
+    },
 };
 </script>
 <style lang='stylus'>
 @import '../../public/iconfont/iconfont.css';
+
 .theme-container {
     position: relative;
     display: flex;

@@ -56,19 +56,25 @@
                 icon: icon-a-IRITACE,
                 name: IRITA CE,
                 intro: 开源版本,
-                description: IRITA Community Edition 属于开源版本，可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等
+                description: IRITA Community Edition 属于开源版本，可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等,
+                moreText: 开源社区 GitHub,
+                link: https://github.com/bianjieai/irita
             },
             {
                 icon: icon-a-IRITAHUB,
                 name: IRITA HUB,
                 intro: 异构区块链跨链服务枢纽,
-                description: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据安全共享和跨链服务调用
+                description: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据安全共享和跨链服务调用,
+                moreText: 了解更多,
+                route: /products/iritahub
             },
             {
                 icon: icon-a-IRITAOPB,
                 name: IRITA OPB,
                 intro: 基于智能合约的开放联盟链,
-                description: 支持智能合约应用开发的开放许可应用链，基于 IRITA 的成熟技术框架，联合联盟伙伴提供低成本分布式账本服务，提供安全丰富的区块链功能和接口，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营
+                description: 支持智能合约应用开发的开放许可应用链，基于 IRITA 的成熟技术框架，联合联盟伙伴提供低成本分布式账本服务，提供安全丰富的区块链功能和接口，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
+                moreText: 了解更多,
+                route: /products/iritaopb
             },
             {
                 icon: icon-a-IRITABEAN,

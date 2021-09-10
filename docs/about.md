@@ -44,26 +44,28 @@
     },
     industryAdvantage: {
         title: 技术实力，铸就强大行业优势,
+        isShow: 1,
         industryAdvImg: [
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMzsQwneNrr8nGVjKI9jTVA98Lx69HiamXAt57jFxH36SPlCNAp0FXEqvD1VJJNHfUVcAPBBlNiboYUw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMzsQwneNrr8nGVjKI9jTVA9xVu7PS6MlvPCibuEX2KwqtSLC9ibVeRQHn1ZJz30ZIjxBQJkcVcg6Mfw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMyH4c1zvXF3RS4DqH6S493PPaFdYBWrY70Sn3W0Qib7icKibvE6ZTicQB0D4LjwKCLMfP94MgBYmDAnag/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMyH4c1zvXF3RS4DqH6S493PyVdJNIjjmnZUbkKsOphxvcRc8cOOtkXxooV8IK3CKQbE50PuaRxgcw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMxtltRL24xhqXVUfKtoALDqfLOOlSX1OsF7A7EqKsHicBfrLdUdzNwtEkTbcvQQUz5xQKDUVwN9aSQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-            {
-                src: https://mmbiz.qpic.cn/mmbiz_jpg/nSAFziamLbMxtltRL24xhqXVUfKtoALDqRWTax8ibibRjM4hZAXdDkibGiaQ6FRYy46cM9Dg8FbKcAnysNwoyyIVcLQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-            },
-        ]
-    }
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu6.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu3.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu4.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu5.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu2.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu1.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu6.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu3.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu4.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu5.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu2.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu1.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu6.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu3.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu4.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu5.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu2.png},
+            {src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu1.png},
+        ],
+        industryVideo: 'https://m.baidu.com/video/page?pd=video_page&nid=16636888572505741568&sign=4003613747986156398&word=%E6%AD%A3%E8%83%BD%E9%87%8F%E7%9F%AD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD&oword=%E6%AD%A3%E8%83%BD%E9%87%8F%E7%9F%AD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD&atn=index&frsrcid=4185&ext={%22jsy%22:1}&top={%22sfhs%22:1,%22_hold%22:2}&compilation_ext={%22hejiNid%22:%224360048695266897456%22,%22hjtab%22:1,%22compilation_id%22:%2213418543451505289897%22}&sl=4&fr0=A&fr1=A&lid=7881791165422909855&referlid=7881791165422909855&ms=1&frorder=1&_t=1630656217352'
+    },
 }
 ---

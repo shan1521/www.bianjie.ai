@@ -33,18 +33,18 @@
 
 <script>
 import CompanyInfo from "./CompanyInfo.vue";
-import IndustryAdv from "./IndustryAdv.vue";
+import IndustryAdv from "@theme/components/About/IndustryAdv.vue";
 export default {
     name: "AboutContent",
-    props: ["aboutType", "companyInfo","tab", "industryAdvantage"],
+    props: ["aboutType", "companyInfo", "tab", "industryAdvantage"],
     computed: {
-        currentTab(){
-            return this.tab || 0;
-        }
+        currentTab() {
+            return this.tab ? this.tab : 0;
+        },
     },
     components: {
         CompanyInfo,
-        IndustryAdv
+        IndustryAdv,
     },
 };
 </script>
@@ -53,12 +53,14 @@ export default {
 .about_content_container {
     width: 100%;
     background: #fff;
+    border-bottom: 0.1rem solid #e9e9e9;
 
     .about_type_container {
+        box-sizing: border-box;
         margin: 0 auto;
-        // max-width: $contentWidth;
+        width: 100%;
         height: 6rem;
-        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.08);
 
         .about_type {
             display: flex;
@@ -69,31 +71,20 @@ export default {
             height: 100%;
 
             .about_type_item {
-                text-align: center;
-                display: flex;
-                align-items: center;
                 box-sizing: border-box;
-                margin: 1.8rem 0;
-                padding: 0 0 0 6rem;
-                height: 100%;
-
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    margin-left: 6rem;
-                    width: 0.1rem;
-                    height: 4rem;
-                    background: #EEEEEE;
-                }
-
-                &:last-child {
-                    &::after {
-                        content: '';
-                        display: none;
-                    }
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18.5rem;
+                border-right: 0.1rem solid #eee;
 
                 .about_type {
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
                     font-size: $fontSize16;
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
