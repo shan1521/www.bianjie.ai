@@ -48,7 +48,7 @@ export default {
 <style lang="stylus">
 .advantage_container {
     width: 100%;
-    height: 53.6rem;
+    min-height: 53.6rem;
     background: url('../../assets/home/hxnlyys_bg.png') no-repeat center / cover;
 
     .advantage_content_container {
@@ -63,6 +63,12 @@ export default {
             max-width: 105.6rem;
             min-height: 100%;
             text-align: center;
+            @media (max-width: 1056px) {
+                max-width: 51.2rem;
+            }
+            @media (max-width: 512px) {
+                max-width: 24rem;
+            }
 
             .title {
                 display: flex;
@@ -90,7 +96,13 @@ export default {
                 grid-row-gap: 2rem;
                 grid-column-gap: 3.2rem;
                 margin-top: 6rem;
-                height: 26.4rem;
+                min-height: 26.4rem;
+                @media (max-width: 1056px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media (max-width: 512px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 .adv_list_item {
                     position: relative;

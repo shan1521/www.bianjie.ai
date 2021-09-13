@@ -53,7 +53,7 @@ export default {
     },
     methods: {
         goAppScenes(){
-            this.$router.push('/applications/government');
+            this.$router.push('/applications/e-licence');
         }
     },
     components: {
@@ -79,6 +79,12 @@ export default {
             max-width: 105.6rem;
             min-height: 100%;
             text-align: center;
+            @media (max-width: 1110px) {
+                max-width: 51.2rem;
+            }
+            @media (max-width: 512px) {
+                max-width: 24rem;
+            }
 
             .title {
                 display: flex;
@@ -106,7 +112,13 @@ export default {
                 grid-row-gap: 2rem;
                 grid-column-gap: 3.2rem;
                 margin-top: 6rem;
-                height: 33.6rem;
+                @media (max-width: 1110px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-row-gap: 4.5rem;
+                }
+                @media (max-width: 512px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 .scenes_item {
                     position: relative;

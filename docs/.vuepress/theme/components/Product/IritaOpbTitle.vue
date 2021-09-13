@@ -17,7 +17,7 @@ export default {
     props: ["iritaopbTitleContent"],
     methods: {
         goComming(){
-            this.$router.push('/products/iritaopb_extension');
+            this.$router.push('/products/IRITAOPB-敬请期待');
         }
     },
     components: {

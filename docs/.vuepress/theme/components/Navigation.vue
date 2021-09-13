@@ -151,6 +151,7 @@ export default {
     width: 100%;
     height: 4.8rem;
     z-index: 2;
+    transition: all .3s linear;
 
     .nav_content {
         display: flex;
@@ -339,5 +340,6 @@ export default {
 .white_bg {
     background: #fff;
     box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.04);
+    transition: all .3s linear;
 }
 </style>

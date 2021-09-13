@@ -1,7 +1,7 @@
 ---
 {
     layout: Layout,
-    isNet: true,
+    isDataCollection: true,
     title: 工业互联网及物联网-应用场景,
     appTitleContent: {
         title: 物联网可信数据采集,

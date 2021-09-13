@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import store from './store';
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+// import 'video.js/dist/video-js.css';
 // Vue.prototype.$bus = new Vue();
 export default async ({
     Vue,
@@ -17,6 +18,8 @@ export default async ({
         if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
 		return originalPush.call(this, location).catch(err => {err})
 	}
+    const VueVideoPlayer = require('vue-video-player/dist/ssr')
+    Vue.use(VueVideoPlayer)
     
 	Vue.use(router)
 	Vue.use(Vuex)
@@ -24,7 +27,7 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
-			if(to.path.includes('/products/iritahub') || to.path.includes('/products/iritaopb') || to.path.includes('/products/iritabean') || to.path.includes('/products/iritada')){
+			if(to.path.includes('/products')){
 				store.commit('currentIndex',1)
 				localStorage.setItem('currentIndex',1)
 			}else if (to.path.includes('/applications')){

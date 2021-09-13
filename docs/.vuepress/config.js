@@ -29,12 +29,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '区块链跨链服务枢纽',
-                                route: '/products/iritahub'
+                                route: '/products/IRITAHUB'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '基于智能合约的开放联盟链产品',
-                                route: '/products/iritaopb'
+                                route: '/products/IRITAOPB'
                             },
                         ]
                     },
@@ -45,12 +45,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '保护数据隐私的数据共享平台',
-                                route: '/products/iritabean'
+                                route: '/products/IRITABEAN'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换平台',
-                                route: '/products/iritada'
+                                route: '/products/IRITADA'
                             },
                         ]
                     },
@@ -58,12 +58,12 @@ module.exports = {
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/applications/government' },
-                    { text: '碳中和', link: '/applications/carbonneutral' },
-                    { text: '文创与版权', link: '/applications/cultural' },
-                    { text: '工业互联网及物联网', link: '/applications/net' },
-                    { text: '供应链金融', link: '/applications/finance' },
-                    { text: '医疗健康', link: '/applications/health' },
+                    { text: '智慧政务', link: '/applications/e-licence' },
+                    { text: '碳中和', link: '/applications/C-trading' },
+                    { text: '文创与版权', link: '/applications/digital-art' },
+                    { text: '工业互联网及物联网', link: '/applications/datacollection' },
+                    { text: '供应链金融', link: '/applications/trade-finance' },
+                    { text: '医疗健康', link: '/applications/e-prescription-circulation' },
                 ]
             },
             { text: '企业动态', link: '/news' },

@@ -12,40 +12,14 @@
                             <span class="title">{{ item.title }}</span>
                         </div>
                         <ul class="item_list">
-                            <li
-                                class="item"
-                                v-for="(v, i) in item.list"
-                                :key="i"
-                                :class="
-                                    v.relationship || v.link
-                                        ? 'item_pointer'
-                                        : ''
-                                "
-                            >
-                                <!-- @mouseenter="visibleChange(i)" -->
-                                <a
-                                    class="img_wrap"
-                                    :href="v.link"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                >
-                                    <img
-                                        class="v_img"
-                                        :src="v.imgName"
-                                        alt=""
-                                    />
-                                    <div
-                                        :class="
-                                            v.relationship
-                                                ? 'v_relationship'
-                                                : ''
-                                        "
-                                    >
-                                        <!-- :style="{display: v.relationship ? 'block' : 'none'}" -->
-                                        <span class="relationship">
-                                            {{ v.relationship }}
-                                        </span>
-                                    </div>
+                            <li class="item" v-for="(partner,pIndex) in item.list" :key="pIndex">
+                                <a :href="partner.link" class="img_wrap" target="_blank" rel="noreferrer noopener">
+                                    <img class="partner_img" :src="partner.imgName" alt="" />
+                                    <ul :class="partner.relationshipList.length ? 'relationship_list' : ''">
+                                        <li v-if="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
+                                            {{ relationshipItem.relationship }}
+                                        </li>
+                                    </ul>
                                 </a>
                             </li>
                         </ul>
@@ -76,13 +50,10 @@ export default {
 <style lang="stylus">
 .partnercontent_container {
     width: 100%;
-
-    // min-height: 142.1rem;
     .partnercontent_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
 
-        // height: 100%;
         .partnercontent_content {
             box-sizing: border-box;
             margin: 0 auto;
@@ -139,15 +110,16 @@ export default {
                             transition: all 0.3s linear;
 
                             &:hover {
+                                transition: all 0.3s linear;
                                 .img_wrap {
-                                    .v_relationship {
-                                        display: block;
+                                    .relationship_list {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
                                         position: absolute;
                                         top: 0;
                                         left: 0;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
                                         width: 100%;
                                         height: 100%;
                                         color: #0967E9;
@@ -165,8 +137,9 @@ export default {
                                     height: 100%;
                                 }
 
-                                .v_relationship {
+                                .relationship_list {
                                     display: none;
+                                    transition: all 0.3s linear;
                                 }
                             }
                         }

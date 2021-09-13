@@ -1,7 +1,7 @@
 ---
 {
     layout: Layout,
-    isCarbonneutral: true,
+    isCTrading: true,
     title: 碳中和-应用场景,
     appTitleContent: {
         title: 碳核查,

@@ -67,7 +67,7 @@
                 intro: 异构区块链跨链服务枢纽,
                 description: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据安全共享和跨链服务调用,
                 moreText: 了解更多,
-                route: /products/iritahub,
+                route: /products/IRITAHUB,
                 imgName: banner_home_1.png
             },
             {
@@ -76,7 +76,7 @@
                 intro: 基于智能合约的开放联盟链,
                 description: 支持智能合约应用开发的开放许可应用链，基于 IRITA 的成熟技术框架，联合联盟伙伴提供低成本分布式账本服务，提供安全丰富的区块链功能和接口，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
                 moreText: 了解更多,
-                route: /products/iritaopb,
+                route: /products/IRITAOPB,
                 imgName: banner_home_1.png
             },
             {
@@ -113,7 +113,7 @@
                     {text: 发展可信社会},
                 ],
                 description: 区块链技术结合智慧政务，促进政务数据互通共享，提升跨部门、跨地区、跨层级协作效率，优化政务服务质量，简化企业、群众办理业务的流程，增强政府公信力,
-                route: /applications/government
+                route: /applications/e-licence
             },
             {
                 iconName: tanzhonghe.png,
@@ -124,7 +124,7 @@
                     {text: 多方数据安全共享},
                 ],
                 description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。,
-                route: /applications/carbonneutral
+                route: /applications/C-trading
             },
             {
                 iconName: shuzihuazichan.png,
@@ -135,7 +135,7 @@
                     {text: 便捷高效维权},
                 ],
                 description: 结合区块链与IoT技术，开展商品品质溯源机制建设，形成生产加工监管追溯体系，实现全产业链生产质量可追溯。,
-                route: /applications/cultural
+                route: /applications/digital-art
             },
             {
                 iconName: gongyinglianjinrong.png,
@@ -146,7 +146,7 @@
                     {text: 物权转移记录},
                 ],
                 description: 利用区块链，核心企业信用上链传递后，中小企业可以使用核心企业的信贷授信额度，降低融资成本，提升融资效率。,
-                route: /applications/finance
+                route: /applications/trade-finance
             },
         ],
         moreText: 了解更多

@@ -14,7 +14,7 @@
                     </div>
                     <div class="content_right">
                         <div class="total">
-                            <span class="total_title">边界智能</span>
+                            <span class="total_title">公司</span>
                             <a
                                 class="irita"
                                 href="https://irita.bianjie.ai"
