@@ -29,6 +29,7 @@
                 <More
                     class="control_btn"
                     :text="processContent.controlText"
+                    @click.native="goComming"
                 ></More>
             </div>
         </div>
@@ -46,6 +47,11 @@ export default {
                 return `/product/iritaopb/${imgName}`;
             };
         },
+    },
+    methods: {
+        goComming(){
+            this.$router.push('/products/iritaopb_extension');
+        }
     },
     components: {
         More,

@@ -156,7 +156,6 @@ export default {
                                 }
                             }
 
-                            // height: 4.8rem;
                             .img_wrap {
                                 widtgh: 100%;
                                 height: 100%;

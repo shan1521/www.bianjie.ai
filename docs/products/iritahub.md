@@ -5,7 +5,7 @@
     title: IRITA HUB-核心产品,
     titleContent: {
         title: 异构区块链跨链服务枢纽 - IRITA HUB,
-        subTitle: 已适配众多主流联盟链和公链·跨系统的可信数据和交互服务
+        subTitle: 已适配众多主流联盟链和公链 · 跨系统的可信数据和交互服务
     },
     introContent: {
         title: 产品简介,

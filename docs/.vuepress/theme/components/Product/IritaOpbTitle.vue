@@ -4,7 +4,7 @@
             <div class="iritaopb_title_content">
                 <div class="title">{{ iritaopbTitleContent.title }}</div>
                 <div class="sub_title">{{ iritaopbTitleContent.subTitle }}</div>
-                <More class="more_btn" :text="iritaopbTitleContent.moreText"></More>
+                <More class="more_btn" :text="iritaopbTitleContent.moreText" @click.native="goComming"></More>
             </div>
         </div>
     </div>
@@ -15,6 +15,11 @@ import More from "@theme/components/Common/More.vue";
 export default {
     name: "IritaOpbTitle",
     props: ["iritaopbTitleContent"],
+    methods: {
+        goComming(){
+            this.$router.push('/products/iritaopb_extension');
+        }
+    },
     components: {
         More,
     }

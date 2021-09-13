@@ -9,7 +9,7 @@
     },
     partnerList: [
         {
-            title: 行业生态,
+            title: 行业生态合作,
             list: [
                 {
                     imgName: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67,
@@ -79,7 +79,7 @@
             ]
         },
         {
-            title: 人工智能与物联网领域合作,
+            title: 数字资产领域合作,
             list: [
                 {
                     imgName: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67,
@@ -99,7 +99,7 @@
             ]
         },
         {
-            title: 数字资产领域合作,
+            title: 人工智能与物联网领域合作,
             list: [
                 {
                     imgName: https://www.bianjie.ai/dist/wx.png?19133cf3089d396914ba667e90bf7e67,

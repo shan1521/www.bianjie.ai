@@ -26,7 +26,7 @@
             {
                 img: banner_home_1.png,
                 intro: 成熟创新的区块链产品支持高效开发链改应用,
-                description: 2017年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
+                description: 支持保护隐私的大数据加密共享，实用性极强的链上链下系统交互能力，灵活的资产数字化建模与交换支持
             },
             {
                 img: banner_home_1.png,
@@ -36,12 +36,12 @@
             {
                 img: banner_home_1.png,
                 intro: 针对行业及业务场景深度融合与咨询定制能力,
-                description: 2017年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
+                description: 多年企业服务深耕，成熟的商业咨询团队，对复杂分布式商业系统的深入实践
             },
             {
                 img: banner_home_1.png,
                 intro: 与国内外行业领袖围绕生态发展达成深度合作,
-                description: 2017年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
+                description: 与多家行业优秀协会组织及企业合作；在政务、金融、医疗等应用领域与国内外行业优秀企业建立合作关系
             },
         ]
     },
@@ -56,9 +56,10 @@
                 icon: icon-a-IRITACE,
                 name: IRITA CE,
                 intro: 开源版本,
-                description: IRITA Community Edition 属于开源版本，可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等,
+                description: IRITA Community Edition  属于开源版本，可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等,
                 moreText: 开源社区 GitHub,
-                link: https://github.com/bianjieai/irita
+                link: https://github.com/bianjieai/irita,
+                imgName: banner_home_1.png
             },
             {
                 icon: icon-a-IRITAHUB,
@@ -66,7 +67,8 @@
                 intro: 异构区块链跨链服务枢纽,
                 description: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据安全共享和跨链服务调用,
                 moreText: 了解更多,
-                route: /products/iritahub
+                route: /products/iritahub,
+                imgName: banner_home_1.png
             },
             {
                 icon: icon-a-IRITAOPB,
@@ -74,19 +76,22 @@
                 intro: 基于智能合约的开放联盟链,
                 description: 支持智能合约应用开发的开放许可应用链，基于 IRITA 的成熟技术框架，联合联盟伙伴提供低成本分布式账本服务，提供安全丰富的区块链功能和接口，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
                 moreText: 了解更多,
-                route: /products/iritaopb
+                route: /products/iritaopb,
+                imgName: banner_home_1.png
             },
             {
                 icon: icon-a-IRITABEAN,
                 name: IRITA BEAN,
                 intro: 保护数据隐私的数据共享平台,
-                description: 专注于大数据隐私保护和边缘分析的产品，集成主流开源隐私计算框架，实现了大数据多层次授权共享、多方隐私保护查询、多方联盟学习等能力；支持对数据和业务流程全生命周期进行监管，实现数据隐私保护及可信流转。可用于物联网、医疗健康等数据共享管理平台
+                description: 专注于大数据隐私保护和边缘计算分析的产品，集成主流开源隐私计算框架，实现了大数据多层次授权共享、多方隐私保护查询、多方联盟学习等能力；支持对数据和业务流程全生命周期进行监管，实现数据隐私保护及可信流转。可用于物联网、医疗健康等数据共享管理平台,
+                imgName: banner_home_1.png
             },
             {
                 icon: icon-a-IRITADA,
                 name: IRITA DA,
                 intro: 资产数字化确权及交换平台,
-                description: 专注于支持 NFT 的登记、确权及可信交换的产品；支持实体资产在链上的数字化建模和全生命周期管理；实现智能合约驱动实体经济相关流程的自动化运行，降低沟通与业务运营成本
+                description: 专注于支持 NFT 的登记、确权及可信交换的产品；支持实体资产在链上的数字化建模和全生命周期管理；实现智能合约驱动实体经济相关流程的自动化运行，降低沟通与业务运营成本,
+                imgName: banner_home_1.png
             },
         ],
         consult: {
@@ -107,17 +112,19 @@
                     {text: 推动信息建设},
                     {text: 发展可信社会},
                 ],
-                description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。
+                description: 区块链技术结合智慧政务，促进政务数据互通共享，提升跨部门、跨地区、跨层级协作效率，优化政务服务质量，简化企业、群众办理业务的流程，增强政府公信力,
+                route: /applications/government
             },
             {
                 iconName: tanzhonghe.png,
                 title: 碳中和,
                 intro: [
-                    {text: 加强数据监管},
-                    {text: 推动信息建设},
-                    {text: 发展可信社会},
+                    {text: 资产数字化建模},
+                    {text: 可视化溯源监控},
+                    {text: 多方数据安全共享},
                 ],
-                description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。
+                description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。,
+                route: /applications/carbonneutral
             },
             {
                 iconName: shuzihuazichan.png,
@@ -127,7 +134,8 @@
                     {text: 重塑版权价值},
                     {text: 便捷高效维权},
                 ],
-                description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。
+                description: 结合区块链与IoT技术，开展商品品质溯源机制建设，形成生产加工监管追溯体系，实现全产业链生产质量可追溯。,
+                route: /applications/cultural
             },
             {
                 iconName: gongyinglianjinrong.png,
@@ -137,7 +145,8 @@
                     {text: 企业信用传递},
                     {text: 物权转移记录},
                 ],
-                description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。
+                description: 利用区块链，核心企业信用上链传递后，中小企业可以使用核心企业的信贷授信额度，降低融资成本，提升融资效率。,
+                route: /applications/finance
             },
         ],
         moreText: 了解更多

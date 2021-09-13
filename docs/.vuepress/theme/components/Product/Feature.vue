@@ -35,7 +35,9 @@
                             />
                             <span class="item_title">{{ item.title }}</span>
                         </span>
-                        <Detail class="item_detail"></Detail>
+                        <a class="item_detail" :href="item.link" target="_blank" rel="noopener noreferrer">
+                            <Detail></Detail>
+                        </a>
                     </li>
                 </ul>
             </div>

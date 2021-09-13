@@ -20,7 +20,7 @@ export default {
 .dynamic_title_container {
     width: 100%;
     height: 40.8rem;
-    background: skyblue;
+    background: url(../../assets/news_banner.png) no-repeat center / cover;
 
     .dynamic_title_content_container {
         margin: 0 auto;

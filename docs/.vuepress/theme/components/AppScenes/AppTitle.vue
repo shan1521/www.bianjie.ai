@@ -1,5 +1,5 @@
 <template>
-  <div class="app_title_container">
+  <div class="app_title_container" :style="differentSceneBanner(appTitleContent.bg_banner)">
       <div class="app_title_content_container">
           <div class="app_title_content">
               <div class="app_title">{{appTitleContent.title}}</div>
@@ -12,7 +12,14 @@
 <script>
 export default {
     name: 'AppTitle',
-    props: ['appTitleContent']
+    props: ['appTitleContent'],
+    computed: {
+        differentSceneBanner(){
+            return function(imgName){
+                return `background: url('/appscenes/banner/${imgName}') no-repeat center / cover;`;
+            }
+        }
+    }
 }
 </script>
 
@@ -20,7 +27,6 @@ export default {
 .app_title_container {
     width: 100%;
     height: 36rem;
-    background: #e5e5e5;
     .app_title_content_container {
         box-sizing: border-box;
         padding: 10.4rem 0 0;
