@@ -13,6 +13,7 @@
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
+                <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
                 <IritaBean v-if="$page.frontmatter.isIritaBean"></IritaBean>
                 <IritaDa v-if="$page.frontmatter.isIritaDa"></IritaDa>
                 <Dynamic v-if="$page.frontmatter.isDynamic"></Dynamic>
@@ -40,6 +41,7 @@ import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
+import IritaOpbExtension from "@theme/components/Product/IritaOpbExtension.vue";
 import IritaBean from "@theme/components/Product/IritaBean.vue";
 import IritaDa from "@theme/components/Product/IritaDa.vue";
 import Dynamic from "@theme/components/Dynamic/Dynamic.vue";
@@ -185,6 +187,7 @@ export default {
         NewHome,
         IritaHub,
         IritaOpb,
+        IritaOpbExtension,
         IritaBean,
         IritaDa,
         Dynamic,

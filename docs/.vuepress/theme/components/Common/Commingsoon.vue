@@ -9,7 +9,7 @@
                     <div class="title">敬请期待</div>
                     <div class="commingsoon_list">
                         <div class="commingsoon_item">
-                            边界智能将会不定期上新更多产品和技术DEMO，帮助独立开发者和企业快速开发部署区块链应用程序。
+                            边界智能将会不定期上新更多产品和技术 DEMO，帮助独立开发者和企业快速开发部署区块链应用程序。
                         </div>
                         <div class="commingsoon_item">
                             感谢您的关注！

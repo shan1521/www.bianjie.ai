@@ -5,7 +5,8 @@
     title: 工业互联网及物联网-应用场景,
     appTitleContent: {
         title: 物联网可信数据采集,
-        subTitle: 终端安全，数据可信，应用广泛
+        subTitle: 终端安全，数据可信，应用广泛,
+        bg_banner: net_banner.png
     },
     plansContent: {
         plansTitle: 方案简介,

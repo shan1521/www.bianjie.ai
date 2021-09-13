@@ -26,11 +26,13 @@
                                 </li>
                             </ul>
                             <div class="desc">{{ item.description }}</div>
-                            <Detail></Detail>
+                            <router-link :to="item.route">
+                                <Detail></Detail>
+                            </router-link>
                         </div>
                     </li>
                 </ul>
-                <More class="scene_btn" :text="scenesContent.moreText"></More>
+                <More class="scene_btn" :text="scenesContent.moreText" @click.native="goAppScenes"></More>
             </div>
         </div>
     </div>
@@ -49,6 +51,11 @@ export default {
             };
         },
     },
+    methods: {
+        goAppScenes(){
+            this.$router.push('/applications/government');
+        }
+    },
     components: {
         More,
         Detail
@@ -59,7 +66,6 @@ export default {
 <style lang="stylus">
 .scenes_container {
     width: 100%;
-    height: 70rem;
 
     .scenes_content_container {
         box-sizing: border-box;
@@ -106,6 +112,7 @@ export default {
                     position: relative;
                     max-width: 24rem;
                     min-height: 33.6rem;
+                    transition: scale(1.1);
 
                     .item_container {
                         box-sizing: border-box;
@@ -123,7 +130,7 @@ export default {
                             border: 0.1rem solid #0967E9;
                             border-bottom: 0.6rem solid #0967E9;
                             transform: translate(-8%,-8%);
-                            transition: transform 0.1s linear;
+                            // transition: transform 0.1s linear;
                             background: url(../../assets/home/jjfa_bg.png) no-repeat center / cover;
 
                             .intro_list {
@@ -187,7 +194,6 @@ export default {
 
                         .intro_list {
                             margin: 1.5rem auto 0;
-                            max-width: 8.4rem;
 
                             .intro_item {
                                 margin-top: 0.8rem;

@@ -56,13 +56,17 @@
                                     <div class="desc">
                                         {{ item.description }}
                                     </div>
-                                    <More
-                                        :text.sync="serviceContent.moreText"
-                                        class="name_btn"
-                                    ></More>
+                                    <a class="name_btn_git" v-if="item.link && index === 0" :href="item.link" target="_blank" rel="noopener noreferrer">
+                                        <span>{{item.moreText}}</span>
+                                    </a>
+                                    <router-link class="name_btn" v-if="item.route" :to="item.route">
+                                        <More
+                                            :text.sync="item.moreText"
+                                        ></More>
+                                    </router-link>
                                 </div>
                                 <div class="right">
-                                    <img src="" alt="" />
+                                    <img :src="differentImg(item.imgName)" alt="" />
                                 </div>
                             </li>
                         </ul>
@@ -102,6 +106,13 @@ export default {
             currentTab: 0,
         };
     },
+    computed: {
+        differentImg(){
+            return function(imgName){
+                return `/home/products/${imgName}`;
+            }
+        }
+    },
     methods: {
         clickIritaFn() {
             window.open("https://irita.bianjie.ai/");
@@ -137,7 +148,6 @@ export default {
 <style lang="stylus">
 .product_container {
     width: 100%;
-    height: 103.7rem;
 
     .product_title_content {
         box-sizing: border-box;
@@ -318,19 +328,38 @@ export default {
                                     line-height: 2.4rem;
                                 }
 
+                                .name_btn_git {
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 4.8rem;
+                                    padding-left: 1.6rem;
+                                    max-width: 16.5rem;
+                                    height: 3.2rem;
+                                    font-size: $fontSize14;
+                                    font-weight: $fontWeight400;
+                                    color: #fff;
+                                    line-height: 1.4rem;
+                                    background: url(../../assets/home/long_without_outline.png) no-repeat center / cover;
+                                    border-radius: 0.4rem;
+                                }
+
                                 .name_btn {
+                                    display: block;
                                     margin-top: 4.8rem;
                                 }
                             }
 
                             .right {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 margin-left: 3.2rem;
-                                width: 67.2rem;
+                                max-width: 67.2rem;
                                 height: 44.2rem;
 
                                 img {
                                     width: 100%;
-                                    height: 100%;
                                 }
                             }
                         }

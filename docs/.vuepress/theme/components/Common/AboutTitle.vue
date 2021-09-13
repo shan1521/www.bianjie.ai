@@ -20,7 +20,7 @@ export default {
 .about_title_container {
     width: 100%;
     height: 40.8rem;
-    background: skyblue;
+    background: url(../../assets/about_banner.png) no-repeat center / cover;
 
     .about_title_content_container {
         margin: 0 auto;

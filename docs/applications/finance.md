@@ -5,7 +5,8 @@
     title: 供应链金融-应用场景,
     appTitleContent: {
         title: 供应链金融,
-        subTitle: 企业信用转化为可流动的区块链可信数字化资产
+        subTitle: 企业信用转化为可流动的区块链可信数字化资产,
+        bg_banner: finance_banner.png
     },
     sceneStatusContent: {
         title: 场景现状及痛点,

@@ -41,9 +41,11 @@
         exampleList: [
             {
                 title: CosmWasm 智能合约示例,
+                link: https://github.com/CosmWasm/cw-examples
             },
             {
                 title: EVM NFT 智能合约示例,
+                link: https://github.com/bianjieai/bsnhub-service-relayer/blob/master/test-consumers/fisco/NFTServiceConsumer/NFTServiceConsumer.sol
             },
         ]
     },

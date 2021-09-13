@@ -62,13 +62,12 @@ export default {
                 .scenestatus_item {
                     max-width: 28.8rem;
                     min-height: 24rem;
-                    background: rgba(255, 255, 255, 0);
                     border: 0.1rem solid #EDEDED;
                     border-radius: 0.4rem;
                     .item_title_wrap {
                         width: 100%;
                         height: 8rem;
-                        background: #e9e9e9;
+                        background: url(../../assets/appscenes/thir_bg.png) no-repeat center / cover;
                         .item_title {
                             display: flex;
                             justify-content: center;
@@ -125,13 +124,12 @@ export default {
                 .scenestatus_item {
                     max-width: 46.4rem;
                     min-height: 21.8rem;
-                    background: rgba(255, 255, 255, 0);
                     border: 0.1rem solid #EDEDED;
                     border-radius: 0.4rem;
                     .item_title_wrap {
                         width: 100%;
                         height: 8rem;
-                        background: #e9e9e9;
+                        background: url(../../assets/appscenes/for_bg.png) no-repeat center / cover;
                         .item_title {
                             display: flex;
                             justify-content: center;
