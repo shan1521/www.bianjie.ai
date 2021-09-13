@@ -22,8 +22,8 @@
                                 rel="noopener noreferrer"
                                 >IRITA 产品官网</a
                             >
-                            <span class="dynamic">企业动态</span>
-                            <span class="about">关于我们</span>
+                            <router-link class="dynamic" to="/news">企业动态</router-link>
+                            <router-link class="about" to="/about">关于我们</router-link>
                         </div>
                         <div class="contact">
                             <span class="contact_title">联系我们</span>
@@ -31,7 +31,7 @@
                             <a
                                 class="official"
                                 href="https://www.bianjie.ai"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                                 >www.bianjie.ai</a
                             >
@@ -57,7 +57,7 @@
                         `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
                     }}</span>
                     <a
-                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
+                        href="https://beian.miit.gov.cn/#/Integrated/index"
                         target="_blank"
                         rel="noreferrer noopener"
                         >沪ICP备17020986号</a
@@ -78,7 +78,7 @@
 
 <script>
 export default {
-    name: "Footer",
+    name: "Footer"
 };
 </script>
 

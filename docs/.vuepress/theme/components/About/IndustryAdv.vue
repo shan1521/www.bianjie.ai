@@ -163,7 +163,7 @@ export default {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                margin-left: -43rem;
+                margin-left: -47rem;
                 z-index: 9999;
             }
             .industry_swiper {
@@ -195,7 +195,7 @@ export default {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                margin-left: 38rem;
+                margin-left: 43rem;
                 z-index: 9999;
             }
         }

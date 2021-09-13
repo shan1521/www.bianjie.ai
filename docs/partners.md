@@ -5,7 +5,7 @@
     title: 合作伙伴,
     partnerTitle: {
         title: 合作伙伴,
-        subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
+        subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展
     },
     partnerList: [
         {
