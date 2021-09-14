@@ -100,6 +100,7 @@ export default {
                         grid-row-gap: 4rem;
                         grid-column-gap: 6rem;
                         margin-top: 4.8rem;
+                        ransition: all 0.3s linear;
 
                         .item {
                             position: relative;
@@ -110,7 +111,6 @@ export default {
                             transition: all 0.3s linear;
 
                             &:hover {
-                                transition: all 0.3s linear;
                                 .img_wrap {
                                     .relationship_list {
                                         display: flex;

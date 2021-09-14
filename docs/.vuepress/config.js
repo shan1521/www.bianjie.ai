@@ -58,12 +58,42 @@ module.exports = {
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/applications/e-licence' },
-                    { text: '碳中和', link: '/applications/C-trading' },
-                    { text: '文创与版权', link: '/applications/digital-art' },
-                    { text: '工业互联网及物联网', link: '/applications/datacollection' },
-                    { text: '供应链金融', link: '/applications/trade-finance' },
-                    { text: '医疗健康', link: '/applications/e-prescription-circulation' },
+                    {
+                        icon: '', 
+                        scene: '智慧政务',
+                        text: '电子证照',
+                        link: '/applications/e-licence'
+                    },
+                    {
+                        icon: '', 
+                        scene: '碳中和',
+                        text: '碳核查',
+                        link: '/applications/C-trading'
+                    },
+                    {
+                        icon: '', 
+                        scene: '文创与版权',
+                        text: '一体化数字艺术品',
+                        link: '/applications/digital-art'
+                    },
+                    {
+                        icon: '', 
+                        scene: '工业互联网及物联网',
+                        text: '物联网可信数据采集',
+                        link: '/applications/datacollection'
+                    },
+                    {
+                        icon: '', 
+                        scene: '金融',
+                        text: '供应链金融',
+                        link: '/applications/trade-finance'
+                    },
+                    {
+                        icon: '', 
+                        scene: '医疗健康',
+                        text: '电子处方流转',
+                        link: '/applications/e-prescription-circulation'
+                    },
                 ]
             },
             { text: '企业动态', link: '/news' },

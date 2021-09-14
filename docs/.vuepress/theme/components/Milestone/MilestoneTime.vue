@@ -8,30 +8,23 @@
                             v-for="(year, index) in yearArr"
                             :key="index"
                             color="#0967E9"
-                            @click.native="leftToRight(index)"
+                            @click.native="changeCurrentYear(index), leftToRight(index)"
                         >
                             <template
                                 slot="dot"
-                                :class="
-                                    currentYear === index ? 'active_dot' : ''
-                                "
+                                :class=" currentYear === index ? 'active_dot' : '' "
                             >
                                 <div
                                     class="circle"
-                                    :class="
-                                        currentYear === index
-                                            ? 'circle_active'
-                                            : ''
-                                    "
+                                    :class=" currentYear === index ? 'circle_active' : '' "
                                 ></div>
                             </template>
                             <span
                                 class="year"
-                                :class="
-                                    currentYear === index ? 'active_year' : ''
-                                "
-                                >{{ year }}</span
+                                :class=" currentYear === index ? 'active_year' : '' "
                             >
+                                {{ year }}
+                            </span>
                         </el-timeline-item>
                     </el-timeline>
                 </div>
@@ -84,7 +77,7 @@ export default {
         return {
             scrollY: 0,
             heightArr: [],
-            // currentYear: 0
+            currentYear: 0
         };
     },
     computed: {
@@ -93,32 +86,32 @@ export default {
                 return item.year;
             });
         },
-        currentYear() {
-            //根据右侧的滑屏情况来决定当前应该返回怎样的下标
-            //需要当前右侧列表滑动的实时距离 : scrollY
-            //需要所有右侧分类项高度组成的一个累加数组 : heightArr
-            var index = 0;
-            index = this.heightArr.findIndex((item,index,arr)=>{
-                return (this.scrollY >= item && this.scrollY < arr[index+1])
-            })
-            console.log(index,'--------')
-            if(index !== this.oldIndex){
-                //以下两行代码 应该在index产生改变时在执行
-                this.oldIndex = index
-                //选中的那个分类项 要尽量的出现在最顶部
-                let typeLiNodes = this.$refs.typeList && this.$refs.typeList.children;
-                //尽量的让typeLiNodes[index] 出现在滑屏区域的最顶部
-                this.leftScroll && this.leftScroll.scrollToElement(typeLiNodes[index],300)
-            }
+        // currentYear() {
+        //     //根据右侧的滑屏情况来决定当前应该返回怎样的下标
+        //     //需要当前右侧列表滑动的实时距离 : scrollY
+        //     //需要所有右侧分类项高度组成的一个累加数组 : heightArr
+        //     var index = 0;
+        //     index = this.heightArr.findIndex((item,index,arr)=>{
+        //         return (this.scrollY >= item && this.scrollY < arr[index+1])
+        //     })
+        //     console.log(index,'--------')
+        //     if(index !== this.oldIndex){
+        //         //以下两行代码 应该在index产生改变时在执行
+        //         this.oldIndex = index
+        //         //选中的那个分类项 要尽量的出现在最顶部
+        //         let typeLiNodes = this.$refs.typeList && this.$refs.typeList.children;
+        //         //尽量的让typeLiNodes[index] 出现在滑屏区域的最顶部
+        //         this.leftScroll && this.leftScroll.scrollToElement(typeLiNodes[index],300)
+        //     }
 
-            //让对应的左侧分类项选中
-            return index;
-        },
+        //     //让对应的左侧分类项选中
+        //     return index;
+        // },
     },
     methods: {
-        // changeCurrentYear(index) {
-        //     this.currentYear = index;
-        // },
+        changeCurrentYear(index) {
+            this.currentYear = index;
+        },
         //初始化滑屏
         initScroll() {
             this.$nextTick(() => {

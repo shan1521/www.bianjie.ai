@@ -36,7 +36,7 @@
                             event: IRITA 底层链平台通过信通院可信区块链功能评测
                         },
                         {
-                            event: 边界智能成为分布式身份产业联盟（DID-Alliance,简称DIDA）成员单位
+                            event: 边界智能成为分布式身份产业联盟（DID-Alliance，简称DIDA）成员单位
                         }
                     ]
                 },

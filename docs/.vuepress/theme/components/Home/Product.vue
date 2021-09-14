@@ -29,7 +29,9 @@
                     :class="currentTab === index ? 'active' : ''"
                     @click="changeTab(index)"
                 >
-                    <i class="iconfont" :class="item.icon"></i>
+                    <span class="irita_img">
+                        <img :src="differentImg(item.icon)"></img>
+                    </span>
                     <span
                         class="name"
                         :class="currentTab === index ? 'activeName' : ''"
@@ -86,24 +88,30 @@
                         <More
                             :text.sync="serviceContent.chatWithUs"
                             class="chat_btn"
+                            @click.native="updateShowMask"
                         ></More>
                     </div>
                 </div>
             </div>
         </div>
+        <HomeMask v-if="showMask" :showMask.sync="showMask"></HomeMask>
     </div>
 </template>
 
 <script>
+// import '../../../public/iconfont/iconfont.css'
+
 import More from "@theme/components/Common/More.vue";
 import Prev from "@theme/components/Common/Prev.vue";
 import Next from "@theme/components/Common/Next.vue";
+import HomeMask from '@theme/components/Home/HomeMask.vue';
 export default {
     name: "Product",
     props: ["serviceContent"],
     data() {
         return {
             currentTab: 0,
+            showMask: false,
         };
     },
     computed: {
@@ -111,7 +119,7 @@ export default {
             return function(imgName){
                 return `/home/products/${imgName}`;
             }
-        }
+        },
     },
     methods: {
         clickIritaFn() {
@@ -135,12 +143,16 @@ export default {
             if(this.currentTab === 4) {
                 this.currentTab = 4;
             }
-        }
+        },
+        updateShowMask(){
+            this.showMask = true;
+        },
     },
     components: {
         More,
         Prev,
         Next,
+        HomeMask
     },
 };
 </script>
@@ -242,9 +254,13 @@ export default {
                     cursor: pointer;
                 }
 
-                .iconfont {
+                .irita_img {
                     display: inline-block;
-                    font-size: $fontSize36;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 .name {

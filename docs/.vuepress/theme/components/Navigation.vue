@@ -54,6 +54,19 @@
                                 </li>
                             </ul>
                         </div>
+                        <div  v-if="item.items && item.items.length > 0 && index === 2" class="appscenes_menu">
+                            <ul class="appscenes_scene_list">
+                                <li class="appscenes_scene_item" v-for="(appscene, aIndex) in item.items" :key="aIndex">
+                                    <div class="scene_wrap">
+                                        <div class="scene_item">
+                                            <i class="iconfont icon-a-IRITADA" :class="appscene.icon"></i>
+                                            <span class="scene">{{appscene.scene}}</span>
+                                        </div>
+                                    </div>
+                                    <router-link :to="appscene.link" class="scene_text">{{appscene.text}}</router-link>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
                 <div class="more">
@@ -149,8 +162,8 @@ export default {
 .nav_container {
     position: fixed;
     width: 100%;
-    height: 4.8rem;
-    z-index: 2;
+    // height: 4.8rem;
+    z-index: 999;
     transition: all .3s linear;
 
     .nav_content {
@@ -197,6 +210,16 @@ export default {
                         }
                         &:hover {
                             .products_menu {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        .appscenes_menu {
+                            display: none;
+                        }
+                        &:hover {
+                            .appscenes_menu {
                                 display: block;
                             }
                         }
@@ -303,6 +326,49 @@ export default {
                                             line-height: 1.2rem;
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                    .appscenes_menu {
+                        position: absolute;
+                        box-sizing: border-box;
+                        padding: 2.4rem 2.4rem 3.6rem;
+                        background: #fff;
+                        .appscenes_scene_list {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-column-gap: 2.4rem;
+                            grid-row-gap: 3.5rem;
+                            z-index: 100;
+                            .appscenes_scene_item {
+                                .scene_wrap {
+                                    box-sizing: border-box;
+                                    padding-bottom: 0.7rem;
+                                    line-height: 1.4rem;
+                                    border-bottom: 0.1rem solid #EDEDED;
+                                    .scene_item {
+                                        min-height: 1.4rem;
+                                        .iconfont {
+                                            font-size: $fontSize14;
+                                            color: #1677FF;
+                                        }
+                                        .scene {
+                                            margin-left: 0.4rem;
+                                            font-size: $fontSize14;
+                                            font-weight: $fontWeight400;
+                                            color: #000;
+                                            line-height: 1.4rem;
+                                        }
+                                    }
+                                }
+                                .scene_text {
+                                    display: block;
+                                    margin-top: 1.2rem;
+                                    font-size: $fontSize14;
+                                    font-weight: $fontWeight500;
+                                    color: #0967E9;
+                                    line-height: 1.4rem;
                                 }
                             }
                         }
