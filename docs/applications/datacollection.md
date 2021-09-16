@@ -6,7 +6,7 @@
     appTitleContent: {
         title: 物联网可信数据采集,
         subTitle: 终端安全，数据可信，应用广泛,
-        bg_banner: net_banner.png
+        bg_banner: net_banner
     },
     plansContent: {
         plansTitle: 方案简介,

@@ -102,7 +102,6 @@ export default {
 <style lang="stylus">
 .dynamichome_container {
     width: 100%;
-    height: 68.4rem;
 
     .dynamichome_content_container {
         margin: 0 auto;
@@ -114,6 +113,9 @@ export default {
             margin: 0 auto;
             padding: 8rem 0 10rem;
             max-width: 102.4rem;
+            @media (max-width: 1125px) {
+                max-width: 52.8rem;
+            }
 
             .title {
                 display: flex;
@@ -140,6 +142,9 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 6rem;
+                @media (max-width: 1125px) {
+                    flex-direction: column;
+                }
 
                 .important {
                     box-sizing: border-box;
@@ -174,7 +179,7 @@ export default {
                         margin-top: 0.8rem;
                         padding: 0 1.6rem;
                         font-size: $fontSize16;
-                        font-weight: $fontWeight500;
+                        font-weight: $fontWeight600;
                         color: #000;
                         line-height: 2.4rem;
 
@@ -200,6 +205,11 @@ export default {
                     flex-direction: column;
                     align-items: flex-end;
                     margin-left: 4.8rem;
+                    @media (max-width: 1125px) {
+                        align-items: center;
+                        margin-top: 4rem;
+                        margin-left: 0;
+                    }
 
                     .dynamic_list {
                         max-width: 52.8rem;
@@ -231,7 +241,7 @@ export default {
 
                                 .item_title {
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #000;
                                     line-height: 2.4rem;
 

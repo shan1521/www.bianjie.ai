@@ -14,7 +14,7 @@
                         <ul class="item_list">
                             <li class="item" v-for="(partner,pIndex) in item.list" :key="pIndex">
                                 <a :href="partner.link" class="img_wrap" target="_blank" rel="noreferrer noopener">
-                                    <img class="partner_img" :src="partner.imgName" alt="" />
+                                    <img class="partner_img" v-lazy="partner.imgName" alt="" />
                                     <ul :class="partner.relationshipList.length ? 'relationship_list' : ''">
                                         <li v-if="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
                                             {{ relationshipItem.relationship }}
@@ -86,7 +86,7 @@ export default {
                             padding: 0 2.4rem;
                             height: 2.4rem;
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                             text-align: center;

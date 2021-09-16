@@ -83,6 +83,23 @@ export default {
             font-weight: $fontWeight500;
             color: #fff;
             line-height: 5.6rem;
+            text-align: center;
+            @media (max-width: 968px) {
+                font-size: $fontSize48;
+                line-height: 4.8rem;
+            }
+            @media (max-width: 678px) {
+                font-size: $fontSize36;
+                line-height: 3.6rem;
+            }
+            @media (max-width: 516px) {
+                font-size: $fontSize30;
+                line-height: 3rem;
+            }
+            @media (max-width: 430px) {
+                font-size: $fontSize22;
+                line-height: 2.2rem;
+            }
         }
 
         .sub_title {
@@ -90,7 +107,18 @@ export default {
             font-size: $fontSize20;
             font-weight: $fontWeight400;
             color: #fff;
-            line-height: 2rem;
+            line-height: 2.4rem;
+            text-align: center;
+            @media (max-width: 968px) {
+                margin-top: 4rem;
+            }
+            @media (max-width: 768px) {
+                margin-top: 2.4rem;
+                font-size: $fontSize16;
+            }
+            @media (max-width: 375px) {
+                font-size: $fontSize14;
+            }
         }
     }
 }

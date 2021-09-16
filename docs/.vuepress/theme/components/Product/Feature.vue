@@ -87,6 +87,19 @@ export default {
                 grid-column-gap: 3.2rem;
                 margin: 4rem auto 0;
                 max-width: 96rem;
+                @media (max-width: 1056px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    max-width: 46.4rem;
+                }
+                @media (max-width: 768px) {
+                    box-sizing: border-box;
+                    padding-left: 4.8rem;
+                    padding-right: 4.8rem;
+                }
+                @media (max-width: 375px) {
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+                }
 
                 .feature_item {
                     max-width: 46.4rem;
@@ -143,7 +156,7 @@ export default {
             .example_title {
                 margin-top: 4rem;
                 font-size: $fontSize16;
-                font-weight: $fontWeight500;
+                font-weight: $fontWeight600;
                 color: #000;
                 line-height: 2.4rem;
                 text-align: center;
@@ -165,18 +178,35 @@ export default {
                 grid-column-gap: 3.2rem;
                 margin: 1.5rem auto 0;
                 max-width: 96rem;
+                @media (max-width: 1056px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    max-width: 46.4rem;
+                }
+                @media (max-width: 768px) {
+                    box-sizing: border-box;
+                    padding-left: 4.8rem;
+                    padding-right: 4.8rem;
+                }
+                @media (max-width: 375px) {
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+                }
 
                 .example_item {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     box-sizing: border-box;
-                    padding: 2.3rem 2.4rem;
+                    padding: 0 2.4rem;
                     max-width: 46.4rem;
                     height: 9.6rem;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
                     transition: all .2s linear;
+                    @media (max-width: 445px) {
+                        flex-direction: column;
+                        justify-content: center;
+                    }
 
                     &:hover {
                         background: url(../../assets/product/iritaopb/heyueshili.png) no-repeat center / cover;
@@ -194,7 +224,9 @@ export default {
 
                     .item_detail {
                         display: inline-block;
-                        margin-top: 0;
+                        .detail_container {
+                            margin-top: 0;
+                        }
                     }
                 }
             }

@@ -90,7 +90,6 @@ export default {
 
     .footer_content_top {
         width: 100%;
-        height: 26.4rem;
         background: #061939;
 
         @media (max-width: 740px) {
@@ -110,8 +109,13 @@ export default {
                 justify-content: space-between;
                 margin: 0 auto;
                 max-width: 100rem;
+                @media (max-width: 1096px) {
+                    box-sizing: border-box;
+                    padding-left: 4.8rem;
+                    padding-right: 4.8rem;
+                }
 
-                @media (max-width: 740px) {
+                @media (max-width: 768px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -133,7 +137,7 @@ export default {
                     display: flex;
                     font-size: $fontSize14;
 
-                    @media (max-width: 740px) {
+                    @media (max-width: 768px) {
                         flex-direction: column;
                         align-items: center;
                     }
@@ -142,7 +146,7 @@ export default {
                         display: flex;
                         flex-direction: column;
 
-                        @media (max-width: 740px) {
+                        @media (max-width: 768px) {
                             margin-top: 2.4rem;
                             align-items: center;
                         }
@@ -151,6 +155,9 @@ export default {
                             line-height: 2.4rem;
                             font-weight: $fontWeight600;
                             color: #fff;
+                            @media (max-width: 768px) {
+                                text-align: center;
+                            }
 
                             &::after {
                                 content: '';
@@ -190,8 +197,11 @@ export default {
                         margin-left: 10rem;
                         display: flex;
                         flex-direction: column;
+                        @media (max-width: 1096px) {
+                            margin-left: 6rem;
+                        }
 
-                        @media (max-width: 740px) {
+                        @media (max-width: 768px) {
                             margin-top: 2.4rem;
                             margin-left: 0;
                             align-items: center;
@@ -232,7 +242,10 @@ export default {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        @media (max-width: 740px) {
+                        @media (max-width: 1096px) {
+                            margin-left: 6rem;
+                        }
+                        @media (max-width: 768px) {
                             margin-top: 2.4rem;
                             margin-left: 0;
                             align-items: center;
@@ -275,7 +288,7 @@ export default {
             padding-right: 4.8rem;
         }
 
-        @media (max-width: 740px) {
+        @media (max-width: 768px) {
             height: auto;
             line-height: 3rem;
         }
@@ -293,7 +306,7 @@ export default {
                 max-width: 87.6rem;
                 height: 100%;
 
-                @media (max-width: 740px) {
+                @media (max-width: 768px) {
                     flex-direction: column;
                     text-align: center;
                 }

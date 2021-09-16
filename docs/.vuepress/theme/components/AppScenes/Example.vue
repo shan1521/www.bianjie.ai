@@ -11,7 +11,7 @@
                         <div class="example_text">{{exampleContent.example.text}}</div>
                         <div class="example_desc">{{exampleContent.example.intro}}</div>
                         <a class="example_link" v-if="!exampleContent.example.route && exampleContent.example.link" :href="exampleContent.example.link">
-                            <More class="more_btn" :text="exampleContent.example.moreText"></More>
+                            <More class="more_btn" :text="exampleContent.moreText"></More>
                         </a>
                         <router-link class="example_link" v-if="exampleContent.example.route" :to="exampleContent.example.route">
                             <More class="more_btn" :text="exampleContent.moreText"></More>
@@ -47,6 +47,12 @@ export default {
             margin: 0 auto;
             max-width: 100rem;
             height: 31.2rem;
+            @media (max-width: 1096px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+                // max-width: 61.6rem;
+            }
             .example_title {
                 font-size: $fontSize24;
                 font-weight: $fontWeight500;
@@ -63,6 +69,10 @@ export default {
                 padding-right: 6rem;
                 height: 100%;
                 border: 0.1rem solid #E1E5F4;
+                @media (max-width: 1096px) {
+                    justify-content: center;
+                    padding-right: 0;
+                }
                 .example_img {
                     margin-right: 6rem;
                     max-width: 36rem;
@@ -71,12 +81,26 @@ export default {
                         width: 100%;
                         height: 100%;
                     }
+                    @media (max-width: 1096px) {
+                        display: none;
+                    }
                 }
                 .example_right {
                     max-width: 52rem;
+                    @media (max-width: 1096px) {
+                        box-sizing: border-box;
+                        padding-left: 2.4rem;
+                        padding-right: 2.4rem;
+                        max-width: 80rem;
+                    }
+                    @media (max-width: 768px) {
+                        box-sizing: border-box;
+                        padding-left: 2.4rem;
+                        padding-right: 2.4rem;
+                    }
                     .example_text {
                         font-size: $fontSize16;
-                        font-weight: $fontWeight500;
+                        font-weight: $fontWeight600;
                         color: #000;
                         line-height: 2.4rem;
                         overflow: hidden;
@@ -91,7 +115,7 @@ export default {
                         line-height: 2.4rem;
                     }
                     .example_link {
-                        display: block;
+                        display: inline-block;
                         margin-top: 2.4rem;
                         .more_btn {
                             border: 0.1rem solid #0967E9;

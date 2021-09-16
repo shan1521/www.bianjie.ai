@@ -50,6 +50,15 @@ export default {
         .plan_adv_content {
             margin: 0 auto;
             max-width: 90rem;
+            @media (max-width: 996px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .plans_title {
                 font-size: $fontSize24;
                 font-weight: $fontWeight500;
@@ -108,7 +117,7 @@ export default {
                     .adv_right {
                         .adv_text {
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight400;
                             color: #000;
                             line-height: 1.6rem;
                         }

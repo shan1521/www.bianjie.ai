@@ -24,14 +24,10 @@
                     >
                         <router-link
                             class="item"
-                            :class="[
-                                isColor ? 'color_font' : '',
-                                !isColor && currentIndex === index
-                                    ? 'active'
-                                    : '',
-                                isColor && currentIndex === index
-                                    ? 'color_font_active'
-                                    : '',
+                            :class="[ 
+                                isColor ? 'color_font' : '', 
+                                (!isColor && currentIndex === index) ? 'active' : '',
+                                (isColor && currentIndex === index) ? 'color_font_active' : '',
                             ]"
                             :to="item.link"
                         >
@@ -122,7 +118,7 @@ export default {
             this.$router.push("/");
         },
         changeIndex(index) {
-            if (this.currentIndex !== index && index !== 6) {
+            if (this.currentIndex !== index && index !== 6 && index !== 1 && index !== 2) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }
@@ -162,7 +158,7 @@ export default {
 .nav_container {
     position: fixed;
     width: 100%;
-    // height: 4.8rem;
+    height: 4.8rem;
     z-index: 999;
     transition: all .3s linear;
 
@@ -175,6 +171,14 @@ export default {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
+        @media (max-width: 1296px) {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+        }
+        @media (max-width: 375px) {
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+        }
 
         .nav_logo {
             width: 9.8rem;
@@ -194,6 +198,9 @@ export default {
             height: 100%;
             font-size: $fontSize14;
             font-weight: $fontWeight400;
+            @media (max-width: 968px) {
+                display: none;
+            }
 
             .nav_list {
                 display: flex;
@@ -235,6 +242,21 @@ export default {
                         display: block;
                         height: 100%;
                         color: rgba(255, 255, 255, 0.75);
+                        transition: all 0.3s linear;
+                        &:hover {
+                            color: #fff;
+                            &::after {
+                                content: '';
+                                display: block;
+                                clear: both;
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 0.2rem;
+                                background: #fff;
+                                transition: all 0.3s linear;
+                            }
+                        }
                     }
 
                     .active {
@@ -254,7 +276,21 @@ export default {
                     }
 
                     .color_font {
+                        position: relative;
                         color: rgba(0, 0, 0, 0.75);
+                        &:hover {
+                            color: #000;
+                            &::after {
+                                content: '';
+                                display: block;
+                                clear: both;
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 0.2rem;
+                                background: #0967E9;
+                            }
+                        }
                     }
 
                     .color_font_active {

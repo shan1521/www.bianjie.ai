@@ -31,6 +31,9 @@ export default {
     width: 100%;
     height: 36rem;
     background: url('../../assets/product/iritaopb/iritaopb_banner.png') no-repeat center / cover;
+    @media (max-width: 768px) {
+        background: url(../../assets/product/iritahub/iritahub_banner_pad.png) no-repeat center / cover;
+    }
 
     .iritaopb_title_content_container {
         margin: 0 auto;

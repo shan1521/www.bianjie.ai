@@ -21,7 +21,6 @@ export default {
 <style lang="stylus">
 .archi_container {
     width: 100%;
-    height: 77.2rem;
     background: #FCFCFC;
 
     .archi_content_container {

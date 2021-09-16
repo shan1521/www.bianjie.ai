@@ -32,7 +32,7 @@
                             class="item"
                             v-for="(partner, pIndex) in item.partnerList"
                         >
-                            <img :src="partner.src" alt="" />
+                            <img v-lazy="partner.src" alt="" />
                         </div>
                     </li>
                 </ul>
@@ -139,14 +139,31 @@ export default {
             }
 
             .partner_list_container {
-                margin-top: 3.2rem;
+                margin: 3.2rem auto 0;
+                @media (max-width: 1000px) {
+                    max-width: 66.4rem;
+                }
+                @media (max-width: 768px) {
+                    max-width: 43.2rem;
+                }
+                @media (max-width: 500px) {
+                    max-width: 20rem;
+                }
 
                 .partner_item {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid-row-gap: 2.4rem;
                     grid-column-gap: 3.2rem;
-                    // min-height: 24rem;
+                    @media (max-width: 1000px) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media (max-width: 768px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media (max-width: 500px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
 
                     .item {
                         display: flex;
@@ -159,7 +176,6 @@ export default {
 
                         img {
                             width: 100%;
-                            // height: 100%;
                         }
                     }
                 }

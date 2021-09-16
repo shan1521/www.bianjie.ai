@@ -103,7 +103,7 @@ export default {
 
                         .right_title {
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                         }

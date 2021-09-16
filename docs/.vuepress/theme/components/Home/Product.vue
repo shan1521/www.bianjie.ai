@@ -39,6 +39,7 @@
                     >
                 </li>
             </ul>
+            
             <div class="product_content_list">
                 <div class="list_container">
                     <div class="list">
@@ -166,6 +167,9 @@ export default {
         padding: 8rem 0 0;
         margin: 0 auto;
         max-width: $contentWidth;
+        @media (max-width: 768px) {
+            padding: 6rem 0 0;
+        }
 
         &::after {
             content: '';
@@ -174,11 +178,19 @@ export default {
             width: 100%;
             height: 0.2rem;
             background: #CCD5EF;
+            @media (max-width: 768px) {
+                margin-top: 2.4rem;
+            }
         }
 
         .title_content {
             margin: 0 auto;
             max-width: 105.6rem;
+            @media (max-width: 1200px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
 
             .title {
                 display: flex;
@@ -189,6 +201,11 @@ export default {
                 font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
+                @media (max-width: 400px) {
+                    font-size: $fontSize16;
+                    font-weight: $fontWeight600;
+                    line-height: 1.6rem;
+                }
 
                 &::after {
                     content: '';
@@ -197,34 +214,51 @@ export default {
                     width: 8rem;
                     height: 0.4rem;
                     background: #0967E9;
+                    @media (max-width: 400px) {
+                        margin-top: 1.6rem;
+                    }
                 }
             }
 
             .irita_content {
                 margin-top: 6rem;
+                @media (max-width: 920px) {
+                    margin-top: 4.8rem;
+                    text-align: center;
+                }
 
                 .irita_title {
                     font-size: $fontSize24;
                     font-weight: $fontWeight500;
                     color: #000;
-                    line-height: 2.4rem;
+                    line-height: 2.6rem;
+                    @media (max-width: 920px) {
+                        text-align: center;
+                    }
                 }
 
                 .desc_content {
-                    margin-top: 0.4rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-top: 0.4rem;
+                    @media (max-width: 920px) {
+                        justify-content: center;
+                        margin-top: 1.6rem;
+                    }
 
                     .desc {
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
-                        line-height: 2rem;
+                        line-height: 2.4rem;
                     }
 
                     .title_btn {
                         border: 0.1rem solid #0967E9;
+                        @media (max-width: 920px) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -266,7 +300,7 @@ export default {
                 .name {
                     margin-left: 1.2rem;
                     font-size: $fontSize16;
-                    font-weight: $fontWeight500;
+                    font-weight: $fontWeight600;
                     color: #000;
                     line-height: 1.6rem;
                 }
@@ -312,7 +346,7 @@ export default {
                             .left {
                                 .name {
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #fff;
                                     line-height: 1.6rem;
 
@@ -329,7 +363,7 @@ export default {
                                 .intro {
                                     margin-top: 1.2rem;
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #fff;
                                     line-height: 1.6rem;
                                     letter-spacing: 0.1rem;

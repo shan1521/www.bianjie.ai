@@ -6,7 +6,7 @@
     appTitleContent: {
         title: 区块链电子证照,
         subTitle: 加强数据共享，提升政务效率,
-        bg_banner: government_banner.png
+        bg_banner: government_banner
     },
     sceneStatusContent: {
         title: 场景现状及痛点,

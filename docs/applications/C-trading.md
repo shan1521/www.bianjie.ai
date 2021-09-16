@@ -6,7 +6,7 @@
     appTitleContent: {
         title: 碳核查,
         subTitle: 全流程信息透明，全方位数据监控，一站式核查监管,
-        bg_banner: carbonneutral_banner.png
+        bg_banner: carbonneutral_banner
     },
     sceneStatusContent: {
         title: 场景现状及痛点,

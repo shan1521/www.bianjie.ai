@@ -57,11 +57,16 @@ export default {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
+        @media (max-width: 768px) {
+            padding: 6rem 0;
+        }
+        @media (max-width: 375px) {
+            padding: 4rem 0;
+        }
 
         .advantage_content {
             margin: 0 auto;
             max-width: 105.6rem;
-            min-height: 100%;
             text-align: center;
             @media (max-width: 1056px) {
                 max-width: 51.2rem;
@@ -79,6 +84,11 @@ export default {
                 font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
+                @media (max-width: 400px) {
+                    font-size: $fontSize16;
+                    font-weight: $fontWeight600;
+                    line-height: 1.6rem;
+                }
 
                 &::after {
                     content: '';
@@ -87,21 +97,29 @@ export default {
                     width: 8rem;
                     height: 0.4rem;
                     background: #0967E9;
+                    @media (max-width: 400px) {
+                        margin-top: 1.6rem;
+                    }
                 }
             }
 
             .adv_list {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                grid-row-gap: 2rem;
                 grid-column-gap: 3.2rem;
-                margin-top: 6rem;
+                margin: 6rem auto 0;
                 min-height: 26.4rem;
                 @media (max-width: 1056px) {
+                    margin: 4.8rem auto 0;
                     grid-template-columns: repeat(2, 1fr);
+                    grid-row-gap: 3.2rem;
                 }
                 @media (max-width: 512px) {
                     grid-template-columns: repeat(1, 1fr);
+                    grid-row-gap: 1.6rem;
+                }
+                @media (max-width: 375px) {
+                    margin-top: 1.6rem;
                 }
 
                 .adv_list_item {
@@ -182,7 +200,7 @@ export default {
                                 max-width: 16.8rem;
                                 height: 8.8rem;
                                 font-size: $fontSize16;
-                                font-weight: $fontWeight500;
+                                font-weight: $fontWeight600;
                                 color: #000000;
                                 line-height: 2.4rem;
                             }

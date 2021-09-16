@@ -13,7 +13,7 @@
                             <Top
                                 class="job_icon"
                                 :class="
-                                    visible && currentJob === index
+                                    item.visible
                                         ? 'job_icon_rotate'
                                         : ''
                                 "
@@ -22,7 +22,7 @@
                         </div>
                         <div
                             class="job_detail"
-                            v-if="visible && currentJob === index"
+                            v-if="item.visible"
                         >
                             <div class="responsibility_title">
                                 {{ item.responsibilityTitle }}:
@@ -71,17 +71,21 @@ export default {
     name: "Jobs",
     props: ["hotJobs"],
     data() {
+        let jobList = this.hotJobs.jobsType;
+        jobList.forEach(j=>j.visible = false)
         return {
-            visible: false,
-            currentJob: 0,
+            jobList,
         };
     },
     methods: {
         putAway(index) {
-            if (this.currentJob === index) {
-                this.visible = !this.visible;
-            }
-            this.currentJob = index;
+            this.jobList.forEach((item,i)=>{
+                if(index === i) {
+                    item.visible = !item.visible;
+                }else{
+                    item.visible = false;
+                }
+            })
         },
     },
     components: {
@@ -161,7 +165,7 @@ export default {
                         .responsibility_title {
                             margin-top: 2.3rem;
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                         }
@@ -180,7 +184,7 @@ export default {
                         .requirement_title {
                             margin-top: 1.6rem;
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                         }

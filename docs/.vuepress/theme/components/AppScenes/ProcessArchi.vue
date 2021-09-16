@@ -30,6 +30,15 @@ export default {
         .processarchi_content {
             margin: 0 auto;
             max-width: 100rem;
+            @media (max-width: 1096px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .processarchi_title {
                 font-size: $fontSize24;
                 font-weight: $fontWeight500;

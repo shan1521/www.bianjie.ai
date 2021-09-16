@@ -47,6 +47,18 @@ export default {
             padding: 6.4rem 0 4.8rem;
             margin: 0 auto;
             max-width: 113.6rem;
+            @media (max-width: 1232px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+                max-width: 111.2rem;
+                .intro_content_left {
+                    display: none;
+                } 
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .intro_content_left {
                 margin-right: 5.7rem;
                 width: 60.2rem;
