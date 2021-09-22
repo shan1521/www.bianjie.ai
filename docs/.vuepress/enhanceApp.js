@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import VueLazyload from 'vue-lazyload';
 import store from './store';
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -25,7 +24,6 @@ export default async ({
 	Vue.use(router)
 	Vue.use(Vuex)
     Vue.use(Element);
-    Vue.use(VueLazyload);
 	Vue.mixin({ store: store });
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
@@ -62,11 +60,6 @@ export default async ({
 			Vue.use(module.default)
 		}).catch(e => {
 			console.log(e,'vue-awesome-swiper error')
-		})
-		await import('vue-lazyload').then( module => {
-			Vue.use(module.default)
-		}).catch(e => {
-			console.log(e,'vue-lazyload error')
 		})
 		// await import('vue-line-clamp').then(module => {
 		// 	Vue.use(module)

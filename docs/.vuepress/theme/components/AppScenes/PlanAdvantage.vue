@@ -117,7 +117,7 @@ export default {
                     .adv_right {
                         .adv_text {
                             font-size: $fontSize16;
-                            font-weight: $fontWeight400;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 1.6rem;
                         }

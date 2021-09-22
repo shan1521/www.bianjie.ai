@@ -79,7 +79,7 @@ export default {
             text-align: center;
 
             .title {
-                font-size: 2.4rem;
+                font-size: $fontSize24;
                 font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
@@ -117,15 +117,15 @@ export default {
 
                         .item_process {
                             margin-top: 2.4rem;
-                            font-size: 1.6rem;
-                            font-weight: $fontWeight500;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                         }
 
                         .item_desc {
                             margin-top: 1.9rem;
-                            font-size: 1.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: rgba(0, 0, 0, 0.75);
                             line-height: 2.4rem;

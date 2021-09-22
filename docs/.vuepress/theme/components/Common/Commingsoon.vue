@@ -135,7 +135,7 @@ export default {
                         max-width: 32.8rem;
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
-                        color: rgba(0, 0, 0, .75);
+                        color: rgba(0, 0, 0, 0.75);
                         line-height: 2.4rem;
                         @media (max-width: 896px) {
                             text-align: center;

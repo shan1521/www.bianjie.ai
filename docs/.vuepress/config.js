@@ -4,6 +4,7 @@ module.exports = {
     base: '/',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
+        ['meta', {name:'og:image',content:'https://irita.bianjie.ai/docs/logo.jpg'}],
         // [ 'meta', {name:'keywords',content:'IRITA,irita,IRITA HUB,IRITA OPB,文昌链,BSN开放联盟链,iService,IBC,跨链服务,边界智能区块链,边界科技,上海边界,边界区块链'}],
         // [ 'meta', {name:'description',content:''}],
         // [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
@@ -59,37 +60,37 @@ module.exports = {
             {
                 text: '应用场景', link: '', items: [
                     {
-                        icon: '', 
+                        icon: 'icon-zhengwu', 
                         scene: '智慧政务',
                         text: '电子证照',
                         link: '/applications/e-licence'
                     },
                     {
-                        icon: '', 
+                        icon: 'icon-tan', 
                         scene: '碳中和',
                         text: '碳核查',
                         link: '/applications/C-trading'
                     },
                     {
-                        icon: '', 
+                        icon: 'icon-banquan', 
                         scene: '文创与版权',
                         text: '一体化数字艺术品',
                         link: '/applications/digital-art'
                     },
                     {
-                        icon: '', 
+                        icon: 'icon-wulianwang', 
                         scene: '工业互联网及物联网',
                         text: '物联网可信数据采集',
                         link: '/applications/datacollection'
                     },
                     {
-                        icon: '', 
+                        icon: 'icon-jinrong', 
                         scene: '金融',
                         text: '供应链金融',
                         link: '/applications/trade-finance'
                     },
                     {
-                        icon: '', 
+                        icon: 'icon-yiliao', 
                         scene: '医疗健康',
                         text: '电子处方流转',
                         link: '/applications/e-prescription-circulation'

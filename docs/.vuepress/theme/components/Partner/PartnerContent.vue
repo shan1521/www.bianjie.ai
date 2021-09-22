@@ -14,7 +14,7 @@
                         <ul class="item_list">
                             <li class="item" v-for="(partner,pIndex) in item.list" :key="pIndex">
                                 <a :href="partner.link" class="img_wrap" target="_blank" rel="noreferrer noopener">
-                                    <img class="partner_img" v-lazy="partner.imgName" alt="" />
+                                    <img class="partner_img" :src="partner.imgName" alt="" />
                                     <ul :class="partner.relationshipList.length ? 'relationship_list' : ''">
                                         <li v-if="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
                                             {{ relationshipItem.relationship }}
@@ -59,6 +59,14 @@ export default {
             margin: 0 auto;
             padding: 8rem 0 12rem;
             max-width: 100%;
+            @media (max-width: 1200px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 400px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .partner_field {
                 .partner_item {
@@ -99,8 +107,19 @@ export default {
                         grid-template-columns: repeat(4, 1fr);
                         grid-row-gap: 4rem;
                         grid-column-gap: 6rem;
-                        margin-top: 4.8rem;
-                        ransition: all 0.3s linear;
+                        justify-items: center;
+                        align-items: center;
+                        margin: 4.8rem auto 0;
+                        transition: all 0.3s linear;
+                        @media (max-width: 1200px) {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        @media (max-width: 935px) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        @media (max-width: 635px) {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
 
                         .item {
                             position: relative;

@@ -92,7 +92,7 @@ export default {
         width: 100%;
         background: #061939;
 
-        @media (max-width: 740px) {
+        @media (max-width: 768px) {
             height: auto;
             line-height: 2.4rem;
         }
@@ -138,15 +138,17 @@ export default {
                     font-size: $fontSize14;
 
                     @media (max-width: 768px) {
-                        flex-direction: column;
-                        align-items: center;
+                        margin-top: 6rem;
+                    }
+                    @media (max-width: 575px) {
+                        margin-top: 3.2rem;
                     }
 
                     .total {
                         display: flex;
                         flex-direction: column;
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 575px) {
                             margin-top: 2.4rem;
                             align-items: center;
                         }
@@ -155,7 +157,7 @@ export default {
                             line-height: 2.4rem;
                             font-weight: $fontWeight600;
                             color: #fff;
-                            @media (max-width: 768px) {
+                            @media (max-width: 575px) {
                                 text-align: center;
                             }
 
@@ -174,6 +176,7 @@ export default {
                             line-height: 2.4rem;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            text-align: center;
                         }
 
                         .dynamic {
@@ -201,9 +204,9 @@ export default {
                             margin-left: 6rem;
                         }
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 575px) {
                             margin-top: 2.4rem;
-                            margin-left: 0;
+                            margin-left: 4.8rem;
                             align-items: center;
                         }
 
@@ -245,10 +248,8 @@ export default {
                         @media (max-width: 1096px) {
                             margin-left: 6rem;
                         }
-                        @media (max-width: 768px) {
-                            margin-top: 2.4rem;
-                            margin-left: 0;
-                            align-items: center;
+                        @media (max-width: 575px) {
+                            display: none;
                         }
                         
 

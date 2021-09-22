@@ -117,6 +117,10 @@ export default {
                         .item_title {
                             display: flex;
                             align-items: center;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight600;
+                            color: rgba(0, 0, 0, 0.75);
+                            line-height: 2.4rem;
 
                             &::before {
                                 content: '';

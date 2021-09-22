@@ -201,7 +201,7 @@ export default {
                                 height: 8.8rem;
                                 font-size: $fontSize16;
                                 font-weight: $fontWeight600;
-                                color: #000000;
+                                color: #000;
                                 line-height: 2.4rem;
                             }
                         }

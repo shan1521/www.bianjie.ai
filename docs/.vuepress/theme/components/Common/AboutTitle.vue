@@ -32,12 +32,26 @@ export default {
             align-items: center;
             box-sizing: border-box;
             padding: 14.8rem 0 14.7rem;
-
+            @media (max-width: 775px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 400px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .title {
                 font-size: $fontSize48;
                 font-weight: $fontWeight500;
                 color: #fff;
                 line-height: 6.7rem;
+                text-align: center;
+                @media (max-width: 775px) {
+                    font-size: $fontSize40;
+                }
+                @media (max-width: 400px) {
+                    font-size: $fontSize36;
+                }
             }
             .sub_title {
                 margin-top: 1.8rem;
@@ -45,6 +59,10 @@ export default {
                 font-weight: $fontWeight400;
                 color: #fff;
                 line-height: 2.8rem;
+                text-align: center;
+                @media (max-width: 400px) {
+                    font-size: $fontSize16;
+                }
             }
         }
     }

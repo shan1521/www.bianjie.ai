@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "24438202",
+      "name": "物联网",
+      "font_class": "wulianwang",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "24438201",
+      "name": "版权",
+      "font_class": "banquan",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "24438196",
+      "name": "金融",
+      "font_class": "jinrong",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
+      "icon_id": "24438195",
+      "name": "医疗",
+      "font_class": "yiliao",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "24438176",
+      "name": "碳",
+      "font_class": "tan",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "24438165",
+      "name": "政务",
+      "font_class": "zhengwu",
+      "unicode": "e717",
+      "unicode_decimal": 59159
+    },
+    {
       "icon_id": "24230720",
       "name": "应用层",
       "font_class": "yingyongceng",

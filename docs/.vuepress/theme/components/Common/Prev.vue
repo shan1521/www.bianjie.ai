@@ -1,7 +1,7 @@
 <template>
-    <div class="prev_container">
+    <div class="prev_btn_container">
         <div class="prev_content">
-            <span class="prev"><i class="iconfont icon-jiantou_left"></i></span>
+            <div class="prev"><i class="iconfont icon-jiantou_left"></i></div>
         </div>
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.prev_container {
+.prev_btn_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,9 +21,7 @@ export default {
     height: 4.8rem;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     .prev_content {
         display: flex;

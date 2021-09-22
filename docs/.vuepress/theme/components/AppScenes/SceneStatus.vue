@@ -89,6 +89,10 @@ export default {
                             align-items: center;
                             width: 100%;
                             height: 100%;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight600;
+                            color: #000;
+                            line-height: 1.6rem;
 
                             &::before {
                                 content: '';
@@ -113,7 +117,7 @@ export default {
                         box-sizing: border-box;
                         padding: 1.3rem 3.2rem;
                         font-size: $fontSize14;
-                        font-weight: 400;
+                        font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
                         line-height: 2.4rem;
                     }
@@ -164,6 +168,10 @@ export default {
                             align-items: center;
                             width: 100%;
                             height: 100%;
+                            font-size: $fontSize16;
+                            font-weight: $fontWeight600;
+                            color: #000;
+                            line-height: 1.6rem;
 
                             &::before {
                                 content: '';
@@ -188,7 +196,7 @@ export default {
                         box-sizing: border-box;
                         padding: 1.6rem 2.4rem;
                         font-size: $fontSize14;
-                        font-weight: 400;
+                        font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
                         line-height: 2.4rem;
                     }
