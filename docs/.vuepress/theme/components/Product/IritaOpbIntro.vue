@@ -36,6 +36,14 @@ export default {
             padding: 6.4rem 0 4.8rem;
             margin: 0 auto;
             max-width: 113.6rem;
+            @media (max-width: 1296px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 font-size: $fontSize24;

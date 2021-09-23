@@ -48,6 +48,15 @@ export default {
             margin: 0 auto;
             max-width: 100.8rem;
             height: 100%;
+            @media (max-width: 768px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 font-size: $fontSize24;
@@ -67,11 +76,15 @@ export default {
             }
 
             .list {
-                margin-top: 4rem;
+                margin: 4rem auto 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-row-gap: 2.4rem;
                 grid-column-gap: 4.8rem;
+                @media (max-width: 1050px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    max-width: 48rem;
+                }
 
                 .item {
                     display: flex;
@@ -83,6 +96,10 @@ export default {
                     min-height: 22.4rem;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
+                    @media (max-width: 574px) {
+                        flex-direction: column;
+                        justify-content: center;
+                    }
 
                     .item_img {
                         display: flex;
@@ -103,9 +120,12 @@ export default {
 
                         .right_title {
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
+                            @media (max-width: 574px) {
+                                text-align: center;
+                            }
                         }
 
                         .item_desc {

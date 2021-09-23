@@ -47,9 +47,21 @@ export default {
             padding: 6.4rem 0 4.8rem;
             margin: 0 auto;
             max-width: 113.6rem;
+            @media (max-width: 1200px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+                max-width: 111.2rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .intro_content_left {
                 margin-right: 5.7rem;
                 width: 60.2rem;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -61,12 +73,15 @@ export default {
                     font-weight: $fontWeight500;
                     color: #000;
                     line-height: 2.4rem;
+                    @media (max-width: 1200px) {
+                        text-align: center;
+                    }
                 }
                 .desc_article {
                     margin-top: 3.6rem;
                     font-size: $fontSize14;
                     font-weight: $fontWeight400;
-                    color: rgba(0, 0, 0, .75);
+                    color: rgba(0, 0, 0, 0.75);
                     line-height: 2.4rem;
                     &:nth-of-type(1) {
                         margin-top: 4rem;

@@ -21,26 +21,62 @@
             </div>
         </div>
         <div class="product_content">
-            <ul class="product_name_list">
-                <li
-                    class="name_item"
-                    v-for="(item, index) in serviceContent.productContent"
-                    :key="index"
-                    :class="currentTab === index ? 'active' : ''"
-                    @click="changeTab(index)"
-                >
-                    <i class="iconfont" :class="item.icon"></i>
-                    <span
-                        class="name"
-                        :class="currentTab === index ? 'activeName' : ''"
-                        >{{ item.name }}</span
+            <div class="product_name_list_wrap">
+                <ul class="product_name_list">
+                    <li class="name_item" 
+                        v-for="(item, index) in serviceContent.productContent" :key="index"
+                        :class="currentTab === index ? 'active' : ''"
+                        @click="changeTab(index)"
                     >
-                </li>
-            </ul>
+                        <span class="irita_img">
+                            <img :src="differentImg(item.icon)"></img>
+                        </span>
+                        <span class="name">{{ item.name }}</span>
+                    </li>
+                </ul>
+            </div>
+            
             <div class="product_content_list">
                 <div class="list_container">
                     <div class="list">
-                        <Prev @click.native="subIndex"></Prev>
+                        <Prev class="prev_btn" ></Prev>
+                        <swiper class="product_list" :options="swiperOptions" ref="productSwiper">
+                            <swiper-slide
+                                class="item"
+                                v-for="(
+                                    item, index
+                                ) in serviceContent.productContent"
+                                :key="index"
+                            >
+                                <!-- v-show="index === currentTab" -->
+                                <div class="left">
+                                    <div class="name">{{ item.name }}</div>
+                                    <div class="intro">{{ item.intro }}</div>
+                                    <div class="desc">
+                                        {{ item.description }}
+                                    </div>
+                                    <a class="name_btn_git" v-if="item.link && index === 0" :href="item.link" target="_blank" rel="noopener noreferrer">
+                                        <span>{{item.moreText}}</span>
+                                    </a>
+                                    <router-link class="name_btn" v-if="item.route" :to="item.route">
+                                        <More
+                                            :text.sync="item.moreText"
+                                        ></More>
+                                    </router-link>
+                                </div>
+                                <div class="right">
+                                    <img :src="differentImg(item.imgName)" alt="" />
+                                </div>
+                            </swiper-slide>
+                        </swiper>
+                        <Next class="next_btn" ></Next>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="product_content_list">
+                <div class="list_container">
+                    <div class="list">
+                        <Prev class="prev_btn" @click.native="subIndex"></Prev>
                         <ul class="product_list">
                             <li
                                 class="item"
@@ -70,10 +106,10 @@
                                 </div>
                             </li>
                         </ul>
-                        <Next @click.native="addIndex"></Next>
+                        <Next class="next_btn" @click.native="addIndex"></Next>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="product_footer_content">
             <div class="footer_content">
@@ -86,11 +122,13 @@
                         <More
                             :text.sync="serviceContent.chatWithUs"
                             class="chat_btn"
+                            @click.native="updateShowMask"
                         ></More>
                     </div>
                 </div>
             </div>
         </div>
+        <HomeMask v-if="showMask" :showMask.sync="showMask"></HomeMask>
     </div>
 </template>
 
@@ -98,12 +136,32 @@
 import More from "@theme/components/Common/More.vue";
 import Prev from "@theme/components/Common/Prev.vue";
 import Next from "@theme/components/Common/Next.vue";
+import HomeMask from '@theme/components/Home/HomeMask.vue';
+import "swiper/css/swiper.css";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 export default {
     name: "Product",
     props: ["serviceContent"],
     data() {
         return {
             currentTab: 0,
+            showMask: false,
+            swiperOptions: {
+                initialSlide: this.currentTab,
+                navigation: {
+                    prevEl: ".prev_btn",
+                    nextEl: ".next_btn",
+                },
+                speed: 800,
+                autoplayDisableOnInteraction:false,
+                slideToClickedSlide: true,
+                on: {
+                    slideChange: () => {
+                        console.log(this.$refs.productSwiper);
+
+                    },
+                }
+            }
         };
     },
     computed: {
@@ -111,7 +169,7 @@ export default {
             return function(imgName){
                 return `/home/products/${imgName}`;
             }
-        }
+        },
     },
     methods: {
         clickIritaFn() {
@@ -120,27 +178,17 @@ export default {
         changeTab(index) {
             this.currentTab = index;
         },
-        subIndex() {
-            if(this.currentTab > 0) {
-                this.currentTab -= 1;
-            }
-            if(this.currentTab === 0) {
-                this.currentTab = 0;
-            }
+        updateShowMask(){
+            this.showMask = true;
         },
-        addIndex() {
-            if(this.currentTab < 4) {
-                this.currentTab += 1;
-            }
-            if(this.currentTab === 4) {
-                this.currentTab = 4;
-            }
-        }
     },
     components: {
         More,
         Prev,
         Next,
+        HomeMask,
+        Swiper, 
+        SwiperSlide
     },
 };
 </script>
@@ -154,6 +202,12 @@ export default {
         padding: 8rem 0 0;
         margin: 0 auto;
         max-width: $contentWidth;
+        @media (max-width: 768px) {
+            padding: 6rem 0 0;
+        }
+        @media (max-width: 375px) {
+            padding: 4rem 0 0;
+        }
 
         &::after {
             content: '';
@@ -161,12 +215,27 @@ export default {
             margin-top: 3.2rem;
             width: 100%;
             height: 0.2rem;
-            background: #CCD5EF;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0),#CCD5EF, rgba(255, 255, 255, 0));
+            @media (max-width: 768px) {
+                margin-top: 2.4rem;
+            }
+            @media (max-width: 375px) {
+                margin-top: 1.6rem;
+            }
         }
 
         .title_content {
             margin: 0 auto;
             max-width: 105.6rem;
+            @media (max-width: 1200px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 display: flex;
@@ -177,6 +246,11 @@ export default {
                 font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
+                @media (max-width: 375px) {
+                    font-size: $fontSize16;
+                    font-weight: $fontWeight600;
+                    line-height: 1.6rem;
+                }
 
                 &::after {
                     content: '';
@@ -185,34 +259,51 @@ export default {
                     width: 8rem;
                     height: 0.4rem;
                     background: #0967E9;
+                    @media (max-width: 375px) {
+                        margin-top: 1.6rem;
+                    }
                 }
             }
 
             .irita_content {
                 margin-top: 6rem;
+                @media (max-width: 920px) {
+                    margin-top: 4.8rem;
+                    text-align: center;
+                }
 
                 .irita_title {
                     font-size: $fontSize24;
                     font-weight: $fontWeight500;
                     color: #000;
-                    line-height: 2.4rem;
+                    line-height: 2.6rem;
+                    @media (max-width: 920px) {
+                        text-align: center;
+                    }
                 }
 
                 .desc_content {
-                    margin-top: 0.4rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-top: 0.4rem;
+                    @media (max-width: 920px) {
+                        justify-content: center;
+                        margin-top: 1.6rem;
+                    }
 
                     .desc {
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
-                        line-height: 2rem;
+                        line-height: 2.4rem;
                     }
 
                     .title_btn {
                         border: 0.1rem solid #0967E9;
+                        @media (max-width: 920px) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -221,54 +312,68 @@ export default {
 
     .product_content {
         width: 100%;
-        height: 60.2rem;
 
-        .product_name_list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            max-width: $contentWidth;
-            height: 7rem;
-
-            .name_item {
+        .product_name_list_wrap {
+            @media (max-width: 768px) {
+                overflow-x: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            .product_name_list {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 20%;
-                height: 100%;
-
-                &:hover {
-                    cursor: pointer;
+                margin: 0 auto;
+                max-width: $contentWidth;
+                @media (max-width: 768px) {
+                    width: 800px;
                 }
 
-                .iconfont {
-                    display: inline-block;
-                    font-size: $fontSize36;
+                .name_item {
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1.6rem 0;
+                    width: 24rem;
+                    height: 100%;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    .irita_img {
+                        display: inline-block;
+                        width: 3.6rem;
+                        height: 3.6rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .name {
+                        margin-left: 1.2rem;
+                        font-size: $fontSize16;
+                        font-weight: $fontWeight600;
+                        color: #000;
+                        line-height: 1.6rem;
+                    }
+
+                    .activeName {
+                        color: #0967E9;
+                    }
                 }
 
-                .name {
-                    margin-left: 1.2rem;
-                    font-size: $fontSize16;
-                    font-weight: $fontWeight500;
-                    color: #000;
-                    line-height: 1.6rem;
+                .active {
+                    border-bottom: 0.3rem solid #0967E9;
+                    border-radius: 0.1rem;
                 }
-
-                .activeName {
-                    color: #0967E9;
-                }
-            }
-
-            .active {
-                border-bottom: 0.3rem solid #0967E9;
-                border-radius: 0.4rem;
             }
         }
 
         .product_content_list {
             width: 100%;
-            height: 53.2rem;
             background: url('../../assets/home/cpyfw_bg.png') no-repeat center / cover;
 
             .list_container {
@@ -284,21 +389,52 @@ export default {
                     align-items: center;
                     margin: 0 auto;
                     max-width: 116.8rem;
+                    @media (max-width: 1200px) {
+                        justify-content: center;
+                    }
+                    .prev_btn {
+                        @media (max-width: 768px) {
+                            display: none;
+                        }
+                    }
 
                     .product_list {
+                        flex: 1 0;
                         margin: 0 4.8rem;
+                        @media (max-width: 375px) {
+                            margin: 0 2.4rem;
+                        }
+                        
+                        .swiper-wrapper {
+                            @media (max-width: 710px) {
+                                align-items: center;
+                            }
+                        }
 
                         .item {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            width: 100%;
+                            @media (max-width: 710px) {
+                                justify-content: center;
+                            }
 
                             .left {
+                                display: flex;
+                                flex-direction: column;
+                                @media (max-width: 710px) {
+                                    justify-content: center;
+                                    align-items: center;
+                                }
                                 .name {
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #fff;
                                     line-height: 1.6rem;
+                                    @media (max-width: 710px) {
+                                        text-align: center;
+                                    }
 
                                     &::before {
                                         content: '';
@@ -313,7 +449,7 @@ export default {
                                 .intro {
                                     margin-top: 1.2rem;
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #fff;
                                     line-height: 1.6rem;
                                     letter-spacing: 0.1rem;
@@ -334,7 +470,7 @@ export default {
                                     align-items: center;
                                     margin-top: 4.8rem;
                                     padding-left: 1.6rem;
-                                    max-width: 16.5rem;
+                                    width: 16.5rem;
                                     height: 3.2rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight400;
@@ -357,6 +493,9 @@ export default {
                                 margin-left: 3.2rem;
                                 max-width: 67.2rem;
                                 height: 44.2rem;
+                                @media (max-width: 710px) {
+                                    display: none;
+                                }
 
                                 img {
                                     width: 100%;
@@ -364,14 +503,24 @@ export default {
                             }
                         }
                     }
+                    .next_btn {
+                        @media (max-width: 768px) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
     }
+    // .product_content_resp {
+    //     // display: none;
+    //     // // @media (max-width: 968px) {
+    //     // //     display: block;
+    //     // // }
+    // }
 
     .product_footer_content {
         width: 100%;
-        height: 15.2rem;
         background: url('../../assets/home/zxyjsfw_bg.png') no-repeat center / cover;
 
         .footer_content {
@@ -380,6 +529,14 @@ export default {
             padding: 3.2rem 0;
             max-width: $contentWidth;
             height: 100%;
+            @media (max-width: 1152px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .content {
                 margin: 0 auto;
@@ -391,6 +548,13 @@ export default {
                     font-weight: $fontWeight500;
                     color: #fff;
                     line-height: 2rem;
+                    @media (max-width: 600px) {
+                        text-align: center;
+                    }
+                    @media (max-width: 375px) {
+                        font-size: $fontSize16;
+                        font-weight: $fontWeight600;
+                    }
                 }
 
                 .desc_content {
@@ -398,6 +562,10 @@ export default {
                     justify-content: space-between;
                     align-items: center;
                     margin-top: 1.6rem;
+                    @media (max-width: 600px) {
+                        flex-direction: column;
+                        justify-content: flex-start;
+                    }
 
                     .desc {
                         max-width: 37.2rem;
@@ -410,6 +578,9 @@ export default {
                     .chat_btn {
                         border-radius: 0.2rem 0 0 0.2rem;
                         border: 0.1rem solid #fff;
+                        @media (max-width: 600px) {
+                            margin-top: 1.6rem;
+                        }
                     }
                 }
             }

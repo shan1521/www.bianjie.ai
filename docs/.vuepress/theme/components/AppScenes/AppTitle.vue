@@ -1,5 +1,5 @@
 <template>
-  <div class="app_title_container" :style="differentSceneBanner(appTitleContent.bg_banner)">
+  <div class="app_title_container" :style="clientWidth > 768 ? differentSceneBanner(appTitleContent.bg_banner) : differentSceneBannerPad(appTitleContent.bg_banner)">
       <div class="app_title_content_container">
           <div class="app_title_content">
               <div class="app_title">{{appTitleContent.title}}</div>
@@ -13,13 +13,28 @@
 export default {
     name: 'AppTitle',
     props: ['appTitleContent'],
+    data() {
+        return {
+            clientWidth: +document.body.clientWidth
+        }
+    },
     computed: {
         differentSceneBanner(){
             return function(imgName){
-                return `background: url('/appscenes/banner/${imgName}') no-repeat center / cover;`;
+                return `background: url('/appscenes/banner/${imgName}.png') no-repeat center / cover;`;
+            }
+        },
+        differentSceneBannerPad(){
+            return function(imgName){
+                return `background: url('/appscenes/banner/${imgName}_pad.png') no-repeat center / cover;`;
             }
         }
-    }
+    },
+    mounted(){
+        window.onresize = () => {
+            return this.clientWidth = +document.body.clientWidth;
+        }
+    },
 }
 </script>
 

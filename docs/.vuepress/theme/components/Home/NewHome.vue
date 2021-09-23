@@ -5,7 +5,7 @@
         <Product :serviceContent.sync="serviceContent"></Product>
         <Scenes :scenesContent.sync="scenesContent"></Scenes>
         <Partner :partnerContent.sync="partnerContent"></Partner>
-        <Dynamic :dynamicContent.sync="dynamicContent"></Dynamic>
+        <Dynamic :dynamicContent.sync="dynamicContent" @updateShowMask.sync="updateShowMask($event)"></Dynamic>
     </div>
 </template>
 
@@ -38,13 +38,19 @@ export default {
 			return this.$frontmatter.dynamicContent;
 		},
     },
+    methods:{
+        updateShowMask(val){
+            console.log(val)
+            this.showMask = val;
+        }
+    },
     components: {
         Swiper,
         Advantage,
         Product,
         Scenes,
         Partner,
-        Dynamic
+        Dynamic,
     }
 };
 </script>

@@ -12,40 +12,14 @@
                             <span class="title">{{ item.title }}</span>
                         </div>
                         <ul class="item_list">
-                            <li
-                                class="item"
-                                v-for="(v, i) in item.list"
-                                :key="i"
-                                :class="
-                                    v.relationship || v.link
-                                        ? 'item_pointer'
-                                        : ''
-                                "
-                            >
-                                <!-- @mouseenter="visibleChange(i)" -->
-                                <a
-                                    class="img_wrap"
-                                    :href="v.link"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                >
-                                    <img
-                                        class="v_img"
-                                        :src="v.imgName"
-                                        alt=""
-                                    />
-                                    <div
-                                        :class="
-                                            v.relationship
-                                                ? 'v_relationship'
-                                                : ''
-                                        "
-                                    >
-                                        <!-- :style="{display: v.relationship ? 'block' : 'none'}" -->
-                                        <span class="relationship">
-                                            {{ v.relationship }}
-                                        </span>
-                                    </div>
+                            <li class="item" v-for="(partner,pIndex) in item.list" :key="pIndex">
+                                <a :href="partner.link" class="img_wrap" target="_blank" rel="noreferrer noopener">
+                                    <img class="partner_img" :src="partner.imgName" alt="" />
+                                    <ul :class="partner.relationshipList.length ? 'relationship_list' : ''">
+                                        <li v-if="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
+                                            {{ relationshipItem.relationship }}
+                                        </li>
+                                    </ul>
                                 </a>
                             </li>
                         </ul>
@@ -76,18 +50,23 @@ export default {
 <style lang="stylus">
 .partnercontent_container {
     width: 100%;
-
-    // min-height: 142.1rem;
     .partnercontent_content_container {
         margin: 0 auto;
         max-width: $contentWidth;
 
-        // height: 100%;
         .partnercontent_content {
             box-sizing: border-box;
             margin: 0 auto;
             padding: 8rem 0 12rem;
             max-width: 100%;
+            @media (max-width: 1200px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 400px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .partner_field {
                 .partner_item {
@@ -115,7 +94,7 @@ export default {
                             padding: 0 2.4rem;
                             height: 2.4rem;
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 2.4rem;
                             text-align: center;
@@ -128,7 +107,19 @@ export default {
                         grid-template-columns: repeat(4, 1fr);
                         grid-row-gap: 4rem;
                         grid-column-gap: 6rem;
-                        margin-top: 4.8rem;
+                        justify-items: center;
+                        align-items: center;
+                        margin: 4.8rem auto 0;
+                        transition: all 0.3s linear;
+                        @media (max-width: 1200px) {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        @media (max-width: 935px) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        @media (max-width: 635px) {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
 
                         .item {
                             position: relative;
@@ -140,14 +131,14 @@ export default {
 
                             &:hover {
                                 .img_wrap {
-                                    .v_relationship {
-                                        display: block;
+                                    .relationship_list {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
                                         position: absolute;
                                         top: 0;
                                         left: 0;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
                                         width: 100%;
                                         height: 100%;
                                         color: #0967E9;
@@ -165,8 +156,9 @@ export default {
                                     height: 100%;
                                 }
 
-                                .v_relationship {
+                                .relationship_list {
                                     display: none;
+                                    transition: all 0.3s linear;
                                 }
                             }
                         }

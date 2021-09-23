@@ -4,6 +4,7 @@ module.exports = {
     base: '/',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
+        ['meta', {name:'og:image',content:'https://irita.bianjie.ai/docs/logo.jpg'}],
         // [ 'meta', {name:'keywords',content:'IRITA,irita,IRITA HUB,IRITA OPB,文昌链,BSN开放联盟链,iService,IBC,跨链服务,边界智能区块链,边界科技,上海边界,边界区块链'}],
         // [ 'meta', {name:'description',content:''}],
         // [ 'meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
@@ -29,12 +30,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '区块链跨链服务枢纽',
-                                route: '/products/iritahub'
+                                route: '/products/IRITAHUB'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '基于智能合约的开放联盟链产品',
-                                route: '/products/iritaopb'
+                                route: '/products/IRITAOPB'
                             },
                         ]
                     },
@@ -45,12 +46,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '保护数据隐私的数据共享平台',
-                                route: '/products/iritabean'
+                                route: '/products/IRITABEAN'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换平台',
-                                route: '/products/iritada'
+                                route: '/products/IRITADA'
                             },
                         ]
                     },
@@ -58,12 +59,42 @@ module.exports = {
             },
             {
                 text: '应用场景', link: '', items: [
-                    { text: '智慧政务', link: '/applications/government' },
-                    { text: '碳中和', link: '/applications/carbonneutral' },
-                    { text: '文创与版权', link: '/applications/cultural' },
-                    { text: '工业互联网及物联网', link: '/applications/net' },
-                    { text: '供应链金融', link: '/applications/finance' },
-                    { text: '医疗健康', link: '/applications/health' },
+                    {
+                        icon: 'icon-zhengwu', 
+                        scene: '智慧政务',
+                        text: '电子证照',
+                        link: '/applications/e-licence'
+                    },
+                    {
+                        icon: 'icon-tan', 
+                        scene: '碳中和',
+                        text: '碳核查',
+                        link: '/applications/C-trading'
+                    },
+                    {
+                        icon: 'icon-banquan', 
+                        scene: '文创与版权',
+                        text: '一体化数字艺术品',
+                        link: '/applications/digital-art'
+                    },
+                    {
+                        icon: 'icon-wulianwang', 
+                        scene: '工业互联网及物联网',
+                        text: '物联网可信数据采集',
+                        link: '/applications/datacollection'
+                    },
+                    {
+                        icon: 'icon-jinrong', 
+                        scene: '金融',
+                        text: '供应链金融',
+                        link: '/applications/trade-finance'
+                    },
+                    {
+                        icon: 'icon-yiliao', 
+                        scene: '医疗健康',
+                        text: '电子处方流转',
+                        link: '/applications/e-prescription-circulation'
+                    },
                 ]
             },
             { text: '企业动态', link: '/news' },

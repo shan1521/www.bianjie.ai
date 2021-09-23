@@ -36,7 +36,6 @@ export default {
 <style lang="stylus">
 .corefunc_container {
     width: 100%;
-    min-height: 50.8rem;
     background: url(../../assets/hzhb_bg.png) no-repeat center / cover;
     .corefunc_content_container {
         box-sizing: border-box;
@@ -46,6 +45,15 @@ export default {
         .corefunc_content {
             margin: 0 auto;
             max-width: 82.8rem;
+            @media (max-width: 924px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+                max-width: 46rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .corefunc_title {
                 font-size: $fontSize24;
                 font-weight: $fontWeight500;
@@ -58,7 +66,11 @@ export default {
                 grid-template-columns: repeat(2, 1fr);
                 grid-column-gap: 9.7rem;
                 grid-row-gap: 6rem;
-                margin-top: 4rem;
+                margin: 4rem auto 0;
+                @media (max-width: 924px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-row-gap: 3.6rem;
+                }
                 .corefunc_item {
                     display: flex;
                     align-items: center;
@@ -94,7 +106,7 @@ export default {
                     .corefunc_right {
                         .corefunc_text {
                             font-size: $fontSize16;
-                            font-weight: $fontWeight500;
+                            font-weight: $fontWeight600;
                             color: #000;
                             line-height: 1.6rem;
                         }

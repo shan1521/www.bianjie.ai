@@ -33,7 +33,10 @@
                     month: '07',
                     events: [
                         {
-                            event: IRITA 底层链平台通过信通院可信区块链功能评测      边界智能成为分布式身份产业联盟（DID-Alliance，简称DIDA）成员单位
+                            event: IRITA 底层链平台通过信通院可信区块链功能评测
+                        },
+                        {
+                            event: 边界智能成为分布式身份产业联盟（DID-Alliance，简称DIDA）成员单位
                         }
                     ]
                 },
@@ -78,10 +81,10 @@
                     month: '12',
                     events: [
                         {
-                            event: 边界智能成为 IEEE 标准协会高级会员，参与区块链标准制定通过 ISO9001质量管理体系认证和 ISO27001信息安全管理体系认证
+                            event: 边界智能成为 IEEE 标准协会高级会员，参与区块链标准制定
                         },
                         {
-                            event: 通过 ISO9001质量管理体系认证和 ISO27001信息安全管理体系认证
+                            event: 通过 ISO9001 质量管理体系认证和 ISO27001 信息安全管理体系认证
                         }
                     ]
                 },
@@ -89,7 +92,7 @@
                     month: '10',
                     events: [
                         {
-                            event: IRITA HUB成功部署在BSN国内和国际版环境中并运营
+                            event:  IRITA HUB成功部署在BSN国内和国际版环境中并运营
                         }
                     ]
                 },

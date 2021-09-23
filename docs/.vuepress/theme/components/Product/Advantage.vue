@@ -43,7 +43,6 @@ export default {
 <style lang="stylus">
 .adv_container {
     width: 100%;
-    height: 57.2rem;
 
     .adv_content_container {
         margin: 0 auto;
@@ -66,9 +65,17 @@ export default {
             .adv_list {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                // grid-row-gap: 2rem;
                 grid-column-gap: 3.2rem;
-                margin-top: 4rem;
+                margin: 4rem auto 0;
+                @media (max-width: 1104px) {
+                    max-width: 51.2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-row-gap: 2.4rem;
+                }
+                @media (max-width: 608px) {
+                    max-width: 24rem;
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 .adv_item {
                     box-sizing: border-box;
@@ -99,7 +106,7 @@ export default {
                         align-items: center;
                         margin-top: 3.6rem;
                         font-size: $fontSize16;
-                        font-weight: $fontWeight500;
+                        font-weight: $fontWeight600;
                         color: #000;
                         line-height: 2.4rem;
 

@@ -1,12 +1,12 @@
 ---
 {
     layout: Layout,
-    isGovernment: true,
+    isELicence: true,
     title: 智慧政务-应用场景,
     appTitleContent: {
         title: 区块链电子证照,
         subTitle: 加强数据共享，提升政务效率,
-        bg_banner: government_banner.png
+        bg_banner: government_banner
     },
     sceneStatusContent: {
         title: 场景现状及痛点,
@@ -103,11 +103,11 @@
     exampleContent: {
         title: 客户案例,
         example: {
-            imgName: https://www.bianjie.ai/dist/production_serve.png?7a666bd93e73b7e630b469c3c376479f,
+            imgName: ,
             text: “智慧政务+区块链” 都江堰市行政审批局智慧政务在 BSN 文昌链上线了,
-            intro: “政务服务底层区块链平台”应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中“区块链电子证照系统”的搭建，该系统基于 BSN 首批开放联盟链“文昌链”开发，也是 BSN 开放联盟链“文昌链”部署的首个政务应用。截至 3 月底，运用了区块链技术的都江堰市行政审批局“智慧政务+区块链”政务服务底层区块链平台已完成搭建,
-            link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw,
-            route: /news/NFT,
+            intro: “政务服务底层区块链平台”应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中“区块链电子证照系统”的搭建，该系统基于 BSN 首批开放联盟链“文昌链”开发，也是 BSN 开放联盟链“文昌链”部署的首个政务应用。截至 3 月底，运用了区块链技术的都江堰市行政审批局“智慧政务+区块链”政务服务底层区块链平台已完成搭建。,
+            link: https://mp.weixin.qq.com/s/P8xaUOcgl3m4BATDcL-vgQ,
+            route: ,
         },
         moreText: 查看详情
     }

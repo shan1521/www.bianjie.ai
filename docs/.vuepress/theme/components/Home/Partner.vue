@@ -6,22 +6,24 @@
                     <span class="title">{{ partnerContent.title }}</span>
                     <span class="sub_title">{{ partnerContent.subTitle }}</span>
                 </div>
-                <ul class="fields_list_container">
-                    <li
-                        class="field_item"
-                        v-for="(item, index) in partnerContent.fieldsList"
-                        :class="currentTab === index ? 'active' : ''"
-                        :key="index"
-                        @click="changeTab(index)"
-                    >
-                        <span
-                            class="field_name"
-                            :class="currentTab === index ? 'activeName' : ''"
-                            >{{ item.fieldName }}</span
+                <div class="fields_list_wrap">
+                    <ul class="fields_list_container">
+                        <li
+                            class="field_item"
+                            v-for="(item, index) in partnerContent.fieldsList"
+                            :class="currentTab === index ? 'active' : ''"
+                            :key="index"
+                            @click="changeTab(index)"
                         >
-                    </li>
-                </ul>
-                <ul class="partner_list_container">
+                            <span
+                                class="field_name"
+                                :class="currentTab === index ? 'activeName' : ''"
+                                >{{ item.fieldName }}</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <ul class="partner_list_container" @touchmove="tabsMove($event)">
                     <li
                         class="partner_item"
                         v-for="(item, index) in partnerContent.fieldsList"
@@ -46,6 +48,7 @@ export default {
     name: "Partner",
     props: ["partnerContent"],
     data() {
+        let tabs = document.querySelectorAll('.partner_list_container .partner_item');
         return {
             currentTab: 0,
         };
@@ -53,7 +56,11 @@ export default {
     methods: {
         changeTab(index) {
             this.currentTab = index;
+            // this.tabSwiper.slideTo(index);
         },
+        tabsMove($event) {
+            console.log(111111);
+        }
     },
 };
 </script>
@@ -63,6 +70,12 @@ export default {
     width: 100%;
     min-height: 60.8rem;
     background: url('../../assets/hzhb_bg.png') no-repeat center / cover;
+    @media (max-width: 768px) {
+        min-height: 58.8rem;
+    }
+    @media (max-width: 375px) {
+        min-height: 55.6rem;
+    }
 
     .partner_content_container {
         box-sizing: border-box;
@@ -70,6 +83,14 @@ export default {
         padding: 8rem 0;
         max-width: $contentWidth;
         height: 100%;
+        @media (max-width: 930px) {
+            padding: 6rem 4.8rem;
+            min-height: 58.8rem;
+        }
+        @media (max-width: 375px) {
+            padding: 4rem 1.6rem;
+            min-height: 55.6rem;
+        }
 
         .partner_content {
             margin: 0 auto;
@@ -98,6 +119,7 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 2rem;
+                    text-align: center;
 
                     &::after {
                         content: '';
@@ -110,43 +132,102 @@ export default {
                 }
             }
 
-            .fields_list_container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 4rem auto 0;
-                max-width: 70.8rem;
-                height: 3.6rem;
-                background: rgba(216, 216, 216, 0.25);
-                border-radius: 0.4rem;
-
-                .field_item {
-                    box-sizing: border-box;
-                    padding: 0.8rem 2.4rem;
-                    height: 100%;
-
-                    &:hover {
-                        cursor: pointer;
+            .fields_list_wrap {
+                @media (max-width: 660px) {
+                    overflow-x: auto;
+                    &::-webkit-scrollbar {
+                        display: none;
                     }
                 }
-
-                .active {
-                    height: 100%;
-                    background: #0967E9;
+                .fields_list_container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 4rem auto 0;
+                    max-width: 70.8rem;
+                    height: 3.6rem;
+                    background: rgba(216, 216, 216, 0.25);
                     border-radius: 0.4rem;
-                    color: #fff;
+                    @media (max-width: 660px) {
+                        box-sizing: border-box;
+                        white-space: nowrap;
+                        width: 65.2rem;
+                    }
+
+                    .field_item {
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 2.4rem;
+                        padding-right: 2.4rem;
+                        height: 100%;
+                        @media (max-width: 805px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
+                        @media (max-width: 707px) {
+                            padding-left: 1.2rem;
+                            padding-right: 1.2rem;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        .field_name {
+                            font-size: $fontSize14;
+                            font-weight: $fontWeight400;
+                            color: rgba(0, 0, 0, 0.75);
+                            line-height: 2rem;
+                            @media (max-width: 805px) {
+                                font-size: $fontSize14;
+                                font-weight: $fontWeight500;
+                            }
+                        }
+                    }
+
+                    .active {
+                        height: 100%;
+                        background: #0967E9;
+                        border-radius: 0.4rem;
+                        .field_name {
+                            color: #fff;
+                        }
+                    }
                 }
             }
 
             .partner_list_container {
-                margin-top: 3.2rem;
+                margin: 3.2rem auto 0;
+                @media (max-width: 930px) {
+                    max-width: 66.4rem;
+                }
+                @media (max-width: 706px) {
+                    max-width: 43.2rem;
+                }
+                @media (max-width: 520px) {
+                    max-width: 20rem;
+                }
 
                 .partner_item {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid-row-gap: 2.4rem;
                     grid-column-gap: 3.2rem;
-                    // min-height: 24rem;
+                    justify-items: center;
+                    @media (max-width: 930px) {
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-row-gap: 1.6rem;
+                    }
+                    @media (max-width: 804px) {
+                        grid-column-gap: 1.6rem;
+                    }
+                    @media (max-width: 706px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media (max-width: 520px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
 
                     .item {
                         display: flex;
@@ -159,7 +240,6 @@ export default {
 
                         img {
                             width: 100%;
-                            // height: 100%;
                         }
                     }
                 }

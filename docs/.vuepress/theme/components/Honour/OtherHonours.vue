@@ -88,9 +88,14 @@ export default {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 100%;
-        overflow-y: auto;
-        &::-webkit-scrollbar {
-            display: none;
+        @media (max-width: 1200px) {
+            box-sizing: border-box;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+        }
+        @media (max-width: 400px) {
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
         }
 
         .otherhonours_content {
@@ -102,7 +107,7 @@ export default {
                 flex-direction: column;
                 align-items: center;
                 font-size: $fontSize16;
-                font-weight: $fontWeight500;
+                font-weight: $fontWeight600;
                 color: #000;
                 line-height: 2.4rem;
 
@@ -117,21 +122,32 @@ export default {
             }
             .otherhonours_list {
                 margin-top: 2.4rem;
+                height: 72rem;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 .otherhonours_item {
                     position: relative;
                     &:last-child {
                         .el-timeline-item__tail {
                             display: block;
-                            height: 85%;
+                            height: 90%;
+                            @media (max-width: 768px) {
+                                height: 92%;
+                            }
+                            @media (max-width: 375px) {
+                                height: 93%;
+                            }
                         }
                     }
                     .el-timeline-item__tail {
-                        left: 12.8rem;
+                        left: 10rem;
                         z-index: 99;
                     }
                     .el-timeline-item__dot {
                         box-sizing: border-box;
-                        left: 12.8rem;
+                        left: 10rem;
                         width: 2.4rem;
                         height: 2.4rem;
                         transform: translateX(-50%);
@@ -145,6 +161,10 @@ export default {
                             border-radius: 50%;
                         }
                     }
+                    .el-timeline-item__wrapper {
+                        box-sizing: border-box;
+                        padding-left: 0;
+                    }
                     .year {
                         font-size: $fontSize32;
                         font-weight: $fontWeight500;
@@ -157,14 +177,19 @@ export default {
                             margin-top: 1.6rem;
                             width: 100%;
                             &:last-child {
-                                margin-top: 0;
+                                padding-bottom: 0;
+                                .el-timeline-item__node {
+                                    top: 56%;
+
+                                }
                             }
                             
                             .month {
                                 font-size: $fontSize16;
-                                font-weight: $fontWeight500;
+                                font-weight: $fontWeight600;
                                 color: #0967E9;
                                 line-height: 1.6rem;
+                                white-space: nowrap;
                             }
                             .el-timeline-item__tail {
                                 left: 10rem;
@@ -173,15 +198,15 @@ export default {
                             .el-timeline-item__node {
                                 top: 50%;
                                 left: 9.4rem;
-                                transform: translateY(-130%);
+                                transform: translateY(-115%);
                                 background-color: #fff;
                                 border: 0.1rem solid #0967E9;
                                 z-index: 99;
                             }
                             .el-timeline-item__wrapper {
-                                box-sizing: border-box;
                                 display: flex;
                                 align-items: center;
+                                box-sizing: border-box;
                                 padding: 2.1rem 2.8rem;
                                 max-width: 96rem;
                                 min-height: 5.6rem;
@@ -198,7 +223,7 @@ export default {
                                             font-size: $fontSize14;
                                             font-weight: $fontWeight400;
                                             color: rgba(0, 0, 0, 0.75);
-                                            line-height: 1.4rem;
+                                            line-height: 2rem;
                                             &:first-child {
                                                 margin-top: 0;
                                             }

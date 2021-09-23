@@ -112,7 +112,6 @@ export default {
 <style lang="stylus">
 .dynamiccontent_container {
     width: 100%;
-    // min-height: 138.4rem;
     background: #F5F6FB;
 
     .dynamiccontent_content_container {
@@ -120,18 +119,24 @@ export default {
         margin: 0 auto;
         padding: 6.4rem 0 8rem;
         max-width: $contentWidth;
-        height: 100%;
 
         .dynamiccontent_content {
             margin: 0 auto;
             max-width: 100.8rem;
+            @media (max-width: 1104px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
-            // height: 119.2rem;
             .dynamic_list {
                 box-sizing: border-box;
                 padding: 3.2rem 3.2rem 3.1rem;
                 width: 100%;
-                height: 100%;
                 background: #fff;
                 border-radius: 0.4rem;
 
@@ -143,6 +148,9 @@ export default {
                     margin-top: 2.4rem;
                     padding-bottom: 2.3rem;
                     border-bottom: 0.1rem solid #E1E5F4;
+                    @media (max-width: 1104px) {
+                        justify-content: center;
+                    }
 
                     &:first-child {
                         margin-top: 0;
@@ -172,7 +180,6 @@ export default {
 
                             .item_year {
                                 margin-left: 0.8rem;
-                                height: 100%;
                                 font-size: $fontSize13;
                                 font-weight: $fontWeight400;
                                 color: rgba(0, 0, 0, 0.75);
@@ -182,8 +189,6 @@ export default {
                         }
 
                         .item_title_container {
-                            display: flex;
-                            align-items: center;
                             margin-top: 1.2rem;
                             max-width: 66.4rem;
 
@@ -194,12 +199,15 @@ export default {
 
                             .item_title {
                                 font-size: $fontSize16;
-                                font-weight: $fontWeight500;
+                                font-weight: $fontWeight600;
                                 color: #000;
                                 line-height: 2.4rem;
                                 overflow: hidden;
                                 white-space: nowrap;
                                 text-overflow: ellipsis;
+                                @media (max-width: 1104px) {
+                                    white-space: normal;
+                                }
 
                                 &:hover {
                                     color: #0967E9;
@@ -207,6 +215,7 @@ export default {
                             }
 
                             .item_title_tag {
+                                display: inline-block;
                                 margin-left: 0.8rem;
                                 width: 4rem;
                                 height: 1.6rem;
@@ -239,6 +248,9 @@ export default {
                         margin-left: 3.2rem;
                         width: 24.8rem;
                         height: 14.4rem;
+                        @media (max-width: 1104px) {
+                            display: none;
+                        }
 
                         .item_img {
                             width: 100%;
@@ -257,6 +269,9 @@ export default {
                 margin-top: 2.4rem;
                 height: 2.4rem;
                 text-align: right;
+                @media (max-width: 375px) {
+                    text-align: center;
+                }
 
                 .el-pagination {
                     height: 100%;

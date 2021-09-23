@@ -72,6 +72,12 @@ export default {
     position: relative;
     width: 100%;
     height: 52.8rem;
+    @media (max-width: 968px) {
+        height: 42rem;
+    }
+    @media (max-width: 400px) {
+        height: 25rem;
+    }
     .swiper-container {
         width: 100%;
         height: 100%;
@@ -96,6 +102,9 @@ export default {
         margin: 0 auto;
         max-width: $contentWidth;
         height: 4.8rem;
+        @media (max-width: 968px) {
+            display: none;
+        }
         .swiper-button-prev {
             display: flex;
             justify-content: center;

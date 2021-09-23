@@ -51,6 +51,14 @@ export default {
         padding: 8rem 0 10.4rem;
         max-width: $contentWidth;
         height: 100%;
+        @media (max-width: 1096px) {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+        }
+        @media (max-width: 375px) {
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+        }
 
         .commingsoon_content {
             display: flex;
@@ -61,6 +69,9 @@ export default {
             height: 100%;
             background: #fff;
             border-radius: 0.4rem;
+            @media (max-width: 896px) {
+                flex-direction: column;
+            }
 
             .commingsoon_left {
                 margin-right: 9.2rem;
@@ -68,16 +79,34 @@ export default {
                 height: 30.3rem;
                 img {
                     width: 100%;
-                    height: 100%;
+                }
+                @media (max-width: 896px) {
+                    margin-right: 0;
                 }
             }
 
             .commingsoon_right {
+                @media (max-width: 896px) {
+                    box-sizing: border-box;
+                    padding-left: 4.8rem;
+                    padding-right: 4.8rem;
+                }
+                @media (max-width: 375px) {
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+                }
                 .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
                     font-size: $fontSize24;
                     font-weight: $fontWeight400;
                     color: #000;
                     line-height: 2.4rem;
+                    @media (max-width: 896px) {
+                        align-items: center;
+                    }
 
                     &::before {
                         content: '';
@@ -92,7 +121,7 @@ export default {
                         content: '';
                         display: block;
                         margin-top: 2.1rem;
-                        width: 32.8rem;
+                        max-width: 32.8rem;
                         height: 0.1rem;
                         background: #E1E5F4;
                     }
@@ -106,8 +135,11 @@ export default {
                         max-width: 32.8rem;
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
-                        color: rgba(0, 0, 0, .75);
+                        color: rgba(0, 0, 0, 0.75);
                         line-height: 2.4rem;
+                        @media (max-width: 896px) {
+                            text-align: center;
+                        }
 
                         &:first-child {
                             margin-top: 0;

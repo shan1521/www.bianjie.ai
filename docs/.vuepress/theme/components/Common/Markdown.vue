@@ -46,16 +46,20 @@ export default {
         padding: 6rem 0 10rem;
         max-width: 96rem;
 
-        @media (max-width: 970px) {
+        @media (max-width: 1000px) {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
+        }
+        @media (max-width: 400px) {
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
         }
 
         h1 {
             font-size: $fontSize24;
-            font-weight: $fontWeight500;
+            font-weight: $fontWeight600;
             color: #000;
-            line-height: 2.4rem;
+            line-height: 2.6rem;
         }
 
         ul {

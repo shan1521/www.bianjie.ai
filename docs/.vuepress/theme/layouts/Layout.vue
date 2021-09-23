@@ -69,23 +69,23 @@ export default {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            if(this.$route.path === '/applications/government.html') {
-                return '$page.frontmatter.isGovernment';
+            if(this.$route.path === '/applications/e-licence.html') {
+                return '$page.frontmatter.isELicence';
             }
-            if(this.$route.path === '/applications/finance.html') {
-                return '$page.frontmatter.isFinance';
+            if(this.$route.path === '/applications/trade-finance.html') {
+                return '$page.frontmatter.isTradeFinance';
             }
-            if(this.$route.path === '/applications/carbonneutral.html') {
-                return '$page.frontmatter.isCarbonneutral';
+            if(this.$route.path === '/applications/C-trading.html') {
+                return '$page.frontmatter.isCTrading';
             }
-            if(this.$route.path === '/applications/cultural.html') {
-                return '$page.frontmatter.isCultural';
+            if(this.$route.path === '/applications/digital-art.html') {
+                return '$page.frontmatter.isDigitalArt';
             }
-            if(this.$route.path === '/applications/health.html') {
-                return '$page.frontmatter.isHealth';
+            if(this.$route.path === '/applications/e-prescription-circulation.html') {
+                return '$page.frontmatter.isEPC';
             }
-            if(this.$route.path === '/applications/net.html') {
-                return '$page.frontmatter.isNet';
+            if(this.$route.path === '/applications/datacollection.html') {
+                return '$page.frontmatter.isDataCollection';
             }
         },
         shouldShowNavbar() {

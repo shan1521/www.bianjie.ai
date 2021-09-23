@@ -1,12 +1,12 @@
 ---
 {
     layout: Layout,
-    isHealth: true,
+    isEPC: true,
     title: 医疗健康-应用场景,
     appTitleContent: {
         title: 区块链电子处方流转,
         subTitle: 隐私保护、数据共享、可信流转、穿透式监管,
-        bg_banner: health_banner.png
+        bg_banner: health_banner
     },
     sceneStatusContent: {
         title: 场景现状及痛点,

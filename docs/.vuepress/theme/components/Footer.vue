@@ -14,7 +14,7 @@
                     </div>
                     <div class="content_right">
                         <div class="total">
-                            <span class="total_title">边界智能</span>
+                            <span class="total_title">公司</span>
                             <a
                                 class="irita"
                                 href="https://irita.bianjie.ai"
@@ -22,8 +22,8 @@
                                 rel="noopener noreferrer"
                                 >IRITA 产品官网</a
                             >
-                            <span class="dynamic">企业动态</span>
-                            <span class="about">关于我们</span>
+                            <router-link class="dynamic" to="/news">企业动态</router-link>
+                            <router-link class="about" to="/about">关于我们</router-link>
                         </div>
                         <div class="contact">
                             <span class="contact_title">联系我们</span>
@@ -31,7 +31,7 @@
                             <a
                                 class="official"
                                 href="https://www.bianjie.ai"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                                 >www.bianjie.ai</a
                             >
@@ -57,7 +57,7 @@
                         `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
                     }}</span>
                     <a
-                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
+                        href="https://beian.miit.gov.cn/#/Integrated/index"
                         target="_blank"
                         rel="noreferrer noopener"
                         >沪ICP备17020986号</a
@@ -78,7 +78,7 @@
 
 <script>
 export default {
-    name: "Footer",
+    name: "Footer"
 };
 </script>
 
@@ -90,10 +90,9 @@ export default {
 
     .footer_content_top {
         width: 100%;
-        height: 26.4rem;
         background: #061939;
 
-        @media (max-width: 740px) {
+        @media (max-width: 768px) {
             height: auto;
             line-height: 2.4rem;
         }
@@ -110,8 +109,13 @@ export default {
                 justify-content: space-between;
                 margin: 0 auto;
                 max-width: 100rem;
+                @media (max-width: 1096px) {
+                    box-sizing: border-box;
+                    padding-left: 4.8rem;
+                    padding-right: 4.8rem;
+                }
 
-                @media (max-width: 740px) {
+                @media (max-width: 768px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -133,16 +137,18 @@ export default {
                     display: flex;
                     font-size: $fontSize14;
 
-                    @media (max-width: 740px) {
-                        flex-direction: column;
-                        align-items: center;
+                    @media (max-width: 768px) {
+                        margin-top: 6rem;
+                    }
+                    @media (max-width: 575px) {
+                        margin-top: 3.2rem;
                     }
 
                     .total {
                         display: flex;
                         flex-direction: column;
 
-                        @media (max-width: 740px) {
+                        @media (max-width: 575px) {
                             margin-top: 2.4rem;
                             align-items: center;
                         }
@@ -151,6 +157,9 @@ export default {
                             line-height: 2.4rem;
                             font-weight: $fontWeight600;
                             color: #fff;
+                            @media (max-width: 575px) {
+                                text-align: center;
+                            }
 
                             &::after {
                                 content: '';
@@ -167,6 +176,7 @@ export default {
                             line-height: 2.4rem;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            text-align: center;
                         }
 
                         .dynamic {
@@ -190,10 +200,13 @@ export default {
                         margin-left: 10rem;
                         display: flex;
                         flex-direction: column;
+                        @media (max-width: 1096px) {
+                            margin-left: 6rem;
+                        }
 
-                        @media (max-width: 740px) {
+                        @media (max-width: 575px) {
                             margin-top: 2.4rem;
-                            margin-left: 0;
+                            margin-left: 4.8rem;
                             align-items: center;
                         }
 
@@ -232,10 +245,11 @@ export default {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        @media (max-width: 740px) {
-                            margin-top: 2.4rem;
-                            margin-left: 0;
-                            align-items: center;
+                        @media (max-width: 1096px) {
+                            margin-left: 6rem;
+                        }
+                        @media (max-width: 575px) {
+                            display: none;
                         }
                         
 
@@ -275,7 +289,7 @@ export default {
             padding-right: 4.8rem;
         }
 
-        @media (max-width: 740px) {
+        @media (max-width: 768px) {
             height: auto;
             line-height: 3rem;
         }
@@ -293,7 +307,7 @@ export default {
                 max-width: 87.6rem;
                 height: 100%;
 
-                @media (max-width: 740px) {
+                @media (max-width: 768px) {
                     flex-direction: column;
                     text-align: center;
                 }

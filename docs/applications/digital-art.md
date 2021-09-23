@@ -1,12 +1,12 @@
 ---
 {
     layout: Layout,
-    isCultural: true,
+    isDigitalArt: true,
     title: 文创与版权-应用场景,
     appTitleContent: {
         title: 一体化数字艺术品,
         subTitle: 基于区块链 NFT 技术的一体化数字艺术品解决方案,
-        bg_banner: cultural_banner.png
+        bg_banner: cultural_banner
     },
     sceneStatusContent: {
         title: 场景现状及痛点,

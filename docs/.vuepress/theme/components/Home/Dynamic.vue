@@ -102,7 +102,6 @@ export default {
 <style lang="stylus">
 .dynamichome_container {
     width: 100%;
-    height: 68.4rem;
 
     .dynamichome_content_container {
         margin: 0 auto;
@@ -114,6 +113,10 @@ export default {
             margin: 0 auto;
             padding: 8rem 0 10rem;
             max-width: 102.4rem;
+            @media (max-width: 500px) {
+                margin: 0;
+                padding: 4rem 1.6rem 6rem;
+            }
 
             .title {
                 display: flex;
@@ -124,6 +127,11 @@ export default {
                 font-weight: $fontWeight500;
                 color: #000;
                 line-height: 2.4rem;
+                @media (max-width: 500px) {
+                    font-size: $fontSize16;
+                    font-weight: $fontWeight600;
+                    line-height: 1.6rem;
+                }
 
                 &::after {
                     content: '';
@@ -132,6 +140,9 @@ export default {
                     width: 8rem;
                     height: 0.4rem;
                     background: #0967E9;
+                    @media (max-width: 500px) {
+                        margin-top: 1.6rem;
+                    }
                 }
             }
 
@@ -139,7 +150,19 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 6rem;
+                margin: 6rem auto 0;
+                @media (max-width: 1050px) {
+                    justify-content: center;
+                }
+                @media (max-width: 968px) {
+                    flex-direction: column;
+                }
+                @media (max-width: 768px) {
+                    margin: 4.8rem auto 0;
+                }
+                @media (max-width: 500px) {
+                    margin: 2.4rem auto 0;
+                }
 
                 .important {
                     box-sizing: border-box;
@@ -150,33 +173,41 @@ export default {
 
                     .important_img {
                         width: 100%;
-                        height: 24.8rem;
+                        // height: 24.8rem;
 
                         img {
                             width: 100%;
-                            height: 100%;
                         }
                     }
 
                     .date {
                         box-sizing: border-box;
                         margin-top: 1.6rem;
+                        margin-left: 0.4rem;
                         margin-bottom: 0.8rem;
                         padding: 0 1.6rem;
                         font-size: $fontSize12;
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
                         line-height: 1.6rem;
+                        white-space: nowrap;
                     }
 
                     .link_title {
+                        display: block;
                         box-sizing: border-box;
                         margin-top: 0.8rem;
                         padding: 0 1.6rem;
                         font-size: $fontSize16;
-                        font-weight: $fontWeight500;
+                        font-weight: $fontWeight600;
                         color: #000;
                         line-height: 2.4rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        @media (max-width: 500px) {
+                            white-space: normal;
+                        }
 
                         &:hover {
                             color: #0967E9;
@@ -192,6 +223,11 @@ export default {
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
                         line-height: 2.4rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
                     }
                 }
 
@@ -200,9 +236,20 @@ export default {
                     flex-direction: column;
                     align-items: flex-end;
                     margin-left: 4.8rem;
+                    @media (max-width: 1050px) {
+                        margin-left: 1.6rem;
+                    }
+                    @media (max-width: 968px) {
+                        align-items: center;
+                        margin-top: 4rem;
+                        margin-left: 0;
+                    }
 
                     .dynamic_list {
                         max-width: 52.8rem;
+                        @media (max-width: 1050px) {
+                            max-width: 45rem;
+                        }
 
                         .dynamic_item {
                             box-sizing: border-box;
@@ -228,12 +275,25 @@ export default {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+                                @media (max-width: 1050px) {
+                                    flex-direction: column-reverse;
+                                    align-items: flex-start;
+                                }
 
                                 .item_title {
+                                    display: inline-block;
+                                    max-width: 42.9rem;
                                     font-size: $fontSize16;
-                                    font-weight: $fontWeight500;
+                                    font-weight: $fontWeight600;
                                     color: #000;
                                     line-height: 2.4rem;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    @media (max-width: 1050px) {
+                                        max-width: 100%;
+                                        white-space: normal;
+                                    }
 
                                     &:hover {
                                         color: #0967E9;
@@ -255,6 +315,11 @@ export default {
                                 font-weight: $fontWeight400;
                                 color: rgba(0, 0, 0, 0.75);
                                 line-height: 2.4rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 3;
                             }
                         }
                     }
