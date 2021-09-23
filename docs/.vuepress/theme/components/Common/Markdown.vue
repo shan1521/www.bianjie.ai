@@ -61,6 +61,9 @@ export default {
             color: #000;
             line-height: 2.6rem;
         }
+        hr {
+            border: 1px solid #eaecef;
+        }
 
         ul {
             padding-left: 20px;

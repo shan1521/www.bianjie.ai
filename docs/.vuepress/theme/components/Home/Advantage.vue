@@ -126,7 +126,7 @@ export default {
                     position: relative;
                     box-sizing: border-box;
                     max-width: 24rem;
-                    height: 100%;
+                    height: 26.6rem;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
 

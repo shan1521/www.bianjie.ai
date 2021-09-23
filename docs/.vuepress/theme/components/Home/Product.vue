@@ -40,9 +40,10 @@
                 <div class="list_container">
                     <div class="list">
                         <Prev class="prev_btn" ></Prev>
-                        <swiper class="product_list" :options="swiperOptions" ref="productSwiper">
-                            <swiper-slide
-                                class="item"
+                        <!-- :options="swiperOptions" -->
+                        <div class="swiper-container product_list" ref="productSwiper">
+                            <div
+                                class="swiper-slide item"
                                 v-for="(
                                     item, index
                                 ) in serviceContent.productContent"
@@ -67,8 +68,36 @@
                                 <div class="right">
                                     <img :src="differentImg(item.imgName)" alt="" />
                                 </div>
+                            </div>
+                        </div>
+                        <!-- <swiper class="product_list" :options="swiperOptions" ref="productSwiper">
+                            <swiper-slide
+                                class="item"
+                                v-for="(
+                                    item, index
+                                ) in serviceContent.productContent"
+                                :key="index"
+                            >
+                                <div class="left">
+                                    <div class="name">{{ item.name }}</div>
+                                    <div class="intro">{{ item.intro }}</div>
+                                    <div class="desc">
+                                        {{ item.description }}
+                                    </div>
+                                    <a class="name_btn_git" v-if="item.link && index === 0" :href="item.link" target="_blank" rel="noopener noreferrer">
+                                        <span>{{item.moreText}}</span>
+                                    </a>
+                                    <router-link class="name_btn" v-if="item.route" :to="item.route">
+                                        <More
+                                            :text.sync="item.moreText"
+                                        ></More>
+                                    </router-link>
+                                </div>
+                                <div class="right">
+                                    <img :src="differentImg(item.imgName)" alt="" />
+                                </div>
                             </swiper-slide>
-                        </swiper>
+                        </swiper> -->
                         <Next class="next_btn" ></Next>
                     </div>
                 </div>
@@ -137,31 +166,37 @@ import More from "@theme/components/Common/More.vue";
 import Prev from "@theme/components/Common/Prev.vue";
 import Next from "@theme/components/Common/Next.vue";
 import HomeMask from '@theme/components/Home/HomeMask.vue';
-import "swiper/css/swiper.css";
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+// import "swiper/css/swiper.css";
+// import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import Swiper from "swiper";
+const mySwiper = new Swiper('.swiper-container', {
+	navigation: {
+        prevEl: ".prev_btn",
+        nextEl: ".next_btn",
+    },
+    spaceBetween: 10,
+    speed: 800,
+    autoplayDisableOnInteraction:false,
+    slideToClickedSlide: true,
+    direction: 'horizontal',
+})
 export default {
     name: "Product",
     props: ["serviceContent"],
     data() {
         return {
-            currentTab: 0,
             showMask: false,
-            swiperOptions: {
-                initialSlide: this.currentTab,
-                navigation: {
-                    prevEl: ".prev_btn",
-                    nextEl: ".next_btn",
-                },
-                speed: 800,
-                autoplayDisableOnInteraction:false,
-                slideToClickedSlide: true,
-                on: {
-                    slideChange: () => {
-                        console.log(this.$refs.productSwiper);
-
-                    },
-                }
-            }
+            // swiperOptions: {
+            //     initialSlide: this.currentTab,
+            //     navigation: {
+            //         prevEl: ".prev_btn",
+            //         nextEl: ".next_btn",
+            //     },
+            //     spaceBetween: 10,
+            //     speed: 800,
+            //     autoplayDisableOnInteraction:false,
+            //     slideToClickedSlide: true,
+            // }
         };
     },
     computed: {
@@ -170,15 +205,19 @@ export default {
                 return `/home/products/${imgName}`;
             }
         },
+        currentTab() {
+            return +this.$store.state.currentTab;
+        },
     },
     methods: {
         clickIritaFn() {
             window.open("https://irita.bianjie.ai/");
         },
         changeTab(index) {
-            this.currentTab = index;
+            this.$store.commit("currentTab", index);
+            mySwiper.slideTo(index, 800);
         },
-        updateShowMask(){
+        updateShowMask() {
             this.showMask = true;
         },
     },
@@ -187,8 +226,8 @@ export default {
         Prev,
         Next,
         HomeMask,
-        Swiper, 
-        SwiperSlide
+        // Swiper, 
+        // SwiperSlide
     },
 };
 </script>

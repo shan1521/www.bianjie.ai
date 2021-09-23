@@ -55,7 +55,7 @@
                                 <li class="appscenes_scene_item" v-for="(appscene, aIndex) in item.items" :key="aIndex">
                                     <div class="scene_wrap">
                                         <div class="scene_item">
-                                            <i class="iconfont icon-a-IRITADA" :class="appscene.icon"></i>
+                                            <i class="iconfont" :class="appscene.icon"></i>
                                             <span class="scene">{{appscene.scene}}</span>
                                         </div>
                                     </div>

@@ -33,7 +33,7 @@ export default async ({
 			}else if (to.path.includes('/applications')){
 				store.commit('currentIndex',2)
 				localStorage.setItem('currentIndex',2)
-			}else if (to.path.includes('/news')){
+			}else if (to.path.includes('/news') || to.path.includes('/companynews')){
 				store.commit('currentIndex',3)
 				localStorage.setItem('currentIndex',3)
 			}else if (to.path.includes('/partners')){
