@@ -94,8 +94,7 @@
                     />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
-                    <!-- 此处要判断 isColor，决定展示哪个 icon -->
-                    <span class="iconfont icon-diceng"></span>
+                    <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
                 </div>
             </div>
             <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap" :class="isColor ? 'mobile_white_bg' : ''">
@@ -121,7 +120,9 @@
                                 >
                                     {{ item.text }}
                                 </router-link>
-                                <span v-if="item.items" @click="showSubMenu(index)">123</span>
+                                <span v-if="item.items" @click="showSubMenu(index)">
+                                    <i :class="$store.state.subMenu == index ? 'iconfont icon-shouqi' : 'iconfont icon-zhankai'" ></i>
+                                </span>
                             </div>
                         </div>
 
@@ -185,6 +186,8 @@ export default {
             flShowMobileMenu: false,
             isShowProductSub: false,
             isShowScenesSub: false,
+            showSubProduct: false,
+            showSubScene: false
             // flShowBoxShadow: false,
             // isShowSubMenuText: "",
         };
@@ -228,19 +231,34 @@ export default {
         },
         isShowMobileMenu() {
             this.flShowMobileMenu = !this.flShowMobileMenu;
+            this.$store.commit("subMenu", 0);
         },
         closeMobileMenu(index, pIndex) {
             if(index !== 1 && index !== 2) {
                 this.flShowMobileMenu = false;
             }
+            this.$store.commit("subMenu", 0);
         },
         showSubMenu(index) {
             if(index === 1) {
                 this.isShowProductSub = !this.isShowProductSub;
+                this.$store.commit("subMenu", this.isShowProductSub ? '1' : '0');
+                if(this.isShowProductSub) {
+                    this.$store.commit("subMenu", 1);
+                } else {
+                    this.$store.commit("subMenu", 0);
+                }
                 this.isShowScenesSub = false;
+                this.showSubProduct = true;
             }else if(index === 2) {
-                this.isShowProductSub = false;
                 this.isShowScenesSub = !this.isShowScenesSub;
+                this.isShowProductSub = false;
+                if(this.isShowScenesSub) {
+                    this.$store.commit("subMenu", 2);
+                } else {
+                    this.$store.commit("subMenu", 0);
+                }
+                this.showSubScene = true;
             }
         },
         closeSubMenu(index){
@@ -250,6 +268,7 @@ export default {
                 this.isShowScenesSub = false;
             }
             this.flShowMobileMenu = false;
+            this.$store.commit("subMenu", 0);
         }
     },
     watch: {
@@ -265,6 +284,16 @@ export default {
             },
             immediate: true,
             deep: true,
+        },
+        '$store.state.subMenu': {
+            handler(newVal) {
+                if(newVal === 0) {
+                    this.isShowProductSub = false;
+                    this.isShowScenesSub = false;
+                }
+            },
+            immediate: true,
+            deep: true
         }
     },
     mounted() {
@@ -591,6 +620,10 @@ export default {
                 height: 1.8rem;
                 .iconfont {
                     width: 100%;
+                    color: #fff;
+                }
+                .iconfont_color {
+                    color: rgba(0, 0, 0, 0.75);
                 }
             }
         }

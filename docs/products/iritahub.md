@@ -17,8 +17,7 @@
         ]
     },
     architectureContent: {
-        title: 产品架构,
-        imgName: https://www.bianjie.ai/dist/irita_hub.png?8140804b64829f559af55bcfee12f05b
+        title: 产品架构
     },
     advantageContent: {
         title: 产品优势,

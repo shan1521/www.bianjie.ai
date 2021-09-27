@@ -59,7 +59,7 @@
     },
     processContent: {
         title: 业务流程,
-        src: https://www.bianjie.ai/resources/IRITA/IRITA-HOME-Map/blog0/shoutu4.png,
+        src: trade_finance.png,
     }
 }
 ---

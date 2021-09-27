@@ -4,7 +4,7 @@
             <div class="archi_content">
                 <div class="title">{{ architectureContent.title }}</div>
                 <div class="archi_img">
-                    <img :src="architectureContent.imgName" alt="" />
+                    <img src="../../assets/product/iritahub/iritahub_jiagou.png" alt="" />
                 </div>
             </div>
         </div>
@@ -35,6 +35,14 @@ export default {
             max-width: 94.8rem;
             height: 100%;
             text-align: center;
+            @media (max-width: 1000px) {
+                padding-left: 3.2rem;
+                padding-right: 3.2rem;
+            }
+            @media (max-width: 375px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 font-size: $fontSize24;

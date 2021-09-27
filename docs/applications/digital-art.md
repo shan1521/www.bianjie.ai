@@ -59,7 +59,7 @@
     },
     processContent: {
         title: 方案架构,
-        src: https://irita.bianjie.ai/home/chanpinjiagou_image.png,
+        src: digital_art.png,
     },
 }
 ---

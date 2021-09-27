@@ -175,7 +175,7 @@ export default {
                                 height: 2.4rem;
                                 color: #fff;
                                 background: #0967E9;
-                                border-radius: 0.4rem;
+                                border-radius: 0.2rem;
                             }
 
                             .item_year {
@@ -198,6 +198,8 @@ export default {
                             }
 
                             .item_title {
+                                display: inline-block;
+                                max-width: 66.4rem;
                                 font-size: $fontSize16;
                                 font-weight: $fontWeight600;
                                 color: #000;

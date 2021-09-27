@@ -63,7 +63,7 @@
     },
     processContent: {
         title: 业务流程,
-        src: https://irita.bianjie.ai/home/chanpinjiagou_image.png,
+        src: e_licence.png,
     },
     coreFunctions: {
         title: 核心功能,

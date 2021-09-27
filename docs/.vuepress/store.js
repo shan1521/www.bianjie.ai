@@ -5,6 +5,7 @@ export default new Vuex.Store({
 	state: {
 		currentIndex: 0,
         currentTab: 0,
+        subMenu: 0
 	},
 	mutations: {
 		currentIndex(state,currentIndex){
@@ -12,6 +13,9 @@ export default new Vuex.Store({
 		},
 		currentTab(state,currentTab){
 			state.currentTab = currentTab;
+		},
+		subMenu(state,subMenu){
+			state.subMenu = subMenu;
 		}
 	}
 })

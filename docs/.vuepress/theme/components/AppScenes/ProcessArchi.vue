@@ -4,7 +4,7 @@
             <div class="processarchi_content">
                 <div class="processarchi_title">{{processContent.title}}</div>
                 <div class="processarchi_img">
-                    <img :src="processContent.src" alt="">
+                    <img :src="differentJiagou(processContent.src)" alt="">
                 </div>
             </div>
         </div>
@@ -14,7 +14,14 @@
 <script>
 export default {
     name: 'ProcessArchi',
-    props: ['processContent']
+    props: ['processContent'],
+    computed: {
+        differentJiagou() {
+            return function(imgName) {
+                return `/appscenes/process/${imgName}`;
+            }
+        }
+    }
 }
 </script>
 
@@ -48,8 +55,7 @@ export default {
             }
             .processarchi_img {
                 margin-top: 4.8rem;
-                width: 100%;
-                height: 100%;
+                max-width: 100rem;
                 img {
                     width: 100%;
                 }

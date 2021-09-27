@@ -28,40 +28,42 @@
                         </el-timeline-item>
                     </el-timeline>
                 </div>
-                <div class="time_right" ref="right">
-                    <ul class="time_wrap" ref="timeList">
-                        <li
-                            class="time_item"
-                            v-for="(timeline, index) in timelineContent"
-                            :key="index"
-                        >
-                            <div class="year">{{ timeline.year }}</div>
-                            <ul class="month_list">
-                                <li
-                                    class="month_item"
-                                    v-for="(
-                                        month, mIndex
-                                    ) in timeline.monthList"
-                                    :key="mIndex"
-                                >
-                                    <div class="month">{{ month.month }}月</div>
-                                    <ul class="events">
-                                        <li
-                                            class="event_item"
-                                            v-for="(
-                                                event, eIndex
-                                            ) in month.events"
-                                            :key="eIndex"
-                                        >
-                                            <div class="event">
-                                                {{ event.event }}
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="time_right">
+                    <div class="time_right_content" ref="right">
+                        <ul class="time_wrap" ref="timeList">
+                            <li
+                                class="time_item"
+                                v-for="(timeline, index) in timelineContent"
+                                :key="index"
+                            >
+                                <div class="year">{{ timeline.year }}</div>
+                                <ul class="month_list">
+                                    <li
+                                        class="month_item"
+                                        v-for="(
+                                            month, mIndex
+                                        ) in timeline.monthList"
+                                        :key="mIndex"
+                                    >
+                                        <div class="month">{{ month.month }}月</div>
+                                        <ul class="events">
+                                            <li
+                                                class="event_item"
+                                                v-for="(
+                                                    event, eIndex
+                                                ) in month.events"
+                                                :key="eIndex"
+                                            >
+                                                <div class="event">
+                                                    {{ event.event }}
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +94,6 @@ export default {
             index = this.heightArr.findIndex((item,index,arr)=>{
                 return (this.scrollY >= item && this.scrollY < arr[index+1])
             })
-                console.log(this.oldIndex,'0--------------0')
             if(index !== this.oldIndex && index !== -1){
                 //以下两行代码 应该在index产生改变时在执行
                 this.oldIndex = index;
@@ -101,7 +102,6 @@ export default {
                 // // 尽量的让typeLiNodes[index] 出现在滑屏区域的最顶部
                 // this.leftScroll && this.leftScroll.scrollToElement(typeLiNodes[index],300)
             }
-            console.log(this.oldIndex)
 
             //让对应的左侧分类项选中
             return index;
@@ -119,31 +119,24 @@ export default {
                 this.rightScroll = new BScroll(this.$refs.right, {
                     probeType: 3,
                     click: true,
-                    mouseWheel: true
+                    mouseWheel: true,
+                    scrollY: true,
                 });
                 this.rightScroll.on("scroll", ({ x, y }) => {
                     console.log(x, y,'右侧移动的距离');
                     this.scrollY = Math.abs(y);
                 });
+            console.log(this.rightScroll,'右侧滚动')
             });
         },
         //初始化heightArr
         initHeightArr() {
             this.$nextTick(() => {
                 let rightLiNodes = this.$refs.timeList.children;
-                // let height = 0;
-                // let heights = [height];
-                // rightLiNodes.forEach((item) => {
-                    //     height += item.offsetHeight;
-                //     heights.push(height);
-                // });
-                // this.heightArr = heights;
-
                 let heights = [];
                 let res = Array.from(rightLiNodes).reduce((adder,item)=>{
-                    //offsetHeight : 代表的是元素的高度
                     heights.push(adder);
-                    return adder + item.offsetHeight + 48;
+                    return adder + item.offsetHeight;
                 },0)
                 heights.push(res);
                 this.heightArr = heights;
@@ -263,66 +256,85 @@ export default {
                 height: 74.8rem;
                 background: #fff;
                 border-radius: 0.4rem;
-                overflow-y: auto;
-
-                // &::-webkit-scrollbar {
-                //     width: 0;
-                // }
-
-                .time_wrap {
-                    border-left: 0.1rem solid #D8D8D8;
-                    .time_item {
-                        margin-top: 3.2rem;
-
-                        &:first-child {
-                            margin-top: 0;
-                        }
-
-                        .year {
-                            display: flex;
-                            align-items: center;
-                            font-size: $fontSize28;
-                            font-weight: $fontWeight500;
-                            color: #000;
-                            line-height: 3.2rem;
-
-                            &::before {
-                                content: '';
-                                display: inline-block;
-                                margin-right: 2.5rem;
-                                width: 0.4rem;
-                                height: 3.2rem;
-                                background: #0967E9;
-                            }
-                        }
-
-                        .month_list {
+                .time_right_content {
+                    box-sizing: border-box;
+                    height: 65.4rem;
+                    overflow-y: auto;
+                    cursor: pointer;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    // &::-webkit-scrollbar {
+                    //     width: 0.4rem;
+                    //     height: 0.4rem;
+                    //     background-color: #F5F5F5;
+                    // }
+                    // &::-webkit-scrollbar-track {
+                    //     -webkit-box-shadow: inser 0 0 0.6rem rgba(0, 0, 0, 0.3);
+                    //     border-radius: 1rem;
+                    //     background-color: #F5F5F5;
+                    // }
+                    // &::-webkit-scrollbar-thumb {
+                    //     -webkit-box-shadow: inser 0 0 0.6rem rgba(0, 0, 0, 0.3);
+                    //     border-radius: 1rem;
+                    //     background-color: rgba(0,0,0,0.25);
+                    // }
+                    .time_wrap {
+                        border-left: 0.1rem solid #D8D8D8;
+                        
+                        .time_item {
                             margin-top: 3.2rem;
-                            margin-left: 2.5rem;
 
-                            .month_item {
+                            &:first-child {
+                                margin-top: 0;
+                            }
+
+                            .year {
                                 display: flex;
-                                margin-top: 1.6rem;
+                                align-items: center;
+                                font-size: $fontSize28;
+                                font-weight: $fontWeight500;
+                                color: #000;
+                                line-height: 3.2rem;
 
-                                &:first-child {
-                                    margin-top: 0;
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    margin-right: 2.5rem;
+                                    width: 0.4rem;
+                                    height: 3.2rem;
+                                    background: #0967E9;
                                 }
+                            }
 
-                                .month {
-                                    margin-right: 1.2rem;
-                                    width: 3.1rem;
-                                    font-size: $fontSize14;
-                                    font-weight: $fontWeight500;
-                                    color: #0967E9;
-                                    line-height: 2.4rem;
-                                    white-space: nowrap;
-                                }
+                            .month_list {
+                                margin-top: 3.2rem;
+                                margin-left: 2.5rem;
 
-                                .events {
-                                    font-size: $fontSize14;
-                                    font-weight: $fontWeight400;
-                                    color: rgba(0, 0, 0, 0.75);
-                                    line-height: 2.4rem;
+                                .month_item {
+                                    display: flex;
+                                    margin-top: 1.6rem;
+
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+
+                                    .month {
+                                        margin-right: 1.2rem;
+                                        width: 3.1rem;
+                                        font-size: $fontSize14;
+                                        font-weight: $fontWeight500;
+                                        color: #0967E9;
+                                        line-height: 2.4rem;
+                                        white-space: nowrap;
+                                    }
+
+                                    .events {
+                                        font-size: $fontSize14;
+                                        font-weight: $fontWeight400;
+                                        color: rgba(0, 0, 0, 0.75);
+                                        line-height: 2.4rem;
+                                    }
                                 }
                             }
                         }

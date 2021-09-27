@@ -257,12 +257,14 @@ export default {
                             border-bottom: 0.1rem solid #E1E5F4;
                             transition: all 0.3s linear;
 
-                            &:hover {
-                                background: url('../../assets/home/qydt_bg.png') no-repeat center / cover;
+                            @media (any-hover: hover) {
+                                &:hover {
+                                    background: url('../../assets/home/qydt_bg.png') no-repeat center / cover;
 
-                                .item_top {
-                                    .item_title {
-                                        color: #0967E9;
+                                    .item_top {
+                                        .item_title {
+                                            color: #0967E9;
+                                        }
                                     }
                                 }
                             }

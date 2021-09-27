@@ -140,6 +140,7 @@ export default {
             font-weight: $fontWeight500;
             color: #000;
             line-height: 3.2rem;
+            text-align: center;
 
             &::after {
                 content: '';

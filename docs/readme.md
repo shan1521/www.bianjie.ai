@@ -24,22 +24,22 @@
         title: 核心能力与优势,
         advList: [
             {
-                img: banner_home_1.png,
+                img: adv_first.png,
                 intro: 成熟创新的区块链产品支持高效开发链改应用,
                 description: 支持保护隐私的大数据加密共享，实用性极强的链上链下系统交互能力，灵活的资产数字化建模与交换支持
             },
             {
-                img: banner_home_1.png,
+                img: adv_second.png,
                 intro: 前沿技术研发及分布式商业综合技术集成实力,
                 description: 2017年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
             },
             {
-                img: banner_home_1.png,
+                img: adv_third.png,
                 intro: 针对行业及业务场景深度融合与咨询定制能力,
                 description: 多年企业服务深耕，成熟的商业咨询团队，对复杂分布式商业系统的深入实践
             },
             {
-                img: banner_home_1.png,
+                img: adv_forth.png,
                 intro: 与国内外行业领袖围绕生态发展达成深度合作,
                 description: 与多家行业优秀协会组织及企业合作；在政务、金融、医疗等应用领域与国内外行业优秀企业建立合作关系
             },
