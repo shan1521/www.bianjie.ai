@@ -41,12 +41,21 @@ export default {
 <style lang="stylus">
 .app_title_container {
     width: 100%;
-    height: 36rem;
+    min-height: 36rem;
     .app_title_content_container {
         box-sizing: border-box;
         padding: 10.4rem 0 0;
         margin: 0 auto;
         max-width: $contentWidth;
+        height: 100%;
+        @media (max-width: 1200px) {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+        }
+        @media (max-width: 400px) {
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+        }
         .app_title_content {
             display: flex;
             flex-direction: column;

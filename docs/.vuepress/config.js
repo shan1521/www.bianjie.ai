@@ -42,6 +42,11 @@ module.exports = {
                                 intro: '基于智能合约的开放联盟链产品',
                                 route: '/products/IRITAOPB'
                             },
+                            {
+                                abbreviation: 'BSN 文昌链',
+                                intro: '基于 IRITA 的开放联盟链',
+                                link: 'https://bsn-wenchang.bianjie.ai/'
+                            },
                         ]
                     },
                     {

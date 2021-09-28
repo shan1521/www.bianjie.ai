@@ -172,6 +172,15 @@ export default {
             align-items: flex-start;
             margin: 0 auto;
             max-width: 110.4rem;
+            @media (max-width: 1150px) {
+                box-sizing: border-box;
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 400px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .time_left {
                 box-sizing: border-box;
@@ -180,6 +189,9 @@ export default {
                 max-width: 13.6rem;
                 background: #EFF1FA;
                 border-radius: 0.4rem;
+                @media (max-width: 600px) {
+                    display: none;
+                }
 
                 .el-timeline {
                     height: 100%;
@@ -256,6 +268,9 @@ export default {
                 height: 74.8rem;
                 background: #fff;
                 border-radius: 0.4rem;
+                @media (max-width: 768px) {
+                    padding: 4.8rem 3.2rem;
+                }
                 .time_right_content {
                     box-sizing: border-box;
                     height: 65.4rem;

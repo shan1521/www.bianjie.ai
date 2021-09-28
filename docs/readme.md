@@ -12,7 +12,8 @@
         {
             img: banner_home_1.png,
             title: · IRITA ·,
-            subTitle: 支持下一代分布式商业系统的联盟链产品线
+            subTitle: 支持下一代分布式商业系统的联盟链产品线,
+            moreText: 了解更多
         },
         {
             img: banner_home_1.png,
@@ -158,57 +159,57 @@
             {
                 fieldName: 行业生态,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
                 ]
             },
             {
                 fieldName: 金融领域,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ode_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/zcbri_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/lg_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ode_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/zcbri_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/lg_logo.png},
                 ]
             },
             {
                 fieldName: 医疗领域,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/xkl_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/nxyl_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/rhdk_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/pdwszyzx_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/xkl_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/nxyl_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/rhdk_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/pdwszyzx_logo.png},
                 ]
             },
             {
                 fieldName: 数字资产,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png},
                 ]
             },
             {
                 fieldName: 人工智能与物联网,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/ai_internet/xjkj_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/ai_internet/xjkj_logo.png},
                 ]
             },
             {
                 fieldName: 全球前沿技术,
                 partnerList: [
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/cosmos_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/tendermint_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/irisnet_logo.png},
-                    {src: https://stage.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/chainlink_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/cosmos_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/tendermint_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/irisnet_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/technology/chainlink_logo.png},
                 ]
             },
         ]
@@ -216,7 +217,7 @@
     dynamicContent: {
         title: 企业动态,
         mostImportant: {
-            imgName: https://www.bianjie.ai/dist/production_serve.png?7a666bd93e73b7e630b469c3c376479f,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/home-news/BSN-wenchang_chain.png,
             title: 边界智能打造并上线首批 BSN 开放联盟链「文昌链 IRITA OPB」,
             date: '2021-01-31',
             intro: 边界智能基于其自主研发的安全可控的企业级联盟链 IRITA 系列产品，打造上线了首批 BSN 开放联盟链「文昌链  IRITA OPB」，以 BaaS 形式让开发者/中小企业直接专注于应用层业务逻辑的实现和部署，从而更好的满足中小企业以更具成本效益的方式快速开发和部署分布式商业应用 DBApp 的需求。,

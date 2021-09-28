@@ -13,7 +13,7 @@
             year: '2021',
             title: 特等奖! 边界智能获得二零二一年南京创新周 · 江北新区数字金融创新大赛特等奖,
             description: 边界智能凭借《区块链 NFT 及大数据隐私保护技术支撑的绿色金融解决方案》获得南京创新周 · 江北新区数字金融创新大赛特等奖。,
-            imgName: ,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/chuangxinzhou.png,
             route: ,
             link: https://mp.weixin.qq.com/s/s69uTkFOv7kyU14DgmhRBw
         },

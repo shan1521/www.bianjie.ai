@@ -125,19 +125,21 @@ export default {
                 .adv_list_item {
                     position: relative;
                     box-sizing: border-box;
-                    max-width: 24rem;
+                    width: 24rem;
                     height: 26.6rem;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
 
                     .item_img {
-                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         height: 17.6rem;
-                        border-radius: 0.4rem 0.4rem 0 0;
+                        vertical-align: middle;
 
                         .img {
-                            width: 100%;
                             height: 100%;
+                            border-radius: 0.4rem 0.4rem 0 0;
                         }
                     }
 

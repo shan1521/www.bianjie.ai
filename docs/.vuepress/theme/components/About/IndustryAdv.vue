@@ -141,6 +141,12 @@ export default {
             color: #000;
             line-height: 3.2rem;
             text-align: center;
+            @media (max-width: 768px) {
+                font-size: $fontSize24;
+            }
+            @media (max-width: 375px) {
+                font-size: $fontSize20;
+            }
 
             &::after {
                 content: '';
@@ -166,6 +172,15 @@ export default {
                 left: 50%;
                 margin-left: -47rem;
                 z-index: 9999;
+                @media (max-width: 1400px) {
+                    margin-left: -42rem;
+                }
+                @media (max-width: 1200px) {
+                    margin-left: -38rem;
+                }
+                @media (max-width: 968px) {
+                    display: none;
+                }
             }
             .industry_swiper {
                 margin: 0 4rem;
@@ -198,6 +213,15 @@ export default {
                 left: 50%;
                 margin-left: 43rem;
                 z-index: 9999;
+                @media (max-width: 1400px) {
+                    margin-left: 38rem;
+                }
+                @media (max-width: 1200px) {
+                    margin-left: 33rem;
+                }
+                @media (max-width: 968px) {
+                    display: none;
+                }
             }
         }
     }

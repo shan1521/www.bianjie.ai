@@ -54,6 +54,9 @@ export default {
                 color: #000;
                 line-height: 2.4rem;
                 text-align: center;
+                @media (max-width: 375px) {
+                    font-size: $fontSize20;
+                }
             }
 
             .companyinfo_list {

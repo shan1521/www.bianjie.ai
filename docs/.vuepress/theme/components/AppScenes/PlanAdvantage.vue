@@ -100,6 +100,9 @@ export default {
                     background: #fff;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
+                    @media (max-width: 400px) {
+                        flex-direction: column;
+                    }
                     &:first-child {
                         margin-top: 0;
                     }
@@ -110,16 +113,25 @@ export default {
                         margin-right: 2.4rem;
                         width: 6.4rem;
                         height: 6.4rem;
+                        @media (max-width: 400px) {
+                            margin-right: 0;
+                        }
                         img {
                             height: 100%;
                         }
                     }
                     .adv_right {
+                        @media (max-width: 400px) {
+                            margin-top: 1.6rem;
+                        }
                         .adv_text {
                             font-size: $fontSize16;
                             font-weight: $fontWeight600;
                             color: #000;
                             line-height: 1.6rem;
+                            @media (max-width: 400px) {
+                                text-align: center;
+                            }
                         }
                         .adv_desc {
                             margin-top: 0.8rem;
@@ -127,6 +139,9 @@ export default {
                             font-weight: $fontWeight400;
                             color: rgba(0, 0, 0, 0.75);
                             line-height: 2.4rem;
+                            @media (max-width: 400px) {
+                                text-align: center;
+                            }
                         }
                     }
                 }

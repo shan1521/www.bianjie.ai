@@ -55,6 +55,7 @@
                             >
                                 <img :src="item.imgName" alt="" />
                             </router-link>
+                            <!-- <img v-if="!item.route && !item.link" src="" alt=""> -->
                         </div>
                     </li>
                 </ul>
@@ -189,6 +190,8 @@ export default {
                         }
 
                         .item_title_container {
+                            display: flex;
+                            align-items: center;
                             margin-top: 1.2rem;
                             max-width: 66.4rem;
 
@@ -248,8 +251,8 @@ export default {
 
                     .item_right {
                         margin-left: 3.2rem;
-                        width: 24.8rem;
-                        height: 14.4rem;
+                        width: 25rem;
+                        height: 15rem;
                         @media (max-width: 1104px) {
                             display: none;
                         }
@@ -260,7 +263,7 @@ export default {
 
                             img {
                                 width: 100%;
-                                height: 100%;
+                                // height: 100%;
                             }
                         }
                     }

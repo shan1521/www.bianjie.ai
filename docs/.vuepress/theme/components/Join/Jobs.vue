@@ -9,7 +9,12 @@
                         v-for="(item, index) in hotJobs.jobsType"
                     >
                         <div class="job_type_wrap">
-                            <span class="job_type">{{ item.jobType }}</span>
+                            <div class="job">
+                                <div v-if="item.isHot" class="job_hot">
+                                    <span class="job_hot_text">急招</span>
+                                </div>
+                                <span class="job_type">{{ item.jobType }}</span>
+                            </div>
                             <Top
                                 class="job_icon"
                                 :class="
@@ -108,6 +113,14 @@ export default {
             margin: 0 auto;
             padding: 4.8rem 0 10rem;
             max-width: 96rem;
+            @media (max-width: 1000px) {
+                padding-left: 4.8rem;
+                padding-right: 4.8rem;
+            }
+            @media (max-width: 450px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 font-size: $fontSize24;
@@ -126,6 +139,10 @@ export default {
                     padding: 2.4rem;
                     background: #fff;
                     border-radius: 0.4rem;
+                    @media (max-width: 450px) {
+                        padding-left: 1.6rem;
+                        padding-right: 1.6rem;
+                    }
 
                     &:first-child {
                         margin-top: 0;
@@ -135,13 +152,36 @@ export default {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-
-                        .job_type {
-                            font-size: $fontSize20;
-                            font-weight: $fontWeight400;
-                            color: #000;
-                            line-height: 2.4rem;
+                        .job {
+                            display: flex;
+                            align-items: center;
+                            .job_hot {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 0.8rem;                                
+                                width: 4rem;
+                                height: 2rem;
+                                background: rgba(245, 34, 45, 0.1);
+                                border-radius: 0.2rem;
+                                .job_hot_text {
+                                    font-size: $fontSize14;
+                                    font-weight: $fontWeight600;
+                                    color: #F5222D;
+                                    line-height: 1.4rem;
+                                }
+                            }
+                            .job_type {
+                                font-size: $fontSize20;
+                                font-weight: $fontWeight400;
+                                color: #000;
+                                line-height: 2.4rem;
+                                @media (max-width: 450px) {
+                                    font-size: $fontSize16;
+                                }
+                            }
                         }
+
 
                         .job_icon {
                             transform: rotate(90deg);

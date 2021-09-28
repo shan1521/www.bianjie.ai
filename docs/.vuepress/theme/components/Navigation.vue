@@ -461,7 +461,6 @@ export default {
                         position: absolute;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.2rem;
-                        // min-height: 27.4rem;
                         background: #fff;
                         .product_type_list {
                             .product_type_item {
@@ -490,11 +489,9 @@ export default {
                                     margin-top: 1.1rem;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
+                                    grid-column-gap: 3.2rem;
+                                    grid-row-gap: 1.6rem;
                                     .type_item {
-                                        margin-left: 4rem;
-                                        &:first-child {
-                                            margin-left: 0;
-                                        }
                                         .abbreviation {
                                             display: block;
                                             font-size: $fontSize14;
@@ -695,18 +692,12 @@ export default {
                                     margin-top: 1.1rem;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
+                                    grid-column-gap: 3.2rem;
+                                    grid-row-gap: 1.6rem;
                                     @media (max-width: 586px) {
                                         grid-template-columns: repeat(1, 1fr);
-                                        grid-row-gap: 1.6rem;
                                     }
                                     .type_item {
-                                        margin-left: 4rem;
-                                        @media (max-width: 586px) {
-                                            margin-left: 0;
-                                        }
-                                        &:first-child {
-                                            margin-left: 0;
-                                        }
                                         .abbreviation {
                                             display: block;
                                             font-size: $fontSize14;
