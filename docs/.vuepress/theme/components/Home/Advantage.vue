@@ -17,7 +17,7 @@
                             />
                         </div>
                         <div class="item_intro">
-                            <div class="intro_container">
+                            <div class="item_intro_container">
                                 <span class="intro">{{ item.intro }}</span>
                                 <span class="desc">{{ item.description }}</span>
                             </div>
@@ -127,19 +127,54 @@ export default {
                     box-sizing: border-box;
                     width: 24rem;
                     height: 26.6rem;
+                    font-size: 0;
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
+                    transition: all 0.2s linear;
+                    &:hover {
+                        border: 0.1rem solid #0967E9;
+                        border-bottom: 0.6rem solid #0967E9;
+                        .item_intro {
+                            .item_intro_container {
+                                position: absolute;
+                                bottom: 0;
+                                min-height: 21.2rem;
+                                background: #fff;
+                                cursor: pointer;
+                                transition: all 0.2s linear;
+                                .desc {
+                                    box-sizing: border-box;
+                                    margin: 0 auto;
+                                    padding: 0 1.4rem 1rem;
+                                    font-size: $fontSize14;
+                                    font-weight: $fontWeight400;
+                                    color: rgba(0, 0, 0, 0.75);
+                                    line-height: 2.6rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    &::before {
+                                        content: '';
+                                        display: block;
+                                        margin-bottom: 0.8rem;
+                                        width: 12rem;
+                                        height: 0.1rem;
+                                        background: #EDEDED;
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     .item_img {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 17.6rem;
-                        vertical-align: middle;
+                        width: 100%;
 
                         .img {
-                            height: 100%;
-                            border-radius: 0.4rem 0.4rem 0 0;
+                            width: 100%;
+                            border-radius: 0.3rem 0.3rem 0 0;
                         }
                     }
 
@@ -149,47 +184,7 @@ export default {
                         height: 8.8rem;
                         overflow: hidden;
 
-                        &:hover {
-                            position: absolute;
-                            bottom: 0rem;
-                            height: 20.2rem;
-                            background: #fff;
-                            border: 0.1rem solid #0967E9;
-                            border-top: 0;
-                            border-bottom: 0.6rem solid #0967E9;
-                            border-radius: 0 0 0.4rem 0.4rem;
-                            cursor: pointer;
-                            transition: height 0.2s linear;
-
-                            .intro {
-                                height: 8rem !important;
-                            }
-
-                            .desc {
-                                z-index: 2;
-                                display: block;
-                                margin: 0 auto;
-                                max-width: 20.8rem;
-                                font-size: $fontSize14;
-                                font-weight: $fontWeight400;
-                                color: rgba(0, 0, 0, 0.75);
-                                line-height: 2.6rem;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-
-                                &::before {
-                                    content: '';
-                                    display: block;
-                                    margin-bottom: 0.8rem;
-                                    width: 12rem;
-                                    height: 0.1rem;
-                                    background: #EDEDED;
-                                }
-                            }
-                        }
-
-                        .intro_container {
+                        .item_intro_container {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
@@ -205,6 +200,9 @@ export default {
                                 font-weight: $fontWeight600;
                                 color: #000;
                                 line-height: 2.4rem;
+                            }
+                            .desc {
+                                display: none;
                             }
                         }
                     }

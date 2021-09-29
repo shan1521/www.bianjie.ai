@@ -343,6 +343,7 @@ export default {
         }
 
         .nav_list_wrap {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -459,8 +460,10 @@ export default {
 
                     .products_menu {
                         position: absolute;
+                        left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.2rem;
+                        width: 76rem;
                         background: #fff;
                         .product_type_list {
                             .product_type_item {
@@ -489,7 +492,7 @@ export default {
                                     margin-top: 1.1rem;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
-                                    grid-column-gap: 3.2rem;
+                                    grid-column-gap: 4.8rem;
                                     grid-row-gap: 1.6rem;
                                     .type_item {
                                         .abbreviation {
@@ -513,13 +516,15 @@ export default {
                     }
                     .appscenes_menu {
                         position: absolute;
+                        left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.6rem;
+                        width: 76rem;
                         background: #fff;
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
-                            grid-column-gap: 2.4rem;
+                            grid-column-gap: 8.5rem;
                             grid-row-gap: 3.5rem;
                             z-index: 100;
                             .appscenes_scene_item {

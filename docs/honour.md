@@ -27,50 +27,58 @@
     ],
     honourList: {
         title: 所获荣誉,
-        horizontalList: [
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_1.jpg?5474e5175d7f808c72191e3121d523ed
-            },
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_10.jpg?bb6cc190ac39174cca8aab87766de6bd
-            },
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_13.jpg?33eaab50ccb7028ea045ebf6d73cc74c
-            },
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_14.jpg?30900cd69be3ea954f0612c1b407ab09
-            },
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_17.jpg?073dc1866495e47c5f821187ba8b66cb
-            },
-            {
-                imgSrc: https://www.bianjie.ai/dist/honor_18.jpg?86a66192a0a9c2f7e85b7ada0d95a024
-            },
-        ],
         verticalList: [
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_11.jpg?9437b46c6abfa22859c1594c0c11b130
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-1.png
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_12.jpg?7c797aaa5f27f3eccd80e4e92c7169a2
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-2.png
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_16.jpg?3c13a7a2867940dc7d81bfc28f8fb242
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-3.jpg
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_5.jpg?d890b794922acf0b1fff642c13d85caf
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-4.jpeg
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_6.jpg?15794a91773be286d3fccbff8f68b1d2
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-5.jpeg
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_7.jpg?2c49d43b8cd559946412fdbf16b0890e
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-6.jpeg
             },
             {
-                imgSrc: https://www.bianjie.ai/dist/honor_8.jpg?425d798938dd55eeafca7f5aa67da7ac
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-7.jpeg
             },
-        ]
-
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-8.jpeg
+            },
+        ],
+        horizontalList: [
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-1.jpeg
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-2.jpeg
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-3.jpeg
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-4.jpeg
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-5.jpeg
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-6.png
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-7.png
+            },
+            {
+                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-8.webp
+            },
+        ],
     },
     certiQualiContent: {
         title: 认证资质,

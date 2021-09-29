@@ -43,6 +43,7 @@ export default {
                 slidesPerView: 4,
                 spaceBetween: 32,
                 // autoplay: true,
+                loop: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -53,6 +54,7 @@ export default {
                 slidesPerView: 3,
                 spaceBetween: 24,
                 // autoplay: true,
+                loop: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',

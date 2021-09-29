@@ -141,8 +141,8 @@ export default {
                                         left: 0;
                                         width: 100%;
                                         height: 100%;
-                                        color: #0967E9;
-                                        background: #E1E5F4;
+                                        color: #fff;
+                                        background: #0967e9;
                                     }
                                 }
                             }
@@ -159,6 +159,9 @@ export default {
                                 .relationship_list {
                                     display: none;
                                     transition: all 0.3s linear;
+                                    .relationship_item {
+                                        font-size: $fontSize14;
+                                    }
                                 }
                             }
                         }

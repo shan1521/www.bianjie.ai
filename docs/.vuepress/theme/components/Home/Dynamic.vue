@@ -171,14 +171,14 @@ export default {
                     .important {
                         box-sizing: border-box;
                         max-width: 44.8rem;
+                        font-size: 0;
                         border: 0.1rem solid #E1E5F4;
                         border-radius: 0.4rem;
                         .important_img {
                             width: 100%;
-                            vertical-align: middle;
                             img {
                                 width: 100%;
-                                border-radius: 0.4rem 0.4rem 0 0;
+                                border-radius: 0.3rem 0.3rem 0 0;
                             }
                         }
                         .date {
@@ -205,6 +205,7 @@ export default {
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
+                            word-break: break-all;
                             @media (max-width: 500px) {
                                 white-space: normal;
                             }
@@ -227,6 +228,7 @@ export default {
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 3;
+                            word-break: break-all;
                         }
                     }
                     .dynamic_list_container {
@@ -289,6 +291,7 @@ export default {
                                         overflow: hidden;
                                         white-space: nowrap;
                                         text-overflow: ellipsis;
+                                        word-break: break-all;
                                         @media (max-width: 1050px) {
                                             max-width: 100%;
                                             white-space: normal;
@@ -319,6 +322,7 @@ export default {
                                     display: -webkit-box;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
+                                    word-break: break-all;
                                 }
                             }
                         }

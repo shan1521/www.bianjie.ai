@@ -111,6 +111,7 @@ export default {
 </script>
 
 <style lang="stylus">
+// @import '../../styles/common.styl';
 .dynamiccontent_container {
     width: 100%;
     background: #F5F6FB;
@@ -146,15 +147,15 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-top: 2.4rem;
-                    padding-bottom: 2.3rem;
+                    padding: 2.4rem 0 2.3rem;
+                    height: 100%;
                     border-bottom: 0.1rem solid #E1E5F4;
                     @media (max-width: 1104px) {
                         justify-content: center;
                     }
 
                     &:first-child {
-                        margin-top: 0;
+                        padding-top: 0;
                     }
 
                     .item_left {
@@ -163,8 +164,9 @@ export default {
                             align-items: center;
                             box-sizing: border-box;
                             width: 11.2rem;
-                            height: 100%;
+                            height: 2.4rem;
                             background: #fff;
+                            // one-px('#0967E9');
                             border: 0.1rem solid #0967E9;
                             border-radius: 0.4rem;
 
@@ -173,7 +175,7 @@ export default {
                                 justify-content: center;
                                 align-items: center;
                                 width: 6.6rem;
-                                height: 2.4rem;
+                                height: 100%;
                                 color: #fff;
                                 background: #0967E9;
                                 border-radius: 0.2rem;
@@ -210,6 +212,7 @@ export default {
                                 overflow: hidden;
                                 white-space: nowrap;
                                 text-overflow: ellipsis;
+                                word-break: break-all;
                                 @media (max-width: 1104px) {
                                     white-space: normal;
                                 }
@@ -246,13 +249,15 @@ export default {
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 3;
+                            word-break: break-all;
                         }
                     }
 
                     .item_right {
                         margin-left: 3.2rem;
                         width: 25rem;
-                        height: 15rem;
+                        // height: 15rem;
+                        font-size: 0;
                         @media (max-width: 1104px) {
                             display: none;
                         }

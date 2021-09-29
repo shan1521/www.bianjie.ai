@@ -1,0 +1,15 @@
+.one-px($color){
+    .border {
+        border: 0.1rem solid $color;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        .border { 
+            border: 0.05rem solid $color;
+        } 
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+        .border { 
+            border: 0.033333rem solid $color;
+        } 
+    }
+}

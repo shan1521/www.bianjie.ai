@@ -114,6 +114,7 @@ export default {
                 //将滑屏的包裹器传入到BScroll内部就可以产生滑屏
                 this.leftScroll = new BScroll(this.$refs.left, { 
                     click: true,
+                    pullUpLoad: false,
                 });
                 //计算得到右侧滑屏元素移动的实时距离(正值)
                 this.rightScroll = new BScroll(this.$refs.right, {
@@ -123,10 +124,8 @@ export default {
                     scrollY: true,
                 });
                 this.rightScroll.on("scroll", ({ x, y }) => {
-                    console.log(x, y,'右侧移动的距离');
                     this.scrollY = Math.abs(y);
                 });
-            console.log(this.rightScroll,'右侧滚动')
             });
         },
         //初始化heightArr
