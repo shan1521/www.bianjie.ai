@@ -23,23 +23,21 @@
                         <img :src="item.src" alt="" />
                     </el-carousel-item>
                 </el-carousel>
-                <el-carousel class="item_box"
-                    :interval="3000"
-                    v-if="industryAdvantage.industryAdvImg"
-                    arrow="never"
-                    ref="swiperRefSmall"
-                    :autoplay="false"
-                    height="336px"
-                >
-                    <el-carousel-item
-                        class="item_el_carousel"
+                <Next class="next_btn" @click.native="arrowClick('next')"></Next>
+            </div>
+            <div class="industryadv_swiper_container_small">
+                <Prev class="prev_btn"></Prev>
+                <swiper class="swiper" :options="swiperOpts">
+                    <swiper-slide
+                        class="swiper_item"
+                        v-if="industryAdvantage.industryAdvImg"
                         v-for="( item, index ) in industryAdvantage.industryAdvImg"
                         :key="index"
                     >
                         <img :src="item.src" alt="" />
-                    </el-carousel-item>
-                </el-carousel>
-                <Next class="next_btn" @click.native="arrowClick('next')"></Next>
+                    </swiper-slide>
+                </swiper>
+                <Next class="next_btn"></Next>
             </div>
             <div v-if="industryAdvantage.industryVideo" class="industry_video">
             </div>
@@ -50,12 +48,27 @@
 <script>
 import Prev from "@theme/components/Common/Prev";
 import Next from "@theme/components/Common/Next";
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
 export default {
     name: "IndustryAdv",
     props: ["industryAdvantage"],
+    data() {
+        return {
+            swiperOpts: {
+                navigation: {
+                    prevEl: ".prev_btn",
+                    nextEl: ".next_btn",
+                },
+                loop: true,
+                speed: 1500,
+                spaceBetween: 10
+            }
+        }
+    },
     methods: {
         arrowClick(val) {
-            if(val === 'next') {
+            if(val == 'next') {
                 this.$refs.swiperRef.next();
                 this.$refs.swiperRefSmall.next();
             } else {
@@ -67,6 +80,8 @@ export default {
     components: {
         Prev,
         Next,
+        Swiper,
+        SwiperSlide
     },
 };
 </script>
@@ -117,6 +132,9 @@ export default {
             align-items: center;
             margin-top: 4.8rem;
             max-width: 155.2rem;
+            @media (max-width: 1080px) {
+                display: none;
+            }
             
             .prev_btn {
                 position: absolute;
@@ -125,6 +143,9 @@ export default {
                 transform: translate(-50%,-50%);
                 margin-left: -32rem;
                 z-index: 9999;
+                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                -webkit-tap-hignlight-color: transparent; 
+                outline: none;
                 @media (max-width: 720px) {
                     margin-left: -28rem;
                     width: 3.4rem;
@@ -179,12 +200,6 @@ export default {
                             height: 100%;
                         }
                     }
-                    // .el-carousel__item.is-animating {
-                    //     -webkit-transition: -webkit-transform 5s ease-in-out;
-                    //     transition: -webkit-transform 5s ease-in-out;
-                    //     transition: transform 5s ease-in-out;
-                    //     transition: transform 5s ease-in-out,-webkit-transform 5s ease-in-out;
-                    // }
                     .el-carousel__indicators {
                         display: none;
                     }
@@ -194,45 +209,6 @@ export default {
             .el-carousel__indicators {
                 display: none;
             }
-            .item_box {
-                display: none;
-                @media (max-width: 1080px) {
-                    display: block;
-                    margin: 0 auto;
-                    width: 56rem;
-                }
-                @media (max-width: 720px) {
-                    width: 48rem;
-                }
-                @media (max-width: 620px) {
-                    width: 40rem;
-                }
-                @media (max-width: 470px) {
-                    width: 32rem;
-                }
-                @media (max-width: 400px) {
-                    width: 26rem;
-                }
-                .el-carousel__container {
-                    @media (max-width: 720px) {
-                        height: 28.8rem !important;
-                    }
-                    @media (max-width: 620px) {
-                        height: 24rem !important;
-                    }
-                    @media (max-width: 470px) {
-                        height: 19.2rem !important;
-                    }
-                    @media (max-width: 400px) {
-                        height: 15.6rem !important;
-                    }
-                    .item_el_carousel {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
             .next_btn {
                 position: absolute;
                 top: 50%;
@@ -240,6 +216,9 @@ export default {
                 transform: translate(-50%,-50%);
                 margin-left: 32rem;
                 z-index: 9999;
+                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                -webkit-tap-hignlight-color: transparent; 
+                outline: none;
                 @media (max-width: 720px) {
                     margin-left: 28rem;
                     width: 3.4rem;
@@ -274,6 +253,45 @@ export default {
                 }
                 @media (max-width: 320px) {
                     margin-left: 14.5rem;
+                }
+            }
+        }
+        .industryadv_swiper_container_small {
+            display: none;
+            @media (max-width: 1080px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 4.8rem auto 0;
+                max-width: 75.2rem;
+            }
+            .prev_btn {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+            .swiper {
+                @media (max-width: 1080px) {
+                    margin-left: 4.8rem;
+                    margin-right: 4.8rem;
+                    max-width: 56rem;
+                    max-height: 33.6rem;
+                }
+                @media (max-width: 400px) {
+                    margin-left: 1.6rem;
+                    margin-right: 1.6rem;
+                }
+                .swiper-wrapper {
+                    .swiper_item {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .next_btn {
+                @media (max-width: 768px) {
+                    display: none;
                 }
             }
         }

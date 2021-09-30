@@ -7,12 +7,12 @@
                     <li class="plans_intro_item" v-for="(item,index) in plansContent.plansIntro">{{item.intro}}</li>
                 </ul>
                 <div class="product_title">{{plansContent.productTitle}}</div>
-                <ul class="adv_list">
-                    <li class="adv_item" v-for="(adv,index) in plansContent.advantageList" :key="index">
-                        <div class="adv_img">
+                <ul class="advantage_list">
+                    <li class="advantage_item" v-for="(adv,index) in plansContent.advantageList" :key="index">
+                        <div class="advantage_img">
                             <img :src="differentIcon(adv.iconName)" alt="">
                         </div>
-                        <div class="adv_right">
+                        <div class="advantage_right">
                             <div class="adv_text">{{adv.advantageText}}</div>
                             <div class="adv_desc">{{adv.description}}</div>
                         </div>
@@ -87,9 +87,9 @@ export default {
                 line-height: 2.4rem;
                 text-align: center;
             }
-            .adv_list {
+            .advantage_list {
                 margin-top: 4rem;
-                .adv_item {
+                .advantage_item {
                     display: flex;
                     align-items: center;
                     box-sizing: border-box;
@@ -106,7 +106,7 @@ export default {
                     &:first-child {
                         margin-top: 0;
                     }
-                    .adv_img {
+                    .advantage_img {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -120,7 +120,7 @@ export default {
                             height: 100%;
                         }
                     }
-                    .adv_right {
+                    .advantage_right {
                         @media (max-width: 400px) {
                             margin-top: 1.6rem;
                         }

@@ -2,7 +2,6 @@
     <div class="swiper_home_container" :style="differentOpenImg(content.img)">
         <div class="swiper_home_content_container">
             <div class="swiper_home_content">
-                <!-- <Prev @click.native="subCurrentSwiper"></Prev> -->
                 <div class="title_container">
                     <span class="title">{{ content.title }}</span>
                     <span class="sub_title">{{ content.subTitle }}</span>
@@ -10,7 +9,6 @@
                 <a class="more" v-if="content.moreText" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                     <More :text="content.moreText"></More>
                 </a>
-                <!-- <Next @click.native="addCurrentSwiper"></Next> -->
             </div>
         </div>
     </div>
@@ -33,24 +31,6 @@ export default {
         currentSwiperIndex() {
             return function(newIndex) {
                 return this.currentSwiper = newIndex;
-            }
-        }
-    },
-    methods: {
-        subCurrentSwiper(){
-            if(this.currentSwiperIndex > 0) {
-                this.currentSwiperIndex -= 1;
-            }
-            if(this.currentSwiperIndex === 0) {
-                this.currentSwiperIndex = 0;
-            }
-        },
-        addCurrentSwiper(){
-            if(this.currentSwiperIndex < this.homeContent.length - 1) {
-                this.currentSwiperIndex += 1;
-            }
-            if(this.currentSwiperIndex === this.homeContent.length - 1) {
-                this.currentSwiperIndex = this.homeContent.length - 1;
             }
         }
     },
@@ -85,6 +65,9 @@ export default {
             }
             .more {
                 margin-top: 3.6rem;
+                @media (max-width: 400px) {
+                    margin-top: 1.6rem;
+                }
             }
         }
 

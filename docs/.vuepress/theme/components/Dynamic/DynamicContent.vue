@@ -166,8 +166,7 @@ export default {
                             width: 11.2rem;
                             height: 2.4rem;
                             background: #fff;
-                            // one-px('#0967E9');
-                            border: 0.1rem solid #0967E9;
+                            border: 0.05rem solid #0967E9;
                             border-radius: 0.4rem;
 
                             .item_date {
@@ -176,6 +175,9 @@ export default {
                                 align-items: center;
                                 width: 6.6rem;
                                 height: 100%;
+                                font-size: $fontSize12;
+                                font-weight: $fontWeight600;
+                                line-height: 1.4rem;
                                 color: #fff;
                                 background: #0967E9;
                                 border-radius: 0.2rem;
@@ -183,10 +185,10 @@ export default {
 
                             .item_year {
                                 margin-left: 0.8rem;
-                                font-size: $fontSize13;
-                                font-weight: $fontWeight400;
+                                font-size: $fontSize12;
+                                font-weight: $fontWeight600;
                                 color: rgba(0, 0, 0, 0.75);
-                                line-height: 2.4rem;
+                                line-height: 1.4rem;
                                 text-align: center;
                             }
                         }

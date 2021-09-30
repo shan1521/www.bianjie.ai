@@ -12,30 +12,32 @@
                                     alt=""
                                 />
                             </div>
-                            <div class="date">
-                                {{ dynamicContent.mostImportant.date }}
-                            </div>
-                            <a
-                                v-if="
-                                    !dynamicContent.mostImportant.route &&
-                                    dynamicContent.mostImportant.link
-                                "
-                                :href="dynamicContent.mostImportant.link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="link_title"
-                            >
-                                {{ dynamicContent.mostImportant.title }}
-                            </a>
-                            <router-link
-                                v-if="dynamicContent.mostImportant.route"
-                                :to="dynamicContent.mostImportant.route"
-                                class="link_title"
-                            >
-                                {{ dynamicContent.mostImportant.title }}
-                            </router-link>
-                            <div class="intro">
-                                {{ dynamicContent.mostImportant.intro }}
+                            <div class="important_overview">
+                                <div class="date">
+                                    {{ dynamicContent.mostImportant.date }}
+                                </div>
+                                <a
+                                    v-if="
+                                        !dynamicContent.mostImportant.route &&
+                                        dynamicContent.mostImportant.link
+                                    "
+                                    :href="dynamicContent.mostImportant.link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="link_title"
+                                >
+                                    {{ dynamicContent.mostImportant.title }}
+                                </a>
+                                <router-link
+                                    v-if="dynamicContent.mostImportant.route"
+                                    :to="dynamicContent.mostImportant.route"
+                                    class="link_title"
+                                >
+                                    {{ dynamicContent.mostImportant.title }}
+                                </router-link>
+                                <div class="intro">
+                                    {{ dynamicContent.mostImportant.intro }}
+                                </div>
                             </div>
                         </div>
                         <div class="dynamic_list_container">
@@ -172,63 +174,60 @@ export default {
                         box-sizing: border-box;
                         max-width: 44.8rem;
                         font-size: 0;
-                        border: 0.1rem solid #E1E5F4;
+                        border-color: transparent;
                         border-radius: 0.4rem;
                         .important_img {
                             width: 100%;
                             img {
                                 width: 100%;
-                                border-radius: 0.3rem 0.3rem 0 0;
+                                border-radius: 0.4rem 0.4rem 0 0;
                             }
                         }
-                        .date {
+                        .important_overview {
                             box-sizing: border-box;
-                            margin-top: 1.6rem;
-                            margin-left: 0.4rem;
-                            margin-bottom: 0.8rem;
-                            padding: 0 1.6rem;
-                            font-size: $fontSize12;
-                            font-weight: $fontWeight400;
-                            color: rgba(0, 0, 0, 0.75);
-                            line-height: 1.6rem;
-                            white-space: nowrap;
-                        }
-                        .link_title {
-                            display: block;
-                            box-sizing: border-box;
-                            margin-top: 0.8rem;
-                            padding: 0 1.6rem;
-                            font-size: $fontSize16;
-                            font-weight: $fontWeight600;
-                            color: #000;
-                            line-height: 2.4rem;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            word-break: break-all;
-                            @media (max-width: 500px) {
-                                white-space: normal;
+                            padding: 1.2rem 1.6rem 1.6rem;
+                            border: 0.1rem solid #E1E5F4;
+                            border-top: 0;
+                            .date {
+                                font-size: $fontSize12;
+                                font-weight: $fontWeight400;
+                                color: rgba(0, 0, 0, 0.75);
+                                line-height: 1.6rem;
+                                white-space: nowrap;
                             }
-                            &:hover {
-                                color: #0967E9;
-                                cursor: pointer;
+                            .link_title {
+                                display: block;
+                                margin-top: 0.8rem;
+                                font-size: $fontSize16;
+                                font-weight: $fontWeight600;
+                                color: #000;
+                                line-height: 2.4rem;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                                @media (max-width: 500px) {
+                                    white-space: normal;
+                                }
+                                &:hover {
+                                    color: #0967E9;
+                                    cursor: pointer;
+                                }
                             }
-                        }
-                        .intro {
-                            box-sizing: border-box;
-                            margin-top: 0.8rem;
-                            margin-bottom: 1.6rem;
-                            padding: 0 1.6rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: rgba(0, 0, 0, 0.75);
-                            line-height: 2.4rem;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            display: -webkit-box;
-                            -webkit-box-orient: vertical;
-                            -webkit-line-clamp: 3;
-                            word-break: break-all;
+                            .intro {
+                                box-sizing: border-box;
+                                margin-top: 0.8rem;
+                                font-size: $fontSize14;
+                                font-weight: $fontWeight400;
+                                color: rgba(0, 0, 0, 0.75);
+                                line-height: 2.4rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 3;
+                                word-break: break-all;
+                            }
                         }
                     }
                     .dynamic_list_container {

@@ -382,9 +382,7 @@ export default {
                         }
                         
                         .swiper-wrapper {
-                            @media (max-width: 710px) {
-                                align-items: center;
-                            }
+                            align-items: center;
                         }
 
                         .item {

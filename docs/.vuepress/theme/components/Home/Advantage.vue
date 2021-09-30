@@ -3,7 +3,7 @@
         <div class="advantage_content_container">
             <div class="advantage_content">
                 <span class="title">{{ advantageContent.title }}</span>
-                <ul class="adv_list">
+                <ul class="advantage_list">
                     <li
                         class="adv_list_item"
                         v-for="(item, index) in advantageContent.advList"
@@ -68,7 +68,7 @@ export default {
             margin: 0 auto;
             max-width: 105.6rem;
             text-align: center;
-            @media (max-width: 1056px) {
+            @media (max-width: 1075px) {
                 max-width: 51.2rem;
             }
             @media (max-width: 512px) {
@@ -103,13 +103,13 @@ export default {
                 }
             }
 
-            .adv_list {
+            .advantage_list {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-column-gap: 3.2rem;
                 margin: 6rem auto 0;
                 min-height: 26.4rem;
-                @media (max-width: 1056px) {
+                @media (max-width: 1075px) {
                     margin: 4.8rem auto 0;
                     grid-template-columns: repeat(2, 1fr);
                     grid-row-gap: 3.2rem;
@@ -128,9 +128,10 @@ export default {
                     width: 24rem;
                     height: 26.6rem;
                     font-size: 0;
-                    border: 0.1rem solid #E1E5F4;
+                    border-color: transparent;
                     border-radius: 0.4rem;
-                    transition: all 0.2s linear;
+                    transition: all 0.1s linear;
+                    overflow: hidden;
                     &:hover {
                         border: 0.1rem solid #0967E9;
                         border-bottom: 0.6rem solid #0967E9;
@@ -141,7 +142,7 @@ export default {
                                 min-height: 21.2rem;
                                 background: #fff;
                                 cursor: pointer;
-                                transition: all 0.2s linear;
+                                transition: all 0.1s linear;
                                 .desc {
                                     box-sizing: border-box;
                                     margin: 0 auto;
@@ -167,14 +168,12 @@ export default {
                     }
 
                     .item_img {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         width: 100%;
-
+                        height: 17.6rem;
+                        overflow: hidden;
                         .img {
-                            width: 100%;
-                            border-radius: 0.3rem 0.3rem 0 0;
+                            height: 100%;
+                            border-radius: 0.4rem 0.4rem 0 0;
                         }
                     }
 
@@ -182,6 +181,8 @@ export default {
                         box-sizing: border-box;
                         width: 100%;
                         height: 8.8rem;
+                        border: 0.1rem solid #E1E5F4;
+                        border-top: 0;
                         overflow: hidden;
 
                         .item_intro_container {

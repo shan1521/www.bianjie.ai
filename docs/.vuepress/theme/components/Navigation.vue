@@ -66,7 +66,6 @@
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
                     <router-link
                         class="nav_list_item"
                         :class="isColor ? 'nav_list_item_color' : ''"
@@ -74,6 +73,7 @@
                         target="_blank"
                         rel="noreferrer noopener"
                     >
+                        <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
                         {{ download }}
                     </router-link>
                 </div>
@@ -107,9 +107,9 @@
                         @click="changeIndex(index)"
                     >
                         <div class="list_item_wrap">
-                            <div class="list_item">
+                            <div class="mobile_list_item">
                                 <router-link
-                                    class="item"
+                                    class="mobile_item"
                                     :class="[ 
                                         isColor ? 'color_font' : '', 
                                         (!isColor && currentIndex === index) ? 'active' : '',
@@ -120,9 +120,7 @@
                                 >
                                     {{ item.text }}
                                 </router-link>
-                                <span v-if="item.items" @click="showSubMenu(index)">
-                                    <i :class="$store.state.subMenu == index ? 'iconfont icon-shouqi' : 'iconfont icon-zhankai'" ></i>
-                                </span>
+                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'" @click="showSubMenu(index)"></i>
                             </div>
                         </div>
 
@@ -159,7 +157,6 @@
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont icon-a-learnmore"></i>
                     <router-link
                         class="nav_list_item"
                         :to="`/download`"
@@ -167,6 +164,7 @@
                         rel="noreferrer noopener"
                         :class="isColor ? 'nav_list_item_color' : ''"
                     >
+                        <i class="iconfont icon-a-learnmore"></i>
                         {{ download }}
                     </router-link>
                 </div>
@@ -631,45 +629,38 @@ export default {
         }
         .mobile_nav_list_wrap {
             box-sizing: border-box;
-            padding: 2.4rem 0;
             background: #fff;
             .nav_list {
                 .nav_list_item {
-                    margin-top: 1.5rem;
                     width: 100%;
-                    &:first-child {
-                        margin-top: 0;
-                    }
+                    min-height: 4.4rem;
+                    line-height: 4.4rem;
                     .list_item_wrap {
                         box-sizing: border-box;
-                        padding: 0 4.8rem;
-                        &::after {
-                            content: '';
-                            display: block;
-                            margin-top: 1.5rem;
-                            width: 100%;
-                            height: 0.2rem;
-                            background: #E1E5F4;
-                        }
-                        .list_item {
+                        margin: 0 4.8rem;
+                        border-bottom: 0.2rem solid #E1E5F4;
+                        .mobile_list_item {
                             display: flex;
                             justify-content: space-between;
-                            .item {
+                            .mobile_item {
+                                flex: 1 0;
                                 font-size: $fontSize14;
                                 font-weight: $fontWeight400;
                                 color: rgba(0, 0, 0, 0.75);
-                                line-height: 1.4rem;
+                                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                                -webkit-tap-hignlight-color: transparent; 
+                                outline: none;
+                            }
+                            .iconfont {
+                                font-size: $fontSize16;
+                                color: #B7C0E3;
                             }
                         }
-
                     }
                     .products_menu {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        // @media (max-width: 586px) {
-                        //     padding: 2rem 1.6rem;
-                        // }
                         .product_type_list {
                             .product_type_item {
                                 margin-top: 3.2rem;
@@ -726,9 +717,6 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        // @media (max-width: 586px) {
-                        //     padding: 2rem 1.6rem;
-                        // }
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
@@ -774,21 +762,24 @@ export default {
                 }
             }
             .more {
-                display: flex;
-                align-items: center;
                 box-sizing: border-box;
-                margin-top: 1.5rem;
                 padding: 0 4.8rem;
-                .iconfont {
-                    color: #0967E9;
-                }
+                height: 4.4rem;
+                line-height: 4.4rem;
                 .nav_list_item {
                     display: inline-block;
-                    margin-left: 0.4rem;
+                    width: 100%;
                     font-size: $fontSize14;
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 1.4rem;
+                    -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                    -webkit-tap-hignlight-color: transparent; 
+                    outline: none;
+                    .iconfont {
+                        display: inline-block;
+                        color: #0967E9;
+                    }
                 }
             }
         }

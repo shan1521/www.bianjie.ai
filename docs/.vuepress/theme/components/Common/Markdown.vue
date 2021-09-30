@@ -45,6 +45,7 @@ export default {
         margin: 0 auto;
         padding: 6rem 0 10rem;
         max-width: 96rem;
+        color: rgba(0,0,0,0.75);
 
         @media (max-width: 1000px) {
             padding-left: 4.8rem;

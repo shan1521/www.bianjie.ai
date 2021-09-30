@@ -46,12 +46,12 @@ export default {
                     el: ".swiper-pagination",
                     clickable: true,
                     renderBullet(index, className) {
-                        return `<span style="width: 48px; height: 4px; background: rgba(255, 255, 255, 1); border-radius: 3px; " class="${className} swiper-pagination-bullet-custom"></span>`;
+                        return `<span style="width: 48px; height: 4px; background: rgba(255, 255, 255, 1); border-radius: 3px; -webkit-tap-hignlight-color: rgba(0,0,0,0); -webkit-tap-hignlight-color: transparent; outline: none;" class="${className} swiper-pagination-bullet-custom"></span>`;
                     },
                 },
                 autoplay: {
                     delay: 3000,
-                    disableOnInteraction: false, //用户操作swiper之后，是否禁止autoplay。
+                    disableOnInteraction: false,
                 },
                 loop: true,
                 speed: 1500
