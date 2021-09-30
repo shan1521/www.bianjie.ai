@@ -21,11 +21,9 @@
     "homepage": "https://github.com/shan1521/www.bianjie.ai#readme",
     "dependencies": {
         "async-validator": "^1.11.5",
-        "better-scroll": "^2.4.2",
         "element-ui": "^2.15.5",
         "swiper": "^5.2.0",
         "vue-awesome-swiper": "^4.1.1",
-        "vue-video-player": "^5.0.2",
         "vuepress": "^1.8.2",
         "vuex": "^3.6.2"
     }
