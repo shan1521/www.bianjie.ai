@@ -18,8 +18,6 @@ export default async ({
         if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
 		return originalPush.call(this, location).catch(err => {err})
 	}
-    const VueVideoPlayer = require('vue-video-player/dist/ssr')
-    Vue.use(VueVideoPlayer)
     
 	Vue.use(router)
 	Vue.use(Vuex)
@@ -49,8 +47,8 @@ export default async ({
 			window.scrollTo(0,0);
 			next()
 		})
-		// await import("./public/iconfont/iconfont").then(module => {
-		// })
+		await import("./public/iconfont/iconfont").then(module => {
+		})
 		await import('element-ui').then(module => {
 			Vue.use(module.default)
 		}).catch(e => {
@@ -61,15 +59,5 @@ export default async ({
 		}).catch(e => {
 			console.log(e,'vue-awesome-swiper error')
 		})
-		// await import('vue-line-clamp').then(module => {
-		// 	Vue.use(module)
-		// }).catch(e => {
-		// 	console.log(e,'vue-line-clamp error')
-		// })
-		// await import('overlayscrollbars-vue').then(module => {
-		// 	Vue.use(module.OverlayScrollbarsPlugin)
-		// }).catch(e => {
-		// 	console.log(e,'overlayscrollbars-vue error')
-		// })
 	}
 }
