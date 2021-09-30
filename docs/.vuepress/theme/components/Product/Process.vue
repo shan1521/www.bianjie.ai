@@ -62,7 +62,7 @@ export default {
 <style lang="stylus">
 .process_container {
     width: 100%;
-    height: 55.6rem;
+    // height: 55.6rem;
 
     .process_content_container {
         margin: 0 auto;
@@ -89,10 +89,22 @@ export default {
             .process_list {
                 display: flex;
                 margin-top: 4rem;
+                @media (max-width: 1000px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 .process_item {
                     display: flex;
                     justify-content: space-between;
+                    @media (max-width: 1000px) {
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top:10rem;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
 
                     &:last-child {
                         max-width: 24rem;
@@ -111,7 +123,7 @@ export default {
 
                             img {
                                 width: 100%;
-                                height: 100%;
+                                // height: 100%;
                             }
                         }
 
@@ -133,9 +145,15 @@ export default {
                     }
 
                     .item_right {
-                        margin: 6rem 1.2rem 0;
+                        position: relative;
+                        top: 5rem;
+                        // margin: 6rem 1.2rem 0;
                         max-width: 9.6rem;
                         height: 0.8rem;
+                        text-align: center;
+                        @media (max-width: 1000px) {
+                            transform: rotate(90deg);
+                        }
 
                         img {
                             width: 100%;

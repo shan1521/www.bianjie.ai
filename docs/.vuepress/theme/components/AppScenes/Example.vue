@@ -46,12 +46,15 @@ export default {
         .example_content {
             margin: 0 auto;
             max-width: 100rem;
-            height: 31.2rem;
-            @media (max-width: 1096px) {
+            min-height: 31.2rem;
+            @media (max-width: 1030px) {
                 box-sizing: border-box;
                 padding-left: 4.8rem;
                 padding-right: 4.8rem;
-                // max-width: 61.6rem;
+            }
+            @media (max-width: 552px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
             }
             .example_title {
                 font-size: $fontSize24;
@@ -69,34 +72,47 @@ export default {
                 padding-right: 6rem;
                 height: 100%;
                 border: 0.1rem solid #E1E5F4;
-                @media (max-width: 1096px) {
-                    justify-content: center;
-                    padding-right: 0;
+                @media (max-width: 1030px) {
+                    flex-direction: column;
+                    padding: 4.8rem;
+                }
+                @media (max-width: 1030px) {
+                    flex-direction: column;
+                    padding: 4.8rem;
+                }
+                @media (max-width: 552px) {
+                    padding: 4.8rem 1.6rem;
+                }
+                @media (max-width: 392px) {
+                    padding: 0 0 1.6rem;
                 }
                 .example_img {
                     margin-right: 6rem;
-                    max-width: 36rem;
+                    width: 36rem;
                     height: 100%;
+                    font-size: 0;
+                    @media (max-width: 1030px) {
+                        margin-right: 0;
+                    }
+                    @media (max-width: 392px) {
+                        width: 100%;
+                    }
                     img {
                         width: 100%;
-                        height: 100%;
-                    }
-                    @media (max-width: 1096px) {
-                        display: none;
                     }
                 }
                 .example_right {
+                    display: flex;
+                    flex-direction: column;
+
                     max-width: 52rem;
-                    @media (max-width: 1096px) {
-                        box-sizing: border-box;
-                        padding-left: 2.4rem;
-                        padding-right: 2.4rem;
-                        max-width: 80rem;
+                    @media (max-width: 1030px) {
+                        align-items: center;
+                        margin-top: 3.2rem;
                     }
-                    @media (max-width: 768px) {
+                    @media (max-width: 392px) {
                         box-sizing: border-box;
-                        padding-left: 2.4rem;
-                        padding-right: 2.4rem;
+                        padding: 0 1.6rem;
                     }
                     .example_text {
                         font-size: $fontSize16;
@@ -106,6 +122,9 @@ export default {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
+                        @media (max-width: 1030px) {
+                            white-space: normal;
+                        }
                     }
                     .example_desc {
                         margin-top: 1.6rem;

@@ -1,6 +1,7 @@
 <template>
     <div class="home_container">
         <Swiper :homeContent.sync="homeContent"></Swiper>
+        <BSNWenchang></BSNWenchang>
         <Advantage :advantageContent.sync="advantageContent"></Advantage>
         <Product :serviceContent.sync="serviceContent"></Product>
         <Scenes :scenesContent.sync="scenesContent"></Scenes>
@@ -11,6 +12,7 @@
 
 <script>
 import Swiper from '@theme/components/Home/Swiper.vue';
+import BSNWenchang from '@theme/components/Home/BSNWenchang.vue';
 import Advantage from '@theme/components/Home/Advantage.vue';
 import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
@@ -46,6 +48,7 @@ export default {
     },
     components: {
         Swiper,
+        BSNWenchang,
         Advantage,
         Product,
         Scenes,

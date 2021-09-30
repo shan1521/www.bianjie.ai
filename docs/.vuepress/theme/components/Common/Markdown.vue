@@ -45,6 +45,7 @@ export default {
         margin: 0 auto;
         padding: 6rem 0 10rem;
         max-width: 96rem;
+        color: rgba(0,0,0,0.75);
 
         @media (max-width: 1000px) {
             padding-left: 4.8rem;
@@ -60,6 +61,9 @@ export default {
             font-weight: $fontWeight600;
             color: #000;
             line-height: 2.6rem;
+        }
+        hr {
+            border: 1px solid #eaecef;
         }
 
         ul {

@@ -4,70 +4,76 @@
             <div class="dynamichome_content">
                 <span class="title">{{ dynamicContent.title }}</span>
                 <div class="content">
-                    <div class="important">
-                        <div class="important_img">
-                            <img
-                                :src="dynamicContent.mostImportant.imgName"
-                                alt=""
-                            />
+                    <div class="content_top">
+                        <div class="important">
+                            <div class="important_img">
+                                <img
+                                    :src="dynamicContent.mostImportant.imgName"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="important_overview">
+                                <div class="date">
+                                    {{ dynamicContent.mostImportant.date }}
+                                </div>
+                                <a
+                                    v-if="
+                                        !dynamicContent.mostImportant.route &&
+                                        dynamicContent.mostImportant.link
+                                    "
+                                    :href="dynamicContent.mostImportant.link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="link_title"
+                                >
+                                    {{ dynamicContent.mostImportant.title }}
+                                </a>
+                                <router-link
+                                    v-if="dynamicContent.mostImportant.route"
+                                    :to="dynamicContent.mostImportant.route"
+                                    class="link_title"
+                                >
+                                    {{ dynamicContent.mostImportant.title }}
+                                </router-link>
+                                <div class="intro">
+                                    {{ dynamicContent.mostImportant.intro }}
+                                </div>
+                            </div>
                         </div>
-                        <div class="date">
-                            {{ dynamicContent.mostImportant.date }}
-                        </div>
-                        <a
-                            v-if="
-                                !dynamicContent.mostImportant.route &&
-                                dynamicContent.mostImportant.link
-                            "
-                            :href="dynamicContent.mostImportant.link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="link_title"
-                        >
-                            {{ dynamicContent.mostImportant.title }}
-                        </a>
-                        <router-link
-                            v-if="dynamicContent.mostImportant.route"
-                            :to="dynamicContent.mostImportant.route"
-                            class="link_title"
-                        >
-                            {{ dynamicContent.mostImportant.title }}
-                        </router-link>
-                        <div class="intro">
-                            {{ dynamicContent.mostImportant.intro }}
+                        <div class="dynamic_list_container">
+                            <ul class="dynamic_list">
+                                <li
+                                    class="dynamic_item"
+                                    v-for="(
+                                        item, index
+                                    ) in dynamicContent.dynamicList"
+                                    :key="index"
+                                >
+                                    <div class="item_top">
+                                        <a
+                                            v-if="!item.route && item.link"
+                                            :href="item.link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="item_title"
+                                        >
+                                            {{ item.title }}
+                                        </a>
+                                        <router-link
+                                            v-if="item.route"
+                                            :to="item.route"
+                                            class="item_title"
+                                        >
+                                            {{ item.title }}
+                                        </router-link>
+                                        <span class="date">{{ item.date }}</span>
+                                    </div>
+                                    <div class="intro">{{ item.intro }}</div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="dynamic_list_container">
-                        <ul class="dynamic_list">
-                            <li
-                                class="dynamic_item"
-                                v-for="(
-                                    item, index
-                                ) in dynamicContent.dynamicList"
-                                :key="index"
-                            >
-                                <div class="item_top">
-                                    <a
-                                        v-if="!item.route && item.link"
-                                        :href="item.link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="item_title"
-                                    >
-                                        {{ item.title }}
-                                    </a>
-                                    <router-link
-                                        v-if="item.route"
-                                        :to="item.route"
-                                        class="item_title"
-                                    >
-                                        {{ item.title }}
-                                    </router-link>
-                                    <span class="date">{{ item.date }}</span>
-                                </div>
-                                <div class="intro">{{ item.intro }}</div>
-                            </li>
-                        </ul>
+                    <div class="content_bottom">
                         <router-link class="more" to="/news">
                             <More
                                 :text="dynamicContent.moreText"
@@ -145,171 +151,71 @@ export default {
                     }
                 }
             }
-
             .content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 margin: 6rem auto 0;
-                @media (max-width: 1050px) {
-                    justify-content: center;
-                }
-                @media (max-width: 968px) {
-                    flex-direction: column;
-                }
-                @media (max-width: 768px) {
-                    margin: 4.8rem auto 0;
-                }
-                @media (max-width: 500px) {
-                    margin: 2.4rem auto 0;
-                }
-
-                .important {
-                    box-sizing: border-box;
-                    padding-bottom: 2.4rem;
-                    border: 0.1rem solid #E1E5F4;
-                    border-radius: 0.4rem;
-                    max-width: 44.8rem;
-
-                    .important_img {
-                        width: 100%;
-                        // height: 24.8rem;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-
-                    .date {
-                        box-sizing: border-box;
-                        margin-top: 1.6rem;
-                        margin-left: 0.4rem;
-                        margin-bottom: 0.8rem;
-                        padding: 0 1.6rem;
-                        font-size: $fontSize12;
-                        font-weight: $fontWeight400;
-                        color: rgba(0, 0, 0, 0.75);
-                        line-height: 1.6rem;
-                        white-space: nowrap;
-                    }
-
-                    .link_title {
-                        display: block;
-                        box-sizing: border-box;
-                        margin-top: 0.8rem;
-                        padding: 0 1.6rem;
-                        font-size: $fontSize16;
-                        font-weight: $fontWeight600;
-                        color: #000;
-                        line-height: 2.4rem;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        @media (max-width: 500px) {
-                            white-space: normal;
-                        }
-
-                        &:hover {
-                            color: #0967E9;
-                            cursor: pointer;
-                        }
-                    }
-
-                    .intro {
-                        box-sizing: border-box;
-                        margin-top: 0.8rem;
-                        padding: 0 1.6rem;
-                        font-size: $fontSize14;
-                        font-weight: $fontWeight400;
-                        color: rgba(0, 0, 0, 0.75);
-                        line-height: 2.4rem;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 3;
-                    }
-                }
-
-                .dynamic_list_container {
+                .content_top {
                     display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    margin-left: 4.8rem;
+                    justify-content: space-between;
+                    align-items: center;
                     @media (max-width: 1050px) {
-                        margin-left: 1.6rem;
+                        justify-content: center;
                     }
                     @media (max-width: 968px) {
+                        flex-direction: column;
                         align-items: center;
-                        margin-top: 4rem;
-                        margin-left: 0;
                     }
-
-                    .dynamic_list {
-                        max-width: 52.8rem;
-                        @media (max-width: 1050px) {
-                            max-width: 45rem;
+                    @media (max-width: 768px) {
+                        margin: 4.8rem auto 0;
+                    }
+                    @media (max-width: 500px) {
+                        margin: 2.4rem auto 0;
+                    }
+                    .important {
+                        box-sizing: border-box;
+                        max-width: 44.8rem;
+                        font-size: 0;
+                        border-color: transparent;
+                        border-radius: 0.4rem;
+                        .important_img {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                                border-radius: 0.4rem 0.4rem 0 0;
+                            }
                         }
-
-                        .dynamic_item {
+                        .important_overview {
                             box-sizing: border-box;
-                            padding: 1.6rem 1.6rem 1.5rem;
-                            border-bottom: 0.1rem solid #E1E5F4;
-                            transition: all 0.3s linear;
-
-                            &:hover {
-                                background: url('../../assets/home/qydt_bg.png') no-repeat center / cover;
-
-                                .item_top {
-                                    .item_title {
-                                        color: #0967E9;
-                                    }
+                            padding: 1.2rem 1.6rem 1.6rem;
+                            border: 0.1rem solid #E1E5F4;
+                            border-top: 0;
+                            .date {
+                                font-size: $fontSize12;
+                                font-weight: $fontWeight400;
+                                color: rgba(0, 0, 0, 0.75);
+                                line-height: 1.6rem;
+                                white-space: nowrap;
+                            }
+                            .link_title {
+                                display: block;
+                                margin-top: 0.8rem;
+                                font-size: $fontSize16;
+                                font-weight: $fontWeight600;
+                                color: #000;
+                                line-height: 2.4rem;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                                @media (max-width: 500px) {
+                                    white-space: normal;
+                                }
+                                &:hover {
+                                    color: #0967E9;
+                                    cursor: pointer;
                                 }
                             }
-
-                            &:nth-of-type(1) {
-                                border-top: 0.1rem solid #E1E5F4;
-                            }
-
-                            .item_top {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                @media (max-width: 1050px) {
-                                    flex-direction: column-reverse;
-                                    align-items: flex-start;
-                                }
-
-                                .item_title {
-                                    display: inline-block;
-                                    max-width: 42.9rem;
-                                    font-size: $fontSize16;
-                                    font-weight: $fontWeight600;
-                                    color: #000;
-                                    line-height: 2.4rem;
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                    text-overflow: ellipsis;
-                                    @media (max-width: 1050px) {
-                                        max-width: 100%;
-                                        white-space: normal;
-                                    }
-
-                                    &:hover {
-                                        color: #0967E9;
-                                        cursor: pointer;
-                                    }
-                                }
-
-                                .date {
-                                    font-size: $fontSize12;
-                                    font-weight: $fontWeight400;
-                                    color: rgba(0, 0, 0, 0.75);
-                                    line-height: 1.6rem;
-                                }
-                            }
-
                             .intro {
+                                box-sizing: border-box;
                                 margin-top: 0.8rem;
                                 font-size: $fontSize14;
                                 font-weight: $fontWeight400;
@@ -320,13 +226,113 @@ export default {
                                 display: -webkit-box;
                                 -webkit-box-orient: vertical;
                                 -webkit-line-clamp: 3;
+                                word-break: break-all;
                             }
                         }
                     }
+                    .dynamic_list_container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin-left: 4.8rem;
+                        @media (max-width: 1050px) {
+                            margin-left: 1.6rem;
+                        }
+                        @media (max-width: 968px) {
+                            align-items: center;
+                            margin-top: 4rem;
+                            margin-left: 0;
+                        }
+                        .dynamic_list {
+                            max-width: 52.8rem;
+                            @media (max-width: 1050px) {
+                                max-width: 45rem;
+                            }
 
+                            .dynamic_item {
+                                box-sizing: border-box;
+                                padding: 1.6rem 1.6rem 1.6rem;
+                                border-bottom: 0.1rem solid #E1E5F4;
+                                transition: all 0.3s linear;
+
+                                @media (any-hover: hover) {
+                                    &:hover {
+                                        background: url('../../assets/home/qydt_bg.png') no-repeat center / cover;
+
+                                        .item_top {
+                                            .item_title {
+                                                color: #0967E9;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(1) {
+                                    border-top: 0.1rem solid #E1E5F4;
+                                }
+
+                                .item_top {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @media (max-width: 1050px) {
+                                        flex-direction: column-reverse;
+                                        align-items: flex-start;
+                                    }
+
+                                    .item_title {
+                                        display: inline-block;
+                                        max-width: 42.9rem;
+                                        font-size: $fontSize16;
+                                        font-weight: $fontWeight600;
+                                        color: #000;
+                                        line-height: 2.4rem;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                        @media (max-width: 1050px) {
+                                            max-width: 100%;
+                                            white-space: normal;
+                                        }
+
+                                        &:hover {
+                                            color: #0967E9;
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                    .date {
+                                        font-size: $fontSize12;
+                                        font-weight: $fontWeight400;
+                                        color: rgba(0, 0, 0, 0.75);
+                                        line-height: 1.6rem;
+                                    }
+                                }
+
+                                .intro {
+                                    margin-top: 1.3rem;
+                                    font-size: $fontSize14;
+                                    font-weight: $fontWeight400;
+                                    color: rgba(0, 0, 0, 0.75);
+                                    line-height: 2.4rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                    word-break: break-all;
+                                }
+                            }
+                        }
+                    }
+                }
+                .content_bottom {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3.2rem;
                     .more {
                         .more_btn {
-                            margin-top: 2.3rem;
                             border: 0.1rem solid #0967E9;
                             border-radius: 0.2rem;
                         }

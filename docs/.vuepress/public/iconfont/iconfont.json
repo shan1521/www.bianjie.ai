@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "24590753",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e721",
+      "unicode_decimal": 59169
+    },
+    {
+      "icon_id": "24590651",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "24589652",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e71d",
+      "unicode_decimal": 59165
+    },
+    {
       "icon_id": "24438202",
       "name": "物联网",
       "font_class": "wulianwang",

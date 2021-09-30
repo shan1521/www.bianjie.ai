@@ -83,6 +83,7 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 2.4rem;
+                    word-break: break-all;
                     &:nth-of-type(1) {
                         margin-top: 4rem;
                     }

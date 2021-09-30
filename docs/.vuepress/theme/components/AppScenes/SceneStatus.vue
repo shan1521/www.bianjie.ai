@@ -83,6 +83,7 @@ export default {
                         width: 100%;
                         height: 8rem;
                         background: url(../../assets/appscenes/thir_bg.png) no-repeat center / cover;
+                        
                         .item_title {
                             display: flex;
                             justify-content: center;
@@ -149,7 +150,7 @@ export default {
                     padding-left: 4.8rem;
                     padding-right: 4.8rem;
                 }
-                @media (max-width: 375px) {
+                @media (max-width: 430px) {
                     padding-left: 1.6rem;
                     padding-right: 1.6rem;
                 }
@@ -172,6 +173,12 @@ export default {
                             font-weight: $fontWeight600;
                             color: #000;
                             line-height: 1.6rem;
+                            text-align: center;
+                            @media (max-width: 350px){
+                                box-sizing: border-box;
+                                padding-left: 0.8rem;
+                                padding-right: 0.8rem;
+                            }
 
                             &::before {
                                 content: '';

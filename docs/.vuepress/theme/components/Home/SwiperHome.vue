@@ -2,19 +2,20 @@
     <div class="swiper_home_container" :style="differentOpenImg(content.img)">
         <div class="swiper_home_content_container">
             <div class="swiper_home_content">
-                <!-- <Prev @click.native="subCurrentSwiper"></Prev> -->
                 <div class="title_container">
                     <span class="title">{{ content.title }}</span>
                     <span class="sub_title">{{ content.subTitle }}</span>
                 </div>
-                <!-- <Next @click.native="addCurrentSwiper"></Next> -->
+                <a class="more" v-if="content.moreText" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
+                    <More :text="content.moreText"></More>
+                </a>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-
+import More from "@theme/components/Common/More.vue";
 export default {
     name: "SwiperHome",
     props: ["content", "currentSwiper"],
@@ -33,24 +34,9 @@ export default {
             }
         }
     },
-    methods: {
-        subCurrentSwiper(){
-            if(this.currentSwiperIndex > 0) {
-                this.currentSwiperIndex -= 1;
-            }
-            if(this.currentSwiperIndex === 0) {
-                this.currentSwiperIndex = 0;
-            }
-        },
-        addCurrentSwiper(){
-            if(this.currentSwiperIndex < this.homeContent.length - 1) {
-                this.currentSwiperIndex += 1;
-            }
-            if(this.currentSwiperIndex === this.homeContent.length - 1) {
-                this.currentSwiperIndex = this.homeContent.length - 1;
-            }
-        }
-    },
+    components: {
+        More
+    }
 };
 </script>
 
@@ -66,6 +52,7 @@ export default {
 
         .swiper_home_content {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
@@ -75,6 +62,12 @@ export default {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+            .more {
+                margin-top: 3.6rem;
+                @media (max-width: 400px) {
+                    margin-top: 1.6rem;
+                }
             }
         }
 

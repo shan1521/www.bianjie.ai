@@ -55,7 +55,7 @@
                                 <li class="appscenes_scene_item" v-for="(appscene, aIndex) in item.items" :key="aIndex">
                                     <div class="scene_wrap">
                                         <div class="scene_item">
-                                            <i class="iconfont icon-a-IRITADA" :class="appscene.icon"></i>
+                                            <i class="iconfont" :class="appscene.icon"></i>
                                             <span class="scene">{{appscene.scene}}</span>
                                         </div>
                                     </div>
@@ -66,7 +66,6 @@
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
                     <router-link
                         class="nav_list_item"
                         :class="isColor ? 'nav_list_item_color' : ''"
@@ -74,6 +73,7 @@
                         target="_blank"
                         rel="noreferrer noopener"
                     >
+                        <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
                         {{ download }}
                     </router-link>
                 </div>
@@ -94,8 +94,7 @@
                     />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
-                    <!-- 此处要判断 isColor，决定展示哪个 icon -->
-                    <span class="iconfont icon-diceng"></span>
+                    <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
                 </div>
             </div>
             <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap" :class="isColor ? 'mobile_white_bg' : ''">
@@ -108,9 +107,9 @@
                         @click="changeIndex(index)"
                     >
                         <div class="list_item_wrap">
-                            <div class="list_item">
+                            <div class="mobile_list_item">
                                 <router-link
-                                    class="item"
+                                    class="mobile_item"
                                     :class="[ 
                                         isColor ? 'color_font' : '', 
                                         (!isColor && currentIndex === index) ? 'active' : '',
@@ -121,7 +120,7 @@
                                 >
                                     {{ item.text }}
                                 </router-link>
-                                <span v-if="item.items" @click="showSubMenu(index)">123</span>
+                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'" @click="showSubMenu(index)"></i>
                             </div>
                         </div>
 
@@ -158,7 +157,6 @@
                     </li>
                 </ul>
                 <div class="more">
-                    <i class="iconfont icon-a-learnmore"></i>
                     <router-link
                         class="nav_list_item"
                         :to="`/download`"
@@ -166,6 +164,7 @@
                         rel="noreferrer noopener"
                         :class="isColor ? 'nav_list_item_color' : ''"
                     >
+                        <i class="iconfont icon-a-learnmore"></i>
                         {{ download }}
                     </router-link>
                 </div>
@@ -185,6 +184,8 @@ export default {
             flShowMobileMenu: false,
             isShowProductSub: false,
             isShowScenesSub: false,
+            showSubProduct: false,
+            showSubScene: false
             // flShowBoxShadow: false,
             // isShowSubMenuText: "",
         };
@@ -228,19 +229,34 @@ export default {
         },
         isShowMobileMenu() {
             this.flShowMobileMenu = !this.flShowMobileMenu;
+            this.$store.commit("subMenu", 0);
         },
         closeMobileMenu(index, pIndex) {
             if(index !== 1 && index !== 2) {
                 this.flShowMobileMenu = false;
             }
+            this.$store.commit("subMenu", 0);
         },
         showSubMenu(index) {
             if(index === 1) {
                 this.isShowProductSub = !this.isShowProductSub;
+                this.$store.commit("subMenu", this.isShowProductSub ? '1' : '0');
+                if(this.isShowProductSub) {
+                    this.$store.commit("subMenu", 1);
+                } else {
+                    this.$store.commit("subMenu", 0);
+                }
                 this.isShowScenesSub = false;
+                this.showSubProduct = true;
             }else if(index === 2) {
-                this.isShowProductSub = false;
                 this.isShowScenesSub = !this.isShowScenesSub;
+                this.isShowProductSub = false;
+                if(this.isShowScenesSub) {
+                    this.$store.commit("subMenu", 2);
+                } else {
+                    this.$store.commit("subMenu", 0);
+                }
+                this.showSubScene = true;
             }
         },
         closeSubMenu(index){
@@ -250,6 +266,7 @@ export default {
                 this.isShowScenesSub = false;
             }
             this.flShowMobileMenu = false;
+            this.$store.commit("subMenu", 0);
         }
     },
     watch: {
@@ -265,6 +282,16 @@ export default {
             },
             immediate: true,
             deep: true,
+        },
+        '$store.state.subMenu': {
+            handler(newVal) {
+                if(newVal === 0) {
+                    this.isShowProductSub = false;
+                    this.isShowScenesSub = false;
+                }
+            },
+            immediate: true,
+            deep: true
         }
     },
     mounted() {
@@ -314,6 +341,7 @@ export default {
         }
 
         .nav_list_wrap {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -430,9 +458,10 @@ export default {
 
                     .products_menu {
                         position: absolute;
+                        left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.2rem;
-                        // min-height: 27.4rem;
+                        width: 76rem;
                         background: #fff;
                         .product_type_list {
                             .product_type_item {
@@ -461,11 +490,9 @@ export default {
                                     margin-top: 1.1rem;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
+                                    grid-column-gap: 4.8rem;
+                                    grid-row-gap: 1.6rem;
                                     .type_item {
-                                        margin-left: 4rem;
-                                        &:first-child {
-                                            margin-left: 0;
-                                        }
                                         .abbreviation {
                                             display: block;
                                             font-size: $fontSize14;
@@ -487,13 +514,15 @@ export default {
                     }
                     .appscenes_menu {
                         position: absolute;
+                        left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.6rem;
+                        width: 76rem;
                         background: #fff;
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
-                            grid-column-gap: 2.4rem;
+                            grid-column-gap: 8.5rem;
                             grid-row-gap: 3.5rem;
                             z-index: 100;
                             .appscenes_scene_item {
@@ -591,50 +620,47 @@ export default {
                 height: 1.8rem;
                 .iconfont {
                     width: 100%;
+                    color: #fff;
+                }
+                .iconfont_color {
+                    color: rgba(0, 0, 0, 0.75);
                 }
             }
         }
         .mobile_nav_list_wrap {
             box-sizing: border-box;
-            padding: 2.4rem 0;
             background: #fff;
             .nav_list {
                 .nav_list_item {
-                    margin-top: 1.5rem;
                     width: 100%;
-                    &:first-child {
-                        margin-top: 0;
-                    }
+                    min-height: 4.4rem;
+                    line-height: 4.4rem;
                     .list_item_wrap {
                         box-sizing: border-box;
-                        padding: 0 4.8rem;
-                        &::after {
-                            content: '';
-                            display: block;
-                            margin-top: 1.5rem;
-                            width: 100%;
-                            height: 0.2rem;
-                            background: #E1E5F4;
-                        }
-                        .list_item {
+                        margin: 0 4.8rem;
+                        border-bottom: 0.2rem solid #E1E5F4;
+                        .mobile_list_item {
                             display: flex;
                             justify-content: space-between;
-                            .item {
+                            .mobile_item {
+                                flex: 1 0;
                                 font-size: $fontSize14;
                                 font-weight: $fontWeight400;
                                 color: rgba(0, 0, 0, 0.75);
-                                line-height: 1.4rem;
+                                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                                -webkit-tap-hignlight-color: transparent; 
+                                outline: none;
+                            }
+                            .iconfont {
+                                font-size: $fontSize16;
+                                color: #B7C0E3;
                             }
                         }
-
                     }
                     .products_menu {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        // @media (max-width: 586px) {
-                        //     padding: 2rem 1.6rem;
-                        // }
                         .product_type_list {
                             .product_type_item {
                                 margin-top: 3.2rem;
@@ -662,18 +688,12 @@ export default {
                                     margin-top: 1.1rem;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
+                                    grid-column-gap: 3.2rem;
+                                    grid-row-gap: 1.6rem;
                                     @media (max-width: 586px) {
                                         grid-template-columns: repeat(1, 1fr);
-                                        grid-row-gap: 1.6rem;
                                     }
                                     .type_item {
-                                        margin-left: 4rem;
-                                        @media (max-width: 586px) {
-                                            margin-left: 0;
-                                        }
-                                        &:first-child {
-                                            margin-left: 0;
-                                        }
                                         .abbreviation {
                                             display: block;
                                             font-size: $fontSize14;
@@ -697,9 +717,6 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        // @media (max-width: 586px) {
-                        //     padding: 2rem 1.6rem;
-                        // }
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
@@ -745,21 +762,24 @@ export default {
                 }
             }
             .more {
-                display: flex;
-                align-items: center;
                 box-sizing: border-box;
-                margin-top: 1.5rem;
                 padding: 0 4.8rem;
-                .iconfont {
-                    color: #0967E9;
-                }
+                height: 4.4rem;
+                line-height: 4.4rem;
                 .nav_list_item {
                     display: inline-block;
-                    margin-left: 0.4rem;
+                    width: 100%;
                     font-size: $fontSize14;
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 1.4rem;
+                    -webkit-tap-hignlight-color: rgba(0,0,0,0); 
+                    -webkit-tap-hignlight-color: transparent; 
+                    outline: none;
+                    .iconfont {
+                        display: inline-block;
+                        color: #0967E9;
+                    }
                 }
             }
         }

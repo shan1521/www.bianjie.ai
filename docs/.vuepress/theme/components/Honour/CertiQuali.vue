@@ -11,7 +11,8 @@
                         :key="index"
                     >
                         <div class="item_img">
-                            <img :src="item.src" alt="" />
+                            <!-- data-action -->
+                            <img :src="differentImg(item.src)" alt="" />
                         </div>
                         <div class="item_right">
                             <div class="right_title">{{ item.title }}</div>
@@ -28,6 +29,13 @@
 export default {
     name: "CertiQuali",
     props: ["certiQualiContent"],
+    computed: {
+        differentImg() {
+            return function(imgName) {
+                return `/about/zizhi/${imgName}`;
+            }
+        }
+    }
 };
 </script>
 
@@ -108,15 +116,20 @@ export default {
                         margin-right: 1.6rem;
                         max-width: 15.8rem;
                         height: 19.2rem;
+                        @media (max-width: 574px) {
+                            margin-right: 0;
+                        }
 
                         img {
-                            width: 100%;
-                            // height: 100%;
+                            height: 100%;
                         }
                     }
 
                     .item_right {
                         max-width: 27.4rem;
+                        @media (max-width: 574px) {
+                            margin-top: 1.6rem;
+                        }
 
                         .right_title {
                             font-size: $fontSize16;

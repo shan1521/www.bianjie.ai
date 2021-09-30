@@ -8,7 +8,7 @@
         <div class="honourlist_bottom_container">
             <div class="honourlist_bottom">
                 <div class="swiper-button-prev"><Prev class="prev_btn"></Prev></div>
-                <div class="swiper_container">
+                <div class="swiper_wrap">
                     <swiper class="top_list" :options="swiperTopOption">
                         <swiper-slide @click.native="maskVisible" class="top_item" v-for="(verItem,vIndex) in honourList.verticalList" :key="vIndex">
                             <img :src="verItem.imgSrc" alt="">
@@ -43,6 +43,7 @@ export default {
                 slidesPerView: 4,
                 spaceBetween: 32,
                 // autoplay: true,
+                loop: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -53,6 +54,7 @@ export default {
                 slidesPerView: 3,
                 spaceBetween: 24,
                 // autoplay: true,
+                loop: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -147,6 +149,9 @@ export default {
             .swiper-button-prev{
                 position: relative;
                 top: 0;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
                 &::after {
                     content: '';
                     display: none;
@@ -155,9 +160,18 @@ export default {
             .swiper-button-disabled {
                 cursor: not-allowed;
             }
-            .swiper_container {
+            .swiper_wrap {
                 margin: 0 6rem;
                 overflow: hidden;
+                @media (max-width: 1200px) {
+                    margin: 0 4.8rem;
+                }
+                @media (max-width: 1040px) {
+                    width: 90rem;
+                }
+                @media (max-width: 400px) {
+                    margin: 0 1.6rem;
+                }
                 .top_list {
                     box-sizing: border-box;
                     padding: 0 1.1rem;
@@ -165,6 +179,9 @@ export default {
                     height: 28.6rem;
                     display: flex;
                     align-items: center;
+                    @media (max-width: 1040px) {
+                        width: 90rem;
+                    }
                     .top_item {
                         margin-right: 3.2rem;
                         width: 20.1rem;
@@ -183,6 +200,9 @@ export default {
                     align-items: center;
                     margin-top: 4rem;
                     height: 20rem;
+                    @media (max-width: 1040px) {
+                        width: 90rem;
+                    }
                     .bottom_item {
                         margin-right: 2.4rem;
                         width: 29.5rem;
@@ -201,6 +221,9 @@ export default {
             .swiper-button-next{
                 position: relative;
                 top: 0;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
                 &::after {
                     content: '';
                     display: none;

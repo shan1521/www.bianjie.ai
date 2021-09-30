@@ -20,7 +20,7 @@
                                 href="https://irita.bianjie.ai"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                >IRITA 产品官网</a
+                                >IRITA 官网</a
                             >
                             <router-link class="dynamic" to="/news">企业动态</router-link>
                             <router-link class="about" to="/about">关于我们</router-link>

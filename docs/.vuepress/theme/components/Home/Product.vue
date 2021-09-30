@@ -48,7 +48,6 @@
                                 ) in serviceContent.productContent"
                                 :key="index"
                             >
-                                <!-- v-show="index === currentTab" -->
                                 <div class="left">
                                     <div class="name">{{ item.name }}</div>
                                     <div class="intro">{{ item.intro }}</div>
@@ -73,43 +72,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="product_content_list">
-                <div class="list_container">
-                    <div class="list">
-                        <Prev class="prev_btn" @click.native="subIndex"></Prev>
-                        <ul class="product_list">
-                            <li
-                                class="item"
-                                v-for="(
-                                    item, index
-                                ) in serviceContent.productContent"
-                                :key="index"
-                                v-if="index === currentTab"
-                            >
-                                <div class="left">
-                                    <div class="name">{{ item.name }}</div>
-                                    <div class="intro">{{ item.intro }}</div>
-                                    <div class="desc">
-                                        {{ item.description }}
-                                    </div>
-                                    <a class="name_btn_git" v-if="item.link && index === 0" :href="item.link" target="_blank" rel="noopener noreferrer">
-                                        <span>{{item.moreText}}</span>
-                                    </a>
-                                    <router-link class="name_btn" v-if="item.route" :to="item.route">
-                                        <More
-                                            :text.sync="item.moreText"
-                                        ></More>
-                                    </router-link>
-                                </div>
-                                <div class="right">
-                                    <img :src="differentImg(item.imgName)" alt="" />
-                                </div>
-                            </li>
-                        </ul>
-                        <Next class="next_btn" @click.native="addIndex"></Next>
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div class="product_footer_content">
             <div class="footer_content">
@@ -143,8 +105,8 @@ export default {
     name: "Product",
     props: ["serviceContent"],
     data() {
+        const that = this;
         return {
-            currentTab: 0,
             showMask: false,
             swiperOptions: {
                 initialSlide: this.currentTab,
@@ -152,14 +114,14 @@ export default {
                     prevEl: ".prev_btn",
                     nextEl: ".next_btn",
                 },
+                spaceBetween: 10,
                 speed: 800,
                 autoplayDisableOnInteraction:false,
                 slideToClickedSlide: true,
                 on: {
-                    slideChange: () => {
-                        console.log(this.$refs.productSwiper);
-
-                    },
+                    slideChange() {
+                        that.$store.commit('currentTab', this.activeIndex);
+                    }
                 }
             }
         };
@@ -170,15 +132,22 @@ export default {
                 return `/home/products/${imgName}`;
             }
         },
+        currentTab() {
+            return +this.$store.state.currentTab;
+        },
+        productSwiper() {
+            return this.$refs.productSwiper.$swiper;
+        }
     },
     methods: {
         clickIritaFn() {
             window.open("https://irita.bianjie.ai/");
         },
         changeTab(index) {
-            this.currentTab = index;
+            this.$store.commit("currentTab", index);
+            this.productSwiper.slideTo(index, 800);
         },
-        updateShowMask(){
+        updateShowMask() {
             this.showMask = true;
         },
     },
@@ -190,6 +159,13 @@ export default {
         Swiper, 
         SwiperSlide
     },
+    watch: {
+        'this.productSwiper': {
+            handler(newVal) {
+                console.log(newVal,'我是新值');
+            }
+        }
+    }
 };
 </script>
 
@@ -406,9 +382,7 @@ export default {
                         }
                         
                         .swiper-wrapper {
-                            @media (max-width: 710px) {
-                                align-items: center;
-                            }
+                            align-items: center;
                         }
 
                         .item {
