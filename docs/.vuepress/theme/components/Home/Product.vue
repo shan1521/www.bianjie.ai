@@ -342,8 +342,17 @@ export default {
                 }
 
                 .active {
-                    border-bottom: 0.3rem solid #0967E9;
-                    border-radius: 0.1rem;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        bottom: 0;
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 0.3rem;
+                        background: #0967E9;
+                        border-radius: 0.4rem;
+                    }
                 }
             }
         }

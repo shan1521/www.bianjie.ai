@@ -21,6 +21,13 @@ export default {
     width: 100%;
     height: 40.8rem;
     background: url(../../assets/partners_banner.png) no-repeat center / cover;
+    @media (max-width: 768px) {
+        background: url(../../assets/partners_banner_768.png) no-repeat center / cover;
+    }
+    @media (max-width: 400px) {
+        height: 36rem;
+        background: url(../../assets/other_banner.png) no-repeat center / cover;
+    }
 
     .partner_title_content_container {
         margin: 0 auto;
@@ -49,11 +56,8 @@ export default {
                 color: #fff;
                 line-height: 6.7rem;
                 text-align: center;
-                @media (man-width: 775px) {
-                    font-size: $fontSize40;
-                }
-                @media (man-width: 400px) {
-                    font-size: $fontSize36;
+                @media (max-width: 400px) {
+                    font-size: $fontSize22;
                 }
             }
             .sub_title {
@@ -63,8 +67,9 @@ export default {
                 color: #fff;
                 line-height: 2.8rem;
                 text-align: center;
-                @media (man-width: 400px) {
+                @media (max-width: 400px) {
                     font-size: $fontSize16;
+                    text-align: center;
                 }
             }
         }

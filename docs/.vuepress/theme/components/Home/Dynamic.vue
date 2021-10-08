@@ -7,10 +7,32 @@
                     <div class="content_top">
                         <div class="important">
                             <div class="important_img">
-                                <img
-                                    :src="dynamicContent.mostImportant.imgName"
-                                    alt=""
-                                />
+                                <a
+                                    v-if="
+                                        !dynamicContent.mostImportant.route &&
+                                        dynamicContent.mostImportant.link
+                                    "
+                                    :href="dynamicContent.mostImportant.link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="link_img"
+                                >
+                                    <img
+                                        :src="dynamicContent.mostImportant.imgName"
+                                        alt=""
+                                    />
+                                </a>
+                                <router-link
+                                    v-if="dynamicContent.mostImportant.route"
+                                    :to="dynamicContent.mostImportant.route"
+                                    class="link_img"
+                                >
+                                    <img
+                                        :src="dynamicContent.mostImportant.imgName"
+                                        alt=""
+                                    />
+                                </router-link>
+                                
                             </div>
                             <div class="important_overview">
                                 <div class="date">
@@ -178,9 +200,12 @@ export default {
                         border-radius: 0.4rem;
                         .important_img {
                             width: 100%;
-                            img {
+                            .link_img {
                                 width: 100%;
-                                border-radius: 0.4rem 0.4rem 0 0;
+                                img {
+                                    width: 100%;
+                                    border-radius: 0.4rem 0.4rem 0 0;
+                                }
                             }
                         }
                         .important_overview {

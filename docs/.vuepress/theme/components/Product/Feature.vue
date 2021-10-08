@@ -33,11 +33,13 @@
                                 src="../../assets/product/iritaopb/example_icon.png"
                                 alt=""
                             />
-                            <span class="item_title">{{ item.title }}</span>
                         </span>
-                        <a class="item_detail" :href="item.link" target="_blank" rel="noopener noreferrer">
-                            <Detail></Detail>
-                        </a>
+                        <div class="item_right">
+                            <span class="item_title">{{ item.title }}</span>
+                            <a class="item_detail" :href="item.link" target="_blank" rel="noopener noreferrer">
+                                <Detail></Detail>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -91,12 +93,12 @@ export default {
                     grid-template-columns: repeat(1, 1fr);
                     max-width: 46.4rem;
                 }
-                @media (max-width: 768px) {
+                @media (max-width: 560px) {
                     box-sizing: border-box;
                     padding-left: 4.8rem;
                     padding-right: 4.8rem;
                 }
-                @media (max-width: 375px) {
+                @media (max-width: 400px) {
                     padding-left: 1.6rem;
                     padding-right: 1.6rem;
                 }
@@ -145,9 +147,16 @@ export default {
                     .item_desc_container {
                         box-sizing: border-box;
                         padding: 1.5rem 6rem 4.1rem;
+                        @media (max-width: 768px) {
+                            padding-left: 4.8rem;
+                            padding-right: 4.8rem;
+                        }
+                        @media (max-width: 400px) {
+                            padding-left: 2.4rem;
+                            padding-right: 2.4rem;
+                        }
 
                         .item_desc {
-                            max-width: 34.4rem;
                             font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: rgba(0, 0, 0, 0.75);
@@ -198,7 +207,6 @@ export default {
 
                 .example_item {
                     display: flex;
-                    justify-content: space-between;
                     align-items: center;
                     box-sizing: border-box;
                     padding: 0 2.4rem;
@@ -207,31 +215,35 @@ export default {
                     border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
                     transition: all .2s linear;
-                    @media (max-width: 445px) {
-                        flex-direction: column;
-                        justify-content: center;
-                    }
 
                     &:hover {
                         background: url(../../assets/product/iritaopb/heyueshili.png) no-repeat center / cover;
                         border: 0.1rem solid #0967E9;
                     }
-
-                    .item_content {
+                    .item_right {
+                        flex: 1 0;
                         display: flex;
+                        justify-content: space-between;
                         align-items: center;
-
+                        margin-left: 1.6rem;
+                        @media (max-width: 460px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
                         .item_title {
-                            margin-left: 1.6rem;
+                            font-size: $fontSize14;
+                        }
+                        .item_detail {
+                            display: inline-block;
+                            @media (max-width: 460px) {
+                                margin-top: 2rem;
+                            }
+                            .detail_container {
+                                margin-top: 0;
+                            }
                         }
                     }
 
-                    .item_detail {
-                        display: inline-block;
-                        .detail_container {
-                            margin-top: 0;
-                        }
-                    }
                 }
             }
         }

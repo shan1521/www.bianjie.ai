@@ -9,7 +9,7 @@
             </div>
             <div class="mask_content_right">
                 <div class="email_img">
-                    <img src="../../assets/comming.png" alt="">
+                    <img src="../../assets/home/email.png" alt="">
                 </div>
                 <span class="img_desc">contact@bianjie.ai</span>
             </div>
@@ -76,11 +76,10 @@ export default {
             align-items: center;
             margin-left: 8rem;
             .email_img {
-                max-width: 14.5rem;
-                height: 14.5rem;
+                width: 13.6rem;
+                height: 14rem;
                 img {
                     width: 100%;
-                    height: 100%;
                 }
             }
             .img_desc {

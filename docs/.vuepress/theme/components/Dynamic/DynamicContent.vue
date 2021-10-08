@@ -141,6 +141,9 @@ export default {
                 width: 100%;
                 background: #fff;
                 border-radius: 0.4rem;
+                @media (max-width: 400px) {
+                    padding: 1.6rem;
+                }
 
                 .dynamic_item {
                     box-sizing: border-box;

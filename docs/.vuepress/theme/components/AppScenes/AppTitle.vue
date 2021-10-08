@@ -1,5 +1,5 @@
 <template>
-  <div class="app_title_container" :style="clientWidth > 768 ? differentSceneBanner(appTitleContent.bg_banner) : differentSceneBannerPad(appTitleContent.bg_banner)">
+  <div class="app_title_container" :style="clientWidth > 420 ? differentBanner(appTitleContent.bg_banner) : 'background: url(/banner_phone.png) no-repeat center / cover;'">
       <div class="app_title_content_container">
           <div class="app_title_content">
               <div class="app_title">{{appTitleContent.title}}</div>
@@ -28,6 +28,17 @@ export default {
             return function(imgName){
                 return `background: url('/appscenes/banner/${imgName}_pad.png') no-repeat center / cover;`;
             }
+        },
+        differentBanner() {
+            if(this.clientWidth > 768) {
+                return function(imgName) {
+                    return this.differentSceneBanner(imgName);
+                }
+            } else if(this.clientWidth <= 768 && this.clientWidth > 420) {
+                return function(imgName) {
+                    return this.differentSceneBannerPad(imgName);
+                }
+            }
         }
     },
     mounted(){
@@ -52,7 +63,7 @@ export default {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
         }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             padding-left: 1.6rem;
             padding-right: 1.6rem;
         }
@@ -66,7 +77,14 @@ export default {
                 font-size: $fontSize40;
                 font-weight: $fontWeight500;
                 color: #191E3F;
-                line-height: 5.6rem;
+                line-height: 4.8rem;
+                @media (max-width: 768px) {
+                    font-size: $fontSize36;
+                }
+                @media (max-width: 420px) {
+                    font-size: $fontSize22;
+                    text-align: center;
+                }
             }
             .app_sub_title {
                 margin-top: 2.4rem;
@@ -74,6 +92,10 @@ export default {
                 font-weight: $fontWeight400;
                 color: rgba(0,0,0,.75);
                 line-height: 2.4rem;
+                @media (max-width: 420px) {
+                    font-size: $fontSize16;
+                    text-align: center;
+                }
             }
         }
     }

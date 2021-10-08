@@ -54,6 +54,10 @@ export default {
             padding: 4.8rem 0 12rem;
             max-width: 105.6rem;
             text-align: center;
+            @media (max-width: 400px) {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
 
             .title {
                 font-size: $fontSize24;
@@ -76,6 +80,9 @@ export default {
                     max-width: 24rem;
                     grid-template-columns: repeat(1, 1fr);
                 }
+                @media (max-width: 400px) {
+                    max-width: 36.8rem;
+                }
 
                 .adv_item {
                     box-sizing: border-box;
@@ -84,6 +91,9 @@ export default {
                     height: 36rem;
                     border: 0.1rem solid #EDEDED;
                     border-radius: 0.4rem;
+                    @media (max-width: 400px) {
+                        max-width: 36.8rem;
+                    }
 
                     .item_img_container {
                         margin: 0 auto;

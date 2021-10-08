@@ -146,7 +146,7 @@ export default {
                                 .desc {
                                     box-sizing: border-box;
                                     margin: 0 auto;
-                                    padding: 0 1.4rem 1rem;
+                                    max-width: 20.8rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight400;
                                     color: rgba(0, 0, 0, 0.75);
@@ -186,21 +186,22 @@ export default {
                         overflow: hidden;
 
                         .item_intro_container {
+                            box-sizing: border-box;
+                            padding: 0 3.2rem;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            margin: 0 auto;
                             text-align: center;
 
                             .intro {
                                 display: flex;
                                 align-items: center;
-                                max-width: 16.8rem;
                                 height: 8.8rem;
                                 font-size: $fontSize16;
                                 font-weight: $fontWeight600;
                                 color: #000;
                                 line-height: 2.4rem;
+                                letter-spacing: 0.1rem;
                             }
                             .desc {
                                 display: none;

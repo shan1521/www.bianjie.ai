@@ -43,7 +43,7 @@
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
                                             <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer">{{product.abbreviation}}</a>
-                                            <router-link class="abbreviation" v-if="product.route" :to="product.route">{{product.abbreviation}}</router-link>
+                                            <router-link class="abbreviation" v-if="product.route" :to="product.route" >{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
                                     </ul>
@@ -69,7 +69,7 @@
                     <router-link
                         class="nav_list_item"
                         :class="isColor ? 'nav_list_item_color' : ''"
-                        :to="`/download`"
+                        :to="`/download.html`"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
@@ -134,7 +134,7 @@
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
                                             <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer">{{product.abbreviation}}</a>
-                                            <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeSubMenu(index)">{{product.abbreviation}}</router-link>
+                                            <router-link class="abbreviation" v-if="product.route" :to="product.route">{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
                                     </ul>
@@ -186,8 +186,6 @@ export default {
             isShowScenesSub: false,
             showSubProduct: false,
             showSubScene: false
-            // flShowBoxShadow: false,
-            // isShowSubMenuText: "",
         };
     },
     created() {
@@ -267,13 +265,18 @@ export default {
             }
             this.flShowMobileMenu = false;
             this.$store.commit("subMenu", 0);
-        }
+        },
+        // menuHide(index) {
+        //     if(index === 1) {
+        //         let productsMenu = document.querySelector('.products_menu');
+        //         productsMenu.style.display = 'none';
+        //     }
+        // }
     },
     watch: {
         '$route.path': {
             handler(newPath){
                 const path = newPath.split('.')[0].split('/')[1];
-                this.routePath = path;
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
                 } else {
@@ -638,7 +641,10 @@ export default {
                     .list_item_wrap {
                         box-sizing: border-box;
                         margin: 0 4.8rem;
-                        border-bottom: 0.2rem solid #E1E5F4;
+                        border-bottom: 0.1rem solid #E1E5F4;
+                        @media (max-width: 400px) {
+                            margin: 0 1.6rem;
+                        }
                         .mobile_list_item {
                             display: flex;
                             justify-content: space-between;
@@ -661,6 +667,10 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
+                        @media (max-width: 400px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
                         .product_type_list {
                             .product_type_item {
                                 margin-top: 3.2rem;
@@ -717,6 +727,10 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
+                        @media (max-width: 400px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
@@ -766,6 +780,10 @@ export default {
                 padding: 0 4.8rem;
                 height: 4.4rem;
                 line-height: 4.4rem;
+                @media (max-width: 400px) {
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+                }
                 .nav_list_item {
                     display: inline-block;
                     width: 100%;
