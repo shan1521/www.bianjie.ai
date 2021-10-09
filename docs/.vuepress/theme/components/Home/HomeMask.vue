@@ -48,6 +48,10 @@ export default {
         max-width: 58.7rem;
         background: #fff;
         border-radius: 0.4rem;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+        }
         .mask_content_left {
             display: flex;
             flex-direction: column;
@@ -75,6 +79,10 @@ export default {
             justify-content: center;
             align-items: center;
             margin-left: 8rem;
+            @media (max-width: 500px) {
+                margin-top: 2.4rem;
+                margin-left: 0;
+            }
             .email_img {
                 width: 13.6rem;
                 height: 14rem;

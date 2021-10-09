@@ -143,8 +143,6 @@ export default {
                 transform: translate(-50%,-50%);
                 margin-left: -32rem;
                 z-index: 9999;
-                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
-                -webkit-tap-hignlight-color: transparent; 
                 outline: none;
                 @media (max-width: 720px) {
                     margin-left: -28rem;
@@ -216,8 +214,6 @@ export default {
                 transform: translate(-50%,-50%);
                 margin-left: 32rem;
                 z-index: 9999;
-                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
-                -webkit-tap-hignlight-color: transparent; 
                 outline: none;
                 @media (max-width: 720px) {
                     margin-left: 28rem;
