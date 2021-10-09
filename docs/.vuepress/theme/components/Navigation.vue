@@ -44,7 +44,8 @@
                                     </div>
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
-                                            <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer" @click="closeProdAppMenu">{{product.abbreviation}}</a>
+                                            <span class="abbreviation" v-if="product.link" @click="closeProdAppMenuLink(product.link)" >{{product.abbreviation}}</span>
+                                            <!-- <a class="abbreviation" v-if="product.link" @click="closeProdAppMenu" :href="product.link" target="_blank" rel="noopener noreferrer" >{{product.abbreviation}}</a> -->
                                             <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeProdAppMenu">{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
@@ -285,8 +286,14 @@ export default {
         closeProdAppMenu() {
             this.appMenuShow = false;
             this.prodMenuShow = false;
+        },
+        closeProdAppMenuLink(link) {
+            this.appMenuShow = false;
+            this.prodMenuShow = false;
+            setTimeout(()=>{
+                window.open(`${link}`);
+            },100)
         }
-        
     },
     watch: {
         '$route.path': {

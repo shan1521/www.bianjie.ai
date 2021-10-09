@@ -44,7 +44,7 @@ export default {
         updateShowMask(val){
             console.log(val)
             this.showMask = val;
-        }
+        },
     },
     components: {
         Swiper,
@@ -54,6 +54,12 @@ export default {
         Scenes,
         Partner,
         Dynamic,
+    },
+    mounted() {
+        
+        // beforeRouteEnter(to, from, next) {
+        //     console.log(to,from,'我是 home 页内的路由守卫')
+        // }
     }
 };
 </script>

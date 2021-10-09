@@ -4,19 +4,15 @@
             <div class="title_content">
                 <div class="title">{{ serviceContent.title }}</div>
                 <div class="irita_content">
-                    <div class="irita_title">
-                        {{ serviceContent.iritaContent.title }}
+                    <div class="irita_content_wrap">
+                        <p class="irita_title">{{ serviceContent.iritaContent.title }}</p>
+                        <p class="desc">{{ serviceContent.iritaContent.subTitle }}</p>
                     </div>
-                    <div class="desc_content">
-                        <div class="desc">
-                            {{ serviceContent.iritaContent.subTitle }}
-                        </div>
-                        <More
-                            :text.sync="serviceContent.moreText"
-                            class="title_btn"
-                            @click.native="clickIritaFn"
-                        ></More>
-                    </div>
+                    <More
+                        :text.sync="serviceContent.moreText"
+                        class="title_btn"
+                        @click.native="clickIritaFn"
+                    ></More>
                 </div>
             </div>
         </div>
@@ -242,44 +238,42 @@ export default {
             }
 
             .irita_content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
                 margin-top: 6rem;
                 @media (max-width: 920px) {
+                    flex-direction: column;
+                    align-items: center;
                     margin-top: 4.8rem;
                     text-align: center;
                 }
-
-                .irita_title {
-                    font-size: $fontSize24;
-                    font-weight: $fontWeight500;
-                    color: #000;
-                    line-height: 2.6rem;
-                    @media (max-width: 920px) {
-                        text-align: center;
+                .irita_content_wrap {
+                    .irita_title {
+                        font-size: $fontSize24;
+                        font-weight: $fontWeight500;
+                        color: #000;
+                        line-height: 2.6rem;
+                        @media (max-width: 920px) {
+                            text-align: center;
+                        }
                     }
-                }
-
-                .desc_content {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 0.4rem;
-                    @media (max-width: 920px) {
-                        justify-content: center;
-                        margin-top: 1.6rem;
-                    }
-
                     .desc {
+                        margin-top: 1.6rem;
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
-                        line-height: 2.4rem;
-                    }
-
-                    .title_btn {
-                        border: 0.1rem solid #0967E9;
+                        line-height: 1.4rem;
                         @media (max-width: 920px) {
-                            display: none;
+                            line-height: 2.4rem;
                         }
+                    }
+                }
+
+                .title_btn {
+                    border: 0.1rem solid #0967E9;
+                    @media (max-width: 920px) {
+                        margin-top: 1.6rem;
                     }
                 }
             }
