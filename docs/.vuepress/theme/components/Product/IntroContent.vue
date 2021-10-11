@@ -14,8 +14,8 @@
                         class="desc_article"
                         v-for="(item, index) in introContent.description"
                         :key="index"
+                        v-html="item.paragraph"
                     >
-                        {{ item.paragraph }}
                     </p>
                 </div>
             </div>
@@ -86,6 +86,9 @@ export default {
                     word-break: break-all;
                     &:nth-of-type(1) {
                         margin-top: 4rem;
+                    }
+                    a {
+                        color: #0967E9;
                     }
                 }
             }

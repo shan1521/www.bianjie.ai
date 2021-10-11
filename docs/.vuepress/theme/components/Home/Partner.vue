@@ -133,7 +133,7 @@ export default {
             }
 
             .fields_list_wrap {
-                @media (max-width: 660px) {
+                @media (max-width: 673px) {
                     overflow-x: auto;
                     &::-webkit-scrollbar {
                         display: none;
@@ -144,11 +144,11 @@ export default {
                     justify-content: space-between;
                     align-items: center;
                     margin: 4rem auto 0;
-                    max-width: 70.8rem;
+                    max-width: 73rem;
                     height: 3.6rem;
                     background: rgba(216, 216, 216, 0.25);
                     border-radius: 0.4rem;
-                    @media (max-width: 660px) {
+                    @media (max-width: 673px) {
                         box-sizing: border-box;
                         white-space: nowrap;
                         width: 65.2rem;
@@ -162,11 +162,11 @@ export default {
                         padding-left: 2.4rem;
                         padding-right: 2.4rem;
                         height: 100%;
-                        @media (max-width: 805px) {
+                        @media (max-width: 817px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
                         }
-                        @media (max-width: 707px) {
+                        @media (max-width: 721px) {
                             padding-left: 1.2rem;
                             padding-right: 1.2rem;
                         }
@@ -179,7 +179,7 @@ export default {
                             font-weight: $fontWeight400;
                             color: rgba(0, 0, 0, 0.75);
                             line-height: 2rem;
-                            @media (max-width: 805px) {
+                            @media (max-width: 817px) {
                                 font-size: $fontSize14;
                                 font-weight: $fontWeight500;
                             }

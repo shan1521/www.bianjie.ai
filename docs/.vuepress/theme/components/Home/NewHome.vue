@@ -1,7 +1,7 @@
 <template>
     <div class="home_container">
         <Swiper :homeContent.sync="homeContent"></Swiper>
-        <BSNWenchang></BSNWenchang>
+        <BSNWenchang :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
         <Advantage :advantageContent.sync="advantageContent"></Advantage>
         <Product :serviceContent.sync="serviceContent"></Product>
         <Scenes :scenesContent.sync="scenesContent"></Scenes>
@@ -24,6 +24,9 @@ export default {
         homeContent() {
 			return this.$frontmatter.homeContent;
 		},
+        bsnWenchangchain() {
+            return this.$frontmatter.bsnWenchangchain;
+        },
         advantageContent() {
 			return this.$frontmatter.advantageContent;
 		},
@@ -55,12 +58,6 @@ export default {
         Partner,
         Dynamic,
     },
-    mounted() {
-        
-        // beforeRouteEnter(to, from, next) {
-        //     console.log(to,from,'我是 home 页内的路由守卫')
-        // }
-    }
 };
 </script>
 
