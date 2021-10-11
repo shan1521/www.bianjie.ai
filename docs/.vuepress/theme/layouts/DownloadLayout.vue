@@ -1,6 +1,6 @@
 <template>
 	<div class="pdf_container">
-		<iframe src="/Bianjie.ai_brochure.pdf" width="99.8%" height="99%"></iframe>
+		<iframe :src="$withBase('/Bianjie.ai_brochure.pdf')" width="99.8%" height="99%"></iframe>
 	</div>
 </template>
 

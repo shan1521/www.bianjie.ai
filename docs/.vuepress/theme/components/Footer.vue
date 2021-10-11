@@ -142,6 +142,7 @@ export default {
                     }
                     @media (max-width: 575px) {
                         margin-top: 3.2rem;
+                        justify-content: space-between;
                     }
 
                     .total {
@@ -154,9 +155,10 @@ export default {
                         }
 
                         .total_title {
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight600;
                             color: #fff;
+                            line-height: 2.4rem;
                             @media (max-width: 575px) {
                                 text-align: center;
                             }
@@ -172,26 +174,31 @@ export default {
                         }
 
                         .irita {
+                            display: inline-block;
                             margin-top: 1.5rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
                             text-align: center;
+                            line-height: 2.4rem;
+                            white-space: nowrap;
                         }
 
                         .dynamic {
                             margin-top: 1.2rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            line-height: 2.4rem;
                             cursor: pointer;
                         }
 
                         .about {
                             margin-top: 1.2rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            line-height: 2.4rem;
                             cursor: pointer;
                         }
                     }
@@ -211,9 +218,10 @@ export default {
                         }
 
                         .contact_title {
-                            line-height: 2.4rem;
-                            font-weight: $fontWeight500;
+                            font-size: $fontSize14;
+                            font-weight: $fontWeight600;
                             color: #fff;
+                            line-height: 2.4rem;
 
                             &::after {
                                 content: '';
@@ -227,16 +235,18 @@ export default {
 
                         .email {
                             margin-top: 1.5rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            line-height: 2.4rem;
                         }
 
                         .official {
                             margin-top: 1.2rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: $whiteColorOpacity;
+                            line-height: 2.4rem;
                         }
                     }
 
@@ -265,9 +275,10 @@ export default {
 
                         .focus_title {
                             margin-top: 0.8rem;
-                            line-height: 2.4rem;
+                            font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: #fff;
+                            line-height: 2.4rem;
                         }
                     }
                 }

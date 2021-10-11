@@ -22,8 +22,6 @@ export default {
     height: 4.8rem;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    -webkit-tap-hignlight-color: rgba(0,0,0,0); 
-    -webkit-tap-hignlight-color: transparent; 
     outline: none;
 
     &:hover {

@@ -46,7 +46,7 @@ export default {
                     el: ".swiper-pagination",
                     clickable: true,
                     renderBullet(index, className) {
-                        return `<span style="width: 48px; height: 4px; background: rgba(255, 255, 255, 1); border-radius: 3px; -webkit-tap-hignlight-color: rgba(0,0,0,0); -webkit-tap-hignlight-color: transparent; outline: none;" class="${className} swiper-pagination-bullet-custom"></span>`;
+                        return `<span style="width: 48px; height: 4px; background: rgba(255, 255, 255, 1); border-radius: 3px; outline: none;" class="${className} swiper-pagination-bullet-custom"></span>`;
                     },
                 },
                 autoplay: {

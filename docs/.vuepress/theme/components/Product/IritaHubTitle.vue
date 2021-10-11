@@ -24,6 +24,9 @@ export default {
     @media (max-width: 768px) {
         background: url(../../assets/product/iritahub/iritahub_banner_pad.png) no-repeat center / cover;
     }
+    @media (max-width: 420px) {
+        background: url(/banner_phone.png) no-repeat center / cover;
+    }
 
     .iritahub_title_content_container {
         margin: 0 auto;
@@ -43,7 +46,7 @@ export default {
                 padding-left: 4.8rem;
                 padding-right: 4.8rem;
             }
-            @media (max-width: 400px) {
+            @media (max-width: 420px) {
                 padding-left: 1.6rem;
                 padding-right: 1.6rem;
             }
@@ -55,10 +58,9 @@ export default {
                 line-height: 4.8rem;
                 @media (max-width: 775px) {
                     font-size: $fontSize36;
-                    text-align: center;
                 }
-                @media (max-width: 400px) {
-                    font-size: $fontSize24;
+                @media (max-width: 420px) {
+                    font-size: $fontSize22;
                     text-align: center;
                 }
             }
@@ -68,11 +70,9 @@ export default {
                 font-weight: $fontWeight400;
                 color: rgba(0, 0, 0, 0.75);
                 line-height: 2.4rem;
-                @media (max-width: 775px) {
-                    text-align: center;
-                }
-                @media (max-width: 400px) {
+                @media (max-width: 420px) {
                     font-size: $fontSize16;
+                    text-align: center;
                 }
             }
         }

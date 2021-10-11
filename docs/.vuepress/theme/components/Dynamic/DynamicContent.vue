@@ -47,6 +47,7 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
                             </a>
                             <router-link
                                 v-if="item.route"
@@ -54,8 +55,8 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
                             </router-link>
-                            <!-- <img v-if="!item.route && !item.link" src="" alt=""> -->
                         </div>
                     </li>
                 </ul>
@@ -111,7 +112,6 @@ export default {
 </script>
 
 <style lang="stylus">
-// @import '../../styles/common.styl';
 .dynamiccontent_container {
     width: 100%;
     background: #F5F6FB;
@@ -141,6 +141,9 @@ export default {
                 width: 100%;
                 background: #fff;
                 border-radius: 0.4rem;
+                @media (max-width: 400px) {
+                    padding: 1.6rem;
+                }
 
                 .dynamic_item {
                     box-sizing: border-box;
@@ -258,7 +261,6 @@ export default {
                     .item_right {
                         margin-left: 3.2rem;
                         width: 25rem;
-                        // height: 15rem;
                         font-size: 0;
                         @media (max-width: 1104px) {
                             display: none;
@@ -270,7 +272,6 @@ export default {
 
                             img {
                                 width: 100%;
-                                // height: 100%;
                             }
                         }
                     }

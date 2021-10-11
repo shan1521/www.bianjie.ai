@@ -21,6 +21,8 @@
                         v-for="(item, index) in navigationList"
                         :key="index"
                         @click="changeIndex(index)"
+                        @mouseenter="menuShowFn(index)"
+                        @mouseleave="closeProdAppMenu"
                     >
                         <router-link
                             class="item"
@@ -33,7 +35,7 @@
                         >
                             {{ item.text }}
                         </router-link>
-                        <div  v-if="item.items && item.items.length > 0 && index === 1" class="products_menu">
+                        <div v-if="item.items && item.items.length > 0 && index === 1 && prodMenuShow" class="products_menu">
                             <ul class="product_type_list">
                                 <li class="product_type_item" v-for="(subItem, subIndex) in item.items" :key="subIndex">
                                     <div class="type_wrap">
@@ -42,15 +44,16 @@
                                     </div>
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
-                                            <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer">{{product.abbreviation}}</a>
-                                            <router-link class="abbreviation" v-if="product.route" :to="product.route">{{product.abbreviation}}</router-link>
+                                            <span class="abbreviation" v-if="product.link" @click="closeProdAppMenuLink(product.link)" >{{product.abbreviation}}</span>
+                                            <!-- <a class="abbreviation" v-if="product.link" @click="closeProdAppMenu" :href="product.link" target="_blank" rel="noopener noreferrer" >{{product.abbreviation}}</a> -->
+                                            <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeProdAppMenu">{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
-                        <div  v-if="item.items && item.items.length > 0 && index === 2" class="appscenes_menu">
+                        <div  v-if="item.items && item.items.length > 0 && index === 2 && appMenuShow" class="appscenes_menu">
                             <ul class="appscenes_scene_list">
                                 <li class="appscenes_scene_item" v-for="(appscene, aIndex) in item.items" :key="aIndex">
                                     <div class="scene_wrap">
@@ -59,7 +62,7 @@
                                             <span class="scene">{{appscene.scene}}</span>
                                         </div>
                                     </div>
-                                    <router-link :to="appscene.link" class="scene_text">{{appscene.text}}</router-link>
+                                    <router-link :to="appscene.link" class="scene_text" @click.native="closeProdAppMenu">{{appscene.text}}</router-link>
                                 </li>
                             </ul>
                         </div>
@@ -69,7 +72,7 @@
                     <router-link
                         class="nav_list_item"
                         :class="isColor ? 'nav_list_item_color' : ''"
-                        :to="`/download`"
+                        :to="`/download.html`"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
@@ -159,7 +162,7 @@
                 <div class="more">
                     <router-link
                         class="nav_list_item"
-                        :to="`/download`"
+                        :to="`/download.html`"
                         target="_blank"
                         rel="noreferrer noopener"
                         :class="isColor ? 'nav_list_item_color' : ''"
@@ -185,9 +188,9 @@ export default {
             isShowProductSub: false,
             isShowScenesSub: false,
             showSubProduct: false,
-            showSubScene: false
-            // flShowBoxShadow: false,
-            // isShowSubMenuText: "",
+            showSubScene: false,
+            prodMenuShow: false,
+            appMenuShow: false
         };
     },
     created() {
@@ -267,13 +270,35 @@ export default {
             }
             this.flShowMobileMenu = false;
             this.$store.commit("subMenu", 0);
+        },
+        menuShowFn(index) {
+            if(index === 1) {
+                this.prodMenuShow = true;
+                this.appMenuShow = false;
+            } else if(index === 2) {
+                this.appMenuShow = true;
+                this.prodMenuShow = false;
+            } else {
+                this.appMenuShow = false;
+                this.prodMenuShow = false;
+            }
+        },
+        closeProdAppMenu() {
+            this.appMenuShow = false;
+            this.prodMenuShow = false;
+        },
+        closeProdAppMenuLink(link) {
+            this.appMenuShow = false;
+            this.prodMenuShow = false;
+            setTimeout(()=>{
+                window.open(`${link}`);
+            },100)
         }
     },
     watch: {
         '$route.path': {
             handler(newPath){
                 const path = newPath.split('.')[0].split('/')[1];
-                this.routePath = path;
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
                 } else {
@@ -358,27 +383,6 @@ export default {
                     height: 100%;
                     line-height: 4.8rem;
                     cursor: pointer;
-                    &:nth-of-type(2) {
-                        .products_menu {
-                            display: none;
-                        }
-                        &:hover {
-                            .products_menu {
-                                display: block;
-                            }
-                        }
-                    }
-                    &:nth-of-type(3) {
-                        .appscenes_menu {
-                            display: none;
-                        }
-                        &:hover {
-                            .appscenes_menu {
-                                display: block;
-                            }
-                        }
-                    }
-
 
                     &:first-child {
                         margin-left: 0;
@@ -638,7 +642,10 @@ export default {
                     .list_item_wrap {
                         box-sizing: border-box;
                         margin: 0 4.8rem;
-                        border-bottom: 0.2rem solid #E1E5F4;
+                        border-bottom: 0.1rem solid #E1E5F4;
+                        @media (max-width: 400px) {
+                            margin: 0 1.6rem;
+                        }
                         .mobile_list_item {
                             display: flex;
                             justify-content: space-between;
@@ -647,8 +654,6 @@ export default {
                                 font-size: $fontSize14;
                                 font-weight: $fontWeight400;
                                 color: rgba(0, 0, 0, 0.75);
-                                -webkit-tap-hignlight-color: rgba(0,0,0,0); 
-                                -webkit-tap-hignlight-color: transparent; 
                                 outline: none;
                             }
                             .iconfont {
@@ -661,6 +666,10 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
+                        @media (max-width: 400px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
                         .product_type_list {
                             .product_type_item {
                                 margin-top: 3.2rem;
@@ -717,6 +726,10 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
+                        @media (max-width: 400px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
                         .appscenes_scene_list {
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
@@ -766,6 +779,10 @@ export default {
                 padding: 0 4.8rem;
                 height: 4.4rem;
                 line-height: 4.4rem;
+                @media (max-width: 400px) {
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+                }
                 .nav_list_item {
                     display: inline-block;
                     width: 100%;
@@ -773,8 +790,6 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 1.4rem;
-                    -webkit-tap-hignlight-color: rgba(0,0,0,0); 
-                    -webkit-tap-hignlight-color: transparent; 
                     outline: none;
                     .iconfont {
                         display: inline-block;

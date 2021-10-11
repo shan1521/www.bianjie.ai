@@ -13,7 +13,7 @@
             img: banner_home_2.png,
             title: · IRITA ·,
             subTitle: 支持下一代分布式商业系统的联盟链产品线,
-            moreText: 了解更多
+            moreText: 前往官网
         },
         {
             img: banner_home_3.png,
@@ -32,7 +32,7 @@
             {
                 img: adv_second.png,
                 intro: 前沿技术研发及分布式商业综合技术集成实力,
-                description: 2017年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
+                description: 2017 年开始深耕跨链技术、构建互联网级区块链网络的核心技术、深入实践大数据隐私保护和授权交换技术
             },
             {
                 img: adv_third.png,
@@ -99,7 +99,7 @@
             title: 咨询与技术服务,
             description: 基于全球先进的区块链和大数据综合技术集成能力，结合企业业务场景需求制定定制化解决方案咨询和技术实施。
         },
-        moreText: 了解更多,
+        moreText: 前往官网,
         chatWithUs: 联系我们
     },
     scenesContent: {
@@ -135,7 +135,7 @@
                     {text: 重塑版权价值},
                     {text: 便捷高效维权},
                 ],
-                description: 结合区块链与IoT技术，开展商品品质溯源机制建设，形成生产加工监管追溯体系，实现全产业链生产质量可追溯。,
+                description: 结合区块链与 IoT 技术，开展商品品质溯源机制建设，形成生产加工监管追溯体系，实现全产业链生产质量可追溯。,
                 route: /applications/digital-art
             },
             {

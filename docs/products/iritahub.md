@@ -25,7 +25,7 @@
             {
                 iconName: tongxinxieyi.png,
                 title: 通用化通信协议,
-                description: 基于IBC跨链通讯协议，结合核心跨链信息验证，实现异构区块链链间资产、数据及计算服务的可信互操作
+                description: 基于 IBC 跨链通讯协议，结合核心跨链信息验证，实现异构区块链链间资产、数据及计算服务的可信互操作
             },
             {
                 iconName: dongtaikekuozhan.png,
