@@ -6,10 +6,8 @@
                     <a class="bsn_logo" href="https://www.bsnbase.com/" target="_blank" rel="noopener noreferrer">
                         <img src="../../assets/home/bsn_logo.png" alt="">
                     </a>
-                    <span class="line">|</span>
                     <div class="logo" @click="goBsnWenchangchain">
                         <img src="../../assets/home/bsn-wenchang_logo.png" alt="">
-                        <span class="logo_text">{{bsnWenchangchain.logoText}}</span>
                     </div>
                 </div>
                 <a class="bsn-wenchang_desc" href="https://bsn-wenchang.bianjie.ai/" target="_blank" rel="noopener noreferrer">{{bsnWenchangchain.description}}</a>
@@ -50,7 +48,7 @@ export default {
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-            max-width: 100%;
+            max-width: 105.6rem;
             height: 100%;
             @media (max-width: 1240px) {
                 box-sizing: border-box;
@@ -70,7 +68,19 @@ export default {
                 display: flex;
                 align-items: center;
                 .bsn_logo {
+                    display: flex;
+                    align-items: center;
                     height: 3.6rem;
+                    &::after {
+                        content: '';
+                        display: block;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        width: 0.2rem;
+                        height: 80%;
+                        background: #000000;
+                        opacity: 0.45;
+                    }
                     img {
                         height: 100%;
                     }

@@ -146,8 +146,8 @@ export default {
                         position: relative;
                         &:hover {
                             .list_item_bottom {
-                                -webkit-animation: bottomToTop .3s ease-in-out;
-                                animation: bottomToTop .3s ease-in-out;
+                                -webkit-animation: bottomToTop .25s ease-in-out;
+                                animation: bottomToTop .25s ease-in-out;
                                 animation-fill-mode: forwards;
                             }
                         }

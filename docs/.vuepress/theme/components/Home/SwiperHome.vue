@@ -65,6 +65,8 @@ export default {
             }
             .more {
                 margin-top: 3.6rem;
+                border: 0.1rem solid #fff;
+                border-radius: 0.4rem;
                 @media (max-width: 400px) {
                     margin-top: 1.6rem;
                 }
