@@ -9,6 +9,15 @@
     },
     dynamicList: [
         {
+            date: '10月11日',
+            year: '2021',
+            title: 亚洲数字银行与边界智能达成战略合作，打造支持自金融服务的新一代数字银行,
+            description: 强强联合！亚洲数字银行和边界智能达成战略合作，采用边界的 IRITA （Cosmos 企业版）区块链架构，包括可支持全球跨链互联的 BSN 开放联盟链「文昌链 IRITA OPB」等，开发打造可支撑高效自金融服务并支持全球合法贸易的新一代数字银行服务基础设施。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/15.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s/norXFKNcq4SZC_dzBnyNbg
+        },
+        {
             date: '6月24日',
             year: '2021',
             title: 特等奖! 边界智能获得二零二一年南京创新周 · 江北新区数字金融创新大赛特等奖,

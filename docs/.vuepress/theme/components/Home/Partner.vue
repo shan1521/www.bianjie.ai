@@ -23,7 +23,7 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="partner_list_container" @touchmove="tabsMove($event)">
+                <ul class="partner_list_container">
                     <li
                         class="partner_item"
                         v-for="(item, index) in partnerContent.fieldsList"
@@ -56,11 +56,7 @@ export default {
     methods: {
         changeTab(index) {
             this.currentTab = index;
-            // this.tabSwiper.slideTo(index);
         },
-        tabsMove($event) {
-            console.log(111111);
-        }
     },
 };
 </script>
@@ -133,7 +129,7 @@ export default {
             }
 
             .fields_list_wrap {
-                @media (max-width: 673px) {
+                @media (max-width: 730px) {
                     overflow-x: auto;
                     &::-webkit-scrollbar {
                         display: none;
@@ -148,7 +144,7 @@ export default {
                     height: 3.6rem;
                     background: rgba(216, 216, 216, 0.25);
                     border-radius: 0.4rem;
-                    @media (max-width: 673px) {
+                    @media (max-width: 730px) {
                         box-sizing: border-box;
                         white-space: nowrap;
                         width: 65.2rem;
@@ -162,11 +158,11 @@ export default {
                         padding-left: 2.4rem;
                         padding-right: 2.4rem;
                         height: 100%;
-                        @media (max-width: 817px) {
+                        @media (max-width: 834px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
                         }
-                        @media (max-width: 721px) {
+                        @media (max-width: 730px) {
                             padding-left: 1.2rem;
                             padding-right: 1.2rem;
                         }
@@ -179,8 +175,7 @@ export default {
                             font-weight: $fontWeight400;
                             color: rgba(0, 0, 0, 0.75);
                             line-height: 2rem;
-                            @media (max-width: 817px) {
-                                font-size: $fontSize14;
+                            @media (max-width: 818px) {
                                 font-weight: $fontWeight500;
                             }
                         }
@@ -202,7 +197,7 @@ export default {
                 @media (max-width: 930px) {
                     max-width: 66.4rem;
                 }
-                @media (max-width: 706px) {
+                @media (max-width: 730px) {
                     max-width: 43.2rem;
                 }
                 @media (max-width: 520px) {

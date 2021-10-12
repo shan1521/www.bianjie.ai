@@ -22,8 +22,7 @@
         },
     ],
     bsnWenchangchain: {
-        logoText: BSN 文昌链,
-        description: BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+        description: BSN 文昌链是 BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
         moreText: 前往上链
     },
     advantageContent: {
@@ -180,6 +179,7 @@
             {
                 fieldName: 金融领域,
                 partnerList: [
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ADB_logo.jpg},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ode_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/zcbri_logo.png},

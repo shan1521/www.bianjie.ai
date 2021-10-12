@@ -89,6 +89,11 @@
             title: 金融领域合作,
             list: [
                 {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ADB_logo.jpg,
+                    relationshipList: [],
+                    link: http://www.asiadb.com/,
+                },
+                {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png,
                     relationshipList: [],
                     link: ,

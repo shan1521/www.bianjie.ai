@@ -66,12 +66,10 @@ export default {
             .example {
                 box-sizing: border-box;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 margin-top: 4rem;
-                padding-right: 6rem;
                 height: 100%;
-                border: 0.1rem solid #E1E5F4;
+                border: 0.05rem solid #E1E5F4;
                 @media (max-width: 1030px) {
                     flex-direction: column;
                     padding: 4.8rem;
@@ -80,21 +78,19 @@ export default {
                     flex-direction: column;
                     padding: 4.8rem;
                 }
-                @media (max-width: 552px) {
-                    padding: 4.8rem 1.6rem;
-                }
-                @media (max-width: 392px) {
+                @media (max-width: 400px) {
                     padding: 0 0 1.6rem;
                 }
                 .example_img {
-                    margin-right: 6rem;
+                    display: flex;
+                    align-items: center;
                     width: 36rem;
                     height: 100%;
                     font-size: 0;
                     @media (max-width: 1030px) {
                         margin-right: 0;
                     }
-                    @media (max-width: 392px) {
+                    @media (max-width: 400px) {
                         width: 100%;
                     }
                     img {
@@ -104,13 +100,17 @@ export default {
                 .example_right {
                     display: flex;
                     flex-direction: column;
-
-                    max-width: 52rem;
+                    box-sizing: border-box;
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                    max-width: 64rem;
                     @media (max-width: 1030px) {
                         align-items: center;
                         margin-top: 3.2rem;
+                        padding-left: 0rem;
+                        padding-right: 0rem;
                     }
-                    @media (max-width: 392px) {
+                    @media (max-width: 400px) {
                         box-sizing: border-box;
                         padding: 0 1.6rem;
                     }
