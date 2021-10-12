@@ -9,17 +9,26 @@
                         v-for="(item, index) in advantageContent.advList"
                         :key="index"
                     >
-                        <div class="item_img">
-                            <img
-                                class="img"
-                                :src="differentAdvantageImg(item.img)"
-                                alt=""
-                            />
-                        </div>
-                        <div class="item_intro">
-                            <div class="item_intro_container">
-                                <span class="intro">{{ item.intro }}</span>
-                                <span class="desc">{{ item.description }}</span>
+                        <div class="list_item_wrap">
+                            <div class="list_item_top">
+                                <div class="list_item_top_img">
+                                    <img
+                                        class="img"
+                                        :src="differentAdvantageImg(item.img)"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="list_item_top_intro">
+                                    <span class="intro">{{ item.intro }}</span>
+                                </div>
+                            </div>
+                            <div class="list_item_bottom">
+                                <div class="list_item_bottom_intro">
+                                    <span class="intro">{{ item.intro }}</span>
+                                </div>
+                                <div class="list_item_bottom_desc">
+                                    <span class="desc">{{ item.description }}</span>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -121,96 +130,105 @@ export default {
                 @media (max-width: 375px) {
                     margin-top: 1.6rem;
                 }
-
                 .adv_list_item {
-                    position: relative;
                     box-sizing: border-box;
                     width: 24rem;
                     height: 26.6rem;
-                    font-size: 0;
-                    border-color: transparent;
+                    border: 0.1rem solid transparent;
                     border-radius: 0.4rem;
-                    transition: all 0.1s linear;
                     overflow: hidden;
                     &:hover {
+                        cursor: pointer;
                         border: 0.1rem solid #0967E9;
                         border-bottom: 0.6rem solid #0967E9;
-                        .item_intro {
-                            .item_intro_container {
-                                position: absolute;
-                                bottom: 0;
-                                min-height: 21.2rem;
-                                background: #fff;
-                                cursor: pointer;
-                                transition: all 0.1s linear;
+                    }
+                    .list_item_wrap {
+                        position: relative;
+                        &:hover {
+                            .list_item_bottom {
+                                -webkit-animation: bottomToTop .3s ease-in-out;
+                                animation: bottomToTop .3s ease-in-out;
+                                animation-fill-mode: forwards;
+                            }
+                        }
+                        .list_item_top {
+                            .list_item_top_img {
+                                width: 100%;
+                                font-size: 0;
+                                img {
+                                    width: 100%;
+                                    border-radius: 0.4rem 0.4rem 0 0;
+                                }
+                            }
+                            .list_item_top_intro {
+                                box-sizing: border-box;
+                                padding: 1.6rem 3.2rem 2.4rem;
+                                height: 8.8rem;
+                                border: 0.1rem solid #E1E5F4;
+                                border-top: 0;
+                                .intro {
+                                    font-size: $fontSize16;
+                                    font-weight: $fontWeight600;
+                                    color: #000;
+                                    line-height: 2.4rem;
+                                    letter-spacing: 0.1rem;
+                                }
+                            }
+                        }
+                        .list_item_bottom {
+                            position: absolute;
+                            background: #fff;
+                            .list_item_bottom_intro {
+                                box-sizing: border-box;
+                                padding: 1.6rem 3.2rem;
+                                .intro {
+                                    font-size: $fontSize16;
+                                    font-weight: $fontWeight600;
+                                    color: #000;
+                                    line-height: 2.4rem;
+                                    letter-spacing: 0.1rem;
+                                }
+                            }
+                            .list_item_bottom_desc {
+                                box-sizing: border-box;
+                                padding: 0.7rem 1.4rem 1rem;
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    margin: 0 auto 0.8rem;
+                                    width: 12rem;
+                                    height: 0.1rem;
+                                    background: #EDEDED;
+                                }
                                 .desc {
-                                    box-sizing: border-box;
-                                    margin: 0 auto;
-                                    max-width: 20.8rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight400;
-                                    color: rgba(0, 0, 0, 0.75);
+                                    color: #000000;
                                     line-height: 2.6rem;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    &::before {
-                                        content: '';
-                                        display: block;
-                                        margin-bottom: 0.8rem;
-                                        width: 12rem;
-                                        height: 0.1rem;
-                                        background: #EDEDED;
-                                    }
                                 }
                             }
                         }
                     }
-
-                    .item_img {
-                        width: 100%;
-                        height: 17.6rem;
-                        overflow: hidden;
-                        .img {
-                            height: 100%;
-                            border-radius: 0.4rem 0.4rem 0 0;
-                        }
-                    }
-
-                    .item_intro {
-                        box-sizing: border-box;
-                        width: 100%;
-                        height: 8.8rem;
-                        border: 0.1rem solid #E1E5F4;
-                        border-top: 0;
-                        overflow: hidden;
-
-                        .item_intro_container {
-                            box-sizing: border-box;
-                            padding: 0 3.2rem;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            text-align: center;
-
-                            .intro {
-                                display: flex;
-                                align-items: center;
-                                height: 8.8rem;
-                                font-size: $fontSize16;
-                                font-weight: $fontWeight600;
-                                color: #000;
-                                line-height: 2.4rem;
-                                letter-spacing: 0.1rem;
-                            }
-                            .desc {
-                                display: none;
-                            }
-                        }
-                    }
                 }
+
             }
         }
+    }
+}
+@keyframes bottomToTop {
+    0% {
+        bottom: -21.2rem;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-webkit-keyframes bottomToTop {
+    0% {
+        bottom: -21.2rem;
+    }
+    100% {
+        bottom: 0;
     }
 }
 </style>

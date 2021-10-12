@@ -21,6 +21,11 @@
             subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
         },
     ],
+    bsnWenchangchain: {
+        logoText: BSN 文昌链,
+        description: BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+        moreText: 前往上链
+    },
     advantageContent: {
         title: 核心能力与优势,
         advList: [
@@ -191,7 +196,7 @@
                 ]
             },
             {
-                fieldName: 数字资产,
+                fieldName: 资产数字化,
                 partnerList: [
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png},

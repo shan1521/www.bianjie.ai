@@ -18,7 +18,6 @@ export default async ({
         if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
 		return originalPush.call(this, location).catch(err => {err})
 	}
-    
 	Vue.use(router)
 	Vue.use(Vuex)
     Vue.use(Element);
@@ -44,7 +43,6 @@ export default async ({
 				localStorage.setItem('currentIndex',0)
 				store.commit('currentIndex',0)
 			}
-			window.scrollTo(0,0);
 			next()
 		})
 		await import("./public/iconfont/iconfont").then(module => {
