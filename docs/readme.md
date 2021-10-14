@@ -189,20 +189,21 @@
                 ]
             },
             {
+                fieldName: 数字贸易,
+                partnerList: [
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/SLZZ_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/hwj_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png},
+                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png},
+                ]
+            },
+            {
                 fieldName: 医疗领域,
                 partnerList: [
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/xkl_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/nxyl_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/rhdk_logo.png},
                     {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/pdwszyzx_logo.png},
-                ]
-            },
-            {
-                fieldName: 资产数字化,
-                partnerList: [
-                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/hwj_logo.png},
-                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png},
-                    {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png},
                 ]
             },
             {

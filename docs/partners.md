@@ -130,6 +130,31 @@
             ]
         },
         {
+            title: 数字贸易领域合作,
+            list: [
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/SLZZ_logo.png,
+                    relationshipList: [],
+                    link: ,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/hwj_logo.png,
+                    relationshipList: [],
+                    link: ,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png,
+                    relationshipList: [],
+                    link: http://www.starrymedia.com/,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png,
+                    relationshipList: [],
+                    link: ,
+                },
+            ]
+        },
+        {
             title: 医疗领域合作,
             list: [
                 {
@@ -149,26 +174,6 @@
                 },
                 {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/medical_field/pdwszyzx_logo.png,
-                    relationshipList: [],
-                    link: ,
-                },
-            ]
-        },
-        {
-            title: 资产数字化领域合作,
-            list: [
-                {
-                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/hwj_logo.png,
-                    relationshipList: [],
-                    link: ,
-                },
-                {
-                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png,
-                    relationshipList: [],
-                    link: http://www.starrymedia.com/,
-                },
-                {
-                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png,
                     relationshipList: [],
                     link: ,
                 },
