@@ -41,6 +41,20 @@
                     link: ,
                 },
                 {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png,
+                    relationshipList: [
+                        {relationship: 理事单位},
+                    ],
+                    link: http://www.trustedblockchain.cn/,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png,
+                    relationshipList: [
+                        {relationship: 成员单位},
+                    ],
+                    link: ,
+                },
+                {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png,
                     relationshipList: [
                         {relationship: 专家委员会委员},
@@ -62,16 +76,16 @@
                     link: ,
                 },
                 {
-                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png,
-                    relationshipList: [
-                        {relationship: 理事单位},
-                    ],
-                    link: http://www.trustedblockchain.cn/,
-                },
-                {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png,
                     relationshipList: [],
                     link: http://www.softline.org.cn/,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/dida.png,
+                    relationshipList: [
+                        {relationship: 成员单位}
+                    ],
+                    link: ,
                 },
                 {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png,
@@ -143,6 +157,11 @@
         {
             title: 资产数字化领域合作,
             list: [
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/hwj_logo.png,
+                    relationshipList: [],
+                    link: ,
+                },
                 {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/xdkj_logo.png,
                     relationshipList: [],

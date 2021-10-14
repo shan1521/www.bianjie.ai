@@ -77,7 +77,7 @@ export default {
                 .scenestatus_item {
                     max-width: 28.8rem;
                     min-height: 24rem;
-                    border: 0.1rem solid #EDEDED;
+                    border: 0.05rem solid #EDEDED;
                     border-radius: 0.4rem;
                     .item_title_wrap {
                         width: 100%;
@@ -157,7 +157,7 @@ export default {
                 .scenestatus_item {
                     max-width: 46.4rem;
                     min-height: 21.8rem;
-                    border: 0.1rem solid #EDEDED;
+                    border: 0.05rem solid #EDEDED;
                     border-radius: 0.4rem;
                     .item_title_wrap {
                         width: 100%;

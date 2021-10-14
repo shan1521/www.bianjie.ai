@@ -13,9 +13,126 @@
             year: '2021',
             title: 亚洲数字银行与边界智能达成战略合作，打造支持自金融服务的新一代数字银行,
             description: 强强联合！亚洲数字银行和边界智能达成战略合作，采用边界的 IRITA （Cosmos 企业版）区块链架构，包括可支持全球跨链互联的 BSN 开放联盟链「文昌链 IRITA OPB」等，开发打造可支撑高效自金融服务并支持全球合法贸易的新一代数字银行服务基础设施。,
-            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/15.png,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/28.png,
             route: ,
             link: https://mp.weixin.qq.com/s/norXFKNcq4SZC_dzBnyNbg
+        },
+        {
+            date: '9月30日',
+            year: '2021',
+            title: 海南国际文化艺术品交易中心采用 BSN「文昌链」NFT 技术打造全球化数字艺术品交易市场,
+            description: 海南国际文化艺术品交易中心宣布依托 BSN 开放联盟链「文昌链」作为底层区块链基础设施打造数字艺术品市场，通过前沿区块链跨链技术，与国际主流区块链联通，实现全球优质数字艺术品和数字资产有序流通和交易。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/27.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/joDIE2BLGS_FRxMfHqxbsQ
+        },
+        {
+            date: '9月28日',
+            year: '2021',
+            title: 边界智能在 BSN 全球合作伙伴大会：「文昌链 IRITA OPB」跨链 NFT 技术、可信跨境贸易、全球化艺术品等,
+            description: 2021 年 9 月 26 日至 28 日，边界智能受邀参加区块链服务网络（BSN）全球合作伙伴大会，发表两个主题演讲并参与圆桌讨论。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/26.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/5O9KyiRt56IwBVbW6Bdy1g
+        },
+        {
+            date: '9月13日',
+            year: '2021',
+            title: 跨链核心技术贡献者专访 | 边界智能是「区块链互联网皇冠上的宝石」,
+            description: Cosmos 区块链互联网博客发表英文专访，向全球介绍了边界智能在 NFT 与跨链技术研发、企业级应用、跨生态桥接等方面的创新和贡献。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/25.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/n8rmKI73AEbMf8ZoARMMnQ
+        },
+        {
+            date: '9月6日',
+            year: '2021',
+            title: 丝路之舟与边界智能达成战略合作，共建联合国贸发会新型数字贸易基础设施,
+            description: 中国丝路集团全资子公司丝路之舟与边界智能联合宣布，就「基于区块链及大数据隐私保护技术的新一代数字贸易基础设施」达成战略合作，支持打造联合国贸发会的新型数字贸易基础设施平台 DODR。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/24.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/DZrPLe3J1hyeR1j_xGDOJQ
+        },
+        {
+            date: '8月23日',
+            year: '2021',
+            title: 边界智能与搜云科技展开深度技术合作，助推中国传统优秀艺术品的全球可信跨链流转,
+            description: 边界智能与搜云科技达成深度技术合作，结合区块链跨链 NFT 技术和传统艺术品，基于边界智能打造的 BSN 开放联盟链「文昌链 IRITA OPB」，为传统艺术品全球可信跨链流转提供技术支撑，助推中国优秀传统艺术全球化。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/23.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw
+        },
+        {
+            date: '8月4日',
+            year: '2021',
+            title: 「文昌链 IRITA OPB」运用前沿 NFT 技术，助力 IP.PUB 推动中国传统艺术可信全球贸易,
+            description: 边界智能基于自主研发的 BSN 开放联盟链「文昌链 IRITA OPB」及其 NFT 技术，助力中国民族文化数字文库 IP.PUB 支撑可信全球贸易，助推中国优秀传统艺术全球化。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/22.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/_AnxWMA9qQD2Qwh0fGfSGQ
+        },
+        {
+            date: '7月26日',
+            year: '2021',
+            title: 边界智能荣登 2021 世界区块链大会「区块链名企 30」榜单,
+            description: 7 月 24 日，2021 世界区块链大会在杭州召开，边界智能作为区块链和大数据领域的技术服务专家，凭借前沿的技术创新研发能力、丰富的产品和应用落地经验，边界智能荣登区块链「名企」30 榜单。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/21.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/3j2bAHGXtH5RiCT4s41WVw
+        },
+        {
+            date: '7月14日',
+            year: '2021',
+            title: 边界智能成为 DIDA 分布式数字身份产业联盟成员单位,
+            description: 7 月 11 日，分布式数字身份（苏州）高峰论坛暨分布式数字身份产业联盟 2021 年度会议及 DIDA 第一届理事会第二次理事会议召开，本次理事会议审议并表决通过，边界智能与其他 5 家企业成为联盟新成员单位。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/20.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/x1MQ7e-XfXa51tGwIZhLGw
+        },
+        {
+            date: '7月13日',
+            year: '2021',
+            title: 边界智能 IRITA 通过中国信通院第五批可信区块链评测,
+            description: 7 月 13 日，2021 可信区块链生态大会在北京召开，宣布了 2021 第五批可信区块链评测结果并颁发了证书，边界智能的创新技术产品再获认可，凭借 IRITA 底层链平台系统顺利通过中国信通院第五批可信区块链评测。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/19.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/e9ZOZ82coE-HVvYHJsa13A
+        },
+        {
+            date: '7月13日',
+            year: '2021',
+            title: 边界智能荣登「2021 全球区块链企业创新 50 强」榜单,
+            description: 7 月 10 日，2021 世界人工智能大会（WAIC）区块链论坛顺利举行，边界智能荣登「2021 全球区块链企业创新 50 强」榜单。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/18.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/u5o0iSbiIl3_WsimzKsx9w
+        },
+        {
+            date: '7月9日',
+            year: '2021',
+            title: 边界智能赢得跨链基金会技术研发合同，作为核心技术贡献者受委托推进跨链开源技术研发,
+            description: 边界智能与跨链基金会（Interchain Foundation，简称 ICF）签订了核心贡献者开发服务协议，本次签约更加明确了边界智能在跨链开源生态中担任的核心贡献团队角色。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/17.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/KDqyzo_YEcXi6Xq9ZKZQtQ
+        },
+        {
+            date: '7月5日',
+            year: '2021',
+            title: 边界智能在南京创新周：IRITA、分布式商业应用、NFT 支持绿色金融等,
+            description: 边界智能出席 2021 南京创新周紫金山创新大会，受邀参加第三届中国区块链技术产业发展峰会、扬子江新金融数字经济研讨会、 江北新区区块链技术应用大会暨万向区块链股份公司落地签约仪式等多场区块链技术会议与论坛，并发表多场主题演讲和圆桌分享。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/16.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/v7RVJrbscsDPqvlV0Zjxkg
+        },
+        {
+            date: '6月29日',
+            year: '2021',
+            title: 解放日报报道：边界智能用前沿技术助力「绿色金融」,
+            description: 解放日报就边界智能运用区块链 NFT 技术、大数据隐私保护技术等前沿科技助力绿色金融等方面的创新工作进行了采访与专题报道。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/15.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s/CryJGjbjXr6ynUlSKzWDvw
         },
         {
             date: '6月24日',

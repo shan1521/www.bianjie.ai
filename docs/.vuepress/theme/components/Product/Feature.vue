@@ -106,7 +106,7 @@ export default {
                 .feature_item {
                     max-width: 46.4rem;
                     min-height: 19.2rem;
-                    border: 0.1rem solid #E1E5F4;
+                    border: 0.05rem solid #E1E5F4;
                     border-radius: 0.4rem;
 
                     .item_title_container {
