@@ -133,13 +133,13 @@ export default {
                 .adv_list_item {
                     box-sizing: border-box;
                     width: 24rem;
-                    height: 26.6rem;
+                    height: 26.5rem;
                     border: 0.1rem solid transparent;
                     border-radius: 0.4rem;
                     overflow: hidden;
                     &:hover {
                         cursor: pointer;
-                        border: 0.1rem solid #0967E9;
+                        border: 0.05rem solid #0967E9;
                         border-bottom: 0.6rem solid #0967E9;
                     }
                     .list_item_wrap {
