@@ -44,7 +44,7 @@
             },
             {
                 title: EVM NFT 智能合约示例,
-                link: https://github.com/bianjieai/bsnhub-service-relayer/blob/master/test-consumers/fisco/NFTServiceConsumer/NFTServiceConsumer.sol
+                link: https://github.com/bianjieai/bsnhub-service-relayer/tree/master/bsn-irita-fisco-relayer/test-consumers/fisco/HelloServiceConsumer
             },
         ]
     },
