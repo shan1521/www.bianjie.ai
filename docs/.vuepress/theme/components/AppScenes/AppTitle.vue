@@ -52,14 +52,20 @@ export default {
 <style lang="stylus">
 .app_title_container {
     width: 100%;
-    min-height: 36rem;
+    height: 36rem;
+    @media (max-width: 420px) {
+        height: 25rem;
+    }
+    
     .app_title_content_container {
-        box-sizing: border-box;
-        padding: 10.4rem 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         margin: 0 auto;
-        max-width: $contentWidth;
+        max-width: 99.2rem;
         height: 100%;
         @media (max-width: 1200px) {
+            box-sizing: border-box;
             padding-left: 4.8rem;
             padding-right: 4.8rem;
         }
@@ -68,11 +74,12 @@ export default {
             padding-right: 1.6rem;
         }
         .app_title_content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;
-            max-width: 99.2rem;
+            width: 100%;
+            @media (max-width: 1200px) {
+                box-sizing: border-box;
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
             .app_title {
                 font-size: $fontSize40;
                 font-weight: $fontWeight500;

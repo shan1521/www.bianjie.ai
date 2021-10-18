@@ -136,7 +136,7 @@
                                     </div>
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
-                                            <a class="abbreviation" v-if="product.link" :href="product.link" target="_blank" rel="noopener noreferrer">{{product.abbreviation}}</a>
+                                            <span class="abbreviation" v-if="product.link" @click="closeSubProdAppMenu(product.link)">{{product.abbreviation}}</span>
                                             <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeSubMenu(index)">{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
@@ -271,6 +271,12 @@ export default {
             this.flShowMobileMenu = false;
             this.$store.commit("subMenu", 0);
         },
+        closeSubProdAppMenu(link) {
+            this.flShowMobileMenu = false;
+            setTimeout(()=>{
+                window.open(`${link}`);
+            },50)
+        },
         menuShowFn(index) {
             if(index === 1) {
                 this.prodMenuShow = true;
@@ -292,7 +298,7 @@ export default {
             this.prodMenuShow = false;
             setTimeout(()=>{
                 window.open(`${link}`);
-            },100)
+            },50)
         }
     },
     watch: {
@@ -334,6 +340,7 @@ export default {
     transition: all .3s linear;
 
     .nav_content {
+        display: -webkit-flex;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -349,10 +356,6 @@ export default {
         @media (max-width: 968px) {
             display: none;
         }
-        @media (max-width: 375px) {
-            padding-left: 1.6rem;
-            padding-right: 1.6rem;
-        }
 
         .nav_logo {
             width: 9.8rem;
@@ -367,6 +370,7 @@ export default {
 
         .nav_list_wrap {
             position: relative;
+            display: -webkit-flex;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -375,6 +379,7 @@ export default {
             font-weight: $fontWeight400;
 
             .nav_list {
+                display: -webkit-flex;
                 display: flex;
                 height: 100%;
 
@@ -474,6 +479,7 @@ export default {
                                     margin-top: 0;
                                 }
                                 .type_wrap {
+                                    display: -webkit-flex;
                                     display: flex;
                                     align-items: center;
                                     height: 2.4rem;
@@ -492,6 +498,7 @@ export default {
                                 }
                                 .type_list {
                                     margin-top: 1.1rem;
+                                    display: -ms-grid;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
                                     grid-column-gap: 4.8rem;
@@ -524,6 +531,7 @@ export default {
                         width: 76rem;
                         background: #fff;
                         .appscenes_scene_list {
+                            display: -ms-grid;
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
                             grid-column-gap: 8.5rem;
@@ -600,13 +608,14 @@ export default {
             display: block;
         }
         .mobile_nav_content {
+            display: -webkit-flex;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-sizing: border-box;
             padding: 0.8rem 4.8rem;
             wdith: 100%;
-            @media (max-width: 400px) {
+            @media (max-width: 420px) {
                 padding: 0.8rem 1.6rem;
             }
             .nav_logo {
@@ -643,10 +652,11 @@ export default {
                         box-sizing: border-box;
                         margin: 0 4.8rem;
                         border-bottom: 0.1rem solid #E1E5F4;
-                        @media (max-width: 400px) {
+                        @media (max-width: 420px) {
                             margin: 0 1.6rem;
                         }
                         .mobile_list_item {
+                            display: -webkit-flex;
                             display: flex;
                             justify-content: space-between;
                             .mobile_item {
@@ -666,7 +676,7 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        @media (max-width: 400px) {
+                        @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
                         }
@@ -695,6 +705,7 @@ export default {
                                 }
                                 .type_list {
                                     margin-top: 1.1rem;
+                                    display: -ms-grid;
                                     display: grid;
                                     grid-template-columns: repeat(3, 1fr);
                                     grid-column-gap: 3.2rem;
@@ -726,11 +737,12 @@ export default {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
                         background: #F5F6FB;
-                        @media (max-width: 400px) {
+                        @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
                         }
                         .appscenes_scene_list {
+                            display: -ms-grid;
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
                             grid-column-gap: 2.4rem;
@@ -779,7 +791,7 @@ export default {
                 padding: 0 4.8rem;
                 height: 4.4rem;
                 line-height: 4.4rem;
-                @media (max-width: 400px) {
+                @media (max-width: 420px) {
                     padding-left: 1.6rem;
                     padding-right: 1.6rem;
                 }

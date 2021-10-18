@@ -54,7 +54,7 @@ export default {
                 color: #000;
                 line-height: 2.4rem;
                 text-align: center;
-                @media (max-width: 375px) {
+                @media (max-width: 400px) {
                     font-size: $fontSize20;
                 }
             }

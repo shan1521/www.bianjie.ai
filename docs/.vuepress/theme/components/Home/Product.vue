@@ -489,12 +489,6 @@ export default {
             }
         }
     }
-    // .product_content_resp {
-    //     // display: none;
-    //     // // @media (max-width: 968px) {
-    //     // //     display: block;
-    //     // // }
-    // }
 
     .product_footer_content {
         width: 100%;

@@ -35,6 +35,7 @@ export default {
         background: url(../../assets/product/iritahub/iritahub_banner_pad.png) no-repeat center / cover;
     }
     @media (max-width: 420px) {
+        height: 25rem;
         background: url(/banner_phone.png) no-repeat center / cover;
     }
 
