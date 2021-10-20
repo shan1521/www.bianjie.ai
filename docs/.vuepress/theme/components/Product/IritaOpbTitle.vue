@@ -4,14 +4,14 @@
             <div class="iritaopb_title_content">
                 <div class="title">{{ iritaopbTitleContent.title }}</div>
                 <div class="sub_title">{{ iritaopbTitleContent.subTitle }}</div>
-                <More class="more_btn" :text="iritaopbTitleContent.moreText" @click.native="goComming"></More>
+                <MoreBlue class="more_btn" :text="iritaopbTitleContent.moreText" @click.native="goComming"></MoreBlue>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import More from "@theme/components/Common/More.vue";
+import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 export default {
     name: "IritaOpbTitle",
     props: ["iritaopbTitleContent"],
@@ -21,7 +21,7 @@ export default {
         }
     },
     components: {
-        More,
+        MoreBlue,
     }
 };
 </script>
@@ -90,8 +90,6 @@ export default {
 
             .more_btn {
                 margin-top: 4rem;
-                border: 0.1rem solid #0967E9;
-                border-radius: 0.2rem;
             }
         }
     }

@@ -91,13 +91,16 @@ export default {
                 .time_right_content {
                     box-sizing: border-box;
                     height: 65.4rem;
-                    overflow-y: auto;
+                    overflow-y: scroll;
+                    scrollbar-color: transparent transparent;
+                    scrollbar-track-color: transparent;
+                    -ms-scrollbar-track-color: transparent;
                     cursor: pointer;
                     &::-webkit-scrollbar {
                         display: none;
                     }
                     .time_wrap {
-                        border-left: 0.1rem solid #D8D8D8;
+                        border-left: 0.05rem solid #D8D8D8;
                         
                         .time_item {
                             margin-top: 3.2rem;

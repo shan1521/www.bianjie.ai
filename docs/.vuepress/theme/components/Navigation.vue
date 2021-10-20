@@ -675,12 +675,15 @@ export default {
                     .products_menu {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
+                        height: 31.2rem;
                         background: #F5F6FB;
+                        overflow-y: auto;
                         @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
                         }
                         .product_type_list {
+
                             .product_type_item {
                                 margin-top: 3.2rem;
                                 &:first-child {
@@ -736,7 +739,9 @@ export default {
                     .appscenes_menu {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
+                        height: 31.2rem;
                         background: #F5F6FB;
+                        overflow-y: auto;
                         @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;

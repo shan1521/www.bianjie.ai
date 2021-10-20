@@ -136,6 +136,7 @@ export default {
                 height: 4rem;
                 border: 0.1rem solid #fff;
                 border-radius: 50%;
+                outline: none;
                 .icon-jiantou_left {
                     display: block;
                     width: 1.2rem;
@@ -176,6 +177,7 @@ export default {
                 height: 4rem;
                 border: 0.1rem solid #FFFFFF;
                 border-radius: 50%;
+                outline: none;
                 .icon-jiantou {
                     display: block;
                     width: 1.2rem;

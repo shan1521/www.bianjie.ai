@@ -8,11 +8,11 @@
                         <p class="irita_title">{{ serviceContent.iritaContent.title }}</p>
                         <p class="desc">{{ serviceContent.iritaContent.subTitle }}</p>
                     </div>
-                    <More
+                    <MoreBlue
                         :text.sync="serviceContent.moreText"
                         class="title_btn"
                         @click.native="clickIritaFn"
-                    ></More>
+                    ></MoreBlue>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="product_content_list">
                 <div class="list_container">
                     <div class="list">
-                        <Prev class="prev_btn" ></Prev>
+                        <Prev class="prev_btn" :style="currentTab === 0 ? 'cursor: not-allowed' : ''" @click.native="currentTab > 0 ? arrowClick('prev')  : ''"></Prev>
                         <swiper class="product_list" :options="swiperOptions" ref="productSwiper">
                             <swiper-slide
                                 class="item"
@@ -64,7 +64,7 @@
                                 </div>
                             </swiper-slide>
                         </swiper>
-                        <Next class="next_btn" ></Next>
+                        <Next class="next_btn" :style="currentTab === (serviceContent.productContent.length - 1) ? 'cursor: not-allowed' : ''" @click.native="currentTab < (serviceContent.productContent.length - 1) ? arrowClick('next')  : ''"></Next>
                     </div>
                 </div>
             </div>
@@ -77,11 +77,9 @@
                         <span class="desc">{{
                             serviceContent.consult.description
                         }}</span>
-                        <More
-                            :text.sync="serviceContent.chatWithUs"
-                            class="chat_btn"
-                            @click.native="updateShowMask"
-                        ></More>
+                        <span class="chat_btn" @click="updateShowMask">
+                            <span class="text">{{serviceContent.chatWithUs}}</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -92,6 +90,7 @@
 
 <script>
 import More from "@theme/components/Common/More.vue";
+import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 import Prev from "@theme/components/Common/Prev.vue";
 import Next from "@theme/components/Common/Next.vue";
 import HomeMask from '@theme/components/Home/HomeMask.vue';
@@ -146,22 +145,32 @@ export default {
         updateShowMask() {
             this.showMask = true;
         },
+        arrowClick(val) {
+            if(val === "next") {
+                if(this.currentTab < this.serviceContent.productContent.length - 1) {
+                    this.$refs.swiperRef.next();
+                    this.$refs.swiperRefSmall.next();
+                }
+            } else if(val === "prev") {
+                if(this.currentTab > 0) {
+                    this.$refs.swiperRef.prev();
+                    this.$refs.swiperRefSmall.prev();
+                }
+            }
+        }
+    },
+    mounted() {
+        this.productSwiper.slideTo(this.currentTab,0);
     },
     components: {
         More,
+        MoreBlue,
         Prev,
         Next,
         HomeMask,
         Swiper, 
         SwiperSlide
     },
-    watch: {
-        'this.productSwiper': {
-            handler(newVal) {
-                console.log(newVal,'我是新值');
-            }
-        }
-    }
 };
 </script>
 
@@ -271,7 +280,6 @@ export default {
                 }
 
                 .title_btn {
-                    border: 0.1rem solid #0967E9;
                     @media (max-width: 920px) {
                         margin-top: 1.6rem;
                     }
@@ -308,10 +316,7 @@ export default {
                     padding: 1.6rem 0;
                     width: 24rem;
                     height: 100%;
-
-                    &:hover {
-                        cursor: pointer;
-                    }
+                    cursor: pointer;
 
                     .irita_img {
                         display: inline-block;
@@ -434,7 +439,7 @@ export default {
 
                                 .desc {
                                     margin-top: 2.4rem;
-                                    max-width: 27.2rem;
+                                    width: 27.2rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight400;
                                     color: rgba(255, 255, 255, 0.75);
@@ -547,8 +552,21 @@ export default {
                     }
 
                     .chat_btn {
-                        border-radius: 0.2rem 0 0 0.2rem;
-                        border: 0.1rem solid #fff;
+                        display: inline-block;
+                        margin-top: 3.6rem;
+                        display: flex;
+                        align-items: center;
+                        width: 12.4rem;
+                        height: 3.2rem;
+                        background: url(../../assets/home/white_outline_icon.png) no-repeat center / cover;
+                        border-radius: 0.2rem;
+                        .text {
+                            margin-left: 2rem;
+                            font-size: $fontSize14;
+                            font-weight: $fontWeight400;
+                            color: #fff;
+                            line-height: 1.4rem;
+                        }
                         @media (max-width: 600px) {
                             margin-top: 1.6rem;
                         }

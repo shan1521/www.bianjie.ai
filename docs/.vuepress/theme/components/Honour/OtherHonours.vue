@@ -123,7 +123,10 @@ export default {
             .otherhonours_list {
                 margin-top: 2.4rem;
                 height: 72rem;
-                overflow-y: auto;
+                overflow-y: scroll;
+                scrollbar-color: transparent transparent;
+                scrollbar-track-color: transparent;
+                -ms-scrollbar-track-color: transparent;
                 &::-webkit-scrollbar {
                     display: none;
                 }

@@ -10,7 +10,7 @@
                     <div class="example_right">
                         <div class="example_text">{{exampleContent.example.text}}</div>
                         <div class="example_desc">{{exampleContent.example.intro}}</div>
-                        <a class="example_link" v-if="!exampleContent.example.route && exampleContent.example.link" :href="exampleContent.example.link">
+                        <a class="example_link" v-if="!exampleContent.example.route && exampleContent.example.link" :href="exampleContent.example.link" target="_blank" rel="noopener noreferrer">
                             <More class="more_btn" :text="exampleContent.moreText"></More>
                         </a>
                         <router-link class="example_link" v-if="exampleContent.example.route" :to="exampleContent.example.route">

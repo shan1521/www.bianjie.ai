@@ -26,18 +26,18 @@
                         </div>
                     </li>
                 </ul>
-                <More
+                <MoreBlue
                     class="control_btn"
                     :text="processContent.controlText"
                     @click.native="goComming"
-                ></More>
+                ></MoreBlue>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import More from "@theme/components/Common/More.vue";
+import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 export default {
     name: "Process",
     props: ["processContent"],
@@ -54,7 +54,7 @@ export default {
         }
     },
     components: {
-        More,
+        MoreBlue,
     },
 };
 </script>
@@ -165,8 +165,6 @@ export default {
 
             .control_btn {
                 margin-top: 5.3rem;
-                border: 0.1rem solid #0967E9;
-                border-radius: 0.2rem;
 
                 .text {
                     margin-left: 1.3rem;
