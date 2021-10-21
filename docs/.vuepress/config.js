@@ -113,4 +113,7 @@ module.exports = {
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
     },
+    plugins: ['@vuepress/pwa', {
+        serviceWorker: true
+    }]
 }

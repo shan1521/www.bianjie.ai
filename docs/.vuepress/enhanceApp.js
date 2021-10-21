@@ -40,8 +40,8 @@ export default async ({
 				store.commit('currentIndex',5)
 				localStorage.setItem('currentIndex',5)
 			}else {
-				localStorage.setItem('currentIndex',0)
 				store.commit('currentIndex',0)
+				localStorage.setItem('currentIndex',0)
 			}
 			next()
 		})

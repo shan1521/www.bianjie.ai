@@ -7,7 +7,7 @@
                     <span class="sub_title">{{ content.subTitle }}</span>
                 </div>
                 <a class="more" v-if="content.moreText" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
-                    <More :text="content.moreText"></More>
+                    <span class="text">{{content.moreText}}</span>
                 </a>
             </div>
         </div>
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import More from "@theme/components/Common/More.vue";
 export default {
     name: "SwiperHome",
     props: ["content", "currentSwiper"],
@@ -34,9 +33,6 @@ export default {
             }
         }
     },
-    components: {
-        More
-    }
 };
 </script>
 
@@ -64,9 +60,21 @@ export default {
                 align-items: center;
             }
             .more {
+                display: inline-block;
                 margin-top: 3.6rem;
-                border: 0.1rem solid #fff;
-                border-radius: 0.4rem;
+                display: flex;
+                align-items: center;
+                width: 12.4rem;
+                height: 3.2rem;
+                background: url(../../assets/home/white_outline_icon.png) no-repeat center / cover;
+                border-radius: 0.2rem;
+                .text {
+                    margin-left: 2rem;
+                    font-size: $fontSize14;
+                    font-weight: $fontWeight400;
+                    color: #fff;
+                    line-height: 1.4rem;
+                }
                 @media (max-width: 400px) {
                     margin-top: 1.6rem;
                 }

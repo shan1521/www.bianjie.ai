@@ -43,14 +43,14 @@
                         </div>
                     </li>
                 </ul>
-                <More class="scene_btn" :text="scenesContent.moreText" @click.native="goAppScenes"></More>
+                <MoreBlue class="scene_btn" :text="scenesContent.moreText" @click.native="goAppScenes"></MoreBlue>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import More from "@theme/components/Common/More.vue";
+import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 import Detail from "@theme/components/Common/Detail.vue";
 export default {
     name: "Scenes",
@@ -68,7 +68,7 @@ export default {
         }
     },
     components: {
-        More,
+        MoreBlue,
         Detail
     },
 };
@@ -293,8 +293,6 @@ export default {
             .scene_btn {
                 margin: 6rem auto 0;
                 max-width: $contentWidth;
-                border: 0.1rem solid #0967E9;
-                border-radius: 0.2rem;
 
                 &:hover {
                     cursor: pointer;

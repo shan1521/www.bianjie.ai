@@ -79,7 +79,7 @@ export default {
                         width: 0.2rem;
                         height: 80%;
                         background: #000000;
-                        opacity: 0.45;
+                        opacity: 0.25;
                     }
                     img {
                         height: 100%;
@@ -136,98 +136,6 @@ export default {
                 }
             }
         }
-        // .bsnwenchang_content {
-        //     display: flex;
-        //     align-items: center;
-        //     margin: 0 auto;
-        //     max-width: 100%;
-        //     height: 100%;
-        //     @media (max-width: 1240px) {
-        //         box-sizing: border-box;
-        //         padding-left: 4.8rem;
-        //         padding-right: 4.8rem;
-        //     }
-        //     @media (max-width: 870px) {
-        //         flex-direction: column;
-        //         padding-top: 1.6rem;
-        //         padding-bottom: 1.6rem;
-        //     }
-        //     @media (max-width: 400px) {
-        //         padding-left: 1.6rem;
-        //         padding-right: 1.6rem;
-        //     }
-        //     .bsn_wenchang_left {
-        //         display: flex;
-        //         align-items: center;
-        //         .bsn_logo {
-        //             height: 3.6rem;
-        //             img {
-        //                 height: 100%;
-        //             }
-        //         }
-        //         .line {
-        //             margin: 0 0.8rem;
-        //             @media (max-width: 870px) {
-        //                 display: none;
-        //             }
-        //         }
-        //         .logo {
-        //             display: flex;
-        //             align-items: center;
-        //             @media (max-width: 870px) {
-        //                 margin-top: 1.6rem;
-        //             }
-        //             img {
-        //                 display: inline-block;
-        //                 width: 3.8rem;
-        //                 height: 3.6rem;
-        //             }
-        //             .logo_text {
-        //                 margin-left: 0.8rem;
-        //                 display: inline-block;
-        //                 font-size: $fontSize16;
-        //                 font-weight: $fontWeight400;
-        //                 color: rgba(0, 0, 0, 0.65);
-        //                 line-height: 1.6rem;
-        //             }
-        //         }
-        //     }
-        //     .bsn-wenchang_desc {
-        //         font-size: $fontSize16;
-        //         font-weight: $fontWeight400;
-        //         color: rgba(0, 0, 0, 0.65);
-        //         line-height: 1.6rem;
-        //         @media (max-width: 870px) {
-        //             margin-top: 1.6rem;
-        //             text-align: center;
-        //             line-height: 2rem;
-        //         }
-        //     }
-        //     .bsn_wenchangchain {
-        //         flex: 1 0;
-        //         display: flex;
-        //         justify-content: space-between;
-        //         align-items: center;
-        //         cursor: pointer;
-        //         @media (max-width: 870px) {
-        //             flex-direction: column;
-        //         }
-        //         .go_chain {
-        //             font-size: $fontSize14;
-        //             font-weight: $fontWeight600;
-        //             color: #0967E9;
-        //             line-height: 1.4rem;
-        //             cursor: pointer;
-        //             @media (max-width: 870px) {
-        //                 margin-top: 1.6rem;
-        //                 text-align: center;
-        //             }
-        //             .text {
-        //                 margin-right: 0.4rem;
-        //             }
-        //         }
-        //     }
-        // }
     }
 }
 </style>

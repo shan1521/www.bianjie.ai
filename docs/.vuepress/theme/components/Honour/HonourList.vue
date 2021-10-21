@@ -149,6 +149,7 @@ export default {
             .swiper-button-prev{
                 position: relative;
                 top: 0;
+                outline: none;
                 @media (max-width: 1200px) {
                     display: none;
                 }
@@ -160,6 +161,7 @@ export default {
             .swiper-button-disabled {
                 cursor: not-allowed;
             }
+            
             .swiper_wrap {
                 margin: 0 6rem;
                 overflow: hidden;
@@ -221,6 +223,8 @@ export default {
             .swiper-button-next{
                 position: relative;
                 top: 0;
+                outline: none;
+
                 @media (max-width: 1200px) {
                     display: none;
                 }

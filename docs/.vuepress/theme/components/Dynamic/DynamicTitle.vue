@@ -25,7 +25,7 @@ export default {
         background: url(../../assets/news_banner_768.png) no-repeat center / cover;
     }
     @media (max-width: 400px) {
-        height: 36rem;
+        height: 25rem;
         background: url(../../assets/other_banner.png) no-repeat center / cover;
     }
 

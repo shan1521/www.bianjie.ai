@@ -97,10 +97,10 @@
                     </div>
                     <div class="content_bottom">
                         <router-link class="more" to="/news">
-                            <More
+                            <MoreBlue
                                 :text="dynamicContent.moreText"
                                 class="more_btn"
-                            ></More>
+                            ></MoreBlue>
                         </router-link>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import More from "@theme/components/Common/More.vue";
+import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 export default {
     name: "Dynamic",
     props: ["dynamicContent"],
@@ -122,7 +122,7 @@ export default {
         },
     },
     components: {
-        More,
+        MoreBlue,
     },
 };
 </script>
@@ -356,12 +356,6 @@ export default {
                     display: flex;
                     justify-content: center;
                     margin-top: 3.2rem;
-                    .more {
-                        .more_btn {
-                            border: 0.1rem solid #0967E9;
-                            border-radius: 0.2rem;
-                        }
-                    }
                 }
             }
         }
