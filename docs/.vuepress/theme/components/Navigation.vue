@@ -46,7 +46,9 @@
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
                                             <span class="abbreviation" v-if="product.link" @click="closeProdAppMenuLink(product.link)" >{{product.abbreviation}}</span>
                                             <!-- <a class="abbreviation" v-if="product.link" @click="closeProdAppMenu" :href="product.link" target="_blank" rel="noopener noreferrer" >{{product.abbreviation}}</a> -->
-                                            <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeProdAppMenu">{{product.abbreviation}}</router-link>
+                                            <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeProdAppMenu">
+                                                <span class="cursor_pointer">{{product.abbreviation}}</span>
+                                            </router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
                                     </ul>
@@ -97,10 +99,10 @@
                     />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
-                    <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
+                    <i class="iconfont icon-caidan iconfont_color" :class="isColor ? 'iconfont_color' : ''"></i>
                 </div>
             </div>
-            <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap" :class="isColor ? 'mobile_white_bg' : ''">
+            <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap mobile_white_bg">
                 <ul class="nav_list">
                     <li
                         v-show="!item.isRight"
@@ -472,6 +474,7 @@ export default {
                         padding: 2.4rem 2.4rem 3.2rem;
                         width: 76rem;
                         background: #fff;
+                        cursor: default;
                         .product_type_list {
                             .product_type_item {
                                 margin-top: 3.2rem;
@@ -510,6 +513,7 @@ export default {
                                             font-weight: $fontWeight500;
                                             color: #0967E9;
                                             line-height: 1.4rem;
+                                            cursor: pointer;
                                         }
                                         .intro {
                                             margin-top: 0.8rem;
@@ -530,6 +534,7 @@ export default {
                         padding: 2.4rem 2.4rem 3.6rem;
                         width: 76rem;
                         background: #fff;
+                        cursor: default;
                         .appscenes_scene_list {
                             display: -ms-grid;
                             display: grid;
@@ -739,12 +744,12 @@ export default {
                     .appscenes_menu {
                         box-sizing: border-box;
                         padding: 2.4rem 4.8rem;
-                        height: 31.2rem;
                         background: #F5F6FB;
                         overflow-y: auto;
                         @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
+                            height: 31.2rem;
                         }
                         .appscenes_scene_list {
                             display: -ms-grid;

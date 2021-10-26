@@ -13,7 +13,7 @@ import IritaOpbIntro from "./IritaOpbIntro.vue";
 import Feature from "./Feature.vue";
 import Process from "./Process.vue";
 export default {
-    name: "IritaHub",
+    name: "IritaOpb",
     computed: {
         iritaopbTitleContent() {
 			return this.$frontmatter.iritaopbTitleContent;
