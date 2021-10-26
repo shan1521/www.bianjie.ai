@@ -150,7 +150,7 @@ export default {
                     }
                     .el-timeline-item__dot {
                         box-sizing: border-box;
-                        left: 10rem;
+                        left: 10.1rem;
                         width: 2.4rem;
                         height: 2.4rem;
                         transform: translateX(-50%);

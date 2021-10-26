@@ -319,6 +319,13 @@ export default {
                         }
                     }
                 }
+                .el-pagination.is-background .el-pager li:not(.disabled).active {
+                    background-color: $nprogressColor;
+                    color: #fff!important;
+                }
+                .el-pagination.is-background .el-pager li:not(.disabled):hover {
+                    color: $nprogressColor;
+                }
             }
         }
     }

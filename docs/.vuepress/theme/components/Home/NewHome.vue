@@ -63,7 +63,7 @@ export default {
 
 <style lang="stylus">
 .home_container {
-    // flex: 1 0;
+    flex: auto;
     width: 100%;
     height: 100%;
 }
