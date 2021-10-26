@@ -459,7 +459,7 @@ export default {
                                     color: #fff;
                                     line-height: 1.4rem;
                                     background: url(../../assets/home/long_without_outline.png) no-repeat center / cover;
-                                    border-radius: 0.4rem;
+                                    border-radius: 0.2rem;
                                 }
 
                                 .name_btn {

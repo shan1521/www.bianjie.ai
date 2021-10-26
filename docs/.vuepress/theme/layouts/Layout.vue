@@ -209,7 +209,11 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     width: 100%;
     height: 100%;
+    .main_container {
+        flex: auto;
+    }
 }
 </style>

@@ -99,6 +99,7 @@ export default {
                             line-height: 2.4rem;
                             text-align: center;
                             background: #fff;
+                            white-space: nowrap;
                         }
                     }
 

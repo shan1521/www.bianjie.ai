@@ -29,7 +29,7 @@
                         :key="index"
                     >
                         <span class="item_content">
-                            <img
+                            <img class="example_icon"
                                 src="../../assets/product/iritaopb/example_icon.png"
                                 alt=""
                             />
@@ -243,7 +243,9 @@ export default {
                             }
                         }
                     }
-
+                    .example_icon {
+                        width: 50px;
+                    }
                 }
             }
         }
