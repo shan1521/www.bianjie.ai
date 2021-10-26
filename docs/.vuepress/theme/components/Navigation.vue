@@ -99,7 +99,7 @@
                     />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
-                    <i class="iconfont icon-caidan iconfont_color" :class="isColor ? 'iconfont_color' : ''"></i>
+                    <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
                 </div>
             </div>
             <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap mobile_white_bg">
