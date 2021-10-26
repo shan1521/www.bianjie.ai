@@ -35,12 +35,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '区块链跨链服务枢纽',
-                                route: '/products/IRITAHUB'
+                                route: '/products/iritahub'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '基于智能合约的开放联盟链产品',
-                                route: '/products/IRITAOPB'
+                                route: '/products/iritaopb'
                             },
                             {
                                 abbreviation: 'BSN 文昌链',
@@ -56,12 +56,12 @@ module.exports = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '保护数据隐私的数据共享平台',
-                                route: '/products/IRITABEAN'
+                                route: '/products/iritabean'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换平台',
-                                route: '/products/IRITADA'
+                                route: '/products/iritada'
                             },
                         ]
                     },
