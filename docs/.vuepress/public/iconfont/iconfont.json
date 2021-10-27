@@ -1,0 +1,142 @@
+{
+  "id": "2765226",
+  "name": "Bianjie v3.0",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24590753",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e721",
+      "unicode_decimal": 59169
+    },
+    {
+      "icon_id": "24590651",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "24589652",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e71d",
+      "unicode_decimal": 59165
+    },
+    {
+      "icon_id": "24438202",
+      "name": "物联网",
+      "font_class": "wulianwang",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "24438201",
+      "name": "版权",
+      "font_class": "banquan",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "24438196",
+      "name": "金融",
+      "font_class": "jinrong",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
+      "icon_id": "24438195",
+      "name": "医疗",
+      "font_class": "yiliao",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "24438176",
+      "name": "碳",
+      "font_class": "tan",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "24438165",
+      "name": "政务",
+      "font_class": "zhengwu",
+      "unicode": "e717",
+      "unicode_decimal": 59159
+    },
+    {
+      "icon_id": "24230720",
+      "name": "应用层",
+      "font_class": "yingyongceng",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "24230645",
+      "name": "底层",
+      "font_class": "diceng",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "24036870",
+      "name": "jiantou_left",
+      "font_class": "jiantou_left",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "23867565",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "23811097",
+      "name": "IRITA DA",
+      "font_class": "a-IRITADA",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "23811080",
+      "name": "IRITA BEAN",
+      "font_class": "a-IRITABEAN",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "23811054",
+      "name": "IRITA OPB",
+      "font_class": "a-IRITAOPB",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "23811031",
+      "name": "IRITA HUB",
+      "font_class": "a-IRITAHUB",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "23811017",
+      "name": "IRITA CE",
+      "font_class": "a-IRITACE",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "23810930",
+      "name": "learn more",
+      "font_class": "a-learnmore",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    }
+  ]
+}
