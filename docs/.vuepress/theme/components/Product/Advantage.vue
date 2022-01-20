@@ -7,6 +7,7 @@
                     <li
                         class="adv_item"
                         v-for="(item, index) in advantageContent.advList"
+                        :key="index"
                     >
                         <div class="item_img_container">
                             <div class="item_img">
