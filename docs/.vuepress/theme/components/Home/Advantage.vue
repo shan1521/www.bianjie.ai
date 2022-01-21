@@ -7,24 +7,17 @@
                     <li class="adv_list_item"
                         v-for="(item, index) in advantageContent.advList"
                         :key="index">
-                        <div class="list_item_wrap">
-                            <!-- <div class="list_item_top"> -->
-                                <div class="list_item_top_img">
-                                    <img class="img"
-                                        :src="differentAdvantageImg(item.img)"
-                                        alt="" />
-                                </div>
-                                <div class="list_item_top_intro">
-                                    <!-- <span class="intro">{{ item.intro }}</span> -->
-                                </div>
-                            <!-- </div> -->
-                            <div class="list_item_bottom">
-                                <div class="list_item_bottom_intro">
-                                    <span class="intro">{{ item.intro }}</span>
-                                </div>
-                                <div class="list_item_bottom_desc">
-                                    <span class="desc">{{ item.description }}</span>
-                                </div>
+                        <div class="list_item_top">
+                            <img class="img"
+                                :src="differentAdvantageImg(item.img)"
+                                alt="" />
+                        </div>
+                        <div class="list_item_bottom">
+                            <div class="list_item_bottom_intro">
+                                <span class="intro">{{ item.intro }}</span>
+                            </div>
+                            <div class="list_item_bottom_desc">
+                                <span class="desc">{{ item.description }}</span>
                             </div>
                         </div>
                     </li>
@@ -49,7 +42,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .advantage_container {
     width: 100%;
     min-height: 53.6rem;
@@ -79,7 +72,7 @@ export default {
                 max-width: 51.2rem;
             }
 
-            @media (max-width: 512px) {
+            @media (max-width: 608px) {
                 max-width: 24rem;
             }
 
@@ -126,7 +119,7 @@ export default {
                     grid-row-gap: 3.2rem;
                 }
 
-                @media (max-width: 512px) {
+                @media (max-width: 608px) {
                     grid-template-columns: repeat(1, 1fr);
                     grid-row-gap: 1.6rem;
                 }
@@ -138,87 +131,50 @@ export default {
                 .adv_list_item {
                     box-sizing: border-box;
                     width: 24rem;
-                    height: 35.6rem;
+                    min-height: 35.6rem;
                     border: 0.1rem solid transparent;
                     border-radius: 0.4rem;
-                    overflow: hidden;
+                    .list_item_top {
+                        width: 100%;
+                        height: 14.6rem;
+                        img {
+                            width: 100%;
+                            border-radius: 0.4rem 0.4rem 0 0;
+                        }
+                    }
 
-                    // &:hover {
-                    //     cursor: pointer;
-                    //     border: 0.05rem solid #0967E9;
-                    //     border-bottom: 0.6rem solid #0967E9;
-                    // }
+                    .list_item_bottom {
+                        box-sizing: border-box;
+                        padding: 1.6rem;
+                        min-height: 21rem;
+                        background: #fff;
 
-                    .list_item_wrap {
-                        position: relative;
-                         height: 35.6rem;
-
-                        .list_item_top {
-                            .list_item_top_img {
-                              height: 14.6rem;
-                                width: 100%;
-                                font-size: 0;
-
-                                img {
-                                    width: 100%;
-                                    border-radius: 0.4rem 0.4rem 0 0;
-                                }
+                        .list_item_bottom_intro {
+                            .intro {
+                                font-size: $fontSize16;
+                                font-weight: $fontWeight600;
+                                color: #000;
+                                line-height: 2.4rem;
+                                letter-spacing: 0.1rem;
                             }
-
-                            // .list_item_top_intro {
-                            //     box-sizing: border-box;
-                            //     padding: 1.6rem 3.2rem 2.4rem;
-                            //     height: 8.8rem;
-                            //     border: 0.1rem solid #E1E5F4;
-                            //     border-top: 0;
-
-                            //     .intro {
-                            //         font-size: $fontSize16;
-                            //         font-weight: $fontWeight600;
-                            //         color: #000;
-                            //         line-height: 2.4rem;
-                            //         letter-spacing: 0.1rem;
-                            //     }
-                            // }
                         }
 
-                        .list_item_bottom {
-                            height: 21rem;
-                            position: absolute;
-                            background: #fff;
-
-                            .list_item_bottom_intro {
-                                box-sizing: border-box;
-                                padding: 1.6rem 3.2rem;
-
-                                .intro {
-                                    font-size: $fontSize16;
-                                    font-weight: $fontWeight600;
-                                    color: #000;
-                                    line-height: 2.4rem;
-                                    letter-spacing: 0.1rem;
-                                }
+                        .list_item_bottom_desc {
+                            margin-top: 1.6rem;
+                            &::before {
+                                content: '';
+                                display: block;
+                                margin: 0 auto 0.8rem;
+                                width: 12rem;
+                                height: 0.1rem;
+                                background: #EDEDED;
                             }
 
-                            .list_item_bottom_desc {
-                                box-sizing: border-box;
-                                padding: 0.7rem 1.4rem 1rem;
-
-                                &::before {
-                                    content: '';
-                                    display: block;
-                                    margin: 0 auto 0.8rem;
-                                    width: 12rem;
-                                    height: 0.1rem;
-                                    background: #EDEDED;
-                                }
-
-                                .desc {
-                                    font-size: $fontSize14;
-                                    font-weight: $fontWeight400;
-                                    color: #000000;
-                                    line-height: 2.6rem;
-                                }
+                            .desc {
+                                font-size: $fontSize14;
+                                font-weight: $fontWeight400;
+                                color: #000000;
+                                line-height: 2.6rem;
                             }
                         }
                     }
