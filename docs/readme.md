@@ -22,7 +22,7 @@
         },
     ],
     bsnWenchangchain: {
-        description: BSN 文昌链是 BSN 基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+        description: BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
         moreText: 前往上链
     },
     advantageContent: {
@@ -61,7 +61,7 @@
                 icon: IRITACE.png,
                 name: IRITA CE,
                 intro: 开源版本,
-                description: IRITA Community Edition  属于开源版本，可以供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等,
+                description: IRITA Community Edition 属于开源版本，供开发者学习、快速上手熟悉 IRITA 的体系架构、并部署行业验证应用系统等,
                 moreText: 开源社区 GitHub,
                 link: https://github.com/bianjieai/irita,
                 imgName: IRITACE_banner.png
@@ -70,7 +70,7 @@
                 icon: IRITAHUB.png,
                 name: IRITA HUB,
                 intro: 异构区块链跨链服务枢纽,
-                description: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据安全共享和跨链服务调用,
+                description: 基于先进的跨链技术、IBC 协议和 Tendermint 共识机制，支持各种异构区块链网络及链外系统间的跨链资产交换/转移及信息安全验证，支持跨链数据安全共享和跨链服务调用,
                 moreText: 了解更多,
                 route: /products/iritahub,
                 imgName: IRITAHUB_banner.png
@@ -79,7 +79,7 @@
                 icon: IRITAOPB.png,
                 name: IRITA OPB,
                 intro: 基于智能合约的开放联盟链,
-                description: 支持智能合约应用开发的开放许可应用链，基于 IRITA 的成熟技术框架，联合联盟伙伴提供低成本分布式账本服务，提供安全丰富的区块链功能和接口，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
+                description: 支持复杂分布式商业应用系统的开放许可链，集成了包括资产数字化 NFT 技术、大数据隐私保护等功能，提供智能合约的编程环境，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
                 moreText: 了解更多,
                 route: /products/iritaopb,
                 imgName: IRITAOPB_banner.png
@@ -88,14 +88,14 @@
                 icon: IRITABEAN.png,
                 name: IRITA BEAN,
                 intro: 保护数据隐私的数据共享平台,
-                description: 专注于大数据隐私保护和边缘计算分析的产品，集成主流开源隐私计算框架，实现了大数据多层次授权共享、多方隐私保护查询、多方联盟学习等能力；支持对数据和业务流程全生命周期进行监管，实现数据隐私保护及可信流转。可用于物联网、医疗健康等数据共享管理平台,
+                description: 专注于大数据隐私保护，集成主流开源隐私计算框架，实现了大数据多层次授权、多方隐私保护查询、联邦学习等能力；支持对数据和业务流程全生命周期进行监管，实现数据隐私保护及可信流转。可用于物联网、政务协作、医疗健康等业务场景,
                 imgName: IRITABEAN_banner.png
             },
             {
                 icon: IRITADA.png,
                 name: IRITA DA,
                 intro: 资产数字化确权及交换平台,
-                description: 专注于支持 NFT 的登记、确权及可信交换的产品；支持实体资产在链上的数字化建模和全生命周期管理；实现智能合约驱动实体经济相关流程的自动化运行，降低沟通与业务运营成本,
+                description: 以NFT技术为基础，支持多元化资产在链上的数字化建模、确权、可信交换及全生命周期管理，并实现以智能合约驱动实体经济相关流程的自动化运行，降低业务运营成本,
                 imgName: IRITADA_banner.png
             },
         ],
