@@ -146,11 +146,14 @@ export default {
                     text-align: center;
                     line-height: 2rem;
                 }
+                &:hover {
+                  color: #7065FF;
+                }
             }
 
-            .bsn-wenchang_desc:hover {
-                color: #7065FF;
-            }
+            // .bsn-wenchang_desc:hover {
+            //     color: #7065FF;
+            // }
 
             .go_chain {
                 display: flex;

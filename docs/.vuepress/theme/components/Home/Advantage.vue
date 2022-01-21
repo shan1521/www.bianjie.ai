@@ -8,16 +8,16 @@
                         v-for="(item, index) in advantageContent.advList"
                         :key="index">
                         <div class="list_item_wrap">
-                            <div class="list_item_top">
+                            <!-- <div class="list_item_top"> -->
                                 <div class="list_item_top_img">
                                     <img class="img"
                                         :src="differentAdvantageImg(item.img)"
                                         alt="" />
                                 </div>
                                 <div class="list_item_top_intro">
-                                    <span class="intro">{{ item.intro }}</span>
+                                    <!-- <span class="intro">{{ item.intro }}</span> -->
                                 </div>
-                            </div>
+                            <!-- </div> -->
                             <div class="list_item_bottom">
                                 <div class="list_item_bottom_intro">
                                     <span class="intro">{{ item.intro }}</span>
@@ -143,25 +143,19 @@ export default {
                     border-radius: 0.4rem;
                     overflow: hidden;
 
-                    &:hover {
-                        // cursor: pointer;
-                        // border: 0.05rem solid #0967E9;
-                        // border-bottom: 0.6rem solid #0967E9;
-                    }
+                    // &:hover {
+                    //     cursor: pointer;
+                    //     border: 0.05rem solid #0967E9;
+                    //     border-bottom: 0.6rem solid #0967E9;
+                    // }
 
                     .list_item_wrap {
                         position: relative;
-
-                        &:hover {
-                            . {
-                                // -webkit-animation: bottomToTop 0.25s ease-in-out;
-                                // animation: bottomToTop 0.25s ease-in-out;
-                                // animation-fill-mode: forwards;
-                            }
-                        }
+                         height: 35.6rem;
 
                         .list_item_top {
                             .list_item_top_img {
+                              height: 14.6rem;
                                 width: 100%;
                                 font-size: 0;
 
@@ -171,24 +165,25 @@ export default {
                                 }
                             }
 
-                            .list_item_top_intro {
-                                box-sizing: border-box;
-                                padding: 1.6rem 3.2rem 2.4rem;
-                                height: 8.8rem;
-                                border: 0.1rem solid #E1E5F4;
-                                border-top: 0;
+                            // .list_item_top_intro {
+                            //     box-sizing: border-box;
+                            //     padding: 1.6rem 3.2rem 2.4rem;
+                            //     height: 8.8rem;
+                            //     border: 0.1rem solid #E1E5F4;
+                            //     border-top: 0;
 
-                                .intro {
-                                    font-size: $fontSize16;
-                                    font-weight: $fontWeight600;
-                                    color: #000;
-                                    line-height: 2.4rem;
-                                    letter-spacing: 0.1rem;
-                                }
-                            }
+                            //     .intro {
+                            //         font-size: $fontSize16;
+                            //         font-weight: $fontWeight600;
+                            //         color: #000;
+                            //         line-height: 2.4rem;
+                            //         letter-spacing: 0.1rem;
+                            //     }
+                            // }
                         }
 
                         .list_item_bottom {
+                            height: 21rem;
                             position: absolute;
                             background: #fff;
 
