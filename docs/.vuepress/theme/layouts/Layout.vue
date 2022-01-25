@@ -1,14 +1,13 @@
 <template>
-    <div
-        class="theme-container"
-        :class="pageClasses"
-    >
+    <div class="theme-container"
+        :class="pageClasses">
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
         <ClientOnly>
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
+
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
@@ -22,8 +21,13 @@
                 <Join v-if="$page.frontmatter.isJoin"></Join>
                 <AppScenes v-if="showApp"></AppScenes>
                 <Markdown :showMd="showMd"></Markdown>
+                <ClientOnly>
+                    <Contact></Contact>
+                </ClientOnly>
+
             </div>
         </ClientOnly>
+
         <ClientOnly>
             <Footer></Footer>
         </ClientOnly>
@@ -47,6 +51,7 @@ import Join from "@theme/components/Join/Join.vue";
 import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
+import Contact from "@theme/components/Contact.vue";
 
 import { resolveSidebarItems } from "../util";
 const nav = require("../../config.js");
@@ -62,24 +67,27 @@ export default {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
-        showApp(){
-            if(this.$route.path === '/applications/e-licence.html') {
-                return '$page.frontmatter.isELicence';
+        showApp() {
+            if (this.$route.path === "/applications/e-licence.html") {
+                return "$page.frontmatter.isELicence";
             }
-            if(this.$route.path === '/applications/trade-finance.html') {
-                return '$page.frontmatter.isTradeFinance';
+            if (this.$route.path === "/applications/trade-finance.html") {
+                return "$page.frontmatter.isTradeFinance";
             }
-            if(this.$route.path === '/applications/C-trading.html') {
-                return '$page.frontmatter.isCTrading';
+            if (this.$route.path === "/applications/C-trading.html") {
+                return "$page.frontmatter.isCTrading";
             }
-            if(this.$route.path === '/applications/digital-art.html') {
-                return '$page.frontmatter.isDigitalArt';
+            if (this.$route.path === "/applications/digital-art.html") {
+                return "$page.frontmatter.isDigitalArt";
             }
-            if(this.$route.path === '/applications/e-prescription-circulation.html') {
-                return '$page.frontmatter.isEPC';
+            if (
+                this.$route.path ===
+                "/applications/e-prescription-circulation.html"
+            ) {
+                return "$page.frontmatter.isEPC";
             }
-            if(this.$route.path === '/applications/datacollection.html') {
-                return '$page.frontmatter.isDataCollection';
+            if (this.$route.path === "/applications/datacollection.html") {
+                return "$page.frontmatter.isDataCollection";
             }
         },
 
@@ -95,8 +103,7 @@ export default {
             ];
         },
     },
-    methods: {
-    },
+    methods: {},
     mounted() {
         this.$router.afterEach(() => {
             this.isSidebarOpen = false;
@@ -132,6 +139,7 @@ export default {
         Markdown,
         AppScenes,
         Footer,
+        Contact,
     },
 };
 </script>
@@ -145,8 +153,9 @@ export default {
     min-height: 100vh;
     width: 100%;
     height: 100%;
+
     .main_container {
-        flex: auto;
+        flex: 1;
     }
 }
 </style>
