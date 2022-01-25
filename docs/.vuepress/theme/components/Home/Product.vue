@@ -14,6 +14,52 @@
                 </div>
             </div>
         </div>
+
+        <div class="product_content">
+            <!-- 列表 -->
+            <div class="product_name_list_wrap">
+                <ul class="product_name_list">
+                    <li class="name_item"
+                        v-for="(item, index) in serviceContent.productContent"
+                        :key="index"
+                        @mouseover="showFn(index)">
+                        <span class="irita_img">
+                            <img :src="differentImg(item.icon)"></img>
+                        </span>
+                        <div class="irita_desc">
+                            <span class="name">{{ item.name }}</span>
+                            <div class="intro">{{ item.intro }}</div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product_content_list">
+                <div class="list_container">
+                    <div class="list"
+                        v-for="(item, index) in serviceContent.productContent"
+                        :key="index">
+                        <div v-show="showList==index">
+                            <div class="list_top">
+                                <span>{{item.intro}}</span>
+                                <span>-</span>
+                                <span>{{item.name}}</span>
+                            </div>
+                            <div class="list_center">{{item.description}}</div>
+                            <div class=list_footer>
+                                <span class="left"></span>
+                                <span class="right">
+                                    <img :src="differentImg(item.imgName)"
+                                        alt="" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <HomeMask v-if="showMask"
             :showMask.sync="showMask"></HomeMask>
     </div>
@@ -33,6 +79,7 @@ export default {
     data() {
         const that = this;
         return {
+            showList: 0,
             showMask: false,
             swiperOptions: {
                 initialSlide: this.currentTab,
@@ -66,6 +113,10 @@ export default {
         },
     },
     methods: {
+        showFn(index) {
+            // console.log("123");
+            this.showList = index;
+        },
         clickIritaFn() {
             window.open("https://irita.bianjie.ai/");
         },
@@ -110,6 +161,9 @@ export default {
 
 <style lang="stylus">
 .product_container {
+    background: url('../../assets/home/hxnlyys_bg.png') no-repeat center / cover;
+    height: 74.6rem;
+    margin: 0 auto;
     width: 100%;
 
     .product_title_content {
@@ -124,23 +178,6 @@ export default {
 
         @media (max-width: 375px) {
             padding: 4rem 0 0;
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            margin-top: 3.2rem;
-            width: 100%;
-            height: 0.2rem;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0), #CCD5EF, rgba(255, 255, 255, 0));
-
-            @media (max-width: 768px) {
-                margin-top: 2.4rem;
-            }
-
-            @media (max-width: 375px) {
-                margin-top: 1.6rem;
-            }
         }
 
         .title_content {
@@ -229,6 +266,142 @@ export default {
                 .title_btn {
                     @media (max-width: 920px) {
                         margin-top: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .product_content {
+        margin-top: 4.8rem;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+
+        .product_name_list_wrap {
+            margin-right: 1.6rem;
+
+            @media (max-width: 768px) {
+                overflow-x: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+            .product_name_list {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                max-width: $contentWidth;
+
+                @media (max-width: 768px) {
+                    width: 800px;
+                }
+
+                .name_item {
+                    margin-bottom: 0.8rem;
+                    background: #FFFFFF;
+
+                    &:hover {
+                        .intro {
+                            color: rgba(255, 255, 255, 0.75);
+                        }
+
+                        .name {
+                            color: #FFFFFF;
+                        }
+
+                        background: #0967E9;
+                        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.04);
+                        border-radius: 2px;
+                    }
+
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    padding: 1.6rem 0;
+                    width: 45.6rem;
+                    // height: 6, 8rem;
+                    cursor: pointer;
+
+                    .irita_img {
+                        padding-left: 2rem;
+                        display: inline-block;
+                        width: 3.6rem;
+                        height: 3.6rem;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .intro {
+                        margin-left: 1.6rem;
+                        margin-top: 0.8rem;
+                        font-size: 1.4rem;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.75);
+                        line-height: 1.4rem;
+                    }
+
+                    .name {
+                        margin-left: 1.6rem;
+                        font-size: $fontSize16;
+                        font-weight: $fontWeight600;
+                        color: #000;
+                        line-height: 1.6rem;
+                    }
+
+                    .activeName {
+                        color: #0967E9;
+                    }
+                }
+            }
+        }
+
+        .product_content_list {
+            // background: #FFFFFF;
+            box-shadow: 0 0 1.8rem 0 rgba(0, 0, 0, 0.04);
+            background: linear-gradient(175deg, rgba(255, 255, 255, 0) 0%, #E9F1FD 100%);
+            border-radius: 0.4rem;
+
+            .list_container {
+                width: 58.4rem;
+                height: 37.2rem;
+                opacity: 0.79;
+
+                .list {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+
+                    .list_top {
+                        margin-top: 4rem;
+                        height: 1.6rem;
+                        font-size: 1.6rem;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.85);
+                        line-height: 1.6rem;
+                    }
+
+                    .list_center {
+                        margin-top: 1.6rem;
+                        width: 48rem;
+                        font-size: 14px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.85);
+                        line-height: 2.4rem;
+                    }
+
+                    .right img {
+                        width: 31.8rem;
+                        height: 18.4rem;
                     }
                 }
             }
