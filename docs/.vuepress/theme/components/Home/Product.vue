@@ -161,6 +161,7 @@ export default {
 
 <style lang="stylus">
 .product_container {
+    margin: 0 auto;
     width: 100%;
 
     .product_title_content {
@@ -175,23 +176,6 @@ export default {
 
         @media (max-width: 375px) {
             padding: 4rem 0 0;
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            margin-top: 3.2rem;
-            width: 100%;
-            height: 0.2rem;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0), #CCD5EF, rgba(255, 255, 255, 0));
-
-            @media (max-width: 768px) {
-                margin-top: 2.4rem;
-            }
-
-            @media (max-width: 375px) {
-                margin-top: 1.6rem;
-            }
         }
 
         .title_content {
@@ -287,11 +271,14 @@ export default {
     }
 
     .product_content {
+        margin-top: 4.8rem;
         justify-content: center;
         display: flex;
         width: 100%;
 
         .product_name_list_wrap {
+            margin-right: 1.6rem;
+
             @media (max-width: 768px) {
                 overflow-x: auto;
 
@@ -314,7 +301,10 @@ export default {
 
                 .name_item {
                     &:hover {
-                        .intro{color: rgba(255, 255, 255, 0.75);}
+                        .intro {
+                            color: rgba(255, 255, 255, 0.75);
+                        }
+
                         .name {
                             color: #FFFFFF;
                         }
