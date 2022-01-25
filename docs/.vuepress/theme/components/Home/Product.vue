@@ -26,7 +26,7 @@
                         <span class="irita_img">
                             <img :src="differentImg(item.icon)"></img>
                         </span>
-                        <div>
+                        <div class="irita_desc">
                             <span class="name">{{ item.name }}</span>
                             <div class="intro">{{ item.intro }}</div>
                         </div>
@@ -161,6 +161,8 @@ export default {
 
 <style lang="stylus">
 .product_container {
+    background: url('../../assets/home/hxnlyys_bg.png') no-repeat center / cover;
+    height: 74.6rem;
     margin: 0 auto;
     width: 100%;
 
@@ -300,6 +302,9 @@ export default {
                 }
 
                 .name_item {
+                    margin-bottom: 0.8rem;
+                    background: #FFFFFF;
+
                     &:hover {
                         .intro {
                             color: rgba(255, 255, 255, 0.75);
@@ -319,10 +324,11 @@ export default {
                     align-items: center;
                     padding: 1.6rem 0;
                     width: 45.6rem;
-                    height: 6, 8rem;
+                    // height: 6, 8rem;
                     cursor: pointer;
 
                     .irita_img {
+                        padding-left: 2rem;
                         display: inline-block;
                         width: 3.6rem;
                         height: 3.6rem;
@@ -332,8 +338,18 @@ export default {
                         }
                     }
 
+                    .intro {
+                        margin-left: 1.6rem;
+                        margin-top: 0.8rem;
+                        font-size: 1.4rem;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.75);
+                        line-height: 1.4rem;
+                    }
+
                     .name {
-                        margin-left: 1.2rem;
+                        margin-left: 1.6rem;
                         font-size: $fontSize16;
                         font-weight: $fontWeight600;
                         color: #000;
@@ -348,14 +364,14 @@ export default {
         }
 
         .product_content_list {
-            background: #FFFFFF;
+            // background: #FFFFFF;
             box-shadow: 0 0 1.8rem 0 rgba(0, 0, 0, 0.04);
+            background: linear-gradient(175deg, rgba(255, 255, 255, 0) 0%, #E9F1FD 100%);
             border-radius: 0.4rem;
 
             .list_container {
-                width: 52.8rem;
-                height: 33.8rem;
-                background: linear-gradient(175deg, rgba(255, 255, 255, 0) 0%, #E9F1FD 100%);
+                width: 58.4rem;
+                height: 37.2rem;
                 opacity: 0.79;
 
                 .list {
@@ -364,6 +380,7 @@ export default {
                     align-content: center;
 
                     .list_top {
+                        margin-top: 4rem;
                         height: 1.6rem;
                         font-size: 1.6rem;
                         font-family: PingFangSC-Semibold, PingFang SC;
@@ -373,6 +390,7 @@ export default {
                     }
 
                     .list_center {
+                        margin-top: 1.6rem;
                         width: 48rem;
                         font-size: 14px;
                         font-family: PingFangSC-Regular, PingFang SC;
