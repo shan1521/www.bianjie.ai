@@ -46,6 +46,7 @@ export default {
 
 <style lang="stylus">
 .bsnwenchang_container {
+    box-shadow: 0px 0px 12px 0px rgba(7, 24, 78, 0.08);
     width: 100%;
     height: 7.2rem;
 
@@ -140,8 +141,9 @@ export default {
                 font-weight: $fontWeight400;
                 color: rgba(0, 0, 0, 0.65);
                 line-height: 1.6rem;
+
                 &:hover {
-                  color: $highlightDetailColor;
+                    color: $highlightDetailColor;
                 }
 
                 @media (max-width: 870px) {
