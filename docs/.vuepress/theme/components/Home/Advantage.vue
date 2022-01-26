@@ -98,7 +98,7 @@ export default {
                     margin-top: 2.4rem;
                     width: 8rem;
                     height: 0.4rem;
-                    background: #0967E9;
+                    background: $highlightDetailColor;
 
                     @media (max-width: 400px) {
                         margin-top: 1.6rem;
@@ -132,7 +132,7 @@ export default {
                     box-sizing: border-box;
                     width: 24rem;
                     min-height: 35.6rem;
-                    border: 0.1rem solid transparent;
+                    border: 0.1rem solid #E1E5F4;
                     border-radius: 0.4rem;
                     .list_item_top {
                         width: 100%;

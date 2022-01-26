@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isHonour: true,
-    title: 荣誉资质-关于边界,
+    title: 关于边界-荣誉资质,
     aboutTitle: {
         title: 关于边界,
         subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司

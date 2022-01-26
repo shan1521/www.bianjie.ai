@@ -88,7 +88,7 @@ export default {
                         margin-top: 4rem;
                     }
                     a {
-                        color: #0967E9;
+                        color: $highlightDetailColor;
                     }
                 }
             }

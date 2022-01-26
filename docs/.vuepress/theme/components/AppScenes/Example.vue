@@ -137,7 +137,7 @@ export default {
                         display: inline-block;
                         margin-top: 2.4rem;
                         .more_btn {
-                            border: 0.1rem solid #0967E9;
+                            border: 0.1rem solid $highlightDetailColor;
                             border-radius: 0.2rem;
                         }
                     }

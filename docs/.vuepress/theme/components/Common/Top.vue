@@ -18,12 +18,12 @@ export default {
     box-sizing: border-box;
     width: 2.4rem;
     height: 2.4rem;
-    border: 0.2rem solid #0967E9;
+    border: 0.2rem solid $highlightDetailColor;
     border-radius: 50%;
 
     .iconfont {
         font-size: $fontSize12;
-        color: #0967E9;
+        color: $highlightDetailColor;
     }
 }
 </style>

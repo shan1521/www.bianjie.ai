@@ -58,6 +58,7 @@
         },
         productContent: [
             {
+                iconClass: icon-CE,
                 icon: IRITACE.png,
                 name: IRITA CE,
                 intro: 开源版本,
@@ -67,6 +68,7 @@
                 imgName: IRITACE_banner.png
             },
             {
+                iconClass: icon-HUB,
                 icon: IRITAHUB.png,
                 name: IRITA HUB,
                 intro: 异构区块链跨链服务枢纽,
@@ -76,26 +78,29 @@
                 imgName: IRITAHUB_banner.png
             },
             {
+                iconClass: icon-OPB,
                 icon: IRITAOPB.png,
                 name: IRITA OPB,
-                intro: 基于智能合约的开放联盟链,
+                intro: 支持分布式商业应用的开放许可链,
                 description: 支持复杂分布式商业应用系统的开放许可链，集成了包括资产数字化 NFT 技术、大数据隐私保护等功能，提供智能合约的编程环境，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
                 moreText: 了解更多,
                 route: /products/iritaopb,
                 imgName: IRITAOPB_banner.png
             },
             {
+                iconClass: icon-BEAN,
                 icon: IRITABEAN.png,
                 name: IRITA BEAN,
-                intro: 保护数据隐私的数据共享平台,
+                intro: 数据隐私保护及共享产品,
                 description: 专注于大数据隐私保护，集成主流开源隐私计算框架，实现了大数据多层次授权、多方隐私保护查询、联邦学习等能力；支持对数据和业务流程全生命周期进行监管，实现数据隐私保护及可信流转。可用于物联网、政务协作、医疗健康等业务场景,
                 imgName: IRITABEAN_banner.png
             },
             {
+                iconClass: icon-DA,
                 icon: IRITADA.png,
                 name: IRITA DA,
-                intro: 资产数字化确权及交换平台,
-                description: 以NFT技术为基础，支持多元化资产在链上的数字化建模、确权、可信交换及全生命周期管理，并实现以智能合约驱动实体经济相关流程的自动化运行，降低业务运营成本,
+                intro: 资产数字化确权及交换产品,
+                description: 以 NFT 技术为基础，支持多元化资产在链上的数字化建模、确权、可信交换及全生命周期管理，并实现以智能合约驱动实体经济相关流程的自动化运行，降低业务运营成本,
                 imgName: IRITADA_banner.png
             },
         ],

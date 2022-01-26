@@ -446,7 +446,7 @@ export default {
                                 bottom: 0;
                                 width: 100%;
                                 height: 0.2rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
                         }
                     }
@@ -463,7 +463,7 @@ export default {
                             bottom: 0;
                             width: 100%;
                             height: 0.2rem;
-                            background: #0967E9;
+                            background: $highlightDetailColor;
                         }
                     }
 
@@ -511,7 +511,7 @@ export default {
                                             display: block;
                                             font-size: $fontSize14;
                                             font-weight: $fontWeight500;
-                                            color: #0967E9;
+                                            color: $highlightDetailColor;
                                             line-height: 1.4rem;
                                             cursor: pointer;
                                         }
@@ -568,7 +568,7 @@ export default {
                                     margin-top: 1.2rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight500;
-                                    color: #0967E9;
+                                    color: $highlightDetailColor;
                                     line-height: 1.4rem;
                                 }
                             }
@@ -588,7 +588,7 @@ export default {
                     color: #fff;
                 }
                 .iconfont_color {
-                    color: #0967E9;
+                    color: $highlightDetailColor;
                 }
 
                 .nav_list_item {
@@ -726,7 +726,7 @@ export default {
                                             display: block;
                                             font-size: $fontSize14;
                                             font-weight: $fontWeight500;
-                                            color: #0967E9;
+                                            color: $highlightDetailColor;
                                             line-height: 1.4rem;
                                         }
                                         .intro {
@@ -788,7 +788,7 @@ export default {
                                     margin-top: 1.2rem;
                                     font-size: $fontSize14;
                                     font-weight: $fontWeight500;
-                                    color: #0967E9;
+                                    color: $highlightDetailColor;
                                     line-height: 1.4rem;
                                 }
                             }
@@ -815,7 +815,7 @@ export default {
                     outline: none;
                     .iconfont {
                         display: inline-block;
-                        color: #0967E9;
+                        color: $highlightDetailColor;
                     }
                 }
             }

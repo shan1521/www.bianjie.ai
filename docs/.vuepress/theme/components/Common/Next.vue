@@ -34,12 +34,12 @@ export default {
         align-items: center;
         width: 4rem;
         height: 4rem;
-        border: 0.2rem solid #0967E9;
+        border: 0.2rem solid $highlightDetailColor;
         border-radius: 50%;
 
         .next {
             font-weight: $fontWeight500;
-            color: #0967E9;
+            color: $highlightDetailColor;
         }
     }
 }

@@ -114,7 +114,7 @@ export default {
                         margin-bottom: 2.4rem;
                         width: 8rem;
                         height: 0.4rem;
-                        background: #0967E9;
+                        background: $highlightDetailColor;
                     }
 
                     &::after {

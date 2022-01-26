@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "27416910",
+      "name": "DA",
+      "font_class": "DA",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "27416908",
+      "name": "BEAN",
+      "font_class": "BEAN",
+      "unicode": "e762",
+      "unicode_decimal": 59234
+    },
+    {
+      "icon_id": "27416902",
+      "name": "OPB",
+      "font_class": "OPB",
+      "unicode": "e761",
+      "unicode_decimal": 59233
+    },
+    {
+      "icon_id": "27416898",
+      "name": "HUB",
+      "font_class": "HUB",
+      "unicode": "e760",
+      "unicode_decimal": 59232
+    },
+    {
+      "icon_id": "27416896",
+      "name": "CE",
+      "font_class": "CE",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
       "icon_id": "24590753",
       "name": "收起",
       "font_class": "shouqi",

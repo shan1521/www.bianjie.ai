@@ -24,19 +24,19 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
-			if(to.path.includes('/products')){
+			if(to.path.toLowerCase().includes('/products')){
 				store.commit('currentIndex',1)
 				localStorage.setItem('currentIndex',1)
-			}else if (to.path.includes('/applications')){
+			}else if (to.path.toLowerCase().includes('/applications')){
 				store.commit('currentIndex',2)
 				localStorage.setItem('currentIndex',2)
-			}else if (to.path.includes('/news') || to.path.includes('/companynews')){
+			}else if (to.path.toLowerCase().includes('/news') || to.path.toLowerCase().includes('/companynews')){
 				store.commit('currentIndex',3)
 				localStorage.setItem('currentIndex',3)
-			}else if (to.path.includes('/partners')){
+			}else if (to.path.toLowerCase().includes('/partners')){
 				store.commit('currentIndex',4)
 				localStorage.setItem('currentIndex',4)
-			}else if (to.path.includes('/about') || to.path.includes('/milestone') || to.path.includes('/honour') || to.path.includes('/join')){
+			}else if (to.path.toLowerCase().includes('/about') || to.path.toLowerCase().includes('/milestone') || to.path.toLowerCase().includes('/honour') || to.path.toLowerCase().includes('/join')){
 				store.commit('currentIndex',5)
 				localStorage.setItem('currentIndex',5)
 			}else {

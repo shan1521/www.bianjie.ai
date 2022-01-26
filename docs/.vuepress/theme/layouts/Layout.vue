@@ -1,13 +1,13 @@
 <template>
-    <div class="theme-container"
-        :class="pageClasses">
+    <div
+        class="theme-container"
+    >
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
         <ClientOnly>
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
-
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
@@ -20,11 +20,8 @@
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
                 <AppScenes v-if="showApp"></AppScenes>
+                <Contact></Contact>
                 <Markdown :showMd="showMd"></Markdown>
-                <ClientOnly>
-                    <Contact></Contact>
-                </ClientOnly>
-
             </div>
         </ClientOnly>
 
@@ -52,62 +49,43 @@ import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 import Contact from "@theme/components/Contact.vue";
-
-import { resolveSidebarItems } from "../util";
 const nav = require("../../config.js");
+import cfg from "../../config.json";
 
 export default {
     name: "Layout",
-    data() {
-        return {
-            isSidebarOpen: false,
-        };
-    },
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
-        showApp() {
-            if (this.$route.path === "/applications/e-licence.html") {
-                return "$page.frontmatter.isELicence";
+        showApp(){
+            if(this.$route.path.toLowerCase() === '/applications/e-licence.html') {
+                return '$page.frontmatter.isELicence';
             }
-            if (this.$route.path === "/applications/trade-finance.html") {
-                return "$page.frontmatter.isTradeFinance";
+            if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
+                return '$page.frontmatter.isTradeFinance';
             }
-            if (this.$route.path === "/applications/C-trading.html") {
-                return "$page.frontmatter.isCTrading";
+            if(this.$route.path.toLowerCase() === '/applications/C-trading.html') {
+                return '$page.frontmatter.isCTrading';
             }
-            if (this.$route.path === "/applications/digital-art.html") {
-                return "$page.frontmatter.isDigitalArt";
+            if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {
+                return '$page.frontmatter.isDigitalArt';
             }
-            if (
-                this.$route.path ===
-                "/applications/e-prescription-circulation.html"
-            ) {
-                return "$page.frontmatter.isEPC";
+            if(this.$route.path.toLowerCase() === '/applications/e-prescription-circulation.html') {
+                return '$page.frontmatter.isEPC';
             }
-            if (this.$route.path === "/applications/datacollection.html") {
-                return "$page.frontmatter.isDataCollection";
+            if(this.$route.path.toLowerCase() === '/applications/datacollection.html') {
+                return '$page.frontmatter.isDataCollection';
             }
         },
 
-        pageClasses() {
-            const userPageClass = this.$page.frontmatter.pageClass;
-            return [
-                {
-                    "no-navbar": !this.shouldShowNavbar,
-                    "sidebar-open": this.isSidebarOpen,
-                    "no-sidebar": !this.shouldShowSidebar,
-                },
-                userPageClass,
-            ];
-        },
     },
-    methods: {},
     mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
+        // 友盟统计添加
+        const script = document.createElement("script");
+        script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
+        script.language = "JavaScript";
+        document.body.appendChild(script);
     },
     watch: {
         $route: {

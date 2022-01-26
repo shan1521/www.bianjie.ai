@@ -101,7 +101,7 @@ export default {
                                 margin-right: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
 
                             &::after {
@@ -110,7 +110,7 @@ export default {
                                 margin-left: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
                         }
                     }
@@ -186,7 +186,7 @@ export default {
                                 margin-right: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
 
                             &::after {
@@ -195,7 +195,7 @@ export default {
                                 margin-left: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
                         }
                     }
