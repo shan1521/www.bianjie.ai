@@ -20,9 +20,11 @@
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
                 <AppScenes v-if="showApp"></AppScenes>
+                <Contact></Contact>
                 <Markdown :showMd="showMd"></Markdown>
             </div>
         </ClientOnly>
+
         <ClientOnly>
             <Footer></Footer>
         </ClientOnly>
@@ -46,6 +48,7 @@ import Join from "@theme/components/Join/Join.vue";
 import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
+import Contact from "@theme/components/Contact.vue";
 const nav = require("../../config.js");
 import cfg from "../../config.json";
 
@@ -114,6 +117,7 @@ export default {
         Markdown,
         AppScenes,
         Footer,
+        Contact,
     },
 };
 </script>
@@ -127,8 +131,9 @@ export default {
     min-height: 100vh;
     width: 100%;
     height: 100%;
+
     .main_container {
-        flex: auto;
+        flex: 1;
     }
 }
 </style>

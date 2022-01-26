@@ -163,7 +163,7 @@ export default {
         @media (max-width: 768px) {
             padding: 6rem 4.8rem;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 400px) {
             padding: 4rem 1.6rem;
         }
 
@@ -181,7 +181,7 @@ export default {
                 color: #000;
                 line-height: 2.4rem;
 
-                @media (max-width: 375px) {
+                @media (max-width: 400px) {
                     font-size: $fontSize16;
                     font-weight: $fontWeight600;
                     line-height: 1.6rem;
@@ -195,7 +195,7 @@ export default {
                     height: 0.4rem;
                     background: $highlightDetailColor;
 
-                    @media (max-width: 375px) {
+                    @media (max-width: 400px) {
                         margin-top: 1.6rem;
                     }
                 }
