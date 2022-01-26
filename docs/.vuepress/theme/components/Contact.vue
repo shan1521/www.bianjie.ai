@@ -98,7 +98,6 @@ export default {
             .yx_text {
                 height: 2.4rem;
                 font-size: 1.4rem;
-                font-family: PingFangSC-Regular, PingFang SC;
                 font-weight: 400;
                 color: #000000;
                 line-height: 2.4rem;
@@ -138,7 +137,6 @@ export default {
     .focus_title {
         height: 2.4rem;
         font-size: 1.4rem;
-        font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #000000;
         line-height: 2.4rem;
