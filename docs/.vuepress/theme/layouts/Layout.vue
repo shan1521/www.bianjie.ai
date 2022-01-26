@@ -65,7 +65,7 @@ export default {
             if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
                 return '$page.frontmatter.isTradeFinance';
             }
-            if(this.$route.path.toLowerCase() === '/applications/C-trading.html') {
+            if(this.$route.path === '/applications/C-trading.html') {
                 return '$page.frontmatter.isCTrading';
             }
             if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {

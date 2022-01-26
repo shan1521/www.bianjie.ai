@@ -270,7 +270,7 @@ export default {
                     margin-top: 0.8rem;
                     padding: 1.5rem 2rem;
                     background: #fff;
-                    box-shadow: 0 0 1.2rem 0.2rem 0 rgba(7, 24, 78, 0.08);
+                    box-shadow: 0px 0px 12px 0px rgba(7, 24, 78, 0.08);
                     border-radius: 0.2rem;
                     cursor: pointer;
                     @media (max-width: 995px) {
