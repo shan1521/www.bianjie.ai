@@ -64,6 +64,7 @@ export default {
     }
 
     .qr_div {
+        z-index: 100;
         position: fixed;
         right: 10rem;
         bottom: 1.3rem;
@@ -72,8 +73,8 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 210px;
-        height: 288px;
+        width: 21rem;
+        height: 28.8rem;
         background: #FFFFFF;
         box-shadow: 0px 0px 12px 0px rgba(7, 24, 78, 0.08);
         border-radius: 4px;
@@ -90,17 +91,17 @@ export default {
         .yx {
             .yx_img img {
                 margin-right: 0.6rem;
-                width: 17px;
-                height: 12px;
+                width: 1.7rem;
+                height: 1.2rem;
             }
 
             .yx_text {
-                height: 24px;
-                font-size: 14px;
+                height: 2.4rem;
+                font-size: 1.4rem;
                 font-family: PingFangSC-Regular, PingFang SC;
                 font-weight: 400;
                 color: #000000;
-                line-height: 24px;
+                line-height: 2.4rem;
             }
         }
 
@@ -116,6 +117,7 @@ export default {
     }
 
     .contact_img img {
+        z-index: 100;
         position: fixed;
         right: 4.8rem;
         bottom: 10rem;
@@ -134,12 +136,12 @@ export default {
     }
 
     .focus_title {
-        height: 24px;
-        font-size: 14px;
+        height: 2.4rem;
+        font-size: 1.4rem;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #000000;
-        line-height: 24px;
+        line-height: 2.4rem;
     }
 }
 </style>
