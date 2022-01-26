@@ -46,7 +46,6 @@ export default {
 .advantage_container {
     width: 100%;
     min-height: 53.6rem;
-    background: url('../../assets/home/hxnlyys_bg.png') no-repeat center / cover;
 
     .advantage_content_container {
         box-sizing: border-box;
