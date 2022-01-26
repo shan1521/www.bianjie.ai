@@ -140,27 +140,23 @@ export default {
                 font-weight: $fontWeight400;
                 color: rgba(0, 0, 0, 0.65);
                 line-height: 1.6rem;
+                &:hover {
+                  color: $highlightDetailColor;
+                }
 
                 @media (max-width: 870px) {
                     margin-top: 1.6rem;
                     text-align: center;
                     line-height: 2rem;
                 }
-                &:hover {
-                  color: #7065FF;
-                }
             }
-
-            // .bsn-wenchang_desc:hover {
-            //     color: #7065FF;
-            // }
 
             .go_chain {
                 display: flex;
                 align-items: center;
                 font-size: $fontSize14;
                 font-weight: $fontWeight600;
-                color: #0967E9;
+                color: $highlightDetailColor;
                 line-height: 1.4rem;
                 cursor: pointer;
 

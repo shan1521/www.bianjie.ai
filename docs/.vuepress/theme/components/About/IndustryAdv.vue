@@ -120,7 +120,7 @@ export default {
                 margin-top: 2.4rem;
                 width: 16rem;
                 height: 0.4rem;
-                background: #0967E9;
+                background: $highlightDetailColor;
             }
         }
 

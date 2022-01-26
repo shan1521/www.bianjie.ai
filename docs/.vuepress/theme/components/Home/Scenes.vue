@@ -127,7 +127,7 @@ export default {
                     margin-top: 2.4rem;
                     width: 8rem;
                     height: 0.4rem;
-                    background: #0967E9;
+                    background: $highlightDetailColor;
                     @media (max-width: 400px) {
                         margin-top: 1.6rem;
                     }
@@ -229,8 +229,8 @@ export default {
                             cursor: pointer;
                             background: #fff;
                             z-index: 2;
-                            border: 0.1rem solid #0967E9;
-                            border-bottom: 0.6rem solid #0967E9;
+                            border: 0.1rem solid $highlightDetailColor;
+                            border-bottom: 0.6rem solid $highlightDetailColor;
                             border-radius: 0.4rem;
                             display: none;
                             .item_icon {
@@ -272,7 +272,7 @@ export default {
                                 justify-content: center;
                                 align-items: center;
                                 margin-top: 1.2rem;
-                                color: #0967E9;
+                                color: $highlightDetailColor;
 
                                 .detail {
                                     font-size: $fontSize14;

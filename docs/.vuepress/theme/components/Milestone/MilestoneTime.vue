@@ -123,7 +123,7 @@ export default {
                                     margin-right: 2.5rem;
                                     width: 0.4rem;
                                     height: 3.2rem;
-                                    background: #0967E9;
+                                    background: $highlightDetailColor;
                                 }
                             }
 
@@ -144,7 +144,7 @@ export default {
                                         width: 3.1rem;
                                         font-size: $fontSize14;
                                         font-weight: $fontWeight500;
-                                        color: #0967E9;
+                                        color: $highlightDetailColor;
                                         line-height: 2.4rem;
                                         white-space: nowrap;
                                     }

@@ -123,7 +123,7 @@ export default {
                         margin-top: 1.6rem;
                         width: 8rem;
                         height: 0.4rem;
-                        background: #0967E9;
+                        background: $highlightDetailColor;
                     }
                 }
             }
@@ -183,7 +183,7 @@ export default {
 
                     .active {
                         height: 100%;
-                        background: #0967E9;
+                        background: $highlightDetailColor;
                         border-radius: 0.4rem;
                         .field_name {
                             color: #fff;

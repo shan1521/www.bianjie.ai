@@ -10,7 +10,7 @@
                             yearHonours, index
                         ) in otherHonoursContent.otherHonoursList"
                         :key="index"
-                        color="#0967E9"
+                        color="$highlightDetailColor"
                     >
                         <template slot="dot">
                             <div class="circle"></div>
@@ -117,7 +117,7 @@ export default {
                     margin-top: 1.6rem;
                     width: 4rem;
                     height: 0.4rem;
-                    background: #0967E9;
+                    background: $highlightDetailColor;
                 }
             }
             .otherhonours_list {
@@ -154,13 +154,13 @@ export default {
                         width: 2.4rem;
                         height: 2.4rem;
                         transform: translateX(-50%);
-                        border: 0.2rem solid #0967E9;
+                        border: 0.2rem solid $highlightDetailColor;
                         border-radius: 50%;
                         z-index: 99;
                         .circle {
                             width: 1rem;
                             height: 1rem;
-                            background: #0967E9;
+                            background: $highlightDetailColor;
                             border-radius: 50%;
                         }
                     }
@@ -171,7 +171,7 @@ export default {
                     .year {
                         font-size: $fontSize32;
                         font-weight: $fontWeight500;
-                        color: #0967E9;
+                        color: $highlightDetailColor;
                         line-height: 3.2rem;
                     }
                     .month_list { 
@@ -190,7 +190,7 @@ export default {
                             .month {
                                 font-size: $fontSize16;
                                 font-weight: $fontWeight600;
-                                color: #0967E9;
+                                color: $highlightDetailColor;
                                 line-height: 1.6rem;
                                 white-space: nowrap;
                             }
@@ -203,7 +203,7 @@ export default {
                                 left: 9.4rem;
                                 transform: translateY(-115%);
                                 background-color: #fff;
-                                border: 0.1rem solid #0967E9;
+                                border: 0.1rem solid $highlightDetailColor;
                                 z-index: 99;
                             }
                             .el-timeline-item__wrapper {
