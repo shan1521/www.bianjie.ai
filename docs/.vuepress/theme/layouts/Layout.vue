@@ -1,7 +1,6 @@
 <template>
     <div
         class="theme-container"
-        :class="pageClasses"
     >
         <ClientOnly>
             <Navigation></Navigation>
@@ -47,60 +46,43 @@ import Join from "@theme/components/Join/Join.vue";
 import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
-
-import { resolveSidebarItems } from "../util";
 const nav = require("../../config.js");
+import cfg from "../../config.json";
 
 export default {
     name: "Layout",
-    data() {
-        return {
-            isSidebarOpen: false,
-        };
-    },
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            if(this.$route.path === '/applications/e-licence.html') {
+            if(this.$route.path.toLowerCase() === '/applications/e-licence.html') {
                 return '$page.frontmatter.isELicence';
             }
-            if(this.$route.path === '/applications/trade-finance.html') {
+            if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
                 return '$page.frontmatter.isTradeFinance';
             }
-            if(this.$route.path === '/applications/C-trading.html') {
+            if(this.$route.path.toLowerCase() === '/applications/C-trading.html') {
                 return '$page.frontmatter.isCTrading';
             }
-            if(this.$route.path === '/applications/digital-art.html') {
+            if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {
                 return '$page.frontmatter.isDigitalArt';
             }
-            if(this.$route.path === '/applications/e-prescription-circulation.html') {
+            if(this.$route.path.toLowerCase() === '/applications/e-prescription-circulation.html') {
                 return '$page.frontmatter.isEPC';
             }
-            if(this.$route.path === '/applications/datacollection.html') {
+            if(this.$route.path.toLowerCase() === '/applications/datacollection.html') {
                 return '$page.frontmatter.isDataCollection';
             }
         },
 
-        pageClasses() {
-            const userPageClass = this.$page.frontmatter.pageClass;
-            return [
-                {
-                    "no-navbar": !this.shouldShowNavbar,
-                    "sidebar-open": this.isSidebarOpen,
-                    "no-sidebar": !this.shouldShowSidebar,
-                },
-                userPageClass,
-            ];
-        },
-    },
-    methods: {
     },
     mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
+        // 友盟统计添加
+        const script = document.createElement("script");
+        script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
+        script.language = "JavaScript";
+        document.body.appendChild(script);
     },
     watch: {
         $route: {
