@@ -1,33 +1,32 @@
 <template>
-    <div>
-        <div class="focus">
 
-            <!-- 二维码图标 -->
-            <div class="qr_div"
-                v-show="isShow">
-                <div class="qr_code">
-                    <img src="../assets/home/qrcode_footer.png"
-                        alt=""
-                        class="qr_code_img" />
-                </div>
-                <div class="focus_title">· 扫码关注我们 ·</div>
-                <!-- 邮箱小图标 -->
-                <div class="yx">
-                    <span class="yx_img"><img src="../assets/icon_yx.png"
-                            alt=""></span>
-                    <span class="yx_text">contact@bianjie.ai</span>
-                </div>
+    <div class="focus">
+
+        <!-- 二维码图标 -->
+        <div class="qr_div"
+            v-show="isShow">
+            <div class="qr_code">
+                <img src="../assets/home/qrcode_footer.png"
+                    alt=""
+                    class="qr_code_img" />
             </div>
-
-            <!-- 联系我们图标 -->
-            <div class="contact_img"
-                @mouseover="show"
-                @mouseout="show">
-                <img src="../assets/contact.png"
-                    alt="">
+            <div class="focus_title">· 扫码关注我们 ·</div>
+            <div class="border"></div>
+            <!-- 邮箱小图标 -->
+            <div class="yx">
+                <span class="yx_img"><img src="../assets/icon_yx.png"
+                        alt=""></span>
+                <span class="yx_text">contact@bianjie.ai</span>
             </div>
         </div>
 
+        <!-- 联系我们图标 -->
+        <div class="contact_img"
+            @mouseover="show"
+            @mouseout="show">
+            <img src="../assets/contact.png"
+                alt="">
+        </div>
     </div>
 
 </template>
@@ -67,7 +66,7 @@ export default {
         z-index: 100;
         position: fixed;
         right: 10rem;
-        bottom: 1.3rem;
+        bottom: 4.5rem;
         // margin-right: 1.2rem;
         display: flex;
         flex-direction: column;
@@ -86,6 +85,23 @@ export default {
 
         @media (max-width: 400px) {
             right: 7.2rem;
+        }
+
+        .border {
+            width: 12rem;
+            height: 0.1rem;
+            background: #000000;
+            opacity: 0.1;
+            // margin-top: 1.2rem;
+        }
+
+        .focus_title {
+            align-self: center;
+            height: 2.4rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #000000;
+            line-height: 2.4rem;
         }
 
         .yx {
@@ -119,7 +135,7 @@ export default {
         z-index: 100;
         position: fixed;
         right: 4.8rem;
-        bottom: 10rem;
+        bottom: 13.2rem;
         align-self: center;
         width: 4rem;
         height: 13rem;
@@ -132,14 +148,6 @@ export default {
         @media (max-width: 400px) {
             right: 2rem;
         }
-    }
-
-    .focus_title {
-        height: 2.4rem;
-        font-size: 1.4rem;
-        font-weight: 400;
-        color: #000000;
-        line-height: 2.4rem;
     }
 }
 </style>
