@@ -169,7 +169,7 @@ export default {
                             width: 11.2rem;
                             height: 2.4rem;
                             background: #fff;
-                            border: 0.05rem solid #0967E9;
+                            border: 0.05rem solid $highlightDetailColor;
                             border-radius: 0.4rem;
 
                             .item_date {
@@ -182,7 +182,7 @@ export default {
                                 font-weight: $fontWeight600;
                                 line-height: 1.4rem;
                                 color: #fff;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                                 border-radius: 0.2rem;
                             }
 
@@ -203,7 +203,7 @@ export default {
                             max-width: 66.4rem;
 
                             &:hover {
-                                color: #0967E9;
+                                color: $highlightDetailColor;
                                 cursor: pointer;
                             }
 
@@ -223,7 +223,7 @@ export default {
                                 }
 
                                 &:hover {
-                                    color: #0967E9;
+                                    color: $highlightDetailColor;
                                 }
                             }
 
@@ -236,7 +236,7 @@ export default {
                                 border-radius: 0.2rem;
                                 font-size: $fontSize12;
                                 font-weight: $fontWeight400;
-                                color: #0967E9;
+                                color: $highlightDetailColor;
                                 line-height: 1.6rem;
                                 text-align: center;
                             }
@@ -297,8 +297,8 @@ export default {
                         border: 0.1rem solid #E1E5F4;
 
                         &:hover {
-                            color: #0967E9;
-                            border: 0.1rem solid #0967E9;
+                            color: $highlightDetailColor;
+                            border: 0.1rem solid $highlightDetailColor;
                         }
                     }
 
@@ -314,8 +314,8 @@ export default {
                         border: 0.1rem solid #E1E5F4;
 
                         &:hover {
-                            color: #0967E9;
-                            border: 0.1rem solid #0967E9;
+                            color: $highlightDetailColor;
+                            border: 0.1rem solid $highlightDetailColor;
                         }
                     }
                 }

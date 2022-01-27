@@ -167,7 +167,7 @@ export default {
                     margin-top: 2.4rem;
                     width: 8rem;
                     height: 0.4rem;
-                    background: #0967E9;
+                    background: $highlightDetailColor;
                     @media (max-width: 500px) {
                         margin-top: 1.6rem;
                     }
@@ -235,7 +235,7 @@ export default {
                                     white-space: normal;
                                 }
                                 &:hover {
-                                    color: #0967E9;
+                                    color: $highlightDetailColor;
                                     cursor: pointer;
                                 }
                             }
@@ -286,7 +286,7 @@ export default {
 
                                         .item_top {
                                             .item_title {
-                                                color: #0967E9;
+                                                color: $highlightDetailColor;
                                             }
                                         }
                                     }
@@ -322,7 +322,7 @@ export default {
                                         }
 
                                         &:hover {
-                                            color: #0967E9;
+                                            color: $highlightDetailColor;
                                             cursor: pointer;
                                         }
                                     }

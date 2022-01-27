@@ -143,7 +143,7 @@ export default {
                                         width: 100%;
                                         height: 100%;
                                         color: #fff;
-                                        background: #0967e9;
+                                        background: $highlightDetailColor;
                                     }
                                 }
                             }
