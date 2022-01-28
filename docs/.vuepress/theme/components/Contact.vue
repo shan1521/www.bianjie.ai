@@ -1,6 +1,8 @@
 <template>
 
-    <div class="focus">
+    <div class="focus"
+        @mouseover="show"
+        @mouseout="show">
 
         <!-- 二维码图标 -->
         <div class="qr_div"
@@ -21,9 +23,7 @@
         </div>
 
         <!-- 联系我们图标 -->
-        <div class="contact_img"
-            @mouseover="show"
-            @mouseout="show">
+        <div class="contact_img">
             <img src="../assets/contact.png"
                 alt="">
         </div>
@@ -46,9 +46,11 @@ export default {
 </script>
 <style lang='stylus' scoped>
 .focus {
-    // position: fixed;
-    // right: 4.8rem;
-    // bottom: 10rem;
+    z-index: 10;
+    height: 28.8rem;
+    position: fixed;
+    right: 4.8rem;
+    bottom: 13.2rem;
     margin-left: 10rem;
     display: flex;
     // flex-direction: column;
@@ -63,11 +65,11 @@ export default {
     }
 
     .qr_div {
-        z-index: 100;
-        position: fixed;
-        right: 10rem;
-        bottom: 4.5rem;
-        // margin-right: 1.2rem;
+        // z-index: 100;
+        // position: fixed;
+        // right: 10rem;
+        // bottom: 4.5rem;
+        margin-right: 1.2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -132,10 +134,10 @@ export default {
     }
 
     .contact_img img {
-        z-index: 100;
-        position: fixed;
-        right: 4.8rem;
-        bottom: 13.2rem;
+        // z-index: 100;
+        // position: fixed;
+        // right: 4.8rem;
+        // bottom: 13.2rem;
         align-self: center;
         width: 4rem;
         height: 13rem;
