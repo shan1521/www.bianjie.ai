@@ -59,30 +59,6 @@
                         </div>
                     </li>
                 </ul>
-
-                <!-- <div class="product_content_list">
-                    <div class="list_container">
-                        <div class="list"
-                            v-for="(item, index) in serviceContent.productContent"
-                            :key="index">
-                            <div v-show="showList==index">
-                                <div class="list_top">
-                                    <span>{{item.intro}}</span>
-                                    <span>-</span>
-                                    <span>{{item.name}}</span>
-                                </div>
-                                <div class="list_center">{{item.description}}</div>
-                                <div class=list_footer>
-                                    <span class="left"></span>
-                                    <span class="right">
-                                        <img :src="differentImg(item.imgName)"
-                                            alt="" />
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -265,7 +241,7 @@ export default {
             margin: 4.8rem auto 0;
             max-width: 105.6rem;
 
-            @media (max-width: 995px) {
+            @media (max-width: 1022px) {
                 max-width: 68.4rem;
             }
 
@@ -273,7 +249,7 @@ export default {
                 margin: 0 auto;
                 width: 45.6rem;
 
-                @media (max-width: 995px) {
+                @media (max-width: 1022px) {
                     width: 7.6rem;
                 }
 
@@ -292,7 +268,7 @@ export default {
                     border-radius: 0.2rem;
                     cursor: pointer;
 
-                    @media (max-width: 995px) {
+                    @media (max-width: 1022px) {
                         max-width: 7.6rem;
                     }
 
@@ -309,7 +285,7 @@ export default {
                         margin-right: 1.6rem;
                         height: 3.6rem;
 
-                        @media (max-width: 995px) {
+                        @media (max-width: 1022px) {
                             margin-right: 0;
                         }
 
@@ -324,7 +300,7 @@ export default {
                     }
 
                     .item_desc {
-                        @media (max-width: 995px) {
+                        @media (max-width: 1022px) {
                             display: none;
                         }
 
@@ -388,7 +364,10 @@ export default {
                     .detail_item_wrap {
                         box-sizing: border-box;
                         padding: 3.2rem;
-                        min-height: 35.6rem;
+                        min-height: 38.1rem;
+                        @media (max-width: 1022px) {
+                            min-height: 34.2rem;
+                        }
 
                         @media (max-width: 768px) {
                             padding: 3.2rem 2.4rem;
@@ -396,7 +375,7 @@ export default {
 
                         @media (max-width: 560px) {
                             padding: 1.2rem 0.8rem;
-                            min-height: 28.8rem;
+                            min-height: 25.1rem;
                         }
 
                         .title {
