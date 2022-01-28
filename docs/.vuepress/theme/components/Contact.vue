@@ -107,10 +107,15 @@ export default {
         }
 
         .yx {
-            .yx_img img {
+            display: flex;
+            align-item: center;
+            .yx_img  {
                 margin-right: 0.6rem;
                 width: 1.7rem;
-                height: 1.2rem;
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
             }
 
             .yx_text {
