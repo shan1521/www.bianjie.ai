@@ -59,7 +59,7 @@
             {
                 iconName: heyuekaifa.png,
                 process: 创建链上账户,
-                description: 根据操作指南开通开放许可链的链上账户，并领取/充值能量值
+                description: 根据操作指南开通开放许可链的链上账户
             },
             {
                 iconName: yingyongjieru.png,
