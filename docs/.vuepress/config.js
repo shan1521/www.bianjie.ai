@@ -4,12 +4,12 @@ module.exports = {
     base: '/',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
-        ['meta', { name: 'keywords', content: '上海边界智能科技有限公司,上海边界智能,边界智能,边界科技,BIANJIE.AI,bianjie.ai,IRITA,irita,IRITA HUB,边界区块链,边界智能区块链,边界智能文昌链,文昌链 NFT,文昌链' }],
-        ['meta', { name: 'description', content: '上海边界智能专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统构建的企业联盟链 IRITA 产品系列。' }],
+        ['meta', { name: 'keywords', content: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务' }],
+        ['meta', { name: 'description', content: '上海边界智能专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统的企业级联盟链 IRITA产品系列。' }],
         ['meta', { name: 'baidu-site-verification', content: 'CadgsdV9bv' }],
         ['meta', { name: 'google-site-verification', content: 'Y1zz3l93YMcsFRVcKcGM9KmdE3wukv8KiJucw0xpC9M' }],
         ['meta', { name: '360-site-verification', content: 'KXEyCmQU' }],
-        ['meta', {property:'og:image',content:'https://www.bianjie.ai/resources/Bianjie/Bianjie-Logo-Vertical-White.png'}],
+        ['meta', {property:'og:image',content:'https://www.bianjie.ai/resources/Bianjie/Bianjie-Logo-Share.png'}],
         ['meta', {property:'og:title',content:'边界智能-BIANJIE.AI'}],
         ['meta', {property:'og:description',content:'上海边界智能专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统构建的企业联盟链 IRITA 产品系列。'}],
         ['meta', {name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
@@ -34,12 +34,12 @@ module.exports = {
                             },
                             {
                                 abbreviation: 'IRITA HUB',
-                                intro: '区块链跨链服务枢纽',
+                                intro: '异构区块链跨链服务枢纽',
                                 route: '/products/iritahub'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
-                                intro: '基于智能合约的开放联盟链产品',
+                                intro: '支持分布式商业应用的开放许可链',
                                 route: '/products/iritaopb'
                             },
                             {
@@ -55,12 +55,12 @@ module.exports = {
                         productList: [
                             {
                                 abbreviation: 'IRITA BEAN',
-                                intro: '保护数据隐私的数据共享平台',
+                                intro: '数据隐私保护及共享产品',
                                 route: '/products/iritabean'
                             },
                             {
                                 abbreviation: 'IRITA DA',
-                                intro: '资产数字化确权及交换平台',
+                                intro: '资产数字化确权及交换产品',
                                 route: '/products/iritada'
                             },
                         ]

@@ -92,7 +92,7 @@ export default {
                 }
 
                 .active {
-                    color: #0967E9;
+                    color: $highlightDetailColor;
                 }
             }
         }

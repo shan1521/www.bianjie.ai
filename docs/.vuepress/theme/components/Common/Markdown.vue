@@ -164,7 +164,7 @@ export default {
                 border-radius: 0.4rem;
 
                 &:hover {
-                    border: 0.1rem solid #0967E9;
+                    border: 0.1rem solid $highlightDetailColor;
                 }
                 .prev {
                     display: flex;
@@ -192,7 +192,7 @@ export default {
                 border-radius: 0.4rem;
 
                 &:hover {
-                    border: 0.1rem solid #0967E9;
+                    border: 0.1rem solid $highlightDetailColor;
                 }
                 .next {
                     display: flex;

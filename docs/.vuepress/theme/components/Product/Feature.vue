@@ -130,7 +130,7 @@ export default {
                                 margin-right: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
 
                             &::after {
@@ -139,7 +139,7 @@ export default {
                                 margin-left: 0.8rem;
                                 width: 0.4rem;
                                 height: 1.6rem;
-                                background: #0967E9;
+                                background: $highlightDetailColor;
                             }
                         }
                     }
@@ -218,7 +218,7 @@ export default {
 
                     &:hover {
                         background: url(../../assets/product/iritaopb/heyueshili.png) no-repeat center / cover;
-                        border: 0.1rem solid #0967E9;
+                        border: 0.1rem solid $highlightDetailColor;
                     }
                     .item_right {
                         flex: 1 0;

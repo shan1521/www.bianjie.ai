@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isMilestone: true,
-    title: 发展历程-关于边界,
+    title: 关于边界-发展历程,
     aboutTitle: {
         title: 关于边界,
         subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司

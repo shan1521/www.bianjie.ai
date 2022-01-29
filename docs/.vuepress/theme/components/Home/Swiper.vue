@@ -71,7 +71,7 @@ export default {
 .swiper_container{
     position: relative;
     width: 100%;
-    height: 52.8rem;
+    height: 48rem;
     @media (max-width: 968px) {
         height: 42rem;
     }

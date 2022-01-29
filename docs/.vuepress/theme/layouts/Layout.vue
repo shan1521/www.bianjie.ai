@@ -1,9 +1,6 @@
 <template>
     <div
         class="theme-container"
-        :class="pageClasses"
-        @touchstart="onTouchStart"
-        @touchend="onTouchEnd"
     >
         <ClientOnly>
             <Navigation></Navigation>
@@ -23,9 +20,11 @@
                 <Honour v-if="$page.frontmatter.isHonour"></Honour>
                 <Join v-if="$page.frontmatter.isJoin"></Join>
                 <AppScenes v-if="showApp"></AppScenes>
+                <Contact></Contact>
                 <Markdown :showMd="showMd"></Markdown>
             </div>
         </ClientOnly>
+
         <ClientOnly>
             <Footer></Footer>
         </ClientOnly>
@@ -33,10 +32,6 @@
 </template>
 
 <script>
-import Home from "@theme/components/Home.vue";
-import Navbar from "@theme/components/Navbar.vue";
-import Page from "@theme/components/Page.vue";
-import Sidebar from "@theme/components/Sidebar.vue";
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
@@ -53,117 +48,44 @@ import Join from "@theme/components/Join/Join.vue";
 import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
-
-import { resolveSidebarItems } from "../util";
+import Contact from "@theme/components/Contact.vue";
 const nav = require("../../config.js");
+import cfg from "../../config.json";
 
 export default {
     name: "Layout",
-    data() {
-        return {
-            isSidebarOpen: false,
-        };
-    },
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            if(this.$route.path === '/applications/e-licence.html') {
+            if(this.$route.path.toLowerCase() === '/applications/e-licence.html') {
                 return '$page.frontmatter.isELicence';
             }
-            if(this.$route.path === '/applications/trade-finance.html') {
+            if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
                 return '$page.frontmatter.isTradeFinance';
             }
             if(this.$route.path === '/applications/C-trading.html') {
                 return '$page.frontmatter.isCTrading';
             }
-            if(this.$route.path === '/applications/digital-art.html') {
+            if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {
                 return '$page.frontmatter.isDigitalArt';
             }
-            if(this.$route.path === '/applications/e-prescription-circulation.html') {
+            if(this.$route.path.toLowerCase() === '/applications/e-prescription-circulation.html') {
                 return '$page.frontmatter.isEPC';
             }
-            if(this.$route.path === '/applications/datacollection.html') {
+            if(this.$route.path.toLowerCase() === '/applications/datacollection.html') {
                 return '$page.frontmatter.isDataCollection';
             }
         },
-        shouldShowNavbar() {
-            const { themeConfig } = this.$site;
-            const { frontmatter } = this.$page;
-            if (frontmatter.navbar === false || themeConfig.navbar === false) {
-                return false;
-            }
-            return (
-                this.$title ||
-                themeConfig.logo ||
-                themeConfig.repo ||
-                themeConfig.nav ||
-                this.$themeLocaleConfig.nav
-            );
-        },
 
-        shouldShowSidebar() {
-            const { frontmatter } = this.$page;
-            return (
-                !frontmatter.home &&
-                frontmatter.sidebar !== false &&
-                this.sidebarItems.length
-            );
-        },
-
-        sidebarItems() {
-            return resolveSidebarItems(
-                this.$page,
-                this.$page.regularPath,
-                this.$site,
-                this.$localePath
-            );
-        },
-
-        pageClasses() {
-            const userPageClass = this.$page.frontmatter.pageClass;
-            return [
-                {
-                    "no-navbar": !this.shouldShowNavbar,
-                    "sidebar-open": this.isSidebarOpen,
-                    "no-sidebar": !this.shouldShowSidebar,
-                },
-                userPageClass,
-            ];
-        },
-    },
-    methods: {
-        toggleSidebar(to) {
-            this.isSidebarOpen =
-                typeof to === "boolean" ? to : !this.isSidebarOpen;
-            this.$emit("toggle-sidebar", this.isSidebarOpen);
-        },
-
-        // side swipe
-        onTouchStart(e) {
-            this.touchStart = {
-                x: e.changedTouches[0].clientX,
-                y: e.changedTouches[0].clientY,
-            };
-        },
-
-        onTouchEnd(e) {
-            const dx = e.changedTouches[0].clientX - this.touchStart.x;
-            const dy = e.changedTouches[0].clientY - this.touchStart.y;
-            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-                if (dx > 0 && this.touchStart.x <= 80) {
-                    this.toggleSidebar(true);
-                } else {
-                    this.toggleSidebar(false);
-                }
-            }
-        },
     },
     mounted() {
-        this.$router.afterEach(() => {
-            this.isSidebarOpen = false;
-        });
+        // 友盟统计添加
+        const script = document.createElement("script");
+        script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
+        script.language = "JavaScript";
+        document.body.appendChild(script);
     },
     watch: {
         $route: {
@@ -179,10 +101,6 @@ export default {
         },
     },
     components: {
-        Home,
-        Page,
-        Sidebar,
-        Navbar,
         Navigation,
         NewHome,
         IritaHub,
@@ -199,6 +117,7 @@ export default {
         Markdown,
         AppScenes,
         Footer,
+        Contact,
     },
 };
 </script>
@@ -212,8 +131,9 @@ export default {
     min-height: 100vh;
     width: 100%;
     height: 100%;
+
     .main_container {
-        flex: auto;
+        flex: 1;
     }
 }
 </style>

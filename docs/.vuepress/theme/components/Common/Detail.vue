@@ -17,7 +17,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 1.2rem;
-    color: #0967E9;
+    color: $highlightDetailColor;
     &:hover {
         cursor: pointer;
     }
