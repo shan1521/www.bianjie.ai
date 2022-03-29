@@ -9,6 +9,15 @@
     },
     dynamicList: [
         {
+            date: '03月18日',
+            year: '2022',
+            title: 边界智能 4 项成果通过网信办第七批境内区块链信息服务备案,
+            description: 国家互联网信息办公室发布了第七批境内区块链信息服务备案编号的公告，公示了第七批境内区块链信息服务备案清单。其中，边界智能推出的「建党百年区块链送祝福」区块链小程序、都江堰「智慧政务+区块链」电子证照系统区块链浏览器、区块链服务网络（BSN）开放联盟链文昌链、跨域行业互信联盟产品 IRITA 共 4 个区块链产品和项目通过备案。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/28.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490663&idx=1&sn=74b1c039d3783309a4bd3c2d9ba9e682&chksm=faeaadb6cd9d24a01d324cff42398ccc30984e541be8eb0db6e7b9067da2965567e84ef1a01e&token=580899675&lang=zh_CN#rd
+        },
+        {
             date: '10月11日',
             year: '2021',
             title: 亚洲数字银行与边界智能达成战略合作，打造支持自金融服务的新一代数字银行,
