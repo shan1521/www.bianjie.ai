@@ -31,7 +31,7 @@
             {
                 img: adv_first.png,
                 intro: 先进的底层技术,
-                description: 以区块链跨链、隐私计算及大数据分析技术创新为核心，拥有自主研发、安全可控的区块链底层技术实力
+                description: 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，拥有自主研发、安全可控的区块链底层技术实力
             },
             {
                 img: adv_second.png,
