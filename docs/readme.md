@@ -31,7 +31,7 @@
             {
                 img: adv_first.png,
                 intro: 先进的底层技术,
-                description: 以区块链跨链、隐私计算及大数据分析技术创新为核心，拥有自主研发、安全可控的区块链底层技术实力
+                description: 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，拥有自主研发、安全可控的区块链底层技术实力
             },
             {
                 img: adv_second.png,
@@ -231,34 +231,34 @@
     dynamicContent: {
         title: 企业动态,
         mostImportant: {
-            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/home-news/BSN-wenchang_chain.png,
-            title: 边界智能打造并上线首批 BSN 开放联盟链「文昌链 IRITA OPB」,
-            date: '2021-01-31',
-            intro: 边界智能基于其自主研发的安全可控的企业级联盟链 IRITA 系列产品，打造上线了首批 BSN 开放联盟链「文昌链  IRITA OPB」，以 BaaS 形式让开发者/中小企业直接专注于应用层业务逻辑的实现和部署，从而更好的满足中小企业以更具成本效益的方式快速开发和部署分布式商业应用 DBApp 的需求。,
-            link: https://mp.weixin.qq.com/s/F0QEBBG1uDVDWAEQDXMPBg,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
+            title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
+            date: '2022-03-07',
+            intro: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持 BSN 文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
+            link: https://mp.weixin.qq.com/s/airYH9g26AUKyj33cAtllQ,
             route: ,
         },
         dynamicList: [
             {
-                title: 丝路之舟与边界智能达成战略合作，共建联合国贸发会新型数字贸易基础设施,
-                date: '2021-09-06',
-                intro: 边界智能与中国丝路集团全资子公司丝路之舟就「基于区块链及大数据隐私保护技术的新一代数字贸易基础设施」达成战略合作，支持打造联合国贸发会（UNCTAD，联合国系统内唯一综合处理国家贸易与经济发展问题的国际经济组织）的新型数字贸易基础设施平台 DODR。,
-                link: https://mp.weixin.qq.com/s/DZrPLe3J1hyeR1j_xGDOJQ,
+                title: TIBC 跨链协议及跨链枢纽支持的一体化数字艺术品获得「新华网」报道,
+                date: '2021-11-19',
+                intro: 近日，新华社旗下综合信息服务网站「新华网」的报道「看见东方艺术，聆听中国声音 一体化数字艺术品链接全球市场」引起广泛关注。而报道中的跨链技术正是由边界智能开发的 TIBC 跨链协议所提供！,
+                link: https://mp.weixin.qq.com/s/HhRHRZkAmOdpUkYIuzEYDw,
                 route: ,
             },
             {
-                title: 厚积薄发！边界智能前沿区块链技术及解决方案屡次夺冠,
-                date: '2021-07-05',
-                intro: 在区块链技术和产业创新大有可为的 2021 年，边界智能凭借在 NFT、绿色金融、大数据隐私保护等方面的前沿技术实力和创新应用能力，在多项重量级的比赛中荣获冠军，荣获 2021 长三角（上海）区块链应用创新大赛成长组一等奖、2021 年南京创新周 · 江北新区数字金融创新大赛特等奖等。,
-                link: ,
-                route: /news/边界智能前沿区块链技术及解决方案屡次夺冠,
+                title: 喜报 | 边界智能连续三年荣膺「中国区块链百强企业」,
+                date: '2021-11-23',
+                intro: 凭借前沿的区块链创新技术和灵活多样的应用落地能力，边界智能与华为、百度、京东科技、腾讯云区块链等企业被共同评选为「2021 中国区块链百强企业」。连续三年获此荣誉，体现了业界对边界智能综合实力与发展前景的高度认可！,
+                link: https://mp.weixin.qq.com/s/n6qZmYlROA3uwDdYqlQEoQ,
+                route: ,
             },
             {
-                title: 「文昌链  IRITA OPB」上的多样化分布式商业应用,
-                date: '2021-09-06',
-                intro: 基于「文昌链  IRITA OPB」，已有众多不同领域的分布式商业应用 DBApp 上线部署，包括基于 NFT 技术开发的票务管理应用「魔卡」，与南京壹证通共同打造的识蛛可信身份平台，都江堰审批局「智慧政务+区块链」政务服务底层区块链平台等；还将支持 IP.PUB 应用助推中国传统艺术品可信全球贸易。,
-                link: ,
-                route: /news/文昌链IRITAOPB上的多样化分布式商业应用,
+                title: 边界智能支持「大唐链」正式上线，携手海文交推进国际数字艺术品流通,
+                date: '2022-02-23',
+                intro: 面向文化艺术品交易的行业区块链「大唐链」正式上线，由边界智能提供技术支撑，携手海南国际文化艺术品交易中心（海文交）实现优质国际数字艺术品按业务需要在异构网络中有序流转。「大唐链」的上线运营为海文交数字艺术品交易、实物艺术品交易和版权交易业务开展奠定了坚实基础。,
+                link: https://mp.weixin.qq.com/s/82p8l3jzYbjGwrlLptdLLg,
+                route: ,
             },
         ],
         moreText: 更多动态
