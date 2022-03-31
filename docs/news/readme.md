@@ -20,7 +20,7 @@
         {
             date: '03月07日',
             year: '2022',
-            title:「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
+            title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
             description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持 BSN 文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
             route: ,
@@ -29,7 +29,7 @@
         {
             date: '02月23日',
             year: '2022',
-            title:边界智能支持「大唐链」正式上线，携手海文交推进国际数字艺术品流通,
+            title: 边界智能支持「大唐链」正式上线，携手海文交推进国际数字艺术品流通,
             description: 面向文化艺术品交易的行业区块链「大唐链」正式上线，由边界智能提供技术支撑，携手海南国际文化艺术品交易中心（海文交）实现优质国际数字艺术品按业务需要在异构网络中有序流转。「大唐链」的上线运营为海文交数字艺术品交易、实物艺术品交易和版权交易业务开展奠定了坚实基础。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-02-23.png,
             route: ,
@@ -38,7 +38,7 @@
         {
             date: '02月10日',
             year: '2022',
-            title:艾贝链动与边界智能达成战略合作，深耕企业级数字资产合规托管服务,
+            title: 艾贝链动与边界智能达成战略合作，深耕企业级数字资产合规托管服务,
             description: 艾贝链动与边界智能建立战略级合作伙伴关系。通过发挥各自在区块链领域的产品技术能力与生态优势，共同为全球范围内持牌合规数字金融机构提供更安全可信的数字金融基础设施；同时，在元宇宙发展的大趋势下，共同服务实体经济，赋能传统企业数字化转型。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-02-10.png,
             route: ,
@@ -47,7 +47,7 @@
          {
             date: '01月19日',
             year: '2022',
-            title:边界智能成为中国证2022券期货业区块链联盟首批成员单位,
+            title: 边界智能成为中国证2022券期货业区块链联盟首批成员单位,
             description: 2022 年 1 月，	中国证券期货业区块链联盟成立大会	成功举办，会上宣布了边界智能与上交所、深交所、证券业协会等 68 家机构成为联盟首批成员单位。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-01-19.png,
             route: ,
@@ -56,7 +56,7 @@
         {
             date: '01月18日',
             year: '2022',
-            title:边界智能亮相「2021 上海区块链年度盛典」，再获两项大奖,
+            title: 边界智能亮相「2021 上海区块链年度盛典」，再获两项大奖,
             description: 2022 年 1 月 16 日，由上海区块链技术协会举办的「链你我 赢未来」2021 上海区块链年度盛典隆重召开，边界智能作为协会副会长单位出席盛典，其创始人曹恒女士荣获「2021 年度区块链优秀创业者」，文昌链 IRITA OPB 入选「全国区块链技术应用精选案例专辑」。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-01-18.png,
             route: ,
@@ -65,7 +65,7 @@
          {
             date: '12月29日',
             year: '2021',
-            title:边界智能斩获 2021 中国区块链领军企业、2021 年度技术创新奖,
+            title: 边界智能斩获 2021 中国区块链领军企业、2021 年度技术创新奖,
             description: 边界智能捷报频传，近期先后斩获了 2021 中国区块链领军企业、2021 年度技术创新奖两大荣誉奖项，以实干实绩为 2021 画上完美的句号。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-12-29.png,
             route: ,
@@ -74,7 +74,7 @@
          {
             date: '12月24日',
             year: '2021',
-            title:边界智能五周年 | 聚力成长 链动未来,
+            title: 边界智能五周年 | 聚力成长 链动未来,
             description: 边界智能成立五周年，致力于成为全球受尊重的区块链创新团队，构建分布式商业价值互联网，为全球合作伙伴及行业创造深远价值。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-11-19.png,
             route: ,
@@ -112,9 +112,9 @@
             year: '2021',
             title: 边界智能当选上海区块链技术协会副会长单位,
             description: 2021 年 10 月 29 日，上海区块链技术协会第一届第六次理事会隆重举行，边界智能出席参与了本次会议，并被选举成为副会长单位。,
-            imgName:https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-11-03.png,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-11-03.png,
             route: ,
-            link:https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486296&idx=1&sn=4f8c2534f040686cc88d405c19fab6ab&chksm=faeaba89cd9d339fa22fed37449bbbaa8eaf4812a416b89df2ac42b25b1f2df9a47c3086e0a1&token=580899675&lang=zh_CN#rd
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486296&idx=1&sn=4f8c2534f040686cc88d405c19fab6ab&chksm=faeaba89cd9d339fa22fed37449bbbaa8eaf4812a416b89df2ac42b25b1f2df9a47c3086e0a1&token=580899675&lang=zh_CN#rd
         },
         {
             date: '10月22日',
@@ -123,16 +123,16 @@
             description: 北京文交联合投资有限公司（简称「文交联合」）与边界智能建立战略合作关系，通过区块链跨链 NFT 技术等，为传统文化艺术作品、影视 IP 衍生品、数字文化艺术品及文化艺术品交易平台等文化艺术产业相关领域提供基于区块链信任机制的价值赋能，助推数字文创金融迈入新纪元。,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-10-22.png,
             route: ,
-            link:https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486198&idx=1&sn=e87ad3669fc4659472051ab54dc52549&chksm=faeabb27cd9d323116c7e43740f469d5d24ae95e3b1e1f7b6cf855f700baee1eb85035f03f42&token=580899675&lang=zh_CN#rd
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486198&idx=1&sn=e87ad3669fc4659472051ab54dc52549&chksm=faeabb27cd9d323116c7e43740f469d5d24ae95e3b1e1f7b6cf855f700baee1eb85035f03f42&token=580899675&lang=zh_CN#rd
         },
         {
             date: '10月15日',
             year: '2021',
             title: 数字贸易生态联盟启动了！—— 边界智能在 2021 全球服贸会数字金融服务创新论坛,
             description: 2021 年 10 月 13 日，2021 全球服务贸易大会数字金融服务创新论坛在南京召开。界智能作为数字贸易基础设施平台的核心技术服务方，受邀出席本次论坛，与南京数字金融产业研究院、中国丝路集团以及亚洲数字银行作为创始成员参与数字贸易基础设施平台生态联盟启动仪式，共同见证全球行业创新前沿金融科技服务模式落地。,
-            imgName:https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-10-15.png,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2021-10-15.png,
             route: ,
-            link:https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486170&idx=1&sn=357383fbaa3ab077e1b9540d8d8b463f&chksm=faeabb0bcd9d321d46e39d44bcff4f4133fd3b5fb275f03617a67dcafd1e6d307dbef2aa6f86&token=580899675&lang=zh_CN#rd
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486170&idx=1&sn=357383fbaa3ab077e1b9540d8d8b463f&chksm=faeabb0bcd9d321d46e39d44bcff4f4133fd3b5fb275f03617a67dcafd1e6d307dbef2aa6f86&token=580899675&lang=zh_CN#rd
         },
         {
             date: '10月11日',
