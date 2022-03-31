@@ -94,7 +94,7 @@
             year: '2021',
             title: TIBC 跨链协议及跨链枢纽支持的一体化数字艺术品获得「新华网」报道,
             description: 近日，新华社旗下综合信息服务网站「新华网」的报道「看见东方艺术，聆听中国声音 一体化数字艺术品链接全球市场」引起广泛关注。而报道中的跨链技术正是由边界智能开发的 TIBC 跨链协议所提供！,
-            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/28.png,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/xinhua.png,
             route: ,
             link: https://mp.weixin.qq.com/s/HhRHRZkAmOdpUkYIuzEYDw
         },
