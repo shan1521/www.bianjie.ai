@@ -35,9 +35,6 @@
                 imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-2.png
             },
             {
-                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-3.jpg
-            },
-            {
                 imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-4.jpeg
             },
             {
