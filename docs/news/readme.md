@@ -8,7 +8,44 @@
         subTitle: 了解企业最新动态、行业资讯及新闻报道
     },
     dynamicList: [
+            {
+            date: '06月10日',
+            year: '2022',
+            title: 喜讯 | 边界智能荣登《陆家嘴》杂志 2022「最受投资人欢迎的区块链企业 10 强」,
+            description: 凭借前沿的技术研发实力、产品创新和平台服务能力，边界智能荣登「2022 首届数字科技投融资榜单」，获得「最受投资人欢迎的区块链企业 10 强」荣誉。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/20220613shiqiang.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491876&idx=1&sn=28da77d0f9fde4015fe1b10233ea5404&chksm=fae950f5cd9ed9e30c4e07c38c58a9b24995dda831c998efd53d15edf4c1b583c07633ccacad&token=1939730677&lang=zh_CN#rd
+        },
+           {
+            date: '05月25日',
+            year: '2022',
+            title: La Prairie 莱珀妮新品体验活动 NFT 首发文昌链，获权威媒体报道,
+            description: 日前，国际殿堂级护肤品牌 La Prairie 莱珀妮联合全球知名品牌营销机构 CircleSquare 推出「光与水的奇幻邂逅」线下快闪体验活动，获全球旅游零售行业权威媒体《穆迪戴维特报告》（The Moodie Davitt Report）独家报道。本次活动在 BSN-DDC 文昌链 NFT 技术支撑下由「边界智能」团队提供整体技术服务，成功打造并发行了精美绝伦的「纯皙·水中曼舞曲系列数字艺术藏品」。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/20220525laprairie.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491330&idx=1&sn=9622588b89aeafde741869d1c746bd90&chksm=faeaaed3cd9d27c577cea73f978be72cb244b3f2b47fe336992d252021005efe150513eea908&token=1939730677&lang=zh_CN#rd
+        },
+          {
+            date: '05月19日',
+            year: '2022',
+            title: 边界智能公布首批「文昌链精英服务商」认证名单，Thoughtworks 等标杆生态伙伴引领服务进阶,
+            description: 为了更好地服务客户，边界智能正式推出「文昌链精英服务商计划」！面向全行业遴选具有卓越技术能力及丰富项目经验的专业合作伙伴，助力客户更高效使用文昌链，加速数字化进程，实现盈利增长新途径。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/10220519jingyingfuwushang.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491459&idx=1&sn=f5571c11cdaf7873695fe5c41a01dc4b&chksm=faeaae52cd9d27446d1bff41f26fce41d33a093206e644c13a82d1afaaff0cef8fec3be85827&token=1939730677&lang=zh_CN#rd
+        },
          {
+            date: '05月10日',
+            year: '2022',
+            title: 边界智能获《南京日报》头版报道，助力南京鼓楼打造区块链发展新高地,
+            description: 5 月 8 日，《南京日报》头版报道了南京鼓楼高新区区块链产业先导区的重点企业边界智能。作为南京鼓楼高新区重点企业、鼓楼区块链产业先导区入驻企业，边界智能将继续秉持专业的技术服务能力为鼓楼区块链产业的发展增添动力，为「首善之区、幸福鼓楼」的建设贡献更多科技力量。,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/20220510nanjingbaodao.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491054&idx=1&sn=ddbb814234c2dd27419a67ca27798ce0&chksm=faeaac3fcd9d25299439d2197497a8b5f568a51f4e0d87716f8321c5f036e3109a945b17ae33&token=1939730677&lang=zh_CN#rd
+        },
+        {
             date: '03月18日',
             year: '2022',
             title: 边界智能 4 项成果通过网信办第七批境内区块链信息服务备案,

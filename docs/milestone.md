@@ -26,10 +26,64 @@
         },
     ],
     timelineContent: [
+       {
+            year: 2022,
+            monthList: [
+               {
+                    month: '05',
+                    events: [
+                        {
+                            event: 边界智能入选海文交首批白名单推荐机构
+                        },
+                    ]
+                },
+              {
+                    month: '03',
+                    events: [
+                        {
+                            event: 「AVATA」多链/跨链 API 服务平台上线，首发开启文昌链服务
+                        },
+                    ]
+                },
+                {
+                    month: '01',
+                    events: [
+                        {
+                            event: 边界智能成为中国证券期货业区块链联盟首批成员单位
+                        }
+                    ]
+                },
+            ]
+        },
         {
+      {
             year: 2021,
             monthList: [
-                {
+               {
+                    month: '12',
+                    events: [
+                        {
+                            event: 边界智能成立五周年 | 聚力成长，链动未来
+                        },
+                    ]
+                },
+              {
+                    month: '11',
+                    events: [
+                        {
+                            event: TIBC 精简跨链通信协议上线 IRITA 产品线 BSN 文昌链及跨链枢纽，支持异构网络互联互通
+                        },
+                    ]
+                },
+              {
+                    month: '10',
+                    events: [
+                        {
+                            event: 边界智能成为联合国贸发会新型数字贸易基础设施平台 DODR 、亚洲数字银行「新一代数字银行」及多家持牌文化艺术品交易中心的区块链及大数据隐私保护技术核心服务提供商
+                        },
+                    ]
+                },
+               {
                     month: '07',
                     events: [
                         {
