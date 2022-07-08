@@ -45,7 +45,12 @@ module.exports = {
                             {
                                 abbreviation: 'BSN 文昌链',
                                 intro: '基于 IRITA 的开放联盟链',
-                                link: 'https://bsn-wenchang.bianjie.ai/'
+                                link: 'https://wenchang.bianjie.ai/'
+                            },
+                            {
+                                abbreviation: 'AVATA',
+                                intro: '多链/跨链 API 服务平台',
+                                link: 'https://console.avata.bianjie.ai'
                             },
                         ]
                     },

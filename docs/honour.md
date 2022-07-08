@@ -35,9 +35,6 @@
                 imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-2.png
             },
             {
-                imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-3.jpg
-            },
-            {
                 imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-4.jpeg
             },
             {
@@ -119,9 +116,74 @@
     otherHonoursContent: {
         title: 更多荣誉,
         otherHonoursList: [
+             {
+                year: 2022,
+                monthList: [
+                       {
+                        month: '06',
+                        honours: [
+                            {honour: 边界智能荣登《陆家嘴》杂志2022「最受投资人欢迎的区块链企业10强」},
+                        ]
+                    },
+                      {
+                        month: '05',
+                        honours: [
+                            {honour: 南京边界入选南京鼓楼区「2022年度第一批30个应用场景」企业名单},
+                        ]
+                    },
+                     {
+                        month: '02',
+                        honours: [
+                            {honour: 边界智能团队荣获2021 FATE开源社区「十大年度人物」奖项},
+                        ]
+                    },
+                     {
+                        month: '01',
+                        honours: [
+                            {honour: 边界智能创始人曹恒女士荣获「2021年度区块链优秀创业者」},
+                        ]
+                    },
+                    {
+                        month: '01',
+                        honours: [
+                            {honour: 边界智能文昌链IRITA OPB入选「全国区块链技术应用精选案例专辑」},
+                        ]
+                    },
+                ]
+            },
             {
                 year: 2021,
                 monthList: [
+                       {
+                        month: '12',
+                        honours: [
+                            {honour: 边界智能斩获2021中国区块链领军企业、2021年度技术创新奖},
+                        ]
+                    },
+                      {
+                        month: '11',
+                        honours: [
+                            {honour: 边界智能连续三年荣膺「中国区块链百强企业」},
+                        ]
+                    },
+                     {
+                        month: '11',
+                        honours: [
+                            {honour: 边界智能IRITA获评「2021中国区块链名品」},
+                        ]
+                    },
+                     {
+                        month: '07',
+                        honours: [
+                            {honour: 边界智能荣登2021世界区块链大会「区块链名企30」榜单},
+                        ]
+                    },
+                    {
+                        month: '07',
+                        honours: [
+                            {honour: 边界智能荣登「2021全球区块链企业创新50强」榜单},
+                        ]
+                    },
                     {
                         month: '06',
                         honours: [

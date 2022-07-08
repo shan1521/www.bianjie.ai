@@ -17,11 +17,11 @@
                     </div>
                 </div>
                 <a class="bsn-wenchang_desc"
-                    href="https://bsn-wenchang.bianjie.ai/"
+                    href="https://wenchang.bianjie.ai/"
                     target="_blank"
                     rel="noopener noreferrer">{{bsnWenchangchain.description}}</a>
                 <a class="go_chain"
-                    href="https://bsn-wenchang.bianjie.ai/"
+                    href="https://wenchang.bianjie.ai/"
                     target="_blank"
                     rel="noopener noreferrer">
                     <span class="text">{{bsnWenchangchain.moreText}}</span>
@@ -38,7 +38,7 @@ export default {
     props: ["bsnWenchangchain"],
     methods: {
         goBsnWenchangchain() {
-            window.open("https://bsn-wenchang.bianjie.ai/");
+            window.open("https://wenchang.bianjie.ai/");
         },
     },
 };
