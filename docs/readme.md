@@ -7,7 +7,7 @@
         {
             img: banner_home_1.png,
             title: 边界智能 · 链动未来,
-            subTitle: 区块链和大数据技术服务专家
+            subTitle: 区块链技术和应用创新的价值互联网建设者
         },
         {
             img: banner_home_2.png,
