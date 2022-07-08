@@ -127,6 +127,11 @@
                     relationshipList: [],
                     link: ,
                 },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/abld_logo.jpg,
+                    relationshipList: [],
+                    link: ,
+                },
             ]
         },
         {
@@ -149,6 +154,11 @@
                 },
                 {
                     imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/sykj_logo.png,
+                    relationshipList: [],
+                    link: ,
+                },
+                {
+                    imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/digital_assets/wjlh_logo.jpg,
                     relationshipList: [],
                     link: ,
                 },
