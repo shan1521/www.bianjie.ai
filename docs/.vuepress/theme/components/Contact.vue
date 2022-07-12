@@ -1,159 +1,101 @@
 <template>
-
-    <div class="focus"
-        @mouseover="show"
-        @mouseout="show">
-
-        <!-- 二维码图标 -->
-        <div class="qr_div"
-            v-show="isShow">
-            <div class="qr_code">
-                <img src="../assets/home/qrcode_footer.png"
-                    alt=""
-                    class="qr_code_img" />
-            </div>
-            <div class="focus_title">· 扫码关注我们 ·</div>
-            <div class="border"></div>
-            <!-- 邮箱小图标 -->
-            <div class="yx">
-                <span class="yx_img"><img src="../assets/icon_yx.png"
-                        alt=""></span>
-                <span class="yx_text">contact@bianjie.ai</span>
-            </div>
-        </div>
-
-        <!-- 联系我们图标 -->
+    <div class="contact_container">
         <div class="contact_img">
-            <img src="../assets/contact.png"
-                alt="">
+            <img src="../assets/contact.png" alt="">
+        </div>
+        <div class="qrcode_container">
+            <div class="qrcode">
+                <img src="../assets/home/qrcode_footer.png" alt=""/>
+            </div>
+            <p class="qrcode_text">· 扫码关注我们 ·</p>
+            <div class="email_container">
+                <img src="../assets/icon_yx.png" alt="">
+                <span>contact@bianjie.ai</span>
+            </div>
         </div>
     </div>
-
 </template>
 <script>
 export default {
-    data() {
-        return {
-            isShow: false,
-        };
-    },
-    methods: {
-        show() {
-            this.isShow = !this.isShow;
-        },
-    },
+    name: "Contact"
 };
 </script>
 <style lang='stylus' scoped>
-.focus {
-    z-index: 10;
-    height: 28.8rem;
+.contact_container {
     position: fixed;
-    right: 4.8rem;
-    bottom: 13.2rem;
-    margin-left: 10rem;
+    right: 3.2rem;
+    bottom: 11.2rem;
     display: flex;
-    // flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
-
-    @media (max-width: 1096px) {
-        margin-left: 6rem;
+    z-index: 1;
+    @media(max-width: 1100px) {
+        right: 0.8rem;
     }
-
-    @media (max-width: 575px) {
+    @media(max-width: 500px) {
         display: none;
     }
-
-    .qr_div {
-        // z-index: 100;
-        // position: fixed;
-        // right: 10rem;
-        // bottom: 4.5rem;
-        margin-right: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 21rem;
-        height: 28.8rem;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 12px 0px rgba(7, 24, 78, 0.08);
-        border-radius: 4px;
-        border: 1px solid #E1E5F4;
-
-        @media (max-width: 768px) {
-            right: 8.4rem;
+    &:hover {
+        .qrcode_container {
+            display: block;
         }
-
-        @media (max-width: 400px) {
-            right: 7.2rem;
+    }
+    .contact_img {
+        width: 4rem;
+        height: 13rem;
+        img {
+            height: 100%;
         }
-
-        .border {
-            width: 12rem;
-            height: 0.1rem;
-            background: #000000;
-            opacity: 0.1;
-            // margin-top: 1.2rem;
-        }
-
-        .focus_title {
-            align-self: center;
-            height: 2.4rem;
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: #000000;
-            line-height: 2.4rem;
-        }
-
-        .yx {
-            display: flex;
-            align-item: center;
-            .yx_img  {
-                margin-right: 0.6rem;
-                width: 1.7rem;
-                img {
-                    width: 100%;
-                    vertical-align: middle;
-                }
-            }
-
-            .yx_text {
-                height: 2.4rem;
-                font-size: 1.4rem;
-                font-weight: 400;
-                color: #000000;
-                line-height: 2.4rem;
-            }
-        }
-
-        .qr_code {
+    }
+    .qrcode_container {
+        display: none;
+        position: absolute;
+        right: 5.2rem;
+        box-sizing: border-box;
+        padding: 2rem;
+        background: #fff;
+        box-shadow: 0 0 1.2rem 0 rgba(7, 24, 78, 0.08);
+        border-radius: 0.4rem;
+        border: 0.1rem solid #E1E5F4;
+        .qrcode {
             width: 17rem;
             height: 17rem;
-
             img {
-                width: 100%;
                 height: 100%;
             }
         }
-    }
-
-    .contact_img img {
-        // z-index: 100;
-        // position: fixed;
-        // right: 4.8rem;
-        // bottom: 13.2rem;
-        align-self: center;
-        width: 4rem;
-        height: 13rem;
-        border-radius: 0.4rem;
-
-        @media (max-width: 768px) {
-            right: 3.2rem;
+        .qrcode_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0.6rem;
+            font-size: $fontSize14;
+            font-weight: $fontWeight400;
+            color: #000000;
+            line-height: 2.4rem;
+            &::after {
+                content: '';
+                display: block;
+                margin-top: 1.2rem;
+                width: 12rem;
+                height: 0.1rem;
+                background: rgba(0, 0, 0, 0.1);
+            }
         }
-
-        @media (max-width: 400px) {
-            right: 2rem;
+        .email_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.1rem;
+            font-size: $fontSize14;
+            font-weight: $fontWeight400;
+            color: #000000;
+            line-height: 2.4rem;
+            img {
+                margin-right: 0.8rem;
+                width: 1.7rem;
+                height: 1.2rem;
+            }
         }
     }
 }
