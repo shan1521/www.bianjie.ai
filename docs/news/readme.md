@@ -26,7 +26,7 @@
 ,
             imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-07-01.png,
             route: ,
-            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492151&idx=1&sn=d7262ab0b9f15822eaabe0b65ad3be17&chksm=fae953e6cd9edaf03bacc4fb5475a0420fb5994f75cfd7a8cab72ff38c6f4e1caf7519d697de&token=1174206101&lang=zh_CN#rd
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492465&idx=1&sn=f2e642adcefe72cbb0c8997fe72872ee&chksm=fae952a0cd9edbb6124460b986207855d76f3dae0afc91f9241898029a9e16eb99a5a420a002#rd
         },
            {
             date: '06月21日',
