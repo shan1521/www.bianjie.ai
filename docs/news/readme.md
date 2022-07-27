@@ -9,6 +9,46 @@
     },
     dynamicList: [
             {
+            date: '07月23日',
+            year: '2022',
+            title: 文昌链单日链上交易处理超过以太坊 41%,
+            description: 2022 年 7 月 22 日，文昌链迎来了一个里程碑时刻：自 2022 年 3 月开始商业化运行以来，首次单日链上交易处理超过了以太坊，文昌链 24 小时交易消息数突破 168.9 万，比以太坊当日交易数 120.2 万高 41%。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-07-23.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492417&idx=1&sn=039a11a3cd0ca265df3388400ad3db67&chksm=fae95290cd9edb86425f9423447b29802861ca63ff8669924760aa31ba39903f71776ad2fd9c&token=1174206101&lang=zh_CN#rd
+        },
+           {
+            date: '07月01日',
+            year: '2022',
+            title: 开放联盟链性能调优以及 Web3 应用开发的最优实践,
+            description: 6 月以来，文昌链上业务量飞涨。BSN 运维团队红枣科技和文昌链技术支持团队边界智能通力合作，在不停服的前提下进行了系统的紧急升级及优化。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-07-01.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492151&idx=1&sn=d7262ab0b9f15822eaabe0b65ad3be17&chksm=fae953e6cd9edaf03bacc4fb5475a0420fb5994f75cfd7a8cab72ff38c6f4e1caf7519d697de&token=1174206101&lang=zh_CN#rd
+        },
+           {
+            date: '06月21日',
+            year: '2022',
+            title: 边界智能加入国家级「数字文创规范治理生态矩阵」首批发展伙伴,
+            description: 在上级有关部门的指导下，由新华网、上海文化产权交易所等倡议发起、设立了国家级「数字文创规范治理矩阵」。边界智能及阿里资产、腾讯音乐娱乐集团等众多公信领导机构、市场领军机构、专业龙头机构作为首批协作发展伙伴参与共建。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-06-21.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491950&idx=1&sn=c4be8dfee4cc5b922e4c29fcfcab171c&chksm=fae950bfcd9ed9a9178778e28f15b5f4b42517cc5f3469c59c79b91cc771a3ec0406478ead7a&token=1174206101&lang=zh_CN#rd
+        },
+           {
+            date: '06月15日',
+            year: '2022',
+            title: 边界智能公布第二批文昌链精英服务商名单，与行业伙伴共创共赢！,
+            description: 边界智能推出了「文昌链精英服务商计划」，面向全行业遴选具有卓越技术能力及丰富项目经验的专业合作伙伴。计划自推出以来，引发了行业合作伙伴的热切关注和踊跃申报，五月首批精英服务商更是以高水准的服务品质赢得了文昌链生态应用的广泛好评。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-06-15.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491933&idx=1&sn=8092c7491c776a6eee7972f8de2b492e&chksm=fae9508ccd9ed99a9652aa171320d6bda29988a3ec6e7299212e57331492def23c8e409b79f0&token=1174206101&lang=zh_CN#rd
+        },
+            {
             date: '06月10日',
             year: '2022',
             title: 喜讯 | 边界智能荣登《陆家嘴》杂志 2022「最受投资人欢迎的区块链企业 10 强」,
