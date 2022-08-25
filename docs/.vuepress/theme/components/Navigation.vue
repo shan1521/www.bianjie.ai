@@ -24,7 +24,11 @@
                         @mouseenter="menuShowFn(index)"
                         @mouseleave="closeProdAppMenu"
                     >
+                        <a v-if="item.isOutLink" class="item" :class="isColor ? 'color_font' : ''" :href="item.link" target="_blank" rel="noopener noreferrer">
+                            {{item.text}}
+                        </a>
                         <router-link
+                            v-else
                             class="item"
                             :class="[ 
                                 isColor ? 'color_font' : '', 
@@ -113,7 +117,11 @@
                     >
                         <div class="list_item_wrap">
                             <div class="mobile_list_item">
+                                <a v-if="item.isOutLink" class="mobile_item" :class="isColor ? 'color_font' : ''" :href="item.link" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(index)">
+                                    {{item.text}}
+                                </a>
                                 <router-link
+                                    v-else
                                     class="mobile_item"
                                     :class="[ 
                                         isColor ? 'color_font' : '', 
@@ -355,7 +363,7 @@ export default {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
         }
-        @media (max-width: 968px) {
+        @media (max-width: 1100px) {
             display: none;
         }
 
@@ -609,7 +617,7 @@ export default {
         height: 4.8rem;
         z-index: 999;
         transition: all .3s linear;
-        @media (max-width: 968px) {
+        @media (max-width: 1100px) {
             display: block;
         }
         .mobile_nav_content {
