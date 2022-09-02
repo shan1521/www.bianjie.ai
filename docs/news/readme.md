@@ -8,7 +8,58 @@
         subTitle: 了解企业最新动态、行业资讯及新闻报道
     },
     dynamicList: [
+    
+              {
+            date: '08月24日',
+            year: '2022',
+            title: 文昌链助力 CHARLES & KEITH 开启「星际幻宙」 解锁元宇宙艺术追光之旅,
+            description: 系列「星际幻宙」数字艺术品基于 BSN 文昌链 NFT 技术打造，是将艺术作品在 BSN 文昌链上通过数字手段加密后进行唯一标识，合规生成的具有独特收藏价值的数字艺术品。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-08-24.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493062&idx=1&sn=069a2f4af0ccdfe7ca6e0acec285c650&chksm=fae95417cd9edd01f40f86cfcaf8add3e8542337f8662e78a0a3440373832bfdd0d42b749a89&token=204525573&lang=zh_CN#rd
+        },
+              {
+            date: '08月19日',
+            year: '2022',
+            title: 凤凰网旗下「凰家艺品」与 BSN 文昌链达成战略合作，合作共建多链/跨链生态体系,
+            description: 凤凰网官方数字艺术藏品平台——「凰家艺品」与 BSN 文昌链正式达成战略合作，未来将共同为数字藏品用户提供更好的技术与服务体验。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-08-19.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493041&idx=2&sn=a43e8c86582c6000987738ee34a3df07&chksm=fae95460cd9edd7673bd5e288b7043b336a9f9a8873b41a4b0a4064e6bdd156480471e792942&token=204525573&lang=zh_CN#rd
+        },
+              {
+            date: '08月05日',
+            year: '2022',
+            title: 边界智能公布第三批文昌链精英服务商名单，与行业伙伴共创文昌链繁荣生态,
+            description: 文昌链和 AVATA 的优异表现离不开「文昌链精英服务商」行业伙伴的支持和信任。未来，更希望能与伙伴们携手并肩，共同构建合规、繁荣的文昌链应用生态。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-06-15.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492668&idx=1&sn=84f908e5fbee7212d902bbc8a4bb66ff&chksm=fae955edcd9edcfb4b033e63e3e8a993dda071806a2bfa5a2990005bcfad8e90f7bf150b7362&token=204525573&lang=zh_CN#rd
+        },
+              {
+            date: '08月01日',
+            year: '2022',
+            title: 联手区块链专委会：“非同质化通证”术语发布 | CCF术语快线,
+            description: 非同质化通证技术是以区块链技术为核心的下一代互联网应用支持资产数字化的重要技术。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-08-01.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492564&idx=1&sn=1ec339da922e0a10c0846d6ebf75c2d2&chksm=fae95205cd9edb13ab4d046f73c608f39d29cfc81ebdf33e3ccb5d3b45b5a507b06542dfe3c8&token=204525573&lang=zh_CN#rd
+        },
             {
+            date: '07月27日',
+            year: '2022',
+            title: 边界智能 AVATA 多链/跨链 API 服务平台通过第九批境内区块链信息服务备案,
+            description: 边界智能推出的「AVATA 区块链应用快速接入服务」（即「AVATA」多链/跨链 API 服务平台）通过备案。目前，边界智能已有 5 项区块链产品和项目通过网信办区块链信息服务备案。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-07-27.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492466&idx=1&sn=040d88d63912a2bbd9845965dc360a93&chksm=fae952a3cd9edbb51b2820b1a722fae13576c3eccdce722fb01b07f546f586e71a2b1225288c&token=204525573&lang=zh_CN#rd
+        },
+           {
             date: '07月23日',
             year: '2022',
             title: 文昌链单日链上交易处理超过以太坊 41%,
