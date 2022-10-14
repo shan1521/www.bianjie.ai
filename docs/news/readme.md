@@ -8,8 +8,89 @@
         subTitle: 了解企业最新动态、行业资讯及新闻报道
     },
     dynamicList: [
+  
     
+               {
+            date: '09月29日',
+            year: '2022',
+            title: 边界智能参与编写，行业首个《数字藏品发行平台技术要求与评测方法》发布,
+            description: 中国信通院发布了行业首个《数字藏品发行平台技术要求与评测方法》标准。该标准由边界智能联合腾讯、百度、京东等单位共同研制，适用于区块链在数字藏品场景中的发行平台的设计与实现，也适用于第三方机构对区块链数字藏品发行平台进行测评。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-29.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493715&idx=1&sn=7af4b1f0158da0b2ab7647d7c66a17e3&chksm=fae95982cd9ed09411ae22792fcff52a8a7362347fbdbcba4f094174c33a6e2ae43a984a97ec&token=1091339878&lang=zh_CN#rd
+        },
+               {
+            date: '09月28日',
+            year: '2022',
+            title: 「可以上屏的数字艺术」，酷天下联手文昌链推动数字艺术品实体化,
+            description: 基于边界智能的先进区块链技术、多链跨链体系运营能力和丰富生态，以及酷天下独有的加密数字屏技术，合作双方将共同探索「智能硬件+数字艺术品投屏展示」的创新玩法，带来数字艺术品多屏发布、展示与收藏的全新模式。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-28.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493684&idx=1&sn=f688983313288710b3c963de553f937f&chksm=fae959e5cd9ed0f35e449723a01be0f9a4ba6ea2421c1158ac6589de20838fb93ab0d29366ec&token=1091339878&lang=zh_CN#rd
+        },
+               {
+            date: '09月22日',
+            year: '2022',
+            title: 边界智能参编《区块链赋能 5G 网络共建共享白皮书》，探索区块链技术在 5G 网络的创新前沿,
+            description: 《区块链赋能5G网络共建共享白皮书》由可信区块链推进计划组织，上海边界智能科技有限公司与中国电信、中国联通、中国信息通信研究院、中兴通讯、华为等共 11 家单位参与编写。边界智能曹恒和奚海峰位列白皮书编写组主要成员。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-22.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493511&idx=1&sn=a1e13274c8c5f4cb85adc8b72b558853&chksm=fae95656cd9edf40ca3caa9c5ba735055adba4c84a37cf242b067826c9fe747e89b6b8348415&token=1091339878&lang=zh_CN#rd
+        },
+               {
+            date: '09月20日',
+            year: '2022',
+            title: 文昌链首发！GGAC 银河画廊发布国内首个游戏 IP 类 PFP 头像！,
+            description: 顶级 CG 艺术品牌 GGAC 旗下银河画廊在文昌链正式发布国内首款游戏 IP 类 PFP 头像项目——碧油唧《古剑奇谭网络版》头像盲盒数字艺术品（简称「碧油唧数字头像」）。这也是 GGAC 与文昌链达成合作后，在文昌链发售的首款数字艺术品。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-20.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493477&idx=1&sn=f0f30db906d271d61490aa6064faeca5&chksm=fae956b4cd9edfa2545287654efee0b5c1fdb4073de5c6054911fda8676c87b2752781e36c94&token=1091339878&lang=zh_CN#rd
+        },
+               {
+            date: '09月09日',
+            year: '2022',
+            title: 马马也 MATCH 携手文昌链中秋献礼，打造无糖但加「密」的元宇宙月饼,
+            description: 在这个中秋佳节，创意热店 MATCH 马马也携手文昌链，以心意为馅，用科技加「密」，打造了一款独一无二的元宇宙月饼。每个月饼都是专属定制，由广告教父 Tomaz 莫康孙亲自料理，马马也创意工厂限量生产，采用边界智能的区块链技术上链永存，献上 Web 3.0 时代的浓情祝福。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-09.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493347&idx=1&sn=5a956534b489e022622a499abbd3796f&chksm=fae95732cd9ede242e600b88db8676e10bf922689095c5313d9c6fc4f574c3267930a88ee59e&token=1091339878&lang=zh_CN#rd
+        },
               {
+            date: '09月08日',
+            year: '2022',
+            title: 文昌链多链体系强力助阵，湖南大数据交易所「文化大数据交易中心」正式上线运营,
+            description: 文昌链作为具有跨链能力并支持互联网级别应用的开放联盟链，将把文昌链丰富的 Web 3.0 应用场景接入开放互联的文悟链联盟，并为未来「文化大数据交易中心」的「文化出海」全球流通计划提供多链跨链技术服务与保障。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-08.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493217&idx=1&sn=74e61735c2d01848c408f4ddf89ead94&chksm=fae957b0cd9edea687466862bc477da524c1e703960dc60648d95d18cc8ec6148500bb06920c&token=1091339878&lang=zh_CN#rd
+        },
+             {
+            date: '09月06日',
+            year: '2022',
+            title: 边界智能荣登《2022 元宇宙产品图谱》，赋能实体经济，构建数据可信流通坚实底座,
+            description: 9 月 1 日，由中国信息通信研究院牵头发起的「元宇宙创新探索方阵」正式成立，同时发布了《2022 元宇宙产业图谱》。边界智能作为数据可信流通的底层技术平台，以及涵盖生活消费领域、公共服务领域的区块链应用专业技术服务商，与百度、京东、字节跳动、蚂蚁集团等头部企业并列上榜！
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-06.png,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493171&idx=1&sn=875d7798fd46a6365aa269bebba6f380&chksm=fae957e2cd9edef40ed8cb5aa2c808f49b48aa4d024cc9d6c144a903adbb4ad00405cc74bf03&token=1091339878&lang=zh_CN#rd
+        },
+              {
+            date: '09月02日',
+            year: '2022',
+            title: 保利当代艺术携手文昌链，「数字艺术品+商业地产营销」，数字与实体「融」出商业新动能,
+            description: 时逢太古地产 50 周年，北京保利当代艺术有限公司携手 BSN 文昌链，以太古地产购物中心为载体，以区块链技术为突破，打造了一款潮流换装类多人互动社交应用「ForMe」，开启「数字艺术品+商业地产营销」新型营销方式。
+,
+            imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-02.jpg,
+            route: ,
+            link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493115&idx=1&sn=e9a047d9484dc2ea0ed47190debc4c3c&chksm=fae9542acd9edd3ce9f214c2377ff14807e07c71cd308baa440009158ac2c342c0abcc607f2f&token=1091339878&lang=zh_CN#rd
+        },
+             {
             date: '08月24日',
             year: '2022',
             title: 文昌链助力 CHARLES & KEITH 开启「星际幻宙」 解锁元宇宙艺术追光之旅,
