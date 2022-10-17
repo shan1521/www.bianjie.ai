@@ -49,7 +49,7 @@ module.exports = {
                             },
                             {
                                 abbreviation: 'AVATA',
-                                intro: '多链/跨链 API 服务平台',
+                                intro: '多链跨链分布式应用服务平台',
                                 link: 'https://console.avata.bianjie.ai'
                             },
                         ]
