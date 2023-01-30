@@ -7,5 +7,6 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
     yarn run build-params umengId,umengWebId && yarn build
 
 FROM nginx:1.19-alpine
-RUN sed -i "15i \    location /pay-information { \n      rewrite ^/pay-information/(.*)$ /$1 break;\n      proxy_pass https://info.bianjie.ai;\n    }"  /etc/nginx/conf.d/default.conf
+RUN sed -i "11i \        if ($request_filename ~* index.html|.*\.ico$)\n\      {\n\      add_header Cache-Control "no-cache";\n\     }\n\"  /etc/nginx/conf.d/default.conf
+RUN sed -i "19i \    location /pay-information { \n      rewrite ^/pay-information/(.*)$ /$1 break;\n      proxy_pass https://info.bianjie.ai;\n    }"  /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
