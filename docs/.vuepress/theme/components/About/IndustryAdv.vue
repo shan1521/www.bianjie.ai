@@ -30,7 +30,6 @@
                 <swiper class="swiper" :options="swiperOpts">
                     <swiper-slide
                         class="swiper_item"
-                        v-if="industryAdvantage.industryAdvImg"
                         v-for="( item, index ) in industryAdvantage.industryAdvImg"
                         :key="index"
                     >
@@ -68,12 +67,15 @@ export default {
     },
     methods: {
         arrowClick(val) {
-            if(val == 'next') {
-                this.$refs.swiperRef.next();
-                this.$refs.swiperRefSmall.next();
-            } else {
-                this.$refs.swiperRef.prev();
-                this.$refs.swiperRefSmall.prev();
+            try {
+                if(val == 'next') {
+                    this.$refs.swiperRef.next();
+                    this.$refs.swiperRefSmall.next();
+                } else {
+                    this.$refs.swiperRef.prev();
+                    this.$refs.swiperRefSmall.prev();
+                }
+            } catch (error) {
             }
         }
     },

@@ -81,21 +81,7 @@ export default {
         },
         maskVisible(){
             this.showMask = true;
-        },
-        // toLeft(){
-
-        // },
-        // toRight() {
-        //     let topIndex = 0;
-        //     // this.$refs.swiperTop.scrollLeft = (201 + 32) * activeIndex + 'px';
-        //     const topItems = document.querySelectorAll('.top_list .top_item');
-        //     const bottomItems = document.querySelectorAll('.bottom_list .bottom_item');
-        //     topItems.forEach((topItem, index)=>{
-        //         topIndex = index;
-        //         this.$refs.swiperTop.scrollLeft = -(201 + 32) * topIndex + 'px';
-        //     })
-        //     console.log(topIndex)
-        // }
+        }
     },
     components: {
         Swiper,

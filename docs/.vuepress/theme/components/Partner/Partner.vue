@@ -8,14 +8,15 @@
 <script>
 import PartnerTitle from './PartnerTitle.vue';
 import PartnerContent from './PartnerContent.vue';
+import { getModuleContent } from '../../util';
 export default {
     name: 'Partner',
     computed: {
         partnerTitle() {
-			return this.$frontmatter.partnerTitle;
+			return getModuleContent(this, 'partnerTitle')
 		},
         partnerList() {
-			return this.$frontmatter.partnerList;
+			return getModuleContent(this, 'partnerList')
 		},
     },
     components: {

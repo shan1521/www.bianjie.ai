@@ -16,26 +16,28 @@ import PlanAdvantage from './PlanAdvantage';
 import ProcessArchi from './ProcessArchi';
 import CoreFunctions from './CoreFunctions';
 import Example from './Example';
+import { getModuleContent } from '../../util';
+
 export default {
     name: "AppScenes",
     computed: {
         appTitleContent() {
-            return this.$frontmatter.appTitleContent;
+            return getModuleContent(this, 'appTitleContent');
         },
         sceneStatusContent() {
-            return this.$frontmatter.sceneStatusContent;
+            return getModuleContent(this, 'sceneStatusContent');
         },
         plansContent() {
-            return this.$frontmatter.plansContent;
+            return getModuleContent(this, 'plansContent');
         },
         processContent() {
-            return this.$frontmatter.processContent;
+            return getModuleContent(this, 'processContent');
         },
         coreFunctions() {
-            return this.$frontmatter.coreFunctions;
+            return getModuleContent(this, 'coreFunctions');
         },
         exampleContent() {
-            return this.$frontmatter.exampleContent;
+            return getModuleContent(this, 'exampleContent');
         },
     },
     components: {

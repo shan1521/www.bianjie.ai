@@ -12,20 +12,22 @@ import IritaHubTitle from "./IritaHubTitle.vue";
 import IntroContent from "./IntroContent.vue";
 import ArchiContent from "./ArchiContent.vue";
 import Advantage from "./Advantage.vue";
+import { getModuleContent } from '../../util';
+
 export default {
     name: "IritaHub",
     computed: {
         titleContent() {
-			return this.$frontmatter.titleContent;
+            return getModuleContent(this, 'titleContent');
 		},
         introContent() {
-			return this.$frontmatter.introContent;
+            return getModuleContent(this, 'introContent');
 		},
         architectureContent() {
-			return this.$frontmatter.architectureContent;
+            return getModuleContent(this, 'architectureContent');
 		},
         advantageContent() {
-			return this.$frontmatter.advantageContent;
+            return getModuleContent(this, 'advantageContent');
 		},
     },
     components: {

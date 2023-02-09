@@ -22,11 +22,7 @@ export default {
         dynamicList(){
             return this.$page.frontmatter.dynamicList;
         }
-    },
-    // mounted(){
-    //     console.log(this.$page.frontmatter.dynamicList,'markdown')
-    //     console.log(this,'markdown')
-    // }
+    }
 };
 </script>
 

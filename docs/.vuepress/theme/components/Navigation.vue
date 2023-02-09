@@ -2,16 +2,7 @@
     <div class="nav_container" :class="isColor ? 'white_bg' : ''">
         <div class="nav_content">
             <div class="nav_logo" @click="toHome">
-                <img
-                    v-if="!isColor"
-                    src="../assets/home/logo_white.png"
-                    alt=""
-                />
-                <img
-                    v-if="isColor"
-                    src="../assets/home/logo_black.png"
-                    alt=""
-                />
+                <img :src="getDiffLogo()" alt="">
             </div>
             <div class="nav_list_wrap">
                 <ul class="nav_list">
@@ -87,20 +78,12 @@
                     </router-link>
                 </div>
             </div>
+            <!-- todo shan 添加语言切换按钮 -->
         </div>
         <div class="mobile_nav_container">
             <div class="mobile_nav_content">
                 <div class="nav_logo" @click="toHome">
-                    <img
-                        v-if="!isColor"
-                        src="../assets/home/logo_white.png"
-                        alt=""
-                    />
-                    <img
-                        v-if="isColor"
-                        src="../assets/home/logo_black.png"
-                        alt=""
-                    />
+                    <img :src="getDiffLogo()" alt="">
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
@@ -187,6 +170,13 @@
 </template>
 
 <script>
+import cfg from '../../config.json';
+import { getLocalesNav, getCurrentEdition } from '../util';
+import logoWhite from '../assets/home/logo_white.png';
+import logoWhiteInter from '../assets/home/logo_white_inter.png';
+import logoBlack from '../assets/home/logo_black.png';
+import logoBlackInter from '../assets/home/logo_black_inter.png';
+
 export default {
     name: "Navigation",
     data() {
@@ -200,11 +190,10 @@ export default {
             showSubProduct: false,
             showSubScene: false,
             prodMenuShow: false,
-            appMenuShow: false
+            appMenuShow: false,
+            cfg,
+            edition: getCurrentEdition()
         };
-    },
-    created() {
-        this.navigation = this.$site.themeConfig.nav;
     },
     computed: {
         navigationList() {
@@ -222,10 +211,23 @@ export default {
         },
     },
     methods: {
+        getDiffLogo() {
+            let image = '';
+            switch(this.edition) {
+                case true: 
+                    image = this.isColor ? logoBlackInter : logoWhiteInter;
+                    break;
+                case false:
+                    image = this.isColor ? logoBlack : logoWhite;
+                    break;
+            }
+            return image;
+        },
         toHome() {
-            this.$router.push("/");
+            this.$router.push(this.$store.state.currentLang);
         },
         changeIndex(index) {
+            // todo shan 需要根据环境变量区分此处逻辑
             if (this.currentIndex !== index && index !== 6 && index !== 1 && index !== 2) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
@@ -233,7 +235,7 @@ export default {
         },
         scrollTop() {
             this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
-            const path = this.$route.path.split('.')[0].split('/')[1];
+            const path = this.$route.path.split('.')[0].split('/')[2];
             if (path === 'products' || path === 'applications' || path === 'companynews'|| this.scroll > 48 ) {
                 this.isColor = true;
             } else {
@@ -282,11 +284,11 @@ export default {
             this.$store.commit("subMenu", 0);
         },
         closeSubProdAppMenu(link) {
-            this.flShowMobileMenu = false;
-            setTimeout(()=>{
-                window.open(`${link}`);
-            },50)
-        },
+            this.flShowMobileMenu = false;
+            setTimeout(()=>{
+                window.open(`${link}`);
+            },50)
+        },
         menuShowFn(index) {
             if(index === 1) {
                 this.prodMenuShow = true;
@@ -314,7 +316,7 @@ export default {
     watch: {
         '$route.path': {
             handler(newPath){
-                const path = newPath.split('.')[0].split('/')[1];
+                const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
                 } else {
@@ -330,6 +332,14 @@ export default {
                     this.isShowProductSub = false;
                     this.isShowScenesSub = false;
                 }
+            },
+            immediate: true,
+            deep: true
+        },
+        "$store.state.currentLang": {
+            handler(newLang) {
+                this.lang = newLang;
+                this.navigation = getLocalesNav(this, newLang);
             },
             immediate: true,
             deep: true

@@ -12,20 +12,22 @@ import IritaOpbTitle from "./IritaOpbTitle.vue";
 import IritaOpbIntro from "./IritaOpbIntro.vue";
 import Feature from "./Feature.vue";
 import Process from "./Process.vue";
+import { getModuleContent } from '../../util';
+
 export default {
     name: "IritaOpb",
     computed: {
         iritaopbTitleContent() {
-			return this.$frontmatter.iritaopbTitleContent;
+            return getModuleContent(this, 'iritaopbTitleContent');
 		},
         iritaopbIntroContent() {
-			return this.$frontmatter.iritaopbIntroContent;
+            return getModuleContent(this, 'iritaopbIntroContent');
 		},
         featuresContent() {
-			return this.$frontmatter.featuresContent;
+            return getModuleContent(this, 'featuresContent');
 		},
         processContent() {
-			return this.$frontmatter.processContent;
+            return getModuleContent(this, 'processContent');
 		},
     },
     components: {

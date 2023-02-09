@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="content_bottom">
-                        <router-link class="more" to="/news">
+                        <router-link class="more" :to="`${$store.state.currentLang}news`">
                             <MoreBlue
                                 :text="dynamicContent.moreText"
                                 class="more_btn"
