@@ -76,6 +76,8 @@ export default {
                     this.$refs.swiperRefSmall.prev();
                 }
             } catch (error) {
+                // todo shan 检查此处报错原因
+                console.log(error);
             }
         }
     },

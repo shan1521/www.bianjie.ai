@@ -27,6 +27,7 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		const edition = getCurrentEdition();
+		// todo shan 考虑默认语言是否以用户选择为准，待产品确认
 		const urlLang = edition ? LANG_ROUTE.hk : LANG_ROUTE.zh;
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){

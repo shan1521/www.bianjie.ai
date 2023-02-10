@@ -1,8 +1,8 @@
 const { EDITION_NAV, EDITION_COMPANY, CONTACT_US, COPYRIGHT_RECORD } = require('./theme/constants');
 const { getCurrentEditionPrefix } = require('./theme/util');
 const editionPrefix = getCurrentEditionPrefix();
-
 module.exports = {
+	// todo shan 区分国内版国际版
 	title: '边界智能-BIANJIE.AI',
 	description: 'bianjie.ai',
 	head: [
