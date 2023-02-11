@@ -1,7 +1,7 @@
 <template>
     <div class="nav_container" :class="isColor ? 'white_bg' : ''">
         <div class="nav_content">
-            <div class="nav_logo" @click="toHome">
+            <div class="nav_logo" :class="{nav_logo_inter: edition}" @click="toHome">
                 <img :src="getDiffLogo()" alt="">
             </div>
             <div class="nav_list_wrap">
@@ -82,7 +82,7 @@
         </div>
         <div class="mobile_nav_container">
             <div class="mobile_nav_content">
-                <div class="nav_logo" @click="toHome">
+                <div class="nav_logo" :class="{nav_logo_inter: edition}" @click="toHome">
                     <img :src="getDiffLogo()" alt="">
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
@@ -316,12 +316,16 @@ export default {
     watch: {
         '$route.path': {
             handler(newPath){
+                console.log(newPath,'newPath');
                 const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
                 } else {
                     this.isColor = false;
                 }
+                const newLang = newPath.substring(0, 7);
+                this.navigation = getLocalesNav(this, newLang);
+                this.$store.commit('currentLang', newLang);
             },
             immediate: true,
             deep: true,
@@ -332,14 +336,6 @@ export default {
                     this.isShowProductSub = false;
                     this.isShowScenesSub = false;
                 }
-            },
-            immediate: true,
-            deep: true
-        },
-        "$store.state.currentLang": {
-            handler(newLang) {
-                this.lang = newLang;
-                this.navigation = getLocalesNav(this, newLang);
             },
             immediate: true,
             deep: true
@@ -378,7 +374,6 @@ export default {
         }
 
         .nav_logo {
-            width: 9.8rem;
             height: 3.2rem;
             cursor: pointer;
 
@@ -386,6 +381,9 @@ export default {
                 width: 100%;
                 height: 100%;
             }
+        }
+        .nav_logo_inter {
+            height: 2.4rem;
         }
 
         .nav_list_wrap {

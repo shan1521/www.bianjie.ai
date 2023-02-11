@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "34057450",
+      "name": "IRITA",
+      "font_class": "IRITA",
+      "unicode": "e7b2",
+      "unicode_decimal": 59314
+    },
+    {
+      "icon_id": "34057463",
+      "name": "AVATA",
+      "font_class": "AVATA",
+      "unicode": "e7b3",
+      "unicode_decimal": 59315
+    },
+    {
+      "icon_id": "34057465",
+      "name": "MOTBOX",
+      "font_class": "MOTBOX",
+      "unicode": "e7b4",
+      "unicode_decimal": 59316
+    },
+    {
+      "icon_id": "34057507",
+      "name": "IRITA_W",
+      "font_class": "IRITA_W",
+      "unicode": "e7b5",
+      "unicode_decimal": 59317
+    },
+    {
+      "icon_id": "34057509",
+      "name": "AVATA_W",
+      "font_class": "AVATA_W",
+      "unicode": "e7b6",
+      "unicode_decimal": 59318
+    },
+    {
+      "icon_id": "34057514",
+      "name": "MOTBOX_W",
+      "font_class": "MOTBOX_W",
+      "unicode": "e7b7",
+      "unicode_decimal": 59319
+    },
+    {
       "icon_id": "27416910",
       "name": "DA",
       "font_class": "DA",

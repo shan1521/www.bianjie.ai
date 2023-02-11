@@ -7,7 +7,7 @@
             <div class="qrcode">
                 <img src="../assets/home/qrcode_footer.png" alt=""/>
             </div>
-            <p class="qrcode_text">· 扫码关注我们 ·</p>
+            <p class="qrcode_text">{{`· ${ scanCodeFollowUS } ·`}}</p>
             <div class="email_container">
                 <img src="../assets/icon_yx.png" alt="">
                 <span>contact@bianjie.ai</span>
@@ -16,8 +16,22 @@
     </div>
 </template>
 <script>
+import { getLocalesFooter } from '../util';
 export default {
-    name: "Contact"
+    name: "Contact",
+    data() {
+        return {
+            footerInfo: {},
+        }
+    },
+    computed: {
+        scanCodeFollowUS() {
+            return this.footerInfo.scanCodeFollowUS;
+        }
+    },
+    mounted() {
+        this.footerInfo = getLocalesFooter(this, this.$store.state.currentLang);
+    }
 };
 </script>
 <style lang='stylus' scoped>

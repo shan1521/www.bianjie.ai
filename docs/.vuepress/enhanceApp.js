@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import store from './store';
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import './public/iconfont/iconfont.js';
 import { LANG_ROUTE } from './theme/constants';
 import { getCurrentEdition } from './theme/util';
 

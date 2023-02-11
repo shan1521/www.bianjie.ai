@@ -1,19 +1,19 @@
 <template>
     <div class="home_container">
-        <Swiper :homeContent.sync="homeContent"></Swiper>
-        <BSNWenchang :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
-        <Advantage :advantageContent.sync="advantageContent"></Advantage>
-        <Product :serviceContent.sync="serviceContent"></Product>
-        <Scenes :scenesContent.sync="scenesContent"></Scenes>
-        <Partner :partnerContent.sync="partnerContent"></Partner>
-        <Dynamic :dynamicContent.sync="dynamicContent" @updateShowMask.sync="updateShowMask($event)"></Dynamic>
+        <Swiper v-if="homeContent" :homeContent.sync="homeContent"></Swiper>
+        <BSNWenchang v-if="bsnWenchangchain" :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
+        <CaptionImgContent v-if="advantageContent" :captionContent.sync="advantageContent"></CaptionImgContent>
+        <Product v-if="serviceContent" :serviceContent.sync="serviceContent"></Product>
+        <Scenes v-if="scenesContent"  :scenesContent.sync="scenesContent"></Scenes>
+        <Partner v-if="partnerContent" :partnerContent.sync="partnerContent"></Partner>
+        <Dynamic v-if="dynamicContent" :dynamicContent.sync="dynamicContent" @updateShowMask.sync="updateShowMask($event)"></Dynamic>
     </div>
 </template>
 
 <script>
 import Swiper from '@theme/components/Home/Swiper.vue';
 import BSNWenchang from '@theme/components/Home/BSNWenchang.vue';
-import Advantage from '@theme/components/Home/Advantage.vue';
+import CaptionImgContent from '@theme/components/Common/CaptionImgContent.vue';
 import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
 import Partner from '@theme/components/Home/Partner.vue';
@@ -52,7 +52,7 @@ export default {
     components: {
         Swiper,
         BSNWenchang,
-        Advantage,
+        CaptionImgContent,
         Product,
         Scenes,
         Partner,

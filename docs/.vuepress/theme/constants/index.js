@@ -119,35 +119,115 @@ const EDITION_NAV = {
 
 const EDITION_COMPANY = {
     inland: {
-        'zh-CN': [
-            {
-                label: '边界 Global',
-                href: 'http://blockbeat.hk'
-            },
-            {
-                label: '企业动态',
-                route: '/zh-CN/news'
-            },
-            {
-                label: '关于我们',
-                route: '/zh-CN/about'
-            }
-        ]
+        'zh-CN': {
+            title: '公司',
+            content: [
+                {
+                    label: '边界 Global',
+                    href: 'http://blockbeat.hk'
+                },
+                {
+                    label: '企业动态',
+                    route: '/zh-CN/news'
+                },
+                {
+                    label: '关于我们',
+                    route: '/zh-CN/about'
+                }
+            ]
+        },
+        // todo 待未来添加国内版多语言参考
+        'zh-HK': {
+            title: '公司',
+            content: [
+                {
+                    label: '边界 Global',
+                    href: 'http://blockbeat.hk'
+                },
+                {
+                    label: '企业动态',
+                    route: '/zh-CN/news'
+                },
+                {
+                    label: '关于我们',
+                    route: '/zh-CN/about'
+                }
+            ]
+        },
+        'en-US': {
+            title: '公司',
+            content: [
+                {
+                    label: '边界 Global',
+                    href: 'http://blockbeat.hk'
+                },
+                {
+                    label: '企业动态',
+                    route: '/zh-CN/news'
+                },
+                {
+                    label: '关于我们',
+                    route: '/zh-CN/about'
+                }
+            ]
+        },
     },
     international: {
-        'zh-CN': [
-            {
-                label: '边界中国',
-                href: 'https://www.bianjie.ai/'
-            },
-            {
-                label: '关于我们',
-                route: '/zh-CN/about'
-            }
-        ]
+        'zh-CN': {
+            title: '公司',
+            content: [
+                {
+                    label: '边界中国',
+                    href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: '关于我们',
+                    route: '/zh-CN/about'
+                }
+            ]
+        },
+        'zh-HK': {
+            title: '公司',
+            content: [
+                {
+                    label: 'BIANJIE China Portal',
+                    href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: '關於我們',
+                    route: '/zh-HK/about'
+                }
+            ]
+        },
+        'en-US': {
+            title: 'Company',
+            content: [
+                {
+                    label: 'BIANJIE China Portal',
+                    href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: 'About Us',
+                    route: '/en-US/about'
+                }
+            ]
+        }
     }
 }
+
 // todo shan 根据 EDITION_COMPANY 内容更改 zh-HK en-US 的内容
+const CONTACT_US_TITLE = {
+    inland: {
+        'zh-CN': '联系我们',
+        'zh-HK': '联系我们',
+        'en-US': '联系我们'
+    },
+    international: {
+        'zh-CN': '联系我们',
+        'zh-HK': '聯繫我們',
+        'en-US': 'Contact Us'
+    }
+}
 
 const CONTACT_US = {
     inland: [
@@ -168,6 +248,20 @@ const CONTACT_US = {
             href: 'http://blockbeat.hk'
         }
     ]
+}
+
+const SCAN_CODE_FOLLOW_US = {
+    inland: {
+        'zh-CN': '扫码关注我们',
+        'zh-HK': '扫码关注我们',
+        'en-US': '扫码关注我们'
+    },
+    international: {
+        'zh-CN': '扫码关注我们',
+        'zh-HK': '掃碼關注我們',
+        // todo shan 英文待替換
+        'en-US': '掃碼關注我們'
+    }
 }
 
 const COPYRIGHT_RECORD = {
@@ -194,12 +288,19 @@ const COPYRIGHT_RECORD = {
         ]
     }
 }
+// 核心能力与优势处阴影需要基础值
+const ADVANTAGES_WIDTH = 206;
+const ADVANTAGES_HEIGHT = 20;
 
 module.exports = {
     ENV_INLAND_INTERNATIONAL,
     LANG_ROUTE,
     EDITION_NAV,
     EDITION_COMPANY,
+    CONTACT_US_TITLE,
     CONTACT_US,
-    COPYRIGHT_RECORD
+    SCAN_CODE_FOLLOW_US,
+    COPYRIGHT_RECORD,
+    ADVANTAGES_WIDTH,
+    ADVANTAGES_HEIGHT
 }
