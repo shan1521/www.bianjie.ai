@@ -1,6 +1,7 @@
 <template>
     <div class="irita">
         <ProductsTitle :titleContent="titleContent"></ProductsTitle>
+        <!-- todo shan 添加新增頁面 -->
     </div>
 </template>
 
