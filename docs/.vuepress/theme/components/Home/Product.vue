@@ -59,71 +59,6 @@
             </ul>
         </div>
     </Caption>
-    <!-- <div class="product_container">
-        <div class="product_title_content">
-            <div class="title_content">
-                <div class="title">{{ serviceContent.title }}</div>
-                <div v-if="serviceContent.iritaContent" class="irita_content">
-                    <div class="irita_content_wrap">
-                        <p class="irita_title">{{ serviceContent.iritaContent.title }}</p>
-                        <p class="desc">{{ serviceContent.iritaContent.subTitle }}</p>
-                    </div>
-                    <MoreBlue :text.sync="serviceContent.moreText"
-                        class="title_btn"
-                        @click.native="clickIritaFn"></MoreBlue>
-                </div>
-            </div>
-            <div class="product_content">
-                <ul class="product_name_list">
-                    <li class="name_item"
-                        v-for="(item, index) in serviceContent.productContent"
-                        :key="index"
-                        :class="{ 
-                            name_item_en: isEn,
-                            name_item_active: isShowWhiteIcon && index === currentTab
-                        }"
-                        @click="changeTab(index)">
-                        <div class="item_img">
-                            <SvgIcon v-if="index !== currentTab" class="iconfont" :iconName="item.iconClassColor" />
-                            <i v-if="isShowWhiteIcon && index === currentTab"
-                                class="iconfont"
-                                :class="item.iconClass"></i>
-                        </div>
-                        <div class="item_desc">
-                            <span class="name">{{ item.name }}</span>
-                            <div class="intro">{{ item.intro }}</div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="product_detail_list">
-                    <li v-show="index === currentTab"
-                        class="detail_item"
-                        v-for="(item, index) in serviceContent.productContent"
-                        :key="index">
-                        <div class="detail_item_wrap"
-                            :class="{detail_item_wrap_en: isEn}"
-                            :style="differentProductBg(item.imgName)">
-                            <div class="title">{{item.intro}} - {{item.name}}</div>
-                            <p class="description">{{item.description}}</p>
-                            <a class="name_btn_git"
-                                v-if="item.link && index === 0"
-                                :href="item.link"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                {{item.moreText}}
-                            </a>
-                            <router-link class="name_btn"
-                                v-if="item.route"
-                                :to="item.route">
-                                <span>{{item.moreText}}</span>
-                                <span class="gt">&gt;&gt;</span>
-                            </router-link>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
 </template>
 
 <script>
@@ -136,7 +71,7 @@ import Caption from "@theme/components/Common/Caption.vue";
 import HomeMask from "@theme/components/Home/HomeMask.vue";
 import "swiper/css/swiper.css";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import { LANG_ROUTE } from '@theme/constants';
+import { LANG_OPTIONS } from '@theme/constants';
 export default {
     name: "Product",
     props: ["serviceContent"],
@@ -161,7 +96,7 @@ export default {
             }
         },
         isEn() {
-            return this.currentLang === LANG_ROUTE.en;
+            return this.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {
@@ -215,7 +150,7 @@ export default {
             padding: 0 3.2rem;
         }
 
-        @media (max-width: 560px) {
+        @media (max-width: 420px) {
             padding: 0 1.6rem;
         }
 
@@ -265,7 +200,7 @@ export default {
             padding: 0 3.2rem;
         }
 
-        @media (max-width: 560px) {
+        @media (max-width: 420px) {
             padding: 0 1.6rem;
         }
 

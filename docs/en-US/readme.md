@@ -361,6 +361,56 @@
                 }
             ]
         },
+        scenesContent: {
+            title: Multi-Scene Solutions,
+            scenesList: [
+                {
+                    iconName: gongyinglianjinrong.png,
+                    title: Digital Finance,
+                    introEn: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem
+                },
+                {
+                    iconName: shuzihuazichan.png,
+                    title: Cross-Borde Trade,
+                    introEn: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development
+                },
+                {
+                    iconName: copyright.png,
+                    title: Cultural and Creative Industries and Copyright,
+                    introEn: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection
+                },
+                {
+                    iconName: manufacture.png,
+                    title: Intelligent Manufacturing,
+                    introEn: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry
+                }
+            ]
+        },
+        partnerContent: {
+            title: Partners,
+            # todo shan 英文文案待修改
+            subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
+            # todo shan 合作伙伴图片链接待修改
+            fieldsList: [
+                {
+                    partnerList: [
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/dida.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
+                    ]
+                }
+            ]
+        }
     }
 }
 

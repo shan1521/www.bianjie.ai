@@ -9,13 +9,14 @@
                         :src="differentAdvantageImg(item.img)"
                         alt="" />
                 </div>
-                <div class="list_item_middle">
-                    <span class="intro">{{ item.intro }}</span>
+                <div class="list_item_middle_bottom">
+                    <div class="list_item_middle">
+                        <span class="intro">{{ item.intro }}</span>
+                    </div>
+                    <div class="list_item_bottom">
+                        <span class="list_item_bottom_desc" :class="{ list_item_bottom_desc_en: isEn }">{{ item.description }}</span>
+                    </div>
                 </div>
-                <div class="list_item_bottom">
-                    <span class="list_item_bottom_desc" :class="{ list_item_bottom_desc_en: isEn }">{{ item.description }}</span>
-                </div>
-                <!-- todo shan 阴影展示方案需要修改 -->
                 <div v-if="item.showShadow" class="list_item_shadow"></div>
             </li>
         </ul>
@@ -24,7 +25,7 @@
 
 <script>
 import Caption from '@theme/components/common/Caption.vue';
-import { LANG_ROUTE, ADVANTAGES_WIDTH, ADVANTAGES_HEIGHT } from '../../constants';
+import { LANG_OPTIONS, ADVANTAGES_WIDTH, ADVANTAGES_HEIGHT } from '../../constants';
 import { getTextWidth } from '../../util';
 export default {
     name: "CaptionImgContent",
@@ -52,7 +53,7 @@ export default {
             };
         },
         isEn() {
-            return this.currentLang === LANG_ROUTE.en;
+            return this.currentLang === LANG_OPTIONS[0].value;
         }
     },
     mounted() {
@@ -91,6 +92,9 @@ export default {
         }
         .adv_list_item {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             box-sizing: border-box;
             width: 24rem;
             min-height: 35.6rem;
@@ -104,56 +108,60 @@ export default {
                     border-radius: 0.4rem 0.4rem 0 0;
                 }
             }
+            .list_item_middle_bottom {
+                padding: 0 1.1rem 0.8rem;
 
-            .list_item_middle {
-                .intro {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 1.6rem 0 0.8rem;
-                    font-size: $fontSize16;
-                    font-weight: $fontWeight600;
-                    color: #000;
-                    line-height: 2rem;
-                    text-align: center;
-                    letter-spacing: 0.1rem;
-                    &::after {
-                        content: '';
-                        display: block;
-                        margin: 1.6rem auto 0;
-                        width: 12rem;
-                        height: 0.1rem;
-                        background: #EDEDED;
+                .list_item_middle {
+                    .intro {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 1.6rem 0 0.8rem;
+                        font-size: $fontSize16;
+                        font-weight: $fontWeight600;
+                        color: #000;
+                        line-height: 2rem;
+                        text-align: center;
+                        letter-spacing: 0.1rem;
+                        &::after {
+                            content: '';
+                            display: block;
+                            margin: 1.6rem auto 0;
+                            width: 12rem;
+                            height: 0.1rem;
+                            background: #EDEDED;
+                        }
+                    }
+                }
+                .list_item_bottom {
+                    box-sizing: border-box;
+                    margin-bottom: 0.5rem;
+                    max-height: 15.6rem;
+                    min-height: 15.6rem;
+                    overflow-y: auto;
+                    &::-webkit-scrollbar {
+                        width: 0;
+                    }
+                    .list_item_bottom_desc {
+                        display: inline-block;
+                        font-size: $fontSize14;
+                        font-weight: $fontWeight400;
+                        color: rgba(0, 0, 0, 0.75);
+                        line-height: 2.6rem;
+                        text-align: center;
+                    }
+                    .list_item_bottom_desc_en {
+                        line-height: 2rem;
                     }
                 }
             }
 
-            .list_item_bottom {
-                max-height: 16.3rem;
-                min-height: 15.6rem;
-                overflow-y: auto;
-                &::-webkit-scrollbar {
-                    width: 0;
-                }
-                .list_item_bottom_desc {
-                    display: inline-block;
-                    padding: 0 1.6rem;
-                    font-size: $fontSize14;
-                    font-weight: $fontWeight400;
-                    color: #000000;
-                    line-height: 2.6rem;
-                    text-align: center;
-                }
-                .list_item_bottom_desc_en {
-                    line-height: 2rem;
-                }
-            }
             .list_item_shadow {
                 position: absolute;
-                bottom: 0;
-                width: 100%;
+                bottom: 0.8rem;
+                width: 90%;
                 height: 1.6rem;
-                background: linear-gradient(180deg, rgba(225,229,244,0) 0%, rgba(225,229,244,0.5) 100%);
+                background: linear-gradient(0deg, rgba(225,229,244,0.5) 0%, rgba(225,229,244,0) 100%);
             }
         }
     }

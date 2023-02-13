@@ -15,22 +15,24 @@
                         @mouseenter="menuShowFn(index)"
                         @mouseleave="closeProdAppMenu"
                     >
-                        <a v-if="item.isOutLink" class="item" :class="isColor ? 'color_font' : ''" :href="item.link" target="_blank" rel="noopener noreferrer">
+                        <a v-if="item.isOutLink" class="item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer">
                             {{item.text}}
                         </a>
                         <router-link
                             v-else
                             class="item"
-                            :class="[ 
-                                isColor ? 'color_font' : '', 
-                                (!isColor && currentIndex === index) ? 'active' : '',
-                                (isColor && currentIndex === index) ? 'color_font_active' : '',
-                            ]"
+                            :class="
+                                {
+                                    color_font: isColor,
+                                    active: !isColor && currentIndex === index,
+                                    color_font_active: isColor && currentIndex === index
+                                }
+                            "
                             :to="item.link"
                         >
                             {{ item.text }}
                         </router-link>
-                        <div v-if="item.items && item.items.length > 0 && index === 1 && prodMenuShow" class="products_menu">
+                        <div v-if="item.items && item.items.length > 0 && index === 1 && prodMenuShow" class="products_menu" :class="{ products_menu_inter: edition }">
                             <ul class="product_type_list">
                                 <li class="product_type_item" v-for="(subItem, subIndex) in item.items" :key="subIndex">
                                     <div class="type_wrap">
@@ -50,7 +52,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div  v-if="item.items && item.items.length > 0 && index === 2 && appMenuShow" class="appscenes_menu">
+                        <div  v-if="item.items && item.items.length > 0 && index === 2 && appMenuShow" class="appscenes_menu" :class="{ appscenes_menu_inter: edition }">
                             <ul class="appscenes_scene_list">
                                 <li class="appscenes_scene_item" v-for="(appscene, aIndex) in item.items" :key="aIndex">
                                     <div class="scene_wrap">
@@ -65,7 +67,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="more">
+                <div v-if="download" class="more">
                     <router-link
                         class="nav_list_item"
                         :class="isColor ? 'nav_list_item_color' : ''"
@@ -73,12 +75,26 @@
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <i class="iconfont icon-a-learnmore" :class="isColor ? 'iconfont_color' : '' "></i>
+                        <i class="iconfont icon-a-learnmore" :class="{iconfont_color: isColor}"></i>
                         {{ download }}
                     </router-link>
                 </div>
+                <div class="select_btn" :class="isColor ? 'select_btn_color' : ''" >
+                    <div class="line"></div>
+                    <div class="lang_wrap" @click="openLangSubMenu">
+                        <i class="iconfont icon-yuyan" :class="{ iconfont_color: isColor}"></i>
+                        <span class="default_lang">{{selectedLang}}</span>
+                        <ul v-if="isShowLangSubMenu" class="lang_list">
+                            <li class="lang_item" v-for="(item, index) in LANG_OPTIONS" :key="index" 
+                                :class="$store.state.currentLang === item.value ? 'lang_item_active' : ''"
+                                @click="changeLang(item.value)"
+                            >
+                                {{item.label}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- todo shan 添加语言切换按钮 -->
         </div>
         <div class="mobile_nav_container">
             <div class="mobile_nav_content">
@@ -152,7 +168,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="more">
+                <div v-if="download" class="more">
                     <router-link
                         class="nav_list_item"
                         :to="`/download.html`"
@@ -164,6 +180,23 @@
                         {{ download }}
                     </router-link>
                 </div>
+                <div class="select_btn">
+                    <div class="lang_wrap" @click="openLangSubMenu">
+                        <span class="lang">
+                            <i class="iconfont icon-yuyan"></i>
+                            <span class="default_lang">{{selectedLang}}</span>
+                        </span>
+                        <i class="iconfont" :class="isShowLangSubMenu ? 'icon-shouqi' : 'icon-zhankai'"></i>
+                    </div>
+                    <ul v-if="isShowLangSubMenu" class="lang_list">
+                        <li class="lang_item" v-for="(item, index) in LANG_OPTIONS" :key="index" 
+                            :class="$store.state.currentLang === item.value ? 'lang_item_active' : ''"
+                            @click="changeLang(item.value)"
+                        >
+                            {{item.label}}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -172,6 +205,7 @@
 <script>
 import cfg from '../../config.json';
 import { getLocalesNav, getCurrentEdition } from '../util';
+import { LANG_OPTIONS } from '../constants';
 import logoWhite from '../assets/home/logo_white.png';
 import logoWhiteInter from '../assets/home/logo_white_inter.png';
 import logoBlack from '../assets/home/logo_black.png';
@@ -192,7 +226,13 @@ export default {
             prodMenuShow: false,
             appMenuShow: false,
             cfg,
-            edition: getCurrentEdition()
+            edition: getCurrentEdition(),
+            LANG_OPTIONS,
+            selectedLang: "简体中文",
+            isShowLangSubMenu: false,
+            prodAppTimer: null,
+            subProdAppTimer: null,
+            langTimer: null
         };
     },
     computed: {
@@ -204,6 +244,7 @@ export default {
         },
         download() {
             return (
+                !this.edition &&
                 this.navigation &&
                 this.navigation.length > 0 &&
                 this.navigation[this.navigation.length - 1].text
@@ -285,7 +326,8 @@ export default {
         },
         closeSubProdAppMenu(link) {
             this.flShowMobileMenu = false;
-            setTimeout(()=>{
+            this.clearTimer(this.subProdAppTimer);
+            this.subProdAppTimer = setTimeout(()=>{
                 window.open(`${link}`);
             },50)
         },
@@ -308,15 +350,34 @@ export default {
         closeProdAppMenuLink(link) {
             this.appMenuShow = false;
             this.prodMenuShow = false;
-            setTimeout(()=>{
+            this.clearTimer(this.prodAppTimer);
+            this.prodAppTimer = setTimeout(()=>{
                 window.open(`${link}`);
             },50)
+        },
+        openLangSubMenu() {
+            this.isShowLangSubMenu = !this.isShowLangSubMenu;
+        },
+        changeLang(langType) {
+            const storeLang = localStorage.getItem('currentLang') || '';
+            if(storeLang === langType) return;
+            this.$store.commit('currentLang', langType);
+            localStorage.setItem("currentLang", langType);
+            const path = this.$route.path.substring(7, this.$route.path.length);
+            this.$router.push(`${langType}${path}`);
+            this.flShowMobileMenu = false;
+            this.clearTimer(this.langTimer);
+            this.langTimer = setTimeout(() => {
+                this.isShowLangSubMenu = false;
+            })
+        },
+        clearTimer(timer) {
+            timer && clearTimeout(timer);
         }
     },
     watch: {
         '$route.path': {
             handler(newPath){
-                console.log(newPath,'newPath');
                 const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
@@ -326,6 +387,11 @@ export default {
                 const newLang = newPath.substring(0, 7);
                 this.navigation = getLocalesNav(this, newLang);
                 this.$store.commit('currentLang', newLang);
+                this.LANG_OPTIONS.forEach(item => {
+                    if(item.value === newLang) {
+                        this.selectedLang = item.label;
+                    }
+                })
             },
             immediate: true,
             deep: true,
@@ -344,6 +410,12 @@ export default {
     mounted() {
         window.addEventListener("scroll", this.scrollTop);
     },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.scrollTop);
+        this.clearTimer(this.prodAppTimer);
+        this.clearTimer(this.subProdAppTimer);
+        this.clearTimer(this.langTimer);
+    }
 };
 </script>
 
@@ -536,12 +608,16 @@ export default {
                                             font-size: $fontSize12;
                                             font-weight: $fontWeight400;
                                             color: rgba(0, 0, 0, 0.75);
-                                            line-height: 1.2rem;
+                                            line-height: 1.6rem;
                                         }
                                     }
                                 }
                             }
                         }
+                    }
+                    .products_menu_inter {
+                        left: auto;
+                        right: 0;
                     }
                     .appscenes_menu {
                         position: absolute;
@@ -590,6 +666,10 @@ export default {
                             }
                         }
                     }
+                    .appscenes_menu_inter {
+                        left: auto;
+                        right: 0;
+                    }
                 }
             }
 
@@ -616,6 +696,60 @@ export default {
                     color: rgba(0, 0, 0, 0.75);
                 }
             }
+            .select_btn {
+                display: flex;
+                align-items: center;
+                margin-left: 3rem;
+                font-size: $fontSize14;
+                font-weight: $fontWeight400;
+                color: rgba(255,255,255,0.75);
+                line-height: 20px;
+                .line {
+                    width: 0.1rem;
+                    height: 1.6rem;
+                    background: rgba(255,255,255,0.75);
+                }
+                .lang_wrap {
+                    position: relative;
+                    padding: 1.4rem 1.2rem 1.4rem 2.9rem;
+                    cursor: pointer;
+                    .iconfont {
+                        font-size: $fontSize16;
+                    }
+                    .iconfont_color {
+                        color: $highlightDetailColor;
+                    }
+                    .default_lang {
+                        margin-left: 0.2rem;
+                    }
+                    .lang_list {
+                        position: absolute;
+                        top: 4.8rem;
+                        right: 0;
+                        padding: 0.8rem 0;
+                        background: #fff;
+                        .lang_item {
+                            display: inline-block;
+                            padding: 0.8rem 1.2rem;
+                            min-width: 12rem;
+                            font-size: $fontSize14;
+                            font-weight: $fontWeight400;
+                            color: rgba(0,0,0,0.75);
+                            line-height: 14px;
+                        }
+                        .lang_item_active {
+                            font-weight: $fontWeight600;
+                            color: $highlightDetailColor;
+                        }
+                    }
+                }
+            }
+            .select_btn_color {
+                color: rgba(0,0,0,0.75);
+                .line {
+                    background: #eee;
+                }
+            }
         }
     }
     .mobile_nav_container {
@@ -640,18 +774,20 @@ export default {
                 padding: 0.8rem 1.6rem;
             }
             .nav_logo {
-                width: 9.8rem;
                 height: 3.2rem;
                 cursor: pointer;
 
                 img {
-                    width: 100%;
                     height: 100%;
                 }
+            }
+            .nav_logo_inter {
+                height: 2.4rem;
             }
             .mobile_menu_icon {
                 width: 2.4rem;
                 height: 1.8rem;
+                cursor: pointer;
                 .iconfont {
                     width: 100%;
                     color: #fff;
@@ -699,6 +835,9 @@ export default {
                         height: 31.2rem;
                         background: #F5F6FB;
                         overflow-y: auto;
+                        &::-webkit-scrollbar {
+                            width: 0;
+                        }
                         @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
@@ -831,6 +970,49 @@ export default {
                     outline: none;
                     .iconfont {
                         display: inline-block;
+                        color: $highlightDetailColor;
+                    }
+                }
+            }
+            .select_btn {
+                .lang_wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 4.8rem;
+                    min-height: 4.4rem;
+                    line-height: 4.4rem;
+                    font-size: $fontSize14;
+                    color: rgba(0,0,0,0.75);
+                    cursor: pointer;
+                    @media (max-width: 420px) {
+                        margin: 0 1.6rem;
+                    }
+                    .lang {
+                        .iconfont {
+                            color: $highlightDetailColor;
+                        }
+                    }
+                    .iconfont {
+                        font-size: $fontSize14;
+                        color: #b7c0e3;
+                    }
+                }
+                .lang_list {
+                    padding: 0.8rem 0;
+                    background: #f5f6fb;
+                    .lang_item {
+                        margin: 0 4.8rem;
+                        padding: 0.8rem 0;
+                        font-size: $fontSize14;
+                        font-weight: $fontWeight400;
+                        color: rgba(0,0,0,0.75);
+                        cursor: pointer;
+                        @media (max-width: 420px) {
+                            margin: 0 1.6rem;
+                        }
+                    }
+                    .lang_item_active {
+                        font-weight: $fontWeight600;
                         color: $highlightDetailColor;
                     }
                 }

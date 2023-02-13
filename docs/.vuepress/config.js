@@ -24,7 +24,6 @@ module.exports = {
 	themeConfig: {
 		search: false,
 		navbar: false,
-		// todo shan 需要设置 zh-HK、en-US 类似配置
 		locales: {
 			'/zh-CN/': {
 				nav: EDITION_NAV[editionPrefix]['zh-CN'],

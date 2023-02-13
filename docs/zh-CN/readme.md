@@ -356,6 +356,71 @@
                 }
             ]
         },
+        scenesContent: {
+            title: 多场景解决方案,
+            scenesList: [
+                {
+                    iconName: gongyinglianjinrong.png,
+                    title: 数字金融,
+                    intro: [
+                        {text: 资产数字化建模},
+                        {text: 大数据隐私保护},
+                        {text: 普惠自金融生态},
+                    ]
+                },
+                {
+                    iconName: shuzihuazichan.png,
+                    title: 跨境贸易,
+                    intro: [
+                        {text: 打造新一代数字贸易基础设施},
+                        {text: 建立全球普惠贸易新秩序},
+                        {text: 促进国际贸易和电商发展},
+                    ]
+                },
+                {
+                    iconName: copyright.png,
+                    title: 文创与版权,
+                    intro: [
+                        {text: 保护原创权益},
+                        {text: 重塑版权价值},
+                        {text: 便捷高效维权},
+                    ]
+                },
+                {
+                    iconName: manufacture.png,
+                    title: 智能制造,
+                    intro: [
+                        {text: 组建和管理工业物联网},
+                        {text: 提高制造智能化管理水平},
+                        {text: 引领全球传统制造业创新变革},
+                    ]
+                }
+            ]
+        },
+        partnerContent: {
+            title: 合作伙伴,
+            subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
+            # todo shan 合作伙伴图片链接待修改
+            fieldsList: [
+                {
+                    partnerList: [
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/dida.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
+                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
+                    ]
+                }
+            ]
+        }
     }
 }
 

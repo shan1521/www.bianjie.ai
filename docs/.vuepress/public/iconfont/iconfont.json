@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "34076653",
+      "name": "语言",
+      "font_class": "yuyan",
+      "unicode": "e7b8",
+      "unicode_decimal": 59320
+    },
+    {
+      "icon_id": "34076660",
+      "name": "跨境贸易",
+      "font_class": "kuajingmaoyi",
+      "unicode": "e7b9",
+      "unicode_decimal": 59321
+    },
+    {
       "icon_id": "34057450",
       "name": "IRITA",
       "font_class": "IRITA",

@@ -1,6 +1,6 @@
 <template>
     <div class="about_content_container">
-        <div class="about_type_container">
+        <div class="about_type_container" v-if="aboutType">
             <ul class="about_type">
                 <li
                     class="about_type_item"
@@ -20,7 +20,7 @@
         <!-- 关于我们 -->
         <div class="about_content" v-if="currentTab === 0">
             <CompanyInfo :companyInfo="companyInfo"></CompanyInfo>
-            <IndustryAdv v-if="industryAdvantage.industryAdvImg" :industryAdvantage="industryAdvantage"></IndustryAdv>
+            <IndustryAdv v-if="!edition" :industryAdvantage="industryAdvantage"></IndustryAdv>
         </div>
         <!-- 发展历程 -->
         <div class="milestone_content" v-if="currentTab === 1"></div>
@@ -34,9 +34,15 @@
 <script>
 import CompanyInfo from "./CompanyInfo.vue";
 import IndustryAdv from "@theme/components/About/IndustryAdv.vue";
+import { getCurrentEdition } from '@theme/util';
 export default {
     name: "AboutContent",
     props: ["aboutType", "companyInfo", "tab", "industryAdvantage"],
+    data() {
+        return {
+            edition: getCurrentEdition()
+        }
+    },
     computed: {
         currentTab() {
             return this.tab ? this.tab : 0;

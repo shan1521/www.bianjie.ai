@@ -69,6 +69,7 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 2rem;
+                    text-align: center;
                 }
                 .line {
                     margin-top: 2.4rem;

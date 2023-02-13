@@ -4,7 +4,7 @@ import store from './store';
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import './public/iconfont/iconfont.js';
-import { LANG_ROUTE } from './theme/constants';
+import { LANG_OPTIONS } from './theme/constants';
 import { getCurrentEdition } from './theme/util';
 
 // import 'video.js/dist/video-js.css';
@@ -28,8 +28,12 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		const edition = getCurrentEdition();
-		// todo shan 考虑默认语言是否以用户选择为准，待产品确认
-		const urlLang = edition ? LANG_ROUTE.hk : LANG_ROUTE.zh;
+		let urlLang = '';
+		if(localStorage.getItem('currentLang')){
+			urlLang = localStorage.getItem('currentLang');
+        } else {
+			urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value
+		}
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
 				store.commit('currentIndex',1)
@@ -52,7 +56,8 @@ export default async ({
 			}
 			if (to?.path === '/') {
 				store.commit('currentLang', urlLang);
-                next(`${urlLang}`)
+                localStorage.setItem('currentLang', urlLang)
+                next(`${urlLang}`);
             }
 			next()
 		})
