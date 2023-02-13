@@ -1,7 +1,6 @@
 const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD } = require('./theme/constants');
 const { getCurrentEditionPrefix } = require('./theme/util');
 const editionPrefix = getCurrentEditionPrefix();
-console.log(editionPrefix);
 module.exports = {
 	// todo shan 区分国内版国际版
 	title: '边界智能-BIANJIE.AI',

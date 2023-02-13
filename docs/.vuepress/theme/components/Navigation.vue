@@ -1,5 +1,5 @@
 <template>
-    <div class="nav_container" :class="isColor ? 'white_bg' : ''">
+    <div class="nav_container" :class="{white_bg: isColor}">
         <div class="nav_content">
             <div class="nav_logo" :class="{nav_logo_inter: edition}" @click="toHome">
                 <img :src="getDiffLogo()" alt="">
@@ -70,7 +70,7 @@
                 <div v-if="download" class="more">
                     <router-link
                         class="nav_list_item"
-                        :class="isColor ? 'nav_list_item_color' : ''"
+                        :class="{nav_list_item_color: isColor}"
                         :to="`/download.html`"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -79,7 +79,7 @@
                         {{ download }}
                     </router-link>
                 </div>
-                <div class="select_btn" :class="isColor ? 'select_btn_color' : ''" >
+                <div class="select_btn" :class="{select_btn_color: isColor}" >
                     <div class="line"></div>
                     <div class="lang_wrap" @click="openLangSubMenu">
                         <i class="iconfont icon-yuyan" :class="{ iconfont_color: isColor}"></i>
@@ -102,7 +102,7 @@
                     <img :src="getDiffLogo()" alt="">
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
-                    <i class="iconfont icon-caidan" :class="isColor ? 'iconfont_color' : ''"></i>
+                    <i class="iconfont icon-caidan" :class="{iconfont_color: isColor}"></i>
                 </div>
             </div>
             <div v-if="flShowMobileMenu" class="mobile_nav_list_wrap mobile_white_bg">
@@ -116,17 +116,17 @@
                     >
                         <div class="list_item_wrap">
                             <div class="mobile_list_item">
-                                <a v-if="item.isOutLink" class="mobile_item" :class="isColor ? 'color_font' : ''" :href="item.link" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(index)">
+                                <a v-if="item.isOutLink" class="mobile_item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(index)">
                                     {{item.text}}
                                 </a>
                                 <router-link
                                     v-else
                                     class="mobile_item"
-                                    :class="[ 
-                                        isColor ? 'color_font' : '', 
-                                        (!isColor && currentIndex === index) ? 'active' : '',
-                                        (isColor && currentIndex === index) ? 'color_font_active' : '',
-                                    ]"
+                                    :class="{
+                                        color_font: isColor,
+                                        active: !isColor && currentIndex === index,
+                                        color_font_active: isColor && currentIndex === index
+                                    }"
                                     :to="item.link"
                                     @click.native="closeMobileMenu(index)"
                                 >
@@ -174,7 +174,7 @@
                         :to="`/download.html`"
                         target="_blank"
                         rel="noreferrer noopener"
-                        :class="isColor ? 'nav_list_item_color' : ''"
+                        :class="{nav_list_item_color: isColor}"
                     >
                         <i class="iconfont icon-a-learnmore"></i>
                         {{ download }}
@@ -190,7 +190,7 @@
                     </div>
                     <ul v-if="isShowLangSubMenu" class="lang_list">
                         <li class="lang_item" v-for="(item, index) in LANG_OPTIONS" :key="index" 
-                            :class="$store.state.currentLang === item.value ? 'lang_item_active' : ''"
+                            :class="{lang_item_active: $store.state.currentLang === item.value}"
                             @click="changeLang(item.value)"
                         >
                             {{item.label}}

@@ -38,7 +38,7 @@ const getModuleContent = (vue, content) => {
 	return vue.$frontmatter[editionPrefix][content];
 }
 
-const getTextWidth = (text, font = '14px GolosUI_Medium') => {
+const getTextWidth = (text, font = '14px') => {
     if (!text) return 0;
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');

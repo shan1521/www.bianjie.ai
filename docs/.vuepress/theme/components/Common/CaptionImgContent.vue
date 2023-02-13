@@ -56,8 +56,6 @@ export default {
             return this.currentLang === LANG_OPTIONS[0].value;
         }
     },
-    mounted() {
-    },
     components: {
         Caption
     }

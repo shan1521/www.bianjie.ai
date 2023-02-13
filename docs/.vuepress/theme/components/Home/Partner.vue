@@ -5,13 +5,13 @@
                 <li
                     class="field_item"
                     v-for="(item, index) in partnerContent.fieldsList"
-                    :class="currentTab === index ? 'active' : ''"
+                    :class="{active: currentTab === index}"
                     :key="index"
                     @click="changeTab(index)"
                 >
                     <span
                         class="field_name"
-                        :class="currentTab === index ? 'activeName' : ''"
+                        :class="{activeName: currentTab === index}"
                         >{{ item.fieldName }}</span
                     >
                 </li>

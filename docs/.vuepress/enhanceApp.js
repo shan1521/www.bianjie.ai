@@ -31,7 +31,7 @@ export default async ({
 		let urlLang = '';
 		if(localStorage.getItem('currentLang')){
 			urlLang = localStorage.getItem('currentLang');
-        } else {
+		} else {
 			urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value
 		}
 		router.beforeEach((to, from, next) => {
@@ -56,8 +56,8 @@ export default async ({
 			}
 			if (to?.path === '/') {
 				store.commit('currentLang', urlLang);
-                localStorage.setItem('currentLang', urlLang)
-                next(`${urlLang}`);
+				localStorage.setItem('currentLang', urlLang);
+				next(`${urlLang}`);
             }
 			next()
 		})

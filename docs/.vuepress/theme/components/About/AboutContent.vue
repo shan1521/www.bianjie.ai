@@ -1,6 +1,6 @@
 <template>
     <div class="about_content_container">
-        <div class="about_type_container" v-if="aboutType">
+        <div class="about_type_container" v-if="!edition">
             <ul class="about_type">
                 <li
                     class="about_type_item"
