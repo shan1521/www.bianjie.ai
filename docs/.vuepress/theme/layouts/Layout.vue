@@ -49,8 +49,8 @@ import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 import Contact from "@theme/components/Contact.vue";
-const nav = require("../../config.js");
 import cfg from "../../config.json";
+import { getLocalesNav } from '../util';
 
 export default {
     name: "Layout",
@@ -59,22 +59,22 @@ export default {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            if(this.$route.path.toLowerCase() === '/applications/e-licence.html') {
+            if(this.$route.path.toLowerCase().includes('e-licence')) {
                 return '$page.frontmatter.isELicence';
             }
-            if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
+            if(this.$route.path.toLowerCase().includes('trade-finance')) {
                 return '$page.frontmatter.isTradeFinance';
             }
-            if(this.$route.path === '/applications/C-trading.html') {
+            if(this.$route.path.toLowerCase().includes('c-trading')) {
                 return '$page.frontmatter.isCTrading';
             }
-            if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {
+            if(this.$route.path.toLowerCase().includes('digital-art')) {
                 return '$page.frontmatter.isDigitalArt';
             }
-            if(this.$route.path.toLowerCase() === '/applications/e-prescription-circulation.html') {
+            if(this.$route.path.toLowerCase().includes('e-prescription-circulation')) {
                 return '$page.frontmatter.isEPC';
             }
-            if(this.$route.path.toLowerCase() === '/applications/datacollection.html') {
+            if(this.$route.path.toLowerCase().includes('datacollection')) {
                 return '$page.frontmatter.isDataCollection';
             }
         },
@@ -90,7 +90,8 @@ export default {
     watch: {
         $route: {
             handler(val, oldval) {
-                nav.themeConfig.nav.forEach((item, index) => {
+                const nav = getLocalesNav(this, this.$store.state.currentLang);
+                nav.forEach((item, index) => {
                     if (item.link === val.path) {
                         this.$store.commit("currentIndex", index);
                     }

@@ -18,34 +18,34 @@ import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
 import Partner from '@theme/components/Home/Partner.vue';
 import Dynamic from '@theme/components/Home/Dynamic.vue';
+import { getModuleContent } from '../../util';
 export default {
     name: "NewHome",
     computed: {
         homeContent() {
-			return this.$frontmatter.homeContent;
+			return getModuleContent(this, 'homeContent')
 		},
         bsnWenchangchain() {
-            return this.$frontmatter.bsnWenchangchain;
+			return getModuleContent(this, 'bsnWenchangchain')
         },
         advantageContent() {
-			return this.$frontmatter.advantageContent;
+			return getModuleContent(this, 'advantageContent')
 		},
         serviceContent() {
-			return this.$frontmatter.serviceContent;
+			return getModuleContent(this, 'serviceContent')
 		},
         scenesContent() {
-			return this.$frontmatter.scenesContent;
+			return getModuleContent(this, 'scenesContent')
 		},
         partnerContent() {
-			return this.$frontmatter.partnerContent;
+			return getModuleContent(this, 'partnerContent')
 		},
         dynamicContent() {
-			return this.$frontmatter.dynamicContent;
+			return getModuleContent(this, 'dynamicContent')
 		},
     },
     methods:{
         updateShowMask(val){
-            console.log(val)
             this.showMask = val;
         },
     },

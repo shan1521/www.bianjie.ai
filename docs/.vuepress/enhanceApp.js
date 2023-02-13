@@ -3,6 +3,9 @@ import Vuex from 'vuex';
 import store from './store';
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import { LANG_ROUTE } from './theme/constants';
+import { getCurrentEdition } from './theme/util';
+
 // import 'video.js/dist/video-js.css';
 // Vue.prototype.$bus = new Vue();
 export default async ({
@@ -23,7 +26,10 @@ export default async ({
     Vue.use(Element);
 	Vue.mixin({ store: store });
 	if(!isServer){
-		router.beforeEach((to, from,next) => {
+		const edition = getCurrentEdition();
+		// todo shan 考虑默认语言是否以用户选择为准，待产品确认
+		const urlLang = edition ? LANG_ROUTE.hk : LANG_ROUTE.zh;
+		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
 				store.commit('currentIndex',1)
 				localStorage.setItem('currentIndex',1)
@@ -43,6 +49,10 @@ export default async ({
 				store.commit('currentIndex',0)
 				localStorage.setItem('currentIndex',0)
 			}
+			if (to?.path === '/') {
+				store.commit('currentLang', urlLang);
+                next(`${urlLang}`)
+            }
 			next()
 		})
 		await import("./public/iconfont/iconfont").then(module => {

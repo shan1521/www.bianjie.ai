@@ -20,7 +20,7 @@
         <!-- 关于我们 -->
         <div class="about_content" v-if="currentTab === 0">
             <CompanyInfo :companyInfo="companyInfo"></CompanyInfo>
-            <IndustryAdv :industryAdvantage="industryAdvantage"></IndustryAdv>
+            <IndustryAdv v-if="industryAdvantage.industryAdvImg" :industryAdvantage="industryAdvantage"></IndustryAdv>
         </div>
         <!-- 发展历程 -->
         <div class="milestone_content" v-if="currentTab === 1"></div>
@@ -77,6 +77,9 @@ export default {
                 align-items: center;
                 width: 18.5rem;
                 border-right: 0.1rem solid #eee;
+                &:last-child {
+                    border-right: 0;
+                }
 
                 .about_type {
                     box-sizing: border-box;

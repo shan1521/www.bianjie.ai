@@ -10,8 +10,9 @@ replaceEnv([
         "docs/.vuepress/config.json",
     ],
     {
-        "umengId": program.params[0],
-        "umengWebId": program.params[1],
+        "isInternational": program.params[0],
+        "umengId": program.params[1],
+        "umengWebId": program.params[2]
     }
 );
 

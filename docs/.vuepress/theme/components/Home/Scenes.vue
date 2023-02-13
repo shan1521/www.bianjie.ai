@@ -22,6 +22,7 @@
                                     <li
                                         class="intro_item"
                                         v-for="(v, i) in item.intro"
+                                        :key="i"
                                     >
                                         {{ v.text }}
                                     </li>
@@ -64,7 +65,7 @@ export default {
     },
     methods: {
         goAppScenes(){
-            this.$router.push('/applications/e-licence');
+            this.$router.push(`${this.$store.state.currentLang}applications/e-licence`);
         }
     },
     components: {

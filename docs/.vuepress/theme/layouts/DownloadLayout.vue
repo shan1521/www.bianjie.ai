@@ -1,5 +1,6 @@
 <template>
 	<div class="pdf_container">
+		<!-- todo shan 还需要更新一下文件 -->
 		<iframe :src="$withBase('/Bianjie.ai_brochure.pdf')" width="99.8%" height="99%"></iframe>
 	</div>
 </template>

@@ -8,15 +8,17 @@
 <script>
 import DynamicTitle from './DynamicTitle.vue';
 import DynamicContent from './DynamicContent.vue';
+import { getModuleContent } from '../../util';
+
 export default {
     name: 'Dynamic',
     computed: {
         dynamicTitle() {
-			return this.$frontmatter.dynamicTitle;
+            return getModuleContent(this, 'dynamicTitle');
 		},
         dynamicList() {
-			return this.$frontmatter.dynamicList;
-		},
+            return getModuleContent(this, 'dynamicList');
+		}
     },
     components: {
         DynamicTitle,

@@ -10,17 +10,19 @@
 import AboutTitle from '@theme/components/Common/AboutTitle.vue';
 import AboutContent from '@theme/components/About/AboutContent.vue';
 import Jobs from '@theme/components/Join/Jobs.vue';
+import { getModuleContent } from '../../util';
+
 export default {
     name: 'Join',
     computed: {
         aboutTitle() {
-			return this.$frontmatter.aboutTitle;
+            return getModuleContent(this, 'aboutTitle');
 		},
         aboutType() {
-			return this.$frontmatter.aboutType;
+            return getModuleContent(this, 'aboutType');
 		},
         hotJobs() {
-			return this.$frontmatter.hotJobs;
+            return getModuleContent(this, 'hotJobs');
 		},
     },
     components: {
