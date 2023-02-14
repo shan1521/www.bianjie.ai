@@ -56,11 +56,8 @@ export default async ({
 				store.commit('currentIndex',0)
 				localStorage.setItem('currentIndex',0)
 			}
-			if (to?.path === '/') {
-				next(`${store.state.currentLang}`);
-            } else {
-				next();
-			}
+			if (to?.path === '/') next(`${store.state.currentLang}`);
+			else next();
 		})
 		await import("./public/iconfont/iconfont").then(module => {
 		})
