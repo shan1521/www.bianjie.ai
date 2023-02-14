@@ -23,10 +23,9 @@ export default {
     align-items: flex-start;
     width: 100%;
     min-height: 36rem;
-    // todo shan banner 图需更换为 irita 的
-    background: url(../../assets/product/iritahub/iritahub_banner.png) no-repeat center / cover;
+    background: url(../../assets/product/irita/irita_banner.png) no-repeat center / cover;
     @media (max-width: 768px) {
-        background: url(../../assets/product/iritahub/iritahub_banner_pad.png) no-repeat center / cover;
+        background: url(../../assets/product/irita/irita_banner_pad.png) no-repeat center / cover;
     }
     @media (max-width: 420px) {
         height: 25rem;

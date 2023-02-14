@@ -8,12 +8,12 @@
                         target="_blank"
                         rel="noopener noreferrer">
                         <img src="../../assets/home/bsn_logo.png"
-                            alt="">
+                            alt="" />
                     </a>
                     <div class="logo"
                         @click="goBsnWenchangchain">
                         <img src="../../assets/home/bsn-wenchang_logo.png"
-                            alt="">
+                            alt="" />
                     </div>
                 </div>
                 <a class="bsn-wenchang_desc"

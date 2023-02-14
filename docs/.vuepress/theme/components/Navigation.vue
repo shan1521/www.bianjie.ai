@@ -2,7 +2,7 @@
     <div class="nav_container" :class="{white_bg: isColor}">
         <div class="nav_content">
             <div class="nav_logo" :class="{nav_logo_inter: edition}" @click="toHome">
-                <img :src="getDiffLogo()" alt="">
+                <img :src="getDiffLogo()" alt="" />
             </div>
             <div class="nav_list_wrap">
                 <ul class="nav_list">
@@ -99,7 +99,7 @@
         <div class="mobile_nav_container">
             <div class="mobile_nav_content">
                 <div class="nav_logo" :class="{nav_logo_inter: edition}" @click="toHome">
-                    <img :src="getDiffLogo()" alt="">
+                    <img :src="getDiffLogo()" alt="" />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <i class="iconfont icon-caidan" :class="{iconfont_color: isColor}"></i>

@@ -361,12 +361,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'NFT Saas',
                                 intro: '元宇宝盒全球版',
-                                route: '/zh-CN/products/nft-saas'
+                                route: '/zh-CN/products/nft'
                             },
                             {
                                 abbreviation: 'NFT Hub',
                                 intro: '跨链 NFT 钱包',
-                                route: '/zh-CN/products/nfthub'
+                                route: '/zh-CN/products/nft'
                             },
                         ]
                     }
@@ -378,7 +378,7 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服务',
                         text: '亚洲数字银行',
-                        link: '/zh-CN/applications/financial-services'
+                        link: '/zh-CN/applications/cross-border-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
@@ -429,12 +429,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'NFT Saas',
                                 intro: '元宇寶盒全球版',
-                                route: '/zh-HK/products/nft-saas'
+                                route: '/zh-HK/products/nft'
                             },
                             {
                                 abbreviation: 'NFT Hub',
                                 intro: '跨鏈 NFT 錢包',
-                                route: '/zh-HK/products/nfthub'
+                                route: '/zh-HK/products/nft'
                             },
                         ]
                     }
@@ -446,7 +446,7 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服務',
                         text: '亞洲數字銀行',
-                        link: '/zh-HK/applications/financial-services'
+                        link: '/zh-HK/applications/cross-border-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
@@ -497,12 +497,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'NFT Saas',
                                 intro: 'MTO Box Global',
-                                route: '/en-US/products/nft-saas'
+                                route: '/en-US/products/nft'
                             },
                             {
                                 abbreviation: 'NFT Hub',
                                 intro: 'Cross-Chain NFT Wallet',
-                                route: '/en-US/products/nfthub'
+                                route: '/en-US/products/nft'
                             },
                         ]
                     }
@@ -515,7 +515,7 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: 'Financial Services',
                         text: 'Asia Digital Bank',
-                        link: '/en-US/applications/financial-services'
+                        link: '/en-US/applications/cross-border-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 

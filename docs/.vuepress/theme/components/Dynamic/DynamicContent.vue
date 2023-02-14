@@ -47,7 +47,7 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
-                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="" />
                             </a>
                             <router-link
                                 v-if="item.route"
@@ -55,7 +55,7 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
-                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="" />
                             </router-link>
                         </div>
                     </li>

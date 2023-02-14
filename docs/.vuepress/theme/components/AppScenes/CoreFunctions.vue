@@ -6,7 +6,7 @@
                 <ul class="corefunc_list">
                     <li class="corefunc_item" v-for="(item,index) in coreFunctions.coreList" :key="index">
                         <div class="corefunc_img">
-                            <img :src="differentIcon(item.iconName)" alt="">
+                            <img :src="differentIcon(item.iconName)" alt="" />
                         </div>
                         <div class="corefunc_right">
                             <div class="corefunc_text">{{item.text}}</div>

@@ -6,6 +6,7 @@
         <ProcessArchi v-if="processContent" :processContent="processContent"></ProcessArchi>
         <CoreFunctions v-if="coreFunctions" :coreFunctions="coreFunctions"></CoreFunctions>
         <Example v-if="exampleContent" :exampleContent="exampleContent"></Example>
+        <AppExample v-if="appExample" :appExample="appExample" />
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import PlanAdvantage from './PlanAdvantage';
 import ProcessArchi from './ProcessArchi';
 import CoreFunctions from './CoreFunctions';
 import Example from './Example';
+import AppExample from './AppExample';
 import { getModuleContent } from '../../util';
 
 export default {
@@ -39,6 +41,9 @@ export default {
         exampleContent() {
             return getModuleContent(this, 'exampleContent');
         },
+        appExample() {
+            return getModuleContent(this, 'appExample')
+        }
     },
     components: {
         AppTitle,
@@ -46,7 +51,8 @@ export default {
         PlanAdvantage,
         ProcessArchi,
         CoreFunctions,
-        Example
+        Example,
+        AppExample
     }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div class="irita_intro">
         <div class="irita_intro_content" :class="{irita_intro_content_en: isEn}">
-            <img src="/product/irita/irita.png" alt="" class="irita">
+            <img src="/product/irita/irita.png" alt="" class="irita" />
             <div class="irita_description">
                 <p class="title">{{ iritaIntro.title }}</p>
                 <div class="characteristic" :class="{characteristic_en: isEn}">
