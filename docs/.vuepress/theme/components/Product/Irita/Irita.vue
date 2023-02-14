@@ -18,16 +18,16 @@ export default {
     computed: {
         titleContent() {
             return getModuleContent(this, 'titleContent');
-		},
+        },
         iritaIntro() {
             return getModuleContent(this, 'iritaIntro');
-		},
+        },
         advantageContent() {
             return getModuleContent(this, 'advantageContent');
-		},
+        },
         techApplication() {
             return getModuleContent(this, 'techApplication');
-		}
+        }
     },
     components: {
         ProductsTitle,

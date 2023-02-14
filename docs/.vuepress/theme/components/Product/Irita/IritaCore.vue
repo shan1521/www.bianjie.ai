@@ -29,13 +29,13 @@ export default {
         }
     },
     computed: {
-        differentAdvantageImg() {
-			return function (imgName) {
-				return `/product/irita/${imgName}`;
-			}
-		},
         isEn() {
             return this.currentLang === LANG_OPTIONS[0].value;
+        }
+    },
+    methods: {
+        differentAdvantageImg(imgName) {
+            return `/product/irita/${imgName}`;
         }
     }
 }
@@ -81,7 +81,7 @@ export default {
                 .irita_core_item {
                     padding: 0.7rem 1.6rem;
                     min-height: 31.6rem;
-					background: url('/product/irita/core_card_bg.png') no-repeat center / cover;
+                    background: url('/product/irita/core_card_bg.png') no-repeat center / cover;
 
                     .advantage_img {
                         width: 7.2rem;
