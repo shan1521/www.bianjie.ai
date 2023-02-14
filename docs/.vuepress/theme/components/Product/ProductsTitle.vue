@@ -1,9 +1,9 @@
 <template>
-    <div class="title">
+    <div class="products_title">
         <div class="title_container">
             <div class="title_content">
-                <div class="title">{{ titleContent.title }}</div>
-                <div class="sub_title">{{ titleContent.subTitle }}</div>
+                <span class="title">{{ titleContent.title }}</span>
+                <span class="sub_title">{{ titleContent.subTitle }}</span>
             </div>
         </div>
     </div>
@@ -17,9 +17,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.title {
+.products_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
-    height: 36rem;
+    min-height: 36rem;
+    // todo shan banner 图需更换为 irita 的
     background: url(../../assets/product/iritahub/iritahub_banner.png) no-repeat center / cover;
     @media (max-width: 768px) {
         background: url(../../assets/product/iritahub/iritahub_banner_pad.png) no-repeat center / cover;
@@ -31,8 +35,9 @@ export default {
 
     .title_container {
         margin: 0 auto;
+        padding-top: 11.2rem;
+        width: 100%;
         max-width: $contentWidth;
-        height: 100%;
 
         .title_content {
             display: flex;
@@ -41,7 +46,6 @@ export default {
             box-sizing: border-box;
             margin: 0 auto;
             max-width: 109.6rem;
-            height: 100%;
             @media (max-width: 1200px) {
                 box-sizing: border-box;
                 padding-left: 4.8rem;
@@ -54,7 +58,7 @@ export default {
 
             .title {
                 font-size: $fontSize40;
-                font-weight: $fontWeight500;
+                font-weight: $fontWeight600;
                 color: #000;
                 line-height: 4.8rem;
                 @media (max-width: 775px) {
@@ -67,6 +71,7 @@ export default {
             }
             .sub_title {
                 margin-top: 2.4rem;
+                max-width: 60rem;
                 font-size: $fontSize20;
                 font-weight: $fontWeight400;
                 color: rgba(0, 0, 0, 0.75);

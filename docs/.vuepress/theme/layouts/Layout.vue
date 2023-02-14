@@ -35,7 +35,7 @@
 <script>
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
-import Irita from "@theme/components/Product/Irita.vue";
+import Irita from "@theme/components/Product/Irita/Irita.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import IritaOpbExtension from "@theme/components/Product/IritaOpbExtension.vue";
