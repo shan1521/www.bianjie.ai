@@ -6,10 +6,9 @@
     inland: {
     },
     international: {
-        # todo shan 文案待修改
         appTitleContent: {
-            title: 应用场景,
-            subTitle: 加强数据共享，提升政务效率,
+            title: 多場景解決方案,
+            subTitle: 基於區塊鏈底層基礎設施，向上打造區塊鏈生態應用場景,
             bg_banner: cross_border_trade_banner
         },
         appExample: [

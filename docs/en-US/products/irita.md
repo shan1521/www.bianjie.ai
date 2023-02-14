@@ -8,7 +8,8 @@
     international: {
         titleContent: {
             title: IRITA,
-            subTitle: the Consortium Chain Product Line for Next-Generation Distributed Business
+            subTitle: the Consortium Chain Product Line for Next-Generation Distributed Business,
+            bg_banner: irita_banner
         },
         iritaIntro: {
             title: What is IRITA?,

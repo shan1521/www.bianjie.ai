@@ -1,6 +1,6 @@
 <template>
     <div class="irita">
-        <ProductsTitle :titleContent="titleContent" />
+        <AppTitle :appTitleContent="titleContent" />
         <IritaIntro :iritaIntro="iritaIntro" />
         <IritaCore :advantageContent="advantageContent" />
         <IritaTech :techApplication="techApplication" />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ProductsTitle from '../ProductsTitle.vue';
+import AppTitle from '../../Common/AppTitle.vue';
 import IritaIntro from './IritaIntro.vue';
 import IritaCore from './IritaCore.vue';
 import IritaTech from './IritaTech.vue';
@@ -30,7 +30,7 @@ export default {
         }
     },
     components: {
-        ProductsTitle,
+        AppTitle,
         IritaIntro,
         IritaCore,
         IritaTech

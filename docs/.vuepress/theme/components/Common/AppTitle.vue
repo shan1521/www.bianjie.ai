@@ -20,10 +20,10 @@ export default {
     },
     methods: {
         differentSceneBanner(imgName){
-            return `background: url('/appscenes/banner/${imgName}.png') no-repeat center / cover;`;
+            return `background: url('/banner/${imgName}.png') no-repeat center / cover;`;
         },
         differentSceneBannerPad(imgName){
-            return `background: url('/appscenes/banner/${imgName}_pad.png') no-repeat center / cover;`;
+            return `background: url('/banner/${imgName}_pad.png') no-repeat center / cover;`;
         },
         differentBanner(imgName) {
             if(this.clientWidth > 768) {

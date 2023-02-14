@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import AppTitle from './AppTitle';
+import AppTitle from '../Common/AppTitle';
 import SceneStatus from './SceneStatus';
 import PlanAdvantage from './PlanAdvantage';
 import ProcessArchi from './ProcessArchi';

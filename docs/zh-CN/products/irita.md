@@ -8,7 +8,8 @@
     international: {
         titleContent: {
             title: IRITA,
-            subTitle: 支持下一代分布式商业的联盟链产品线
+            subTitle: 支持下一代分布式商业的联盟链产品线,
+            bg_banner: irita_banner
         },
         iritaIntro: {
             title: IRITA 是什么？,
@@ -18,7 +19,7 @@
                 { text: 功能全面}
             ],
             descriptionArticle: [
-                {paragraph: IRITA 是 Bianjie Global 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品线。},
+                {paragraph: IRITA 是 BIANJIE.AI Global 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品线。},
                 {paragraph: IRITA 具有保护隐私的数据加密共享、高效的共识协议、领先的跨链技术、实用性极强的链上链下系统交互及多方协作业务流集成能力、灵活的资产数字化建模与可信交换支撑、以及大数据存储 6 大核心技术优势，可广泛应用于金融、医疗健康、供应链、车联网等多种商业场景，为实体经济提供基于区块链信任机器的价值赋能。},
                 {paragraph: IRITA 支持中国国密标准，并有完善的 SDK 及运维工具支持，在性能、安全可靠性、认证及权限、可维护性、可扩展性和运维监控等多方面都满足企业级应用需求。}
             ]
