@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2765226 */
-  src: url('iconfont.woff2?t=1643099428454') format('woff2'),
-       url('iconfont.woff?t=1643099428454') format('woff'),
-       url('iconfont.ttf?t=1643099428454') format('truetype');
+  src: url('iconfont.woff2?t=1676272578711') format('woff2'),
+       url('iconfont.woff?t=1676272578711') format('woff'),
+       url('iconfont.ttf?t=1676272578711') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,38 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yuyan:before {
+  content: "\e7b8";
+}
+
+.icon-kuajingmaoyi:before {
+  content: "\e7b9";
+}
+
+.icon-IRITA:before {
+  content: "\e7b2";
+}
+
+.icon-AVATA:before {
+  content: "\e7b3";
+}
+
+.icon-MOTBOX:before {
+  content: "\e7b4";
+}
+
+.icon-IRITA_W:before {
+  content: "\e7b5";
+}
+
+.icon-AVATA_W:before {
+  content: "\e7b6";
+}
+
+.icon-MOTBOX_W:before {
+  content: "\e7b7";
 }
 
 .icon-DA:before {

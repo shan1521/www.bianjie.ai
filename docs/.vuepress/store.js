@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex);
-import cfg from './config.json';
 export default new Vuex.Store({
 	state: {
 		currentIndex: 0,

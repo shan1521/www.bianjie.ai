@@ -8,6 +8,7 @@
         <ClientOnly>
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
+                <Irita v-if="$page.frontmatter.isIrita"></Irita>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
@@ -34,6 +35,7 @@
 <script>
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
+import Irita from "@theme/components/Product/Irita.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import IritaOpbExtension from "@theme/components/Product/IritaOpbExtension.vue";
@@ -104,6 +106,7 @@ export default {
     components: {
         Navigation,
         NewHome,
+        Irita,
         IritaHub,
         IritaOpb,
         IritaOpbExtension,

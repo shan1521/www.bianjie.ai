@@ -33,14 +33,27 @@ const getCurrentEditionPrefix = () => {
  * @returns 
  */
 const getModuleContent = (vue, content) => {
+	// const editionPrefix = 'international';
 	const editionPrefix = getCurrentEditionPrefix();
 	return vue.$frontmatter[editionPrefix][content];
 }
+
+const getTextWidth = (text, font = '14px') => {
+    if (!text) return 0;
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    font && context && (context.font = font);
+    const metrics = context && context.measureText(text);
+    const textWidth = metrics && Math.ceil(metrics.width);
+    context && context.clearRect(0, 0, canvas.width, canvas.height);
+    return textWidth || 0;
+};
 
 module.exports = {
 	getLocalesNav,
 	getLocalesFooter,
 	getCurrentEdition,
 	getCurrentEditionPrefix,
-	getModuleContent
+	getModuleContent,
+	getTextWidth
 }

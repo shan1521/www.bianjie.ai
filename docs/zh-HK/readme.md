@@ -20,7 +20,7 @@
                 img: banner_home_3.png,
                 title: 秉持专业 · 追求卓越 · 开放合作,
                 subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
-            }
+            },
         ],
         bsnWenchangchain: {
             description: BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
@@ -48,7 +48,7 @@
                     img: adv_forth.png,
                     intro: 丰富的行业经验,
                     description: 多年的企业及行业服务经验，成熟的商业咨询团队，专业化场景解决方案。目前已在数字银行、金融监管、资产数字化等多个领域落地实际应用
-                }
+                },
             ]
         },
         serviceContent: {
@@ -154,7 +154,7 @@
                     ],
                     description: 利用区块链，核心企业信用上链传递后，中小企业可以使用核心企业的信贷授信额度，降低融资成本，提升融资效率。,
                     route: /zh-CN/applications/trade-finance
-                }
+                },
             ],
             moreText: 了解更多
         },
@@ -268,68 +268,68 @@
             {
                 img: banner_home_1.png,
                 title: Bianjie Global,
-                subTitle: 全球价值互联网建设者·Web 3.0 区块链基础设施服务商
+                subTitle: 全球價值互聯網建設者·Web 3.0 區塊鏈基礎設施服務商
             },
             {
                 img: banner_home_3.png,
-                title: 秉持专业 · 追求卓越 · 开放合作,
-                subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
+                title: 秉持專業 · 追求卓越 · 開放合作,
+                subTitle: 成為全球備受尊崇的區塊鏈創新團隊，為合作伙伴及行業創造深遠價值
             }
         ],
         advantageContent: {
-            title: 核心能力与优势,
+            title: 核心能力與優勢,
             advList: [
                 {
                     img: adv_first.png,
-                    intro: 先进的底层技术,
-                    description: 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，拥有自主研发、安全可控的区块链底层技术实力
+                    intro: 先進的底層技術,
+                    description: 以區塊鏈跨鏈、NFT 技術及大數據隱私保護技術為核心，擁有自主研發、安全可控的區塊鏈底層技術實力
                 },
                 {
                     img: adv_second.png,
-                    intro: 成熟的产品应用,
-                    description: 拥有自主知识产权的企业级区块链产品- IRITA 产品系列，支持下一代分布式商业应用，满足复杂业务场景
+                    intro: 成熟的產品應用,
+                    description: 擁有自主知識產權的企業級區塊鏈產品- IRITA 產品系列，支持下一代分佈式商業應用，滿足複雜業務場景
                 },
                 {
                     img: adv_third.png,
-                    intro: 开放的生态链接,
-                    description: 开放合作，携手共进，提供开放创新的区块链生态服务和业务合作模式，推动区块链技术落地与发展，服务实体经济
+                    intro: 開放的生態鏈接,
+                    description: 開放合作，攜手共進，提供開放創新的區塊鏈生態服務和業務合作模式，推動區塊鏈技術落地與發展，服務實體經濟
                 },
                 {
                     img: adv_forth.png,
-                    intro: 丰富的行业经验,
-                    description: 多年的企业及行业服务经验，成熟的商业咨询团队，专业化场景解决方案。目前已在数字银行、金融监管、资产数字化等多个领域落地实际应用
-                },
+                    intro: 豐富的行業經驗,
+                    description: 多年的企業及行業服務經驗，成熟的商業諮詢團隊，專業化場景解決方案。目前已在數字銀行、金融監管、資產數字化等多個領域落地實際應用
+                }
             ]
         },
         serviceContent: {
-            title: 产品与服务,
+            title: 產品與服務,
             productContent: [
                 {
                     iconClass: icon-IRITA_W,
                     iconClassColor: icon-IRITA,
                     name: IRITA,
-                    intro: 支持下一代分布式商业的联盟链产品线,
-                    description: IRITA 是边界智能以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品线,
+                    intro: 支持下一代分佈式商業的聯盟鏈產品線,
+                    description: IRITA 是邊界智能以區塊鏈跨鏈、NFT 技術及大數據隱私保護技術為核心，自主研發的支持下一代分佈式商業系統的企業級聯盟鏈產品線,
+                    route: /zh-HK/products/irita,
                     moreText: 了解更多,
-                    route: /zh-CN/products/irita,
                     imgName: IRITA_banner.png
                 },
                 {
                     iconClass: icon-HUB,
                     iconClassColor: icon-a-IRITAHUB,
                     name: IRITA HUB,
-                    intro: 异构区块链跨链服务枢纽,
-                    description: 基于先进的跨链技术、IBC 协议和 Tendermint 共识机制，支持各种异构区块链网络及链外系统间的跨链资产交换/转移及信息安全验证，支持跨链数据安全共享和跨链服务调用,
+                    intro: 異構區塊鏈跨鏈服務樞紐,
+                    description: 基於先進的跨鏈技術、IBC 協議和 Tendermint 共識機制，支持各種異構區塊鏈網絡及鏈外系統間的跨鏈資產交換/轉移及信息安全驗證，支持跨鏈數據安全共享和跨鏈服務調用,
                     moreText: 了解更多,
-                    route: /zh-CN/products/iritahub,
+                    route: /zh-HK/products/iritahub,
                     imgName: IRITAHUB_inter_banner.png
                 },
                 {
                     iconClass: icon-AVATA_W,
                     iconClassColor: icon-AVATA,
                     name: AVATA,
-                    intro: 多链跨链分布式应用服务平台,
-                    description: Avata 是一个多链和跨链 NFT/元宇宙应用 API 服务平台，为复杂异构系统跨链协作提供一键式对接，致力于助力开发者和企业打造开放、多元的分布式商业形态，构建 Web3 商业应用,
+                    intro: 多鏈跨鏈分佈式應用服務平台,
+                    description: Avata 是一個多鏈和跨鏈 NFT/元宇宙應用 API 服務平台，為複雜異構系統跨鏈協作提供一鍵式對接，致力於助力開發者和企業打造開放、多元的分佈式商業形態，構建 Web3 商業應用,
                     moreText: 了解更多,
                     link: https://apis.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
@@ -337,69 +337,69 @@
                 {
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
-                    name: 元宇宝盒,
-                    intro: 基于多链技术的 NFT 应用赋能工具,
-                    description: 元宇宝盒为 Bianjie Global 全球生态合作伙伴提供基于 NFT 技术的数字商品应用赋能及数字化营销工具，可对接元宇宙应用，支持多链/多应用场景，让企业更高效地链接全球用户，让用户更方便地掌管数字资产,
+                    name: 元宇寶盒,
+                    intro: 基於多鏈技術的 NFT 應用賦能工具,
+                    description: 元宇寶盒為 BIANJIE.AI Global 全球生態合作伙伴提供基於 NFT 技術的數字商品應用賦能及數字化營銷工具，可對接元宇宙應用，支持多鏈/多應用場景，讓企業更高效地鏈接全球用户，讓用户更方便地掌管數字資產。,
                     moreText: 了解更多,
-                    route: /zh-CN/products/motbox,
+                    route: /zh-HK/products/motbox,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
                     name: NFT Hub,
-                    intro: 跨链 NFT 钱包管理工具,
-                    description: NFT Hub 是一个去中心化工具，用于管理您在多个区块链上的 NFTs。您可以查看、管理并通过跨链协议将您的 NFTs 发送到其他生态系统,
+                    intro: 跨鏈 NFT 錢包管理工具,
+                    description: NFT Hub 是一個去中心化工具，用於管理您在多個區塊鏈上的NFTs。您可以查看、管理並通過跨鏈協議將您的 NFTs 發送到其他生態系統,
                     moreText: 了解更多,
-                    route: /zh-CN/products/motbox,
+                    route: /zh-HK/products/motbox,
                     imgName: NFT_banner.png
                 }
             ]
         },
         scenesContent: {
-            title: 多场景解决方案,
+            title: 多場景解決方案,
             scenesList: [
                 {
                     iconName: gongyinglianjinrong.png,
-                    title: 数字金融,
+                    title: 數字金融,
                     intro: [
-                        {text: 资产数字化建模},
-                        {text: 大数据隐私保护},
-                        {text: 普惠自金融生态},
+                        {text: 資產數字化建模},
+                        {text: 大數據隱私保護},
+                        {text: 普惠自金融生態},
                     ]
                 },
                 {
                     iconName: shuzihuazichan.png,
-                    title: 跨境贸易,
+                    title: 跨境貿易,
                     intro: [
-                        {text: 打造新一代数字贸易基础设施},
-                        {text: 建立全球普惠贸易新秩序},
-                        {text: 促进国际贸易和电商发展},
+                        {text: 打造新一代數字貿易基礎設施},
+                        {text: 建立全球普惠貿易新秩序},
+                        {text: 促進國際貿易和電商發展},
                     ]
                 },
                 {
                     iconName: copyright.png,
-                    title: 文创与版权,
+                    title: 文創與版權,
                     intro: [
-                        {text: 保护原创权益},
-                        {text: 重塑版权价值},
-                        {text: 便捷高效维权},
+                        {text: 保護原創權益},
+                        {text: 重塑版權價值},
+                        {text: 便捷高效維權},
                     ]
                 },
                 {
                     iconName: manufacture.png,
-                    title: 智能制造,
+                    title: 智能製造,
                     intro: [
-                        {text: 组建和管理工业物联网},
-                        {text: 提高制造智能化管理水平},
-                        {text: 引领全球传统制造业创新变革},
+                        {text: 組建和管理工業物聯網},
+                        {text: 提高製造智能化管理水平},
+                        {text: 引領全球傳統制造業創新變革},
                     ]
                 }
             ]
         },
         partnerContent: {
             title: 合作伙伴,
-            subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
+            subTitle: 開放合作 攜手共進 共同推動可信區塊鏈技術落地與發展,
             # todo shan 合作伙伴图片链接待修改
             fieldsList: [
                 {

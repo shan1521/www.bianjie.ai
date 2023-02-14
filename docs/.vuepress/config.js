@@ -1,4 +1,4 @@
-const { EDITION_NAV, EDITION_COMPANY, CONTACT_US, COPYRIGHT_RECORD } = require('./theme/constants');
+const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD } = require('./theme/constants');
 const { getCurrentEditionPrefix } = require('./theme/util');
 const editionPrefix = getCurrentEditionPrefix();
 module.exports = {
@@ -23,16 +23,37 @@ module.exports = {
 	themeConfig: {
 		search: false,
 		navbar: false,
-		// todo shan 需要设置 zh-HK、en-US 类似配置
 		locales: {
 			'/zh-CN/': {
 				nav: EDITION_NAV[editionPrefix]['zh-CN'],
 				footer: {
 					companyInfo: EDITION_COMPANY[editionPrefix]['zh-CN'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-CN'],
 					contactUS: CONTACT_US[editionPrefix],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-CN'],
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-CN'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-CN']
 				},
 			},
+			'/zh-HK/': {
+				nav: EDITION_NAV[editionPrefix]['zh-HK'],
+				footer: {
+					companyInfo: EDITION_COMPANY[editionPrefix]['zh-HK'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-HK'],
+					contactUS: CONTACT_US[editionPrefix],
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-HK'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-HK']
+				},
+			},
+			'/en-US/': {
+				nav: EDITION_NAV[editionPrefix]['en-US'],
+				footer: {
+					companyInfo: EDITION_COMPANY[editionPrefix]['en-US'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['en-US'],
+					contactUS: CONTACT_US[editionPrefix],
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['en-US'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['en-US']
+				},
+			}
 		},
 	},
 	locales: {

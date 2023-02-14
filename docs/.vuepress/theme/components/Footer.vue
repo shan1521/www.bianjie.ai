@@ -4,7 +4,7 @@
             <div class="top_content">
                 <div class="top_content_container">
                     <div class="content_left">
-                        <div class="left_img">
+                        <div class="left_img" :class="{left_img_inter: edition}">
                             <img
                                 :src="getDiffEditionImg()"
                                 alt=""
@@ -14,15 +14,15 @@
                     </div>
                     <div class="content_right">
                         <div class="total">
-                            <span class="total_title">公司</span>
-                            <div class="company_info" v-for="(item, index) in footerInfo.companyInfo" :key="index">
+                            <span class="total_title">{{ companyInfo?.title }}</span>
+                            <div class="company_info" v-for="(item, index) in companyInfo?.content" :key="index">
                                 <a v-if="item.href" class="company_link" :href="item.href" target="_blank">{{ item.label }}</a>
                                 <router-link v-if="item.route" class="company_link" :to="item.route">{{ item.label }}</router-link>
                             </div>
                         </div>
                         <div class="contact">
-                            <span class="contact_title">联系我们</span>
-                            <div class="contact_us" v-for="(item, index) in footerInfo.contactUS" :key="index">
+                            <span class="contact_title">{{ contactUSTitle }}</span>
+                            <div class="contact_us" v-for="(item, index) in contactUS" :key="index">
                                 <a
                                     v-if="item.href"
                                     class="contact_item"
@@ -43,7 +43,7 @@
                                     class="qr_code_img"
                                 />
                             </div>
-                            <span class="focus_title">· 扫码关注我们 ·</span>
+                            <span class="focus_title">{{`· ${ scanCodeFollowUS } ·`}}</span>
                         </div>
                     </div>
                 </div>
@@ -52,10 +52,9 @@
         <div class="footer_content_bottom">
             <div class="bottom_content">
                 <div class="bottom_content_container" :style="{'justify-content': edition ? 'center' : 'space-between'}">
-                    <div class="copyright_content" v-for="(item, index) in footerInfo.copyrightInfo" :key="index">
+                    <div class="copyright_content" v-for="(item, index) in copyrightInfo" :key="index">
                         <a
                             v-if="item.href"
-                            class=""
                             :href="item.href"
                             target="_blank"
                             rel="noreferrer noopener"
@@ -80,6 +79,23 @@ export default {
         return {
             footerInfo: {},
             edition: getCurrentEdition()
+        }
+    },
+    computed: {
+        companyInfo() {
+            return this.footerInfo.companyInfo;
+        },
+        contactUSTitle() {
+            return this.footerInfo.contactUSTitle;
+        },
+        contactUS() {
+            return this.footerInfo.contactUS;
+        },
+        scanCodeFollowUS() {
+            return this.footerInfo.scanCodeFollowUS;
+        },
+        copyrightInfo() {
+            return this.footerInfo.copyrightInfo;
         }
     },
     methods: {
@@ -134,7 +150,6 @@ export default {
 
                 .content_left {
                     .left_img {
-                        width: 17.9rem;
                         height: 6rem;
 
                         img {
@@ -142,6 +157,9 @@ export default {
                             width: 100%;
                             height: 100%;
                         }
+                    }
+                    .left_img_inter {
+                        height: 4.8rem;
                     }
                 }
 
