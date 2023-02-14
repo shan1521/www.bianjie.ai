@@ -1,6 +1,6 @@
 <template>
     <div class="irita">
-        <ProductsTitle :titleContent="titleContent"></ProductsTitle>
+        <ProductsTitle :titleContent="titleContent" />
         <IritaIntro :iritaIntro="iritaIntro" />
         <IritaCore :advantageContent="advantageContent" />
         <IritaTech :techApplication="techApplication" />
