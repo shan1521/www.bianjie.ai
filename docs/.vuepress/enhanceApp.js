@@ -32,8 +32,10 @@ export default async ({
 		if(localStorage.getItem('currentLang')){
 			urlLang = localStorage.getItem('currentLang');
 		} else {
-			urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value
+			urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
+			localStorage.setItem('currentLang', urlLang);
 		}
+		store.commit('currentLang', urlLang);
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
 				store.commit('currentIndex',1)
@@ -55,11 +57,10 @@ export default async ({
 				localStorage.setItem('currentIndex',0)
 			}
 			if (to?.path === '/') {
-				store.commit('currentLang', urlLang);
-				localStorage.setItem('currentLang', urlLang);
-				next(`${urlLang}`);
-            }
-			next()
+				next(`${store.state.currentLang}`);
+            } else {
+				next();
+			}
 		})
 		await import("./public/iconfont/iconfont").then(module => {
 		})

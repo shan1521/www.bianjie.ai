@@ -79,7 +79,7 @@
                         {{ download }}
                     </router-link>
                 </div>
-                <div class="select_btn" :class="{select_btn_color: isColor}" >
+                <div v-if="edition" class="select_btn" :class="{select_btn_color: isColor}" >
                     <div class="line"></div>
                     <div class="lang_wrap" @click="openLangSubMenu">
                         <i class="iconfont icon-yuyan" :class="{ iconfont_color: isColor}"></i>
@@ -180,7 +180,7 @@
                         {{ download }}
                     </router-link>
                 </div>
-                <div class="select_btn">
+                <div v-if="edition" class="select_btn">
                     <div class="lang_wrap" @click="openLangSubMenu">
                         <span class="lang">
                             <i class="iconfont icon-yuyan"></i>
