@@ -4,7 +4,7 @@
             <div class="archi_content">
                 <div class="title">{{ architectureContent.title }}</div>
                 <div class="archi_img">
-                    <img src="../../assets/product/iritahub/iritahub_jiagou.png" alt="" />
+                    <img :src="$withBase(`/product/iritahub/${architectureContent.architectureDiagram}`)" alt="" />
                 </div>
             </div>
         </div>
