@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isJoin: true,
-    title: 关于边界-加入我们,
     inland: {
         aboutTitle: {
             title: 关于边界,

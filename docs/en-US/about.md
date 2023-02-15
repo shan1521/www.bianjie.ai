@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isAbout: true,
-    title: 关于边界-关于我们,
     inland: {
         aboutTitle: {
             title: 关于边界,
@@ -55,7 +54,6 @@
     international: {
         aboutTitle: {
             title: About Us,
-            # todo shan 文案待修改
             subTitle: 專注於區塊鏈、大數據相關產品技術研發和解決方案的高科技公司
         },
         # todo shan 文案待修改

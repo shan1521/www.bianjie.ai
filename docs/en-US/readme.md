@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isNewHome: true,
-    title: 首页,
     inland: {
         homeContent: [
             {

@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isIritaOpb: true,
-    title: IRITA OPB-核心产品,
     inland: {
         iritaopbTitleContent: {
             title: 开放许可链产品 - IRITA OPB,

@@ -54,10 +54,16 @@ import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 import Contact from "@theme/components/Contact.vue";
 import cfg from "../../config.json";
-import { getLocalesNav } from '../util';
+import { getCurrentEditionPrefix, getLocalesNav } from '../util';
+import { SEO_META } from '../constants';
 
 export default {
     name: "Layout",
+    data() {
+        return {
+            editionPrefix: getCurrentEditionPrefix()
+        }
+    },
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
@@ -87,6 +93,16 @@ export default {
         },
 
     },
+    methods: {
+        setHeadMeta(lang) {
+            SEO_META[this.editionPrefix][lang].forEach(item => {
+                const metaDom = document.createElement('meta');
+                metaDom[item.name] = item.nameValue;
+                metaDom[item.content] = item.contentDesc;
+                document.getElementsByTagName('head')[0].appendChild(metaDom);
+            })
+        }
+    },
     mounted() {
         // 友盟统计添加
         const script = document.createElement("script");
@@ -95,11 +111,11 @@ export default {
         document.body.appendChild(script);
     },
     watch: {
-        $route: {
-            handler(val, oldval) {
+        '$route.path': {
+            handler(newPath) {
                 const nav = getLocalesNav(this, this.$store.state.currentLang);
                 nav.forEach((item, index) => {
-                    if (item.link === val.path) {
+                    if (item.link === newPath) {
                         this.$store.commit("currentIndex", index);
                     }
                 });
@@ -107,6 +123,13 @@ export default {
             immediate: true,
             deep: true,
         },
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.setHeadMeta(newLang);
+            },
+            immediate: true,
+            deep: true
+        }
     },
     components: {
         Navigation,

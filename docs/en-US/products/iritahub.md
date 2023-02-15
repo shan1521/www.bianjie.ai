@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isIritaHub: true,
-    title: IRITA HUB-核心产品,
     inland: {
         titleContent: {
             title: 异构区块链跨链服务枢纽 - IRITA HUB,

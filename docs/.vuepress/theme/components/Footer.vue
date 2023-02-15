@@ -108,10 +108,9 @@ export default {
         this.footerInfo = getLocalesFooter(this, this.$store.state.currentLang);
     },
     watch: {
-        '$route.path': {
-            handler(newPath) {
-                // todo shan 页脚内容需要根据语言变换切换
-                // console.log(newPath, 'newPath');
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.footerInfo = getLocalesFooter(this, newLang);
             },
             immediate: true,
             deep: true

@@ -2,14 +2,12 @@
 {
     layout: Layout,
     isNft: true,
-    title: NFT 应用-核心产品,
     inland: {
     },
     international: {
-        # todo shan 标题文案待替换
         titleContent: {
             title: 数字资产管理工具,
-            subTitle: 已适配众多主流联盟链和公链·跨系统的可信数据和交互服务,
+            subTitle: 助力生态伙伴及 C 端用户打造数字资产赋能及管理平台,
             bg_banner: nft_banner
         },
         nftList: [

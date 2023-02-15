@@ -79,8 +79,7 @@ export default {
         return {
             currentTab: 1,
             isShowWhiteIcon: true,
-            clientWidth: +document.body.clientWidth,
-            currentLang: this.$store.state.currentLang
+            clientWidth: +document.body.clientWidth
         };
     },
     computed: {
@@ -96,7 +95,7 @@ export default {
             }
         },
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {

@@ -1,7 +1,7 @@
 <template>
     <div class="contact_container">
         <div class="contact_img">
-            <img src="../assets/contact.png" alt="" />
+            <img :src="contactUSImg" alt="" />
         </div>
         <div class="qrcode_container">
             <div class="qrcode">
@@ -16,12 +16,24 @@
     </div>
 </template>
 <script>
-import { getLocalesFooter } from '../util';
+import { getCurrentEdition, getLocalesFooter } from '../util';
+import { LANG_OPTIONS } from '../constants';
+import contact_cn from '../assets/contact.png';
+import contact_hk from '../assets/contact_hk.png';
+import contact_en from '../assets/contact_en.png';
+const CONTACT_US_IMG = {
+    '/zh-CN/': contact_cn,
+    '/zh-HK/': contact_hk,
+    '/en-US/': contact_en,
+}
+
 export default {
     name: "Contact",
     data() {
         return {
             footerInfo: {},
+            contactUSImg: '',
+            edition: getCurrentEdition()
         }
     },
     computed: {
@@ -31,6 +43,15 @@ export default {
     },
     mounted() {
         this.footerInfo = getLocalesFooter(this, this.$store.state.currentLang);
+    },
+    watch: {
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[2].value];
+            },
+            immediate: true,
+            deep: true
+        }
     }
 };
 </script>

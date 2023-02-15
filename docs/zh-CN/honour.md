@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isHonour: true,
-    title: 关于边界-荣誉资质,
     inland: {
         aboutTitle: {
             title: 关于边界,

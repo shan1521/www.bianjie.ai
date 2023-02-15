@@ -23,14 +23,9 @@ import { LANG_OPTIONS } from '../../../constants';
 export default {
     name: 'IritaCore',
     props: ['advantageContent'],
-    data() {
-        return {
-            currentLang: this.$store.state.currentLang
-        }
-    },
     computed: {
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {

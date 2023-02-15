@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isPartner: true,
-    title: 合作伙伴,
     inland: {
         partnerTitle: {
             title: 合作伙伴,

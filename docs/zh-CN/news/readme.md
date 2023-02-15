@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isDynamic: true,
-    title: 企业动态,
     inland: {
         dynamicTitle: {
             title: 企业动态,

@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isCTrading: true,
-    title: 碳中和-应用场景,
     inland: {
         appTitleContent: {
             title: 碳核查,

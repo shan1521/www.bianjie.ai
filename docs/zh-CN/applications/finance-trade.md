@@ -2,8 +2,6 @@
 {
     layout: Layout,
     isFinanceTrade: true,
-    # todo shan 待确认
-    title: Cross-border-trade-应用场景,
     inland: {
     },
     international: {

@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isAbout: true,
-    title: 关于边界-关于我们,
     inland: {
         aboutTitle: {
             title: 关于边界,

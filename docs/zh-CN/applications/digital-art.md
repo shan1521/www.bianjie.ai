@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isDigitalArt: true,
-    title: 文创与版权-应用场景,
     inland: {
         appTitleContent: {
             title: 一体化数字艺术品,

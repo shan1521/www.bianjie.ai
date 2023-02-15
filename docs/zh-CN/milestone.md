@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isMilestone: true,
-    title: 关于边界-发展历程,
     inland: {
         aboutTitle: {
             title: 关于边界,

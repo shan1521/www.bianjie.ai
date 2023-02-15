@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isIrita: true,
-    title: IRITA-核心产品,
     inland: {
     },
     international: {

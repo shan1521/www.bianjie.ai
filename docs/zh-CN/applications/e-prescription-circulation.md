@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isEPC: true,
-    title: 医疗健康-应用场景,
     inland: {
         appTitleContent: {
             title: 区块链电子处方流转,

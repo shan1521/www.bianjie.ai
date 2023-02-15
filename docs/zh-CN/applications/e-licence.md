@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isELicence: true,
-    title: 智慧政务-应用场景,
     inland: {
         appTitleContent: {
             title: 区块链电子证照,

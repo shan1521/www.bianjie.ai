@@ -145,7 +145,9 @@
                                     </div>
                                     <ul class="type_list">
                                         <li class="type_item" v-for="(product, pIndex) in subItem.productList" :key="pIndex">
-                                            <span class="abbreviation" v-if="product.link" @click="closeSubProdAppMenu(product.link)">{{product.abbreviation}}</span>
+                                            <span v-if="product.link" class="abbreviation" @click="closeSubProdAppMenu(product.link)">
+                                                {{product.abbreviation}}
+                                            </span>
                                             <router-link class="abbreviation" v-if="product.route" :to="product.route" @click.native="closeSubMenu(index)">{{product.abbreviation}}</router-link>
                                             <div class="intro">{{product.intro}}</div>
                                         </li>
@@ -204,8 +206,8 @@
 
 <script>
 import cfg from '../../config.json';
-import { getLocalesNav, getCurrentEdition } from '../util';
-import { LANG_OPTIONS } from '../constants';
+import { getLocalesNav, getCurrentEdition, getCurrentEditionPrefix } from '../util';
+import { LANG_OPTIONS, DOM_TITLE, PRO_TITLE, SEO_META } from '../constants';
 import logoWhite from '../assets/home/logo_white.png';
 import logoWhiteInter from '../assets/home/logo_white_inter.png';
 import logoBlack from '../assets/home/logo_black.png';
@@ -227,6 +229,7 @@ export default {
             appMenuShow: false,
             cfg,
             edition: getCurrentEdition(),
+            editionPrefix: getCurrentEditionPrefix(),
             LANG_OPTIONS,
             selectedLang: "简体中文",
             isShowLangSubMenu: false,
@@ -268,7 +271,6 @@ export default {
             this.$router.push(this.$store.state.currentLang);
         },
         changeIndex(index) {
-            // todo shan 需要根据环境变量区分此处逻辑
             if (this.currentIndex !== index && index !== 6 && index !== 1 && index !== 2) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
@@ -373,25 +375,24 @@ export default {
         },
         clearTimer(timer) {
             timer && clearTimeout(timer);
-        }
+        },
+        getDomTitle(path, lang) {
+			const routeLabel = path.substring(lang.length);
+			const titleSuffix = PRO_TITLE[this.editionPrefix];
+			const domTitle = `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}`;
+			document.title = domTitle;
+		}
     },
     watch: {
         '$route.path': {
             handler(newPath){
+			    this.getDomTitle(newPath, this.$store.state.currentLang);
                 const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
                 } else {
                     this.isColor = false;
                 }
-                const newLang = newPath.substring(0, 7);
-                this.navigation = getLocalesNav(this, newLang);
-                this.$store.commit('currentLang', newLang);
-                this.LANG_OPTIONS.forEach(item => {
-                    if(item.value === newLang) {
-                        this.selectedLang = item.label;
-                    }
-                })
             },
             immediate: true,
             deep: true,
@@ -402,6 +403,18 @@ export default {
                     this.isShowProductSub = false;
                     this.isShowScenesSub = false;
                 }
+            },
+            immediate: true,
+            deep: true
+        },
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.navigation = getLocalesNav(this, newLang);
+                this.LANG_OPTIONS.forEach(item => {
+                    if(item.value === newLang) {
+                        this.selectedLang = item.label;
+                    }
+                })
             },
             immediate: true,
             deep: true

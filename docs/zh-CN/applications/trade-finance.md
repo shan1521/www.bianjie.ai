@@ -2,7 +2,6 @@
 {
     layout: Layout,
     isTradeFinance: true,
-    title: 供应链金融-应用场景,
     inland: {
         appTitleContent: {
             title: 供应链金融,

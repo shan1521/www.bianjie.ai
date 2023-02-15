@@ -32,13 +32,12 @@ export default {
     props: ['appExample'],
     data() {
         return {
-            currentLang: this.$store.state.currentLang,
             space: 4.8
         }
     },
     computed: {
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {

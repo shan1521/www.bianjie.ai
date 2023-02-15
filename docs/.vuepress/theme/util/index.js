@@ -1,5 +1,5 @@
 const cfg = require('../../config.json');
-const { ENV_INLAND_INTERNATIONAL } = require('../constants');
+const { ENV_INLAND_INTERNATIONAL, LANG_OPTIONS } = require('../constants');
 
 /**
  * get nav
@@ -55,5 +55,5 @@ module.exports = {
 	getCurrentEdition,
 	getCurrentEditionPrefix,
 	getModuleContent,
-	getTextWidth
+	getTextWidth,
 }

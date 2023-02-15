@@ -737,6 +737,287 @@ const COPYRIGHT_RECORD = {
 const ADVANTAGES_WIDTH = 206;
 const ADVANTAGES_HEIGHT = 20;
 
+const DOM_TITLE = {
+    inland: {
+        '/zh-CN/': {
+            '': '首页',
+            'products/iritahub.html': 'IRITA HUB-核心产品',
+            'products/iritaopb.html': 'IRITA OPB-核心产品',
+            'products/IRITAOPB-敬请期待.html': 'IRITA OPB 敬请期待-核心产品',
+            'products/iritabean.html': 'IRITA BEAN-核心产品',
+            'products/iritada.html': 'IRITA DA-核心产品',
+            'applications/e-licence.html': '智慧政务-应用场景',
+            'applications/C-trading.html': '碳中和-应用场景',
+            'applications/digital-art.html': '文创与版权-应用场景',
+            'applications/datacollection.html': '工业互联网及物联网-应用场景',
+            'applications/trade-finance.html': '供应链金融-应用场景',
+            'applications/e-prescription-circulation.html': '医疗健康-应用场景',
+            'news/': '企业动态',
+            'partners.html': '合作伙伴',
+            'about.html': '关于边界-关于我们',
+            'milestone.html': '关于边界-发展历程',
+            'honour.html': '关于边界-荣誉资质',
+            'join.html': '关于边界-加入我们'
+        },
+        '/zh-HK/': {
+            '': '首页',
+            'products/iritahub.html': 'IRITA HUB-核心产品',
+            'products/iritaopb.html': 'IRITA OPB-核心产品',
+            'products/IRITAOPB-敬请期待.html': 'IRITA OPB 敬请期待-核心产品',
+            'products/iritabean.html': 'IRITA BEAN-核心产品',
+            'products/iritada.html': 'IRITA DA-核心产品',
+            'applications/e-licence.html': '智慧政务-应用场景',
+            'applications/C-trading.html': '碳中和-应用场景',
+            'applications/digital-art.html': '文创与版权-应用场景',
+            'applications/datacollection.html': '工业互联网及物联网-应用场景',
+            'applications/trade-finance.html': '供应链金融-应用场景',
+            'applications/e-prescription-circulation.html': '医疗健康-应用场景',
+            'news/': '企业动态',
+            'partners.html': '合作伙伴',
+            'about.html': '关于边界-关于我们',
+            'milestone.html': '关于边界-发展历程',
+            'honour.html': '关于边界-荣誉资质',
+            'join.html': '关于边界-加入我们'
+        },
+        '/en-US/': {
+            '': '首页',
+            'products/iritahub.html': 'IRITA HUB-核心产品',
+            'products/iritaopb.html': 'IRITA OPB-核心产品',
+            'products/IRITAOPB-敬请期待.html': 'IRITA OPB 敬请期待-核心产品',
+            'products/iritabean.html': 'IRITA BEAN-核心产品',
+            'products/iritada.html': 'IRITA DA-核心产品',
+            'applications/e-licence.html': '智慧政务-应用场景',
+            'applications/C-trading.html': '碳中和-应用场景',
+            'applications/digital-art.html': '文创与版权-应用场景',
+            'applications/datacollection.html': '工业互联网及物联网-应用场景',
+            'applications/trade-finance.html': '供应链金融-应用场景',
+            'applications/e-prescription-circulation.html': '医疗健康-应用场景',
+            'news/': '企业动态',
+            'partners.html': '合作伙伴',
+            'about.html': '关于边界-关于我们',
+            'milestone.html': '关于边界-发展历程',
+            'honour.html': '关于边界-荣誉资质',
+            'join.html': '关于边界-加入我们'
+        }
+    },
+    international: {
+        '/zh-CN/': {
+            '': '首页',
+            'products/irita.html': 'IRITA-核心产品',
+            'products/iritahub.html': 'IRITA HUB-核心产品',
+            'products/nftapplication.html': 'NFT 应用-核心产品',
+            'applications/finance-trade.html': '应用场景',
+            'about.html': '关于我们',
+        },
+        '/zh-HK/': {
+            '': '首頁',
+            'products/irita.html': 'IRITA-核心產品',
+            'products/iritahub.html': 'IRITA HUB-核心產品',
+            'products/nftapplication.html': 'NFT 應用-核心產品',
+            'applications/finance-trade.html': '應用場景',
+            'about.html': '關於我們',
+        },
+        '/en-US/': {
+            '': 'Homepage',
+            'products/irita.html': 'IRITA-Core Products',
+            'products/iritahub.html': 'IRITA HUB-Core Products',
+            'products/nftapplication.html': 'NFT 应用-Core Products',
+            'applications/finance-trade.html': 'Application Scenarios',
+            'about.html': 'About Us',
+        }
+    }
+}
+
+const PRO_TITLE = {
+    inland: '边界智能-BIANJIE.AI',
+    international: 'BIANJIE.AI Global'
+}
+
+const SEO_META = {
+    inland: {
+        '/zh-CN/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+            },
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: 'CadgsdV9bv'
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: 'Y1zz3l93YMcsFRVcKcGM9KmdE3wukv8KiJucw0xpC9M'
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: 'KXEyCmQU'
+            }
+        ],
+        '/zh-HK/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+            },
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: 'CadgsdV9bv'
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: 'Y1zz3l93YMcsFRVcKcGM9KmdE3wukv8KiJucw0xpC9M'
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: 'KXEyCmQU'
+            }
+        ],
+        '/en-US/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+            },
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: 'CadgsdV9bv'
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: 'Y1zz3l93YMcsFRVcKcGM9KmdE3wukv8KiJucw0xpC9M'
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: 'KXEyCmQU'
+            }
+        ]
+    },
+    international: {
+        '/zh-CN/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
+            },
+            // todo shan 三种验证工具的 contentDesc 需要更换
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: ''
+            }
+        ],
+        '/zh-HK/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+            },
+            // todo shan 三种验证工具的 contentDesc 需要更换
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: ''
+            }
+        ],
+        '/en-US/': [
+            {
+                name: 'name',
+                nameValue: 'keywords',
+                content: 'content',
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+            },
+            // todo shan 三种验证工具的 contentDesc 需要更换
+            {
+                name: 'name',
+                nameValue: 'baidu-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: 'google-site-verification',
+                content: 'content',
+                contentDesc: ''
+            },
+            {
+                name: 'name',
+                nameValue: '360-site-verification',
+                content: 'content',
+                contentDesc: ''
+            }
+        ]
+    }
+}
+
+const OG_CONTENT = {
+    inland: [
+        ['meta', { property: 'og:image', content: 'https://www.bianjie.ai/resources/Bianjie/Bianjie-Logo-Share.png' }],
+		['meta', { property: 'og:title', content: '边界智能-BIANJIE.AI' }],
+		[
+			'meta',
+			{ property: 'og:description', content: '上海边界智能专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统构建的企业联盟链 IRITA 产品系列。' },
+		]
+    ],
+    international: [
+        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/share_logo.jpg' }],
+		['meta', { property: 'og:title', content: 'BIANJIE.AI Global' }],
+		[
+			'meta',
+			{ property: 'og:description', content: 'BIANJIE.AI Global 是⼀家專注於區塊鏈技術及應用創新、全球領先的區塊鏈技術及應用服務商。BIANJIE.AI Global 與全球夥伴深度合作，在數字金融、跨境貿易、跨鏈服務、元宇宙等領域共同推進創新技術落地應用，服務全球實體經濟。' },
+		]
+    ]
+}
+
 module.exports = {
     ENV_INLAND_INTERNATIONAL,
     LANG_OPTIONS,
@@ -747,5 +1028,9 @@ module.exports = {
     SCAN_CODE_FOLLOW_US,
     COPYRIGHT_RECORD,
     ADVANTAGES_WIDTH,
-    ADVANTAGES_HEIGHT
+    ADVANTAGES_HEIGHT,
+    DOM_TITLE,
+    PRO_TITLE,
+    SEO_META,
+    OG_CONTENT
 }
