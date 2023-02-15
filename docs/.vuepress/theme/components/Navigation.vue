@@ -326,8 +326,8 @@ export default {
             this.flShowMobileMenu = false;
             this.$store.commit("subMenu", 0);
         },
-        closeSubProdAppMenu(link) {
-            this.flShowMobileMenu = false;
+        closeSubProdAppMenu(link) {
+            this.flShowMobileMenu = false;
             this.clearTimer(this.subProdAppTimer);
             this.subProdAppTimer = setTimeout(()=>{
                 window.open(`${link}`);
@@ -361,12 +361,10 @@ export default {
             this.isShowLangSubMenu = !this.isShowLangSubMenu;
         },
         changeLang(langType) {
-            const storeLang = localStorage.getItem('currentLang') || '';
-            if(storeLang === langType) return;
-            this.$store.commit('currentLang', langType);
-            localStorage.setItem("currentLang", langType);
-            const path = this.$route.path.substring(7, this.$route.path.length);
+            const path = this.$route.path.split('/').slice(2).join('/');
             this.$router.push(`${langType}${path}`);
+            this.$store.commit('currentLang', langType);
+            localStorage.setItem('currentLang', langType);
             this.flShowMobileMenu = false;
             this.clearTimer(this.langTimer);
             this.langTimer = setTimeout(() => {
@@ -377,11 +375,11 @@ export default {
             timer && clearTimeout(timer);
         },
         getDomTitle(path, lang) {
-			const routeLabel = path.substring(lang.length);
-			const titleSuffix = PRO_TITLE[this.editionPrefix];
-			const domTitle = `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}`;
-			document.title = domTitle;
-		}
+            const routeLabel = path.split('/').slice(2).join('/');
+            const titleSuffix = PRO_TITLE[this.editionPrefix];
+            const domTitle = `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}`;
+            document.title = domTitle;
+        }
     },
     watch: {
         '$route.path': {

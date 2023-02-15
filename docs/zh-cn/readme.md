@@ -74,7 +74,7 @@
                     intro: 异构区块链跨链服务枢纽,
                     description: 基于先进的跨链技术、IBC 协议和 Tendermint 共识机制，支持各种异构区块链网络及链外系统间的跨链资产交换/转移及信息安全验证，支持跨链数据安全共享和跨链服务调用,
                     moreText: 了解更多,
-                    route: /zh-CN/products/iritahub,
+                    route: /zh-cn/products/iritahub,
                     imgName: IRITAHUB_banner.png
                 },
                 {
@@ -84,7 +84,7 @@
                     intro: 支持分布式商业应用的开放许可链,
                     description: 支持复杂分布式商业应用系统的开放许可链，集成了包括资产数字化 NFT 技术、大数据隐私保护等功能，提供智能合约的编程环境，以应用服务平台形式支持分布式商业系统应用快速开发、部署及运营,
                     moreText: 了解更多,
-                    route: /zh-CN/products/iritaopb,
+                    route: /zh-cn/products/iritaopb,
                     imgName: IRITAOPB_banner.png
                 },
                 {
@@ -119,7 +119,7 @@
                         {text: 发展可信社会},
                     ],
                     description: 区块链技术结合智慧政务，促进政务数据互通共享，提升跨部门、跨地区、跨层级协作效率，优化政务服务质量，简化企业、群众办理业务的流程，增强政府公信力,
-                    route: /zh-CN/applications/e-licence
+                    route: /zh-cn/applications/e-licence
                 },
                 {
                     iconName: tanzhonghe.png,
@@ -130,7 +130,7 @@
                         {text: 多方数据安全共享},
                     ],
                     description: 通过资产数字化建模，建立健全碳排放数据、碳资产配额、碳交易等链上资产管理，辅助政府科学决策和碳中和治理机制，推进政府在碳中和管理过程中的透明化、可信化以及治理模式创新化、精准化，决策科学化、高效化。,
-                    route: /zh-CN/applications/C-trading
+                    route: /zh-cn/applications/C-trading
                 },
                 {
                     iconName: shuzihuazichan.png,
@@ -141,7 +141,7 @@
                         {text: 便捷高效维权},
                     ],
                     description: 结合区块链与 IoT 技术，开展商品品质溯源机制建设，形成生产加工监管追溯体系，实现全产业链生产质量可追溯。,
-                    route: /zh-CN/applications/digital-art
+                    route: /zh-cn/applications/digital-art
                 },
                 {
                     iconName: gongyinglianjinrong.png,
@@ -152,7 +152,7 @@
                         {text: 物权转移记录},
                     ],
                     description: 利用区块链，核心企业信用上链传递后，中小企业可以使用核心企业的信贷授信额度，降低融资成本，提升融资效率。,
-                    route: /zh-CN/applications/trade-finance
+                    route: /zh-cn/applications/trade-finance
                 }
             ],
             moreText: 了解更多
@@ -310,7 +310,7 @@
                     intro: 支持下一代分布式商业的联盟链产品线,
                     description: IRITA 是边界智能以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品线,
                     moreText: 了解更多,
-                    route: /zh-CN/products/irita,
+                    route: /zh-cn/products/irita,
                     imgName: IRITA_banner.png
                 },
                 {
@@ -320,7 +320,7 @@
                     intro: 异构区块链跨链服务枢纽,
                     description: 基于先进的跨链技术、IBC 协议和 Tendermint 共识机制，支持各种异构区块链网络及链外系统间的跨链资产交换/转移及信息安全验证，支持跨链数据安全共享和跨链服务调用,
                     moreText: 了解更多,
-                    route: /zh-CN/products/iritahub,
+                    route: /zh-cn/products/iritahub,
                     imgName: IRITAHUB_inter_banner.png
                 },
                 {
@@ -340,7 +340,7 @@
                     intro: 多链 NFT 应用赋能工具,
                     description: 元宇宝盒为 BIANJIE.AI Global 全球生态合作伙伴提供基于 NFT 技术的数字商品应用赋能及数字化营销工具，可对接元宇宙应用，支持多链/多应用场景，让企业更高效地链接全球用户，让用户更方便地掌管数字资产,
                     moreText: 了解更多,
-                    route: /zh-CN/products/nftapplication,
+                    route: /zh-cn/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
@@ -350,7 +350,7 @@
                     intro: 跨链 NFT 资产管理工具,
                     description: NFT Hub 是一个去中心化工具，用于管理您在多个区块链上的 NFTs。您可以查看、管理并通过跨链协议将您的 NFTs 发送到其他生态系统,
                     moreText: 了解更多,
-                    route: /zh-CN/products/nftapplication,
+                    route: /zh-cn/products/nftapplication,
                     imgName: NFT_banner.png
                 }
             ]

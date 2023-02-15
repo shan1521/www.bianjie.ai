@@ -10,19 +10,19 @@
         aboutType: [
             {
                 text: 关于我们,
-                route: /zh-CN/about
+                route: /zh-cn/about
             },
             {
                 text: 发展历程,
-                route: /zh-CN/milestone
+                route: /zh-cn/milestone
             },
             {
                 text: 荣誉资质,
-                route: /zh-CN/honour
+                route: /zh-cn/honour
             },
             {
                 text: 加入我们,
-                route: /zh-CN/join
+                route: /zh-cn/join
             },
         ],
         hotJobs: {

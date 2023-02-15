@@ -22,9 +22,9 @@ import contact_cn from '../assets/contact.png';
 import contact_hk from '../assets/contact_hk.png';
 import contact_en from '../assets/contact_en.png';
 const CONTACT_US_IMG = {
-    '/zh-CN/': contact_cn,
-    '/zh-HK/': contact_hk,
-    '/en-US/': contact_en,
+    '/zh-cn/': contact_cn,
+    '/zh-hk/': contact_hk,
+    '/en/': contact_en,
 }
 
 export default {
