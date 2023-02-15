@@ -9,6 +9,7 @@
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <Irita v-if="$page.frontmatter.isIrita"></Irita>
+                <Nft v-if="$page.frontmatter.isNft"></Nft>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
@@ -36,6 +37,7 @@
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
 import Irita from "@theme/components/Product/Irita/Irita.vue";
+import Nft from "@theme/components/Product/Nft/Nft.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import IritaOpbExtension from "@theme/components/Product/IritaOpbExtension.vue";
@@ -79,6 +81,9 @@ export default {
             if(this.$route.path.toLowerCase().includes('datacollection')) {
                 return '$page.frontmatter.isDataCollection';
             }
+            if(this.$route.path.toLowerCase().includes('finance-trade')) {
+                return '$page.frontmatter.isFinanceTrade';
+            }
         },
 
     },
@@ -107,6 +112,7 @@ export default {
         Navigation,
         NewHome,
         Irita,
+        Nft,
         IritaHub,
         IritaOpb,
         IritaOpbExtension,

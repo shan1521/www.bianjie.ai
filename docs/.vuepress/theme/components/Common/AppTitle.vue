@@ -18,26 +18,18 @@ export default {
             clientWidth: +document.body.clientWidth
         }
     },
-    computed: {
-        differentSceneBanner(){
-            return function(imgName){
-                return `background: url('/appscenes/banner/${imgName}.png') no-repeat center / cover;`;
-            }
+    methods: {
+        differentSceneBanner(imgName){
+            return `background: url('/banner/${imgName}.png') no-repeat center / cover;`;
         },
-        differentSceneBannerPad(){
-            return function(imgName){
-                return `background: url('/appscenes/banner/${imgName}_pad.png') no-repeat center / cover;`;
-            }
+        differentSceneBannerPad(imgName){
+            return `background: url('/banner/${imgName}_pad.png') no-repeat center / cover;`;
         },
-        differentBanner() {
+        differentBanner(imgName) {
             if(this.clientWidth > 768) {
-                return function(imgName) {
-                    return this.differentSceneBanner(imgName);
-                }
+                return this.differentSceneBanner(imgName);
             } else if(this.clientWidth <= 768 && this.clientWidth > 420) {
-                return function(imgName) {
-                    return this.differentSceneBannerPad(imgName);
-                }
+                return this.differentSceneBannerPad(imgName);
             }
         }
     },

@@ -267,7 +267,7 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: Bianjie Global,
+                title: BIANJIE.AI Global,
                 subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
             },
             {
@@ -340,23 +340,25 @@
                 {
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
-                    name: MTO Box,
+                    name: MTO Box Global,
+                    # todo shan intro 內容需要替換
                     intro: the NFT Application Empowerment Tool Based on Multi-Chain Technology,
-                    description: MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for Bianjie Global's worldwide ecosystem partners. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently,
+                    description: MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for BIANJIE.AI Global's worldwide ecosystem partners. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently,
                     # todo shan 替换为英文
                     moreText: 了解更多,
-                    route: /en-US/products/motbox,
+                    route: /en-US/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
-                    name: NFT Hub,
+                    # todo shan name、intro 內容需要替換
+                    name: Cross-Chain NFT Wallet,
                     intro: the Cross-Chain NFT Wallet Management Tool,
                     description: NFT Hub is a decentralized tool for managing your NFTs across multiple blockchains. You can view，manage and send your NFTs to other ecosystems via Interchain protocols,
                     # todo shan 替换为英文
                     moreText: 了解更多,
-                    route: /en-US/products/motbox,
+                    route: /en-US/products/nftapplication,
                     imgName: NFT_banner.png
                 }
             ]
@@ -390,23 +392,30 @@
             title: Partners,
             # todo shan 英文文案待修改
             subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
-            # todo shan 合作伙伴图片链接待修改
             fieldsList: [
                 {
                     partnerList: [
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/dida.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/ADB.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/HKVAX.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/siluzhizhou.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/circlesquare.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Reddate.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/财华社.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wanxiang.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/voaino.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wenjiaolianhe.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/metachi.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/dibiaomake.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/shucangzhongguo.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/aibeiliandong.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/baoli.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/BSN.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/cosmos.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/tendermint.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/IRISnet.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Chainlink.jpg}
                     ]
                 }
             ]

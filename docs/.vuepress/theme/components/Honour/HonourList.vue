@@ -11,12 +11,12 @@
                 <div class="swiper_wrap">
                     <swiper class="top_list" :options="swiperTopOption">
                         <swiper-slide @click.native="maskVisible" class="top_item" v-for="(verItem,vIndex) in honourList.verticalList" :key="vIndex">
-                            <img :src="verItem.imgSrc" alt="">
+                            <img :src="verItem.imgSrc" alt="" />
                         </swiper-slide>
                     </swiper>
                     <swiper class="bottom_list" :options="swiperBottomOption">
                         <swiper-slide class="bottom_item" v-for="(horizonItem,hIndex) in honourList.horizontalList" :key="hIndex">
-                            <img :src="horizonItem.imgSrc" alt="">
+                            <img :src="horizonItem.imgSrc" alt="" />
                         </swiper-slide>
                     </swiper>
                 </div>

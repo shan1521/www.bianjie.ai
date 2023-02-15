@@ -267,7 +267,7 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: Bianjie Global,
+                title: BIANJIE.AI Global,
                 subTitle: 全球價值互聯網建設者·Web 3.0 區塊鏈基礎設施服務商
             },
             {
@@ -337,21 +337,21 @@
                 {
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
-                    name: 元宇寶盒,
-                    intro: 基於多鏈技術的 NFT 應用賦能工具,
+                    name: 元宇寶盒全球版,
+                    intro: 多鏈 NFT 應用賦能工具,
                     description: 元宇寶盒為 BIANJIE.AI Global 全球生態合作伙伴提供基於 NFT 技術的數字商品應用賦能及數字化營銷工具，可對接元宇宙應用，支持多鏈/多應用場景，讓企業更高效地鏈接全球用户，讓用户更方便地掌管數字資產。,
                     moreText: 了解更多,
-                    route: /zh-HK/products/motbox,
+                    route: /zh-HK/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
-                    name: NFT Hub,
-                    intro: 跨鏈 NFT 錢包管理工具,
+                    name: NFT 跨鏈錢包,
+                    intro: 跨鏈 NFT 資產管理工具,
                     description: NFT Hub 是一個去中心化工具，用於管理您在多個區塊鏈上的NFTs。您可以查看、管理並通過跨鏈協議將您的 NFTs 發送到其他生態系統,
                     moreText: 了解更多,
-                    route: /zh-HK/products/motbox,
+                    route: /zh-HK/products/nftapplication,
                     imgName: NFT_banner.png
                 }
             ]
@@ -400,23 +400,30 @@
         partnerContent: {
             title: 合作伙伴,
             subTitle: 開放合作 攜手共進 共同推動可信區塊鏈技術落地與發展,
-            # todo shan 合作伙伴图片链接待修改
             fieldsList: [
                 {
                     partnerList: [
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/cie_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shbta_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/jxm_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/shso_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/dida.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/ccid_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/lt_logo.png},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/ADB.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/HKVAX.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/siluzhizhou.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/circlesquare.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Reddate.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/财华社.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wanxiang.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/voaino.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wenjiaolianhe.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/metachi.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/dibiaomake.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/shucangzhongguo.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/aibeiliandong.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/baoli.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/BSN.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/cosmos.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/tendermint.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/IRISnet.jpg},
+                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Chainlink.jpg}
                     ]
                 }
             ]

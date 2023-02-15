@@ -6,7 +6,7 @@
                 <div class="irita_tech_wenchang">
                     <div class="wenchang_title">
                         <div class="wenchang_logo">
-                            <img src="../../../assets/home/bsn-wenchang_logo.png" alt="">
+                            <img src="../../../assets/home/bsn-wenchang_logo.png" alt="" />
                         </div>
                         <span class="wenchang_text">{{ techApplication.wenchang.text}}</span>
                     </div>
@@ -18,7 +18,7 @@
                         </li>
                     </ul>
                 </div>
-                <img class="wenchang_banner" :src="$withBase(`/product/irita/${techApplication.banner}`)" alt="">
+                <img class="wenchang_banner" :src="$withBase(`/product/irita/${techApplication.banner}`)" alt="" />
             </div>
         </div>
     </div>

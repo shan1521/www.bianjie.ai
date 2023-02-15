@@ -356,17 +356,16 @@ const EDITION_NAV = {
                     {
                         icon: 'icon-yingyongceng',
                         type: '区块链应用',
-                        // todo shan 路由待确认
                         productList: [
                             {
-                                abbreviation: 'NFT Saas',
-                                intro: '元宇宝盒全球版',
-                                route: '/zh-CN/products/nft-saas'
+                                abbreviation: '元宇宝盒全球版',
+                                intro: '多链 NFT 应用赋能工具',
+                                route: '/zh-CN/products/nftapplication'
                             },
                             {
-                                abbreviation: 'NFT Hub',
-                                intro: '跨链 NFT 钱包',
-                                route: '/zh-CN/products/nfthub'
+                                abbreviation: 'NFT 跨链钱包',
+                                intro: '跨链 NFT 资产管理工具',
+                                route: '/zh-CN/products/nftapplication'
                             },
                         ]
                     }
@@ -378,13 +377,13 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服务',
                         text: '亚洲数字银行',
-                        link: '/zh-CN/applications/financial-services'
+                        link: '/zh-CN/applications/finance-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
                         scene: '跨境贸易',
                         text: '丝路之舟',
-                        link: '/zh-CN/applications/cross-border-trade'
+                        link: '/zh-CN/applications/finance-trade'
                     }
                 ]
             },
@@ -424,17 +423,16 @@ const EDITION_NAV = {
                     {
                         icon: 'icon-yingyongceng',
                         type: '區塊鏈應用',
-                        // todo shan 路由待确认
                         productList: [
                             {
-                                abbreviation: 'NFT Saas',
-                                intro: '元宇寶盒全球版',
-                                route: '/zh-HK/products/nft-saas'
+                                abbreviation: '元宇寶盒全球版',
+                                intro: '多鏈 NFT 應用賦能工具',
+                                route: '/zh-HK/products/nftapplication'
                             },
                             {
-                                abbreviation: 'NFT Hub',
-                                intro: '跨鏈 NFT 錢包',
-                                route: '/zh-HK/products/nfthub'
+                                abbreviation: 'NFT 跨鏈錢包',
+                                intro: '跨鏈 NFT 資產管理工具',
+                                route: '/zh-HK/products/nftapplication'
                             },
                         ]
                     }
@@ -446,13 +444,13 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服務',
                         text: '亞洲數字銀行',
-                        link: '/zh-HK/applications/financial-services'
+                        link: '/zh-HK/applications/finance-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
                         scene: '跨境貿易',
                         text: '絲路之舟',
-                        link: '/zh-HK/applications/cross-border-trade'
+                        link: '/zh-HK/applications/finance-trade'
                     }
                 ]
             },
@@ -492,17 +490,17 @@ const EDITION_NAV = {
                     {
                         icon: 'icon-yingyongceng',
                         type: 'Blockchain Applications',
-                        // todo shan 路由待确认
                         productList: [
+                            // todo shan intro 文案待修改為英文
                             {
-                                abbreviation: 'NFT Saas',
+                                abbreviation: 'MTO Box Global',
                                 intro: 'MTO Box Global',
-                                route: '/en-US/products/nft-saas'
+                                route: '/en-US/products/nftapplication'
                             },
                             {
-                                abbreviation: 'NFT Hub',
+                                abbreviation: 'Cross-Chain NFT Wallet',
                                 intro: 'Cross-Chain NFT Wallet',
-                                route: '/en-US/products/nfthub'
+                                route: '/en-US/products/nftapplication'
                             },
                         ]
                     }
@@ -515,13 +513,13 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: 'Financial Services',
                         text: 'Asia Digital Bank',
-                        link: '/en-US/applications/financial-services'
+                        link: '/en-US/applications/finance-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
                         scene: 'Cross-Border Trade',
                         text: 'DODR',
-                        link: '/en-US/applications/cross-border-trade'
+                        link: '/en-US/applications/finance-trade'
                     }
                 ]
             },
@@ -536,7 +534,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -553,7 +551,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -570,7 +568,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -689,12 +687,48 @@ const COPYRIGHT_RECORD = {
                 label: '沪公网安备31011502009028号',
                 href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
             }
+        ],
+        'zh-HK': [
+            {
+                label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
+            },
+            {
+                label: '沪ICP备17020986号',
+                href: 'https://beian.miit.gov.cn/'
+            },
+            {
+                label: '沪公网安备31011502009028号',
+                href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
+            }
+        ],
+        'en-US': [
+            {
+                label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
+            },
+            {
+                label: '沪ICP备17020986号',
+                href: 'https://beian.miit.gov.cn/'
+            },
+            {
+                label: '沪公网安备31011502009028号',
+                href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
+            }
         ]
     },
     international: {
         'zh-CN': [
             {
                 label: `版权所有©${new Date().getFullYear()} 区块律动（香港）科技有限公司`
+            }
+        ],
+        'zh-HK': [
+            {
+                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+            }
+        ],
+        'en-US': [
+            {
+                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
             }
         ]
     }

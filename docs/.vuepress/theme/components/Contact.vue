@@ -1,7 +1,7 @@
 <template>
     <div class="contact_container">
         <div class="contact_img">
-            <img src="../assets/contact.png" alt="">
+            <img src="../assets/contact.png" alt="" />
         </div>
         <div class="qrcode_container">
             <div class="qrcode">
@@ -9,7 +9,7 @@
             </div>
             <p class="qrcode_text">{{`· ${ scanCodeFollowUS } ·`}}</p>
             <div class="email_container">
-                <img src="../assets/icon_yx.png" alt="">
+                <img src="../assets/icon_yx.png" alt="" />
                 <span>contact@bianjie.ai</span>
             </div>
         </div>

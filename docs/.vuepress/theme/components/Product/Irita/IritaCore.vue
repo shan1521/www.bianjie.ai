@@ -7,7 +7,7 @@
                     :class="{irita_core_item_wrapper_en: isEn}"
                     :key="index">
                     <div class="irita_core_item" :class="{irita_core_item_en: isEn}" ref="advantageItem">
-                        <img :src="$withBase(differentAdvantageImg(item.img))" alt="" class="advantage_img">
+                        <img :src="$withBase(differentAdvantageImg(item.img))" alt="" class="advantage_img" />
                         <p class="advantage_title">{{ item.advantageTitle }}</p>
                         <p class="description" :class="{description_en: isEn}" v-for="(dItem,dIndex) in item.description" :key="dIndex">
                             {{ dItem.paragraph }}</p>

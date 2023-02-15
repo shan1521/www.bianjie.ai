@@ -7,6 +7,7 @@
                     <li
                         class="process_item"
                         v-for="(item, index) in processContent.processList"
+                        :key="index"
                     >
                         <div class="item_left">
                             <div class="item_img">
