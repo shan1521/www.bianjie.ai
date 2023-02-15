@@ -109,6 +109,7 @@ export default {
         script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
         script.language = "JavaScript";
         document.body.appendChild(script);
+        this.setHeadMeta(this.$store.state.currentLang);
     },
     watch: {
         '$route.path': {
@@ -126,9 +127,7 @@ export default {
         '$store.state.currentLang': {
             handler(newLang) {
                 this.setHeadMeta(newLang);
-            },
-            immediate: true,
-            deep: true
+            }
         }
     },
     components: {
