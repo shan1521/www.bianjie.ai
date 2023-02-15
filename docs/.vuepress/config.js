@@ -1,10 +1,11 @@
 const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD } = require('./theme/constants');
-const { getCurrentEditionPrefix } = require('./theme/util');
+const { getCurrentEdition, getCurrentEditionPrefix } = require('./theme/util');
+const edition = getCurrentEdition();
 const editionPrefix = getCurrentEditionPrefix();
 module.exports = {
-	// todo shan 区分国内版国际版
-	title: '边界智能-BIANJIE.AI',
+	title: edition ? 'BIANJIE.AI Global' : '边界智能-BIANJIE.AI',
 	description: 'bianjie.ai',
+	// todo shan 区分国内国际版
 	head: [
 		['link', { rel: 'icon', href: '/favicon.ico' }],
 		['meta', { name: 'keywords', content: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务' }],

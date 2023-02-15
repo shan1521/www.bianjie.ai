@@ -534,7 +534,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -551,7 +551,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -568,7 +568,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界 Global',
+                    label: '边界智能 Global',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -687,12 +687,48 @@ const COPYRIGHT_RECORD = {
                 label: '沪公网安备31011502009028号',
                 href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
             }
+        ],
+        'zh-HK': [
+            {
+                label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
+            },
+            {
+                label: '沪ICP备17020986号',
+                href: 'https://beian.miit.gov.cn/'
+            },
+            {
+                label: '沪公网安备31011502009028号',
+                href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
+            }
+        ],
+        'en-US': [
+            {
+                label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
+            },
+            {
+                label: '沪ICP备17020986号',
+                href: 'https://beian.miit.gov.cn/'
+            },
+            {
+                label: '沪公网安备31011502009028号',
+                href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
+            }
         ]
     },
     international: {
         'zh-CN': [
             {
                 label: `版权所有©${new Date().getFullYear()} 区块律动（香港）科技有限公司`
+            }
+        ],
+        'zh-HK': [
+            {
+                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+            }
+        ],
+        'en-US': [
+            {
+                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
             }
         ]
     }

@@ -81,8 +81,8 @@ export default {
             if(this.$route.path.toLowerCase().includes('datacollection')) {
                 return '$page.frontmatter.isDataCollection';
             }
-            if(this.$route.path.toLowerCase().includes('cross-border-trade')) {
-                return '$page.frontmatter.isCrossBorderTrade';
+            if(this.$route.path.toLowerCase().includes('finance-trade')) {
+                return '$page.frontmatter.isFinanceTrade';
             }
         },
 

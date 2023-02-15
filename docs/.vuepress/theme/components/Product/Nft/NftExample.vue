@@ -110,6 +110,9 @@ export default {
                                 font-weight: $fontWeight600;
                                 color: #000;
                                 line-height: 2.8rem;
+                                &:hover {
+                                    color: $highlightDetailColor;
+                                }
                             }
                         }
                         .description_list {

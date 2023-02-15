@@ -1,7 +1,8 @@
 ---
 {
     layout: Layout,
-    isCrossBorderTrade: true,
+    isFinanceTrade: true,
+    # todo shan 待确认
     title: Cross-border-trade-应用场景,
     inland: {
     },
@@ -9,7 +10,7 @@
         appTitleContent: {
             title: 多场景解决方案,
             subTitle: 基于区块链底层基础设施，向上打造区块链生态应用场景,
-            bg_banner: cross_border_trade_banner
+            bg_banner: finance_banner
         },
         appExample: [
             {

@@ -55,7 +55,6 @@
     international: {
         aboutTitle: {
             title: 关于我们,
-            # todo shan 文案待修改
             subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
         },
         companyInfo: {

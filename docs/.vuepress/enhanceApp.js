@@ -28,14 +28,19 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		const edition = getCurrentEdition();
-		let urlLang = '';
-		if(localStorage.getItem('currentLang')){
-			urlLang = localStorage.getItem('currentLang');
+		if(edition) {
+			// 国内版不应从 localStorage 中读取语言配置
+			let urlLang = '';
+			if(localStorage.getItem('currentLang')){
+				urlLang = localStorage.getItem('currentLang');
+			} else {
+				urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
+				localStorage.setItem('currentLang', urlLang);
+			}
+			store.commit('currentLang', urlLang);
 		} else {
-			urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
-			localStorage.setItem('currentLang', urlLang);
+			store.commit('currentLang', LANG_OPTIONS[2].value);
 		}
-		store.commit('currentLang', urlLang);
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
 				store.commit('currentIndex',1)

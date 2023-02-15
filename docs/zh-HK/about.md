@@ -55,7 +55,6 @@
     international: {
         aboutTitle: {
             title: 關於我們,
-            # todo shan 文案待修改
             subTitle: 專注於區塊鏈、大數據相關產品技術研發和解決方案的高科技公司
         },
         companyInfo: {
