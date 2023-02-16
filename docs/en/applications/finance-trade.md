@@ -15,8 +15,8 @@
                 position: 0,
                 banner: asia_banner.png,
                 icon: icon-zhengwu,
-                category: 金融服務,
-                title: 亞洲數字銀行,
+                category: Financial Services,
+                title: Asia Digital Bank,
                 description: [
                     {
                         paragraph: BIANJIE.AI Global 與亞洲數字銀行有限公司（註冊號 LL16434）（持牌納閩投資銀行）（許可證號：200134BI）拥有长期戰略合作關係，通過區塊鏈跨鏈、大數據隱私保護等前沿創新技術，開發打造可支撐高效自金融服務並支持全球合法貿易的新一代數字銀行服務基礎設施，為全球企業和個人提供更安全、更低成本和更透明高效的合法金融服務，助推傳統金融擁抱數字金融，推進全球資產數字化及合法貿易生態建設。
@@ -30,8 +30,8 @@
                 position: 1,
                 banner: dodr_banner.png,
                 icon: icon-kuajingmaoyi,
-                category: 跨境貿易,
-                title: 絲路之舟,
+                category: Cross-Border Trade,
+                title: DODR,
                 description: [
                     {
                         paragraph: BIANJIE.AI Global 已與中國絲路集團全資子公司絲路之舟就「基於區塊鏈及大數據隱私保護技術的新一代數字貿易基礎設施」達成戰略合作，支持打造聯合國貿發會（UNCTAD，聯合國系統內唯一綜合處理國家貿易與經濟發展問題的國際經濟組織）的新型數字貿易基礎設施平台 DODR。DODR 的目標是建立「自由、公平、誠信」的可信數字貿易體系，形成全球普惠貿易新秩序、新規則、新體系，用於保護消費者權益，促進國際貿易和跨境電商發展。

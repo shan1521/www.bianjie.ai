@@ -7,6 +7,7 @@
                 <div class="list_item_top">
                     <img class="img"
                         :src="differentAdvantageImg(item.img)"
+                        :style="{width: `${imgWidth}px`, height: `${imgHeight}px`}"
                         alt="" />
                 </div>
                 <div class="list_item_middle_bottom">
@@ -29,14 +30,14 @@ import { LANG_OPTIONS, ADVANTAGES_WIDTH, ADVANTAGES_HEIGHT } from '../../constan
 import { getTextWidth } from '../../util';
 export default {
     name: "CaptionImgContent",
-    props: ["captionContent"],
+    props: ["captionContent", 'imgWidth', 'imgHeight'],
     computed: {
         advList() {
             const list = this.captionContent.advList;
             list?.forEach(item => {
                 const contentRealWidth = getTextWidth(item.description);
                 const contentHeight = Math.ceil(contentRealWidth / ADVANTAGES_WIDTH) * ADVANTAGES_HEIGHT;
-                if(contentHeight > 140) {
+                if(contentHeight > 110) {
                     item.showShadow = true;
                 }
             })
@@ -44,11 +45,11 @@ export default {
         },
         differentAdvantageImg() {
             return function (imgName) {
-                return `/home/${imgName}`;
+                return `/advantages/${imgName}`;
             };
         },
         isEn() {
-            return this.$store.state.currentLang === '/en/';
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     components: {
@@ -91,13 +92,16 @@ export default {
             box-sizing: border-box;
             width: 24rem;
             min-height: 35.6rem;
+            max-height: 39.8rem;
             border: 0.1rem solid #E1E5F4;
             border-radius: 0.4rem;
             .list_item_top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 100%;
                 height: 14.6rem;
                 img {
-                    width: 100%;
                     border-radius: 0.4rem 0.4rem 0 0;
                 }
             }

@@ -2,7 +2,7 @@
     <div class="home_container">
         <Swiper v-if="homeContent" :homeContent.sync="homeContent"></Swiper>
         <BSNWenchang v-if="bsnWenchangchain" :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
-        <CaptionImgContent v-if="advantageContent" :captionContent.sync="advantageContent"></CaptionImgContent>
+        <CaptionImgContent v-if="advantageContent" :captionContent.sync="advantageContent" :imgWidth="advImgWidth" :imgHeight="advImgHeight"></CaptionImgContent>
         <Product v-if="serviceContent" :serviceContent.sync="serviceContent"></Product>
         <Scenes v-if="scenesContent"  :scenesContent.sync="scenesContent"></Scenes>
         <Partner v-if="partnerContent" :partnerContent.sync="partnerContent"></Partner>
@@ -21,6 +21,12 @@ import Dynamic from '@theme/components/Home/Dynamic.vue';
 import { getModuleContent } from '../../util';
 export default {
     name: "NewHome",
+    data(){
+        return {
+            advImgWidth: 240,
+            advImgHeight: 146
+        }
+    },
     computed: {
         homeContent() {
 			return getModuleContent(this, 'homeContent')

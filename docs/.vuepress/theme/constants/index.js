@@ -4,11 +4,10 @@ const ENV_INLAND_INTERNATIONAL = {
 }
 
 const LANG_OPTIONS = [
-    // 暂时注掉
-    // {
-    //     label: 'English',
-    //     value: '/en/'
-    // },
+    {
+        label: 'English',
+        value: '/en/'
+    },
     {
         label: '繁體中文',
         value: '/zh-hk/'

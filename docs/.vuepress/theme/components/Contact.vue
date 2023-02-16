@@ -47,7 +47,7 @@ export default {
     watch: {
         '$store.state.currentLang': {
             handler(newLang) {
-                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[1].value];
+                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[2].value];
                 this.footerInfo = getLocalesFooter(this, newLang);
             },
             immediate: true,

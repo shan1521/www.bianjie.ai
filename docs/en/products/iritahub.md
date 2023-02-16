@@ -23,69 +23,71 @@
             title: 产品优势,
             advList: [
                 {
-                    iconName: tongxinxieyi.png,
-                    title: 通用化通信协议,
+                    img: tongxinxieyi.png,
+                    intro: 通用化通信协议,
                     description: 基于 IBC 跨链通讯协议，结合核心跨链信息验证，实现异构区块链链间资产、数据及计算服务的可信互操作
                 },
                 {
-                    iconName: dongtaikekuozhan.png,
-                    title: 动态可扩展,
+                    img: dongtaikekuozhan.png,
+                    intro: 动态可扩展,
                     description: 支持跨链中继枢纽运行过程中动态增加业务应用链，实现应用级别可扩展；基于 iService Ex 可信跨链服务网关实现跨链服务可扩展
                 },
                 {
-                    iconName: gaoanquanxing.png,
-                    title: 高安全性,
+                    img: gaoanquanxing.png,
+                    intro: 高安全性,
                     description: 各异构链业务隔离：支持多链结构，实现不同异构链账本隔离；从数据安全，身份安全，通信安全等多个维度进行安全加密，实现数据隐私安全
                 },
                 {
-                    iconName: yiyunwei.png,
-                    title: 易运维,
+                    img: yiyunwei.png,
+                    intro: 易运维,
                     description: 基于插件机制，采用模块化的技术架构完成无侵入的动态适配，在跨链网关不停机的情况下进行插件和服务模块的更新，降低运维成本
                 }
             ]
         }
     },
-    # todo shan 待提供英文文案进行修改，展示样式也需同步修改
+    # todo shan 展示样式需修改
     international: {
         titleContent: {
-            title: 異構區塊鏈跨鏈服務樞紐 - IRITA HUB,
-            subTitle: 已適配眾多主流聯盟鏈和公鏈 · 跨系統的可信數據和交互服務
+            title: IRITA HUB - the Interchain Service Hub for Heterogeneous Blockchains,
+            subTitle: Compatible with numerous mainstream consortium chains and public chains · Cross-system trusted data and interactive services
         },
         introContent: {
-            title: 產品簡介,
+            title: Product Introduction,
             description: [
-                {paragraph: IRITA HUB 是 IRITA 聯盟鏈產品線中專注跨鏈服務的產品。IRITA HUB 支持數字化創新服務的業務交互和價值交換樞紐，專注於助力實體經濟與數字經濟深度融合。},
-                {paragraph: IRITA HUB 既可以支持 Hyperledger Fabric、FISCO BCOS、梧桐鏈等聯盟鏈之間的跨鏈交互，還可以支持聯盟鏈與以太坊等公有鏈的跨鏈交互，以及訪問 Chainlink 預言機等鏈外可信數據，為實現跨鏈可信數據交互和跨鏈協作提供重要的技術基礎。},
-                {paragraph: IRITA HUB 的跨鏈機制採用了業界具有前沿創新性的 IBC + iService，其應用層協議 iService 模塊能高效支持包括異構系統跨鏈、同構系統跨鏈和大數據存儲層等在內的鏈上/鏈下/跨鏈應用層交互；跨鏈服務市場及治理。邊界智能自主創新的相關技術已經提交專利申請，其底層協議的開源實現受到國內外業界認可。},
-                {paragraph: IRITA HUB 已經部署在 BSN (<a href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer"> www.bsnbase.com</a> )，以及其他數字新基建環境中，以實現傳統金融系統、分佈式金融區塊鏈應用以及其他複雜商業系統間的可信互操作和數據共享。同時，IRITA HUB 圍繞企業計算需求，對 ID 的管理、數據隱私保護等功能需求做出了更多支持。},
+                {paragraph: IRITA HUB is a product of the IRITA consortium chain product line that focuses on cross-chain services. IRITA HUB serves as a hub for business interactions and value exchange for digital innovation services，with a focus on promoting deep integration of the physical and digital economies.},
+                {paragraph: IRITA HUB supports cross-chain interactions between consortium chains such as Hyperledger Fabric，FISCO BCOS，and WuTong Chain，as well as cross-chain interactions between consortium chains and public chains such as Ethereum. It also provides access to off-chain trusted data sources such as Chainlink oracles，providing an important technical foundation for cross-chain trusted data interaction and collaboration.},
+                {paragraph: The cross-chain mechanism of IRITA HUB adopts the industry-leading and innovative IBC + iService technology framework，and its application layer protocol iService module efficiently supports on-chain/off-chain/cross-chain application layer interactions，including heterogeneous systems，homogenous systems，and big data storage layer. Bianjie.AI Global has submitted patent applications for its self-dependent innovation technologies，and its open-source implementation of underlying protocols is recognized by the industry at home and abroad.},
+                {paragraph: IRITA HUB has already been deployed on BSN (<a href="https://bsnbase.com/" target="_blank" rel="noopener noreferrer"> www.bsnbase.com</a> )and other digital infrastructure environments to achieve trusted interoperability and data-sharing between traditional financial systems，distributed financial blockchain applications，and other complex business systems. Meanwhile，IRITA HUB provides stronger support for enterprise computing needs，such as ID management and data privacy protection.},
             ]
         },
         architectureContent: {
-            title: 產品架構,
+            title: Product Architecture,
+            # todo shan 需修改为英文的图
             architectureDiagram: iritahub_jiagou_hk.png
         },
         advantageContent: {
-            title: 產品優勢,
+            title: Product Advantages,
             advList: [
                 {
-                    iconName: tongxinxieyi.png,
-                    title: 通用化通信協議,
-                    description: 基於 IBC 跨鏈通訊協議，結合核心跨鏈信息驗證，實現異構區塊鏈鏈間資產、數據及計算服務的可信互操作
+                    img: tongxinxieyi.png,
+                    intro: Universal communication protocol,
+                    description: Based on the IBC inter-blockchain communication protocol and combined with core Interchain information verification，it realizes trusted interoperability of assets，data，and computing services between heterogeneous blockchains.
                 },
                 {
-                    iconName: dongtaikekuozhan.png,
-                    title: 動態可擴展,
-                    description: 支持跨鏈中繼樞紐運行過程中動態增加業務應用鏈，實現應用級別可擴展；基於 iService Ex 可信跨鏈服務網關實現跨鏈服務可擴展
+                    img: dongtaikekuozhan.png,
+                    intro: Dynamic scalability,
+                    description: Supports dynamic addition of business application chains during the operation of Interchain relayer hubs，achieving application-level scalability. Interchain service scalability is achieved based on the iService Ex trusted Interchain service gateway.
                 },
+                # todo shan 缺少文案
                 {
-                    iconName: gaoanquanxing.png,
-                    title: 高安全性,
+                    img: gaoanquanxing.png,
+                    intro: 高安全性,
                     description: 各異構鏈業務隔離：支持多鏈結構，實現不同異構鏈賬本隔離；從數據安全，身份安全，通信安全等多個維度進行安全加密，實現數據隱私安全
                 },
                 {
-                    iconName: yiyunwei.png,
-                    title: 易運維,
-                    description: 基於插件機制，採用模塊化的技術架構完成無侵入的動態適配，在跨鏈網關不停機的情況下進行插件和服務模塊的更新，降低運維成本
+                    img: yiyunwei.png,
+                    intro: Easy operation and maintenance,
+                    description: Based on the plug-in mechanism，a modular technical architecture is adopted to complete non-intrusive dynamic adaptation，and update plug-ins and service modules without halting the cross-chain gateway，reducing operation and maintenance costs.
                 }
             ]
         }

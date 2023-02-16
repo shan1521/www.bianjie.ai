@@ -37,7 +37,7 @@ export default {
     },
     computed: {
         isEn() {
-            return this.$store.state.currentLang === '/en/';
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {
