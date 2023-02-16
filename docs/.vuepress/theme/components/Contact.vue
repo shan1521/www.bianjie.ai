@@ -22,9 +22,9 @@ import contact_cn from '../assets/contact.png';
 import contact_hk from '../assets/contact_hk.png';
 import contact_en from '../assets/contact_en.png';
 const CONTACT_US_IMG = {
-    '/zh-CN/': contact_cn,
-    '/zh-HK/': contact_hk,
-    '/en-US/': contact_en,
+    '/zh-cn/': contact_cn,
+    '/zh-hk/': contact_hk,
+    '/en/': contact_en,
 }
 
 export default {
@@ -47,7 +47,8 @@ export default {
     watch: {
         '$store.state.currentLang': {
             handler(newLang) {
-                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[2].value];
+                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[1].value];
+                this.footerInfo = getLocalesFooter(this, newLang);
             },
             immediate: true,
             deep: true

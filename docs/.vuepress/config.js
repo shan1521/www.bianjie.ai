@@ -14,47 +14,47 @@ module.exports = {
 		search: false,
 		navbar: false,
 		locales: {
-			'/zh-CN/': {
-				nav: EDITION_NAV[editionPrefix]['zh-CN'],
+			'/zh-cn/': {
+				nav: EDITION_NAV[editionPrefix]['zh-cn'],
 				footer: {
-					companyInfo: EDITION_COMPANY[editionPrefix]['zh-CN'],
-					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-CN'],
+					companyInfo: EDITION_COMPANY[editionPrefix]['zh-cn'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-cn'],
 					contactUS: CONTACT_US[editionPrefix],
-					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-CN'],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-CN']
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-cn'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-cn']
 				},
 			},
-			'/zh-HK/': {
-				nav: EDITION_NAV[editionPrefix]['zh-HK'],
+			'/zh-hk/': {
+				nav: EDITION_NAV[editionPrefix]['zh-hk'],
 				footer: {
-					companyInfo: EDITION_COMPANY[editionPrefix]['zh-HK'],
-					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-HK'],
+					companyInfo: EDITION_COMPANY[editionPrefix]['zh-hk'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-hk'],
 					contactUS: CONTACT_US[editionPrefix],
-					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-HK'],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-HK']
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-hk'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-hk']
 				},
 			},
-			'/en-US/': {
-				nav: EDITION_NAV[editionPrefix]['en-US'],
+			'/en/': {
+				nav: EDITION_NAV[editionPrefix]['en'],
 				footer: {
-					companyInfo: EDITION_COMPANY[editionPrefix]['en-US'],
-					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['en-US'],
+					companyInfo: EDITION_COMPANY[editionPrefix]['en'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['en'],
 					contactUS: CONTACT_US[editionPrefix],
-					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['en-US'],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['en-US']
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['en'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['en']
 				},
 			}
 		},
 	},
 	locales: {
-		'/zh-CN/': {
-			lang: 'zh-CN'
+		'/zh-cn/': {
+			lang: 'zh-cn'
 		},
-		'/zh-HK/': {
-			lang: 'zh-HK'
+		'/zh-hk/': {
+			lang: 'zh-hk'
 		},
-		'/en-US/': {
-			lang: 'en-US'
+		'/en/': {
+			lang: 'en'
 		}
 	}
 };

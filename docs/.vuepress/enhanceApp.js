@@ -32,12 +32,12 @@ export default async ({
 			if(localStorage.getItem('currentLang')){
 				urlLang = localStorage.getItem('currentLang');
 			} else {
-				urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
+				urlLang = edition ? LANG_OPTIONS[0].value : LANG_OPTIONS[1].value;
 				localStorage.setItem('currentLang', urlLang);
 			}
 			store.commit('currentLang', urlLang);
 		} else {
-			store.commit('currentLang', LANG_OPTIONS[2].value);
+			store.commit('currentLang', LANG_OPTIONS[1].value);
 		}
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
@@ -53,8 +53,13 @@ export default async ({
 				store.commit('currentIndex',4)
 				localStorage.setItem('currentIndex',4)
 			}else if (to.path.toLowerCase().includes('/about') || to.path.toLowerCase().includes('/milestone') || to.path.toLowerCase().includes('/honour') || to.path.toLowerCase().includes('/join')){
-				store.commit('currentIndex',5)
-				localStorage.setItem('currentIndex',5)
+				if(edition) {
+					store.commit('currentIndex',3)
+					localStorage.setItem('currentIndex',3)
+				} else {
+					store.commit('currentIndex',5)
+					localStorage.setItem('currentIndex',5)
+				}
 			}else {
 				store.commit('currentIndex',0)
 				localStorage.setItem('currentIndex',0)

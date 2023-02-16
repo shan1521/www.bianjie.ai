@@ -24,7 +24,7 @@ export default {
     props: ['iritaIntro'],
     computed: {
         isEn() {
-            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === '/en/';
         }
     }
 }

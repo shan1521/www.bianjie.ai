@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Caption from '@theme/components/common/Caption.vue';
+import Caption from '@theme/components/Common/Caption.vue';
 import { LANG_OPTIONS, ADVANTAGES_WIDTH, ADVANTAGES_HEIGHT } from '../../constants';
 import { getTextWidth } from '../../util';
 export default {
@@ -48,7 +48,7 @@ export default {
             };
         },
         isEn() {
-            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === '/en/';
         }
     },
     components: {
