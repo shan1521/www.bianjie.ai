@@ -159,6 +159,7 @@ export default {
 
                 .content_left {
                     .left_img {
+                        width: 17.9rem;
                         height: 6rem;
 
                         img {
@@ -168,6 +169,7 @@ export default {
                         }
                     }
                     .left_img_inter {
+                        width: 18.1rem;
                         height: 4.8rem;
                     }
                 }

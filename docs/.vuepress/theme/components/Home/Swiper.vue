@@ -115,6 +115,7 @@ export default {
             background: rgba(255,255,255,.09);
             border-radius: 50%;
             box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.12);
+            outline: none;
             &::after {
                 display: none;
             }
@@ -156,6 +157,7 @@ export default {
             background: rgba(255,255,255,.09);
             border-radius: 50%;
             box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.12);
+            outline: none;
             &::after {
                 display: none;
             }

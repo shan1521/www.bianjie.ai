@@ -107,7 +107,7 @@ export default {
 
         .sub_title {
             margin-top: 4.3rem;
-            max-width: 62rem;
+            max-width: 64rem;
             font-size: $fontSize20;
             font-weight: $fontWeight400;
             color: #fff;

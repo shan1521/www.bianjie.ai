@@ -6,7 +6,7 @@
         <Product v-if="serviceContent" :serviceContent.sync="serviceContent"></Product>
         <Scenes v-if="scenesContent"  :scenesContent.sync="scenesContent"></Scenes>
         <Partner v-if="partnerContent" :partnerContent.sync="partnerContent"></Partner>
-        <Dynamic v-if="dynamicContent" :dynamicContent.sync="dynamicContent" @updateShowMask.sync="updateShowMask($event)"></Dynamic>
+        <Dynamic v-if="dynamicContent" :dynamicContent.sync="dynamicContent"></Dynamic>
     </div>
 </template>
 
@@ -42,12 +42,7 @@ export default {
 		},
         dynamicContent() {
 			return getModuleContent(this, 'dynamicContent')
-		},
-    },
-    methods:{
-        updateShowMask(val){
-            this.showMask = val;
-        },
+		}
     },
     components: {
         Swiper,
@@ -56,7 +51,7 @@ export default {
         Product,
         Scenes,
         Partner,
-        Dynamic,
+        Dynamic
     },
 };
 </script>
