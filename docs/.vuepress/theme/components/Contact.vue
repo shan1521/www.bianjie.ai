@@ -48,6 +48,7 @@ export default {
         '$store.state.currentLang': {
             handler(newLang) {
                 this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[1].value];
+                this.footerInfo = getLocalesFooter(this, newLang);
             },
             immediate: true,
             deep: true
