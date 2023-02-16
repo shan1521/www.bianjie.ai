@@ -457,6 +457,7 @@ export default {
         }
 
         .nav_logo {
+            width: 9.8rem;
             height: 3.2rem;
             cursor: pointer;
 
@@ -466,6 +467,7 @@ export default {
             }
         }
         .nav_logo_inter {
+            width: 9.05rem;
             height: 2.4rem;
         }
 
@@ -785,6 +787,7 @@ export default {
                 padding: 0.8rem 1.6rem;
             }
             .nav_logo {
+                width: 9.8rem;
                 height: 3.2rem;
                 cursor: pointer;
 
@@ -793,6 +796,7 @@ export default {
                 }
             }
             .nav_logo_inter {
+                width: 9.05rem;
                 height: 2.4rem;
             }
             .mobile_menu_icon {
