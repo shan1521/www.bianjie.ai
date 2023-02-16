@@ -32,12 +32,12 @@ export default async ({
 			if(localStorage.getItem('currentLang')){
 				urlLang = localStorage.getItem('currentLang');
 			} else {
-				urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
+				urlLang = edition ? LANG_OPTIONS[0].value : LANG_OPTIONS[1].value;
 				localStorage.setItem('currentLang', urlLang);
 			}
 			store.commit('currentLang', urlLang);
 		} else {
-			store.commit('currentLang', LANG_OPTIONS[2].value);
+			store.commit('currentLang', LANG_OPTIONS[1].value);
 		}
 		router.beforeEach((to, from, next) => {
 			if(to.path.toLowerCase().includes('/products')){
