@@ -30,11 +30,6 @@ import { getTextWidth } from '../../util';
 export default {
     name: "CaptionImgContent",
     props: ["captionContent"],
-    data() {
-        return {
-            currentLang: this.$store.state.currentLang
-        }
-    },
     computed: {
         advList() {
             const list = this.captionContent.advList;
@@ -53,7 +48,7 @@ export default {
             };
         },
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === '/en/';
         }
     },
     components: {

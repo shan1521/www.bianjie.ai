@@ -22,14 +22,9 @@ import { LANG_OPTIONS } from '../../../constants';
 export default {
     name: 'IritaIntro',
     props: ['iritaIntro'],
-    data(){
-        return {
-            currentLang: this.$store.state.currentLang
-        }
-    },
     computed: {
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === '/en/';
         }
     }
 }

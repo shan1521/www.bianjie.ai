@@ -57,8 +57,7 @@ export default {
     props: ["scenesContent"],
     data() {
         return {
-            edition: getCurrentEdition(),
-            currentLang: this.$store.state.currentLang
+            edition: getCurrentEdition()
         }
     },
     computed: {
@@ -68,7 +67,7 @@ export default {
             };
         },
         isEn() {
-            return this.currentLang === LANG_OPTIONS[0].value;
+            return this.$store.state.currentLang === '/en/';
         }
     },
     methods: {
