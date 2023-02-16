@@ -2,8 +2,8 @@ FROM node:14.4.0-alpine3.12 AS builder
 WORKDIR /app
 COPY . .
 ARG IS_INTERNATIONAL=null
-ARG UMENG_ID=null
-ARG UMENG_WEB_ID=null
+ARG UMENG_ID
+ARG UMENG_WEB_ID
 ARG APKPROXY=http://mirrors.ustc.edu.cn/alpine
 RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repositories && \
     apk add git && \
