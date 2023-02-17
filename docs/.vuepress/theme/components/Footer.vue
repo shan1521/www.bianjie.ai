@@ -4,9 +4,9 @@
             <div class="top_content">
                 <div class="top_content_container">
                     <div class="content_left">
-                        <div class="left_img">
+                        <div class="left_img" :class="{left_img_inter: edition}">
                             <img
-                                src="../assets/home/logo_footer.png"
+                                :src="getDiffEditionImg()"
                                 alt=""
                                 class="img"
                             />
@@ -14,27 +14,26 @@
                     </div>
                     <div class="content_right">
                         <div class="total">
-                            <span class="total_title">公司</span>
-                            <a
-                                class="irita"
-                                href="https://irita.bianjie.ai"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >IRITA 官网</a
-                            >
-                            <router-link class="dynamic" to="/news">企业动态</router-link>
-                            <router-link class="about" to="/about">关于我们</router-link>
+                            <span class="total_title">{{ companyInfo?.title }}</span>
+                            <div class="company_info" v-for="(item, index) in companyInfo?.content" :key="index">
+                                <a v-if="item.href" class="company_link" :href="item.href" target="_blank">{{ item.label }}</a>
+                                <router-link v-if="item.route" class="company_link" :to="item.route">{{ item.label }}</router-link>
+                            </div>
                         </div>
                         <div class="contact">
-                            <span class="contact_title">联系我们</span>
-                            <span class="email">contact@bianjie.ai</span>
-                            <a
-                                class="official"
-                                href="https://www.bianjie.ai"
-                                target="_self"
-                                rel="noopener noreferrer"
-                                >www.bianjie.ai</a
-                            >
+                            <span class="contact_title">{{ contactUSTitle }}</span>
+                            <div class="contact_us" v-for="(item, index) in contactUS" :key="index">
+                                <a
+                                    v-if="item.href"
+                                    class="contact_item"
+                                    :href="item.href"
+                                    target="_self"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{item.label}}
+                                </a>
+                                <span v-else class="contact_item">{{item.label}}</span>
+                            </div>
                         </div>
                         <div class="focus">
                             <div class="qr_code">
@@ -44,7 +43,7 @@
                                     class="qr_code_img"
                                 />
                             </div>
-                            <span class="focus_title">· 扫码关注我们 ·</span>
+                            <span class="focus_title">{{`· ${ scanCodeFollowUS } ·`}}</span>
                         </div>
                     </div>
                 </div>
@@ -52,24 +51,18 @@
         </div>
         <div class="footer_content_bottom">
             <div class="bottom_content">
-                <div class="bottom_content_container">
-                    <span class="copyright_content">{{
-                        `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
-                    }}</span>
-                    <a
-                        href="https://beian.miit.gov.cn/#/Integrated/index"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >沪ICP备17020986号</a
-                    >
-                    <span class="police_content">
+                <div class="bottom_content_container" :style="{'justify-content': edition ? 'center' : 'space-between'}">
+                    <div class="copyright_content" v-for="(item, index) in copyrightInfo" :key="index">
                         <a
-                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
+                            v-if="item.href"
+                            :href="item.href"
                             target="_blank"
                             rel="noreferrer noopener"
-                            >沪公网安备31011502009028号</a
                         >
-                    </span>
+                            {{ item.label }}
+                        </a>
+                        <span v-else>{{ item.label }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,8 +70,52 @@
 </template>
 
 <script>
+import { getLocalesFooter, getCurrentEdition } from '../util';
+import footerInlandPng from '../assets/home/logo_footer.png';
+import footerInterPng from '../assets/home/logo_footer_inter.png';
 export default {
-    name: "Footer"
+    name: "Footer",
+    data() {
+        return {
+            footerInfo: {},
+            edition: getCurrentEdition()
+        }
+    },
+    computed: {
+        companyInfo() {
+            return this.footerInfo.companyInfo;
+        },
+        contactUSTitle() {
+            return this.footerInfo.contactUSTitle;
+        },
+        contactUS() {
+            return this.footerInfo.contactUS;
+        },
+        scanCodeFollowUS() {
+            return this.footerInfo.scanCodeFollowUS;
+        },
+        copyrightInfo() {
+            return this.footerInfo.copyrightInfo;
+        }
+    },
+    methods: {
+        getDiffEditionImg() {
+            const img = this.edition ? footerInterPng : footerInlandPng;
+            return img;
+        }
+    },
+    mounted() {
+        this.footerInfo = getLocalesFooter(this, this.$store.state.currentLang);
+    },
+    watch: {
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.footerInfo = getLocalesFooter(this, newLang);
+            },
+            immediate: true,
+            deep: true
+        }
+    }
 };
 </script>
 
@@ -131,6 +168,10 @@ export default {
                             height: 100%;
                         }
                     }
+                    .left_img_inter {
+                        width: 18.1rem;
+                        height: 4.8rem;
+                    }
                 }
 
                 .content_right {
@@ -172,34 +213,20 @@ export default {
                                 background: rgba(255, 255, 255, 0.4);
                             }
                         }
-
-                        .irita {
-                            display: inline-block;
-                            margin-top: 1.5rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: $whiteColorOpacity;
-                            text-align: center;
-                            line-height: 2.4rem;
-                            white-space: nowrap;
-                        }
-
-                        .dynamic {
+                        .company_info {
                             margin-top: 1.2rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: $whiteColorOpacity;
-                            line-height: 2.4rem;
-                            cursor: pointer;
-                        }
+                            &:fitst-child {
+                                margin-top: 1.5rem;
+                            }
 
-                        .about {
-                            margin-top: 1.2rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: $whiteColorOpacity;
-                            line-height: 2.4rem;
-                            cursor: pointer;
+                            .company_link {
+                                font-size: $fontSize14;
+                                font-weight: $fontWeight400;
+                                color: $whiteColorOpacity;
+                                line-height: 2.4rem;
+                                cursor: pointer;
+                                white-space: nowrap;
+                            }
                         }
                     }
 
@@ -232,21 +259,20 @@ export default {
                                 background: rgba(255, 255, 255, 0.4);
                             }
                         }
-
-                        .email {
-                            margin-top: 1.5rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: $whiteColorOpacity;
-                            line-height: 2.4rem;
-                        }
-
-                        .official {
+                        
+                        .contact_us {
                             margin-top: 1.2rem;
-                            font-size: $fontSize14;
-                            font-weight: $fontWeight400;
-                            color: $whiteColorOpacity;
-                            line-height: 2.4rem;
+                            &:first-child {
+                                margin-top: 1.5rem;
+                            }
+
+                            .contact_item {
+                                font-size: $fontSize14;
+                                font-weight: $fontWeight400;
+                                color: $whiteColorOpacity;
+                                line-height: 2.4rem;
+                                white-space: nowrap;
+                            }
                         }
                     }
 
@@ -296,11 +322,11 @@ export default {
 
         @media (max-width: 1200px) {
             box-sizing: border-box;
-            padding-left: 4.8rem;
-            padding-right: 4.8rem;
+            padding: 0 4.8rem;
         }
 
         @media (max-width: 768px) {
+            padding: 0 1.6rem;
             height: auto;
             line-height: 3rem;
         }
@@ -312,7 +338,6 @@ export default {
 
             .bottom_content_container {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 margin: 0 auto;
                 max-width: 87.6rem;

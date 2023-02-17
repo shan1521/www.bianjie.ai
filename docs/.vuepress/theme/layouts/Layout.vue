@@ -8,6 +8,8 @@
         <ClientOnly>
             <div class="main_container">
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
+                <Irita v-if="$page.frontmatter.isIrita"></Irita>
+                <Nft v-if="$page.frontmatter.isNft"></Nft>
                 <IritaHub v-if="$page.frontmatter.isIritaHub"></IritaHub>
                 <IritaOpb v-if="$page.frontmatter.isIritaOpb"></IritaOpb>
                 <IritaOpbExtension v-if="$page.frontmatter.isIritaOpbExtension"></IritaOpbExtension>
@@ -34,6 +36,8 @@
 <script>
 import Navigation from "@theme/components/Navigation.vue";
 import NewHome from "@theme/components/Home/NewHome.vue";
+import Irita from "@theme/components/Product/Irita/Irita.vue";
+import Nft from "@theme/components/Product/Nft/Nft.vue";
 import IritaHub from "@theme/components/Product/IritaHub.vue";
 import IritaOpb from "@theme/components/Product/IritaOpb.vue";
 import IritaOpbExtension from "@theme/components/Product/IritaOpbExtension.vue";
@@ -49,36 +53,55 @@ import Markdown from "@theme/components/Common/Markdown.vue";
 import AppScenes from "@theme/components/AppScenes/AppScenes.vue";
 import Footer from "@theme/components/Footer.vue";
 import Contact from "@theme/components/Contact.vue";
-const nav = require("../../config.js");
 import cfg from "../../config.json";
+import { getCurrentEditionPrefix, getLocalesNav } from '../util';
+import { SEO_META } from '../constants';
 
 export default {
     name: "Layout",
+    data() {
+        return {
+            editionPrefix: getCurrentEditionPrefix()
+        }
+    },
     computed: {
         showMd() {
             return Object.keys(this.$page.frontmatter).length === 0;
         },
         showApp(){
-            if(this.$route.path.toLowerCase() === '/applications/e-licence.html') {
+            if(this.$route.path.toLowerCase().includes('e-licence')) {
                 return '$page.frontmatter.isELicence';
             }
-            if(this.$route.path.toLowerCase() === '/applications/trade-finance.html') {
+            if(this.$route.path.toLowerCase().includes('trade-finance')) {
                 return '$page.frontmatter.isTradeFinance';
             }
-            if(this.$route.path === '/applications/C-trading.html') {
+            if(this.$route.path.toLowerCase().includes('c-trading')) {
                 return '$page.frontmatter.isCTrading';
             }
-            if(this.$route.path.toLowerCase() === '/applications/digital-art.html') {
+            if(this.$route.path.toLowerCase().includes('digital-art')) {
                 return '$page.frontmatter.isDigitalArt';
             }
-            if(this.$route.path.toLowerCase() === '/applications/e-prescription-circulation.html') {
+            if(this.$route.path.toLowerCase().includes('e-prescription-circulation')) {
                 return '$page.frontmatter.isEPC';
             }
-            if(this.$route.path.toLowerCase() === '/applications/datacollection.html') {
+            if(this.$route.path.toLowerCase().includes('datacollection')) {
                 return '$page.frontmatter.isDataCollection';
+            }
+            if(this.$route.path.toLowerCase().includes('finance-trade')) {
+                return '$page.frontmatter.isFinanceTrade';
             }
         },
 
+    },
+    methods: {
+        setHeadMeta(lang) {
+            SEO_META[this.editionPrefix][lang].forEach(item => {
+                const metaDom = document.createElement('meta');
+                metaDom[item.name] = item.nameValue;
+                metaDom[item.content] = item.contentDesc;
+                document.getElementsByTagName('head')[0].appendChild(metaDom);
+            })
+        }
     },
     mounted() {
         // 友盟统计添加
@@ -86,12 +109,14 @@ export default {
         script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
         script.language = "JavaScript";
         document.body.appendChild(script);
+        this.setHeadMeta(this.$store.state.currentLang);
     },
     watch: {
-        $route: {
-            handler(val, oldval) {
-                nav.themeConfig.nav.forEach((item, index) => {
-                    if (item.link === val.path) {
+        '$route.path': {
+            handler(newPath) {
+                const nav = getLocalesNav(this, this.$store.state.currentLang);
+                nav.forEach((item, index) => {
+                    if (item.link === newPath) {
                         this.$store.commit("currentIndex", index);
                     }
                 });
@@ -99,10 +124,17 @@ export default {
             immediate: true,
             deep: true,
         },
+        '$store.state.currentLang': {
+            handler(newLang) {
+                this.setHeadMeta(newLang);
+            }
+        }
     },
     components: {
         Navigation,
         NewHome,
+        Irita,
+        Nft,
         IritaHub,
         IritaOpb,
         IritaOpbExtension,

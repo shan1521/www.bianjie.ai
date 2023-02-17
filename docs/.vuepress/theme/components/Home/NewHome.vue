@@ -1,62 +1,63 @@
 <template>
     <div class="home_container">
-        <Swiper :homeContent.sync="homeContent"></Swiper>
-        <BSNWenchang :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
-        <Advantage :advantageContent.sync="advantageContent"></Advantage>
-        <Product :serviceContent.sync="serviceContent"></Product>
-        <Scenes :scenesContent.sync="scenesContent"></Scenes>
-        <Partner :partnerContent.sync="partnerContent"></Partner>
-        <Dynamic :dynamicContent.sync="dynamicContent" @updateShowMask.sync="updateShowMask($event)"></Dynamic>
+        <Swiper v-if="homeContent" :homeContent.sync="homeContent"></Swiper>
+        <BSNWenchang v-if="bsnWenchangchain" :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
+        <CaptionImgContent v-if="advantageContent" :captionContent.sync="advantageContent" :imgWidth="advImgWidth" :imgHeight="advImgHeight"></CaptionImgContent>
+        <Product v-if="serviceContent" :serviceContent.sync="serviceContent"></Product>
+        <Scenes v-if="scenesContent"  :scenesContent.sync="scenesContent"></Scenes>
+        <Partner v-if="partnerContent" :partnerContent.sync="partnerContent"></Partner>
+        <Dynamic v-if="dynamicContent" :dynamicContent.sync="dynamicContent"></Dynamic>
     </div>
 </template>
 
 <script>
 import Swiper from '@theme/components/Home/Swiper.vue';
 import BSNWenchang from '@theme/components/Home/BSNWenchang.vue';
-import Advantage from '@theme/components/Home/Advantage.vue';
+import CaptionImgContent from '@theme/components/Common/CaptionImgContent.vue';
 import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
 import Partner from '@theme/components/Home/Partner.vue';
 import Dynamic from '@theme/components/Home/Dynamic.vue';
+import { getModuleContent } from '../../util';
 export default {
     name: "NewHome",
+    data(){
+        return {
+            advImgWidth: 240,
+            advImgHeight: 146
+        }
+    },
     computed: {
         homeContent() {
-			return this.$frontmatter.homeContent;
+			return getModuleContent(this, 'homeContent')
 		},
         bsnWenchangchain() {
-            return this.$frontmatter.bsnWenchangchain;
+			return getModuleContent(this, 'bsnWenchangchain')
         },
         advantageContent() {
-			return this.$frontmatter.advantageContent;
+			return getModuleContent(this, 'advantageContent')
 		},
         serviceContent() {
-			return this.$frontmatter.serviceContent;
+			return getModuleContent(this, 'serviceContent')
 		},
         scenesContent() {
-			return this.$frontmatter.scenesContent;
+			return getModuleContent(this, 'scenesContent')
 		},
         partnerContent() {
-			return this.$frontmatter.partnerContent;
+			return getModuleContent(this, 'partnerContent')
 		},
         dynamicContent() {
-			return this.$frontmatter.dynamicContent;
-		},
-    },
-    methods:{
-        updateShowMask(val){
-            console.log(val)
-            this.showMask = val;
-        },
+			return getModuleContent(this, 'dynamicContent')
+		}
     },
     components: {
         Swiper,
         BSNWenchang,
-        Advantage,
+        CaptionImgContent,
         Product,
         Scenes,
         Partner,
-        Dynamic,
+        Dynamic
     },
 };
 </script>

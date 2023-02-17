@@ -3,7 +3,7 @@
         <IritaHubTitle :titleContent="titleContent"></IritaHubTitle>
         <IntroContent :introContent="introContent"></IntroContent>
         <ArchiContent :architectureContent="architectureContent"></ArchiContent>
-        <Advantage :advantageContent="advantageContent"></Advantage>
+        <CaptionImgContent :captionContent="advantageContent" :imgWidth="advImgWidth" :imgHeight="advImgHeight"></CaptionImgContent>
     </div>
 </template>
 
@@ -11,28 +11,36 @@
 import IritaHubTitle from "./IritaHubTitle.vue";
 import IntroContent from "./IntroContent.vue";
 import ArchiContent from "./ArchiContent.vue";
-import Advantage from "./Advantage.vue";
+import CaptionImgContent from "../Common/CaptionImgContent.vue";
+import { getModuleContent } from '../../util';
+
 export default {
     name: "IritaHub",
+    data(){
+        return {
+            advImgWidth: 95,
+            advImgHeight: 95
+        }
+    },
     computed: {
         titleContent() {
-			return this.$frontmatter.titleContent;
+            return getModuleContent(this, 'titleContent');
 		},
         introContent() {
-			return this.$frontmatter.introContent;
+            return getModuleContent(this, 'introContent');
 		},
         architectureContent() {
-			return this.$frontmatter.architectureContent;
+            return getModuleContent(this, 'architectureContent');
 		},
         advantageContent() {
-			return this.$frontmatter.advantageContent;
+            return getModuleContent(this, 'advantageContent');
 		},
     },
     components: {
         IritaHubTitle,
         IntroContent,
         ArchiContent,
-        Advantage
+        CaptionImgContent
     }
 };
 </script>
@@ -40,5 +48,14 @@ export default {
 <style lang="stylus">
 .iritahub_container {
     margin-top: 4.8rem;
+    .caption {
+        .caption_container {
+            .caption_content {
+                .line {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 </style>

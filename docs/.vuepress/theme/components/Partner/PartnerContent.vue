@@ -16,7 +16,7 @@
                                 <a :href="partner.link" class="img_wrap" target="_blank" rel="noreferrer noopener">
                                     <img class="partner_img" :src="partner.imgName" alt="" />
                                     <ul :class="partner.relationshipList.length ? 'relationship_list' : ''">
-                                        <li v-if="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
+                                        <li v-show="partner.relationshipList.length" class="relationship_item" v-for="(relationshipItem, rIndex) in partner.relationshipList" :key="rIndex">
                                             {{ relationshipItem.relationship }}
                                         </li>
                                     </ul>

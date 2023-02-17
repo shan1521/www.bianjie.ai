@@ -10,17 +10,19 @@
 import AboutTitle from '@theme/components/Common/AboutTitle.vue';
 import AboutContent from '@theme/components/About/AboutContent.vue';
 import MilestoneTime from '@theme/components/Milestone/MilestoneTime.vue';
+import { getModuleContent } from '../../util';
+
 export default {
     name: 'Milestone',
     computed: {
         aboutTitle() {
-			return this.$frontmatter.aboutTitle;
+            return getModuleContent(this, 'aboutTitle');
 		},
         aboutType() {
-			return this.$frontmatter.aboutType;
+            return getModuleContent(this, 'aboutType');
 		},
         timelineContent() {
-			return this.$frontmatter.timelineContent;
+            return getModuleContent(this, 'timelineContent');
 		},
     },
     components: {

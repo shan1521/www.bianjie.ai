@@ -4,13 +4,13 @@
             <div class="plan_adv_content">
                 <div class="plans_title">{{plansContent.plansTitle}}</div>
                 <ul class="plans_intro">
-                    <li class="plans_intro_item" v-for="(item,index) in plansContent.plansIntro">{{item.intro}}</li>
+                    <li class="plans_intro_item" v-for="(item,index) in plansContent.plansIntro" :key="index">{{item.intro}}</li>
                 </ul>
                 <div class="product_title">{{plansContent.productTitle}}</div>
                 <ul class="advantage_list">
                     <li class="advantage_item" v-for="(adv,index) in plansContent.advantageList" :key="index">
                         <div class="advantage_img">
-                            <img :src="differentIcon(adv.iconName)" alt="">
+                            <img :src="differentIcon(adv.iconName)" alt="" />
                         </div>
                         <div class="advantage_right">
                             <div class="adv_text">{{adv.advantageText}}</div>

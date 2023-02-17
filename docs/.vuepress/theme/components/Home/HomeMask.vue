@@ -3,13 +3,13 @@
         <div class="mask_content">
             <div class="mask_content_left">
                 <div class="qr_code">
-                    <img src="../../assets/home/qrcode_footer.png" alt="">
+                    <img src="../../assets/home/qrcode_footer.png" alt="" />
                 </div>
                 <span class="img_desc">微信公众号</span>
             </div>
             <div class="mask_content_right">
                 <div class="email_img">
-                    <img src="../../assets/home/email.png" alt="">
+                    <img src="../../assets/home/email.png" alt="" />
                 </div>
                 <span class="img_desc">contact@bianjie.ai</span>
             </div>

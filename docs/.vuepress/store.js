@@ -5,7 +5,8 @@ export default new Vuex.Store({
 	state: {
 		currentIndex: 0,
         currentTab: 0,
-        subMenu: -1
+        subMenu: -1,
+		currentLang: '/zh-cn/'
 	},
 	mutations: {
 		currentIndex(state,currentIndex){
@@ -16,6 +17,9 @@ export default new Vuex.Store({
 		},
 		subMenu(state,subMenu){
 			state.subMenu = subMenu;
+		},
+		currentLang(state,currentLang){
+			state.currentLang = currentLang;
 		}
 	}
 })

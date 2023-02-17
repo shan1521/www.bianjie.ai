@@ -4,7 +4,7 @@
             <div class="processarchi_content">
                 <div class="processarchi_title">{{processContent.title}}</div>
                 <div class="processarchi_img">
-                    <img :src="differentJiagou(processContent.src)" alt="">
+                    <img :src="differentJiagou(processContent.src)" alt="" />
                 </div>
             </div>
         </div>

@@ -107,10 +107,11 @@ export default {
 
         .sub_title {
             margin-top: 4.3rem;
+            max-width: 64rem;
             font-size: $fontSize20;
             font-weight: $fontWeight400;
             color: #fff;
-            line-height: 2.4rem;
+            line-height: 3.2rem;
             text-align: center;
             @media (max-width: 968px) {
                 margin-top: 4rem;
