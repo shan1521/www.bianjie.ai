@@ -36,6 +36,7 @@
                     class="detail_item"
                     v-for="(item, index) in serviceContent.productContent"
                     :key="index">
+                    <!-- todo shan safari 浏览器样式调整 -->
                     <div class="detail_item_wrap"
                         :class="{detail_item_wrap_en: isEn}"
                         :style="differentProductBg(item.imgName)">
@@ -412,6 +413,10 @@ export default {
 
                     @media (max-width: 1022px) {
                         min-height: 40rem;
+                    }
+
+                    .description {
+                        line-height: 2rem;
                     }
                 }
             }

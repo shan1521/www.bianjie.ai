@@ -361,7 +361,7 @@ export default {
             this.isShowLangSubMenu = !this.isShowLangSubMenu;
         },
         changeLang(langType) {
-            const path = this.$route.path.split('/').slice(2).join('/');
+            const path = decodeURI(this.$route.path.split('/').slice(2).join('/'));
             this.$router.push(`${langType}${path}`);
             this.$store.commit('currentLang', langType);
             localStorage.setItem('currentLang', langType);
@@ -375,9 +375,9 @@ export default {
             timer && clearTimeout(timer);
         },
         getDomTitle(path, lang) {
-            const routeLabel = path.split('/').slice(2).join('/');
+            const routeLabel = decodeURI(path.split('/').slice(2).join('/'));
             const titleSuffix = PRO_TITLE[this.editionPrefix];
-            const domTitle = `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}`;
+            const domTitle = DOM_TITLE[this.editionPrefix][lang][routeLabel] ? `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}` : titleSuffix;
             document.title = domTitle;
         }
     },
@@ -613,7 +613,7 @@ export default {
                                             font-size: $fontSize14;
                                             font-weight: $fontWeight500;
                                             color: $highlightDetailColor;
-                                            line-height: 1.4rem;
+                                            line-height: 1.8rem;
                                             cursor: pointer;
                                         }
                                         .intro {
@@ -724,6 +724,7 @@ export default {
                 }
                 .lang_wrap {
                     position: relative;
+                    box-sizing: border-box;
                     padding: 1.4rem 1.2rem 1.4rem 2.9rem;
                     cursor: pointer;
                     .iconfont {
@@ -739,12 +740,15 @@ export default {
                         position: absolute;
                         top: 4.8rem;
                         right: 0;
+                        box-sizing: border-box;
                         padding: 0.8rem 0;
+                        max-width: 10rem;
                         background: #fff;
                         .lang_item {
+                            box-sizing: border-box;
                             display: inline-block;
-                            padding: 0.8rem 1.2rem;
-                            min-width: 12rem;
+                            padding: 0.8rem 1rem 0.8rem 2rem;
+                            width: 100%;
                             font-size: $fontSize14;
                             font-weight: $fontWeight400;
                             color: rgba(0,0,0,0.75);
@@ -904,7 +908,7 @@ export default {
                                             font-size: $fontSize12;
                                             font-weight: $fontWeight400;
                                             color: rgba(0, 0, 0, 0.75);
-                                            line-height: 1.2rem;
+                                            line-height: 1.8rem;
                                         }
                                     }
                                 }

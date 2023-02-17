@@ -9,7 +9,7 @@
                             :key="index">{{ item.text }}</span>
                 </div>
                 <div class="description">
-                    <p class="description_article" v-for="(item,index) in iritaIntro.descriptionArticle"
+                    <p class="description_article" :class="{description_article_en: isEn}" v-for="(item,index) in iritaIntro.descriptionArticle"
                     :key="index">{{ item.paragraph }}</p>
                 </div>
             </div>
@@ -99,6 +99,12 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0,0,0,0.65);
                     line-height: 2.4rem;
+                }
+                .description_article_en {
+                    margin-top: 2rem;
+                    &:first-child {
+                        margin-top: 0;
+                    }
                 }
             }
         }

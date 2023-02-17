@@ -533,7 +533,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -550,7 +550,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -567,7 +567,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -586,7 +586,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界中国',
+                    label: '边界智能·中国',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -599,7 +599,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: 'BIANJIE China Portal',
+                    label: '邊界智能·中國',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -612,7 +612,7 @@ const EDITION_COMPANY = {
             title: 'Company',
             content: [
                 {
-                    label: 'BIANJIE China Portal',
+                    label: 'BIANJIE.AI China',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -716,7 +716,7 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-cn': [
             {
-                label: `版权所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
+                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
             }
         ],
         'zh-hk': [

@@ -2,17 +2,23 @@
     <div class="iritahub_title_container">
         <div class="iritahub_title_content_container">
             <div class="iritahub_title_content">
-                <div class="title">{{ titleContent.title }}</div>
-                <div class="sub_title">{{ titleContent.subTitle }}</div>
+                <div class="title" :class="{title_en: isEn}">{{ titleContent.title }}</div>
+                <div class="sub_title" :class="{sub_title_en: isEn}">{{ titleContent.subTitle }}</div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../constants';
 export default {
     name: "IritaHubTitle",
     props: ["titleContent"],
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        }
+    }
 };
 </script>
 
@@ -62,7 +68,17 @@ export default {
                 }
                 @media (max-width: 420px) {
                     font-size: $fontSize22;
+                    line-height: 3.2rem;
                     text-align: center;
+                }
+            }
+            .title_en {
+                max-width: 69rem;
+                @media (max-width: 590px) {
+                    font-size: $fontSize32;
+                }
+                @media (max-width: 460px) {
+                    font-size: $fontSize24;
                 }
             }
             .sub_title {
@@ -75,6 +91,9 @@ export default {
                     font-size: $fontSize16;
                     text-align: center;
                 }
+            }
+            .sub_title_en {
+                max-width: 69rem;
             }
         }
     }

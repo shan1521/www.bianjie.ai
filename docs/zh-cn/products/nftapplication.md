@@ -7,7 +7,7 @@
     international: {
         titleContent: {
             title: 数字资产管理工具,
-            subTitle: 助力生态伙伴及 C 端用户打造数字资产赋能及管理平台,
+            subTitle: 助力生态伙伴及客户打造数字资产赋能及管理平台,
             bg_banner: nft_banner
         },
         nftList: [

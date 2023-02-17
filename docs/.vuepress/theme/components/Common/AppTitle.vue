@@ -3,19 +3,25 @@
       <div class="app_title_content_container">
           <div class="app_title_content">
               <div class="app_title">{{appTitleContent.title}}</div>
-              <div class="app_sub_title">{{appTitleContent.subTitle}}</div>
+              <div class="app_sub_title" :class="{app_sub_title_en: isEn}">{{appTitleContent.subTitle}}</div>
           </div>
       </div>
   </div>
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../constants';
 export default {
     name: 'AppTitle',
     props: ['appTitleContent'],
     data() {
         return {
             clientWidth: +document.body.clientWidth
+        }
+    },
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {
@@ -37,7 +43,7 @@ export default {
         window.onresize = () => {
             return this.clientWidth = +document.body.clientWidth;
         }
-    },
+    }
 }
 </script>
 
@@ -95,6 +101,9 @@ export default {
                     font-size: $fontSize16;
                     text-align: center;
                 }
+            }
+            .app_sub_title_en {
+                max-width: 69rem;
             }
         }
     }

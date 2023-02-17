@@ -361,22 +361,30 @@
                 {
                     iconName: gongyinglianjinrong.png,
                     title: Digital Finance,
-                    introEn: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem
+                    intro: [
+                        {text: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem}
+                    ]
                 },
                 {
                     iconName: shuzihuazichan.png,
                     title: Cross-Borde Trade,
-                    introEn: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development
+                    intro: [
+                        {text: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development}
+                    ]
                 },
                 {
                     iconName: copyright.png,
                     title: Cultural and Creative Industries and Copyright,
-                    introEn: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection
+                    intro: [
+                        {text: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection}
+                    ]
                 },
                 {
                     iconName: manufacture.png,
                     title: Intelligent Manufacturing,
-                    introEn: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry
+                    intro: [
+                        {text: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry}
+                    ]
                 }
             ]
         },
@@ -395,7 +403,6 @@
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wanxiang.jpg},
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/voaino.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wenjiaolianhe.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/metachi.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/dibiaomake.jpg},

@@ -8,13 +8,15 @@
                         :src="$withBase(`/appscenes/${item.banner}`)" alt="" />
                 </template>
                 <template #content>
-                    <div class="category" :class="{category_en: isEn}">
-                        <i class="iconfont" :class="item.icon"></i>
-                        <span class="category_text">{{ item.category }}</span>
-                    </div>
-                    <p class="app_example_title">{{ item.title }}</p>
+                    <p class="app_example_title">
+                        <span class="title">{{ item.title }}</span>
+                        <span class="category" :class="{category_en: isEn}">
+                            <i class="iconfont" :class="item.icon"></i>
+                            <span class="category_text">{{ item.category }}</span>
+                        </span>
+                    </p>
                     <ul class="app_example_desc">
-                        <li class="app_example_desc_item" v-for="(desc, dIndex) in item.description" :key="dIndex">
+                        <li class="app_example_desc_item" :class="{app_example_desc_item_en: isEn}" v-for="(desc, dIndex) in item.description" :key="dIndex">
                             {{ desc.paragraph}}
                         </li>
                     </ul>
@@ -83,35 +85,51 @@ export default {
             }
             .img_content_right {
                 margin-left: 4.8rem;
-                .category {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0.2rem 0.8rem;
-                    max-width: 8.2rem;
-                    border-radius: 1.2rem;
-                    border: 0.1rem solid #E8EBF5;
-                    .iconfont {
-                        font-size: $fontSize14;
-                        color: $highlightDetailColor;
-                    }
-                    .category_text {
-                        display: inline-block;
-                        margin-left: 0.4rem;
-                        font-size: $fontSize14;
-                        font-weight: $fontWeight400;
-                        color: rgba(0,0,0,0.65);
-                    }
-                }
-                .category_en {
-                    max-width: 16rem;
-                }
+                
                 .app_example_title {
-                    margin-top: 1.2rem;
-                    font-size: $fontSize24;
-                    font-weight: $fontWeight600;
-                    color: #000;
-                    line-height: 2.8rem;
+                    display: flex;
+                    align-items: center;
+                    @media (max-width: 500px) {
+                        flex-direction: column-reverse;
+                        align-items: flex-start; 
+                    }
+                    .title {
+                        font-size: $fontSize24;
+                        font-weight: $fontWeight600;
+                        color: #000;
+                        line-height: 2.8rem;
+                        @media (max-width: 500px) {
+                            margin-top: 1.6rem;
+                        }
+                    }
+                    .category {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 24px;
+                        padding: 0 0.8rem;
+                        max-width: 8.2rem;
+                        max-height: 2.4rem;
+                        border-radius: 1.2rem;
+                        border: 0.1rem solid #E8EBF5;
+                        @media (max-width: 500px) {
+                            margin-left: 0;
+                        }
+                        .iconfont {
+                            font-size: $fontSize14;
+                            color: $highlightDetailColor;
+                        }
+                        .category_text {
+                            display: inline-block;
+                            margin-left: 0.4rem;
+                            font-size: $fontSize14;
+                            font-weight: $fontWeight400;
+                            color: rgba(0,0,0,0.65);
+                        }
+                    }
+                    .category_en {
+                        max-width: 16rem;
+                    }
                 }
                 .app_example_desc {
                     .app_example_desc_item {
@@ -120,6 +138,9 @@ export default {
                         font-weight: $fontWeight400;
                         color: rgba(0,0,0,0.65);
                         line-height: 2.8rem;
+                    }
+                    .app_example_desc_item_en {
+                        line-height: 2.4rem;
                     }
                 }
             }

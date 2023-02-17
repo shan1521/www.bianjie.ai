@@ -17,7 +17,8 @@
             ]
         },
         architectureContent: {
-            title: 产品架构
+            title: 产品架构,
+            architectureDiagram: iritahub_jiagou_cn.png
         },
         advantageContent: {
             title: 产品优势,

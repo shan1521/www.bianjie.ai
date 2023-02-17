@@ -15,7 +15,7 @@
                         <span class="intro">{{ item.intro }}</span>
                     </div>
                     <div class="list_item_bottom">
-                        <span class="list_item_bottom_desc" :class="{ list_item_bottom_desc_en: isEn }">{{ item.description }}</span>
+                        <span class="list_item_bottom_desc" :class="{list_item_bottom_desc_en: isEn}">{{ item.description }}</span>
                     </div>
                 </div>
                 <div v-if="item.showShadow" class="list_item_shadow"></div>

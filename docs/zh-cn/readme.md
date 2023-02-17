@@ -411,7 +411,6 @@
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wanxiang.jpg},
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/voaino.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wenjiaolianhe.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/metachi.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/dibiaomake.jpg},

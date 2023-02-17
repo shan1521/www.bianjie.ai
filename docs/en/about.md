@@ -60,6 +60,7 @@
             title: Introduction,
             infoList: [
                 {
+                    # todo shan 首句英文需修改
                     paragraph: BIANJIE.AI Global is a leading global company that focuses on providing and innovating blockchain technology and application service. BIANJIE.AI Global works closely with global partners such as the Blockchain-Based Service Network (BSN) and Asian Digital Bank to promote the application of innovative technologies in cross-chain services，digital finance，cross-border trade，and metaverse digital collections，in an effort to serve the global real economy. While insisting on independent innovation，BIANJIE.AI Global has also been invited to contribute Interchain core codes to multiple global blockchain networks，and is a builder of the global Internet of Values. Bianjie Global is also an innovator and promoter of the global Interchain open-source technology，and is a core developer of the well-known open-source Interchain projects - COSMOS/IRISnet.
                 }
             ]
