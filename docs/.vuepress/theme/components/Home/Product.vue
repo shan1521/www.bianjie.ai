@@ -42,11 +42,12 @@
                         <div class="title">{{item.intro}} - {{item.name}}</div>
                         <p class="description">{{item.description}}</p>
                         <a class="name_btn_git"
-                            v-if="item.link && index === 0"
+                            v-if="item.link"
                             :href="item.link"
                             target="_blank"
                             rel="noopener noreferrer">
                             {{item.moreText}}
+                            <span v-if="edition" class="gt">&gt;&gt;</span>
                         </a>
                         <router-link class="name_btn"
                             v-if="item.route"
@@ -72,6 +73,7 @@ import HomeMask from "@theme/components/Home/HomeMask.vue";
 import "swiper/css/swiper.css";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { LANG_OPTIONS } from '@theme/constants';
+import { getCurrentEdition } from '../../util';
 export default {
     name: "Product",
     props: ["serviceContent"],
@@ -79,7 +81,8 @@ export default {
         return {
             currentTab: 1,
             isShowWhiteIcon: true,
-            clientWidth: +document.body.clientWidth
+            clientWidth: +document.body.clientWidth,
+            edition: getCurrentEdition()
         };
     },
     computed: {
