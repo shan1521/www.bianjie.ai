@@ -491,15 +491,14 @@ const EDITION_NAV = {
                         icon: 'icon-yingyongceng',
                         type: 'Blockchain Applications',
                         productList: [
-                            // todo shan intro 文案待修改為英文
                             {
                                 abbreviation: 'MTO Box Global',
-                                intro: 'MTO Box Global',
+                                intro: 'Multi-Chain NFT Application Empowerment Tool',
                                 route: '/en/products/nftapplication'
                             },
                             {
-                                abbreviation: 'Cross-Chain NFT Wallet',
-                                intro: 'Cross-Chain NFT Wallet',
+                                abbreviation: 'NFT Cross-Chain Wallet',
+                                intro: 'Cross-Chain NFT Asset Management Tool',
                                 route: '/en/products/nftapplication'
                             },
                         ]
@@ -668,8 +667,7 @@ const SCAN_CODE_FOLLOW_US = {
     international: {
         'zh-cn': '扫码关注我们',
         'zh-hk': '掃碼關注我們',
-        // todo shan 英文待替換
-        'en': '掃碼關注我們'
+        'en': 'Scan the QR code to follow us'
     }
 }
 
@@ -718,7 +716,7 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-cn': [
             {
-                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
+                label: `版权所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
             }
         ],
         'zh-hk': [
@@ -728,7 +726,7 @@ const COPYRIGHT_RECORD = {
         ],
         'en': [
             {
-                label: `版權所有©${new Date().getFullYear()} Blockbeat Technology Limited`
+                label: `All rights reserved ©${new Date().getFullYear()} Blockbeat Technology Limited`
             }
         ]
     }

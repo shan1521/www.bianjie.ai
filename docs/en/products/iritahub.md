@@ -45,7 +45,6 @@
             ]
         }
     },
-    # todo shan 展示样式需修改
     international: {
         titleContent: {
             title: IRITA HUB - the Interchain Service Hub for Heterogeneous Blockchains,
@@ -62,8 +61,7 @@
         },
         architectureContent: {
             title: Product Architecture,
-            # todo shan 需修改为英文的图
-            architectureDiagram: iritahub_jiagou_hk.png
+            architectureDiagram: iritahub_jiagou_en.png
         },
         advantageContent: {
             title: Product Advantages,
@@ -78,11 +76,10 @@
                     intro: Dynamic scalability,
                     description: Supports dynamic addition of business application chains during the operation of Interchain relayer hubs，achieving application-level scalability. Interchain service scalability is achieved based on the iService Ex trusted Interchain service gateway.
                 },
-                # todo shan 缺少文案
                 {
                     img: gaoanquanxing.png,
-                    intro: 高安全性,
-                    description: 各異構鏈業務隔離：支持多鏈結構，實現不同異構鏈賬本隔離；從數據安全，身份安全，通信安全等多個維度進行安全加密，實現數據隱私安全
+                    intro: High Security,
+                    description: Isolated Business on Heterogeneous Chains：Supports multi-chain structure，achieves isolation of ledgers on different heterogeneous chains; implements security encryption from multiple dimensions such as data security, identity security，communication security，etc.，to ensure data privacy security.
                 },
                 {
                     img: yiyunwei.png,

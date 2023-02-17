@@ -6,9 +6,8 @@
     },
     international: {
         titleContent: {
-            title: 數字資產管理工具,
-            # todo shan 替換為英文
-            subTitle: 助力生態夥伴及 C 端用戶打造數字資產賦能及管理平台,
+            title: Digital Asset Management Tool,
+            subTitle: Empower ecosystem partners and C-end users to build a digital asset empowerment and management platform,
             bg_banner: nft_banner
         },
         nftList: [
@@ -22,7 +21,7 @@
                 ]
             },
             {
-                title: Cross-Chain NFT Wallet,
+                title: NFT Cross-Chain Wallet,
                 banner: nft_banner,
                 logo: nft.png,
                 href: https://stage.nft-hub.live/#/,
