@@ -11,7 +11,7 @@
                         <span class="wenchang_text">{{ techApplication.wenchang.text}}</span>
                     </div>
                     <ul class="wenchang_desc_list">
-                        <li class="wenchang_desc_item" 
+                        <li class="wenchang_desc_item" :class="{wenchang_desc_item_en: isEn}"
                             v-for="(item, index) in techApplication.wenchang.description" :key="index"
                         >
                             {{ item.paragraph }}
@@ -25,9 +25,15 @@
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../../constants';
 export default {
     name: 'IritaTech',
-    props: ['techApplication']
+    props: ['techApplication'],
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        }
+    }
 }
 </script>
 
@@ -89,6 +95,12 @@ export default {
                         font-weight: $fontWeight400;
                         color: rgba(0,0,0,0.75);
                         line-height: 2.4rem;
+                    }
+                    .wenchang_desc_item_en {
+                        margin-top: 2rem;
+                        &:first-child {
+                            margin-top: 0;
+                        }
                     }
                 }
             }

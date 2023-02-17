@@ -3,16 +3,22 @@
         <div class="about_title_content_container">
             <div class="about_title_content">
                 <span class="title">{{ aboutTitle.title }}</span>
-                <span class="sub_title">{{ aboutTitle.subTitle }}</span>
+                <span class="sub_title" :class="{sub_title_en: isEn}">{{ aboutTitle.subTitle }}</span>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../constants';
 export default {
     name: "AboutTitle",
     props: ["aboutTitle"],
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        }
+    }
 };
 </script>
 
@@ -70,6 +76,9 @@ export default {
                 @media (max-width: 400px) {
                     font-size: $fontSize16;
                 }
+            }
+            .sub_title_en {
+                max-width: 69rem;
             }
         }
     }

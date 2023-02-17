@@ -20,7 +20,7 @@
 <script>
 export default {
     name: "CompanyInfo",
-    props: ["companyInfo"],
+    props: ["companyInfo"]
 };
 </script>
 

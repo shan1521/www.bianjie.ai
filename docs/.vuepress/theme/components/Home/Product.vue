@@ -36,17 +36,19 @@
                     class="detail_item"
                     v-for="(item, index) in serviceContent.productContent"
                     :key="index">
+                    <!-- todo shan safari 浏览器样式调整 -->
                     <div class="detail_item_wrap"
                         :class="{detail_item_wrap_en: isEn}"
                         :style="differentProductBg(item.imgName)">
                         <div class="title">{{item.intro}} - {{item.name}}</div>
                         <p class="description">{{item.description}}</p>
                         <a class="name_btn_git"
-                            v-if="item.link && index === 0"
+                            v-if="item.link"
                             :href="item.link"
                             target="_blank"
                             rel="noopener noreferrer">
                             {{item.moreText}}
+                            <span v-if="edition" class="gt">&gt;&gt;</span>
                         </a>
                         <router-link class="name_btn"
                             v-if="item.route"
@@ -72,6 +74,7 @@ import HomeMask from "@theme/components/Home/HomeMask.vue";
 import "swiper/css/swiper.css";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { LANG_OPTIONS } from '@theme/constants';
+import { getCurrentEdition } from '../../util';
 export default {
     name: "Product",
     props: ["serviceContent"],
@@ -79,7 +82,8 @@ export default {
         return {
             currentTab: 1,
             isShowWhiteIcon: true,
-            clientWidth: +document.body.clientWidth
+            clientWidth: +document.body.clientWidth,
+            edition: getCurrentEdition()
         };
     },
     computed: {
@@ -95,7 +99,7 @@ export default {
             }
         },
         isEn() {
-            return this.$store.state.currentLang === '/en/';
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
         }
     },
     methods: {
@@ -409,6 +413,10 @@ export default {
 
                     @media (max-width: 1022px) {
                         min-height: 40rem;
+                    }
+
+                    .description {
+                        line-height: 2rem;
                     }
                 }
             }

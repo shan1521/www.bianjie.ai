@@ -3,7 +3,7 @@
         <ul class="scenes_list">
             <li
                 class="scenes_item"
-                v-for="(item, index) in scenesContent.scenesList"
+                v-for="(item, index) in scenesList"
                 :key="index"
             >
                 <div class="scenes_item_content" :class="{scenes_item_content_inter: edition}">
@@ -15,16 +15,17 @@
                             />
                         </div>
                         <div class="title">{{ item.title }}</div>
-                        <ul v-if="!isEn" class="intro_list">
+                        <ul class="intro_list">
                             <li
                                 class="intro_item"
+                                :class="{intro_list_en: isEn}"
                                 v-for="(v, i) in item.intro"
                                 :key="i"
                             >
                                 {{ v.text }}
                             </li>
                         </ul>
-                        <p v-else class="intro_list_en">{{ item.introEn }}</p>
+                        <div v-if="item.showShadow" class="shadow"></div>
                     </div>
                     <div class="scenes_item_hide">
                         <div class="item_icon">
@@ -50,8 +51,9 @@
 import MoreBlue from "@theme/components/Common/MoreBlue.vue";
 import Detail from "@theme/components/Common/Detail.vue";
 import Caption from "@theme/components/Common/Caption.vue";
-import { getCurrentEdition } from '@theme/util';
-import { LANG_OPTIONS } from '@theme/constants';
+import { getCurrentEdition, getTextWidth } from '@theme/util';
+import { LANG_OPTIONS, ADVANTAGES_WIDTH, ADVANTAGES_HEIGHT } from '@theme/constants';
+
 export default {
     name: "Scenes",
     props: ["scenesContent"],
@@ -67,7 +69,18 @@ export default {
             };
         },
         isEn() {
-            return this.$store.state.currentLang === '/en/';
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        },
+        scenesList() {
+            const list = this.scenesContent.scenesList;
+            this.isEn && list?.forEach(item => {
+                const contentRealWidth = getTextWidth(item.intro[0].text);
+                const contentHeight = Math.ceil(contentRealWidth / ADVANTAGES_WIDTH) * ADVANTAGES_HEIGHT;
+                if(contentHeight >= 100) {
+                    item.showShadow = true;
+                }
+            })
+            return list;
         }
     },
     methods: {
@@ -129,6 +142,7 @@ export default {
                     }
                 }
                 .scenes_item_show {
+                    position: relative;
                     box-sizing: border-box;
                     padding: 4.4rem 1.6rem 2.4rem;
                     width: 24rem;
@@ -183,10 +197,22 @@ export default {
                     }
                     .intro_list_en {
                         margin-top: 1.5rem;
+                        max-height: 120px;
                         font-size: $fontSize14;
                         font-weight: $fontWeight400;
                         color: rgba(0, 0, 0, 0.75);
-                        line-height: 1.5rem;
+                        line-height: 2rem;
+                        overflow-y: auto;
+                        &::-webkit-scrollbar {
+                            width: 0;
+                        }
+                    }
+                    .shadow {
+                        position: absolute;
+                        bottom: 0.8rem;
+                        width: 90%;
+                        height: 1.6rem;
+                        background: linear-gradient(0deg, rgba(225,229,244,0.5) 0%, rgba(225,229,244,0) 100%);
                     }
                 }
                 .scenes_item_show_en {

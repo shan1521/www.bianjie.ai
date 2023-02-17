@@ -6,28 +6,27 @@
     },
     international: {
         titleContent: {
-            title: 數字資產管理工具,
-            # todo shan 替換為英文
-            subTitle: 助力生態夥伴及 C 端用戶打造數字資產賦能及管理平台,
+            title: Digital Asset Management Tool,
+            subTitle: Empower ecosystem partners and customer to build a digital asset empowerment and management platform,
             bg_banner: nft_banner
         },
         nftList: [
             {
-                title: 元宇寶盒全球版,
+                title: MTO Box Global,
                 banner: mto_box_banner,
                 logo: mto_box.png,
                 href: https://mtobox.com/home/activities/list,
                 description: [
-                    {paragraph: 「元宇寶盒」是基於多鏈技術構建的一款多鏈 NFT 應用賦能工具 ，通過多鏈跨鏈分佈式應用服務平台 AVATA，為 BIANJIE.AI Global 全球生態合作伙伴提供基於 NFT 技術的數字商品應用賦能及數字化營銷工具，可對接元宇宙應用，支持多鏈/多應用場景，讓企業更高效地鏈接全球用户，讓用户更方便地掌管數字資產。}
+                    {paragraph: MTO Box is an NFT Application Empowerment Tool Based on Multi-Chain Technology. Through the multi-chain and cross-chain distributed application service platform - AVATA，MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for Bianjie Global's ecosystem partners around the globe. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently.}
                 ]
             },
             {
-                title: NFT 跨鏈錢包,
+                title: NFT Cross-Chain Wallet,
                 banner: nft_banner,
                 logo: nft.png,
                 href: https://stage.nft-hub.live/#/,
                 description: [
-                    {paragraph: NFT 跨鏈錢包是一個去中心化工具，用於管理您在多個區塊鏈上的 NFTs。您可以查看、管理並通過跨鏈協議將您的 NFTs 發送到其他生態系統。}
+                    {paragraph: NFT Hub is a decentralized tool for managing your NFTs across multiple blockchains. You can view，manage and send your NFTs to other ecosystems via Interchain protocols.}
                 ]
             }
         ]

@@ -4,11 +4,10 @@ const ENV_INLAND_INTERNATIONAL = {
 }
 
 const LANG_OPTIONS = [
-    // 暂时注掉
-    // {
-    //     label: 'English',
-    //     value: '/en/'
-    // },
+    {
+        label: 'English',
+        value: '/en/'
+    },
     {
         label: '繁體中文',
         value: '/zh-hk/'
@@ -492,15 +491,14 @@ const EDITION_NAV = {
                         icon: 'icon-yingyongceng',
                         type: 'Blockchain Applications',
                         productList: [
-                            // todo shan intro 文案待修改為英文
                             {
                                 abbreviation: 'MTO Box Global',
-                                intro: 'MTO Box Global',
+                                intro: 'Multi-Chain NFT Application Empowerment Tool',
                                 route: '/en/products/nftapplication'
                             },
                             {
-                                abbreviation: 'Cross-Chain NFT Wallet',
-                                intro: 'Cross-Chain NFT Wallet',
+                                abbreviation: 'NFT Cross-Chain Wallet',
+                                intro: 'Cross-Chain NFT Asset Management Tool',
                                 route: '/en/products/nftapplication'
                             },
                         ]
@@ -535,7 +533,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -552,7 +550,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -569,7 +567,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界智能 Global',
+                    label: '边界智能·国际',
                     href: 'http://blockbeat.hk'
                 },
                 {
@@ -588,7 +586,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: '边界中国',
+                    label: '边界智能·中国',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -601,7 +599,7 @@ const EDITION_COMPANY = {
             title: '公司',
             content: [
                 {
-                    label: 'BIANJIE China Portal',
+                    label: '邊界智能·中國',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -614,7 +612,7 @@ const EDITION_COMPANY = {
             title: 'Company',
             content: [
                 {
-                    label: 'BIANJIE China Portal',
+                    label: 'BIANJIE.AI China',
                     href: 'https://www.bianjie.ai/'
                 },
                 {
@@ -669,8 +667,7 @@ const SCAN_CODE_FOLLOW_US = {
     international: {
         'zh-cn': '扫码关注我们',
         'zh-hk': '掃碼關注我們',
-        // todo shan 英文待替換
-        'en': '掃碼關注我們'
+        'en': 'Scan the QR code to follow us'
     }
 }
 
@@ -719,17 +716,17 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-cn': [
             {
-                label: `版权所有©${new Date().getFullYear()} 区块律动（香港）科技有限公司`
+                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
             }
         ],
         'zh-hk': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+                label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
             }
         ],
         'en': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+                label: `All rights reserved ©${new Date().getFullYear()} Blockbeat Technology Limited`
             }
         ]
     }

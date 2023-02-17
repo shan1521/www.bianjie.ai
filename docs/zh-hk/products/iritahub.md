@@ -17,29 +17,30 @@
             ]
         },
         architectureContent: {
-            title: 产品架构
+            title: 产品架构,
+            architectureDiagram: iritahub_jiagou_cn.png
         },
         advantageContent: {
             title: 产品优势,
             advList: [
                 {
-                    iconName: tongxinxieyi.png,
-                    title: 通用化通信协议,
+                    img: tongxinxieyi.png,
+                    intro: 通用化通信协议,
                     description: 基于 IBC 跨链通讯协议，结合核心跨链信息验证，实现异构区块链链间资产、数据及计算服务的可信互操作
                 },
                 {
-                    iconName: dongtaikekuozhan.png,
-                    title: 动态可扩展,
+                    img: dongtaikekuozhan.png,
+                    intro: 动态可扩展,
                     description: 支持跨链中继枢纽运行过程中动态增加业务应用链，实现应用级别可扩展；基于 iService Ex 可信跨链服务网关实现跨链服务可扩展
                 },
                 {
-                    iconName: gaoanquanxing.png,
-                    title: 高安全性,
+                    img: gaoanquanxing.png,
+                    intro: 高安全性,
                     description: 各异构链业务隔离：支持多链结构，实现不同异构链账本隔离；从数据安全，身份安全，通信安全等多个维度进行安全加密，实现数据隐私安全
                 },
                 {
-                    iconName: yiyunwei.png,
-                    title: 易运维,
+                    img: yiyunwei.png,
+                    intro: 易运维,
                     description: 基于插件机制，采用模块化的技术架构完成无侵入的动态适配，在跨链网关不停机的情况下进行插件和服务模块的更新，降低运维成本
                 }
             ]
@@ -67,23 +68,23 @@
             title: 產品優勢,
             advList: [
                 {
-                    iconName: tongxinxieyi.png,
-                    title: 通用化通信協議,
+                    img: tongxinxieyi.png,
+                    intro: 通用化通信協議,
                     description: 基於 IBC 跨鏈通訊協議，結合核心跨鏈信息驗證，實現異構區塊鏈鏈間資產、數據及計算服務的可信互操作
                 },
                 {
-                    iconName: dongtaikekuozhan.png,
-                    title: 動態可擴展,
+                    img: dongtaikekuozhan.png,
+                    intro: 動態可擴展,
                     description: 支持跨鏈中繼樞紐運行過程中動態增加業務應用鏈，實現應用級別可擴展；基於 iService Ex 可信跨鏈服務網關實現跨鏈服務可擴展
                 },
                 {
-                    iconName: gaoanquanxing.png,
-                    title: 高安全性,
+                    img: gaoanquanxing.png,
+                    intro: 高安全性,
                     description: 各異構鏈業務隔離：支持多鏈結構，實現不同異構鏈賬本隔離；從數據安全，身份安全，通信安全等多個維度進行安全加密，實現數據隱私安全
                 },
                 {
-                    iconName: yiyunwei.png,
-                    title: 易運維,
+                    img: yiyunwei.png,
+                    intro: 易運維,
                     description: 基於插件機制，採用模塊化的技術架構完成無侵入的動態適配，在跨鏈網關不停機的情況下進行插件和服務模塊的更新，降低運維成本
                 }
             ]

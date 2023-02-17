@@ -310,8 +310,7 @@
                     intro: the Consortium Chain Product Line for Next-Generation Distributed Business,
                     description: IRITA is an enterprise-level consortium chain product line independently developed by Bianjie，which features the Interchain，NFT，and big data privacy protection technology as its core，and is capable of supporting next-generation distributed business systems,
                     route: /en/products/irita,
-                    # todo shan 替换为英文
-                    moreText: 了解更多,
+                    moreText: Learn more,
                     imgName: IRITA_banner.png
                 },
                 {
@@ -320,8 +319,7 @@
                     name: IRITA HUB,
                     intro: the Interchain Service Hub for Heterogeneous Blockchains,
                     description: Powered by advanced Interchain technology， Inter-Blockchain Communication protocol，and Tendermint consensus mechanism，IRITA HUB supports cross-chain exchange or transfer of assets，information security verification between various heterogeneous blockchain networks and off-chain systems，secure cross-chain data-sharing and cross-chain service-calling,
-                    # todo shan 替换为英文
-                    moreText: 了解更多,
+                    moreText: Learn more,
                     route: /en/products/iritahub,
                     imgName: IRITAHUB_inter_banner.png
                 },
@@ -331,8 +329,7 @@
                     name: AVATA,
                     intro: the Multi-chain and Cross-chain Distributed Application Service Platform,
                     description: AVATA is a multi-chain and cross-chain NFT/metaverse application API service platform providing one-click service for cross-chain collaboration between complex heterogeneous systems，and is dedicated to helping developers and enterprises build an open and diversified distributed business model and web3 business applications,
-                    # todo shan 替换为英文
-                    moreText: 了解更多,
+                    moreText: Learn more,
                     link: https://apis.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
                 },
@@ -340,23 +337,19 @@
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
                     name: MTO Box Global,
-                    # todo shan intro 內容需要替換
-                    intro: the NFT Application Empowerment Tool Based on Multi-Chain Technology,
+                    intro: Multi-Chain NFT Application Empowerment Tool,
                     description: MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for BIANJIE.AI Global's worldwide ecosystem partners. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently,
-                    # todo shan 替换为英文
-                    moreText: 了解更多,
+                    moreText: Learn more,
                     route: /en/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
-                    # todo shan name、intro 內容需要替換
-                    name: Cross-Chain NFT Wallet,
-                    intro: the Cross-Chain NFT Wallet Management Tool,
+                    name: NFT Cross-Chain Wallet,
+                    intro: Cross-Chain NFT Asset Management Tool,
                     description: NFT Hub is a decentralized tool for managing your NFTs across multiple blockchains. You can view，manage and send your NFTs to other ecosystems via Interchain protocols,
-                    # todo shan 替换为英文
-                    moreText: 了解更多,
+                    moreText: Learn more,
                     route: /en/products/nftapplication,
                     imgName: NFT_banner.png
                 }
@@ -368,29 +361,36 @@
                 {
                     iconName: gongyinglianjinrong.png,
                     title: Digital Finance,
-                    introEn: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem
+                    intro: [
+                        {text: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem}
+                    ]
                 },
                 {
                     iconName: shuzihuazichan.png,
                     title: Cross-Borde Trade,
-                    introEn: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development
+                    intro: [
+                        {text: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development}
+                    ]
                 },
                 {
                     iconName: copyright.png,
                     title: Cultural and Creative Industries and Copyright,
-                    introEn: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection
+                    intro: [
+                        {text: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection}
+                    ]
                 },
                 {
                     iconName: manufacture.png,
                     title: Intelligent Manufacturing,
-                    introEn: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry
+                    intro: [
+                        {text: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry}
+                    ]
                 }
             ]
         },
         partnerContent: {
             title: Partners,
-            # todo shan 英文文案待修改
-            subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
+            subTitle: Open Collaboration and Joint Progress,
             fieldsList: [
                 {
                     partnerList: [
@@ -403,7 +403,6 @@
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wanxiang.jpg},
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/voaino.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/wenjiaolianhe.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/metachi.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/dibiaomake.jpg},

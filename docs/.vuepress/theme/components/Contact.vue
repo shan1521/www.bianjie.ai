@@ -47,7 +47,7 @@ export default {
     watch: {
         '$store.state.currentLang': {
             handler(newLang) {
-                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[1].value];
+                this.contactUSImg = this.edition ? CONTACT_US_IMG[newLang] : CONTACT_US_IMG[LANG_OPTIONS[2].value];
                 this.footerInfo = getLocalesFooter(this, newLang);
             },
             immediate: true,
@@ -109,6 +109,7 @@ export default {
             font-weight: $fontWeight400;
             color: #000000;
             line-height: 2.4rem;
+            text-align: center;
             &::after {
                 content: '';
                 display: block;

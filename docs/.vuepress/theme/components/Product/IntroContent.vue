@@ -2,16 +2,16 @@
     <div class="intro_container">
         <div class="intro_content_container">
             <div class="intro_content">
-                <div class="intro_content_left">
-                    <img
-                        src="../../assets/product/iritahub/iritahub_image.png"
-                        alt=""
-                    />
-                </div>
+                <img
+                    class="intro_content_left"
+                    src="../../assets/product/iritahub/iritahub_image.png"
+                    alt=""
+                />
                 <div class="intro_content_right">
                     <div class="title">{{ introContent.title }}</div>
                     <p
                         class="desc_article"
+                        :class="{desc_article_en: isEn}"
                         v-for="(item, index) in introContent.description"
                         :key="index"
                         v-html="item.paragraph"
@@ -24,9 +24,15 @@
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../constants';
 export default {
     name: "IntroContent",
     props: ["introContent"],
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        }
+    }
 };
 </script>
 
@@ -58,13 +64,10 @@ export default {
             }
             .intro_content_left {
                 margin-right: 5.7rem;
-                width: 60.2rem;
-                @media (max-width: 1200px) {
+                width: 30.1rem;
+                height: 28.7rem;
+                @media (max-width: 960px) {
                     display: none;
-                }
-                img {
-                    width: 100%;
-                    height: 100%;
                 }
             }
             .intro_content_right {
@@ -73,7 +76,7 @@ export default {
                     font-weight: $fontWeight500;
                     color: #000;
                     line-height: 2.4rem;
-                    @media (max-width: 1200px) {
+                    @media (max-width: 960px) {
                         text-align: center;
                     }
                 }
@@ -83,13 +86,15 @@ export default {
                     font-weight: $fontWeight400;
                     color: rgba(0, 0, 0, 0.75);
                     line-height: 2.4rem;
-                    word-break: break-all;
                     &:nth-of-type(1) {
                         margin-top: 4rem;
                     }
                     a {
                         color: $highlightDetailColor;
                     }
+                }
+                .desc_article_en {
+                    margin-top: 2rem;
                 }
             }
         }

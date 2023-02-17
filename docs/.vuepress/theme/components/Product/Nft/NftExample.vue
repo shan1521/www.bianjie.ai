@@ -16,7 +16,7 @@
                                 <span class="title">{{item.title}}</span>
                             </a>
                             <ul class="description_list">
-                                <li class="description_item"
+                                <li class="description_item" :class="{description_item_en: isEn}"
                                     v-for="(desc, dIndex) in item.description"
                                     :key="dIndex"
                                 >
@@ -32,10 +32,16 @@
 </template>
 
 <script>
+import { LANG_OPTIONS } from '../../../constants';
 import ImgContent from '../../Common/ImgContent.vue';
 export default {
     name: 'NftExample',
     props: ['nftList'],
+    computed: {
+        isEn() {
+            return this.$store.state.currentLang === LANG_OPTIONS[0].value;
+        }
+    },
     methods: {
         differentNftBanner(banner){
             return `background: url('/product/nft/${banner}.png') no-repeat center / cover;`;
@@ -103,6 +109,8 @@ export default {
                     .img_content_right {
                         .nft_example_title {
                             @media (max-width: 680px) {
+                                display: flex;
+                                justify-content: center;
                                 margin-top: 2.4rem;
                             }
                             .title {
@@ -125,6 +133,9 @@ export default {
                                 @media (max-width: 680px) {
                                     text-align: center;
                                 }
+                            }
+                            .description_item_en {
+                                line-height: 2rem;
                             }
                         }
                     }
