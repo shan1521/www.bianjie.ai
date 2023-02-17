@@ -56,5 +56,14 @@ module.exports = {
 		'/en/': {
 			lang: 'en'
 		}
-	}
+	},
+	plugins:{
+        '@vuepress/pwa': {
+            generateSWConfig : {               
+                globPatterns: [
+                    '**/*.{js,css,png,jpg,jpeg,gif,svg,woff,woff2,eot,ttf,otf}'
+                ]
+            }
+        }
+    }
 };

@@ -26,7 +26,7 @@
                             :class="item.iconClass"></i>
                     </div>
                     <div class="item_desc">
-                        <span class="name">{{ item.name }}</span>
+                        <div class="name">{{ item.name }}</div>
                         <div class="intro">{{ item.intro }}</div>
                     </div>
                 </li>
@@ -36,7 +36,6 @@
                     class="detail_item"
                     v-for="(item, index) in serviceContent.productContent"
                     :key="index">
-                    <!-- todo shan safari 浏览器样式调整 -->
                     <div class="detail_item_wrap"
                         :class="{detail_item_wrap_en: isEn}"
                         :style="differentProductBg(item.imgName)">
@@ -340,7 +339,7 @@ export default {
                 .detail_item_wrap {
                     box-sizing: border-box;
                     padding: 3.2rem;
-                    min-height: 41rem;
+                    min-height: 38.6rem;
                     text-align: left;
 
                     @media (max-width: 1022px) {
