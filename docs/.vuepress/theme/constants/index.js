@@ -719,17 +719,17 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-cn': [
             {
-                label: `版权所有©${new Date().getFullYear()} 区块律动（香港）科技有限公司`
+                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
             }
         ],
         'zh-hk': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+                label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
             }
         ],
         'en': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊律動（香港）科技有限公司`
+                label: `版權所有©${new Date().getFullYear()} Blockbeat Technology Limited`
             }
         ]
     }

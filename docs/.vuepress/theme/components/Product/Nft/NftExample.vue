@@ -103,6 +103,8 @@ export default {
                     .img_content_right {
                         .nft_example_title {
                             @media (max-width: 680px) {
+                                display: flex;
+                                justify-content: center;
                                 margin-top: 2.4rem;
                             }
                             .title {
