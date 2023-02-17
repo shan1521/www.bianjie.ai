@@ -457,9 +457,9 @@ const EDITION_NAV = {
             { text: '關於我們', link: '/zh-hk/about' }
         ],
         'en': [
-            { text: 'Homepage', link: '/en/' },
+            { text: 'Home', link: '/en/' },
             { 
-                text: 'Core Products', link: '', 
+                text: 'Products', link: '', 
                 items: [
                     {
                         icon: 'icon-diceng',
@@ -506,7 +506,7 @@ const EDITION_NAV = {
                 ]
             },
             {
-                text: 'Application Scenarios', link: '', 
+                text: 'Solutions', link: '', 
                 items: [
                     {
                         icon: 'icon-zhengwu', 
