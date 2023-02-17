@@ -919,7 +919,7 @@ export default {
                         @media (max-width: 420px) {
                             padding-left: 1.6rem;
                             padding-right: 1.6rem;
-                            height: 31.2rem;
+                            max-height: 31.2rem;
                         }
                         .appscenes_scene_list {
                             display: -ms-grid;

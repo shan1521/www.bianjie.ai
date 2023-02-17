@@ -322,11 +322,11 @@ export default {
 
         @media (max-width: 1200px) {
             box-sizing: border-box;
-            padding-left: 4.8rem;
-            padding-right: 4.8rem;
+            padding: 0 4.8rem;
         }
 
         @media (max-width: 768px) {
+            padding: 0 1.6rem;
             height: auto;
             line-height: 3rem;
         }
