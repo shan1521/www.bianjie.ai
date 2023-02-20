@@ -816,11 +816,11 @@ const DOM_TITLE = {
             'about.html': '關於我們',
         },
         '/en/': {
-            '': 'Homepage',
-            'products/irita.html': 'IRITA-Core Products',
-            'products/iritahub.html': 'IRITA HUB-Core Products',
-            'products/nftapplication.html': 'NFT 应用-Core Products',
-            'applications/finance-trade.html': 'Application Scenarios',
+            '': 'Home',
+            'products/irita.html': 'IRITA-Products',
+            'products/iritahub.html': 'IRITA HUB-Products',
+            'products/nftapplication.html': 'NFT 应用-Products',
+            'applications/finance-trade.html': 'Solutions',
             'about.html': 'About Us',
         }
     }
