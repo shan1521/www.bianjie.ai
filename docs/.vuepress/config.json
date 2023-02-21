@@ -1,4 +1,5 @@
 {
+    "isInternational": "${isInternational}",
     "umengId": "${umengId}",
     "umengWebId": "${umengWebId}"
 }

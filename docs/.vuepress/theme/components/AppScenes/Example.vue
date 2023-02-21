@@ -5,7 +5,7 @@
                 <div class="example_title">{{exampleContent.title}}</div>
                 <div class="example">
                     <div class="example_img">
-                        <img :src="exampleContent.example.imgName" alt="">
+                        <img :src="exampleContent.example.imgName" alt="" />
                     </div>
                     <div class="example_right">
                         <div class="example_text">{{exampleContent.example.text}}</div>

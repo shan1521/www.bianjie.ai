@@ -47,7 +47,7 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
-                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="" />
                             </a>
                             <router-link
                                 v-if="item.route"
@@ -55,7 +55,7 @@
                                 class="item_img"
                             >
                                 <img :src="item.imgName" alt="" />
-                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="">
+                                <img v-if="!item.imgName" src="../../assets/no_article_img.png" alt="" />
                             </router-link>
                         </div>
                     </li>
@@ -217,7 +217,6 @@ export default {
                                 overflow: hidden;
                                 white-space: nowrap;
                                 text-overflow: ellipsis;
-                                word-break: break-all;
                                 @media (max-width: 1104px) {
                                     white-space: normal;
                                 }
@@ -254,7 +253,6 @@ export default {
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 3;
-                            word-break: break-all;
                         }
                     }
 

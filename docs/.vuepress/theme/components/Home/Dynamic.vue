@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="content_bottom">
-                        <router-link class="more" to="/news">
+                        <router-link class="more" :to="`${$store.state.currentLang}news`">
                             <MoreBlue
                                 :text="dynamicContent.moreText"
                                 class="more_btn"
@@ -230,7 +230,6 @@ export default {
                                 overflow: hidden;
                                 white-space: nowrap;
                                 text-overflow: ellipsis;
-                                word-break: break-all;
                                 @media (max-width: 500px) {
                                     white-space: normal;
                                 }
@@ -251,7 +250,6 @@ export default {
                                 display: -webkit-box;
                                 -webkit-box-orient: vertical;
                                 -webkit-line-clamp: 3;
-                                word-break: break-all;
                             }
                         }
                     }
@@ -315,7 +313,6 @@ export default {
                                         overflow: hidden;
                                         white-space: nowrap;
                                         text-overflow: ellipsis;
-                                        word-break: break-all;
                                         @media (max-width: 1050px) {
                                             max-width: 100%;
                                             white-space: normal;
@@ -346,7 +343,6 @@ export default {
                                     display: -webkit-box;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
-                                    word-break: break-all;
                                 }
                             }
                         }

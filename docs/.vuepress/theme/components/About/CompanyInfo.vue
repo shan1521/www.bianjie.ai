@@ -7,6 +7,7 @@
                     <li
                         class="companyinfo_item"
                         v-for="(item, index) in companyInfo.infoList"
+                        :key="index"
                     >
                         {{ item.paragraph }}
                     </li>
@@ -19,7 +20,7 @@
 <script>
 export default {
     name: "CompanyInfo",
-    props: ["companyInfo"],
+    props: ["companyInfo"]
 };
 </script>
 

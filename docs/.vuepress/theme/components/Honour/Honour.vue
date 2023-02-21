@@ -14,23 +14,24 @@ import AboutContent from '@theme/components/About/AboutContent.vue';
 import CertiQuali from '@theme/components/Honour/CertiQuali.vue';
 import HonourList from '@theme/components/Honour/HonourList.vue';
 import OtherHonours from '@theme/components/Honour/OtherHonours.vue';
+import { getModuleContent } from '../../util';
 export default {
     name: 'Honour',
     computed: {
         aboutTitle() {
-			return this.$frontmatter.aboutTitle;
+            return getModuleContent(this, 'aboutTitle');
 		},
         aboutType() {
-			return this.$frontmatter.aboutType;
+            return getModuleContent(this, 'aboutType');
 		},
         certiQualiContent() {
-			return this.$frontmatter.certiQualiContent;
+            return getModuleContent(this, 'certiQualiContent');
 		},
         honourList() {
-			return this.$frontmatter.honourList;
+            return getModuleContent(this, 'honourList');
 		},
         otherHonoursContent() {
-			return this.$frontmatter.otherHonoursContent;
+            return getModuleContent(this, 'otherHonoursContent');
 		},
     },
     components: {

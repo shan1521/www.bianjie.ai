@@ -6,37 +6,44 @@
         <ProcessArchi v-if="processContent" :processContent="processContent"></ProcessArchi>
         <CoreFunctions v-if="coreFunctions" :coreFunctions="coreFunctions"></CoreFunctions>
         <Example v-if="exampleContent" :exampleContent="exampleContent"></Example>
+        <AppExample v-if="appExample" :appExample="appExample" />
     </div>
 </template>
 
 <script>
-import AppTitle from './AppTitle';
+import AppTitle from '../Common/AppTitle';
 import SceneStatus from './SceneStatus';
 import PlanAdvantage from './PlanAdvantage';
 import ProcessArchi from './ProcessArchi';
 import CoreFunctions from './CoreFunctions';
 import Example from './Example';
+import AppExample from './AppExample';
+import { getModuleContent } from '../../util';
+
 export default {
     name: "AppScenes",
     computed: {
         appTitleContent() {
-            return this.$frontmatter.appTitleContent;
+            return getModuleContent(this, 'appTitleContent');
         },
         sceneStatusContent() {
-            return this.$frontmatter.sceneStatusContent;
+            return getModuleContent(this, 'sceneStatusContent');
         },
         plansContent() {
-            return this.$frontmatter.plansContent;
+            return getModuleContent(this, 'plansContent');
         },
         processContent() {
-            return this.$frontmatter.processContent;
+            return getModuleContent(this, 'processContent');
         },
         coreFunctions() {
-            return this.$frontmatter.coreFunctions;
+            return getModuleContent(this, 'coreFunctions');
         },
         exampleContent() {
-            return this.$frontmatter.exampleContent;
+            return getModuleContent(this, 'exampleContent');
         },
+        appExample() {
+            return getModuleContent(this, 'appExample')
+        }
     },
     components: {
         AppTitle,
@@ -44,7 +51,8 @@ export default {
         PlanAdvantage,
         ProcessArchi,
         CoreFunctions,
-        Example
+        Example,
+        AppExample
     }
 };
 </script>
