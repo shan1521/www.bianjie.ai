@@ -457,9 +457,9 @@ const EDITION_NAV = {
             { text: '關於我們', link: '/zh-hk/about' }
         ],
         'en': [
-            { text: 'Homepage', link: '/en/' },
+            { text: 'Home', link: '/en/' },
             { 
-                text: 'Core Products', link: '', 
+                text: 'Products', link: '', 
                 items: [
                     {
                         icon: 'icon-diceng',
@@ -506,7 +506,7 @@ const EDITION_NAV = {
                 ]
             },
             {
-                text: 'Application Scenarios', link: '', 
+                text: 'Solutions', link: '', 
                 items: [
                     {
                         icon: 'icon-zhengwu', 
@@ -534,7 +534,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'http://blockbeat.hk'
+                    href: 'https://www.blockbeat.hk/'
                 },
                 {
                     label: '企业动态',
@@ -551,7 +551,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'http://blockbeat.hk'
+                    href: 'https://www.blockbeat.hk/'
                 },
                 {
                     label: '企业动态',
@@ -568,7 +568,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'http://blockbeat.hk'
+                    href: 'https://www.blockbeat.hk/'
                 },
                 {
                     label: '企业动态',
@@ -652,8 +652,8 @@ const CONTACT_US = {
             label: 'contact@bianjie.ai'
         },
         {
-            label: 'http://blockbeat.hk',
-            href: 'http://blockbeat.hk'
+            label: 'www.blockbeat.hk',
+            href: 'https://www.blockbeat.hk/'
         }
     ]
 }
@@ -816,11 +816,11 @@ const DOM_TITLE = {
             'about.html': '關於我們',
         },
         '/en/': {
-            '': 'Homepage',
-            'products/irita.html': 'IRITA-Core Products',
-            'products/iritahub.html': 'IRITA HUB-Core Products',
-            'products/nftapplication.html': 'NFT 应用-Core Products',
-            'applications/finance-trade.html': 'Application Scenarios',
+            '': 'Home',
+            'products/irita.html': 'IRITA-Products',
+            'products/iritahub.html': 'IRITA HUB-Products',
+            'products/nftapplication.html': 'NFT 应用-Products',
+            'applications/finance-trade.html': 'Solutions',
             'about.html': 'About Us',
         }
     }
@@ -920,24 +920,23 @@ const SEO_META = {
                 content: 'content',
                 contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
             },
-            // todo shan 三种验证工具的 contentDesc 需要更换
             {
                 name: 'name',
                 nameValue: 'baidu-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'codeva-ckjBeKhBY7'
             },
             {
                 name: 'name',
                 nameValue: 'google-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'TnFxNEcibw4ZV90lTXzB0jtxu8R9LT24jd0NaxxNEJc'
             },
             {
                 name: 'name',
                 nameValue: '360-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: '6eee4b62bc60152804004a038c8ac1bd'
             }
         ],
         '/zh-hk/': [
@@ -947,24 +946,23 @@ const SEO_META = {
                 content: 'content',
                 contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
-            // todo shan 三种验证工具的 contentDesc 需要更换
             {
                 name: 'name',
                 nameValue: 'baidu-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'codeva-ckjBeKhBY7'
             },
             {
                 name: 'name',
                 nameValue: 'google-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'TnFxNEcibw4ZV90lTXzB0jtxu8R9LT24jd0NaxxNEJc'
             },
             {
                 name: 'name',
                 nameValue: '360-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: '6eee4b62bc60152804004a038c8ac1bd'
             }
         ],
         '/en/': [
@@ -974,24 +972,23 @@ const SEO_META = {
                 content: 'content',
                 contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
-            // todo shan 三种验证工具的 contentDesc 需要更换
             {
                 name: 'name',
                 nameValue: 'baidu-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'codeva-ckjBeKhBY7'
             },
             {
                 name: 'name',
                 nameValue: 'google-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: 'TnFxNEcibw4ZV90lTXzB0jtxu8R9LT24jd0NaxxNEJc'
             },
             {
                 name: 'name',
                 nameValue: '360-site-verification',
                 content: 'content',
-                contentDesc: ''
+                contentDesc: '6eee4b62bc60152804004a038c8ac1bd'
             }
         ]
     }

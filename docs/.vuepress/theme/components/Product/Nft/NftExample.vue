@@ -12,9 +12,7 @@
                             <img :src="$withBase(`/product/nft/${item.logo}`)" alt="">
                         </template>
                         <template #content>
-                            <a class="nft_example_title" :href="item.href" target="_blank" rel="noopener noreferrer">
-                                <span class="title">{{item.title}}</span>
-                            </a>
+                            <div class="title">{{item.title}}</div>
                             <ul class="description_list">
                                 <li class="description_item" :class="{description_item_en: isEn}"
                                     v-for="(desc, dIndex) in item.description"
@@ -107,20 +105,14 @@ export default {
                         }
                     }
                     .img_content_right {
-                        .nft_example_title {
+                        .title {
+                            font-size: $fontSize24;
+                            font-weight: $fontWeight600;
+                            color: #000;
+                            line-height: 2.8rem;
                             @media (max-width: 680px) {
-                                display: flex;
-                                justify-content: center;
                                 margin-top: 2.4rem;
-                            }
-                            .title {
-                                font-size: $fontSize24;
-                                font-weight: $fontWeight600;
-                                color: #000;
-                                line-height: 2.8rem;
-                                &:hover {
-                                    color: $highlightDetailColor;
-                                }
+                                text-align: center;
                             }
                         }
                         .description_list {
