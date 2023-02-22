@@ -96,10 +96,16 @@ export default {
     methods: {
         setHeadMeta(lang) {
             SEO_META[this.editionPrefix][lang].forEach(item => {
-                const metaDom = document.createElement('meta');
-                metaDom[item.name] = item.nameValue;
-                metaDom[item.content] = item.contentDesc;
-                document.getElementsByTagName('head')[0].appendChild(metaDom);
+                const metaList = document.getElementsByTagName('meta');
+                const metaNameList = Array.from(metaList).map(metaItem => metaItem.name);
+                if(!metaNameList.includes(item.nameValue)) {
+                    const metaDom = document.createElement('meta');
+                    metaDom[item.name] = item.nameValue;
+                    metaDom[item.content] = item.contentDesc;
+                    document.getElementsByTagName('head')[0].appendChild(metaDom);
+                } else {
+                    // todo shan 如果包含，那就改其中的内容
+                }
             })
         }
     },
