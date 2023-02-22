@@ -104,7 +104,10 @@ export default {
                     metaDom[item.content] = item.contentDesc;
                     document.getElementsByTagName('head')[0].appendChild(metaDom);
                 } else {
-                    // todo shan 如果包含，那就改其中的内容
+                    if(item.nameValue === 'keywords') {
+                        const matchMeta = document.querySelector(`meta[name=${item.nameValue}]`);
+                        matchMeta?.setAttribute('content', item.contentDesc);
+                    }
                 }
             })
         }
@@ -116,7 +119,6 @@ export default {
         script.language = "JavaScript";
         document.body.appendChild(script);
         this.setHeadMeta(this.$store.state.currentLang);
-        console.log(localStorage.getItem('currentLang'), 'localStorage.getLang');
     },
     watch: {
         '$route.path': {
