@@ -11,7 +11,7 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
     npm install && npm run build-params $IS_INTERNATIONAL,$UMENG_ID,$UMENG_WEB_ID && npm run build
 
 FROM nginx:1.19-alpine
-echo -e 'server {\n\
+RUN echo -e 'server {\n\
     listen       80;\n\
     server_name  localhost;\n\
     location / {\n\
