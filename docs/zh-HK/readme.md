@@ -267,130 +267,138 @@
             {
                 img: banner_home_1.png,
                 title: BIANJIE.AI Global,
-                subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
+                subTitle: 全球價值互聯網建設者·Web 3.0 區塊鏈基礎設施服務商
             },
             {
                 img: banner_home_3.png,
-                title: Professionalism · Excellence · Openness,
-                subTitle: Become a global-wide respected and revered blockchain innovation team，create far-reaching values for partners and industries
+                title: 秉持專業 · 追求卓越 · 開放合作,
+                subTitle: 成為全球備受尊崇的區塊鏈創新團隊，為合作伙伴及行業創造深遠價值
             }
         ],
         advantageContent: {
-            title: Core Strengths and Advantages,
+            title: 核心能力與優勢,
             advList: [
                 {
                     img: adv_first.png,
-                    intro: Advanced Underlying Technology,
-                    description: With Interchain，NFT，and big data privacy protection technology as the core，Bianjie possesses self-developed，secure，and controllable blockchain underlying technical strength.
+                    intro: 先進的底層技術,
+                    description: 以區塊鏈跨鏈、NFT 技術及大數據隱私保護技術為核心，擁有自主研發、安全可控的區塊鏈底層技術實力
                 },
                 {
                     img: adv_second.png,
-                    intro: Proven Products and Applications,
-                    description: Bianjie has the IRITA product line，an enterprise-level blockchain product that supports next-generation distributed business applications for complex business scenarios.
+                    intro: 成熟的產品應用,
+                    description: 擁有自主知識產權的企業級區塊鏈產品- IRITA 產品系列，支持下一代分佈式商業應用，滿足複雜業務場景
                 },
                 {
                     img: adv_third.png,
-                    intro: Open Ecosystem Networking,
-                    description: Under the philosophy of "open collaboration and joint progress"，Bianjie provides open and innovative blockchain ecosystem services and business collaboration models，and promotes the implementation and development of blockchain technology to serve the real economy.
+                    intro: 開放的生態鏈接,
+                    description: 開放合作，攜手共進，提供開放創新的區塊鏈生態服務和業務合作模式，推動區塊鏈技術落地與發展，服務實體經濟
                 },
                 {
                     img: adv_forth.png,
-                    intro: Extensive Industry Experience,
-                    description: Bianjie possesses years of experience in providing services for enterprises and various industries，a mature business consulting team，and the ability to provide solutions for professional scenarios. At present，Bianjie has landed multiple applications in digital banking，financial regulation，asset digitization，and many other fields.
+                    intro: 豐富的行業經驗,
+                    description: 多年的企業及行業服務經驗，成熟的商業諮詢團隊，專業化場景解決方案。目前已在數字銀行、金融監管、資產數字化等多個領域落地實際應用
                 }
             ]
         },
         serviceContent: {
-            title: Products and Services,
+            title: 產品與服務,
             productContent: [
                 {
                     iconClass: icon-IRITA_W,
                     iconClassColor: icon-IRITA,
                     name: IRITA,
-                    intro: the Consortium Chain Product Line for Next-Generation Distributed Business,
-                    description: IRITA is an enterprise-level consortium chain product line independently developed by Bianjie，which features the Interchain，NFT，and big data privacy protection technology as its core，and is capable of supporting next-generation distributed business systems,
-                    route: /en/products/irita,
-                    moreText: Learn more,
+                    intro: 支持下一代分佈式商業的聯盟鏈產品線,
+                    description: IRITA 是邊界智能以區塊鏈跨鏈、NFT 技術及大數據隱私保護技術為核心，自主研發的支持下一代分佈式商業系統的企業級聯盟鏈產品線,
+                    route: /zh-HK/products/irita,
+                    moreText: 了解更多,
                     imgName: IRITA_banner.png
                 },
                 {
                     iconClass: icon-HUB,
                     iconClassColor: icon-a-IRITAHUB,
                     name: IRITA HUB,
-                    intro: the Interchain Service Hub for Heterogeneous Blockchains,
-                    description: Powered by advanced Interchain technology， Inter-Blockchain Communication protocol，and Tendermint consensus mechanism，IRITA HUB supports cross-chain exchange or transfer of assets，information security verification between various heterogeneous blockchain networks and off-chain systems，secure cross-chain data-sharing and cross-chain service-calling,
-                    moreText: Learn more,
-                    route: /en/products/iritahub,
+                    intro: 異構區塊鏈跨鏈服務樞紐,
+                    description: 基於先進的跨鏈技術、IBC 協議和 Tendermint 共識機制，支持各種異構區塊鏈網絡及鏈外系統間的跨鏈資產交換/轉移及信息安全驗證，支持跨鏈數據安全共享和跨鏈服務調用,
+                    moreText: 了解更多,
+                    route: /zh-HK/products/iritahub,
                     imgName: IRITAHUB_inter_banner.png
                 },
                 {
                     iconClass: icon-AVATA_W,
                     iconClassColor: icon-AVATA,
                     name: AVATA,
-                    intro: the Multi-chain and Cross-chain Distributed Application Service Platform,
-                    description: AVATA is a multi-chain and cross-chain NFT/metaverse application API service platform providing one-click service for cross-chain collaboration between complex heterogeneous systems，and is dedicated to helping developers and enterprises build an open and diversified distributed business model and web3 business applications,
-                    moreText: Learn more,
+                    intro: 多鏈跨鏈分佈式應用服務平台,
+                    description: Avata 是一個多鏈和跨鏈 NFT/元宇宙應用 API 服務平台，為複雜異構系統跨鏈協作提供一鍵式對接，致力於助力開發者和企業打造開放、多元的分佈式商業形態，構建 Web3 商業應用,
+                    moreText: 了解更多,
                     link: https://apis.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
                 },
                 {
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
-                    name: MTO Box Global,
-                    intro: Multi-Chain NFT Application Empowerment Tool,
-                    description: MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for BIANJIE.AI Global's worldwide ecosystem partners. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently,
-                    moreText: Learn more,
-                    route: /en/products/nftapplication,
+                    name: 元宇寶盒全球版,
+                    intro: 多鏈 NFT 應用賦能工具,
+                    description: 元宇寶盒為 BIANJIE.AI Global 全球生態合作伙伴提供基於 NFT 技術的數字商品應用賦能及數字化營銷工具，可對接元宇宙應用，支持多鏈/多應用場景，讓企業更高效地鏈接全球用户，讓用户更方便地掌管數字資產。,
+                    moreText: 了解更多,
+                    route: /zh-HK/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
-                    name: NFT Cross-Chain Wallet,
-                    intro: Cross-Chain NFT Asset Management Tool,
-                    description: NFT Hub is a decentralized tool for managing your NFTs across multiple blockchains. You can view，manage and send your NFTs to other ecosystems via Interchain protocols,
-                    moreText: Learn more,
-                    route: /en/products/nftapplication,
+                    name: NFT 跨鏈錢包,
+                    intro: 跨鏈 NFT 資產管理工具,
+                    description: NFT Hub 是一個去中心化工具，用於管理您在多個區塊鏈上的NFTs。您可以查看、管理並通過跨鏈協議將您的 NFTs 發送到其他生態系統,
+                    moreText: 了解更多,
+                    route: /zh-HK/products/nftapplication,
                     imgName: NFT_banner.png
                 }
             ]
         },
         scenesContent: {
-            title: Multi-Scene Solutions,
+            title: 多場景解決方案,
             scenesList: [
                 {
                     iconName: gongyinglianjinrong.png,
-                    title: Digital Finance,
+                    title: 數字金融,
                     intro: [
-                        {text: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem}
+                        {text: 資產數字化建模},
+                        {text: 大數據隱私保護},
+                        {text: 普惠自金融生態},
                     ]
                 },
                 {
                     iconName: shuzihuazichan.png,
-                    title: Cross-Borde Trade,
+                    title: 跨境貿易,
                     intro: [
-                        {text: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development}
+                        {text: 打造新一代數字貿易基礎設施},
+                        {text: 建立全球普惠貿易新秩序},
+                        {text: 促進國際貿易和電商發展},
                     ]
                 },
                 {
                     iconName: copyright.png,
-                    title: Cultural and Creative Industries and Copyright,
+                    title: 文創與版權,
                     intro: [
-                        {text: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection}
+                        {text: 保護原創權益},
+                        {text: 重塑版權價值},
+                        {text: 便捷高效維權},
                     ]
                 },
                 {
                     iconName: manufacture.png,
-                    title: Intelligent Manufacturing,
+                    title: 智能製造,
                     intro: [
-                        {text: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry}
+                        {text: 組建和管理工業物聯網},
+                        {text: 提高製造智能化管理水平},
+                        {text: 引領全球傳統制造業創新變革},
                     ]
                 }
             ]
         },
         partnerContent: {
-            title: Partners,
-            subTitle: Open Collaboration and Joint Progress,
+            title: 合作伙伴,
+            subTitle: 開放合作 攜手共進 共同推動可信區塊鏈技術落地與發展,
             fieldsList: [
                 {
                     partnerList: [

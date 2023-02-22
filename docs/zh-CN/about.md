@@ -53,14 +53,14 @@
     },
     international: {
         aboutTitle: {
-            title: About Us,
-            subTitle: A high-tech company focusing on the research and development of blockchain and big-data products，technology，and solutions
+            title: 关于我们,
+            subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
         },
         companyInfo: {
-            title: Introduction,
+            title: 企业简介,
             infoList: [
                 {
-                    paragraph: BIANJIE.AI Global is a high-tech enterprise focusing on blockchain technology and application innovation，big data related product technology research and development and solutions，and is committed to building the world's leading professional full life cycle service provider in blockchain industry. BIANJIE.AI Global works closely with global partners such as the Blockchain-Based Service Network (BSN) and Asian Digital Bank to promote the application of innovative technologies in cross-chain services，digital finance，cross-border trade，and metaverse digital collections，in an effort to serve the global real economy. While insisting on independent innovation，BIANJIE.AI Global has also been invited to contribute Interchain core codes to multiple global blockchain networks，and is a builder of the global Internet of Values. Bianjie Global is also an innovator and promoter of the global Interchain open-source technology，and is a core developer of the well-known open-source Interchain projects - COSMOS/IRISnet.
+                    paragraph: BIANJIE.AI Global 是一家专注于区块链技术及应用创新、大数据相关产品技术研发和解决方案的高科技企业，致力于打造全球领先的区块链行业全生命周期专业服务商。BIANJIE.AI Global 与区块链服务网络（BSN）、亚洲数字银行等全球伙伴深度合作，在跨链服务、数字金融、跨境贸易、元宇宙数字藏品等领域共同推进创新技术落地应用，服务全球实体经济。在坚持自主创新的同时，BIANJIE.AI Global 还受邀为多个全球区块链网络贡献跨链领域核心代码，是全球互联互通价值互联网的建设者。BIANJIE.AI Global 同时是全球区块链跨链开源技术的创新推动者，是全球著名开源跨链项目 COSMOS/IRISnet 的核心开发者。
                 }
             ]
         }

@@ -19,7 +19,7 @@
                 img: banner_home_3.png,
                 title: 秉持专业 · 追求卓越 · 开放合作,
                 subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
-            },
+            }
         ],
         bsnWenchangchain: {
             description: BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
@@ -47,7 +47,7 @@
                     img: adv_forth.png,
                     intro: 丰富的行业经验,
                     description: 多年的企业及行业服务经验，成熟的商业咨询团队，专业化场景解决方案。目前已在数字银行、金融监管、资产数字化等多个领域落地实际应用
-                },
+                }
             ]
         },
         serviceContent: {
@@ -153,7 +153,7 @@
                     ],
                     description: 利用区块链，核心企业信用上链传递后，中小企业可以使用核心企业的信贷授信额度，降低融资成本，提升融资效率。,
                     route: /zh-CN/applications/trade-finance
-                },
+                }
             ],
             moreText: 了解更多
         },
@@ -267,130 +267,138 @@
             {
                 img: banner_home_1.png,
                 title: BIANJIE.AI Global,
-                subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
+                subTitle: 全球价值互联网建设者·Web 3.0 区块链基础设施服务商
             },
             {
                 img: banner_home_3.png,
-                title: Professionalism · Excellence · Openness,
-                subTitle: Become a global-wide respected and revered blockchain innovation team，create far-reaching values for partners and industries
+                title: 秉持专业 · 追求卓越 · 开放合作,
+                subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
             }
         ],
         advantageContent: {
-            title: Core Strengths and Advantages,
+            title: 核心能力与优势,
             advList: [
                 {
                     img: adv_first.png,
-                    intro: Advanced Underlying Technology,
-                    description: With Interchain，NFT，and big data privacy protection technology as the core，Bianjie possesses self-developed，secure，and controllable blockchain underlying technical strength.
+                    intro: 先进的底层技术,
+                    description: 以区块链跨链、NFT 技术及大数据隐私保护技术为核心，拥有自主研发、安全可控的区块链底层技术实力
                 },
                 {
                     img: adv_second.png,
-                    intro: Proven Products and Applications,
-                    description: Bianjie has the IRITA product line，an enterprise-level blockchain product that supports next-generation distributed business applications for complex business scenarios.
+                    intro: 成熟的产品应用,
+                    description: 拥有自主知识产权的企业级区块链产品- IRITA 产品系列，支持下一代分布式商业应用，满足复杂业务场景
                 },
                 {
                     img: adv_third.png,
-                    intro: Open Ecosystem Networking,
-                    description: Under the philosophy of "open collaboration and joint progress"，Bianjie provides open and innovative blockchain ecosystem services and business collaboration models，and promotes the implementation and development of blockchain technology to serve the real economy.
+                    intro: 开放的生态链接,
+                    description: 开放合作，携手共进，提供开放创新的区块链生态服务和业务合作模式，推动区块链技术落地与发展，服务实体经济
                 },
                 {
                     img: adv_forth.png,
-                    intro: Extensive Industry Experience,
-                    description: Bianjie possesses years of experience in providing services for enterprises and various industries，a mature business consulting team，and the ability to provide solutions for professional scenarios. At present，Bianjie has landed multiple applications in digital banking，financial regulation，asset digitization，and many other fields.
-                }
+                    intro: 丰富的行业经验,
+                    description: 多年的企业及行业服务经验，成熟的商业咨询团队，专业化场景解决方案。目前已在数字银行、金融监管、资产数字化等多个领域落地实际应用
+                },
             ]
         },
         serviceContent: {
-            title: Products and Services,
+            title: 产品与服务,
             productContent: [
                 {
                     iconClass: icon-IRITA_W,
                     iconClassColor: icon-IRITA,
                     name: IRITA,
-                    intro: the Consortium Chain Product Line for Next-Generation Distributed Business,
-                    description: IRITA is an enterprise-level consortium chain product line independently developed by Bianjie，which features the Interchain，NFT，and big data privacy protection technology as its core，and is capable of supporting next-generation distributed business systems,
-                    route: /en/products/irita,
-                    moreText: Learn more,
+                    intro: 支持下一代分布式商业的联盟链产品线,
+                    description: IRITA 是边界智能以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品线,
+                    moreText: 了解更多,
+                    route: /zh-CN/products/irita,
                     imgName: IRITA_banner.png
                 },
                 {
                     iconClass: icon-HUB,
                     iconClassColor: icon-a-IRITAHUB,
                     name: IRITA HUB,
-                    intro: the Interchain Service Hub for Heterogeneous Blockchains,
-                    description: Powered by advanced Interchain technology， Inter-Blockchain Communication protocol，and Tendermint consensus mechanism，IRITA HUB supports cross-chain exchange or transfer of assets，information security verification between various heterogeneous blockchain networks and off-chain systems，secure cross-chain data-sharing and cross-chain service-calling,
-                    moreText: Learn more,
-                    route: /en/products/iritahub,
+                    intro: 异构区块链跨链服务枢纽,
+                    description: 基于先进的跨链技术、IBC 协议和 Tendermint 共识机制，支持各种异构区块链网络及链外系统间的跨链资产交换/转移及信息安全验证，支持跨链数据安全共享和跨链服务调用,
+                    moreText: 了解更多,
+                    route: /zh-CN/products/iritahub,
                     imgName: IRITAHUB_inter_banner.png
                 },
                 {
                     iconClass: icon-AVATA_W,
                     iconClassColor: icon-AVATA,
                     name: AVATA,
-                    intro: the Multi-chain and Cross-chain Distributed Application Service Platform,
-                    description: AVATA is a multi-chain and cross-chain NFT/metaverse application API service platform providing one-click service for cross-chain collaboration between complex heterogeneous systems，and is dedicated to helping developers and enterprises build an open and diversified distributed business model and web3 business applications,
-                    moreText: Learn more,
+                    intro: 多链跨链分布式应用服务平台,
+                    description: Avata 是一个多链和跨链 NFT/元宇宙应用 API 服务平台，为复杂异构系统跨链协作提供一键式对接，致力于助力开发者和企业打造开放、多元的分布式商业形态，构建 Web3 商业应用,
+                    moreText: 了解更多,
                     link: https://apis.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
                 },
                 {
                     iconClass: icon-MOTBOX_W,
                     iconClassColor: icon-MOTBOX,
-                    name: MTO Box Global,
-                    intro: Multi-Chain NFT Application Empowerment Tool,
-                    description: MTO Box provides NFT technology-based digital product application empowerment and digital marketing tools for BIANJIE.AI Global's worldwide ecosystem partners. MTO Box can interface with metaverse applications and support multi-chain/multi-app scenarios，allowing enterprises to link to global users more efficiently and users to manage digital assets more conveniently,
-                    moreText: Learn more,
-                    route: /en/products/nftapplication,
+                    name: 元宇宝盒全球版,
+                    intro: 多链 NFT 应用赋能工具,
+                    description: 元宇宝盒为 BIANJIE.AI Global 全球生态合作伙伴提供基于 NFT 技术的数字商品应用赋能及数字化营销工具，可对接元宇宙应用，支持多链/多应用场景，让企业更高效地链接全球用户，让用户更方便地掌管数字资产,
+                    moreText: 了解更多,
+                    route: /zh-CN/products/nftapplication,
                     imgName: MOTBOX_banner.png
                 },
                 {
                     iconClass: icon-DA,
                     iconClassColor: icon-a-IRITADA,
-                    name: NFT Cross-Chain Wallet,
-                    intro: Cross-Chain NFT Asset Management Tool,
-                    description: NFT Hub is a decentralized tool for managing your NFTs across multiple blockchains. You can view，manage and send your NFTs to other ecosystems via Interchain protocols,
-                    moreText: Learn more,
-                    route: /en/products/nftapplication,
+                    name: NFT 跨链钱包,
+                    intro: 跨链 NFT 资产管理工具,
+                    description: NFT Hub 是一个去中心化工具，用于管理您在多个区块链上的 NFTs。您可以查看、管理并通过跨链协议将您的 NFTs 发送到其他生态系统,
+                    moreText: 了解更多,
+                    route: /zh-CN/products/nftapplication,
                     imgName: NFT_banner.png
                 }
             ]
         },
         scenesContent: {
-            title: Multi-Scene Solutions,
+            title: 多场景解决方案,
             scenesList: [
                 {
                     iconName: gongyinglianjinrong.png,
-                    title: Digital Finance,
+                    title: 数字金融,
                     intro: [
-                        {text: Digital asset modeling，big data privacy protection，inclusive self-financing ecosystem}
+                        {text: 资产数字化建模},
+                        {text: 大数据隐私保护},
+                        {text: 普惠自金融生态},
                     ]
                 },
                 {
                     iconName: shuzihuazichan.png,
-                    title: Cross-Borde Trade,
+                    title: 跨境贸易,
                     intro: [
-                        {text: Build new-generation digital trade infrastructure，establish new global inclusive trade order，and promote International trade and e-commerce development}
+                        {text: 打造新一代数字贸易基础设施},
+                        {text: 建立全球普惠贸易新秩序},
+                        {text: 促进国际贸易和电商发展},
                     ]
                 },
                 {
                     iconName: copyright.png,
-                    title: Cultural and Creative Industries and Copyright,
+                    title: 文创与版权,
                     intro: [
-                        {text: Protect the rights of original creations，reshape the value of copyrights，and facilitate efficient right protection}
+                        {text: 保护原创权益},
+                        {text: 重塑版权价值},
+                        {text: 便捷高效维权},
                     ]
                 },
                 {
                     iconName: manufacture.png,
-                    title: Intelligent Manufacturing,
+                    title: 智能制造,
                     intro: [
-                        {text: Build and manage the industrial Internet of Things，improve intelligent management of manufacturing，and lead innovative changes in the global traditional manufacturing industry}
+                        {text: 组建和管理工业物联网},
+                        {text: 提高制造智能化管理水平},
+                        {text: 引领全球传统制造业创新变革},
                     ]
                 }
             ]
         },
         partnerContent: {
-            title: Partners,
-            subTitle: Open Collaboration and Joint Progress,
+            title: 合作伙伴,
+            subTitle: 开放合作 携手共进 共同推动可信区块链技术落地与发展,
             fieldsList: [
                 {
                     partnerList: [
