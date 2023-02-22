@@ -25,12 +25,20 @@ export default async ({
     Vue.use(Element);
 	Vue.mixin({ store: store });
 	if(!isServer){
+		// 兼容已访问过的情况
+		let storageLang = localStorage.getItem('currentLang');
+		if(storageLang === '/zh-hk/') {
+			localStorage.setItem('currentLang', LANG_OPTIONS[1].value);
+		} else if(storageLang === '/zh-cn/') {
+			localStorage.setItem('currentLang', LANG_OPTIONS[2].value);
+		}
+		storageLang = localStorage.getItem('currentLang');
 		const edition = getCurrentEdition();
 		if(edition) {
 			// 国内版不应从 localStorage 中读取语言配置
 			let urlLang = '';
-			if(localStorage.getItem('currentLang')){
-				urlLang = localStorage.getItem('currentLang');
+			if(storageLang){
+				urlLang = storageLang;
 			} else {
 				urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
 				localStorage.setItem('currentLang', urlLang);

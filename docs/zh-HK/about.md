@@ -10,19 +10,19 @@
         aboutType: [
             {
                 text: 关于我们,
-                route: /zh-cn/about
+                route: /zh-CN/about
             },
             {
                 text: 发展历程,
-                route: /zh-cn/milestone
+                route: /zh-CN/milestone
             },
             {
                 text: 荣誉资质,
-                route: /zh-cn/honour
+                route: /zh-CN/honour
             },
             {
                 text: 加入我们,
-                route: /zh-cn/join
+                route: /zh-CN/join
             },
         ],
         companyInfo: {
@@ -53,14 +53,14 @@
     },
     international: {
         aboutTitle: {
-            title: 关于我们,
-            subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
+            title: 關於我們,
+            subTitle: 專注於區塊鏈、大數據相關產品技術研發和解決方案的高科技公司
         },
         companyInfo: {
-            title: 企业简介,
+            title: 企業簡介,
             infoList: [
                 {
-                    paragraph: BIANJIE.AI Global 是一家专注于区块链技术及应用创新、大数据相关产品技术研发和解决方案的高科技企业，致力于打造全球领先的区块链行业全生命周期专业服务商。BIANJIE.AI Global 与区块链服务网络（BSN）、亚洲数字银行等全球伙伴深度合作，在跨链服务、数字金融、跨境贸易、元宇宙数字藏品等领域共同推进创新技术落地应用，服务全球实体经济。在坚持自主创新的同时，BIANJIE.AI Global 还受邀为多个全球区块链网络贡献跨链领域核心代码，是全球互联互通价值互联网的建设者。BIANJIE.AI Global 同时是全球区块链跨链开源技术的创新推动者，是全球著名开源跨链项目 COSMOS/IRISnet 的核心开发者。
+                    paragraph: BIANJIE.AI Global 是⼀家專注於區塊鏈技術及應用創新、大數據相關產品技術研發和解決方案的高科技企業，致力於打造全球領先的區塊鏈行業全生命週期專業服務商。BIANJIE.AI Global 與區塊鏈服務網絡（BSN）、亞洲數字銀行等全球夥伴深度合作，在跨鏈服務、數字金融、跨境貿易、元宇宙數字藏品等領域共同推進創新技術落地應用，服務全球實體經濟。在堅持自主創新的同時，BIANJIE.AI Global 還受邀為多個全球區塊鏈網絡貢獻跨鏈領域核心代碼，是全球互聯互通價值互聯網的建設者。BIANJIE.AI Global 同時是全球區塊鏈跨鏈開源技術的創新推動者，是全球著名開源跨鏈項目 COSMOS/IRISnet 的核心開發者。
                 }
             ]
         }
