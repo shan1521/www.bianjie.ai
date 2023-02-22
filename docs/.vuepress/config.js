@@ -14,24 +14,24 @@ module.exports = {
 		search: false,
 		navbar: false,
 		locales: {
-			'/zh-cn/': {
-				nav: EDITION_NAV[editionPrefix]['zh-cn'],
+			'/zh-CN/': {
+				nav: EDITION_NAV[editionPrefix]['zh-CN'],
 				footer: {
-					companyInfo: EDITION_COMPANY[editionPrefix]['zh-cn'],
-					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-cn'],
+					companyInfo: EDITION_COMPANY[editionPrefix]['zh-CN'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-CN'],
 					contactUS: CONTACT_US[editionPrefix],
-					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-cn'],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-cn']
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-CN'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-CN']
 				},
 			},
-			'/zh-hk/': {
-				nav: EDITION_NAV[editionPrefix]['zh-hk'],
+			'/zh-HK/': {
+				nav: EDITION_NAV[editionPrefix]['zh-HK'],
 				footer: {
-					companyInfo: EDITION_COMPANY[editionPrefix]['zh-hk'],
-					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-hk'],
+					companyInfo: EDITION_COMPANY[editionPrefix]['zh-HK'],
+					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-HK'],
 					contactUS: CONTACT_US[editionPrefix],
-					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-hk'],
-					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-hk']
+					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-HK'],
+					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-HK']
 				},
 			},
 			'/en/': {
@@ -47,11 +47,11 @@ module.exports = {
 		},
 	},
 	locales: {
-		'/zh-cn/': {
-			lang: 'zh-cn'
+		'/zh-CN/': {
+			lang: 'zh-CN'
 		},
-		'/zh-hk/': {
-			lang: 'zh-hk'
+		'/zh-HK/': {
+			lang: 'zh-HK'
 		},
 		'/en/': {
 			lang: 'en'

@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "vuepress dev docs --temp .temp",
-        "build": "vuepress build docs",
+        "build": "vuepress build docs && node ./readWriteSW.js",
         "build-params": "node ./script.js -p",
         "tag:revert": "git checkout HEAD src/config.json"
     },

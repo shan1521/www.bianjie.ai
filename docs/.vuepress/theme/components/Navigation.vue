@@ -384,6 +384,12 @@ export default {
     watch: {
         '$route.path': {
             handler(newPath){
+                // 兼容已访问过的情况
+                if(newPath === '/zh-hk/'){
+                    location.pathname = LANG_OPTIONS[1].value;
+                } else if(newPath === '/zh-cn/') {
+                    location.pathname = LANG_OPTIONS[2].value;
+                }
 			    this.getDomTitle(newPath, this.$store.state.currentLang);
                 const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {

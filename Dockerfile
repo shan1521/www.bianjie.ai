@@ -11,7 +11,22 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
     npm install && npm run build-params $IS_INTERNATIONAL,$UMENG_ID,$UMENG_WEB_ID && npm run build
 
 FROM nginx:1.19-alpine
-RUN sed -i "11i \        if (\$request_filename ~* index.html|.*\\\.ico$)\n        {\n          add_header Cache-Control "no-cache";\n        }"  /etc/nginx/conf.d/default.conf
-
-RUN sed -i "21i \    location /pay-information { \n      rewrite ^/pay-information/(.*)$ /$1 break;\n      proxy_pass https://info.bianjie.ai;\n    }"  /etc/nginx/conf.d/default.conf
+echo -e 'server {\n\
+    listen       80;\n\
+    server_name  localhost;\n\
+    location / {\n\
+        root   /usr/share/nginx/html;\n\
+        index  index.html index.htm;\n\
+        rewrite ^/zh-cn/(.*) /zh-CN/$1 permanent;\n\
+        rewrite ^/zh-hk/(.*) /zh-HK/$1 permanent;\n\
+        if ($request_filename ~* index.html|.*\.ico$)\n\
+        {\n\
+          add_header Cache-Control no-cache;\n\
+        }\n\
+    }\n\
+    location /pay-information {\n\
+      rewrite ^/pay-information/(.*)$ / break;\n\
+      proxy_pass https://info.bianjie.ai;\n\
+    }\n\
+}' > /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/

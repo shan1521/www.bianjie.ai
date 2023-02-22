@@ -10,18 +10,18 @@ const LANG_OPTIONS = [
     },
     {
         label: '繁體中文',
-        value: '/zh-hk/'
+        value: '/zh-HK/'
     },
     {
         label: '简体中文',
-        value: '/zh-cn/'
+        value: '/zh-CN/'
     }
 ]
 
 const EDITION_NAV = {
     inland: {
-        'zh-cn': [
-            { text: '首页', link: '/zh-cn/' },
+        'zh-CN': [
+            { text: '首页', link: '/zh-CN/' },
             { 
                 text: '核心产品', link: '', 
                 items: [
@@ -37,12 +37,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '异构区块链跨链服务枢纽',
-                                route: '/zh-cn/products/iritahub'
+                                route: '/zh-CN/products/iritahub'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '支持分布式商业应用的开放许可链',
-                                route: '/zh-cn/products/iritaopb'
+                                route: '/zh-CN/products/iritaopb'
                             },
                             {
                                 abbreviation: 'BSN 文昌链',
@@ -63,12 +63,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '数据隐私保护及共享产品',
-                                route: '/zh-cn/products/iritabean'
+                                route: '/zh-CN/products/iritabean'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换产品',
-                                route: '/zh-cn/products/iritada'
+                                route: '/zh-CN/products/iritada'
                             },
                         ]
                     },
@@ -80,48 +80,48 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '智慧政务',
                         text: '电子证照',
-                        link: '/zh-cn/applications/e-licence'
+                        link: '/zh-CN/applications/e-licence'
                     },
                     {
                         icon: 'icon-tan', 
                         scene: '碳中和',
                         text: '碳核查',
-                        link: '/zh-cn/applications/C-trading'
+                        link: '/zh-CN/applications/C-trading'
                     },
                     {
                         icon: 'icon-banquan', 
                         scene: '文创与版权',
                         text: '一体化数字艺术品',
-                        link: '/zh-cn/applications/digital-art'
+                        link: '/zh-CN/applications/digital-art'
                     },
                     {
                         icon: 'icon-wulianwang', 
                         scene: '工业互联网及物联网',
                         text: '物联网可信数据采集',
-                        link: '/zh-cn/applications/datacollection'
+                        link: '/zh-CN/applications/datacollection'
                     },
                     {
                         icon: 'icon-jinrong', 
                         scene: '金融',
                         text: '供应链金融',
-                        link: '/zh-cn/applications/trade-finance'
+                        link: '/zh-CN/applications/trade-finance'
                     },
                     {
                         icon: 'icon-yiliao', 
                         scene: '医疗健康',
                         text: '电子处方流转',
-                        link: '/zh-cn/applications/e-prescription-circulation'
+                        link: '/zh-CN/applications/e-prescription-circulation'
                     },
                 ]
             },
-            { text: '企业动态', link: '/zh-cn/news' },
-            { text: '合作伙伴', link: '/zh-cn/partners' },
-            { text: '关于边界', link: '/zh-cn/about' },
+            { text: '企业动态', link: '/zh-CN/news' },
+            { text: '合作伙伴', link: '/zh-CN/partners' },
+            { text: '关于边界', link: '/zh-CN/about' },
             { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
-        'zh-hk': [
-            { text: '首页', link: '/zh-cn/' },
+        'zh-HK': [
+            { text: '首页', link: '/zh-CN/' },
             { 
                 text: '核心产品', link: '', 
                 items: [
@@ -137,12 +137,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '异构区块链跨链服务枢纽',
-                                route: '/zh-cn/products/iritahub'
+                                route: '/zh-CN/products/iritahub'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '支持分布式商业应用的开放许可链',
-                                route: '/zh-cn/products/iritaopb'
+                                route: '/zh-CN/products/iritaopb'
                             },
                             {
                                 abbreviation: 'BSN 文昌链',
@@ -163,12 +163,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '数据隐私保护及共享产品',
-                                route: '/zh-cn/products/iritabean'
+                                route: '/zh-CN/products/iritabean'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换产品',
-                                route: '/zh-cn/products/iritada'
+                                route: '/zh-CN/products/iritada'
                             },
                         ]
                     },
@@ -180,48 +180,48 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '智慧政务',
                         text: '电子证照',
-                        link: '/zh-cn/applications/e-licence'
+                        link: '/zh-CN/applications/e-licence'
                     },
                     {
                         icon: 'icon-tan', 
                         scene: '碳中和',
                         text: '碳核查',
-                        link: '/zh-cn/applications/C-trading'
+                        link: '/zh-CN/applications/C-trading'
                     },
                     {
                         icon: 'icon-banquan', 
                         scene: '文创与版权',
                         text: '一体化数字艺术品',
-                        link: '/zh-cn/applications/digital-art'
+                        link: '/zh-CN/applications/digital-art'
                     },
                     {
                         icon: 'icon-wulianwang', 
                         scene: '工业互联网及物联网',
                         text: '物联网可信数据采集',
-                        link: '/zh-cn/applications/datacollection'
+                        link: '/zh-CN/applications/datacollection'
                     },
                     {
                         icon: 'icon-jinrong', 
                         scene: '金融',
                         text: '供应链金融',
-                        link: '/zh-cn/applications/trade-finance'
+                        link: '/zh-CN/applications/trade-finance'
                     },
                     {
                         icon: 'icon-yiliao', 
                         scene: '医疗健康',
                         text: '电子处方流转',
-                        link: '/zh-cn/applications/e-prescription-circulation'
+                        link: '/zh-CN/applications/e-prescription-circulation'
                     },
                 ]
             },
-            { text: '企业动态', link: '/zh-cn/news' },
-            { text: '合作伙伴', link: '/zh-cn/partners' },
-            { text: '关于边界', link: '/zh-cn/about' },
+            { text: '企业动态', link: '/zh-CN/news' },
+            { text: '合作伙伴', link: '/zh-CN/partners' },
+            { text: '关于边界', link: '/zh-CN/about' },
             { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
         'en': [
-            { text: '首页', link: '/zh-cn/' },
+            { text: '首页', link: '/zh-CN/' },
             { 
                 text: '核心产品', link: '', 
                 items: [
@@ -237,12 +237,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '异构区块链跨链服务枢纽',
-                                route: '/zh-cn/products/iritahub'
+                                route: '/zh-CN/products/iritahub'
                             },
                             {
                                 abbreviation: 'IRITA OPB',
                                 intro: '支持分布式商业应用的开放许可链',
-                                route: '/zh-cn/products/iritaopb'
+                                route: '/zh-CN/products/iritaopb'
                             },
                             {
                                 abbreviation: 'BSN 文昌链',
@@ -263,12 +263,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA BEAN',
                                 intro: '数据隐私保护及共享产品',
-                                route: '/zh-cn/products/iritabean'
+                                route: '/zh-CN/products/iritabean'
                             },
                             {
                                 abbreviation: 'IRITA DA',
                                 intro: '资产数字化确权及交换产品',
-                                route: '/zh-cn/products/iritada'
+                                route: '/zh-CN/products/iritada'
                             },
                         ]
                     },
@@ -280,50 +280,50 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '智慧政务',
                         text: '电子证照',
-                        link: '/zh-cn/applications/e-licence'
+                        link: '/zh-CN/applications/e-licence'
                     },
                     {
                         icon: 'icon-tan', 
                         scene: '碳中和',
                         text: '碳核查',
-                        link: '/zh-cn/applications/C-trading'
+                        link: '/zh-CN/applications/C-trading'
                     },
                     {
                         icon: 'icon-banquan', 
                         scene: '文创与版权',
                         text: '一体化数字艺术品',
-                        link: '/zh-cn/applications/digital-art'
+                        link: '/zh-CN/applications/digital-art'
                     },
                     {
                         icon: 'icon-wulianwang', 
                         scene: '工业互联网及物联网',
                         text: '物联网可信数据采集',
-                        link: '/zh-cn/applications/datacollection'
+                        link: '/zh-CN/applications/datacollection'
                     },
                     {
                         icon: 'icon-jinrong', 
                         scene: '金融',
                         text: '供应链金融',
-                        link: '/zh-cn/applications/trade-finance'
+                        link: '/zh-CN/applications/trade-finance'
                     },
                     {
                         icon: 'icon-yiliao', 
                         scene: '医疗健康',
                         text: '电子处方流转',
-                        link: '/zh-cn/applications/e-prescription-circulation'
+                        link: '/zh-CN/applications/e-prescription-circulation'
                     },
                 ]
             },
-            { text: '企业动态', link: '/zh-cn/news' },
-            { text: '合作伙伴', link: '/zh-cn/partners' },
-            { text: '关于边界', link: '/zh-cn/about' },
+            { text: '企业动态', link: '/zh-CN/news' },
+            { text: '合作伙伴', link: '/zh-CN/partners' },
+            { text: '关于边界', link: '/zh-CN/about' },
             { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ]
     },
     international: {
-        'zh-cn': [
-            { text: '首页', link: '/zh-cn/' },
+        'zh-CN': [
+            { text: '首页', link: '/zh-CN/' },
             { 
                 text: '核心产品', link: '', 
                 items: [
@@ -334,12 +334,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA',
                                 intro: '支持下一代分布式商业的联盟链产品线',
-                                route: '/zh-cn/products/irita'
+                                route: '/zh-CN/products/irita'
                             },
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '异构区块链跨链服务枢纽',
-                                route: '/zh-cn/products/iritahub'
+                                route: '/zh-CN/products/iritahub'
                             },
                             {
                                 abbreviation: 'AVATA',
@@ -360,12 +360,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: '元宇宝盒全球版',
                                 intro: '多链 NFT 应用赋能工具',
-                                route: '/zh-cn/products/nftapplication'
+                                route: '/zh-CN/products/nftapplication'
                             },
                             {
                                 abbreviation: 'NFT 跨链钱包',
                                 intro: '跨链 NFT 资产管理工具',
-                                route: '/zh-cn/products/nftapplication'
+                                route: '/zh-CN/products/nftapplication'
                             },
                         ]
                     }
@@ -377,20 +377,20 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服务',
                         text: '亚洲数字银行',
-                        link: '/zh-cn/applications/finance-trade'
+                        link: '/zh-CN/applications/finance-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
                         scene: '跨境贸易',
                         text: '丝路之舟',
-                        link: '/zh-cn/applications/finance-trade'
+                        link: '/zh-CN/applications/finance-trade'
                     }
                 ]
             },
-            { text: '关于我们', link: '/zh-cn/about' }
+            { text: '关于我们', link: '/zh-CN/about' }
         ],
-        'zh-hk': [
-            { text: '首頁', link: '/zh-hk/' },
+        'zh-HK': [
+            { text: '首頁', link: '/zh-HK/' },
             { 
                 text: '核心產品', link: '', 
                 items: [
@@ -401,12 +401,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'IRITA',
                                 intro: '支持下一代分佈式商業的聯盟鏈產品',
-                                route: '/zh-hk/products/irita'
+                                route: '/zh-HK/products/irita'
                             },
                             {
                                 abbreviation: 'IRITA HUB',
                                 intro: '異構區塊鏈跨鏈服務樞紐',
-                                route: '/zh-hk/products/iritahub'
+                                route: '/zh-HK/products/iritahub'
                             },
                             {
                                 abbreviation: 'AVATA',
@@ -427,12 +427,12 @@ const EDITION_NAV = {
                             {
                                 abbreviation: '元宇寶盒全球版',
                                 intro: '多鏈 NFT 應用賦能工具',
-                                route: '/zh-hk/products/nftapplication'
+                                route: '/zh-HK/products/nftapplication'
                             },
                             {
                                 abbreviation: 'NFT 跨鏈錢包',
                                 intro: '跨鏈 NFT 資產管理工具',
-                                route: '/zh-hk/products/nftapplication'
+                                route: '/zh-HK/products/nftapplication'
                             },
                         ]
                     }
@@ -444,17 +444,17 @@ const EDITION_NAV = {
                         icon: 'icon-zhengwu', 
                         scene: '金融服務',
                         text: '亞洲數字銀行',
-                        link: '/zh-hk/applications/finance-trade'
+                        link: '/zh-HK/applications/finance-trade'
                     },
                     {
                         icon: 'icon-kuajingmaoyi', 
                         scene: '跨境貿易',
                         text: '絲路之舟',
-                        link: '/zh-hk/applications/finance-trade'
+                        link: '/zh-HK/applications/finance-trade'
                     }
                 ]
             },
-            { text: '關於我們', link: '/zh-hk/about' }
+            { text: '關於我們', link: '/zh-HK/about' }
         ],
         'en': [
             { text: 'Home', link: '/en/' },
@@ -529,7 +529,7 @@ const EDITION_NAV = {
 
 const EDITION_COMPANY = {
     inland: {
-        'zh-cn': {
+        'zh-CN': {
             title: '公司',
             content: [
                 {
@@ -538,15 +538,15 @@ const EDITION_COMPANY = {
                 },
                 {
                     label: '企业动态',
-                    route: '/zh-cn/news'
+                    route: '/zh-CN/news'
                 },
                 {
                     label: '关于我们',
-                    route: '/zh-cn/about'
+                    route: '/zh-CN/about'
                 }
             ]
         },
-        'zh-hk': {
+        'zh-HK': {
             title: '公司',
             content: [
                 {
@@ -555,11 +555,11 @@ const EDITION_COMPANY = {
                 },
                 {
                     label: '企业动态',
-                    route: '/zh-cn/news'
+                    route: '/zh-CN/news'
                 },
                 {
                     label: '关于我们',
-                    route: '/zh-cn/about'
+                    route: '/zh-CN/about'
                 }
             ]
         },
@@ -572,17 +572,17 @@ const EDITION_COMPANY = {
                 },
                 {
                     label: '企业动态',
-                    route: '/zh-cn/news'
+                    route: '/zh-CN/news'
                 },
                 {
                     label: '关于我们',
-                    route: '/zh-cn/about'
+                    route: '/zh-CN/about'
                 }
             ]
         }
     },
     international: {
-        'zh-cn': {
+        'zh-CN': {
             title: '公司',
             content: [
                 {
@@ -591,11 +591,11 @@ const EDITION_COMPANY = {
                 },
                 {
                     label: '关于我们',
-                    route: '/zh-cn/about'
+                    route: '/zh-CN/about'
                 }
             ]
         },
-        'zh-hk': {
+        'zh-HK': {
             title: '公司',
             content: [
                 {
@@ -604,7 +604,7 @@ const EDITION_COMPANY = {
                 },
                 {
                     label: '關於我們',
-                    route: '/zh-hk/about'
+                    route: '/zh-HK/about'
                 }
             ]
         },
@@ -626,13 +626,13 @@ const EDITION_COMPANY = {
 
 const CONTACT_US_TITLE = {
     inland: {
-        'zh-cn': '联系我们',
-        'zh-hk': '联系我们',
+        'zh-CN': '联系我们',
+        'zh-HK': '联系我们',
         'en': '联系我们'
     },
     international: {
-        'zh-cn': '联系我们',
-        'zh-hk': '聯繫我們',
+        'zh-CN': '联系我们',
+        'zh-HK': '聯繫我們',
         'en': 'Contact Us'
     }
 }
@@ -660,20 +660,20 @@ const CONTACT_US = {
 
 const SCAN_CODE_FOLLOW_US = {
     inland: {
-        'zh-cn': '扫码关注我们',
-        'zh-hk': '扫码关注我们',
+        'zh-CN': '扫码关注我们',
+        'zh-HK': '扫码关注我们',
         'en': '扫码关注我们'
     },
     international: {
-        'zh-cn': '扫码关注我们',
-        'zh-hk': '掃碼關注我們',
+        'zh-CN': '扫码关注我们',
+        'zh-HK': '掃碼關注我們',
         'en': 'Scan the QR code to follow us'
     }
 }
 
 const COPYRIGHT_RECORD = {
     inland: {
-        'zh-cn': [
+        'zh-CN': [
             {
                 label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
             },
@@ -686,7 +686,7 @@ const COPYRIGHT_RECORD = {
                 href: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028'
             }
         ],
-        'zh-hk': [
+        'zh-HK': [
             {
                 label: `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
             },
@@ -714,12 +714,12 @@ const COPYRIGHT_RECORD = {
         ]
     },
     international: {
-        'zh-cn': [
+        'zh-CN': [
             {
                 label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
             }
         ],
-        'zh-hk': [
+        'zh-HK': [
             {
                 label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
             }
@@ -737,7 +737,7 @@ const ADVANTAGES_HEIGHT = 20;
 
 const DOM_TITLE = {
     inland: {
-        '/zh-cn/': {
+        '/zh-CN/': {
             '': '首页',
             'products/iritahub.html': 'IRITA HUB-核心产品',
             'products/iritaopb.html': 'IRITA OPB-核心产品',
@@ -757,7 +757,7 @@ const DOM_TITLE = {
             'honour.html': '关于边界-荣誉资质',
             'join.html': '关于边界-加入我们'
         },
-        '/zh-hk/': {
+        '/zh-HK/': {
             '': '首页',
             'products/iritahub.html': 'IRITA HUB-核心产品',
             'products/iritaopb.html': 'IRITA OPB-核心产品',
@@ -799,7 +799,7 @@ const DOM_TITLE = {
         }
     },
     international: {
-        '/zh-cn/': {
+        '/zh-CN/': {
             '': '首页',
             'products/irita.html': 'IRITA-核心产品',
             'products/iritahub.html': 'IRITA HUB-核心产品',
@@ -807,7 +807,7 @@ const DOM_TITLE = {
             'applications/finance-trade.html': '应用场景',
             'about.html': '关于我们',
         },
-        '/zh-hk/': {
+        '/zh-HK/': {
             '': '首頁',
             'products/irita.html': 'IRITA-核心產品',
             'products/iritahub.html': 'IRITA HUB-核心產品',
@@ -833,7 +833,7 @@ const PRO_TITLE = {
 
 const SEO_META = {
     inland: {
-        '/zh-cn/': [
+        '/zh-CN/': [
             {
                 name: 'name',
                 nameValue: 'keywords',
@@ -859,7 +859,7 @@ const SEO_META = {
                 contentDesc: 'KXEyCmQU'
             }
         ],
-        '/zh-hk/': [
+        '/zh-HK/': [
             {
                 name: 'name',
                 nameValue: 'keywords',
@@ -913,7 +913,7 @@ const SEO_META = {
         ]
     },
     international: {
-        '/zh-cn/': [
+        '/zh-CN/': [
             {
                 name: 'name',
                 nameValue: 'keywords',
@@ -939,7 +939,7 @@ const SEO_META = {
                 contentDesc: '6eee4b62bc60152804004a038c8ac1bd'
             }
         ],
-        '/zh-hk/': [
+        '/zh-HK/': [
             {
                 name: 'name',
                 nameValue: 'keywords',
