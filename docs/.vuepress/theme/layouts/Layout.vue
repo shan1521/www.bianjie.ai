@@ -116,6 +116,7 @@ export default {
         script.language = "JavaScript";
         document.body.appendChild(script);
         this.setHeadMeta(this.$store.state.currentLang);
+        console.log(localStorage.getItem('currentLang'), 'localStorage.getLang');
     },
     watch: {
         '$route.path': {
