@@ -23,8 +23,9 @@
                         <div class="contact">
                             <span class="contact_title">{{ contactUSTitle }}</span>
                             <div class="contact_us" v-for="(item, index) in contactUS" :key="index">
+                                <ClipCopy v-if="item.copy" class="contact_item" :copyText="item.label" :copySign="copyText" />
                                 <a
-                                    v-if="item.href"
+                                    v-else-if="item.href"
                                     class="contact_item"
                                     :href="item.href"
                                     target="_self"
@@ -70,6 +71,7 @@
 </template>
 
 <script>
+import ClipCopy from './Common/ClipCopy.vue';
 import { getLocalesFooter, getCurrentEdition } from '../util';
 import footerInlandPng from '../assets/home/logo_footer.png';
 import footerInterPng from '../assets/home/logo_footer_inter.png';
@@ -90,6 +92,9 @@ export default {
         },
         contactUS() {
             return this.footerInfo.contactUS;
+        },
+        copyText() {
+            return this.footerInfo.copyText;
         },
         scanCodeFollowUS() {
             return this.footerInfo.scanCodeFollowUS;
@@ -115,6 +120,9 @@ export default {
             immediate: true,
             deep: true
         }
+    },
+    components: {
+        ClipCopy
     }
 };
 </script>
@@ -122,8 +130,8 @@ export default {
 <style lang='stylus' scoped>
 .footer_container {
     width: 100%;
-    height: 31.2rem;
-    flex: 0 0 31.2rem;
+    height: auto;
+    flex: 0 0 auto;
 
     .footer_content_top {
         width: 100%;
@@ -152,7 +160,7 @@ export default {
                     padding-right: 4.8rem;
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 840px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -178,10 +186,10 @@ export default {
                     display: flex;
                     font-size: $fontSize14;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 840px) {
                         margin-top: 6rem;
                     }
-                    @media (max-width: 575px) {
+                    @media (max-width: 580px) {
                         margin-top: 3.2rem;
                         justify-content: space-between;
                     }
@@ -190,7 +198,7 @@ export default {
                         display: flex;
                         flex-direction: column;
 
-                        @media (max-width: 575px) {
+                        @media (max-width: 580px) {
                             margin-top: 2.4rem;
                             align-items: center;
                         }
@@ -200,9 +208,6 @@ export default {
                             font-weight: $fontWeight600;
                             color: #fff;
                             line-height: 2.4rem;
-                            @media (max-width: 575px) {
-                                text-align: center;
-                            }
 
                             &::after {
                                 content: '';
@@ -211,6 +216,11 @@ export default {
                                 width: 5.6rem;
                                 height: 0.1rem;
                                 background: rgba(255, 255, 255, 0.4);
+                            }
+                            @media (max-width: 580px) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
                             }
                         }
                         .company_info {
@@ -238,7 +248,7 @@ export default {
                             margin-left: 6rem;
                         }
 
-                        @media (max-width: 575px) {
+                        @media (max-width: 580px) {
                             margin-top: 2.4rem;
                             margin-left: 4.8rem;
                             align-items: center;
@@ -257,6 +267,11 @@ export default {
                                 width: 5.6rem;
                                 height: 0.1rem;
                                 background: rgba(255, 255, 255, 0.4);
+                            }
+                            @media (max-width: 580px) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
                             }
                         }
                         
@@ -281,10 +296,10 @@ export default {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        @media (max-width: 1096px) {
-                            margin-left: 6rem;
+                        @media (max-width: 768px) {
+                            margin-left: 9rem;
                         }
-                        @media (max-width: 575px) {
+                        @media (max-width: 580px) {
                             display: none;
                         }
                         
@@ -305,6 +320,7 @@ export default {
                             font-weight: $fontWeight400;
                             color: #fff;
                             line-height: 2.4rem;
+                            text-align: center;
                         }
                     }
                 }

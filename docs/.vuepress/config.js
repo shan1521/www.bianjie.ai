@@ -1,4 +1,4 @@
-const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD, PRO_TITLE, OG_CONTENT } = require('./theme/constants');
+const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, COPY_TEXT, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD, PRO_TITLE, OG_CONTENT } = require('./theme/constants');
 const { getCurrentEditionPrefix } = require('./theme/util');
 const editionPrefix = getCurrentEditionPrefix();
 const headMetaArr = [
@@ -20,6 +20,7 @@ module.exports = {
 					companyInfo: EDITION_COMPANY[editionPrefix]['zh-CN'],
 					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-CN'],
 					contactUS: CONTACT_US[editionPrefix],
+					copyText: COPY_TEXT[editionPrefix]['zh-CN'],
 					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-CN'],
 					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-CN']
 				},
@@ -30,6 +31,7 @@ module.exports = {
 					companyInfo: EDITION_COMPANY[editionPrefix]['zh-HK'],
 					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['zh-HK'],
 					contactUS: CONTACT_US[editionPrefix],
+					copyText: COPY_TEXT[editionPrefix]['zh-HK'],
 					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['zh-HK'],
 					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['zh-HK']
 				},
@@ -40,6 +42,7 @@ module.exports = {
 					companyInfo: EDITION_COMPANY[editionPrefix]['en'],
 					contactUSTitle: CONTACT_US_TITLE[editionPrefix]['en'],
 					contactUS: CONTACT_US[editionPrefix],
+					copyText: COPY_TEXT[editionPrefix]['en'],
 					scanCodeFollowUS: SCAN_CODE_FOLLOW_US[editionPrefix]['en'],
 					copyrightInfo: COPYRIGHT_RECORD[editionPrefix]['en']
 				},

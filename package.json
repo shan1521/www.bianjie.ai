@@ -22,6 +22,7 @@
     "homepage": "https://github.com/shan1521/www.bianjie.ai#readme",
     "dependencies": {
         "async-validator": "^1.11.5",
+        "clipboard": "^2.0.11",
         "element-ui": "^2.15.5",
         "swiper": "^5.2.0",
         "vue-awesome-swiper": "^4.1.1",
