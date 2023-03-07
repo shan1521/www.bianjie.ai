@@ -271,7 +271,7 @@ export default {
             this.$router.push(this.$store.state.currentLang);
         },
         changeIndex(index) {
-            if (this.currentIndex !== index && index !== 6 && index !== 1 && index !== 2) {
+            if (this.currentIndex !== index && index !== 1 && index !== 2) {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }

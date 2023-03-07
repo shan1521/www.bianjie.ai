@@ -117,7 +117,6 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
-            { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
         'zh-HK': [
@@ -217,7 +216,6 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
-            { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
         'en': [
@@ -317,7 +315,6 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
-            { text: '付费资讯', link: 'https://www.bianjie.ai/pay-information/', isOutLink: true },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ]
     },
