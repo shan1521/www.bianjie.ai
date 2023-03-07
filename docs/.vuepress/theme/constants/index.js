@@ -534,15 +534,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'https://www.blockbeat.hk/'
-                },
-                {
-                    label: '企业动态',
-                    route: '/zh-CN/news'
-                },
-                {
-                    label: '关于我们',
-                    route: '/zh-CN/about'
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         },
@@ -551,15 +543,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'https://www.blockbeat.hk/'
-                },
-                {
-                    label: '企业动态',
-                    route: '/zh-CN/news'
-                },
-                {
-                    label: '关于我们',
-                    route: '/zh-CN/about'
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         },
@@ -568,15 +552,7 @@ const EDITION_COMPANY = {
             content: [
                 {
                     label: '边界智能·国际',
-                    href: 'https://www.blockbeat.hk/'
-                },
-                {
-                    label: '企业动态',
-                    route: '/zh-CN/news'
-                },
-                {
-                    label: '关于我们',
-                    route: '/zh-CN/about'
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         }
@@ -588,10 +564,6 @@ const EDITION_COMPANY = {
                 {
                     label: '边界智能·中国',
                     href: 'https://www.bianjie.ai/'
-                },
-                {
-                    label: '关于我们',
-                    route: '/zh-CN/about'
                 }
             ]
         },
@@ -601,10 +573,6 @@ const EDITION_COMPANY = {
                 {
                     label: '邊界智能·中國',
                     href: 'https://www.bianjie.ai/'
-                },
-                {
-                    label: '關於我們',
-                    route: '/zh-HK/about'
                 }
             ]
         },
@@ -614,10 +582,6 @@ const EDITION_COMPANY = {
                 {
                     label: 'BIANJIE.AI China',
                     href: 'https://www.bianjie.ai/'
-                },
-                {
-                    label: 'About Us',
-                    route: '/en/about'
                 }
             ]
         }
@@ -640,22 +604,29 @@ const CONTACT_US_TITLE = {
 const CONTACT_US = {
     inland: [
         {
-            label: 'contact@bianjie.ai'
-        },
-        {
-            label: 'www.bianjie.ai',
-            href: 'https://www.bianjie.ai/'
+            label: 'contact@bianjie.ai',
+            copy: true
         }
     ],
     international: [
         {
-            label: 'contact@bianjie.ai'
-        },
-        {
-            label: 'www.blockbeat.hk',
-            href: 'https://www.blockbeat.hk/'
+            label: 'contact@blockbeat.hk',
+            copy: true
         }
     ]
+}
+
+const COPY_TEXT = {
+    inland: {
+        'zh-CN': '复制成功',
+        'zh-HK': '复制成功',
+        'en': '复制成功'
+    },
+    international: {
+        'zh-CN': '复制成功',
+        'zh-HK': '複製成功',
+        'en': 'Copied'
+    }
 }
 
 const SCAN_CODE_FOLLOW_US = {
@@ -1020,6 +991,7 @@ module.exports = {
     EDITION_COMPANY,
     CONTACT_US_TITLE,
     CONTACT_US,
+    COPY_TEXT,
     SCAN_CODE_FOLLOW_US,
     COPYRIGHT_RECORD,
     ADVANTAGES_WIDTH,
