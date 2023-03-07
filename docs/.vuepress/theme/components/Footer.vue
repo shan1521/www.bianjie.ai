@@ -274,7 +274,6 @@ export default {
                                 align-items: center;
                             }
                         }
-                        
                         .contact_us {
                             margin-top: 1.2rem;
                             &:first-child {
@@ -302,7 +301,6 @@ export default {
                         @media (max-width: 580px) {
                             display: none;
                         }
-                        
 
                         .qr_code {
                             width: 13.6rem;
