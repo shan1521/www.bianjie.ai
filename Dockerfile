@@ -24,9 +24,5 @@ RUN echo -e 'server {\n\
           add_header Cache-Control no-cache;\n\
         }\n\
     }\n\
-    location /pay-information {\n\
-      rewrite ^/pay-information/(.*)$ / break;\n\
-      proxy_pass https://info.bianjie.ai;\n\
-    }\n\
 }' > /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
