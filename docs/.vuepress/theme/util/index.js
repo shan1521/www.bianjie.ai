@@ -49,6 +49,10 @@ const getTextWidth = (text, font = '14px') => {
     return textWidth || 0;
 };
 
+const clearTimer = (timer) => {
+	timer && clearTimeout(timer);
+}
+
 module.exports = {
 	getLocalesNav,
 	getLocalesFooter,
@@ -56,4 +60,5 @@ module.exports = {
 	getCurrentEditionPrefix,
 	getModuleContent,
 	getTextWidth,
+	clearTimer
 }
