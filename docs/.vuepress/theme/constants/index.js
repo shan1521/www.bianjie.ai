@@ -45,7 +45,7 @@ const EDITION_NAV = {
                                 route: '/zh-CN/products/iritaopb'
                             },
                             {
-                                abbreviation: 'BSN 文昌链',
+                                abbreviation: '文昌链',
                                 intro: '基于 IRITA 的开放联盟链',
                                 link: 'https://wenchang.bianjie.ai/'
                             },
@@ -144,7 +144,7 @@ const EDITION_NAV = {
                                 route: '/zh-CN/products/iritaopb'
                             },
                             {
-                                abbreviation: 'BSN 文昌链',
+                                abbreviation: '文昌链',
                                 intro: '基于 IRITA 的开放联盟链',
                                 link: 'https://wenchang.bianjie.ai/'
                             },
@@ -243,7 +243,7 @@ const EDITION_NAV = {
                                 route: '/zh-CN/products/iritaopb'
                             },
                             {
-                                abbreviation: 'BSN 文昌链',
+                                abbreviation: '文昌链',
                                 intro: '基于 IRITA 的开放联盟链',
                                 link: 'https://wenchang.bianjie.ai/'
                             },
