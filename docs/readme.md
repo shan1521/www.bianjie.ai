@@ -22,7 +22,7 @@
             }
         ],
         bsnWenchangchain: {
-            description: BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+            description: 文昌链是基于企业级联盟链产品 IRITA 打造，具备全生态商业服务能力的开放联盟链,
             moreText: 前往上链
         },
         advantageContent: {
