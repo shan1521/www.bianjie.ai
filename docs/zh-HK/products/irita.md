@@ -78,7 +78,7 @@
         techApplication: {
             text: 技術應用,
             wenchang: {
-                text: BSN 文昌鏈,
+                text: 文昌鏈,
                 description: [
                     {
                         paragraph: 「文昌鏈」基於邊界智能的企業級聯盟鏈產品 IRITA 打造，併成為首批在 BSN 環境上線，具備全生態商業服務能力的開放聯盟鏈。
