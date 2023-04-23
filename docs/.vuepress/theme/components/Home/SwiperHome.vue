@@ -3,8 +3,11 @@
         <div class="swiper_home_content_container">
             <div class="swiper_home_content">
                 <div class="title_container">
-                    <span class="title">{{ content.title }}</span>
-                    <span class="sub_title">{{ content.subTitle }}</span>
+                    <span class="title" :class="{title_edition: edition && content.title.length <= 6 }">{{ content.title }}</span>
+                    <span class="sub_title">
+                        <span v-if="edition && content.titleSign" class="title_sign">{{ content.titleSign }}</span>
+                        <span>{{ content.subTitle }}</span>
+                    </span>
                 </div>
                 <a class="more" v-if="content.moreText" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
                     <span class="text">{{content.moreText}}</span>
@@ -15,9 +18,16 @@
 </template>
 
 <script>
+import { getCurrentEdition } from '../../util';
+
 export default {
     name: "SwiperHome",
     props: ["content", "currentSwiper"],
+    data() {
+        return {
+            edition: getCurrentEdition()
+        }
+    },
     computed: {
         homeContent() {
 			return this.$frontmatter.homeContent;
@@ -87,6 +97,8 @@ export default {
             color: #fff;
             line-height: 5.6rem;
             text-align: center;
+            letter-spacing: -0.2rem;
+
             @media (max-width: 968px) {
                 font-size: $fontSize48;
                 line-height: 4.8rem;
@@ -105,9 +117,17 @@ export default {
             }
         }
 
+        .title_edition {
+            margin-right: -2.4rem;
+            letter-spacing: 2.4rem;
+        }
+
         .sub_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin-top: 4.3rem;
-            max-width: 64rem;
+            max-width: 100rem;
             font-size: $fontSize20;
             font-weight: $fontWeight400;
             color: #fff;
@@ -122,6 +142,10 @@ export default {
             }
             @media (max-width: 375px) {
                 font-size: $fontSize14;
+            }
+
+            .title_sign {
+                // margin-bottom: 1.2rem;
             }
         }
     }
