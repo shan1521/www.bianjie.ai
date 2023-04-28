@@ -216,8 +216,8 @@ export default {
                     }
                 }
                 .scenes_item_show_en {
-                    min-height: 38rem;
                     max-height: 38rem;
+                    min-height: 38rem;
                 }
                 .scenes_item_hide {
                     position: absolute;

@@ -75,7 +75,7 @@
                 date: '09月02日',
                 year: '2022',
                 title: 保利当代艺术携手文昌链，「数字艺术品+商业地产营销」，数字与实体「融」出商业新动能,
-                description: 时逢太古地产 50 周年，北京保利当代艺术有限公司携手 BSN 文昌链，以太古地产购物中心为载体，以区块链技术为突破，打造了一款潮流换装类多人互动社交应用「ForMe」，开启「数字艺术品+商业地产营销」新型营销方式。,
+                description: 时逢太古地产 50 周年，北京保利当代艺术有限公司携手文昌链，以太古地产购物中心为载体，以区块链技术为突破，打造了一款潮流换装类多人互动社交应用「ForMe」，开启「数字艺术品+商业地产营销」新型营销方式。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-09-02.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493115&idx=1&sn=e9a047d9484dc2ea0ed47190debc4c3c&chksm=fae9542acd9edd3ce9f214c2377ff14807e07c71cd308baa440009158ac2c342c0abcc607f2f&token=1091339878&lang=zh_CN#rd
@@ -84,7 +84,7 @@
                 date: '08月24日',
                 year: '2022',
                 title: 文昌链助力 CHARLES & KEITH 开启「星际幻宙」 解锁元宇宙艺术追光之旅,
-                description: 系列「星际幻宙」数字艺术品基于 BSN 文昌链 NFT 技术打造，是将艺术作品在 BSN 文昌链上通过数字手段加密后进行唯一标识，合规生成的具有独特收藏价值的数字艺术品。,
+                description: 系列「星际幻宙」数字艺术品基于文昌链 NFT 技术打造，是将艺术作品在文昌链上通过数字手段加密后进行唯一标识，合规生成的具有独特收藏价值的数字艺术品。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-08-24.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493062&idx=1&sn=069a2f4af0ccdfe7ca6e0acec285c650&chksm=fae95417cd9edd01f40f86cfcaf8add3e8542337f8662e78a0a3440373832bfdd0d42b749a89&token=204525573&lang=zh_CN#rd
@@ -92,8 +92,8 @@
             {
                 date: '08月19日',
                 year: '2022',
-                title: 凤凰网旗下「凰家艺品」与 BSN 文昌链达成战略合作，合作共建多链/跨链生态体系,
-                description: 凤凰网官方数字艺术藏品平台——「凰家艺品」与 BSN 文昌链正式达成战略合作，未来将共同为数字藏品用户提供更好的技术与服务体验。,
+                title: 凤凰网旗下「凰家艺品」与文昌链达成战略合作，合作共建多链/跨链生态体系,
+                description: 凤凰网官方数字艺术藏品平台——「凰家艺品」与文昌链正式达成战略合作，未来将共同为数字藏品用户提供更好的技术与服务体验。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-08-19.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247493041&idx=2&sn=a43e8c86582c6000987738ee34a3df07&chksm=fae95460cd9edd7673bd5e288b7043b336a9f9a8873b41a4b0a4064e6bdd156480471e792942&token=204525573&lang=zh_CN#rd
@@ -210,7 +210,7 @@
                 date: '03月07日',
                 year: '2022',
                 title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
-                description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持 BSN 文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
+                description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490596&idx=1&sn=40299e19cbf8e3cabadc8b449fa41b00&chksm=faeaadf5cd9d24e352c4f4ae73896c230117a262c9f48f44a50a8d48735420fb46ca7f7c2b55&token=580899675&lang=zh_CN#rd
@@ -497,7 +497,7 @@
             {
                 date: '5月8日',
                 year: '2021',
-                title: 【边界快讯】“智慧政务+区块链” 都江堰市行政审批局智慧政务在 BSN 文昌链上线了,
+                title: 【边界快讯】“智慧政务+区块链” 都江堰市行政审批局智慧政务在文昌链上线了,
                 description: 「政务服务底层区块链平台」应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中「区块链电子证照系统」的搭建，该系统基于 BSN 首批开放联盟链「文昌链」开发，也是 BSN 开放联盟链「文昌链」部署的首个政务应用。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/6%20.png,
                 route: ,

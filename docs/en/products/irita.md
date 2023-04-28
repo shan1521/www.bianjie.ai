@@ -78,7 +78,7 @@
         techApplication: {
             text: Application of Technology,
             wenchang: {
-                text: BSN Wenchang Chain,
+                text: Wenchang Chain,
                 description: [
                     {
                         paragraph: Wenchang Chain is built by Bianjie with its enterprise-level consortium chain product - IRITA，and is one of the first Open Permissioned Blochains (OPB) equipped with full-ecosystem business service capacity to be launched in the BSN environment.

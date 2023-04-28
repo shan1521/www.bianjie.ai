@@ -22,7 +22,7 @@
             },
         ],
         bsnWenchangchain: {
-            description: BSN 文昌链是基于 IRITA 打造，具备全生态商业服务能力的开放联盟链,
+            description: 文昌链是基于企业级联盟链产品 IRITA 打造，具备全生态商业服务能力的开放联盟链,
             moreText: 前往上链
         },
         advantageContent: {
@@ -232,7 +232,7 @@
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
                 title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
                 date: '2022-03-07',
-                intro: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持 BSN 文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
+                intro: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
                 link: https://mp.weixin.qq.com/s/airYH9g26AUKyj33cAtllQ,
                 route: ,
             },
@@ -266,13 +266,14 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: BIANJIE.AI Global,
+                title: Blockbeat,
+                titleSign: A BIANJIE Global Company,
                 subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
             },
             {
                 img: banner_home_3.png,
                 title: Professionalism · Excellence · Openness,
-                subTitle: Become a global-wide respected and revered blockchain innovation team，create far-reaching values for partners and industries
+                subTitle: Become a global-wide respected and revered blockchain innovation team，<span class="sub_title_wrap">create far-reaching values for partners and industries</span>
             }
         ],
         advantageContent: {
