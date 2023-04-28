@@ -91,8 +91,8 @@ export default {
             align-items: center;
             box-sizing: border-box;
             width: 24rem;
-            min-height: 35.6rem;
             max-height: 39.8rem;
+            min-height: 35.6rem;
             border: 0.1rem solid #E1E5F4;
             border-radius: 0.4rem;
             .list_item_top {

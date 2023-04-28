@@ -273,7 +273,7 @@
             {
                 img: banner_home_3.png,
                 title: Professionalism · Excellence · Openness,
-                subTitle: Become a global-wide respected and revered blockchain innovation team，create far-reaching values for partners and industries
+                subTitle: Become a global-wide respected and revered blockchain innovation team，<span class="sub_title_wrap">create far-reaching values for partners and industries</span>
             }
         ],
         advantageContent: {

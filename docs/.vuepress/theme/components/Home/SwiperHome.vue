@@ -6,7 +6,7 @@
                     <span class="title" :class="{title_edition: edition && content.title.length <= 6 }">{{ content.title }}</span>
                     <span class="sub_title">
                         <span v-if="edition && content.titleSign" class="title_sign">{{ content.titleSign }}</span>
-                        <span>{{ content.subTitle }}</span>
+                        <span v-html="content.subTitle"></span>
                     </span>
                 </div>
                 <a class="more" v-if="content.moreText" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
@@ -68,6 +68,7 @@ export default {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 0 1.6rem;
             }
             .more {
                 display: inline-block;
@@ -140,12 +141,16 @@ export default {
                 margin-top: 2.4rem;
                 font-size: $fontSize16;
             }
-            @media (max-width: 375px) {
+            @media (max-width: 400px) {
                 font-size: $fontSize14;
+                line-height: 2rem;
             }
 
-            .title_sign {
-                // margin-bottom: 1.2rem;
+            .sub_title_wrap {
+                display: block;
+                @media (max-width: 600px) {
+                    display: inline;
+                }
             }
         }
     }
