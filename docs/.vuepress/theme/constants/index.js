@@ -388,7 +388,7 @@ const EDITION_NAV = {
                 ]
             },
             { text: '关于我们', link: '/zh-CN/about' },
-            { text: '边界智能·国际', link: 'https://bianjie.ai', isRight: true, target: '_blank' }
+            { text: '边界智能·中国', link: 'https://bianjie.ai', isRight: true, target: '_blank' }
         ],
         'zh-HK': [
             { text: '首頁', link: '/zh-HK/' },
@@ -836,7 +836,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -862,7 +862,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -888,7 +888,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -916,7 +916,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
             },
             {
                 name: 'name',
@@ -942,7 +942,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界智能公司,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
             {
                 name: 'name',
@@ -968,7 +968,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
             {
                 name: 'name',
