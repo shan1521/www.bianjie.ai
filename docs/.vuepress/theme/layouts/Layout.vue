@@ -2,6 +2,9 @@
     <div
         class="theme-container"
     >
+        <!-- 百度站长 logo -->
+        <img class="web_logo" src="../assets/link_logo.jpg" alt="边界智能">
+        <img class="web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="边界智能">
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
@@ -175,6 +178,12 @@ export default {
 
     .main_container {
         flex: 1;
+    }
+    .web_logo {
+        display: none;
+    }
+    .web_logo_mobile {
+        display: none;
     }
 }
 </style>

@@ -117,6 +117,7 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
+            { text: '边界智能·国际', link: 'https://bianjie.hk', isRight: true, target: '_blank' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
         'zh-HK': [
@@ -216,6 +217,7 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
+            { text: '边界智能·国际', link: 'https://bianjie.hk', isRight: true, target: '_blank' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ],
         'en': [
@@ -315,6 +317,7 @@ const EDITION_NAV = {
             { text: '企业动态', link: '/zh-CN/news' },
             { text: '合作伙伴', link: '/zh-CN/partners' },
             { text: '关于边界', link: '/zh-CN/about' },
+            { text: '边界智能·国际', link: 'https://bianjie.hk', isRight: true, target: '_blank' },
             { text: '了解更多', link: '/download', isRight: true, target: '_blank' },
         ]
     },
@@ -384,7 +387,8 @@ const EDITION_NAV = {
                     }
                 ]
             },
-            { text: '关于我们', link: '/zh-CN/about' }
+            { text: '关于我们', link: '/zh-CN/about' },
+            { text: '边界智能·中国', link: 'https://bianjie.ai', isRight: true, target: '_blank' }
         ],
         'zh-HK': [
             { text: '首頁', link: '/zh-HK/' },
@@ -451,7 +455,8 @@ const EDITION_NAV = {
                     }
                 ]
             },
-            { text: '關於我們', link: '/zh-HK/about' }
+            { text: '關於我們', link: '/zh-HK/about' },
+            { text: '邊界智能·中國', link: 'https://bianjie.ai', isRight: true, target: '_blank' }
         ],
         'en': [
             { text: 'Home', link: '/en/' },
@@ -519,7 +524,8 @@ const EDITION_NAV = {
                     }
                 ]
             },
-            { text: 'About Us', link: '/en/about' }
+            { text: 'About Us', link: '/en/about' },
+            { text: 'BIANJIE.AI China', link: 'https://bianjie.ai', isRight: true, target: '_blank' }
         ]
     }
 }
@@ -527,8 +533,12 @@ const EDITION_NAV = {
 const EDITION_COMPANY = {
     inland: {
         'zh-CN': {
-            title: '公司',
+            title: '关于我们',
             content: [
+                {
+                    label: '边界智能·中国',
+                    href: 'https://www.bianjie.ai/'
+                },
                 {
                     label: '边界智能·国际',
                     href: 'https://www.bianjie.hk/'
@@ -536,8 +546,12 @@ const EDITION_COMPANY = {
             ]
         },
         'zh-HK': {
-            title: '公司',
+            title: '关于我们',
             content: [
+                {
+                    label: '边界智能·中国',
+                    href: 'https://www.bianjie.ai/'
+                },
                 {
                     label: '边界智能·国际',
                     href: 'https://www.bianjie.hk/'
@@ -545,8 +559,12 @@ const EDITION_COMPANY = {
             ]
         },
         'en': {
-            title: '公司',
+            title: '关于我们',
             content: [
+                {
+                    label: '边界智能·中国',
+                    href: 'https://www.bianjie.ai/'
+                },
                 {
                     label: '边界智能·国际',
                     href: 'https://www.bianjie.hk/'
@@ -556,29 +574,41 @@ const EDITION_COMPANY = {
     },
     international: {
         'zh-CN': {
-            title: '公司',
+            title: '关于我们',
             content: [
                 {
                     label: '边界智能·中国',
                     href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: '边界智能·国际',
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         },
         'zh-HK': {
-            title: '公司',
+            title: '關於我們',
             content: [
                 {
                     label: '邊界智能·中國',
                     href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: '邊界智能·國際',
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         },
         'en': {
-            title: 'Company',
+            title: 'About Us',
             content: [
                 {
                     label: 'BIANJIE.AI China',
                     href: 'https://www.bianjie.ai/'
+                },
+                {
+                    label: 'BIANJIE.AI Global',
+                    href: 'https://www.bianjie.hk/'
                 }
             ]
         }
@@ -684,17 +714,17 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-CN': [
             {
-                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司`
+                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司<span class="copy_suffix">（边界智能旗下国际业务公司）</span>`
             }
         ],
         'zh-HK': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司`
+                label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司<span class="copy_suffix">（邊界智能旗下國際業務公司）</span>`
             }
         ],
         'en': [
             {
-                label: `All rights reserved ©${new Date().getFullYear()} Blockbeat Technology Limited`
+                label: `All rights reserved ©${new Date().getFullYear()} Blockbeat Technology Limited<span class="copy_suffix"> (A BIANJIE Company)</span>`
             }
         ]
     }
@@ -806,7 +836,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -832,7 +862,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -858,7 +888,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -886,7 +916,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界区块链,边界智能官网,上海边界官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
+                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
             },
             {
                 name: 'name',
@@ -912,7 +942,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界智能公司,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
             {
                 name: 'name',
@@ -938,7 +968,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界區塊鏈,邊界智能官網,上海邊界官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
             },
             {
                 name: 'name',
@@ -972,8 +1002,8 @@ const OG_CONTENT = {
 		]
     ],
     international: [
-        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/share_logo.jpg' }],
-		['meta', { property: 'og:title', content: 'BIANJIE.AI Global' }],
+        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/blockbeat_logo.jpg' }],
+		['meta', { property: 'og:title', content: '區塊驛動' }],
 		[
 			'meta',
 			{ property: 'og:description', content: 'BIANJIE.AI Global 是⼀家專注於區塊鏈技術及應用創新、全球領先的區塊鏈技術及應用服務商。BIANJIE.AI Global 與全球夥伴深度合作，在數字金融、跨境貿易、跨鏈服務、元宇宙等領域共同推進創新技術落地應用，服務全球實體經濟。' },

@@ -67,6 +67,13 @@
                         </div>
                     </li>
                 </ul>
+                <div class="line" :class="{line_color: isColor}"></div>
+                <div v-if="interConnect" class="more">
+                    <a class="nav_list_item" :class="{nav_list_item_color: isColor}" :href="interConnect.link" target="_blank" rel="noopener noreferrer">
+                        <i class="iconfont icon-company" :class="{iconfont_color: isColor}"></i>
+                        {{interConnect.text}}
+                    </a>
+                </div>
                 <div v-if="download" class="more">
                     <router-link
                         class="nav_list_item"
@@ -80,7 +87,6 @@
                     </router-link>
                 </div>
                 <div v-if="edition" class="select_btn" :class="{select_btn_color: isColor}" >
-                    <div class="line"></div>
                     <div class="lang_wrap" @click="openLangSubMenu">
                         <i class="iconfont icon-yuyan" :class="{ iconfont_color: isColor}"></i>
                         <span class="default_lang">{{selectedLang}}</span>
@@ -170,6 +176,12 @@
                         </div>
                     </li>
                 </ul>
+                <div v-if="interConnect" class="more">
+                    <a class="nav_list_item" :class="{nav_list_item_color: isColor}" :href="interConnect.link" target="_blank" rel="noopener noreferrer">
+                        <i class="iconfont icon-company" :class="{iconfont_color: isColor}"></i>
+                        {{interConnect.text}}
+                    </a>
+                </div>
                 <div v-if="download" class="more">
                     <router-link
                         class="nav_list_item"
@@ -207,7 +219,7 @@
 <script>
 import cfg from '../../config.json';
 import { getLocalesNav, getCurrentEdition, getCurrentEditionPrefix } from '../util';
-import { LANG_OPTIONS, DOM_TITLE, PRO_TITLE, SEO_META } from '../constants';
+import { LANG_OPTIONS, DOM_TITLE, PRO_TITLE } from '../constants';
 import logoWhite from '../assets/home/logo_white.png';
 import logoWhiteInter from '../assets/home/logo_white_inter.png';
 import logoBlack from '../assets/home/logo_black.png';
@@ -253,6 +265,11 @@ export default {
                 this.navigation[this.navigation.length - 1].text
             );
         },
+        interConnect() {
+            if(this.navigation && this.navigation.length > 0) {
+                return this.edition ? this.navigation[this.navigation.length - 1] : this.navigation[this.navigation.length - 2];
+            }
+        }
     },
     methods: {
         getDiffLogo() {
@@ -374,8 +391,11 @@ export default {
         clearTimer(timer) {
             timer && clearTimeout(timer);
         },
-        getDomTitle(path, lang) {
+        getDomTitle(path) {
             const routeLabel = decodeURI(path.split('/').slice(2).join('/'));
+            const lang = path.replace(routeLabel, '');
+            this.$store.commit('currentLang', lang);
+            localStorage.setItem('currentLang', lang);
             const titleSuffix = PRO_TITLE[this.editionPrefix];
             const domTitle = DOM_TITLE[this.editionPrefix][lang][routeLabel] ? `${DOM_TITLE[this.editionPrefix][lang][routeLabel]} | ${titleSuffix}` : titleSuffix;
             document.title = domTitle;
@@ -390,7 +410,7 @@ export default {
                 } else if(newPath === '/zh-cn/') {
                     location.pathname = LANG_OPTIONS[2].value;
                 }
-			    this.getDomTitle(newPath, this.$store.state.currentLang);
+			    this.getDomTitle(newPath);
                 const path = newPath.split('.')[0].split('/')[2];
                 if(path === 'products' || path === 'applications' || path === 'companynews') {
                     this.isColor = true;
@@ -473,8 +493,8 @@ export default {
             }
         }
         .nav_logo_inter {
-            width: 9.05rem;
-            height: 2.4rem;
+            width: 12.5rem;
+            height: 3.2rem;
         }
 
         .nav_list_wrap {
@@ -579,7 +599,7 @@ export default {
                         left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.2rem;
-                        width: 76rem;
+                        width: 89rem;
                         background: #fff;
                         cursor: default;
                         .product_type_list {
@@ -643,7 +663,7 @@ export default {
                         left: 0;
                         box-sizing: border-box;
                         padding: 2.4rem 2.4rem 3.6rem;
-                        width: 76rem;
+                        width: 89rem;
                         background: #fff;
                         cursor: default;
                         .appscenes_scene_list {
@@ -692,15 +712,25 @@ export default {
                 }
             }
 
+            .line {
+                margin-left: 3rem;
+                width: 0.1rem;
+                height: 1.6rem;
+                background: rgba(238, 238, 238, 0.3);
+            }
+            .line_color {
+                background: #eee;
+            }
+
             .more {
-                margin-left: 6rem;
+                margin-left: 3rem;
 
                 .iconfont {
                     display: inline-block;
                     margin-right: 0.2rem;
                     width: 1.6rem;
                     height: 1.6rem;
-                    color: #fff;
+                    color: rgba(255, 255, 255, 0.75);
                 }
                 .iconfont_color {
                     color: $highlightDetailColor;
@@ -709,7 +739,7 @@ export default {
                 .nav_list_item {
                     display: inline-block;
                     height: 100%;
-                    color: #fff;
+                    color: rgba(255, 255, 255, 0.75);
                 }
                 .nav_list_item_color {
                     color: rgba(0, 0, 0, 0.75);
@@ -718,20 +748,14 @@ export default {
             .select_btn {
                 display: flex;
                 align-items: center;
-                margin-left: 3rem;
                 font-size: $fontSize14;
                 font-weight: $fontWeight400;
                 color: rgba(255,255,255,0.75);
                 line-height: 20px;
-                .line {
-                    width: 0.1rem;
-                    height: 1.6rem;
-                    background: rgba(255,255,255,0.75);
-                }
                 .lang_wrap {
                     position: relative;
                     box-sizing: border-box;
-                    padding: 1.4rem 1.2rem 1.4rem 2.9rem;
+                    padding: 1.4rem 1.2rem 1.4rem 3rem;
                     cursor: pointer;
                     .iconfont {
                         font-size: $fontSize16;
@@ -769,9 +793,6 @@ export default {
             }
             .select_btn_color {
                 color: rgba(0,0,0,0.75);
-                .line {
-                    background: #eee;
-                }
             }
         }
     }
@@ -825,6 +846,9 @@ export default {
         .mobile_nav_list_wrap {
             box-sizing: border-box;
             background: #fff;
+            & > .more:nth-last-child(1) {
+                border-bottom: none;
+            }
             .nav_list {
                 .nav_list_item {
                     width: 100%;
@@ -978,12 +1002,12 @@ export default {
             }
             .more {
                 box-sizing: border-box;
-                padding: 0 4.8rem;
+                margin: 0 4.8rem;
                 height: 4.4rem;
                 line-height: 4.4rem;
+                border-bottom: 0.1rem solid #e1e5f4;
                 @media (max-width: 420px) {
-                    padding-left: 1.6rem;
-                    padding-right: 1.6rem;
+                    margin: 0 1.6rem;
                 }
                 .nav_list_item {
                     display: inline-block;
