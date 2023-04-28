@@ -266,7 +266,8 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: BIANJIE.AI Global,
+                title: 区块驿动,
+                titleSign: 边界智能旗下国际业务公司,
                 subTitle: 全球价值互联网建设者·Web 3.0 区块链基础设施服务商
             },
             {

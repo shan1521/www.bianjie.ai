@@ -59,10 +59,10 @@
                             :href="item.href"
                             target="_blank"
                             rel="noreferrer noopener"
+                            v-html="item.label"
                         >
-                            {{ item.label }}
                         </a>
-                        <span v-else>{{ item.label }}</span>
+                        <span v-else v-html="item.label"></span>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@ export default {
                         }
                     }
                     .left_img_inter {
-                        width: 18.1rem;
+                        width: 18.72rem;
                         height: 4.8rem;
                     }
                 }
@@ -342,7 +342,7 @@ export default {
         @media (max-width: 768px) {
             padding: 0 1.6rem;
             height: auto;
-            line-height: 3rem;
+            line-height: 2.4rem;
         }
 
         .bottom_content {
@@ -361,7 +361,12 @@ export default {
                     flex-direction: column;
                     text-align: center;
                 }
-
+                :deep(.copy_suffix) {
+                    @media (max-width: 560px) {
+                        display: block;
+                    }
+                }
+                
                 a {
                     color: rgba(255, 255, 255, 0.75);
                     cursor: pointer;

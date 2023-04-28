@@ -266,13 +266,14 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: BIANJIE.AI Global,
+                title: Blockbeat,
+                titleSign: A BIANJIE Global Company,
                 subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
             },
             {
                 img: banner_home_3.png,
                 title: Professionalism · Excellence · Openness,
-                subTitle: Become a global-wide respected and revered blockchain innovation team，create far-reaching values for partners and industries
+                subTitle: Become a global-wide respected and revered blockchain innovation team，<span class="sub_title_wrap">create far-reaching values for partners and industries</span>
             }
         ],
         advantageContent: {
