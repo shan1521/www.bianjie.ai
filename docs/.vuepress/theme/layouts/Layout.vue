@@ -3,8 +3,8 @@
         class="theme-container"
     >
         <!-- 百度站长 logo -->
-        <img class="web_logo" src="../assets/link_logo.jpg" alt="边界智能">
-        <img class="web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="边界智能">
+        <img class="logo web_logo" src="../assets/link_logo.jpg" alt="边界智能logo">
+        <img class="logo web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="边界智能mobile_logo">
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
