@@ -1,7 +1,7 @@
 <template>
     <div class="home_container">
         <Swiper v-if="homeContent" :homeContent.sync="homeContent"></Swiper>
-        <BSNWenchang v-if="bsnWenchangchain" :bsnWenchangchain.sync="bsnWenchangchain"></BSNWenchang>
+        <Wenchang v-if="wenchangchain" :wenchangchain.sync="wenchangchain"></Wenchang>
         <CaptionImgContent v-if="advantageContent" :captionContent.sync="advantageContent" :imgWidth="advImgWidth" :imgHeight="advImgHeight"></CaptionImgContent>
         <Product v-if="serviceContent" :serviceContent.sync="serviceContent"></Product>
         <Scenes v-if="scenesContent"  :scenesContent.sync="scenesContent"></Scenes>
@@ -12,7 +12,7 @@
 
 <script>
 import Swiper from '@theme/components/Home/Swiper.vue';
-import BSNWenchang from '@theme/components/Home/BSNWenchang.vue';
+import Wenchang from '@theme/components/Home/Wenchang.vue';
 import CaptionImgContent from '@theme/components/Common/CaptionImgContent.vue';
 import Product from '@theme/components/Home/Product.vue';
 import Scenes from '@theme/components/Home/Scenes.vue';
@@ -31,8 +31,8 @@ export default {
         homeContent() {
 			return getModuleContent(this, 'homeContent')
 		},
-        bsnWenchangchain() {
-			return getModuleContent(this, 'bsnWenchangchain')
+        wenchangchain() {
+			return getModuleContent(this, 'wenchangchain')
         },
         advantageContent() {
 			return getModuleContent(this, 'advantageContent')
@@ -52,7 +52,7 @@ export default {
     },
     components: {
         Swiper,
-        BSNWenchang,
+        Wenchang,
         CaptionImgContent,
         Product,
         Scenes,

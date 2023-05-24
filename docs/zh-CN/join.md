@@ -5,6 +5,7 @@
     inland: {
         aboutTitle: {
             title: 关于边界,
+            subTitlePrefix: 区块链技术和应用创新的价值互联网建设者,
             subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
         },
         aboutType: [

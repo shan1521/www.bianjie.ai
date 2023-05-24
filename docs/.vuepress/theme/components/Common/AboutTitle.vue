@@ -3,6 +3,7 @@
         <div class="about_title_content_container">
             <div class="about_title_content">
                 <span class="title">{{ aboutTitle.title }}</span>
+                <span v-if="aboutTitle.subTitlePrefix" class="sub_title sub_title_prefix" :class="{sub_title_en: isEn}">{{ aboutTitle.subTitlePrefix }}</span>
                 <span class="sub_title" :class="{sub_title_en: isEn}">{{ aboutTitle.subTitle }}</span>
             </div>
         </div>
@@ -31,7 +32,7 @@ export default {
         background: url(../../assets/about_banner_768.png) no-repeat center / cover;
     }
     @media (max-width: 400px) {
-        height: 25rem;
+        height: auto;
         background: url(../../assets/other_banner.png) no-repeat center / cover;
     }
 
@@ -46,14 +47,13 @@ export default {
             flex-direction: column;
             align-items: center;
             box-sizing: border-box;
-            // padding: 14.8rem 0 14.7rem;
+            padding: 0 0.16rem;
             @media (max-width: 775px) {
                 padding-left: 4.8rem;
                 padding-right: 4.8rem;
             }
             @media (max-width: 400px) {
-                padding-left: 1.6rem;
-                padding-right: 1.6rem;
+                padding: 2.4rem 1.6rem;
             }
             .title {
                 font-size: $fontSize48;
@@ -67,7 +67,7 @@ export default {
                 }
             }
             .sub_title {
-                margin-top: 1.8rem;
+                margin-top: 1.6rem;
                 font-size: $fontSize20;
                 font-weight: $fontWeight400;
                 color: #fff;
@@ -76,6 +76,9 @@ export default {
                 @media (max-width: 400px) {
                     font-size: $fontSize16;
                 }
+            }
+            .sub_title_prefix {
+                margin-top: 1.8rem;
             }
             .sub_title_en {
                 max-width: 69rem;

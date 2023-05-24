@@ -5,6 +5,7 @@
     inland: {
         aboutTitle: {
             title: 关于边界,
+            subTitlePrefix: 区块链技术和应用创新的价值互联网建设者,
             subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
         },
         aboutType: [
@@ -153,7 +154,7 @@
                         month: '02',
                         events: [
                             {
-                                event: BSN 开放联盟链文昌链 IRITA OPB 正式上线发布
+                                event: 开放联盟链【文昌链 IRITA OPB】正式上线发布
                             }
                         ]
                     },
@@ -174,26 +175,10 @@
                         ]
                     },
                     {
-                        month: '10',
-                        events: [
-                            {
-                                event:  IRITA HUB 成功部署在 BSN 国内和国际版环境中并运营
-                            }
-                        ]
-                    },
-                    {
                         month: '07',
                         events: [
                             {
                                 event: 加入区块链服务网络发展联盟并成为合格开发者
-                            }
-                        ]
-                    },
-                    {
-                        month: '06',
-                        events: [
-                            {
-                                event: BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作
                             }
                         ]
                     },
