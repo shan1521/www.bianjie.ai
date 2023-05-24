@@ -43,7 +43,7 @@ export default {
     width: 100%;
     height: 7.2rem;
 
-    @media (max-width: 870px) {
+    @media (max-width: 910px) {
         height: auto;
     }
 
@@ -66,7 +66,7 @@ export default {
                 padding-right: 4.8rem;
             }
 
-            @media (max-width: 870px) {
+            @media (max-width: 910px) {
                 flex-direction: column;
                 padding-top: 1.6rem;
                 padding-bottom: 1.6rem;
@@ -88,7 +88,7 @@ export default {
 
                     img {
                         display: inline-block;
-                        width: 3.8rem;
+                        width: auto;
                         height: 3.6rem;
                     }
 
@@ -114,7 +114,7 @@ export default {
                     color: $highlightDetailColor;
                 }
 
-                @media (max-width: 870px) {
+                @media (max-width: 910px) {
                     margin-top: 1.6rem;
                     text-align: center;
                     line-height: 2rem;
@@ -130,7 +130,7 @@ export default {
                 line-height: 1.4rem;
                 cursor: pointer;
 
-                @media (max-width: 870px) {
+                @media (max-width: 910px) {
                     margin-top: 1.6rem;
                     text-align: center;
                 }
