@@ -81,7 +81,7 @@
                 text: Wenchang Chain,
                 description: [
                     {
-                        paragraph: Wenchang Chain is built by Bianjie with its enterprise-level consortium chain product - IRITA，and is one of the first Open Permissioned Blochains (OPB) equipped with full-ecosystem business service capacity to be launched in the BSN environment.
+                        paragraph: Wenchang Chain is built by Bianjie with its enterprise-level consortium chain product - IRITA，and is an Open Permissioned Blochains (OPB) equipped with full-ecosystem business service capabilities.
                     },
                     {
                         paragraph: Featuring Interchain，NFT and big data privacy protection technology as its core，Wenchang Chain (based on IRITA) is secure and controllable，and complies with Chinese national cryptography standards. It supports next-generation distributed business systems. Wenchang Chain has already supported the online operation of various industrial applications such as the Shizhu Trusted Identity Service Platform，Moka NFT Management Platform，Electronic License System，Integrated Digital Artwork Registration Service Platform，etc.
