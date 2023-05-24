@@ -42,7 +42,6 @@ export default {
 <style lang="stylus">
 .certiquali_container {
     width: 100%;
-    min-height: 93.2rem;
     background: #fff;
 
     .certiquali_content_container {

@@ -26,13 +26,6 @@
                         link: ,
                     },
                     {
-                        imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png,
-                        relationshipList: [
-                            {relationship: 联盟成员},
-                        ],
-                        link: https://www.bsnbase.com/p/main/index,
-                    },
-                    {
                         imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png,
                         relationshipList: [
                             {relationship: 区块链专委会常务理事单位},
@@ -102,11 +95,6 @@
             {
                 title: 金融领域合作,
                 list: [
-                    {
-                        imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ADB_logo.jpg,
-                        relationshipList: [],
-                        link: http://www.asiadb.com/,
-                    },
                     {
                         imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png,
                         relationshipList: [],
