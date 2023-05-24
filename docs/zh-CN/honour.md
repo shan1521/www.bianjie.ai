@@ -5,6 +5,7 @@
     inland: {
         aboutTitle: {
             title: 关于边界,
+            subTitlePrefix: 区块链技术和应用创新的价值互联网建设者,
             subTitle: 专注于区块链、大数据相关产品技术研发和解决方案的⾼科技公司
         },
         aboutType: [
@@ -35,9 +36,6 @@
                     imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-2.png
                 },
                 {
-                    imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-4.jpeg
-                },
-                {
                     imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor1-5.jpeg
                 },
                 {
@@ -59,9 +57,6 @@
                 },
                 {
                     imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-3.jpeg
-                },
-                {
-                    imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-4.jpeg
                 },
                 {
                     imgSrc: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/honor/honor2-5.jpeg
@@ -87,9 +82,9 @@
                     description: 可信区块链认证是中国信息通信研究院主导的行业领先的区块链产品评测体系，该评测体系有严格的测试指标和审核机制，权威、公正、可信度高。边界智能现为可信区块链推进计划（TBI）理事成员单位。
                 },
                 {
-                    src: lianmengchengyuan.jpg,
-                    title: BSN “ 联盟成员 ” 证书,
-                    description: BSN 联盟成员证书是区块链服务网络发展联盟（BSNDA）开发者委员会颁发的资质证书。边界智能作为 BSN 的联盟成员之一，在联盟链技术研发和实现层面已获得业界权威机构认可。
+                    src: gaoxinzhengshu.png,
+                    title: 国家高新技术企业认证,
+                    description: 全国高新技术企业认定是由国家科技部、财政部、税务总局主导，综合评估企业的核心自主知识产权、科技成果转化能力、研究开发的组织管理水平、成长性指标等多项指标认证结果。获得该项认证代表边界智能已经进入国家高新技术企业行列。
                 },
                 {
                     src: zhiliangguanli.jpeg,
@@ -201,7 +196,7 @@
                         {
                             month: '01',
                             honours: [
-                                {honour: 由边界智能首先完成的 BSN 开放联盟链「文昌链」正式首批上线},
+                                {honour: 基于边界智能的企业级联盟链产品 IRITA 打造的开放联盟链「文昌链」正式上线},
                                 {honour: 由边界智能荣登零壹财经「中国区块链应用 TOP30 企业」榜单},
                                 {honour: 知识产权管理体系认证},
                             ]
@@ -222,7 +217,7 @@
                         {
                             month: '11',
                             honours: [
-                                {honour: 边界智能 IRITA Hub 跨链服务枢纽成功上线 BSN 平台，以支撑 BSN 环境中异构应用链之间的跨链访问与操作},
+                                {honour: 边界智能 IRITA Hub 跨链服务枢纽成功上线，以支撑异构应用链之间的跨链访问与操作},
                                 {honour: 边界智能正式成为 IEEE 标准协会高级会员，并参与区块链跨链互操作等相关领域的标准制定},
                             ]
                         },

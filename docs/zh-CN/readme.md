@@ -21,7 +21,7 @@
                 subTitle: 成为全球备受尊崇的区块链创新团队，为合作伙伴及行业创造深远价值
             }
         ],
-        bsnWenchangchain: {
+        wenchangchain: {
             description: 文昌链是基于企业级联盟链产品 IRITA 打造，具备全生态商业服务能力的开放联盟链,
             moreText: 前往上链
         },
@@ -166,7 +166,6 @@
                     partnerList: [
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/wx_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/xwlzb_logo.png},
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/bsn_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/casme_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tbi_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/industry_ecology/tc601.png},
@@ -182,7 +181,6 @@
                 {
                     fieldName: 金融领域,
                     partnerList: [
-                        {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ADB_logo.jpg},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/dfi_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/ode_logo.png},
                         {src: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/partners/financial_field/zcbri_logo.png},
@@ -403,7 +401,6 @@
             fieldsList: [
                 {
                     partnerList: [
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/ADB.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/HKVAX.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/siluzhizhou.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/circlesquare.jpg},
@@ -418,7 +415,6 @@
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/shucangzhongguo.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/aibeiliandong.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/baoli.jpg},
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/BSN.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/cosmos.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/tendermint.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/IRISnet.jpg},
