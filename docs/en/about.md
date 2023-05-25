@@ -65,8 +65,14 @@
             title: Introduction,
             infoList: [
                 {
-                    paragraph: Blockbeat (A BIANJIE Global Company) is a high-tech enterprise focusing on blockchain technology and application innovation，big data related product technology research and development and solutions，and is committed to building the world's leading professional full life cycle service provider in blockchain industry. BIANJIE.AI works closely with global partners such as the Blockchain-Based Service Network (BSN) and Asian Digital Bank to promote the application of innovative technologies in cross-chain services，digital finance，cross-border trade，and metaverse digital collections，in an effort to serve the global real economy. While insisting on independent innovation，BIANJIE.AI has also been invited to contribute Interchain core codes to multiple global blockchain networks，and is a builder of the global Internet of Values. Bianjie Global is also an innovator and promoter of the global Interchain open-source technology，and is a core developer of the well-known open-source Interchain projects - COSMOS/IRISnet.
-                }
+                    paragraph: 'Blockbeat is an international business company under the blockchain technology innovation team, Bianjie. Since 2016, Bianjie has been dedicated to building a globally interconnected Internet of Value. It serves as the core technology and operational service team for the Open Permissioned Blockchain, WenChang Chain, and is a core open-source developer team for various global blockchain networks, including Cosmos/IRISnet.'
+                },
+                {
+                    paragraph: 'Blockbeat aims to be a full-lifecycle professional service provider in the blockchain industry, serving the global market. Its primary focus lies in Next-Generation Internet (Web3) application services, with blockchain interoperability, NFTs, and smart contracts as the core. Leveraging mainstream public chains and permissioned chains such as WenChang Chain, Cosmos, IRISnet, and Ethereum as the foundation, Blockbeat continuously drives the implementation of high-value innovative business applications in sectors like Web3, metaverse, digital finance, and cross-border trade. Its ultimate objective is to create business value for clients and partners. '
+                },
+                {
+                    paragraph: 'The flagship product, AVATA multi-chain/cross-chain distributed business system service platform,  enables the rapid development of secure and user-friendly Web3 applications. It supports Web3-oriented consumer scenarios, while also providing integrated services for merchants to onboard and process cryptocurrency payments/withdrawals in collaboration with compliant financial institutions.'
+                },
             ]
         }
     }
