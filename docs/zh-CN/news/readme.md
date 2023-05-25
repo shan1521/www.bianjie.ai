@@ -119,8 +119,8 @@
             {
                 date: '07月27日',
                 year: '2022',
-                title: 边界智能 AVATA 多链/跨链 API 服务平台通过第九批境内区块链信息服务备案,
-                description: 边界智能推出的「AVATA 区块链应用快速接入服务」（即「AVATA」多链/跨链 API 服务平台）通过备案。目前，边界智能已有 5 项区块链产品和项目通过网信办区块链信息服务备案。,
+                title: 边界智能 AVATA 多链跨链分布式应用服务平台通过第九批境内区块链信息服务备案,
+                description: 边界智能推出的「AVATA 区块链应用快速接入服务」（即「AVATA」多链跨链分布式应用服务平台）通过备案。目前，边界智能已有 5 项区块链产品和项目通过网信办区块链信息服务备案。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-07-27.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247492466&idx=1&sn=040d88d63912a2bbd9845965dc360a93&chksm=fae952a3cd9edbb51b2820b1a722fae13576c3eccdce722fb01b07f546f586e71a2b1225288c&token=204525573&lang=zh_CN#rd
