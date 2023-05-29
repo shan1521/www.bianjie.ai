@@ -227,11 +227,11 @@
         dynamicContent: {
             title: 企业动态,
             mostImportant: {
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-03-23.png,
-                title: AVATA V2 重磅上线！带您无限链接 Web3,
-                date: '2023-03-23',
-                intro: 为提供更友好、高效的使用体验，边界智能技术团队不断对 AVATA 多链跨链分布式应用服务平台更新升级。2023年 3 月 23 日，AVATA 平台重磅升级至 V2 版本，AVATA V2 API 服务正式发布！,
-                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495570&idx=1&sn=8d1c9637e8ce13c1b641ff404f337d07&chksm=fae95e43cd9ed755407979773b6928a11ace67cee8b62dabe68cf27a1717e6463659e6a4c4ba&token=401845609&lang=zh_CN#rd,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-26.png,
+                title: 4月最高链上交易处理超过以太坊72%! 文昌链闪电网络即将登场,
+                date: '2023-05-26',
+                intro: 2023年4月19日，文昌链 24 小时交易信息数超历史峰值 10%，并超过以太坊同日交易数 72%。文昌链运营及技术支持团队边界智正在开发的二层网络「AVATA 闪电网络」即将进入最后的测试阶段，预计于 6 月正式上线。,
+                link: https://mp.weixin.qq.com/s/1Dh3scsHJvjN6j_h2Mopww,
                 route: ,
             },
             dynamicList: [
