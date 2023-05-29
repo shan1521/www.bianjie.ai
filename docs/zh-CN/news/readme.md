@@ -174,7 +174,7 @@
                 date: '05月25日',
                 year: '2022',
                 title: La Prairie 莱珀妮新品体验活动 NFT 首发文昌链，获权威媒体报道,
-                description: 日前，国际殿堂级护肤品牌 La Prairie 莱珀妮联合全球知名品牌营销机构 CircleSquare 推出「光与水的奇幻邂逅」线下快闪体验活动，获全球旅游零售行业权威媒体《穆迪戴维特报告》（The Moodie Davitt Report）独家报道。本次活动在 BSN-DDC 文昌链 NFT 技术支撑下由「边界智能」团队提供整体技术服务，成功打造并发行了精美绝伦的「纯皙·水中曼舞曲系列数字艺术藏品」。,
+                description: 日前，国际殿堂级护肤品牌 La Prairie 莱珀妮联合全球知名品牌营销机构 CircleSquare 推出「光与水的奇幻邂逅」线下快闪体验活动，获全球旅游零售行业权威媒体《穆迪戴维特报告》（The Moodie Davitt Report）独家报道。本次活动在文昌链 NFT 技术支撑下由「边界智能」团队提供整体技术服务，成功打造并发行了精美绝伦的「纯皙·水中曼舞曲系列数字艺术藏品」。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/20220525laprairie.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247491330&idx=1&sn=9622588b89aeafde741869d1c746bd90&chksm=faeaaed3cd9d27c577cea73f978be72cb244b3f2b47fe336992d252021005efe150513eea908&token=1939730677&lang=zh_CN#rd
@@ -201,7 +201,7 @@
                 date: '03月18日',
                 year: '2022',
                 title: 边界智能 4 项成果通过网信办第七批境内区块链信息服务备案,
-                description: 国家互联网信息办公室发布了第七批境内区块链信息服务备案编号的公告，公示了第七批境内区块链信息服务备案清单。其中，边界智能推出的「建党百年区块链送祝福」区块链小程序、都江堰「智慧政务+区块链」电子证照系统区块链浏览器、区块链服务网络（BSN）开放联盟链文昌链、跨域行业互信联盟产品 IRITA 共 4 个区块链产品和项目通过备案。,
+                description: 国家互联网信息办公室发布了第七批境内区块链信息服务备案编号的公告，公示了第七批境内区块链信息服务备案清单。其中，边界智能推出的「建党百年区块链送祝福」区块链小程序、都江堰「智慧政务+区块链」电子证照系统区块链浏览器、开放联盟链文昌链、跨域行业互信联盟产品 IRITA 共 4 个区块链产品和项目通过备案。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-18.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490663&idx=1&sn=74b1c039d3783309a4bd3c2d9ba9e682&chksm=faeaadb6cd9d24a01d324cff42398ccc30984e541be8eb0db6e7b9067da2965567e84ef1a01e&token=580899675&lang=zh_CN#rd
@@ -211,7 +211,7 @@
                 year: '2022',
                 title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
                 description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-03-23.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490596&idx=1&sn=40299e19cbf8e3cabadc8b449fa41b00&chksm=faeaadf5cd9d24e352c4f4ae73896c230117a262c9f48f44a50a8d48735420fb46ca7f7c2b55&token=580899675&lang=zh_CN#rd
             },
@@ -324,31 +324,13 @@
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247486170&idx=1&sn=357383fbaa3ab077e1b9540d8d8b463f&chksm=faeabb0bcd9d321d46e39d44bcff4f4133fd3b5fb275f03617a67dcafd1e6d307dbef2aa6f86&token=580899675&lang=zh_CN#rd
             },
             {
-                date: '10月11日',
-                year: '2021',
-                title: 亚洲数字银行与边界智能达成战略合作，打造支持自金融服务的新一代数字银行,
-                description: 强强联合！亚洲数字银行和边界智能达成战略合作，采用边界的 IRITA （Cosmos 企业版）区块链架构，包括可支持全球跨链互联的 BSN 开放联盟链「文昌链 IRITA OPB」等，开发打造可支撑高效自金融服务并支持全球合法贸易的新一代数字银行服务基础设施。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/28.png,
-                route: ,
-                link: https://mp.weixin.qq.com/s/norXFKNcq4SZC_dzBnyNbg
-            },
-            {
                 date: '9月30日',
                 year: '2021',
-                title: 海南国际文化艺术品交易中心采用 BSN「文昌链」NFT 技术打造全球化数字艺术品交易市场,
-                description: 海南国际文化艺术品交易中心宣布依托 BSN 开放联盟链「文昌链」作为底层区块链基础设施打造数字艺术品市场，通过前沿区块链跨链技术，与国际主流区块链联通，实现全球优质数字艺术品和数字资产有序流通和交易。,
+                title: 海南国际文化艺术品交易中心采用「文昌链」NFT 技术打造全球化数字艺术品交易市场,
+                description: 海南国际文化艺术品交易中心宣布依托开放联盟链「文昌链」作为底层区块链基础设施打造数字艺术品市场，通过前沿区块链跨链技术，与国际主流区块链联通，实现全球优质数字艺术品和数字资产有序流通和交易。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/27.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s/joDIE2BLGS_FRxMfHqxbsQ
-            },
-            {
-                date: '9月28日',
-                year: '2021',
-                title: 边界智能在 BSN 全球合作伙伴大会：「文昌链 IRITA OPB」跨链 NFT 技术、可信跨境贸易、全球化艺术品等,
-                description: 2021 年 9 月 26 日至 28 日，边界智能受邀参加区块链服务网络（BSN）全球合作伙伴大会，发表两个主题演讲并参与圆桌讨论。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/26.jpg,
-                route: ,
-                link: https://mp.weixin.qq.com/s/5O9KyiRt56IwBVbW6Bdy1g
             },
             {
                 date: '9月13日',
@@ -372,7 +354,7 @@
                 date: '8月23日',
                 year: '2021',
                 title: 边界智能与搜云科技展开深度技术合作，助推中国传统优秀艺术品的全球可信跨链流转,
-                description: 边界智能与搜云科技达成深度技术合作，结合区块链跨链 NFT 技术和传统艺术品，基于边界智能打造的 BSN 开放联盟链「文昌链 IRITA OPB」，为传统艺术品全球可信跨链流转提供技术支撑，助推中国优秀传统艺术全球化。,
+                description: 边界智能与搜云科技达成深度技术合作，结合区块链跨链 NFT 技术和传统艺术品，基于边界智能打造的开放联盟链「文昌链 IRITA OPB」，为传统艺术品全球可信跨链流转提供技术支撑，助推中国优秀传统艺术全球化。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/23.jpg,
                 route: ,
                 link: https://mp.weixin.qq.com/s/xLnifazaHIB7QNIUuXVolw
@@ -486,19 +468,19 @@
                 link: https://mp.weixin.qq.com/s/gc_09Sg6F2yRNW8UC-r_LA
             },
             {
-                date: '6月3日',
+                date: '5月27日',
                 year: '2021',
-                title: 支持大数据持隐私保护及 NFT 的文昌链--边界智能在 2021 区块链服务网络（BSN）应用创新峰会分享,
-                description: 边界智能创始人曹恒受邀出席以「链上星城，链接未来」为主题的 2021 年区块链服务网络（BSN）应用创新峰会，并于大会做了《开放联盟链支持创新应用和产业发展——支持大数据隐私保护及 NFT 的 IRITA OPB：文昌链》的精彩分享。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/5.jpg,
+                title: 技术研讨 | 边界智能受邀参加海南省区块链应用研讨会,
+                description: 近日，海南省大数据管理局召开区块链应用研讨会。研讨会上，边界智能作为国内领先的区块链企业，和微众银行一起支持海南政府探讨区块链应用。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/Bianjie-Logo-Horizontal-White.png,
                 route: ,
-                link: https://mp.weixin.qq.com/s/HeoA1ctfrk1waXy6_yriJw
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247485394&idx=1&sn=a5f45e521859ed499259ed79e61e8506&chksm=faeab603cd9d3f159bf664a920caee9a2d2a5637f8ce4f3e6229e7c44bbc9cb2e0c8200367b4&token=401845609&lang=zh_CN#rd
             },
             {
                 date: '5月8日',
                 year: '2021',
                 title: 【边界快讯】“智慧政务+区块链” 都江堰市行政审批局智慧政务在文昌链上线了,
-                description: 「政务服务底层区块链平台」应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中「区块链电子证照系统」的搭建，该系统基于 BSN 首批开放联盟链「文昌链」开发，也是 BSN 开放联盟链「文昌链」部署的首个政务应用。,
+                description: 「政务服务底层区块链平台」应用项目是由都江堰区块链场景实验室的核心技术企业共同研发，边界智能承担了平台中「区块链电子证照系统」的搭建，该系统基于首批开放联盟链「文昌链」开发，也是开放联盟链「文昌链」部署的首个政务应用。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/6%20.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s/P8xaUOcgl3m4BATDcL-vgQ
@@ -533,8 +515,8 @@
             {
                 date: '1月31日',
                 year: '2021',
-                title: 首个 BSN 开放联盟链「文昌链」上线,
-                description: BSN 首批完成集成的开放联盟链「文昌链」已正式上线。「文昌链」是边界智能基于其自主可控联盟链产品 IRITA，改造了 IRIS Hub 和 Cosmos Hub 经过多年大规模实践验证过的前沿公有链底层技术，打造的支持多种智能合约的开放联盟链。,
+                title: 首个开放联盟链「文昌链」上线,
+                description: 首批完成集成的开放联盟链「文昌链」已正式上线。「文昌链」是边界智能基于其自主可控联盟链产品 IRITA，改造了 IRIS Hub 和 Cosmos Hub 经过多年大规模实践验证过的前沿公有链底层技术，打造的支持多种智能合约的开放联盟链。,
                 imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/10.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s/F0QEBBG1uDVDWAEQDXMPBg
