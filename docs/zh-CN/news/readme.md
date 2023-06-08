@@ -40,7 +40,7 @@
                 year: '2023',
                 title: 引领数字时尚新风潮，文昌链助力爱慕打造 30 周年数字艺术展,
                 description: 近日，爱慕美术馆携手杭州数字章鱼科技有限公司、文昌链推出「爱慕三十年数字艺术展」，以数字漫游的方式庆祝知名服饰品牌爱慕成立三十周年，为消费者带来沉浸式、创新式的 Web3.0 体验。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-15.jpg,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-15.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495875&idx=1&sn=6d8a7cd59bb304a9aa3469093cbbf0ed&chksm=fae94112cd9ec80487cd0674258b92fee30731722eb42da58933168a11fa033dafc29e6f4b8d&token=205706415&lang=zh_CN#rd
             },
@@ -256,7 +256,7 @@
                 year: '2022',
                 title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
                 description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-03-23.png,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490596&idx=1&sn=40299e19cbf8e3cabadc8b449fa41b00&chksm=faeaadf5cd9d24e352c4f4ae73896c230117a262c9f48f44a50a8d48735420fb46ca7f7c2b55&token=580899675&lang=zh_CN#rd
             },
