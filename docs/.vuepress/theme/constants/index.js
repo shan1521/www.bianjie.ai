@@ -1002,7 +1002,7 @@ const OG_CONTENT = {
 		]
     ],
     international: [
-        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/share_logo.jpg' }],
+        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/bianjie-home-internat/share_logo.jpg' }],
 		['meta', { property: 'og:title', content: 'BIANJIE.AI Global' }],
 		[
 			'meta',
