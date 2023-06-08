@@ -637,7 +637,7 @@ const CONTACT_US = {
     ],
     international: [
         {
-            label: 'contact@blockbeat.hk',
+            label: 'contact@bianjie.ai',
             copy: true
         }
     ]
@@ -714,17 +714,17 @@ const COPYRIGHT_RECORD = {
     international: {
         'zh-CN': [
             {
-                label: `版权所有©${new Date().getFullYear()} 区块驿动科技有限公司<span class="copy_suffix">（边界智能旗下国际业务公司）</span>`
+                label: `版权所有 ©${new Date().getFullYear()} 边界智能·国际 技术支持 Blockbeat Technology Limited`
             }
         ],
         'zh-HK': [
             {
-                label: `版權所有©${new Date().getFullYear()} 區塊驛動科技有限公司<span class="copy_suffix">（邊界智能旗下國際業務公司）</span>`
+                label: `版權所有 ©${new Date().getFullYear()} 邊界智能·國際 技術支持 Blockbeat Technology Limited`
             }
         ],
         'en': [
             {
-                label: `All rights reserved ©${new Date().getFullYear()} Blockbeat Technology Limited<span class="copy_suffix"> (A BIANJIE Company)</span>`
+                label: `All rights reserved ©${new Date().getFullYear()} BIANJIE.AI Global Supported by Blockbeat Technology Limited`
             }
         ]
     }
@@ -1002,8 +1002,8 @@ const OG_CONTENT = {
 		]
     ],
     international: [
-        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/blockbeat_logo.jpg' }],
-		['meta', { property: 'og:title', content: '區塊驛動' }],
+        ['meta', { property: 'og:image', content: 'https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/share_logo.jpg' }],
+		['meta', { property: 'og:title', content: 'BIANJIE.AI Global' }],
 		[
 			'meta',
 			{ property: 'og:description', content: 'BIANJIE.AI Global 是⼀家專注於區塊鏈技術及應用創新、全球領先的區塊鏈技術及應用服務商。BIANJIE.AI Global 與全球夥伴深度合作，在數字金融、跨境貿易、跨鏈服務、元宇宙等領域共同推進創新技術落地應用，服務全球實體經濟。' },

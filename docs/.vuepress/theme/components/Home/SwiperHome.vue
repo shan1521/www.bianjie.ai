@@ -5,7 +5,6 @@
                 <div class="title_container">
                     <span class="title" :class="{title_edition: edition && content.title.length <= 6 }">{{ content.title }}</span>
                     <span class="sub_title">
-                        <span v-if="edition && content.titleSign" class="title_sign">{{ content.titleSign }}</span>
                         <span v-html="content.subTitle"></span>
                     </span>
                 </div>
