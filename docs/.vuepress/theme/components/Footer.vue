@@ -361,11 +361,6 @@ export default {
                     flex-direction: column;
                     text-align: center;
                 }
-                :deep(.copy_suffix) {
-                    @media (max-width: 560px) {
-                        display: block;
-                    }
-                }
                 
                 a {
                     color: rgba(255, 255, 255, 0.75);

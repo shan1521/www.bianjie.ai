@@ -264,8 +264,7 @@
         homeContent: [
             {
                 img: banner_home_1.png,
-                title: Blockbeat,
-                titleSign: A BIANJIE Global Company,
+                title: BIANJIE.AI Global,
                 subTitle: Builder of Global Internet of Values & Provider of Web 3.0 Blockchain Infrastructure Service
             },
             {

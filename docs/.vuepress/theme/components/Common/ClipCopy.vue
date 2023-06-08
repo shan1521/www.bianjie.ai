@@ -1,7 +1,7 @@
 <template>
     <div id="clip_copy" class="clip" :data-clipboard-text="copyText">
         <div class="copy_text" @click="handleCopy">{{ copyText }}</div>
-        <div v-if="showCopyText" class="copy_sign" :style="{left: edition ? '15rem' : '12.4rem'}">
+        <div v-if="showCopyText" class="copy_sign">
             <SvgIcon class="svg_icon" iconName="icon-success_copied" />
             <p class="sign">{{ copySign }}</p>
         </div>
@@ -11,13 +11,12 @@
 <script>
 import Clipboard from 'clipboard';
 import SvgIcon from "@theme/components/Common/SvgIcon.vue";
-import { getCurrentEdition, clearTimer } from '@theme/util';
+import { clearTimer } from '@theme/util';
 export default {
     name: 'ClipCopy',
     props: ['copyText', 'copySign'],
     data() {
         return {
-            edition: getCurrentEdition(),
             showCopyText: false,
             copyTimer: null
         }
@@ -63,6 +62,7 @@ export default {
     }
     .copy_sign {
         position: absolute;
+        left: 12.4rem;
         display: flex;
         align-items: center;
         box-sizing: border-box;
