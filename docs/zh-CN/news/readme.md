@@ -8,6 +8,51 @@
             subTitle: 了解企业最新动态、行业资讯及新闻报道
         },
         dynamicList: [
+             {
+                date: '05月31日',
+                year: '2023',
+                title: 转载｜省心省力释放价值，亚马逊云科技助力文昌链&AVATA轻松应对业务高峰考验,
+                description: 一直以来，亚马逊云科技为边界智能提供了非常专业、高水准且具有创新导向的云服务，助力文昌链&AVATA平台解决了多个技术难点及业务交易数据高峰考验，并为正在开发的AVATA 闪电网络提供了有力的支持。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-31.jpg,
+                route: ,
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495986&idx=1&sn=69c79dd9819fe311ca87aa270203b5e7&chksm=fae940e3cd9ec9f540263e3936ede06880e3d27b472ed021645da6fd9f10d0ea966f7bf8edb1&token=205706415&lang=zh_CN#rd
+            },
+            {
+                date: '05月26日',
+                year: '2023',
+                title: 4月最高链上交易处理超过以太坊72%! 文昌链闪电网络即将登场,
+                description: 为更好地缓解链上交易过载压力、扩展区块链性能，边界智能马不停蹄地开启二层网络【AVATA 闪电网络】的开发，经过对方案架构的多次论证，预计将于6月正式上线，敬请大家期待！,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-26.png,
+                route: ,
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495972&idx=1&sn=5d418c1efb46f3cf85730539c45397ac&chksm=fae940f5cd9ec9e303961d8d506b3f532d3eb96c5775269f07b4de4ead5d6c0907d7351ad4ff&token=205706415&lang=zh_CN#rd
+            },
+            {
+                date: '05月22日',
+                year: '2023',
+                title: 边界智能国际业务公司「区块驿动」成为香港 Web3.0 协会会员,
+                description: 近日，边界智能旗下国际业务公司「区块驿动」正式加入香港 Web3.0 协会，未来将与协会一起助力香港打造全球新一代互联网技术高地，为将香港建设成为全球领先的 Web 3.0 智慧城市及安全和可持续的数码金融中心作出贡献。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-22.png,
+                route: ,
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495885&idx=1&sn=b0ad41f3d292c54eba7d67d3f15400d0&chksm=fae9411ccd9ec80a52bcd61750804e3b17be529807f2e3e6ef1564fb50ff817646270a50b744&token=205706415&lang=zh_CN#rd
+            },
+             {
+                date: '05月15日',
+                year: '2023',
+                title: 引领数字时尚新风潮，文昌链助力爱慕打造 30 周年数字艺术展,
+                description: 近日，爱慕美术馆携手杭州数字章鱼科技有限公司、文昌链推出「爱慕三十年数字艺术展」，以数字漫游的方式庆祝知名服饰品牌爱慕成立三十周年，为消费者带来沉浸式、创新式的 Web3.0 体验。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-05-15.png,
+                route: ,
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495875&idx=1&sn=6d8a7cd59bb304a9aa3469093cbbf0ed&chksm=fae94112cd9ec80487cd0674258b92fee30731722eb42da58933168a11fa033dafc29e6f4b8d&token=205706415&lang=zh_CN#rd
+            },
+             {
+                date: '04月18日',
+                year: '2023',
+                title: 为用户打造 Web3 身份名片，文昌链「Web3 域名」服务即将上线！,
+                description: 近日，爱慕美术馆携手杭州数字章鱼科技有限公司、文昌链推出「爱慕三十年数字艺术展」，以数字漫游的方式庆祝知名服饰品牌爱慕成立三十周年，为消费者带来沉浸式、创新式的 Web3.0 体验。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-04-18.png,
+                route: ,
+                link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495718&idx=1&sn=eebd774e44930563fabb733bd718e565&chksm=fae941f7cd9ec8e18e68c105f09b63390e39bcbb6898c0a611b519f04009c815c94f5a74e3d2&token=205706415&lang=zh_CN#rd
+            },
             {
                 date: '09月29日',
                 year: '2022',
@@ -211,7 +256,7 @@
                 year: '2022',
                 title: 「Avata」来了！多链 NFT/元宇宙应用 API 服务平台「Avata」上线，首发开启文昌链服务,
                 description: 边界智能自主研发并推出的多链 NFT/元宇宙应用 API 服务平台「Avata」，于 3 月 7 日正式发布上线，助力分布式商业应用企业及开发者以低成本、高效率的方式，一键启动数字藏品/元宇宙业务。「Avata」首发支持文昌链（IRITA OPB），对文昌链上的 NFT 应用开发者提供友好服务和技术支持。,
-                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-03-23.png,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2022-03-07.png,
                 route: ,
                 link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247490596&idx=1&sn=40299e19cbf8e3cabadc8b449fa41b00&chksm=faeaadf5cd9d24e352c4f4ae73896c230117a262c9f48f44a50a8d48735420fb46ca7f7c2b55&token=580899675&lang=zh_CN#rd
             },
