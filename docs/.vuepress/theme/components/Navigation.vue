@@ -493,8 +493,8 @@ export default {
             }
         }
         .nav_logo_inter {
-            width: 12.5rem;
-            height: 3.2rem;
+            width: auto;
+            height: 3rem;
         }
 
         .nav_list_wrap {
