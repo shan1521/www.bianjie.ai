@@ -403,7 +403,6 @@
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/HKVAX.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/siluzhizhou.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/circlesquare.jpg},
-                        {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Reddate.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/财华社.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Thoughtworks.jpg},
                         {src: https://storage.googleapis.com/bianjieai_asia_resources/blockbeat/Hashkey.jpg},
