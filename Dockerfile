@@ -1,4 +1,4 @@
-FROM node:14.4.0-alpine3.12 AS builder
+FROM node:16.20.0-alpine3.18 AS builder
 WORKDIR /app
 COPY . .
 ARG IS_INTERNATIONAL=null
@@ -10,7 +10,7 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
     npm config set registry https://registry.npm.taobao.org  && \
     npm install && npm run build-params $IS_INTERNATIONAL,$UMENG_ID,$UMENG_WEB_ID && npm run build
 
-FROM nginx:1.19-alpine
+FROM nginx:1.24-alpine
 RUN echo -e 'server {\n\
     root   /usr/share/nginx/html;\n\
     location / {\n\
