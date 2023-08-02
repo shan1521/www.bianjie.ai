@@ -8,6 +8,105 @@
             subTitle: 了解企业最新动态、行业资讯及新闻报道
         },
         dynamicList: [
+                             {
+                date: '07月31日',
+                year: '2023',
+                title: 打造极速上链体验，文昌链极速网正式上线！,
+                description: 一批优秀涉及传统文化、潮流娱乐、数字音乐、新型文旅社区等领域的优秀应用通过 AVATA 在文昌链上线。坚持开放与合规并举的文昌链不断推进区块链创新技术在文化数字化产业的落地应用，深入打造文化娱乐元宇宙解决方案，持续释放数字经济新动能。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-31.png,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1772930049232554873
+            },
+                     {
+                date: '07月21日',
+                year: '2023',
+                title: 文昌链深入打造文化娱乐元宇宙解决方案，释放数字经济新动能,
+                description: 一批优秀涉及传统文化、潮流娱乐、数字音乐、新型文旅社区等领域的优秀应用通过 AVATA 在文昌链上线。坚持开放与合规并举的文昌链不断推进区块链创新技术在文化数字化产业的落地应用，深入打造文化娱乐元宇宙解决方案，持续释放数字经济新动能。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-21.png,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1772354677263097619
+            },
+             {
+                date: '07月14日',
+                year: '2023',
+                title: WAIC 边界分享：AIGC+区块链的 Web3.0 新范式,
+                description: 边界智能创始人曹恒在世界人工智能大会上发表演讲，解读了【AIGC 和区块链如何围绕身份确真、资产确权、更加高效的生产关系构建等环节进行高效技术结合，进一步打造更高效、更公平、更开放的下一代互联网】。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-14.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1771384420246866425
+            },
+                        {
+                date: '07月13日',
+                year: '2023',
+                title: 文昌链关于「谨防诈骗」的重要公告,
+                description: 请大家注意谨防网络诈骗，保护自身财产的安全。对于假冒文昌链品牌和产品以及本公司、本公司工作人员进行诈骗或其他非法活动的单位或个人，本公司将依法追究其法律责任。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-13.jpg,
+                route: ,
+                link: https://mp.weixin.qq.com/s/74Yzu47PQRkQb4WJw1DN8Q
+            },
+                {
+                date: '07月06日',
+                year: '2023',
+                title: 功能性能双提升！IRITA 再次通过中国信通院可信区块链评测,
+                description: 近日，中国信通院正式公布「第九批可信区块链评测」通过名单，「IRITA底层链平台系统软件」最新 V4.0 版本成功通过性能、功能两项测评,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-06.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1770642104023465411
+            },
+        {
+                date: '07月04日',
+                year: '2023',
+                title: 2023 AWS 中国峰会落幕，边界智能分享Web3技术创新与赋能实践,
+                description: 近日，「2023 亚马逊云科技中国峰会」在上海世博中心盛大举办。边界智能受邀出席【创业者之日】和【构建基于云原生的下一代 Web3 应用论坛】分论坛，并分享下一代互联网技术创新与赋能实践,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-07-04.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1770642104023465411
+            },
+                    {
+                date: '06月29日',
+                year: '2023',
+                title: 更友好、更高效，文昌链网浏览器焕新上线！,
+                description: 随着文昌链多链生态蓬勃发展，多条基于 IRITA 打造的区块链组成的开放许可链互联网络生态形成了文昌链网，其官方门户文昌链网浏览器也于近期迭代升级，为用户提供了及时、便捷的链上信息入口和多链查询入口。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-06-29.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1770001210051199705
+            },
+                   {
+                date: '06月25日',
+                year: '2023',
+                title: 边界智能入选上海「文旅元宇宙创新示范企业」,
+                description: 近日，上海市文旅局举办打造文旅元宇宙赛道活动，现场发布了《上海市打造文旅元宇宙新赛道行动方案（2023-2025年）》。边界智能出席了活动并获颁「文旅元宇宙创新示范企业」。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-06-25.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1769727720278353126
+            },
+                     {
+                date: '06月19日',
+                year: '2023',
+                title: 分享中国Web3.0创新及实践，边界智能出席中日企业创新合作论坛,
+                description: 边界智能出席由上海交通大学主办的第六届「创新与共创」中日企业创新合作论坛，分享开放合规的中国Web3.0应用创新及落地实践，围绕元宇宙构造和周边技术动向、元宇宙市场的中日技术合作可能性等话题进行探索。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-06-19.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1769128118556776771
+            },
+        {
+                date: '06月07日',
+                year: '2023',
+                title: 边界智能与AWS联合撰文，解读如何在AWS上部署Cosmos企业级联盟链,
+                description: 边界智能联合AWS共同发表技术文章《在 AWS 上部署基于Cosmos技术的企业级联盟链》，以 Cosmos 生态中第一个企业级联盟链产品 IRITA 为例，对如何在 AWS 环境内快速搭建 Cosmos 企业级联盟链进行了深度解析。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-06-07.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1768096295798714030
+            },
+             {
+                date: '06月06日',
+                year: '2023',
+                title: 转载｜酒业元宇宙云上一带一路北京开启，IRITA提供底层链支持,
+                description: 由知名酒文化元宇宙品牌「酒域灵境」发起的酒业元宇宙云上一带一路启动仪式在北京隆重举办，基于边界智能自主研发的企业级联盟链产品IRITA 打造的酒域灵境酒业元宇宙「小酒馆」也在此次活动上正式启动。,
+                imgName: https://www.bianjie.ai/resources/Bianjie/BJHOME-IMAGE/news/2023-06-06.jpg,
+                route: ,
+                link: https://baijiahao.baidu.com/s?id=1768007676465168185
+            },
              {
                 date: '05月31日',
                 year: '2023',
