@@ -253,7 +253,7 @@
                     title: 文昌链推出「Web3 域名」服务，首批 5 家运营商开放注册！,
                     date: '2023-04-28',
                     intro: 日前，文昌链 Web3 域名服务正式上线！四川网匠科技有限公司等 5 家文昌链精英服务商通过甄选成为首批「域名服务合作运营商」，面向应用平台广大用户开展域名服务，带来更加安全、去中心化的精彩体验。,
-                    link: https://mp.weixin.qq.com/s?__biz=MzUzNzExMDcxOA==&mid=2247495826&idx=1&sn=facc1caa597899601848996e7559b028&chksm=fae94143cd9ec855409847f4b420887560ada6191083d8b18f91ab4e8ec7c306b34dc10d2b66&token=924230413&lang=zh_CN#rd,
+                    link: https://mbd.baidu.com/newspage/data/landingshare?preview=1&pageType=1&isBdboxFrom=1&context=%7B%22nid%22%3A%22news_8880069841902044662%22%2C%22sourceFrom%22%3A%22bjh%22%7D,
                     route: ,
                 },
             ],
