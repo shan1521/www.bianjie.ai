@@ -344,7 +344,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: '多链跨链分布式应用服务平台',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
@@ -412,7 +412,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: '多鏈跨鏈分佈式應用服務平台',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
@@ -480,7 +480,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: 'Multi-chain and Cross-chain Distributed Application Service Platform',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
