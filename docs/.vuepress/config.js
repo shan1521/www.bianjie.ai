@@ -8,7 +8,7 @@ const headMetaArr = [
 headMetaArr.push(...OG_CONTENT[editionPrefix])
 module.exports = {
 	title: PRO_TITLE[editionPrefix],
-	description: 'bianjie.ai',
+	description: '边界智能是 2016 年创立于上海的区块链技术与应用创新团队，专注于区块链技术支持的下一代互联网（Web3）应用服务，以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发了支持分布式商业系统的多链跨链分布式应用服务平台 AVATA、开放许可链文昌链、企业级基础链 IRITA 等核心产品，在 Web3 、元宇宙、数字银行、跨境贸易、大数据隐私保护等领域持续推进创新与合规并举的应用落地，创造商业价值。边界智能还积极参与全球开源协作，是包括 Cosmos/IRISHUB 等在内的全球多个区块链网络的核心技术开发者。',
 	head: headMetaArr,
 	themeConfig: {
 		search: false,
