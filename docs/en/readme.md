@@ -328,7 +328,7 @@
                     intro: the Multi-chain and Cross-chain Distributed Application Service Platform,
                     description: AVATA is a multi-chain and cross-chain NFT/metaverse application API service platform providing one-click service for cross-chain collaboration between complex heterogeneous systems，and is dedicated to helping developers and enterprises build an open and diversified distributed business model and web3 business applications,
                     moreText: Learn more,
-                    link: https://apis.avata.bianjie.ai/,
+                    link: https://docs.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
                 },
                 {

@@ -1,4 +1,4 @@
-const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, COPY_TEXT, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD, PRO_TITLE, OG_CONTENT } = require('./theme/constants');
+const { EDITION_NAV, EDITION_COMPANY, CONTACT_US_TITLE, CONTACT_US, COPY_TEXT, SCAN_CODE_FOLLOW_US, COPYRIGHT_RECORD, PRO_TITLE, OG_CONTENT, SEO_DESCRIPTION } = require('./theme/constants');
 const { getCurrentEditionPrefix } = require('./theme/util');
 const editionPrefix = getCurrentEditionPrefix();
 const headMetaArr = [
@@ -8,7 +8,7 @@ const headMetaArr = [
 headMetaArr.push(...OG_CONTENT[editionPrefix])
 module.exports = {
 	title: PRO_TITLE[editionPrefix],
-	description: 'bianjie.ai',
+	description: SEO_DESCRIPTION[editionPrefix],
 	head: headMetaArr,
 	themeConfig: {
 		search: false,
@@ -51,13 +51,13 @@ module.exports = {
 	},
 	locales: {
 		'/zh-CN/': {
-			lang: 'zh-CN'
+			lang: 'zh-CN',
 		},
 		'/zh-HK/': {
-			lang: 'zh-HK'
+			lang: 'zh-HK',
 		},
 		'/en/': {
-			lang: 'en'
+			lang: 'en',
 		}
 	},
 	plugins:{
