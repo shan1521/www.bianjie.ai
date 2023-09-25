@@ -40,7 +40,7 @@ export default async ({
 			if(storageLang){
 				urlLang = storageLang;
 			} else {
-				urlLang = edition ? LANG_OPTIONS[1].value : LANG_OPTIONS[2].value;
+				urlLang = location.hostname.includes('blockbeat') ? LANG_OPTIONS[0].value : LANG_OPTIONS[1].value;
 				localStorage.setItem('currentLang', urlLang);
 			}
 			store.commit('currentLang', urlLang);
