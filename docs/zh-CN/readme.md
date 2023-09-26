@@ -328,7 +328,7 @@
                     intro: 多链跨链分布式应用服务平台,
                     description: Avata 是一个多链和跨链 NFT/元宇宙应用 API 服务平台，为复杂异构系统跨链协作提供一键式对接，致力于助力开发者和企业打造开放、多元的分布式商业形态，构建 Web3 商业应用,
                     moreText: 了解更多,
-                    link: https://apis.avata.bianjie.ai/,
+                    link: https://docs.avata.bianjie.ai/,
                     imgName: AVATA_banner.png
                 },
                 {

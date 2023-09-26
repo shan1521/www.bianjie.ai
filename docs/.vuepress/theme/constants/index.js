@@ -344,7 +344,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: '多链跨链分布式应用服务平台',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
@@ -412,7 +412,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: '多鏈跨鏈分佈式應用服務平台',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
@@ -480,7 +480,7 @@ const EDITION_NAV = {
                             {
                                 abbreviation: 'AVATA',
                                 intro: 'Multi-chain and Cross-chain Distributed Application Service Platform',
-                                link: 'https://apis.avata.bianjie.ai/'
+                                link: 'https://docs.avata.bianjie.ai/'
                             },
                             {
                                 abbreviation: 'TIBC',
@@ -826,7 +826,7 @@ const DOM_TITLE = {
 
 const PRO_TITLE = {
     inland: '边界智能-BIANJIE.AI',
-    international: 'BIANJIE.AI Global'
+    international: '邊界智能-BIANJIE.AI Global'
 }
 
 const SEO_META = {
@@ -836,7 +836,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '边界智能,上海边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,南京边界区块链,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -862,7 +862,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '边界智能,上海边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,南京边界区块链,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -888,7 +888,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
+                contentDesc: '边界智能,上海边界智能,边界智能-BIANJIE.AI,上海边界智能公司,上海边界智能科技有限公司,南京边界区块链,边界智能区块链,边界智能官网,BIANJIEAI,bianjieai,边界智能跨链服务'
             },
             {
                 name: 'name',
@@ -916,7 +916,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海边界智能,边界智能,边界智能-BIANJIE.AI,上海边界,上海边界智能科技有限公司,边界智能区块链,边界智能官网,BIANJIEAI,BIANJIE.AI Global,bianjieai,边界智能跨链服务,跨链,金融科技服务,金融技术服务,API 服务,区块链数字银行,区块链底层技术服务'
+                contentDesc: '边界智能国际,边界智能全球'
             },
             {
                 name: 'name',
@@ -942,7 +942,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界智能公司,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '邊界智能國際,邊界智能全球'
             },
             {
                 name: 'name',
@@ -968,7 +968,7 @@ const SEO_META = {
                 name: 'name',
                 nameValue: 'keywords',
                 content: 'content',
-                contentDesc: '上海邊界智能,邊界智能,邊界智能-BIANJIE.AI,上海邊界,上海邊界智能科技有限公司,邊界智能區塊鏈,邊界智能官網,BIANJIEAI,BIANJIE.AI Global,bianjieai,邊界智能跨鏈服務,跨鏈,金融科技服務,金融技術服務,API 服務,區塊鏈數字銀行,區塊鏈底層技術服務'
+                contentDesc: '邊界智能國際,邊界智能全球'
             },
             {
                 name: 'name',
@@ -990,6 +990,11 @@ const SEO_META = {
             }
         ]
     }
+}
+
+const SEO_DESCRIPTION = {
+    inland: '边界智能是 2016 年创立于上海的区块链技术与应用创新团队，专注于区块链技术支持的下一代互联网（Web3）应用服务，以区块链跨链、NFT 技术及大数据隐私保护技术为核心，自主研发了支持分布式商业系统的多链跨链分布式应用服务平台 AVATA、开放许可链文昌链、企业级基础链 IRITA 等核心产品，在 Web3 、元宇宙、数字银行、跨境贸易、大数据隐私保护等领域持续推进创新与合规并举的应用落地，创造商业价值。边界智能还积极参与全球开源协作，是包括 Cosmos/IRISHUB 等在内的全球多个区块链网络的核心技术开发者。',
+    international: '邊界智能從 2016 年開始致力於構建全球互聯互通價值互聯網，是開放許可鏈文昌鏈的核心技術及運營服務團隊，也是包括 Cosmos/IRISnet 等在內多個全球區塊鏈網絡的核心開源開發者。',
 }
 
 const OG_CONTENT = {
@@ -1026,5 +1031,6 @@ module.exports = {
     DOM_TITLE,
     PRO_TITLE,
     SEO_META,
+    SEO_DESCRIPTION,
     OG_CONTENT
 }
