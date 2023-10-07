@@ -134,11 +134,11 @@
                                         color_font_active: isColor && currentIndex === index
                                     }"
                                     :to="item.link"
-                                    @click.native="closeMobileMenu(index)"
+                                    @click.stop="closeMobileMenu(index)"
                                 >
                                     {{ item.text }}
                                 </router-link>
-                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'" @click="showSubMenu(index)"></i>
+                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'"></i>
                             </div>
                         </div>
 
@@ -292,6 +292,7 @@ export default {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }
+			this.showSubMenu(index)
         },
         scrollTop() {
             this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
