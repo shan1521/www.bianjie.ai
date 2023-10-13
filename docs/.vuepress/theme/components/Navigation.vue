@@ -122,7 +122,7 @@
                     >
                         <div class="list_item_wrap">
                             <div class="mobile_list_item">
-                                <a v-if="item.isOutLink" class="mobile_item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(index)">
+                                <a v-if="item.isOutLink" class="mobile_item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer">
                                     {{item.text}}
                                 </a>
                                 <router-link
@@ -134,11 +134,10 @@
                                         color_font_active: isColor && currentIndex === index
                                     }"
                                     :to="item.link"
-                                    @click.native="closeMobileMenu(index)"
                                 >
                                     {{ item.text }}
                                 </router-link>
-                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'" @click="showSubMenu(index)"></i>
+                                <i class="iconfont" v-if="item.items" :class="$store.state.subMenu == index ? 'icon-shouqi' : 'icon-zhankai'"></i>
                             </div>
                         </div>
 
@@ -292,6 +291,7 @@ export default {
                 this.$store.commit("currentIndex", index);
                 localStorage.setItem("currentIndex", JSON.stringify(index));
             }
+			this.showSubMenu(index)
         },
         scrollTop() {
             this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -304,12 +304,6 @@ export default {
         },
         isShowMobileMenu() {
             this.flShowMobileMenu = !this.flShowMobileMenu;
-            this.$store.commit("subMenu", 0);
-        },
-        closeMobileMenu(index, pIndex) {
-            if(index !== 1 && index !== 2) {
-                this.flShowMobileMenu = false;
-            }
             this.$store.commit("subMenu", 0);
         },
         showSubMenu(index) {
@@ -332,6 +326,8 @@ export default {
                     this.$store.commit("subMenu", 0);
                 }
                 this.showSubScene = true;
+            } else {
+                this.flShowMobileMenu = false;
             }
         },
         closeSubMenu(index){
@@ -456,7 +452,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .nav_container {
     position: fixed;
     width: 100%;
