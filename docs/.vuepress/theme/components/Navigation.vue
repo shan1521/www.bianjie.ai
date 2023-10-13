@@ -122,7 +122,7 @@
                     >
                         <div class="list_item_wrap">
                             <div class="mobile_list_item">
-                                <a v-if="item.isOutLink" class="mobile_item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(index)">
+                                <a v-if="item.isOutLink" class="mobile_item" :class="{color_font: isColor}" :href="item.link" target="_blank" rel="noopener noreferrer">
                                     {{item.text}}
                                 </a>
                                 <router-link
@@ -134,7 +134,6 @@
                                         color_font_active: isColor && currentIndex === index
                                     }"
                                     :to="item.link"
-                                    @click.stop="closeMobileMenu(index)"
                                 >
                                     {{ item.text }}
                                 </router-link>
@@ -307,12 +306,6 @@ export default {
             this.flShowMobileMenu = !this.flShowMobileMenu;
             this.$store.commit("subMenu", 0);
         },
-        closeMobileMenu(index, pIndex) {
-            if(index !== 1 && index !== 2) {
-                this.flShowMobileMenu = false;
-            }
-            this.$store.commit("subMenu", 0);
-        },
         showSubMenu(index) {
             if(index === 1) {
                 this.isShowProductSub = !this.isShowProductSub;
@@ -333,6 +326,8 @@ export default {
                     this.$store.commit("subMenu", 0);
                 }
                 this.showSubScene = true;
+            } else {
+                this.flShowMobileMenu = false;
             }
         },
         closeSubMenu(index){
@@ -457,7 +452,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .nav_container {
     position: fixed;
     width: 100%;
